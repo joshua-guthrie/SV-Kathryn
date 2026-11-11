@@ -1,0 +1,161 @@
+{
+  "coordinates": "original scan pixels",
+  "calibrated_sheets": {
+    "S02": {
+      "source_view": "S02-R01",
+      "native_pixels_per_ft": 149.96071428571426,
+      "ruler_ticks": [
+        {
+          "feet": 0,
+          "native_x": 1629.5
+        },
+        {
+          "feet": 10,
+          "native_x": 3127.5
+        },
+        {
+          "feet": 50,
+          "native_x": 9127.0
+        }
+      ],
+      "fit_residual_ft": 0.005953940317703556,
+      "printed_inches_per_ft": 0.375,
+      "print_dpi_crosscheck_px_per_ft": 150.0,
+      "print_crosscheck_relative_error": 0.0002619047619049075,
+      "point_pick_uncertainty_ft": 0.15,
+      "policy": "Imperial bar is primary; view scale must be declared separately.",
+      "source_label_issue": null
+    },
+    "S03": {
+      "source_view": "S03-R01",
+      "native_pixels_per_ft": 99.87368421052629,
+      "ruler_ticks": [
+        {
+          "feet": 0,
+          "native_x": 3532.0
+        },
+        {
+          "feet": 20,
+          "native_x": 5528.0
+        },
+        {
+          "feet": 50,
+          "native_x": 8525.5
+        }
+      ],
+      "fit_residual_ft": 0.009222175379438148,
+      "printed_inches_per_ft": 0.25,
+      "print_dpi_crosscheck_px_per_ft": 100.0,
+      "print_crosscheck_relative_error": 0.001263157894737077,
+      "point_pick_uncertainty_ft": 0.15,
+      "policy": "Imperial bar is primary; view scale must be declared separately.",
+      "source_label_issue": null
+    },
+    "S04": {
+      "source_view": "S04-R01",
+      "native_pixels_per_ft": 149.9802631578947,
+      "ruler_ticks": [
+        {
+          "feet": 0,
+          "native_x": 1658.5
+        },
+        {
+          "feet": 20,
+          "native_x": 4654.0
+        },
+        {
+          "feet": 50,
+          "native_x": 9157.0
+        }
+      ],
+      "fit_residual_ft": 0.017107514146603983,
+      "printed_inches_per_ft": 0.375,
+      "print_dpi_crosscheck_px_per_ft": 150.0,
+      "print_crosscheck_relative_error": 0.00013157894736859355,
+      "point_pick_uncertainty_ft": 0.15,
+      "policy": "Imperial bar is primary; view scale must be declared separately.",
+      "source_label_issue": null
+    },
+    "S05": {
+      "source_view": "S05-R01",
+      "native_pixels_per_ft": 149.9736842105263,
+      "ruler_ticks": [
+        {
+          "feet": 0,
+          "native_x": 1490.0
+        },
+        {
+          "feet": 20,
+          "native_x": 4488.0
+        },
+        {
+          "feet": 50,
+          "native_x": 8988.5
+        }
+      ],
+      "fit_residual_ft": 0.006141428320747495,
+      "printed_inches_per_ft": 0.375,
+      "print_dpi_crosscheck_px_per_ft": 150.0,
+      "print_crosscheck_relative_error": 0.00017543859649127302,
+      "point_pick_uncertainty_ft": 0.15,
+      "policy": "Imperial bar is primary; view scale must be declared separately.",
+      "source_label_issue": null
+    },
+    "S06": {
+      "source_view": "S06-R01",
+      "native_pixels_per_ft": 299.6500000000001,
+      "ruler_ticks": [
+        {
+          "feet": 0,
+          "native_x": 1787.5
+        },
+        {
+          "feet": 10,
+          "native_x": 4784.5
+        },
+        {
+          "feet": 20,
+          "native_x": 7780.5
+        }
+      ],
+      "fit_residual_ft": 0.0011124089215215737,
+      "printed_inches_per_ft": 0.75,
+      "print_dpi_crosscheck_px_per_ft": 300.0,
+      "print_crosscheck_relative_error": 0.0011666666666663161,
+      "point_pick_uncertainty_ft": 0.08,
+      "policy": "Imperial bar is primary; view scale must be declared separately.",
+      "source_label_issue": "Imperial 3/4-inch scale = 1:16 conflicts with printed metric caption 1:32."
+    },
+    "S07": {
+      "source_view": "S07-R01",
+      "native_pixels_per_ft": 299.62500000000006,
+      "ruler_ticks": [
+        {
+          "feet": 0,
+          "native_x": 1776.5
+        },
+        {
+          "feet": 10,
+          "native_x": 4772.5
+        },
+        {
+          "feet": 20,
+          "native_x": 7769.0
+        }
+      ],
+      "fit_residual_ft": 0.0005562508691429948,
+      "printed_inches_per_ft": 0.75,
+      "print_dpi_crosscheck_px_per_ft": 300.0,
+      "print_crosscheck_relative_error": 0.0012499999999998623,
+      "point_pick_uncertainty_ft": 0.08,
+      "policy": "Imperial bar is primary; view scale must be declared separately.",
+      "source_label_issue": null
+    }
+  },
+  "unscaled_views": [
+    "S01 illustration/map/ornament unless separately dimensioned",
+    "S08 illustrative sail details explicitly marked not to scale",
+    "S06-V03 perspective structural conception is not a metric projection"
+  ],
+  "metric_caption_resolution": "S06 1:32 caption is a source inconsistency. Use calibrated imperial bar and 3/4-inch caption; do not apply a factor-of-two rescale."
+}

@@ -1,0 +1,8 @@
+{
+  "source_boundary_max_deviation_inches": 0.06846338034709856,
+  "envelope_relative_volume_difference": 0.00011147065932304229,
+  "old_outer_faces": 2031,
+  "new_outer_faces": 172,
+  "new_planking_faces": 606,
+  "source_boundary_samples": 960
+}

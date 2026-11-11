@@ -1,0 +1,14 @@
+{
+  "source_views": [
+    "S05-V02",
+    "S04-V01",
+    "S06-V02",
+    "S07-V01"
+  ],
+  "keelson_base_max_linearization_error_inches": 0.05617965708113637,
+  "keelson_loft_sections": 55,
+  "source_pick_uncertainty_ft": 0.15,
+  "vertical_basis": "Same-column source keel/shoe point registered to the corrected M1 keel; retain as-surveyed/straight-keel uncertainty.",
+  "board_pose_note": "0 degrees is the traced source lowered outline. The -15-degree raised pose is clearance-limited by actual hatch/deck structure, not a printed historic stop angle; the trial -17-degree pose fouled the main-hatch aft beam.",
+  "source_overlay": "renders/m2-source-profile-comparison.png"
+}

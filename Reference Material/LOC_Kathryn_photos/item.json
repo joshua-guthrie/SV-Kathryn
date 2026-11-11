@@ -1,0 +1,3398 @@
+{
+  "articles_and_essays": null,
+  "cite_this": {
+    "apa": "Historic American Engineering Record, C. (1968) <cite>KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD</cite>. Maryland Tilghman Talbot County, 1968. Documentation Compiled After. [Photograph] Retrieved from the Library of Congress, https://www.loc.gov/item/md1454/.",
+    "chicago": "Historic American Engineering Record, Creator. <cite>KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD</cite>. Maryland Tilghman Talbot County, 1968. Documentation Compiled After. Photograph. https://www.loc.gov/item/md1454/.",
+    "mla": "Historic American Engineering Record, Creator. <cite>KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD</cite>. Documentation Compiled After. Photograph. Retrieved from the Library of Congress, &lt;www.loc.gov/item/md1454/&gt;."
+  },
+  "item": {
+    "_version_": 1821167460589502464,
+    "access_restricted": false,
+    "aka": [
+      "https://www.loc.gov/pictures/item/md1454/",
+      "http://www.loc.gov/item/md1454/",
+      "http://www.loc.gov/pictures/item/md1454/",
+      "https://www.loc.gov/pictures/collection/hh/item/md1454/",
+      "http://www.loc.gov/pictures/collection/hh/item/md1454/",
+      "https://cdn.loc.gov/master/pnp/habshaer/md/md1400/md1454/data/md1454data.pdf",
+      "http://cdn.loc.gov/master/pnp/habshaer/md/md1400/md1454/data/md1454data.pdf",
+      "https://cdn.loc.gov/master/pnp/habshaer/md/md1400/md1454/data/md1454cap.pdf",
+      "http://cdn.loc.gov/master/pnp/habshaer/md/md1400/md1454/data/md1454cap.pdf",
+      "https://www.loc.gov:8081/pictures/search/?q=photograph: md1454&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+      "http://www.loc.gov:8081/pictures/search/?q=photograph: md1454&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+      "https://www.loc.gov:8081/pictures/search/?q=drawing: md1454&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+      "http://www.loc.gov:8081/pictures/search/?q=drawing: md1454&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+      "http://www.loc.gov/resource/hhh.md1454data/",
+      "http://www.loc.gov/resource/hhh.md1454cap/",
+      "http://www.loc.gov/resource/hhh.md1454.sheet/",
+      "http://www.loc.gov/resource/hhh.md1454.photos/",
+      "http://www.loc.gov/resource/hhh.md1454.photos",
+      "http://www.loc.gov/resource/hhh.md1454.color.572189c",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185739p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185740p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185741p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185742p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185743p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185744p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185745p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185746p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185747p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185748p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185749p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185750p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185751p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185752p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185753p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185754p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185755p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185756p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185757p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185758p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185759p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185760p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185761p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185762p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185763p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185764p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185765p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185766p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185767p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185768p",
+      "http://www.loc.gov/resource/hhh.md1454.photos.185769p",
+      "http://www.loc.gov/resource/hhh.md1454.sheet",
+      "http://www.loc.gov/resource/hhh.md1454.sheet.00001a",
+      "http://www.loc.gov/resource/hhh.md1454.sheet.00002a",
+      "http://www.loc.gov/resource/hhh.md1454.sheet.00003a",
+      "http://www.loc.gov/resource/hhh.md1454.sheet.00004a",
+      "http://www.loc.gov/resource/hhh.md1454.sheet.00005a",
+      "http://www.loc.gov/resource/hhh.md1454.sheet.00006a",
+      "http://www.loc.gov/resource/hhh.md1454.sheet.00007a",
+      "http://www.loc.gov/resource/hhh.md1454.sheet.00008a"
+    ],
+    "call_number": "HAER MD,21-TILG.V,1-",
+    "campaigns": [],
+    "contributor_names": [
+      "Historic American Engineering Record, creator"
+    ],
+    "contributors": [
+      {
+        "historic american engineering record": "https://www.loc.gov/search/?fa=contributor:historic+american+engineering+record&fo=json"
+      }
+    ],
+    "control_number": "md1454",
+    "created": "2016-04-15T20:46:10Z",
+    "created_published": [
+      "Documentation compiled after 1968"
+    ],
+    "created_published_date": "Documentation compiled after 1968",
+    "description": [
+      "Photo(s): 31 | Color Transparencies: 1 | Measured Drawing(s): 8 | Data Page(s): 15 | Photo Caption Page(s): 3"
+    ],
+    "digitized": true,
+    "display_offsite": true,
+    "extract_timestamp": "2025-01-13T20:18:14.288Z",
+    "extract_urls": [
+      "http://www.loc.gov/pictures/collection/hh/item/md1454/#hh-3"
+    ],
+    "format": [
+      {
+        "photo, print, drawing": "https://www.loc.gov/search/?fa=original_format:photo,+print,+drawing&fo=json"
+      }
+    ],
+    "group": [
+      "hh-3",
+      "habshaer-group-3"
+    ],
+    "hassegments": true,
+    "id": "http://www.loc.gov/item/md1454/",
+    "image_url": [
+      "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189c_150px.jpg#h=107&w=150",
+      "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189cr.jpg#h=457&w=640",
+      "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189cv.jpg#h=731&w=1024"
+    ],
+    "index": 1,
+    "item": {
+      "call_number": "HAER MD,21-TILG.V,1-",
+      "control_number": "md1454",
+      "created": "2016-04-15T20:46:10Z",
+      "created_published": "Documentation compiled after 1968",
+      "created_published_date": "Documentation compiled after 1968",
+      "creators": [
+        {
+          "link": "https://www.loc.gov/pictures/related/?fi=name&q=Historic%20American%20Engineering%20Record&co=hh",
+          "role": "creator",
+          "title": "Historic American Engineering Record"
+        }
+      ],
+      "display_offsite": true,
+      "id": "md1454",
+      "link": "https://www.loc.gov/pictures/item/md1454/",
+      "medium_brief": "Photo(s): 31, Color Transparencies: 1, Measured Drawing(s): 8, Data Page(s): 15, Photo Caption Page(s): 3",
+      "mediums": [
+        "Photo(s): 31 ",
+        "Color Transparencies: 1 ",
+        "Measured Drawing(s): 8 ",
+        "Data Page(s): 15 ",
+        "Photo Caption Page(s): 3 "
+      ],
+      "modified": "2024-12-13T15:26:19Z",
+      "notes": [
+        "Significance: National Historic Landmark.  This vessel is one of the oldest skipjacks in the Maryland oyster dredging fleet and is of unusual construction, having a V-bottom construction, but with a rounded chine.  Changes in the original materials and equipment of the vessel are representative of changes in the Maryland oyster dredging fleet. ",
+        "Unprocessed Field note material exists for this structure: N324 ",
+        "Survey number: HAER MD-117 "
+      ],
+      "other_title": [
+        "Official Number 161189"
+      ],
+      "part_of": "Historic American Engineering Record (Library of Congress)",
+      "part_of_group": "Survey Number md1454",
+      "place": [
+        {
+          "latitude": "",
+          "link": "https://www.loc.gov/pictures/related/?fi=place&q=Maryland--Talbot%20County--Tilghman&co=hh",
+          "longitude": "",
+          "title": "Maryland -- Talbot County -- Tilghman"
+        }
+      ],
+      "raw_collections": [
+        "diof",
+        "hh",
+        "survey"
+      ],
+      "repository": "Library of Congress Prints and Photographs Division Washington,      D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print",
+      "resource_links": [
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/data/md1454data.pdf",
+        "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/data/md1454cap.pdf",
+        "https://www.loc.gov:8081/pictures/search/?q=Photograph: md1454&fi=number&op=PHRASE&va=exact&co =hh&st=gallery&sg = true",
+        "https://www.loc.gov:8081/pictures/search/?q=Drawing: md1454&fi=number&op=PHRASE&va=exact&co =hh&st=gallery&sg = true"
+      ],
+      "rights_advisory": "No known restrictions on images made by the U.S. Government; images     copied from other sources may be restricted.    https://www.loc.gov/rr/print/res/114_habs.html",
+      "rights_information": "No known restrictions on images made by the U.S. Government; images     copied from other sources may be restricted.    https://www.loc.gov/rr/print/res/114_habs.html",
+      "service_low": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189c_150px.jpg?q=md1454.color.572189c&c=32&st=gallery",
+      "service_medium": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189cr.jpg?q=md1454.color.572189c&c=32&st=gallery",
+      "source_created": "1970-01-01T00:00:00Z",
+      "source_modified": "2016-04-15T20:46:00Z",
+      "subject_headings": [
+        "skipjacks",
+        "dredging",
+        "maritime",
+        "Maryland -- Talbot County -- Tilghman"
+      ],
+      "thumb_gallery": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189c_150px.jpg?q=md1454.color.572189c&c=32&st=gallery",
+      "title": "KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD"
+    },
+    "language": [
+      "english"
+    ],
+    "languages": [
+      {
+        "english": "https://www.loc.gov/search/?fa=language:english&fo=json"
+      }
+    ],
+    "link": "https://www.loc.gov/pictures/item/md1454/",
+    "location": [
+      "maryland",
+      "tilghman",
+      "talbot county"
+    ],
+    "locations": [
+      {
+        "maryland": "https://www.loc.gov/search/?fa=location:maryland&fo=json"
+      },
+      {
+        "talbot county": "https://www.loc.gov/search/?fa=location:talbot+county&fo=json"
+      },
+      {
+        "tilghman": "https://www.loc.gov/search/?fa=location:tilghman&fo=json"
+      }
+    ],
+    "medium": [
+      "Photo(s): 31 ",
+      "Color Transparencies: 1 ",
+      "Measured Drawing(s): 8 ",
+      "Data Page(s): 15 ",
+      "Photo Caption Page(s): 3 "
+    ],
+    "medium_brief": "Photo(s): 31, Color Transparencies: 1, Measured Drawing(s): 8, Data Page(s): 15, Photo Caption Page(s): 3",
+    "mime_type": [
+      "image/gif",
+      "application/pdf"
+    ],
+    "modified": "2024-12-13T15:26:19Z",
+    "notes": [
+      "Significance: National Historic Landmark.  This vessel is one of the oldest skipjacks in the Maryland oyster dredging fleet and is of unusual construction, having a V-bottom construction, but with a rounded chine.  Changes in the original materials and equipment of the vessel are representative of changes in the Maryland oyster dredging fleet. ",
+      "Unprocessed Field note material exists for this structure: N324 ",
+      "Survey number: HAER MD-117 "
+    ],
+    "online_format": [
+      "image",
+      "pdf"
+    ],
+    "original_format": [
+      "photo, print, drawing"
+    ],
+    "other_formats": [],
+    "other_title": [
+      "Official Number 161189"
+    ],
+    "part_of_group": "Survey Number md1454",
+    "partof": [
+      {
+        "count": 45882,
+        "title": "historic american buildings survey/historic american engineering record/historic american landscapes survey",
+        "url": "https://www.loc.gov/collections/historic-american-buildings-landscapes-and-engineering-records/?fo=json"
+      },
+      {
+        "count": 419259,
+        "title": "american memory",
+        "url": "https://www.loc.gov/search/?fa=partof:american+memory&fo=json"
+      },
+      {
+        "count": 1163150,
+        "title": "prints and photographs division",
+        "url": "https://www.loc.gov/search/?fa=partof:prints+and+photographs+division&fo=json"
+      }
+    ],
+    "place": [
+      {
+        "latitude": "",
+        "link": "https://www.loc.gov/pictures/related/?fi=place&q=Maryland--Talbot%20County--Tilghman&co=hh",
+        "longitude": "",
+        "title": "Maryland -- Talbot County -- Tilghman"
+      }
+    ],
+    "raw_collections": [
+      "diof",
+      "hh",
+      "survey"
+    ],
+    "related": {
+      "neighbors": "https://www.loc.gov/pictures/related/?&co=hh&pk=md1454&st=gallery&sb=call_number#focus"
+    },
+    "repository": [
+      "Library of Congress Prints and Photographs Division Washington,      D.C. 20540 USA http://hdl.loc.gov/loc.pnp/pp.print"
+    ],
+    "reproductions": [
+      "<h4>If Digital Images Are Displaying</h4>\r\n<p>You can download online images yourself.  Alternatively, you can  purchase copies of various types through Library of Congress Duplication  Services.</p>\r\n<p>HABS/HAER/HALS materials have generally been scanned at high resolution that is suitable for most publication purposes (see <a href=\"/collections/historic-american-buildings-landscapes-and-engineering-records/about-this-collection/technical-information/\">Digitizing the Collection</a> for further details about the digital images).</p>\r\n<ul class=\"plain margin-bottom-double-li list-plain-extra-margin\">\r\n\t<li><strong>Photographs--</strong>All photographs are printed from digital files to preserve the fragile originals. </li>\r\n\t<ul class=\"plain margin-bottom-single-li\">\r\n\t\t<li>Make note of the Call Number and Item Number that appear under the  photograph in the multiple-image display (e.g., HAER, NY,52-BRIG,4-2). </li>\r\n\t\t<li>If possible, include a printout of the photograph. </li>\r\n\t</ul>\r\n\t<li><strong>Drawings--</strong>All drawings are printed from digital files to preserve the fragile originals. </li>\r\n\t<ul class=\"plain margin-bottom-single-li\">\r\n\t\t<li>Make note of the Survey Number (e.g., HAER NY - 143) and Sheet  Number (e.g., \"Sheet 1 of 4\"), which appear on the edge of the drawing.  (NOTE: These numbers are visible in the Tiff \"Reference Image\" display.) </li>\r\n\t\t<li>If possible, include a printout of the drawing. </li>\r\n\t</ul>\r\n\t<li><strong>Data Pages</strong></li>\r\n\t<ul class=\"plain margin-bottom-single-li\">\r\n\t\t<li>Make note of the Call Number in the catalog record. </li>\r\n\t</ul>\r\n</ul>\r\n<h4>If Digital Images Are Not Displaying</h4>\r\n<p>In the rare case that a digital image for HABS/HAER/HALS  documentation is not displaying online, select images for reproduction  through one of these methods:</p>\r\n<ul class=\"plain margin-bottom-double-li list-plain-extra-margin\">\r\n\t<li>Visit the Prints &amp; Photographs Reading Room and request to  view the group (general information about service in the reading room is  available at: <a href=\"https://www.loc.gov/rr/print/info/001_ref.html\">https://www.loc.gov/rr/print/info/001_ref.html</a>). It is best to contact reference staff in advance (see: <a href=\"https://www.loc.gov/rr/print/address.html\">https://www.loc.gov/rr/print/address.html</a>) to make sure the material is on site.  OR </li>\r\n\t<li>P&amp;P reading room staff can provide up to 15 quick copies of  items per calendar year (many original items in the holdings are too old  or fragile to make such copies, but generally HABS/HAER/HALS materials  are in good enough condition to be placed on photocopy machines). For  assistance, see our <a href=\"https://ask.loc.gov/prints-photographs/\">Ask a Librarian</a> page OR </li>\r\n\t<li>Hire a freelance researcher to do further selection for you (a list of researchers in available at: <a href=\"https://www.loc.gov/rr/print/resource/013_pic.html\">https://www.loc.gov/rr/print/resource/013_pic.html</a>). </li>\r\n\t<li>You can purchase copies of various types, including quick  copies, through Library of Congress Duplication Services (price lists,  contact information, and order forms for Library of Congress Duplication  Services are available on the <a href=\"https://www.loc.gov/preserv/pds/\">Duplication Services Web site</a>): </li>\r\n\t<ul class=\"plain margin-bottom-single-li\">\r\n\t\t<li>Make note of the Call Number listed above. </li>\r\n\t\t<li>Look at the Medium field above. If it lists more than one item: </li>\r\n\t\t<ul class=\"plain margin-bottom-single-li\">\r\n\t\t\t<li>The entire group can be ordered as photocopies or high-quality copies. </li>\r\n\t\t\t<li>All the items in a particular medium (e.g., all drawings, all  photographs) can be ordered as photocopies or high-quality copies. </li>\r\n\t\t</ul>\r\n\t</ul>\r\n</ul>\r\n"
+    ],
+    "resource_links": [
+      "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/data/md1454data.pdf",
+      "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/data/md1454cap.pdf",
+      "https://www.loc.gov:8081/pictures/search/?q=Photograph: md1454&fi=number&op=PHRASE&va=exact&co =hh&st=gallery&sg = true",
+      "https://www.loc.gov:8081/pictures/search/?q=Drawing: md1454&fi=number&op=PHRASE&va=exact&co =hh&st=gallery&sg = true"
+    ],
+    "resources": [
+      {
+        "caption": "Photos from Survey HAER MD-117 ",
+        "files": 32,
+        "image": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189c_150px.jpg",
+        "url": "https://www.loc.gov/resource/hhh.md1454.photos"
+      },
+      {
+        "caption": "Drawings from Survey HAER MD-117 ",
+        "files": 8,
+        "image": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00001_150px.jpg",
+        "url": "https://www.loc.gov/resource/hhh.md1454.sheet"
+      },
+      {
+        "caption": "Data Pages from Survey HAER MD-117 ",
+        "files": 1,
+        "image": "/static/images/original-format/manuscript-mixed-material.svg"
+      },
+      {
+        "caption": "Photo Captions from Survey HAER MD-117 ",
+        "files": 1,
+        "image": "/static/images/original-format/manuscript-mixed-material.svg"
+      }
+    ],
+    "rights": [
+      "<p>The Library of Congress does not&nbsp;own rights to material  in its collections. Therefore, it does not license or charge permission fees  for use of such material and cannot grant or deny permission to publish or  otherwise distribute the material. </p>\n<p>Ultimately, it is the researcher's obligation to assess copyright or other use restrictions and  obtain permission from third parties when necessary before publishing or  otherwise distributing materials found in the Library's collections. </p>\n<p>For information about reproducing,  publishing, and citing material from this collection, as well as access to the  original items, see: <a href=\"https://www.loc.gov/rr/print/res/114_habs.html\">Historic American Buildings Survey/Historic American Engineering Record/Historic American Landscape Survey (HABS/HAER/HALS) Collection - Rights and Restrictions Information</a> </p>\n\n"
+    ],
+    "rights_advisory": "No known restrictions on images made by the U.S. Government; images     copied from other sources may be restricted.    https://www.loc.gov/rr/print/res/114_habs.html",
+    "rights_information": "No known restrictions on images made by the U.S. Government; images     copied from other sources may be restricted.    https://www.loc.gov/rr/print/res/114_habs.html",
+    "score": 18.88908,
+    "shard": "00",
+    "shelf_id": "HAER MD,21-TILG.V,1-",
+    "site": [
+      "pictures"
+    ],
+    "source_collection": "Historic American Engineering Record (Library of Congress)",
+    "source_created": "1970-01-01T00:00:00Z",
+    "source_modified": "2000-01-01T12:00:00Z",
+    "subject": [
+      "dredging",
+      "skipjacks",
+      "maritime"
+    ],
+    "subject_headings": [
+      "skipjacks",
+      "dredging",
+      "maritime",
+      "Maryland -- Talbot County -- Tilghman"
+    ],
+    "subjects": [
+      {
+        "dredging": "https://www.loc.gov/search/?fa=subject:dredging&fo=json"
+      },
+      {
+        "maritime": "https://www.loc.gov/search/?fa=subject:maritime&fo=json"
+      },
+      {
+        "skipjacks": "https://www.loc.gov/search/?fa=subject:skipjacks&fo=json"
+      }
+    ],
+    "thumb_gallery": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189c_150px.jpg?q=md1454.color.572189c&c=32&st=gallery",
+    "timestamp": "2025-01-13T20:37:11.457Z",
+    "title": "KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+    "type": [
+      "still image"
+    ],
+    "unrestricted": true,
+    "url": "https://www.loc.gov/item/md1454/"
+  },
+  "more_like_this": [
+    {
+      "access_restricted": false,
+      "aka": [
+        "https://www.loc.gov/pictures/item/md1203/",
+        "http://www.loc.gov/item/md1203/",
+        "http://www.loc.gov/pictures/item/md1203/",
+        "https://www.loc.gov/pictures/collection/hh/item/md1203/",
+        "http://www.loc.gov/pictures/collection/hh/item/md1203/",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1200/md1203/data/md1203data.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1200/md1203/data/md1203data.pdf",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1200/md1203/data/md1203cap.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1200/md1203/data/md1203cap.pdf",
+        "https://stage.loc.gov/pictures/search/?q=photograph: md1203&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://stage.loc.gov/pictures/search/?q=photograph: md1203&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "https://stage.loc.gov/pictures/search/?q=drawing: md1203&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://stage.loc.gov/pictures/search/?q=drawing: md1203&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov/resource/hhh.md1203data/",
+        "http://www.loc.gov/resource/hhh.md1203cap/",
+        "http://www.loc.gov/resource/hhh.md1203.sheet/",
+        "http://www.loc.gov/resource/hhh.md1203.photos/",
+        "http://www.loc.gov/resource/hhh.md1203.photos",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084841p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084842p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084843p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084844p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084845p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084846p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084847p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084848p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084849p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084850p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084851p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084852p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084853p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084854p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084855p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084856p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084857p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084858p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084859p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084860p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084861p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084862p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084863p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084864p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084865p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084866p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084867p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084868p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084869p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084870p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084871p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084872p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084873p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084874p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084875p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084876p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084877p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084878p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084879p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084880p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084881p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084882p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084883p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084884p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084885p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084886p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084887p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084888p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084889p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084890p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084891p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084892p",
+        "http://www.loc.gov/resource/hhh.md1203.photos.084893p",
+        "http://www.loc.gov/resource/hhh.md1203.sheet",
+        "http://www.loc.gov/resource/hhh.md1203.sheet.00001a",
+        "http://www.loc.gov/resource/hhh.md1203.sheet.00002a",
+        "http://www.loc.gov/resource/hhh.md1203.sheet.00003a",
+        "http://www.loc.gov/resource/hhh.md1203.sheet.00004a",
+        "http://www.loc.gov/resource/hhh.md1203.sheet.00005a",
+        "http://www.loc.gov/resource/hhh.md1203.sheet.00006a",
+        "http://www.loc.gov/resource/hhh.md1203.sheet.00007a",
+        "http://www.loc.gov/resource/hhh.md1203.sheet.00008a"
+      ],
+      "campaigns": [],
+      "contributor": [
+        "collier, ross e.",
+        "horseman, george washington",
+        "collier, eddie",
+        "maryland historical trust",
+        "anderson, richard k., jr",
+        "larrimore, john r.",
+        "dix, jefferson",
+        "harrell, mark",
+        "larrimore, elise b.",
+        "cummings, pauline l.",
+        "webster, moody",
+        "michels, alan s.",
+        "todd, william c.",
+        "historic american engineering record",
+        "chesapeake bay maritime museum",
+        "dodds, richard j.",
+        "cummings, john r.",
+        "koopman, stephen d.",
+        "mcbridge, robert",
+        "salarano, laura e.",
+        "olden, holly a."
+      ],
+      "description": [
+        "Photo(s): 53 | Measured Drawing(s): 8 | Data Page(s): 18 | Photo Caption Page(s): 3"
+      ],
+      "digitized": true,
+      "extract_timestamp": "2025-01-13T20:17:32.639Z",
+      "group": [
+        "hh-3",
+        "habshaer-group-3"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/md1203/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1200/md1203/photos/084841p_150px.jpg#h=120&w=150",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1200/md1203/photos/084841pr.jpg#h=512&w=640",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1200/md1203/photos/084841pv.jpg#h=819&w=1024"
+      ],
+      "index": 1,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "maryland",
+        "saint michaels",
+        "talbot county"
+      ],
+      "mime_type": [
+        "image/gif",
+        "application/pdf"
+      ],
+      "online_format": [
+        "image",
+        "pdf"
+      ],
+      "original_format": [
+        "photo, print, drawing"
+      ],
+      "partof": [
+        "prints and photographs division",
+        "historic american buildings survey/historic american engineering record/historic american landscapes survey",
+        "american memory"
+      ],
+      "score": 38.26536,
+      "shelf_id": "HAER MD,21-SAIMI,1-",
+      "site": [
+        "pictures"
+      ],
+      "subject": [
+        "dredging",
+        "skipjacks",
+        "maritime",
+        "naval museums"
+      ],
+      "timestamp": "2025-01-13T20:35:55.554Z",
+      "title": "Two-Sail Bateau E. C. COLLIER, Chesapeake Bay Maritime Museum, Mills Street, Saint Michaels, Talbot County, MD",
+      "type": [
+        "still image"
+      ],
+      "url": "https://www.loc.gov/item/md1203/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "https://www.loc.gov/pictures/item/md1860/",
+        "http://www.loc.gov/item/md1860/",
+        "http://www.loc.gov/pictures/item/md1860/",
+        "https://www.loc.gov/pictures/collection/hh/item/md1860/",
+        "http://www.loc.gov/pictures/collection/hh/item/md1860/",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1800/md1860/data/md1860data.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1800/md1860/data/md1860data.pdf",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1800/md1860/data/md1860cap.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1800/md1860/data/md1860cap.pdf",
+        "https://www.loc.gov:8081/pictures/search/?q=photograph: md1860&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov:8081/pictures/search/?q=photograph: md1860&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "https://www.loc.gov:8081/pictures/search/?q=drawing: md1860&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov:8081/pictures/search/?q=drawing: md1860&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov/resource/hhh.md1860data/",
+        "http://www.loc.gov/resource/hhh.md1860cap/",
+        "http://www.loc.gov/resource/hhh.md1860.sheet/",
+        "http://www.loc.gov/resource/hhh.md1860.sheet",
+        "http://www.loc.gov/resource/hhh.md1860.sheet.00001a",
+        "http://www.loc.gov/resource/hhh.md1860.sheet.00002a",
+        "http://www.loc.gov/resource/hhh.md1860.sheet.00003a"
+      ],
+      "campaigns": [],
+      "contributor": [
+        "historic american engineering record",
+        "chesapeake bay maritime museum",
+        "rice brothers",
+        "croteau, todd",
+        "christianson, justine"
+      ],
+      "description": [
+        "Photo(s): 5 | Measured Drawing(s): 3 | Photo Caption Page(s): 1"
+      ],
+      "digitized": true,
+      "extract_timestamp": "2025-01-13T20:18:10.004Z",
+      "group": [
+        "hh-3",
+        "habshaer-group-3"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/md1860/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1800/md1860/sheet/00001_150px.jpg#h=100&w=150",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1800/md1860/sheet/00001r.jpg#h=427&w=640",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1800/md1860/sheet/00001v.jpg#h=683&w=1024"
+      ],
+      "index": 2,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "maryland",
+        "saint michaels",
+        "talbot county"
+      ],
+      "mime_type": [
+        "image/gif",
+        "application/pdf"
+      ],
+      "online_format": [
+        "image",
+        "pdf"
+      ],
+      "original_format": [
+        "photo, print, drawing"
+      ],
+      "partof": [
+        "prints and photographs division",
+        "historic american buildings survey/historic american engineering record/historic american landscapes survey",
+        "american memory"
+      ],
+      "score": 30.742098,
+      "shelf_id": "HAER MD-171",
+      "site": [
+        "pictures"
+      ],
+      "subject": [
+        "boats",
+        "skipjacks",
+        "maritime"
+      ],
+      "timestamp": "2025-01-13T20:40:02.961Z",
+      "title": "Skipjack Caleb Jones, Chesapeake Bay Maritime Museum, Saint Michaels, Talbot County, MD",
+      "type": [
+        "still image"
+      ],
+      "url": "https://www.loc.gov/item/md1860/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "https://www.loc.gov/pictures/item/md1494/",
+        "http://www.loc.gov/item/md1494/",
+        "http://www.loc.gov/pictures/item/md1494/",
+        "https://www.loc.gov/pictures/collection/hh/item/md1494/",
+        "http://www.loc.gov/pictures/collection/hh/item/md1494/",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1400/md1494/data/md1494data.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1400/md1494/data/md1494data.pdf",
+        "https://www.loc.gov:8081/pictures/search/?q=drawing: md1494&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov:8081/pictures/search/?q=drawing: md1494&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov/resource/hhh.md1494data/",
+        "http://www.loc.gov/resource/hhh.md1494.sheet/",
+        "http://www.loc.gov/resource/hhh.md1494.sheet"
+      ],
+      "campaigns": [],
+      "contributor": [
+        "historic american engineering record"
+      ],
+      "description": [
+        "Measured Drawing(s): 1 | Data Page(s): 2"
+      ],
+      "digitized": true,
+      "extract_timestamp": "2025-01-13T20:18:14.288Z",
+      "group": [
+        "hh-3",
+        "habshaer-group-3"
+      ],
+      "hassegments": false,
+      "id": "http://www.loc.gov/item/md1494/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1494/sheet/00001_150px.jpg#h=100&w=150",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1494/sheet/00001r.jpg#h=426&w=640",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1494/sheet/00001v.jpg#h=681&w=1024"
+      ],
+      "index": 3,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "maryland",
+        "tilghman",
+        "talbot county"
+      ],
+      "mime_type": [
+        "image/gif",
+        "application/pdf"
+      ],
+      "online_format": [
+        "image",
+        "pdf"
+      ],
+      "original_format": [
+        "photo, print, drawing"
+      ],
+      "partof": [
+        "prints and photographs division",
+        "historic american buildings survey/historic american engineering record/historic american landscapes survey",
+        "american memory"
+      ],
+      "score": 28.808264,
+      "shelf_id": "HAER MD,21-TILG.V,1A-",
+      "site": [
+        "pictures"
+      ],
+      "subject": [
+        "maritime",
+        "yawl boats"
+      ],
+      "timestamp": "2025-01-13T20:37:59.548Z",
+      "title": "KATHRYN, Pushboat \"Yawl\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+      "type": [
+        "still image"
+      ],
+      "url": "https://www.loc.gov/item/md1494/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "https://www.loc.gov/pictures/item/md1071/",
+        "http://www.loc.gov/item/md1071/",
+        "http://www.loc.gov/pictures/item/md1071/",
+        "https://www.loc.gov/pictures/collection/hh/item/md1071/",
+        "http://www.loc.gov/pictures/collection/hh/item/md1071/",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1000/md1071/data/md1071data.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1000/md1071/data/md1071data.pdf",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1000/md1071/data/md1071cap.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1000/md1071/data/md1071cap.pdf",
+        "https://www.loc.gov:8081/pictures/search/?q=photograph: md1071&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov:8081/pictures/search/?q=photograph: md1071&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "https://www.loc.gov:8081/pictures/search/?q=drawing: md1071&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov:8081/pictures/search/?q=drawing: md1071&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov/resource/hhh.md1071data/",
+        "http://www.loc.gov/resource/hhh.md1071cap/",
+        "http://www.loc.gov/resource/hhh.md1071.sheet/",
+        "http://www.loc.gov/resource/hhh.md1071.photos/",
+        "http://www.loc.gov/resource/hhh.md1071.photos",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086987p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086988p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086989p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086990p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086991p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086992p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086993p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086994p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086995p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086996p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086997p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086998p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.086999p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087000p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087001p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087002p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087003p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087004p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087005p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087006p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087007p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087008p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087009p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087010p",
+        "http://www.loc.gov/resource/hhh.md1071.photos.087011p",
+        "http://www.loc.gov/resource/hhh.md1071.sheet",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00001a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00002a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00003a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00004a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00005a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00006a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00007a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00008a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00009a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00010a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00011a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00012a",
+        "http://www.loc.gov/resource/hhh.md1071.sheet.00013a"
+      ],
+      "campaigns": [],
+      "contributor": [
+        "marsh, james t",
+        "historic american engineering record"
+      ],
+      "description": [
+        "Photo(s): 25 | Measured Drawing(s): 13 | Data Page(s): 11 | Photo Caption Page(s): 2"
+      ],
+      "digitized": true,
+      "extract_timestamp": "2025-01-13T20:18:10.603Z",
+      "group": [
+        "hh-3",
+        "habshaer-group-3"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/md1071/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1000/md1071/photos/086987p_150px.jpg#h=150&w=107",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1000/md1071/photos/086987pr.jpg#h=640&w=459",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1000/md1071/photos/086987pv.jpg#h=1024&w=734"
+      ],
+      "index": 4,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "solomons",
+        "maryland",
+        "calvert county"
+      ],
+      "mime_type": [
+        "image/gif",
+        "application/pdf"
+      ],
+      "online_format": [
+        "image",
+        "pdf"
+      ],
+      "original_format": [
+        "photo, print, drawing"
+      ],
+      "partof": [
+        "prints and photographs division",
+        "historic american buildings survey/historic american engineering record/historic american landscapes survey",
+        "american memory"
+      ],
+      "score": 24.488403,
+      "shelf_id": "HAER MD,5-SOLOM,1-",
+      "site": [
+        "pictures"
+      ],
+      "subject": [
+        "bugeyes",
+        "dredging",
+        "maritime"
+      ],
+      "timestamp": "2025-01-13T20:35:18.152Z",
+      "title": "Bugeye \"Louise Travers\", Intersection of Routes 2 & 4, Solomons, Calvert County, MD",
+      "type": [
+        "still image"
+      ],
+      "url": "https://www.loc.gov/item/md1071/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "https://www.loc.gov/pictures/item/md1396/",
+        "http://www.loc.gov/item/md1396/",
+        "http://www.loc.gov/pictures/item/md1396/",
+        "https://www.loc.gov/pictures/collection/hh/item/md1396/",
+        "http://www.loc.gov/pictures/collection/hh/item/md1396/",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1300/md1396/data/md1396data.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1300/md1396/data/md1396data.pdf",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1300/md1396/data/md1396cap.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1300/md1396/data/md1396cap.pdf",
+        "https://stage.loc.gov/pictures/search/?q=photograph: md1396&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://stage.loc.gov/pictures/search/?q=photograph: md1396&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov/resource/hhh.md1396data/",
+        "http://www.loc.gov/resource/hhh.md1396cap/",
+        "http://www.loc.gov/resource/hhh.md1396.photos/",
+        "http://www.loc.gov/resource/hhh.md1396.photos",
+        "http://www.loc.gov/resource/hhh.md1396.photos.384543p",
+        "http://www.loc.gov/resource/hhh.md1396.photos.384544p",
+        "http://www.loc.gov/resource/hhh.md1396.photos.384545p",
+        "http://www.loc.gov/resource/hhh.md1396.photos.384546p"
+      ],
+      "campaigns": [],
+      "contributor": [
+        "croteau, todd a.",
+        "maryland state highway administration",
+        "historic american engineering record",
+        "chesapeake bay maritime museum",
+        "lowe, jet",
+        "maryland state roads commission"
+      ],
+      "description": [
+        "Photo(s): 4 | Data Page(s): 3 | Photo Caption Page(s): 1"
+      ],
+      "digitized": true,
+      "extract_timestamp": "2025-01-13T20:17:37.199Z",
+      "group": [
+        "hh-3",
+        "habshaer-group-3"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/md1396/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1300/md1396/photos/384543p_150px.jpg#h=108&w=150",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1300/md1396/photos/384543pr.jpg#h=462&w=640",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1300/md1396/photos/384543pv.jpg#h=739&w=1024"
+      ],
+      "index": 5,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "maryland",
+        "tilghman",
+        "talbot county"
+      ],
+      "mime_type": [
+        "image/gif",
+        "application/pdf"
+      ],
+      "online_format": [
+        "image",
+        "pdf"
+      ],
+      "original_format": [
+        "photo, print, drawing"
+      ],
+      "partof": [
+        "prints and photographs division",
+        "historic american buildings survey/historic american engineering record/historic american landscapes survey",
+        "american memory"
+      ],
+      "score": 23.290258,
+      "shelf_id": "HAER MD,21-TILG.V,2-",
+      "site": [
+        "pictures"
+      ],
+      "subject": [
+        "bascule bridges",
+        "heel trunnion bridges",
+        "transportation"
+      ],
+      "timestamp": "2025-01-13T20:37:11.457Z",
+      "title": "Tilghman Island Bridge, Spanning Knapp's Narrows, Tilghman, Talbot County, MD",
+      "type": [
+        "still image"
+      ],
+      "url": "https://www.loc.gov/item/md1396/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "https://www.loc.gov/pictures/item/md1943/",
+        "http://www.loc.gov/item/md1943/",
+        "http://www.loc.gov/pictures/item/md1943/",
+        "https://www.loc.gov/pictures/collection/hh/item/md1943/",
+        "http://www.loc.gov/pictures/collection/hh/item/md1943/",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1900/md1943/data/md1943data.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1900/md1943/data/md1943data.pdf",
+        "https://cdn.loc.gov/master/pnp/habshaer/md/md1900/md1943/data/md1943cap.pdf",
+        "http://cdn.loc.gov/master/pnp/habshaer/md/md1900/md1943/data/md1943cap.pdf",
+        "https://stage.loc.gov/pictures/search/?q=photograph: md1943&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://stage.loc.gov/pictures/search/?q=photograph: md1943&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "https://stage.loc.gov/pictures/search/?q=drawing: md1943&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://stage.loc.gov/pictures/search/?q=drawing: md1943&fi=number&op=phrase&va=exact&co =hh&st=gallery&sg = true",
+        "http://www.loc.gov/resource/hhh.md1943data/",
+        "http://www.loc.gov/resource/hhh.md1943cap/",
+        "http://www.loc.gov/resource/hhh.md1943.sheet/",
+        "http://www.loc.gov/resource/hhh.md1943.photos/",
+        "http://www.loc.gov/resource/hhh.md1943.photos",
+        "http://www.loc.gov/resource/hhh.md1943.color.397340c",
+        "http://www.loc.gov/resource/hhh.md1943.color.397341c",
+        "http://www.loc.gov/resource/hhh.md1943.color.397342c",
+        "http://www.loc.gov/resource/hhh.md1943.sheet",
+        "http://www.loc.gov/resource/hhh.md1943.sheet.00001a",
+        "http://www.loc.gov/resource/hhh.md1943.sheet.00002a"
+      ],
+      "campaigns": [],
+      "contributor": [
+        "croteau, todd a.",
+        "stranieri, marcella",
+        "mcpartland, mary",
+        "historic american engineering record",
+        "christianson, justine"
+      ],
+      "description": [
+        "Photo(s): 6 | Color Transparencies: 3 | Measured Drawing(s): 2 | Photo Caption Page(s): 2"
+      ],
+      "digitized": true,
+      "extract_timestamp": "2025-01-13T20:17:36.500Z",
+      "group": [
+        "hh-3",
+        "habshaer-group-3"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/md1943/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1900/md1943/color/397340c_150px.jpg#h=120&w=150",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1900/md1943/color/397340cr.jpg#h=511&w=640",
+        "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1900/md1943/color/397340cv.jpg#h=818&w=1024"
+      ],
+      "index": 6,
+      "language": [
+        "english"
+      ],
+      "latlong": [
+        38.788417,
+        -76.223549
+      ],
+      "location": [
+        "maryland",
+        "saint michaels",
+        "talbot county"
+      ],
+      "location_str": "",
+      "lonlat": [
+        -76.223549,
+        38.788417
+      ],
+      "mime_type": [
+        "image/gif",
+        "application/pdf"
+      ],
+      "online_format": [
+        "image",
+        "pdf"
+      ],
+      "original_format": [
+        "photo, print, drawing"
+      ],
+      "partof": [
+        "prints and photographs division",
+        "historic american buildings survey/historic american engineering record/historic american landscapes survey",
+        "american memory"
+      ],
+      "score": 22.324774,
+      "shelf_id": "HAER MD-182",
+      "site": [
+        "pictures"
+      ],
+      "subject": [
+        "tugboats",
+        "maritime",
+        "towing",
+        "ships",
+        "shipyards"
+      ],
+      "timestamp": "2025-01-13T20:40:33.137Z",
+      "title": "Tug Delaware, Chesapeake Bay Maritime Museum, Saint Michaels, Talbot County, MD",
+      "type": [
+        "still image"
+      ],
+      "url": "https://www.loc.gov/item/md1943/"
+    }
+  ],
+  "options": {
+    "access_group": [
+      ""
+    ],
+    "access_group_raw": "",
+    "all": null,
+    "api_version": "1",
+    "app_context": null,
+    "application_shim": null,
+    "application_version": "$Revision$",
+    "attribute": null,
+    "attribute!": null,
+    "attribute_map": null,
+    "cache_tags": [
+      "hh-3",
+      "habshaer-group-3",
+      "catalog-split-04",
+      "catalog",
+      "ll/llserialset/mono",
+      "main-catalog-split-04",
+      "congressional-serial-set-document-level",
+      "sanborn"
+    ],
+    "callback": null,
+    "clip": null,
+    "clip_image_width": null,
+    "clip_rotation": null,
+    "content_filter": null,
+    "content_replacement": "",
+    "count": null,
+    "dates": null,
+    "default_count": 25,
+    "delimiter": null,
+    "digital_id": null,
+    "display_level": null,
+    "distance": null,
+    "downloadOption": null,
+    "duration": 6.689841985702515,
+    "embed": [],
+    "embed!": [],
+    "error_response_status": null,
+    "excludeTerms": null,
+    "facetLimits": "",
+    "facetPrefix": null,
+    "facet_count": null,
+    "facet_style": null,
+    "field": null,
+    "format": "json",
+    "host": "www.loc.gov",
+    "ical": false,
+    "id": "md1454/",
+    "iiif": false,
+    "index": null,
+    "inputEncoding": "UTF-8",
+    "item": null,
+    "items": null,
+    "keys": null,
+    "language": null,
+    "latlong": null,
+    "method": "GET",
+    "newSearch": null,
+    "new_clip_url": false,
+    "onsite": false,
+    "operator": null,
+    "outputEncoding": "UTF-8",
+    "page_campaigns": [],
+    "path_info": "/item/md1454/",
+    "port": "443",
+    "proxypath": null,
+    "query_string": "fo=json",
+    "redirect_proxy": false,
+    "redirect_to_item": null,
+    "referer": "",
+    "region": "",
+    "release_id": 123456789,
+    "request_host": "www.loc.gov",
+    "request_params": {
+      "fo": [
+        "json"
+      ]
+    },
+    "request_url": "https://www.loc.gov/item/md1454/?fo=json",
+    "resource": "",
+    "resource_sequence": null,
+    "scheme": "https",
+    "searchIn": null,
+    "searchTerms": "",
+    "segments": null,
+    "shards": [
+      "00"
+    ],
+    "site_id": null,
+    "site_type": null,
+    "solrQuery": "",
+    "sortBy": null,
+    "sortOrder": null,
+    "startPage": null,
+    "style": null,
+    "suggested": null,
+    "target": null,
+    "template": "layouts/item/layout",
+    "timestamp": 1794271112.9197927,
+    "tz_aware": null,
+    "unionFacets": "",
+    "webcast_permalink": null
+  },
+  "related": {
+    "group_record": null,
+    "lot_link": null,
+    "neighbors": "https://www.loc.gov/pictures/related/?&co=hh&pk=md1454&st=gallery&sb=call_number#focus",
+    "survey_link": null
+  },
+  "related_items": [
+    {
+      "access_restricted": false,
+      "aka": [
+        "http://lccn.loc.gov/2024875602",
+        "http://www.loc.gov/item/2024875602/",
+        "https://search.catalog.loc.gov/instances/c52262f3-fc41-4b86-baa4-c7f755c18085",
+        "https://hdl.loc.gov/loc.law/llserialsetce.06806_00_00-019-1508-0000",
+        "http://www.loc.gov/resource/llserialsetce.06806_00_00-019-1508-0000/"
+      ],
+      "campaigns": [],
+      "contributor": [
+        "united states. war department",
+        "united states congress. house",
+        "united states. army. corps of engineers",
+        "united states. government publishing office",
+        "beach, lansing h. (lansing hoskins)",
+        "united states. congress. house",
+        "united states. war department. engineer department"
+      ],
+      "date": "1915",
+      "dates": [
+        "1915"
+      ],
+      "digitized": true,
+      "extract_timestamp": "2026-02-28T22:03:41.848Z",
+      "group": [
+        "catalog-split-04",
+        "catalog",
+        "ll/llserialset/mono",
+        "main-catalog-split-04",
+        "congressional-serial-set-document-level"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/2024875602/",
+      "image_url": [
+        "https://tile.loc.gov/image-services/iiif/service:ll:llserialsetce:06:80:6_:00:_0:0:06806_00_00:06806_00_00-019-1508-0000:0354/full/pct:12.5/0/default.jpg",
+        "https://tile.loc.gov/image-services/iiif/service:ll:llserialsetce:06:80:6_:00:_0:0:06806_00_00:06806_00_00-019-1508-0000:0354/full/pct:12.5/0/default.jpg#h=432&w=252",
+        "https://tile.loc.gov/image-services/iiif/service:ll:llserialsetce:06:80:6_:00:_0:0:06806_00_00:06806_00_00-019-1508-0000:0354/full/pct:25/0/default.jpg#h=864&w=505",
+        "https://tile.loc.gov/image-services/iiif/service:ll:llserialsetce:06:80:6_:00:_0:0:06806_00_00:06806_00_00-019-1508-0000:0354/full/pct:50/0/default.jpg#h=1728&w=1011",
+        "https://tile.loc.gov/image-services/iiif/service:ll:llserialsetce:06:80:6_:00:_0:0:06806_00_00:06806_00_00-019-1508-0000:0354/full/pct:100/0/default.jpg#h=3456&w=2022"
+      ],
+      "index": 1,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "maryland",
+        "blackwalnut cove",
+        "talbot county"
+      ],
+      "mime_type": [
+        "application/pdf",
+        "text/plain",
+        "image/jpeg",
+        "image/jp2"
+      ],
+      "number": [
+        "2024875602",
+        "2026-02-18t15:30:30.500000",
+        "online resource"
+      ],
+      "online_format": [
+        "pdf",
+        "online text",
+        "image"
+      ],
+      "original_format": [
+        "book"
+      ],
+      "other_title": [
+        "Cited as: H. Doc. 63-1508"
+      ],
+      "partof": [
+        "63th congress, 3rd session",
+        "united states congressional serial set (bound house and senate documents and reports)",
+        "house document",
+        "catalog",
+        "united states congressional serial set: serial no. 6806",
+        "law library of congress"
+      ],
+      "score": 14.300104,
+      "shelf_id": "KF12",
+      "site": [
+        "catalog"
+      ],
+      "subject": [
+        "government publication",
+        "harbors",
+        "navigation",
+        "cost",
+        "blackwalnut cove (talbot county, md.)",
+        "legislative materials",
+        "piers",
+        "hydrographic surveying",
+        "maryland",
+        "dredging",
+        "channels (hydraulic engineering)"
+      ],
+      "timestamp": "2026-03-03T23:11:23.165Z",
+      "title": "Black Walnut Harbor, Md. Letter from the Secretary of War, transmitting, with a letter from the Chief of Engineers, reports on preliminary examination and survey of Black Walnut Harbor, Md. January 20, 1915. -- Referred to the Committee on Rivers and Harbors and ordered to be printed, with illustration",
+      "type": [
+        "text"
+      ],
+      "url": "https://www.loc.gov/item/2024875602/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "http://www.loc.gov/item/sanborn03597_001/",
+        "https://hdl.loc.gov/loc.gmd/g3844em.g3844em_g035971885",
+        "http://www.loc.gov/resource/g3844em.g3844em_g035971885/"
+      ],
+      "campaigns": [],
+      "date": "1885-08",
+      "dates": [
+        "1885-08"
+      ],
+      "description": [
+        "Aug 1885. 4 sheet(s)."
+      ],
+      "digitized": true,
+      "extract_timestamp": "2024-10-08T18:08:01.385Z",
+      "group": [
+        "sanborn"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/sanborn03597_001/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g3844em_g035971885/03597_1885-0001.gif",
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g3844em_g035971885/03597_1885-0001.gif#h=150&w=126",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g3844em_g035971885:03597_1885-0001/full/pct:12.5/0/default.jpg#h=956&w=806",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g3844em_g035971885:03597_1885-0001/full/pct:25/0/default.jpg#h=1912&w=1612"
+      ],
+      "index": 2,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "easton",
+        "maryland",
+        "united states",
+        "talbot county"
+      ],
+      "mime_type": [
+        "image/gif",
+        "image/jpg",
+        "image/jp2"
+      ],
+      "number": [
+        "2018-04-24t09:37:54"
+      ],
+      "online_format": [
+        "image"
+      ],
+      "original_format": [
+        "map"
+      ],
+      "partof": [
+        "sanborn maps",
+        "geography and map division",
+        "american memory"
+      ],
+      "score": 12.418222,
+      "shelf_id": "http://www.loc.gov/item/sanborn03597_001/",
+      "site": [
+        "ammem"
+      ],
+      "timestamp": "2024-10-08T18:59:47.190Z",
+      "title": "Sanborn Fire Insurance Map from Easton, Talbot County, Maryland.",
+      "type": [
+        "cartographic"
+      ],
+      "url": "https://www.loc.gov/item/sanborn03597_001/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "http://www.loc.gov/item/sanborn03597_002/",
+        "https://hdl.loc.gov/loc.gmd/g3844em.g3844em_g035971891",
+        "http://www.loc.gov/resource/g3844em.g3844em_g035971891/"
+      ],
+      "campaigns": [],
+      "date": "1891-04",
+      "dates": [
+        "1891-04"
+      ],
+      "description": [
+        "Apr 1891. 12 sheet(s). Other places as they appear on original: Saint Michaels, Oxford, Trappe."
+      ],
+      "digitized": true,
+      "extract_timestamp": "2024-10-08T18:08:01.385Z",
+      "group": [
+        "sanborn"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/sanborn03597_002/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g3844em_g035971891/03597_1891-0001.gif",
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g3844em_g035971891/03597_1891-0001.gif#h=150&w=126",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g3844em_g035971891:03597_1891-0001/full/pct:12.5/0/default.jpg#h=956&w=806",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g3844em_g035971891:03597_1891-0001/full/pct:25/0/default.jpg#h=1912&w=1612"
+      ],
+      "index": 3,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "united states",
+        "oxford",
+        "trappe",
+        "talbot county",
+        "easton",
+        "maryland",
+        "saint michaels"
+      ],
+      "mime_type": [
+        "image/gif",
+        "image/jpg",
+        "image/jp2"
+      ],
+      "number": [
+        "2024-01-04t13:16:48"
+      ],
+      "online_format": [
+        "image"
+      ],
+      "original_format": [
+        "map"
+      ],
+      "partof": [
+        "sanborn maps",
+        "geography and map division",
+        "american memory"
+      ],
+      "score": 12.418222,
+      "shelf_id": "http://www.loc.gov/item/sanborn03597_002/",
+      "site": [
+        "ammem"
+      ],
+      "timestamp": "2024-10-08T18:59:47.190Z",
+      "title": "Sanborn Fire Insurance Map from Easton, Talbot County, Maryland.",
+      "type": [
+        "cartographic"
+      ],
+      "url": "https://www.loc.gov/item/sanborn03597_002/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "http://www.loc.gov/item/sanborn03597_003/",
+        "https://hdl.loc.gov/loc.gmd/g3844em.g3844em_g035971896",
+        "http://www.loc.gov/resource/g3844em.g3844em_g035971896/"
+      ],
+      "campaigns": [],
+      "date": "1896-09",
+      "dates": [
+        "1896-09"
+      ],
+      "description": [
+        "Sep 1896. 13 sheet(s). Other places as they appear on original: Saint Michaels, Oxford, Trappe."
+      ],
+      "digitized": true,
+      "extract_timestamp": "2024-10-08T18:08:01.385Z",
+      "group": [
+        "sanborn"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/sanborn03597_003/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g3844em_g035971896/03597_1896-0001.gif",
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g3844em_g035971896/03597_1896-0001.gif#h=150&w=126",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g3844em_g035971896:03597_1896-0001/full/pct:12.5/0/default.jpg#h=956&w=806",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g3844em_g035971896:03597_1896-0001/full/pct:25/0/default.jpg#h=1912&w=1612"
+      ],
+      "index": 4,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "united states",
+        "oxford",
+        "trappe",
+        "talbot county",
+        "easton",
+        "maryland",
+        "saint michaels"
+      ],
+      "mime_type": [
+        "image/gif",
+        "image/jpg",
+        "image/jp2"
+      ],
+      "number": [
+        "2024-01-04t13:16:48"
+      ],
+      "online_format": [
+        "image"
+      ],
+      "original_format": [
+        "map"
+      ],
+      "partof": [
+        "sanborn maps",
+        "geography and map division",
+        "american memory"
+      ],
+      "score": 12.418222,
+      "shelf_id": "http://www.loc.gov/item/sanborn03597_003/",
+      "site": [
+        "ammem"
+      ],
+      "timestamp": "2024-10-08T18:59:47.190Z",
+      "title": "Sanborn Fire Insurance Map from Easton, Talbot County, Maryland.",
+      "type": [
+        "cartographic"
+      ],
+      "url": "https://www.loc.gov/item/sanborn03597_003/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "http://www.loc.gov/item/sanborn03597_004/",
+        "https://hdl.loc.gov/loc.gmd/g3844em.03597004",
+        "http://www.loc.gov/resource/g3844em.03597004/"
+      ],
+      "campaigns": [],
+      "date": "1901-04",
+      "dates": [
+        "1901-04"
+      ],
+      "description": [
+        "Apr 1901. 17 sheet(s). Other places as they appear on original: Saint Michaels, Oxford, Trappe."
+      ],
+      "digitized": true,
+      "extract_timestamp": "2024-10-08T18:08:01.385Z",
+      "group": [
+        "sanborn"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/sanborn03597_004/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g03597004/sb000010.gif",
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g03597004/sb000010.gif#h=177&w=150",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g03597004:sb000010/full/pct:12.5/0/default.jpg#h=1273&w=1079",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g03597004:sb000010/full/pct:25/0/default.jpg#h=2546&w=2159"
+      ],
+      "index": 5,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "united states",
+        "oxford",
+        "trappe",
+        "talbot county",
+        "easton",
+        "maryland",
+        "saint michaels"
+      ],
+      "mime_type": [
+        "image/gif",
+        "image/jpg",
+        "image/jp2"
+      ],
+      "number": [
+        "2024-01-04t13:16:48"
+      ],
+      "online_format": [
+        "image"
+      ],
+      "original_format": [
+        "map"
+      ],
+      "partof": [
+        "sanborn maps",
+        "geography and map division",
+        "american memory"
+      ],
+      "score": 12.418222,
+      "shelf_id": "http://www.loc.gov/item/sanborn03597_004/",
+      "site": [
+        "ammem"
+      ],
+      "timestamp": "2024-10-08T18:59:47.190Z",
+      "title": "Sanborn Fire Insurance Map from Easton, Talbot County, Maryland.",
+      "type": [
+        "cartographic"
+      ],
+      "url": "https://www.loc.gov/item/sanborn03597_004/"
+    },
+    {
+      "access_restricted": false,
+      "aka": [
+        "http://www.loc.gov/item/sanborn03597_005/",
+        "https://hdl.loc.gov/loc.gmd/g3844em.03597005",
+        "http://www.loc.gov/resource/g3844em.03597005/"
+      ],
+      "campaigns": [],
+      "date": "1907-09",
+      "dates": [
+        "1907-09"
+      ],
+      "description": [
+        "Sep 1907. 19 sheet(s). Other places as they appear on original: Saint Michaels, Oxford, Trappe."
+      ],
+      "digitized": true,
+      "extract_timestamp": "2024-10-08T18:08:01.385Z",
+      "group": [
+        "sanborn"
+      ],
+      "hassegments": true,
+      "id": "http://www.loc.gov/item/sanborn03597_005/",
+      "image_url": [
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g03597005/sb000010.gif",
+        "https://tile.loc.gov/storage-services/service/gmd/gmd384m/g3844m/g3844em/g03597005/sb000010.gif#h=178&w=150",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g03597005:sb000010/full/pct:12.5/0/default.jpg#h=1277&w=1076",
+        "https://tile.loc.gov/image-services/iiif/service:gmd:gmd384m:g3844m:g3844em:g03597005:sb000010/full/pct:25/0/default.jpg#h=2554&w=2152"
+      ],
+      "index": 6,
+      "language": [
+        "english"
+      ],
+      "location": [
+        "united states",
+        "oxford",
+        "trappe",
+        "talbot county",
+        "easton",
+        "maryland",
+        "saint michaels"
+      ],
+      "mime_type": [
+        "image/gif",
+        "image/jpg",
+        "image/jp2"
+      ],
+      "number": [
+        "2024-01-04t13:16:48"
+      ],
+      "online_format": [
+        "image"
+      ],
+      "original_format": [
+        "map"
+      ],
+      "partof": [
+        "sanborn maps",
+        "geography and map division",
+        "american memory"
+      ],
+      "score": 12.418222,
+      "shelf_id": "http://www.loc.gov/item/sanborn03597_005/",
+      "site": [
+        "ammem"
+      ],
+      "timestamp": "2024-10-08T18:59:47.190Z",
+      "title": "Sanborn Fire Insurance Map from Easton, Talbot County, Maryland.",
+      "type": [
+        "cartographic"
+      ],
+      "url": "https://www.loc.gov/item/sanborn03597_005/"
+    }
+  ],
+  "reproductions": "<h3>If Digital Images Are Displaying</h3>\n\n<p>You can download online images yourself.  Alternatively, you can purchase copies of various types through Library of Congress Duplication Services.</p>\n\n<p>HABS/HAER/HALS materials have generally been scanned at high resolution that is suitable for most publication purposes (see <a href=\"/ppoc/hh/resources/digitizing.html\">Digitizing the Collection</a> for further details about the digital images).</p>\n\n<ul>\n<p>\n<li><strong>Photographs--</strong>All photographs are printed from digital files to preserve the fragile originals.\n</li>\n<ul>\n<li>Make note of the Call Number and Item Number that appear under the photograph in the multiple-image display (e.g., HAER, NY,52-BRIG,4-2).\n</li>\n<li>If possible, include a printout of the photograph.\n</li>\n</ul>\n</p>\n\n<p>\n<li><strong>Drawings--</strong>All drawings are printed from digital files to preserve the fragile originals.\n</li>\n<ul>\n<li>Make note of the Survey Number (e.g., HAER NY - 143) and Sheet Number (e.g., &quot;Sheet 1 of 4&quot;), which appear on the edge of the drawing. (NOTE: These numbers are visible in the Tiff &quot;Reference Image&quot; display.)\n</li>\n<li>If possible, include a printout of the drawing. \n</li>\n</ul>\n</p>\n\n<p>\n<li><strong>Data Pages</strong>\n</li>\n<ul>\n<li>Make note of the Call Number in the catalog record.\n</li>\n</ul>\n</p>\n</ul>\n\n<h3>If Digital Images Are Not Displaying</h3>\n\n<p>In the rare case that a digital image for HABS/HAER/HALS documentation is not displaying online, select images for reproduction through one of these methods:</p>\n<ul>\n<p>\n<li>Visit the Prints & Photographs Reading Room and request to view the group (general information about service in the reading room is available at: <a href=\"https://www.loc.gov/rr/print/info/001_ref.html\">https://www.loc.gov/rr/print/info/001_ref.html</a>). It is best to contact reference staff in advance (see: <a href=\"https://www.loc.gov/rr/print/address.html\">https://www.loc.gov/rr/print/address.html</a>) to make sure the material is on site.  OR\n</li>\n</p>\n\n<p>\n<li>P&amp;P reading room staff can provide up to 15 quick copies of items per calendar year (many original items in the holdings are too old or fragile to make such copies, but generally HABS/HAER/HALS materials are in good enough condition to be placed on photocopy machines). For assistance, see our <a href=\"https://www.loc.gov/rr/askalib/ask-print.html\">Ask a Librarian</a> page OR\n</li>\n</p>\n\n<p>\n<li>Hire a freelance researcher to do further selection for you (a list of researchers in available at: <a href=\"https://www.loc.gov/rr/print/resource/013_pic.html\">https://www.loc.gov/rr/print/resource/013_pic.html</a>).\n</li>\n</p>\n\n<p>\n<li>You can purchase copies of various types, including quick copies, through Library of Congress Duplication Services (price lists, contact information, and order forms for Library of Congress Duplication Services are available on the <a href=\"https://www.loc.gov/duplicationservices/\">Duplication Services Web site</a>):\n</li>\n</p>\n\n<ul>\n<li>Make note of the Call Number listed above. \n</li>\n<li>Look at the Medium field above. If it lists more than one item: \n</li>\n<ul>\n<li>The entire group can be ordered as photocopies or high-quality copies. \n</li>\n<li>All the items in a particular medium (e.g., all drawings, all photographs) can be ordered as photocopies or high-quality copies.   \n</li>\n</ul>\n</ul>\n</ul>",
+  "resources": [
+    {
+      "caption": "Photos from Survey HAER MD-117 ",
+      "files": [
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 52683464,
+            "type": "colorphoto",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/color/572189cu.tif",
+            "width": 0
+          },
+          {
+            "height": 107,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4427,
+            "type": "colorphoto",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189c_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 457,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 27989,
+            "type": "colorphoto",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189cr.jpg",
+            "width": 640
+          },
+          {
+            "height": 731,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 219535,
+            "type": "colorphoto",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189cv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.color.572189c",
+            "mimetype": "application/json",
+            "title": "STARBOARD PROFILE WITH DREDGE BASKET BEING RAISED - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17767488,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185739pu.tif",
+            "width": 0
+          },
+          {
+            "height": 107,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 3405,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185739p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 455,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 28561,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185739pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 728,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 74272,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185739pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185739p",
+            "mimetype": "application/json",
+            "title": "1.  STARBOARD PROFILE WITH DREDGE BASKET BEING RAISED-NOTE 'LAZYJACK' RIGGING TO GUIDE SAILS DOWN TO BOOM AND CLUB (REQUIRES LESS CREW) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18182536,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185740pu.tif",
+            "width": 0
+          },
+          {
+            "height": 109,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 3080,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185740p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 465,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 27529,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185740pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 745,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 73153,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185740pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185740p",
+            "mimetype": "application/json",
+            "title": "2.  3/4 VIEW OF STARBOARD SIDE FROM STERN WITH PUSH BOAT - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18027520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185741pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 3016,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185741p_150px.jpg",
+            "width": 108
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 23640,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185741pr.jpg",
+            "width": 461
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 63045,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185741pv.jpg",
+            "width": 738
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185741p",
+            "mimetype": "application/json",
+            "title": "3.  SIMILAR VIEW IN VERTICAL FORMAT - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17997512,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185742pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 2847,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185742p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 461,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 24066,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185742pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 737,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 66287,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185742pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185742p",
+            "mimetype": "application/json",
+            "title": "4.  3/4 VIEW OF STARBOARD SIDE FROM BOW - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18042520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185743pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 3400,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185743p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 462,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 29606,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185743pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 739,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 78484,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185743pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185743p",
+            "mimetype": "application/json",
+            "title": "5.  PORT PROFILE WITH PUSH BOAT - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18102528,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185744pu.tif",
+            "width": 0
+          },
+          {
+            "height": 109,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 3454,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185744p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 463,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 32300,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185744pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 741,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 80965,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185744pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185744p",
+            "mimetype": "application/json",
+            "title": "6.  PORT PROFILE WITH PUSH BOAT - CLOSER VIEW - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17927504,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185745pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5534,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185745p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 459,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 48071,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185745pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 734,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 110341,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185745pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185745p",
+            "mimetype": "application/json",
+            "title": "7.  DETAIL OF PUSH BOAT AND TACKLE FROM STERN RAIL - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18057520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185746pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 3978,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185746p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 462,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 36200,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185746pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 740,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 88715,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185746pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185746p",
+            "mimetype": "application/json",
+            "title": "8.  STARBOARD PROFILE WITH DREDGE BASKET LINE OUT - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17847496,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185747pu.tif",
+            "width": 0
+          },
+          {
+            "height": 107,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 6196,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185747p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 457,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 58425,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185747pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 731,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 134359,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185747pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185747p",
+            "mimetype": "application/json",
+            "title": "9.  DREDGE ARRANGEMENT ALLOWS FOR TWO DREDGE BASKETS TO BE OUT AT ALTERNATING TIMES. WHILE STARBOARD IS HAULED IN, PORT IS RELEASED OUT TO DREDGE. - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18077528,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185748pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5892,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185748p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 463,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 58520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185748pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 740,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 137037,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185748pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185748p",
+            "mimetype": "application/json",
+            "title": "10.  PORT DREDGE BASKET BEING HAULED WITH OYSTERS - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17877520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185749pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5432,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185749p_150px.jpg",
+            "width": 107
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 54155,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185749pr.jpg",
+            "width": 458
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 125374,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185749pv.jpg",
+            "width": 732
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185749p",
+            "mimetype": "application/json",
+            "title": "11.  STARBOARD DREDGE BASKET BEING HAULED WITH OYSTERS - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17927520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185750pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5976,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185750p_150px.jpg",
+            "width": 108
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 60150,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185750pr.jpg",
+            "width": 459
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 136787,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185750pv.jpg",
+            "width": 734
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185750p",
+            "mimetype": "application/json",
+            "title": "12.  PORT BASKET EMPTIED AND OYSTERS HAND SORTED - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17902520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185751pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4789,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185751p_150px.jpg",
+            "width": 107
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 46771,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185751pr.jpg",
+            "width": 458
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 109500,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185751pv.jpg",
+            "width": 733
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185751p",
+            "mimetype": "application/json",
+            "title": "13.  STARBOARD BASKET EMPTIED AND OYSTERS HAND SORTED - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17882520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185752pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5280,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185752p_150px.jpg",
+            "width": 107
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 58075,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185752pr.jpg",
+            "width": 458
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 139706,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185752pv.jpg",
+            "width": 732
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185752p",
+            "mimetype": "application/json",
+            "title": "14.  DETAIL OF DREDGE WINDER MACHINERY AND BASKET - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18157536,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185753pu.tif",
+            "width": 0
+          },
+          {
+            "height": 109,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5887,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185753p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 465,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 66496,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185753pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 744,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 157745,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185753pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185753p",
+            "mimetype": "application/json",
+            "title": "15.  DETAIL OF DREDGE BASKET WITH OYSTERS - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18212656,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185754pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5167,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185754p_150px.jpg",
+            "width": 109
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 50378,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185754pr.jpg",
+            "width": 466
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 120083,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185754pv.jpg",
+            "width": 746
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185754p",
+            "mimetype": "application/json",
+            "title": "16.  DETAIL OF DREDGE BASKET WITH HANDLING RINGS - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17952520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185755pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4746,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185755p_150px.jpg",
+            "width": 108
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 41864,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185755pr.jpg",
+            "width": 460
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 96514,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185755pv.jpg",
+            "width": 735
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185755p",
+            "mimetype": "application/json",
+            "title": "17.  DECK VIEW FROM END OF BOWSPRIT LOOKING ASTERN - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18017520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185756pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4870,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185756p_150px.jpg",
+            "width": 108
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 40204,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185756pr.jpg",
+            "width": 461
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 91986,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185756pv.jpg",
+            "width": 738
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185756p",
+            "mimetype": "application/json",
+            "title": "18.  DECK VIEW LOOKING FORWARD WITH MAST, RIGGING AND BOWSPRIT DETAILS - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17917504,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185757pu.tif",
+            "width": 0
+          },
+          {
+            "height": 107,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5209,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185757p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 459,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 41717,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185757pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 734,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 95424,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185757pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185757p",
+            "mimetype": "application/json",
+            "title": "19.  DECK VIEW LOOKING FORWARD WITH MAST, RIGGING AND BOWSPRIT DETAILS - HATCH COVER REMOVED TO SHOW CENTERBOARD TRUNK - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18017520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185758pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4953,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185758p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 461,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 42737,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185758pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 738,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 97763,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185758pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185758p",
+            "mimetype": "application/json",
+            "title": "20.  DECK VIEW WITH DETAIL OF MAST AND JIB SHEET TRAVELER - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18117520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185759pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4826,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185759p_150px.jpg",
+            "width": 109
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 42439,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185759pr.jpg",
+            "width": 464
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 101633,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185759pv.jpg",
+            "width": 742
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185759p",
+            "mimetype": "application/json",
+            "title": "21.  DETAIL IN HOLD OF MAST FOOT, DECK BEAMS, AND CENTERBOARD TRUNK - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18162520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185760pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4662,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185760p_150px.jpg",
+            "width": 109
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 41698,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185760pr.jpg",
+            "width": 465
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 97579,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185760pv.jpg",
+            "width": 744
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185760p",
+            "mimetype": "application/json",
+            "title": "22.  DECK DETAIL OF BOWSPRIT AND SAMSON POST (ANCHOR WINDLASS REMOVED) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17987512,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185761pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4811,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185761p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 460,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 41659,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185761pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 737,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 99324,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185761pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185761p",
+            "mimetype": "application/json",
+            "title": "23.  DETAIL IN HOLD OF BOW CONSTRUCTION AND SAMSON POST - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18212544,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185762pu.tif",
+            "width": 0
+          },
+          {
+            "height": 109,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5055,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185762p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 466,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 42837,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185762pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 746,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 98917,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185762pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185762p",
+            "mimetype": "application/json",
+            "title": "24.  DECK VIEW ASTERN WITH DETAIL OF WINDER MACHINERY - WINDER ENGINE IS IN WHITE BOX - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17922504,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185763pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4378,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185763p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 459,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 34793,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185763pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 734,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 81828,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185763pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185763p",
+            "mimetype": "application/json",
+            "title": "25.  DECK VIEW TOWARDS STERN OF 'DOGHOUSE' CABIN - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17992512,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185764pu.tif",
+            "width": 0
+          },
+          {
+            "height": 108,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4763,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185764p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 461,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 43104,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185764pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 737,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 102239,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185764pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185764p",
+            "mimetype": "application/json",
+            "title": "26.  INTERIOR DETAIL OF CABIN AND HELM THROUGH HATCH - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17882504,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185765pu.tif",
+            "width": 0
+          },
+          {
+            "height": 107,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5157,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185765p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 458,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 48310,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185765pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 732,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 114247,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185765pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185765p",
+            "mimetype": "application/json",
+            "title": "27.  INTERIOR DETAIL OF CABIN WITH STOVE AND BERTH - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18097520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185766pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4758,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185766p_150px.jpg",
+            "width": 109
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 37074,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185766pr.jpg",
+            "width": 463
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 82863,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185766pv.jpg",
+            "width": 741
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185766p",
+            "mimetype": "application/json",
+            "title": "28.  DETAIL OF HELM AT STERN WITH WHEEL, PUSH BOAT CONTROLS, AND WINDER ENGINE CONTROLS - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 17937520,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185767pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5513,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185767p_150px.jpg",
+            "width": 108
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 44954,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185767pr.jpg",
+            "width": 459
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 101546,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185767pv.jpg",
+            "width": 735
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185767p",
+            "mimetype": "application/json",
+            "title": "29.  DETAIL OF HYDRAULIC STEERING SYSTEM CONNECTED TO RUDDER POST (REPLACED GEAR MECHANISM) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 18097528,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185768pu.tif",
+            "width": 0
+          },
+          {
+            "height": 109,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4595,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185768p_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 463,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 36749,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185768pr.jpg",
+            "width": 640
+          },
+          {
+            "height": 741,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 94581,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185768pv.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185768p",
+            "mimetype": "application/json",
+            "title": "30.  DETAIL OF STERN SHOWING HELM AND DAVITS AND BUMPER FOR THE PUSH BOAT - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 20142800,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185769pu.tif",
+            "width": 0
+          },
+          {
+            "height": 150,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 5024,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185769p_150px.jpg",
+            "width": 121
+          },
+          {
+            "height": 640,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 36282,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185769pr.jpg",
+            "width": 516
+          },
+          {
+            "height": 1024,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 79112,
+            "type": "bw_photos",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185769pv.jpg",
+            "width": 825
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.photos.185769p",
+            "mimetype": "application/json",
+            "title": "31.  RUSSELL DIZE, CAPTAIN AND OWNER, AT HELM OF KATHRYN (Photocopy of 35mm color slide taken by Todd Croteau, 1997) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ]
+      ],
+      "image": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189c_150px.jpg",
+      "url": "https://www.loc.gov/resource/hhh.md1454.photos"
+    },
+    {
+      "caption": "Drawings from Survey HAER MD-117 ",
+      "files": [
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 1584734,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/sheet/00001a.tif",
+            "width": 0
+          },
+          {
+            "height": 100,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4599,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00001_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 425,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 85877,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00001r.jpg",
+            "width": 640
+          },
+          {
+            "height": 680,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 190213,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00001v.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.sheet.00001a",
+            "mimetype": "application/json",
+            "title": "HAER MD,21-TILG.V,1- (sheet 1 of 8) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 1197004,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/sheet/00002a.tif",
+            "width": 0
+          },
+          {
+            "height": 100,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 3941,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00002_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 426,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 71947,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00002r.jpg",
+            "width": 640
+          },
+          {
+            "height": 682,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 151946,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00002v.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.sheet.00002a",
+            "mimetype": "application/json",
+            "title": "HAER MD,21-TILG.V,1- (sheet 2 of 8) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 1136562,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/sheet/00003a.tif",
+            "width": 0
+          },
+          {
+            "height": 100,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 3871,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00003_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 426,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 71433,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00003r.jpg",
+            "width": 640
+          },
+          {
+            "height": 682,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 151860,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00003v.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.sheet.00003a",
+            "mimetype": "application/json",
+            "title": "HAER MD,21-TILG.V,1- (sheet 3 of 8) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 1376446,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/sheet/00004a.tif",
+            "width": 0
+          },
+          {
+            "height": 100,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4299,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00004_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 426,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 70056,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00004r.jpg",
+            "width": 640
+          },
+          {
+            "height": 682,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 146696,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00004v.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.sheet.00004a",
+            "mimetype": "application/json",
+            "title": "HAER MD,21-TILG.V,1- (sheet 4 of 8) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 1506688,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/sheet/00005a.tif",
+            "width": 0
+          },
+          {
+            "height": 100,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4447,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00005_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 426,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 79090,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00005r.jpg",
+            "width": 640
+          },
+          {
+            "height": 682,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 171538,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00005v.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.sheet.00005a",
+            "mimetype": "application/json",
+            "title": "HAER MD,21-TILG.V,1- (sheet 5 of 8) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 1311596,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/sheet/00006a.tif",
+            "width": 0
+          },
+          {
+            "height": 100,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4189,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00006_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 426,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 74895,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00006r.jpg",
+            "width": 640
+          },
+          {
+            "height": 682,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 160607,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00006v.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.sheet.00006a",
+            "mimetype": "application/json",
+            "title": "HAER MD,21-TILG.V,1- (sheet 6 of 8) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 1429484,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/sheet/00007a.tif",
+            "width": 0
+          },
+          {
+            "height": 100,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4465,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00007_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 426,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 78750,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00007r.jpg",
+            "width": 640
+          },
+          {
+            "height": 681,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 167780,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00007v.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.sheet.00007a",
+            "mimetype": "application/json",
+            "title": "HAER MD,21-TILG.V,1- (sheet 7 of 8) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ],
+        [
+          {
+            "height": 0,
+            "levels": 1,
+            "mimetype": "image/tiff",
+            "size": 1172544,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/sheet/00008a.tif",
+            "width": 0
+          },
+          {
+            "height": 100,
+            "levels": 1,
+            "mimetype": "image/jpg",
+            "size": 4023,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00008_150px.jpg",
+            "width": 150
+          },
+          {
+            "height": 426,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 75879,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00008r.jpg",
+            "width": 640
+          },
+          {
+            "height": 682,
+            "levels": 1,
+            "mimetype": "image/jpeg",
+            "size": 150163,
+            "type": "drawing",
+            "url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00008v.jpg",
+            "width": 1024
+          },
+          {
+            "aka": "https://www.loc.gov/resource/hhh.md1454.sheet.00008a",
+            "mimetype": "application/json",
+            "title": "HAER MD,21-TILG.V,1- (sheet 8 of 8) - KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+            "use": "caption"
+          }
+        ]
+      ],
+      "image": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/sheet/00001_150px.jpg",
+      "url": "https://www.loc.gov/resource/hhh.md1454.sheet"
+    },
+    {
+      "caption": "Data Pages from Survey HAER MD-117 ",
+      "files": [
+        [
+          {
+            "height": 1,
+            "levels": 1,
+            "mimetype": "application/pdf",
+            "size": 241980,
+            "type": "data",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/data/md1454data.pdf",
+            "width": 1
+          }
+        ]
+      ],
+      "image": "/static/images/original-format/manuscript-mixed-material.svg"
+    },
+    {
+      "caption": "Photo Captions from Survey HAER MD-117 ",
+      "files": [
+        [
+          {
+            "height": 1,
+            "levels": 1,
+            "mimetype": "application/pdf",
+            "size": 38114,
+            "type": "cap",
+            "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/data/md1454cap.pdf",
+            "width": 1
+          }
+        ]
+      ],
+      "image": "/static/images/original-format/manuscript-mixed-material.svg"
+    }
+  ],
+  "thesaurus_entry": null,
+  "timestamp": 1794271119610,
+  "unrestricted": true
+}

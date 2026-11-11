@@ -1,0 +1,45 @@
+{
+  "status": "passed",
+  "centreline_parts": 29,
+  "slot_probes": 30,
+  "poses": [
+    {
+      "angle_degrees": 0.0,
+      "lowest_Z_ft": -0.2743836330989593
+    },
+    {
+      "angle_degrees": -3.75,
+      "lowest_Z_ft": 0.30671347833955015
+    },
+    {
+      "angle_degrees": -7.5,
+      "lowest_Z_ft": 0.8673079005833465
+    },
+    {
+      "angle_degrees": -11.25,
+      "lowest_Z_ft": 1.2985256603219792
+    },
+    {
+      "angle_degrees": -15.0,
+      "lowest_Z_ft": 1.53537233661846
+    }
+  ],
+  "air_samples": 44,
+  "chock_mast_distances_ft": {
+    "Mast pine chock 1": 0.002771591884721043,
+    "Mast pine chock 2": 0.0027715918847193736,
+    "Mast pine chock 3": 0.002771591884721307,
+    "Mast pine chock 4": 0.0027715918847270524,
+    "Mast pine chock 5": 0.002771591884727711,
+    "Mast pine chock 6": 0.0027715918847268286,
+    "Mast pine chock 7": 0.0027715918847264587,
+    "Mast pine chock 8": 0.0027715918847271022
+  },
+  "source": "drawing_package/m2_centreline_measurements.json",
+  "inferred_details": [
+    "scarf slope and inaccessible aft continuation",
+    "mortise, hoop and fine laps",
+    "board raised stop, gap and thickness",
+    "chock facets and partner span"
+  ]
+}

@@ -1,0 +1,1431 @@
+{
+  "view_id": "S07-N02",
+  "review_status": "unreviewed OCR",
+  "engine": "Tesseract C API",
+  "version": "5.5.0",
+  "language": "eng",
+  "psm": 6,
+  "ocr_size": [
+    3319,
+    2257
+  ],
+  "source_to_ocr": [
+    [
+      1.0,
+      0,
+      -7089.0
+    ],
+    [
+      0,
+      1.0,
+      -5719.0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "words": [
+    {
+      "text": "|.",
+      "engine_confidence": 86.251205,
+      "native_box": [
+        7406.0,
+        5824.0,
+        7461.0,
+        5902.0
+      ]
+    },
+    {
+      "text": "Ceiling:",
+      "engine_confidence": 94.799042,
+      "native_box": [
+        7524.0,
+        5817.0,
+        7864.0,
+        5924.0
+      ]
+    },
+    {
+      "text": "1-3/4\"",
+      "engine_confidence": 56.69973,
+      "native_box": [
+        7982.0,
+        5814.0,
+        8291.0,
+        5902.0
+      ]
+    },
+    {
+      "text": "pine.",
+      "engine_confidence": 95.820763,
+      "native_box": [
+        8337.0,
+        5819.0,
+        8558.0,
+        5923.0
+      ]
+    },
+    {
+      "text": "Width",
+      "engine_confidence": 96.104286,
+      "native_box": [
+        8672.0,
+        5817.0,
+        8941.0,
+        5900.0
+      ]
+    },
+    {
+      "text": "=",
+      "engine_confidence": 96.213875,
+      "native_box": [
+        8991.0,
+        5855.0,
+        9040.0,
+        5883.0
+      ]
+    },
+    {
+      "text": "approximately",
+      "engine_confidence": 95.582596,
+      "native_box": [
+        9092.0,
+        5813.0,
+        9778.0,
+        5919.0
+      ]
+    },
+    {
+      "text": "9\"",
+      "engine_confidence": 90.398346,
+      "native_box": [
+        9834.0,
+        5811.0,
+        9934.0,
+        5896.0
+      ]
+    },
+    {
+      "text": "+",
+      "engine_confidence": 90.398346,
+      "native_box": [
+        9985.0,
+        5829.0,
+        10037.0,
+        5890.0
+      ]
+    },
+    {
+      "text": "|\".",
+      "engine_confidence": 64.399872,
+      "native_box": [
+        10114.0,
+        5815.0,
+        10221.0,
+        5898.0
+      ]
+    },
+    {
+      "text": "Timbers",
+      "engine_confidence": 96.461678,
+      "native_box": [
+        7508.0,
+        5936.0,
+        7884.0,
+        6023.0
+      ]
+    },
+    {
+      "text": "not",
+      "engine_confidence": 96.070061,
+      "native_box": [
+        7934.0,
+        5951.0,
+        8095.0,
+        6028.0
+      ]
+    },
+    {
+      "text": "shown",
+      "engine_confidence": 95.397636,
+      "native_box": [
+        8148.0,
+        5939.0,
+        8449.0,
+        6024.0
+      ]
+    },
+    {
+      "text": "in",
+      "engine_confidence": 95.397636,
+      "native_box": [
+        8495.0,
+        5937.0,
+        8569.0,
+        6017.0
+      ]
+    },
+    {
+      "text": "Bow\n5\t1\t1\t1\t2\t6\t1831\t215\t413\t87\t94.191208\tSection",
+      "engine_confidence": 96.384834,
+      "native_box": [
+        8638.0,
+        5934.0,
+        8876.0,
+        6044.0
+      ]
+    },
+    {
+      "text": "to",
+      "engine_confidence": 96.31662,
+      "native_box": [
+        9382.0,
+        5947.0,
+        9482.0,
+        6016.0
+      ]
+    },
+    {
+      "text": "expose",
+      "engine_confidence": 91.691185,
+      "native_box": [
+        9531.0,
+        5959.0,
+        9866.0,
+        6037.0
+      ]
+    },
+    {
+      "text": "—",
+      "engine_confidence": 0.0,
+      "native_box": [
+        9995.0,
+        5946.0,
+        10000.0,
+        5952.0
+      ]
+    },
+    {
+      "text": "forward",
+      "engine_confidence": 96.356445,
+      "native_box": [
+        7508.0,
+        6060.0,
+        7889.0,
+        6144.0
+      ]
+    },
+    {
+      "text": "frames.",
+      "engine_confidence": 96.106461,
+      "native_box": [
+        7962.0,
+        6059.0,
+        8320.0,
+        6142.0
+      ]
+    },
+    {
+      "text": "2.",
+      "engine_confidence": 93.95871,
+      "native_box": [
+        7377.0,
+        6182.0,
+        7457.0,
+        6263.0
+      ]
+    },
+    {
+      "text": "Ceiling",
+      "engine_confidence": 94.412804,
+      "native_box": [
+        7514.0,
+        6178.0,
+        7823.0,
+        6280.0
+      ]
+    },
+    {
+      "text": "timber",
+      "engine_confidence": 95.539986,
+      "native_box": [
+        7875.0,
+        6183.0,
+        8189.0,
+        6262.0
+      ]
+    },
+    {
+      "text": "removed",
+      "engine_confidence": 96.006989,
+      "native_box": [
+        8225.0,
+        6183.0,
+        8649.0,
+        6266.0
+      ]
+    },
+    {
+      "text": "by",
+      "engine_confidence": 93.167351,
+      "native_box": [
+        8687.0,
+        6179.0,
+        8808.0,
+        6280.0
+      ]
+    },
+    {
+      "text": "HAER",
+      "engine_confidence": 92.387688,
+      "native_box": [
+        8844.0,
+        6177.0,
+        9105.0,
+        6259.0
+      ]
+    },
+    {
+      "text": "team",
+      "engine_confidence": 96.733536,
+      "native_box": [
+        9147.0,
+        6189.0,
+        9386.0,
+        6260.0
+      ]
+    },
+    {
+      "text": "for",
+      "engine_confidence": 96.792831,
+      "native_box": [
+        9439.0,
+        6176.0,
+        9577.0,
+        6260.0
+      ]
+    },
+    {
+      "text": "access",
+      "engine_confidence": 96.402718,
+      "native_box": [
+        9611.0,
+        6202.0,
+        9929.0,
+        6259.0
+      ]
+    },
+    {
+      "text": "to",
+      "engine_confidence": 96.402718,
+      "native_box": [
+        9976.0,
+        6188.0,
+        10080.0,
+        6255.0
+      ]
+    },
+    {
+      "text": "frames",
+      "engine_confidence": 96.766876,
+      "native_box": [
+        7504.0,
+        6300.0,
+        7829.0,
+        6383.0
+      ]
+    },
+    {
+      "text": "and",
+      "engine_confidence": 96.892242,
+      "native_box": [
+        7881.0,
+        6297.0,
+        8066.0,
+        6396.0
+      ]
+    },
+    {
+      "text": "outer",
+      "engine_confidence": 93.10466,
+      "native_box": [
+        8103.0,
+        6312.0,
+        8373.0,
+        6381.0
+      ]
+    },
+    {
+      "text": "strakes.",
+      "engine_confidence": 91.298775,
+      "native_box": [
+        8420.0,
+        6299.0,
+        8787.0,
+        6381.0
+      ]
+    },
+    {
+      "text": "3.",
+      "engine_confidence": 93.223221,
+      "native_box": [
+        7379.0,
+        6424.0,
+        7457.0,
+        6501.0
+      ]
+    },
+    {
+      "text": "Centerboard",
+      "engine_confidence": 90.864693,
+      "native_box": [
+        7508.0,
+        6415.0,
+        8109.0,
+        6506.0
+      ]
+    },
+    {
+      "text": "Trunk:",
+      "engine_confidence": 93.930389,
+      "native_box": [
+        8154.0,
+        6419.0,
+        8443.0,
+        6505.0
+      ]
+    },
+    {
+      "text": "Cuts",
+      "engine_confidence": 96.33316,
+      "native_box": [
+        8527.0,
+        6412.0,
+        8745.0,
+        6504.0
+      ]
+    },
+    {
+      "text": "through",
+      "engine_confidence": 96.304642,
+      "native_box": [
+        8787.0,
+        6417.0,
+        9161.0,
+        6521.0
+      ]
+    },
+    {
+      "text": "keel",
+      "engine_confidence": 96.030708,
+      "native_box": [
+        9205.0,
+        6418.0,
+        9395.0,
+        6500.0
+      ]
+    },
+    {
+      "text": "and",
+      "engine_confidence": 93.281174,
+      "native_box": [
+        9445.0,
+        6415.0,
+        9595.0,
+        6502.0
+      ]
+    },
+    {
+      "text": "keelson.",
+      "engine_confidence": 89.135223,
+      "native_box": [
+        9645.0,
+        6416.0,
+        10023.0,
+        6499.0
+      ]
+    },
+    {
+      "text": "Trunk",
+      "engine_confidence": 96.202118,
+      "native_box": [
+        7508.0,
+        6540.0,
+        7781.0,
+        6624.0
+      ]
+    },
+    {
+      "text": "walls",
+      "engine_confidence": 96.639114,
+      "native_box": [
+        7827.0,
+        6540.0,
+        8053.0,
+        6621.0
+      ]
+    },
+    {
+      "text": "are",
+      "engine_confidence": 96.192978,
+      "native_box": [
+        8105.0,
+        6562.0,
+        8253.0,
+        6621.0
+      ]
+    },
+    {
+      "text": "constructed",
+      "engine_confidence": 95.933037,
+      "native_box": [
+        8311.0,
+        6540.0,
+        8899.0,
+        6622.0
+      ]
+    },
+    {
+      "text": "of",
+      "engine_confidence": 96.159424,
+      "native_box": [
+        8943.0,
+        6538.0,
+        9050.0,
+        6617.0
+      ]
+    },
+    {
+      "text": "2\"",
+      "engine_confidence": 90.18383,
+      "native_box": [
+        9090.0,
+        6533.0,
+        9206.0,
+        6617.0
+      ]
+    },
+    {
+      "text": "x",
+      "engine_confidence": 90.18383,
+      "native_box": [
+        9252.0,
+        6559.0,
+        9302.0,
+        6618.0
+      ]
+    },
+    {
+      "text": "|",
+      "engine_confidence": 81.231903,
+      "native_box": [
+        9375.0,
+        6539.0,
+        9397.0,
+        6620.0
+      ]
+    },
+    {
+      "text": "/-1/2\"",
+      "engine_confidence": 46.079235,
+      "native_box": [
+        9446.0,
+        6536.0,
+        9713.0,
+        6622.0
+      ]
+    },
+    {
+      "text": "pine.",
+      "engine_confidence": 96.784645,
+      "native_box": [
+        9810.0,
+        6535.0,
+        10034.0,
+        6644.0
+      ]
+    },
+    {
+      "text": "4.",
+      "engine_confidence": 84.973251,
+      "native_box": [
+        7375.0,
+        6657.0,
+        7483.0,
+        6738.0
+      ]
+    },
+    {
+      "text": "Clamp:",
+      "engine_confidence": 84.973251,
+      "native_box": [
+        7521.0,
+        6652.0,
+        7839.0,
+        6762.0
+      ]
+    },
+    {
+      "text": "5-172\"",
+      "engine_confidence": 79.60585,
+      "native_box": [
+        7934.0,
+        6657.0,
+        8270.0,
+        6743.0
+      ]
+    },
+    {
+      "text": "x",
+      "engine_confidence": 93.466141,
+      "native_box": [
+        8310.0,
+        6683.0,
+        8359.0,
+        6739.0
+      ]
+    },
+    {
+      "text": "2-3/4\"",
+      "engine_confidence": 95.676041,
+      "native_box": [
+        8406.0,
+        6657.0,
+        8695.0,
+        6742.0
+      ]
+    },
+    {
+      "text": "pine.",
+      "engine_confidence": 90.03231,
+      "native_box": [
+        8791.0,
+        6654.0,
+        9011.0,
+        6760.0
+      ]
+    },
+    {
+      "text": "|",
+      "engine_confidence": 55.507378,
+      "native_box": [
+        9124.0,
+        6649.0,
+        9127.0,
+        6651.0
+      ]
+    },
+    {
+      "text": "|",
+      "engine_confidence": 67.264961,
+      "native_box": [
+        9900.0,
+        6660.0,
+        9902.0,
+        6662.0
+      ]
+    },
+    {
+      "text": "5.",
+      "engine_confidence": 96.189659,
+      "native_box": [
+        7383.0,
+        6779.0,
+        7465.0,
+        6864.0
+      ]
+    },
+    {
+      "text": "Deck:",
+      "engine_confidence": 96.12648,
+      "native_box": [
+        7517.0,
+        6779.0,
+        7784.0,
+        6866.0
+      ]
+    },
+    {
+      "text": "Mostly",
+      "engine_confidence": 96.682175,
+      "native_box": [
+        7874.0,
+        6779.0,
+        8187.0,
+        6882.0
+      ]
+    },
+    {
+      "text": "fir",
+      "engine_confidence": 96.700066,
+      "native_box": [
+        8240.0,
+        6780.0,
+        8335.0,
+        6859.0
+      ]
+    },
+    {
+      "text": "with",
+      "engine_confidence": 96.421478,
+      "native_box": [
+        8380.0,
+        6777.0,
+        8573.0,
+        6864.0
+      ]
+    },
+    {
+      "text": "some",
+      "engine_confidence": 95.603912,
+      "native_box": [
+        8623.0,
+        6803.0,
+        8880.0,
+        6862.0
+      ]
+    },
+    {
+      "text": "pine",
+      "engine_confidence": 96.045776,
+      "native_box": [
+        8919.0,
+        6782.0,
+        9123.0,
+        6878.0
+      ]
+    },
+    {
+      "text": "replacements.",
+      "engine_confidence": 96.453896,
+      "native_box": [
+        9168.0,
+        6777.0,
+        9841.0,
+        6886.0
+      ]
+    },
+    {
+      "text": "|",
+      "engine_confidence": 57.689301,
+      "native_box": [
+        9962.0,
+        6781.0,
+        9982.0,
+        6855.0
+      ]
+    },
+    {
+      "text": "3/4\"",
+      "engine_confidence": 93.943863,
+      "native_box": [
+        10051.0,
+        6778.0,
+        10278.0,
+        6864.0
+      ]
+    },
+    {
+      "text": "thick,",
+      "engine_confidence": 96.611557,
+      "native_box": [
+        7501.0,
+        6899.0,
+        7759.0,
+        6991.0
+      ]
+    },
+    {
+      "text": "widths",
+      "engine_confidence": 96.561478,
+      "native_box": [
+        7822.0,
+        6899.0,
+        8129.0,
+        6988.0
+      ]
+    },
+    {
+      "text": "average",
+      "engine_confidence": 95.973732,
+      "native_box": [
+        8175.0,
+        6922.0,
+        8554.0,
+        7008.0
+      ]
+    },
+    {
+      "text": "3-1/2\"",
+      "engine_confidence": 72.007874,
+      "native_box": [
+        8610.0,
+        6900.0,
+        8953.0,
+        6984.0
+      ]
+    },
+    {
+      "text": "to",
+      "engine_confidence": 95.648079,
+      "native_box": [
+        9004.0,
+        6911.0,
+        9103.0,
+        6983.0
+      ]
+    },
+    {
+      "text": "4\",",
+      "engine_confidence": 96.600449,
+      "native_box": [
+        9153.0,
+        6899.0,
+        9287.0,
+        6998.0
+      ]
+    },
+    {
+      "text": "with",
+      "engine_confidence": 96.42218,
+      "native_box": [
+        9350.0,
+        6897.0,
+        9543.0,
+        6987.0
+      ]
+    },
+    {
+      "text": "some",
+      "engine_confidence": 96.570999,
+      "native_box": [
+        9594.0,
+        6919.0,
+        9848.0,
+        6983.0
+      ]
+    },
+    {
+      "text": "inboard",
+      "engine_confidence": 96.151115,
+      "native_box": [
+        9901.0,
+        6895.0,
+        10265.0,
+        6981.0
+      ]
+    },
+    {
+      "text": "timbers",
+      "engine_confidence": 96.676727,
+      "native_box": [
+        7504.0,
+        7018.0,
+        7871.0,
+        7106.0
+      ]
+    },
+    {
+      "text": "measuring",
+      "engine_confidence": 95.798317,
+      "native_box": [
+        7929.0,
+        7021.0,
+        8425.0,
+        7128.0
+      ]
+    },
+    {
+      "text": "5\"",
+      "engine_confidence": 94.228256,
+      "native_box": [
+        8481.0,
+        7021.0,
+        8599.0,
+        7106.0
+      ]
+    },
+    {
+      "text": "to",
+      "engine_confidence": 94.228256,
+      "native_box": [
+        8655.0,
+        7027.0,
+        8755.0,
+        7102.0
+      ]
+    },
+    {
+      "text": "7\".",
+      "engine_confidence": 88.622154,
+      "native_box": [
+        8820.0,
+        7021.0,
+        8944.0,
+        7100.0
+      ]
+    },
+    {
+      "text": "6.",
+      "engine_confidence": 96.787521,
+      "native_box": [
+        7382.0,
+        7138.0,
+        7459.0,
+        7222.0
+      ]
+    },
+    {
+      "text": "Deck",
+      "engine_confidence": 94.963379,
+      "native_box": [
+        7509.0,
+        7140.0,
+        7753.0,
+        7224.0
+      ]
+    },
+    {
+      "text": "Beams:",
+      "engine_confidence": 96.517288,
+      "native_box": [
+        7790.0,
+        7141.0,
+        8128.0,
+        7227.0
+      ]
+    },
+    {
+      "text": "mostly",
+      "engine_confidence": 96.268005,
+      "native_box": [
+        8215.0,
+        7139.0,
+        8540.0,
+        7246.0
+      ]
+    },
+    {
+      "text": "pine,",
+      "engine_confidence": 96.417183,
+      "native_box": [
+        8575.0,
+        7141.0,
+        8799.0,
+        7242.0
+      ]
+    },
+    {
+      "text": "average",
+      "engine_confidence": 95.950554,
+      "native_box": [
+        8851.0,
+        7164.0,
+        9233.0,
+        7244.0
+      ]
+    },
+    {
+      "text": "5-1/2\"",
+      "engine_confidence": 67.002197,
+      "native_box": [
+        9279.0,
+        7137.0,
+        9619.0,
+        7227.0
+      ]
+    },
+    {
+      "text": "square",
+      "engine_confidence": 96.441063,
+      "native_box": [
+        9659.0,
+        7145.0,
+        9977.0,
+        7246.0
+      ]
+    },
+    {
+      "text": "(+",
+      "engine_confidence": 76.497879,
+      "native_box": [
+        10025.0,
+        7139.0,
+        10126.0,
+        7241.0
+      ]
+    },
+    {
+      "text": "|\").",
+      "engine_confidence": 79.556122,
+      "native_box": [
+        7527.0,
+        7259.0,
+        7682.0,
+        7362.0
+      ]
+    },
+    {
+      "text": "Beams",
+      "engine_confidence": 96.342949,
+      "native_box": [
+        7768.0,
+        7264.0,
+        8086.0,
+        7372.0
+      ]
+    },
+    {
+      "text": "under",
+      "engine_confidence": 96.342949,
+      "native_box": [
+        8131.0,
+        7263.0,
+        8412.0,
+        7349.0
+      ]
+    },
+    {
+      "text": "winders",
+      "engine_confidence": 96.361984,
+      "native_box": [
+        8449.0,
+        7259.0,
+        8813.0,
+        7343.0
+      ]
+    },
+    {
+      "text": "are",
+      "engine_confidence": 95.892967,
+      "native_box": [
+        8852.0,
+        7286.0,
+        9001.0,
+        7344.0
+      ]
+    },
+    {
+      "text": "oak.",
+      "engine_confidence": 95.832771,
+      "native_box": [
+        9049.0,
+        7261.0,
+        9234.0,
+        7343.0
+      ]
+    },
+    {
+      "text": "(See",
+      "engine_confidence": 95.666183,
+      "native_box": [
+        9334.0,
+        7259.0,
+        9545.0,
+        7357.0
+      ]
+    },
+    {
+      "text": "Sheet",
+      "engine_confidence": 95.666183,
+      "native_box": [
+        9589.0,
+        7263.0,
+        9872.0,
+        7352.0
+      ]
+    },
+    {
+      "text": "5)",
+      "engine_confidence": 96.651009,
+      "native_box": [
+        9916.0,
+        7263.0,
+        10006.0,
+        7362.0
+      ]
+    },
+    {
+      "text": "|",
+      "engine_confidence": 73.378021,
+      "native_box": [
+        10397.0,
+        7289.0,
+        10399.0,
+        7292.0
+      ]
+    },
+    {
+      "text": "/.",
+      "engine_confidence": 71.212379,
+      "native_box": [
+        7393.0,
+        7386.0,
+        7471.0,
+        7465.0
+      ]
+    },
+    {
+      "text": "Electrical",
+      "engine_confidence": 95.988838,
+      "native_box": [
+        7526.0,
+        7383.0,
+        7968.0,
+        7465.0
+      ]
+    },
+    {
+      "text": "Boxes.",
+      "engine_confidence": 96.437111,
+      "native_box": [
+        8013.0,
+        7386.0,
+        8324.0,
+        7465.0
+      ]
+    },
+    {
+      "text": "|",
+      "engine_confidence": 64.802277,
+      "native_box": [
+        8539.0,
+        7423.0,
+        8541.0,
+        7427.0
+      ]
+    },
+    {
+      "text": "8.",
+      "engine_confidence": 95.413994,
+      "native_box": [
+        7386.0,
+        7502.0,
+        7471.0,
+        7582.0
+      ]
+    },
+    {
+      "text": "Frames:",
+      "engine_confidence": 93.382874,
+      "native_box": [
+        7529.0,
+        7505.0,
+        7905.0,
+        7590.0
+      ]
+    },
+    {
+      "text": "Oak.",
+      "engine_confidence": 96.289413,
+      "native_box": [
+        8001.0,
+        7499.0,
+        8197.0,
+        7586.0
+      ]
+    },
+    {
+      "text": "Sided",
+      "engine_confidence": 96.679817,
+      "native_box": [
+        8258.0,
+        7491.0,
+        8560.0,
+        7588.0
+      ]
+    },
+    {
+      "text": "dimensions",
+      "engine_confidence": 96.434669,
+      "native_box": [
+        8606.0,
+        7499.0,
+        9143.0,
+        7590.0
+      ]
+    },
+    {
+      "text": "are",
+      "engine_confidence": 96.045937,
+      "native_box": [
+        9189.0,
+        7525.0,
+        9337.0,
+        7581.0
+      ]
+    },
+    {
+      "text": "highly",
+      "engine_confidence": 95.967789,
+      "native_box": [
+        9383.0,
+        7500.0,
+        9672.0,
+        7620.0
+      ]
+    },
+    {
+      "text": "irregular.",
+      "engine_confidence": 96.915558,
+      "native_box": [
+        9715.0,
+        7501.0,
+        10131.0,
+        7603.0
+      ]
+    },
+    {
+      "text": "Molded",
+      "engine_confidence": 96.169495,
+      "native_box": [
+        7502.0,
+        7622.0,
+        7843.0,
+        7703.0
+      ]
+    },
+    {
+      "text": "dimensions",
+      "engine_confidence": 95.906639,
+      "native_box": [
+        7885.0,
+        7620.0,
+        8416.0,
+        7713.0
+      ]
+    },
+    {
+      "text": "average",
+      "engine_confidence": 96.413963,
+      "native_box": [
+        8459.0,
+        7645.0,
+        8836.0,
+        7726.0
+      ]
+    },
+    {
+      "text": "3\"",
+      "engine_confidence": 95.877365,
+      "native_box": [
+        8886.0,
+        7623.0,
+        8997.0,
+        7729.0
+      ]
+    },
+    {
+      "text": "at",
+      "engine_confidence": 96.065041,
+      "native_box": [
+        9038.0,
+        7635.0,
+        9139.0,
+        7706.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 92.401154,
+      "native_box": [
+        9184.0,
+        7624.0,
+        9334.0,
+        7705.0
+      ]
+    },
+    {
+      "text": "keelson.",
+      "engine_confidence": 91.203529,
+      "native_box": [
+        9382.0,
+        7623.0,
+        9761.0,
+        7708.0
+      ]
+    },
+    {
+      "text": "Frames",
+      "engine_confidence": 96.646278,
+      "native_box": [
+        9849.0,
+        7621.0,
+        10196.0,
+        7708.0
+      ]
+    },
+    {
+      "text": "shown",
+      "engine_confidence": 96.403862,
+      "native_box": [
+        7496.0,
+        7735.0,
+        7804.0,
+        7827.0
+      ]
+    },
+    {
+      "text": "in",
+      "engine_confidence": 94.935196,
+      "native_box": [
+        7849.0,
+        7744.0,
+        7926.0,
+        7826.0
+      ]
+    },
+    {
+      "text": "section",
+      "engine_confidence": 93.272385,
+      "native_box": [
+        7973.0,
+        7741.0,
+        8320.0,
+        7828.0
+      ]
+    },
+    {
+      "text": "|3",
+      "engine_confidence": 80.35025,
+      "native_box": [
+        8389.0,
+        7744.0,
+        8491.0,
+        7826.0
+      ]
+    },
+    {
+      "text": "are",
+      "engine_confidence": 96.835899,
+      "native_box": [
+        8538.0,
+        7737.0,
+        8688.0,
+        7823.0
+      ]
+    },
+    {
+      "text": "possibly",
+      "engine_confidence": 96.80706,
+      "native_box": [
+        8729.0,
+        7733.0,
+        9122.0,
+        7850.0
+      ]
+    },
+    {
+      "text": "original.",
+      "engine_confidence": 96.593224,
+      "native_box": [
+        9168.0,
+        7741.0,
+        9565.0,
+        7847.0
+      ]
+    },
+    {
+      "text": "(See",
+      "engine_confidence": 96.395172,
+      "native_box": [
+        9632.0,
+        7744.0,
+        9843.0,
+        7835.0
+      ]
+    },
+    {
+      "text": "Sheet",
+      "engine_confidence": 96.190643,
+      "native_box": [
+        9892.0,
+        7745.0,
+        10168.0,
+        7829.0
+      ]
+    },
+    {
+      "text": "6",
+      "engine_confidence": 97.00946,
+      "native_box": [
+        10217.0,
+        7741.0,
+        10271.0,
+        7827.0
+      ]
+    },
+    {
+      "text": "for",
+      "engine_confidence": 96.26992,
+      "native_box": [
+        7507.0,
+        7857.0,
+        7647.0,
+        7943.0
+      ]
+    },
+    {
+      "text": "comparison",
+      "engine_confidence": 96.287811,
+      "native_box": [
+        7690.0,
+        7855.0,
+        8244.0,
+        7965.0
+      ]
+    },
+    {
+      "text": "with",
+      "engine_confidence": 96.066757,
+      "native_box": [
+        8300.0,
+        7861.0,
+        8498.0,
+        7948.0
+      ]
+    },
+    {
+      "text": "new",
+      "engine_confidence": 96.711945,
+      "native_box": [
+        8551.0,
+        7886.0,
+        8750.0,
+        7952.0
+      ]
+    },
+    {
+      "text": "frames.)",
+      "engine_confidence": 89.023087,
+      "native_box": [
+        8800.0,
+        7859.0,
+        9198.0,
+        7968.0
+      ]
+    },
+    {
+      "text": "—",
+      "engine_confidence": 26.197754,
+      "native_box": [
+        9277.0,
+        7849.0,
+        9330.0,
+        7975.0
+      ]
+    },
+    {
+      "text": "|",
+      "engine_confidence": 80.552277,
+      "native_box": [
+        9953.0,
+        7931.0,
+        9956.0,
+        7934.0
+      ]
+    }
+  ]
+}

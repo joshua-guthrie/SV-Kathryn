@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "scale": "1:1",
+  "cad_units": "mm",
+  "millimetres_per_source_foot": 304.8000889076596,
+  "body_length_mm": 15835.457,
+  "body_length_ft": 51.95359908136483,
+  "topsides_component_length_mm": 15526.199,
+  "recorded_50ft_reference_mm": 15240.0,
+  "parts": 542,
+  "viewer_units": "Installed SOMA measurement display is fixed to millimetres; no feet/inches display switch found."
+}

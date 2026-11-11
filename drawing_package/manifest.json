@@ -1,0 +1,7531 @@
+{
+  "schema_version": 1,
+  "originals_modified": false,
+  "coordinate_system": "original scan pixels; x right, y down",
+  "sources": [
+    {
+      "id": "S01",
+      "title": "Identity, history and bow ornament",
+      "path": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00001a.tif",
+      "sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+      "native_size": [
+        14510,
+        9632
+      ],
+      "mode": "1",
+      "dpi": [
+        400.0,
+        400.0
+      ],
+      "overview": "S01/overview.png"
+    },
+    {
+      "id": "S02",
+      "title": "Lines, offsets and measurement method",
+      "path": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00002a.tif",
+      "sha256": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+      "native_size": [
+        14460,
+        9632
+      ],
+      "mode": "1",
+      "dpi": [
+        400.0,
+        400.0
+      ],
+      "overview": "S02/overview.png"
+    },
+    {
+      "id": "S03",
+      "title": "Hull history, profile and rig",
+      "path": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00003a.tif",
+      "sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c",
+      "native_size": [
+        14458,
+        9632
+      ],
+      "mode": "1",
+      "dpi": [
+        400.0,
+        400.0
+      ],
+      "overview": "S03/overview.png"
+    },
+    {
+      "id": "S04",
+      "title": "General arrangement and deck equipment",
+      "path": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif",
+      "sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_size": [
+        14472,
+        9632
+      ],
+      "mode": "1",
+      "dpi": [
+        400.0,
+        400.0
+      ],
+      "overview": "S04/overview.png"
+    },
+    {
+      "id": "S05",
+      "title": "Structural and hold plans, timber schedule",
+      "path": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00005a.tif",
+      "sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_size": [
+        14458,
+        9632
+      ],
+      "mode": "1",
+      "dpi": [
+        400.0,
+        400.0
+      ],
+      "overview": "S05/overview.png"
+    },
+    {
+      "id": "S06",
+      "title": "Frame sets 4/5 and structural conception",
+      "path": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00006a.tif",
+      "sha256": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+      "native_size": [
+        14472,
+        9632
+      ],
+      "mode": "1",
+      "dpi": [
+        400.0,
+        400.0
+      ],
+      "overview": "S06/overview.png"
+    },
+    {
+      "id": "S07",
+      "title": "Frame set 13, cabin section and winder",
+      "path": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00007a.tif",
+      "sha256": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683",
+      "native_size": [
+        14480,
+        9632
+      ],
+      "mode": "1",
+      "dpi": [
+        400.0,
+        400.0
+      ],
+      "overview": "S07/overview.png"
+    },
+    {
+      "id": "S08",
+      "title": "Sail plan (reference only)",
+      "path": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00008a.tif",
+      "sha256": "c2323234f362d058b4aa44e3c6d8051c679126db060d54cccfad386e9d0ac5fd",
+      "native_size": [
+        14464,
+        9632
+      ],
+      "mode": "1",
+      "dpi": [
+        400.0,
+        400.0
+      ],
+      "overview": "S08/overview.png"
+    }
+  ],
+  "views": [
+    {
+      "id": "S01-V01",
+      "sheet": 1,
+      "title": "Vessel name and identity",
+      "grid_box": [
+        100,
+        100,
+        580,
+        320
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S01",
+      "source_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+      "native_box": [
+        1008,
+        1003,
+        5844,
+        3211
+      ],
+      "native_size": [
+        4836,
+        2208
+      ],
+      "native_image": "S01/S01-V01/native.png",
+      "preview": "S01/S01-V01/preview.png",
+      "preview_size": [
+        2000,
+        913
+      ],
+      "source_to_preview": [
+        [
+          0.41356492969396197,
+          0,
+          -416.87344913151367
+        ],
+        [
+          0,
+          0.4134963768115942,
+          -414.73686594202894
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S01/S01-V01/tile-00-00.png",
+          "native_box": [
+            1008,
+            1003,
+            2608,
+            2603
+          ]
+        },
+        {
+          "path": "S01/S01-V01/tile-00-01.png",
+          "native_box": [
+            2480,
+            1003,
+            4080,
+            2603
+          ]
+        },
+        {
+          "path": "S01/S01-V01/tile-00-02.png",
+          "native_box": [
+            3952,
+            1003,
+            5552,
+            2603
+          ]
+        },
+        {
+          "path": "S01/S01-V01/tile-00-03.png",
+          "native_box": [
+            5424,
+            1003,
+            5844,
+            2603
+          ]
+        },
+        {
+          "path": "S01/S01-V01/tile-01-00.png",
+          "native_box": [
+            1008,
+            2475,
+            2608,
+            3211
+          ]
+        },
+        {
+          "path": "S01/S01-V01/tile-01-01.png",
+          "native_box": [
+            2480,
+            2475,
+            4080,
+            3211
+          ]
+        },
+        {
+          "path": "S01/S01-V01/tile-01-02.png",
+          "native_box": [
+            3952,
+            2475,
+            5552,
+            3211
+          ]
+        },
+        {
+          "path": "S01/S01-V01/tile-01-03.png",
+          "native_box": [
+            5424,
+            2475,
+            5844,
+            3211
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S01/S01-V01/ocr.txt",
+        "tsv": "S01/S01-V01/ocr.tsv",
+        "words": "S01/S01-V01/ocr_words.json",
+        "word_count": 5,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S01-V02",
+      "sheet": 1,
+      "title": "General vessel illustration",
+      "grid_box": [
+        445,
+        60,
+        1020,
+        600
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S01",
+      "source_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+      "native_box": [
+        4484,
+        602,
+        10278,
+        6020
+      ],
+      "native_size": [
+        5794,
+        5418
+      ],
+      "native_image": "S01/S01-V02/native.png",
+      "preview": "S01/S01-V02/preview.png",
+      "preview_size": [
+        1711,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.29530548843631343,
+          0,
+          -1324.1498101484294
+        ],
+        [
+          0,
+          0.2953119232189,
+          -177.7777777777778
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S01/S01-V02/tile-00-00.png",
+          "native_box": [
+            4484,
+            602,
+            6084,
+            2202
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-00-01.png",
+          "native_box": [
+            5956,
+            602,
+            7556,
+            2202
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-00-02.png",
+          "native_box": [
+            7428,
+            602,
+            9028,
+            2202
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-00-03.png",
+          "native_box": [
+            8900,
+            602,
+            10278,
+            2202
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-01-00.png",
+          "native_box": [
+            4484,
+            2074,
+            6084,
+            3674
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-01-01.png",
+          "native_box": [
+            5956,
+            2074,
+            7556,
+            3674
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-01-02.png",
+          "native_box": [
+            7428,
+            2074,
+            9028,
+            3674
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-01-03.png",
+          "native_box": [
+            8900,
+            2074,
+            10278,
+            3674
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-02-00.png",
+          "native_box": [
+            4484,
+            3546,
+            6084,
+            5146
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-02-01.png",
+          "native_box": [
+            5956,
+            3546,
+            7556,
+            5146
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-02-02.png",
+          "native_box": [
+            7428,
+            3546,
+            9028,
+            5146
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-02-03.png",
+          "native_box": [
+            8900,
+            3546,
+            10278,
+            5146
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-03-00.png",
+          "native_box": [
+            4484,
+            5018,
+            6084,
+            6020
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-03-01.png",
+          "native_box": [
+            5956,
+            5018,
+            7556,
+            6020
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-03-02.png",
+          "native_box": [
+            7428,
+            5018,
+            9028,
+            6020
+          ]
+        },
+        {
+          "path": "S01/S01-V02/tile-03-03.png",
+          "native_box": [
+            8900,
+            5018,
+            10278,
+            6020
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S01/S01-V02/ocr.txt",
+        "tsv": "S01/S01-V02/ocr.tsv",
+        "words": "S01/S01-V02/ocr_words.json",
+        "word_count": 55,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S01-V03",
+      "sheet": 1,
+      "title": "Bow ornament and chains",
+      "grid_box": [
+        945,
+        85,
+        1338,
+        295
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S01",
+      "source_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+      "native_box": [
+        9522,
+        853,
+        13482,
+        2960
+      ],
+      "native_size": [
+        3960,
+        2107
+      ],
+      "native_image": "S01/S01-V03/native.png",
+      "preview": "S01/S01-V03/preview.png",
+      "preview_size": [
+        2000,
+        1064
+      ],
+      "source_to_preview": [
+        [
+          0.5050505050505051,
+          0,
+          -4809.090909090909
+        ],
+        [
+          0,
+          0.5049833887043189,
+          -430.75083056478405
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S01/S01-V03/tile-00-00.png",
+          "native_box": [
+            9522,
+            853,
+            11122,
+            2453
+          ]
+        },
+        {
+          "path": "S01/S01-V03/tile-00-01.png",
+          "native_box": [
+            10994,
+            853,
+            12594,
+            2453
+          ]
+        },
+        {
+          "path": "S01/S01-V03/tile-00-02.png",
+          "native_box": [
+            12466,
+            853,
+            13482,
+            2453
+          ]
+        },
+        {
+          "path": "S01/S01-V03/tile-01-00.png",
+          "native_box": [
+            9522,
+            2325,
+            11122,
+            2960
+          ]
+        },
+        {
+          "path": "S01/S01-V03/tile-01-01.png",
+          "native_box": [
+            10994,
+            2325,
+            12594,
+            2960
+          ]
+        },
+        {
+          "path": "S01/S01-V03/tile-01-02.png",
+          "native_box": [
+            12466,
+            2325,
+            13482,
+            2960
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S01/S01-V03/ocr.txt",
+        "tsv": "S01/S01-V03/ocr.tsv",
+        "words": "S01/S01-V03/ocr_words.json",
+        "word_count": 14,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S01-N01",
+      "sheet": 1,
+      "title": "History and unusual construction",
+      "grid_box": [
+        105,
+        330,
+        445,
+        885
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S01",
+      "source_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+      "native_box": [
+        1058,
+        3311,
+        4484,
+        8880
+      ],
+      "native_size": [
+        3426,
+        5569
+      ],
+      "native_image": "S01/S01-N01/native.png",
+      "preview": "S01/S01-N01/preview.png",
+      "preview_size": [
+        984,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.287215411558669,
+          0,
+          -303.8739054290718
+        ],
+        [
+          0,
+          0.2873047225713773,
+          -951.2659364338302
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S01/S01-N01/tile-00-00.png",
+          "native_box": [
+            1058,
+            3311,
+            2658,
+            4911
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-00-01.png",
+          "native_box": [
+            2530,
+            3311,
+            4130,
+            4911
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-00-02.png",
+          "native_box": [
+            4002,
+            3311,
+            4484,
+            4911
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-01-00.png",
+          "native_box": [
+            1058,
+            4783,
+            2658,
+            6383
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-01-01.png",
+          "native_box": [
+            2530,
+            4783,
+            4130,
+            6383
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-01-02.png",
+          "native_box": [
+            4002,
+            4783,
+            4484,
+            6383
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-02-00.png",
+          "native_box": [
+            1058,
+            6255,
+            2658,
+            7855
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-02-01.png",
+          "native_box": [
+            2530,
+            6255,
+            4130,
+            7855
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-02-02.png",
+          "native_box": [
+            4002,
+            6255,
+            4484,
+            7855
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-03-00.png",
+          "native_box": [
+            1058,
+            7727,
+            2658,
+            8880
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-03-01.png",
+          "native_box": [
+            2530,
+            7727,
+            4130,
+            8880
+          ]
+        },
+        {
+          "path": "S01/S01-N01/tile-03-02.png",
+          "native_box": [
+            4002,
+            7727,
+            4484,
+            8880
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S01/S01-N01/ocr.txt",
+        "tsv": "S01/S01-N01/ocr.tsv",
+        "words": "S01/S01-N01/ocr_words.json",
+        "word_count": 392,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S01-N02",
+      "sheet": 1,
+      "title": "Survey context and credits",
+      "grid_box": [
+        1030,
+        325,
+        1340,
+        725
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S01",
+      "source_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+      "native_box": [
+        10379,
+        3261,
+        13502,
+        7274
+      ],
+      "native_size": [
+        3123,
+        4013
+      ],
+      "native_image": "S01/S01-N02/native.png",
+      "preview": "S01/S01-N02/preview.png",
+      "preview_size": [
+        1245,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.39865513928914503,
+          0,
+          -4137.641690682036
+        ],
+        [
+          0,
+          0.39870421131323197,
+          -1300.1744330924494
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S01/S01-N02/tile-00-00.png",
+          "native_box": [
+            10379,
+            3261,
+            11979,
+            4861
+          ]
+        },
+        {
+          "path": "S01/S01-N02/tile-00-01.png",
+          "native_box": [
+            11851,
+            3261,
+            13451,
+            4861
+          ]
+        },
+        {
+          "path": "S01/S01-N02/tile-00-02.png",
+          "native_box": [
+            13323,
+            3261,
+            13502,
+            4861
+          ]
+        },
+        {
+          "path": "S01/S01-N02/tile-01-00.png",
+          "native_box": [
+            10379,
+            4733,
+            11979,
+            6333
+          ]
+        },
+        {
+          "path": "S01/S01-N02/tile-01-01.png",
+          "native_box": [
+            11851,
+            4733,
+            13451,
+            6333
+          ]
+        },
+        {
+          "path": "S01/S01-N02/tile-01-02.png",
+          "native_box": [
+            13323,
+            4733,
+            13502,
+            6333
+          ]
+        },
+        {
+          "path": "S01/S01-N02/tile-02-00.png",
+          "native_box": [
+            10379,
+            6205,
+            11979,
+            7274
+          ]
+        },
+        {
+          "path": "S01/S01-N02/tile-02-01.png",
+          "native_box": [
+            11851,
+            6205,
+            13451,
+            7274
+          ]
+        },
+        {
+          "path": "S01/S01-N02/tile-02-02.png",
+          "native_box": [
+            13323,
+            6205,
+            13502,
+            7274
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S01/S01-N02/ocr.txt",
+        "tsv": "S01/S01-N02/ocr.tsv",
+        "words": "S01/S01-N02/ocr_words.json",
+        "word_count": 240,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S01-T01",
+      "sheet": 1,
+      "title": "Official register dimensions",
+      "grid_box": [
+        1030,
+        735,
+        1340,
+        865
+      ],
+      "kind": "table",
+      "ocr_psm": 6,
+      "source_id": "S01",
+      "source_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+      "native_box": [
+        10379,
+        7374,
+        13502,
+        8679
+      ],
+      "native_size": [
+        3123,
+        1305
+      ],
+      "native_image": "S01/S01-T01/native.png",
+      "preview": "S01/S01-T01/preview.png",
+      "preview_size": [
+        2000,
+        836
+      ],
+      "source_to_preview": [
+        [
+          0.6404098623118796,
+          0,
+          -6646.813960934998
+        ],
+        [
+          0,
+          0.6406130268199234,
+          -4723.880459770115
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S01/S01-T01/tile-00-00.png",
+          "native_box": [
+            10379,
+            7374,
+            11979,
+            8679
+          ]
+        },
+        {
+          "path": "S01/S01-T01/tile-00-01.png",
+          "native_box": [
+            11851,
+            7374,
+            13451,
+            8679
+          ]
+        },
+        {
+          "path": "S01/S01-T01/tile-00-02.png",
+          "native_box": [
+            13323,
+            7374,
+            13502,
+            8679
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S01/S01-T01/ocr.txt",
+        "tsv": "S01/S01-T01/ocr.tsv",
+        "words": "S01/S01-T01/ocr_words.json",
+        "word_count": 180,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S01-V04",
+      "sheet": 1,
+      "title": "Location map",
+      "grid_box": [
+        440,
+        600,
+        1020,
+        914
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S01",
+      "source_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+      "native_box": [
+        4434,
+        6020,
+        10278,
+        9170
+      ],
+      "native_size": [
+        5844,
+        3150
+      ],
+      "native_image": "S01/S01-V04/native.png",
+      "preview": "S01/S01-V04/preview.png",
+      "preview_size": [
+        2000,
+        1078
+      ],
+      "source_to_preview": [
+        [
+          0.34223134839151265,
+          0,
+          -1517.453798767967
+        ],
+        [
+          0,
+          0.3422222222222222,
+          -2060.1777777777775
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S01/S01-V04/tile-00-00.png",
+          "native_box": [
+            4434,
+            6020,
+            6034,
+            7620
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-00-01.png",
+          "native_box": [
+            5906,
+            6020,
+            7506,
+            7620
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-00-02.png",
+          "native_box": [
+            7378,
+            6020,
+            8978,
+            7620
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-00-03.png",
+          "native_box": [
+            8850,
+            6020,
+            10278,
+            7620
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-01-00.png",
+          "native_box": [
+            4434,
+            7492,
+            6034,
+            9092
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-01-01.png",
+          "native_box": [
+            5906,
+            7492,
+            7506,
+            9092
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-01-02.png",
+          "native_box": [
+            7378,
+            7492,
+            8978,
+            9092
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-01-03.png",
+          "native_box": [
+            8850,
+            7492,
+            10278,
+            9092
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-02-00.png",
+          "native_box": [
+            4434,
+            8964,
+            6034,
+            9170
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-02-01.png",
+          "native_box": [
+            5906,
+            8964,
+            7506,
+            9170
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-02-02.png",
+          "native_box": [
+            7378,
+            8964,
+            8978,
+            9170
+          ]
+        },
+        {
+          "path": "S01/S01-V04/tile-02-03.png",
+          "native_box": [
+            8850,
+            8964,
+            10278,
+            9170
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S01/S01-V04/ocr.txt",
+        "tsv": "S01/S01-V04/ocr.tsv",
+        "words": "S01/S01-V04/ocr_words.json",
+        "word_count": 29,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S02-V01",
+      "sheet": 2,
+      "title": "Sheer plan and station locations",
+      "grid_box": [
+        90,
+        115,
+        1090,
+        335
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S02",
+      "source_sha256": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+      "native_box": [
+        904,
+        1154,
+        10945,
+        3361
+      ],
+      "native_size": [
+        10041,
+        2207
+      ],
+      "native_image": "S02/S02-V01/native.png",
+      "preview": "S02/S02-V01/preview.png",
+      "preview_size": [
+        2000,
+        440
+      ],
+      "source_to_preview": [
+        [
+          0.19918334827208445,
+          0,
+          -180.06174683796434
+        ],
+        [
+          0,
+          0.1993656547349343,
+          -230.0679655641142
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S02/S02-V01/tile-00-00.png",
+          "native_box": [
+            904,
+            1154,
+            2504,
+            2754
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-00-01.png",
+          "native_box": [
+            2376,
+            1154,
+            3976,
+            2754
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-00-02.png",
+          "native_box": [
+            3848,
+            1154,
+            5448,
+            2754
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-00-03.png",
+          "native_box": [
+            5320,
+            1154,
+            6920,
+            2754
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-00-04.png",
+          "native_box": [
+            6792,
+            1154,
+            8392,
+            2754
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-00-05.png",
+          "native_box": [
+            8264,
+            1154,
+            9864,
+            2754
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-00-06.png",
+          "native_box": [
+            9736,
+            1154,
+            10945,
+            2754
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-01-00.png",
+          "native_box": [
+            904,
+            2626,
+            2504,
+            3361
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-01-01.png",
+          "native_box": [
+            2376,
+            2626,
+            3976,
+            3361
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-01-02.png",
+          "native_box": [
+            3848,
+            2626,
+            5448,
+            3361
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-01-03.png",
+          "native_box": [
+            5320,
+            2626,
+            6920,
+            3361
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-01-04.png",
+          "native_box": [
+            6792,
+            2626,
+            8392,
+            3361
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-01-05.png",
+          "native_box": [
+            8264,
+            2626,
+            9864,
+            3361
+          ]
+        },
+        {
+          "path": "S02/S02-V01/tile-01-06.png",
+          "native_box": [
+            9736,
+            2626,
+            10945,
+            3361
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S02/S02-V01/ocr.txt",
+        "tsv": "S02/S02-V01/ocr.tsv",
+        "words": "S02/S02-V01/ocr_words.json",
+        "word_count": 68,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S02-V02",
+      "sheet": 2,
+      "title": "Half-breadth plan",
+      "grid_box": [
+        135,
+        360,
+        1090,
+        527
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S02",
+      "source_sha256": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+      "native_box": [
+        1356,
+        3612,
+        10945,
+        5288
+      ],
+      "native_size": [
+        9589,
+        1676
+      ],
+      "native_image": "S02/S02-V02/native.png",
+      "preview": "S02/S02-V02/preview.png",
+      "preview_size": [
+        2000,
+        350
+      ],
+      "source_to_preview": [
+        [
+          0.20857232245281052,
+          0,
+          -282.82406924601105
+        ],
+        [
+          0,
+          0.20883054892601433,
+          -754.2959427207637
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S02/S02-V02/tile-00-00.png",
+          "native_box": [
+            1356,
+            3612,
+            2956,
+            5212
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-00-01.png",
+          "native_box": [
+            2828,
+            3612,
+            4428,
+            5212
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-00-02.png",
+          "native_box": [
+            4300,
+            3612,
+            5900,
+            5212
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-00-03.png",
+          "native_box": [
+            5772,
+            3612,
+            7372,
+            5212
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-00-04.png",
+          "native_box": [
+            7244,
+            3612,
+            8844,
+            5212
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-00-05.png",
+          "native_box": [
+            8716,
+            3612,
+            10316,
+            5212
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-00-06.png",
+          "native_box": [
+            10188,
+            3612,
+            10945,
+            5212
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-01-00.png",
+          "native_box": [
+            1356,
+            5084,
+            2956,
+            5288
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-01-01.png",
+          "native_box": [
+            2828,
+            5084,
+            4428,
+            5288
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-01-02.png",
+          "native_box": [
+            4300,
+            5084,
+            5900,
+            5288
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-01-03.png",
+          "native_box": [
+            5772,
+            5084,
+            7372,
+            5288
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-01-04.png",
+          "native_box": [
+            7244,
+            5084,
+            8844,
+            5288
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-01-05.png",
+          "native_box": [
+            8716,
+            5084,
+            10316,
+            5288
+          ]
+        },
+        {
+          "path": "S02/S02-V02/tile-01-06.png",
+          "native_box": [
+            10188,
+            5084,
+            10945,
+            5288
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S02/S02-V02/ocr.txt",
+        "tsv": "S02/S02-V02/ocr.tsv",
+        "words": "S02/S02-V02/ocr_words.json",
+        "word_count": 44,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S02-V03",
+      "sheet": 2,
+      "title": "Body plan and transom",
+      "grid_box": [
+        95,
+        550,
+        430,
+        765
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S02",
+      "source_sha256": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+      "native_box": [
+        954,
+        5518,
+        4318,
+        7676
+      ],
+      "native_size": [
+        3364,
+        2158
+      ],
+      "native_image": "S02/S02-V03/native.png",
+      "preview": "S02/S02-V03/preview.png",
+      "preview_size": [
+        2000,
+        1283
+      ],
+      "source_to_preview": [
+        [
+          0.5945303210463734,
+          0,
+          -567.1819262782402
+        ],
+        [
+          0,
+          0.5945319740500463,
+          -3280.6274328081554
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S02/S02-V03/tile-00-00.png",
+          "native_box": [
+            954,
+            5518,
+            2554,
+            7118
+          ]
+        },
+        {
+          "path": "S02/S02-V03/tile-00-01.png",
+          "native_box": [
+            2426,
+            5518,
+            4026,
+            7118
+          ]
+        },
+        {
+          "path": "S02/S02-V03/tile-00-02.png",
+          "native_box": [
+            3898,
+            5518,
+            4318,
+            7118
+          ]
+        },
+        {
+          "path": "S02/S02-V03/tile-01-00.png",
+          "native_box": [
+            954,
+            6990,
+            2554,
+            7676
+          ]
+        },
+        {
+          "path": "S02/S02-V03/tile-01-01.png",
+          "native_box": [
+            2426,
+            6990,
+            4026,
+            7676
+          ]
+        },
+        {
+          "path": "S02/S02-V03/tile-01-02.png",
+          "native_box": [
+            3898,
+            6990,
+            4318,
+            7676
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S02/S02-V03/ocr.txt",
+        "tsv": "S02/S02-V03/ocr.tsv",
+        "words": "S02/S02-V03/ocr_words.json",
+        "word_count": 11,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S02-T01",
+      "sheet": 2,
+      "title": "Table of offsets",
+      "grid_box": [
+        470,
+        557,
+        1195,
+        792
+      ],
+      "kind": "table",
+      "ocr_psm": 6,
+      "source_id": "S02",
+      "source_sha256": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+      "native_box": [
+        4720,
+        5589,
+        12000,
+        7946
+      ],
+      "native_size": [
+        7280,
+        2357
+      ],
+      "native_image": "S02/S02-T01/native.png",
+      "preview": "S02/S02-T01/preview.png",
+      "preview_size": [
+        2000,
+        648
+      ],
+      "source_to_preview": [
+        [
+          0.27472527472527475,
+          0,
+          -1296.7032967032967
+        ],
+        [
+          0,
+          0.274925753075944,
+          -1536.5600339414511
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S02/S02-T01/tile-00-00.png",
+          "native_box": [
+            4720,
+            5589,
+            6320,
+            7189
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-00-01.png",
+          "native_box": [
+            6192,
+            5589,
+            7792,
+            7189
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-00-02.png",
+          "native_box": [
+            7664,
+            5589,
+            9264,
+            7189
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-00-03.png",
+          "native_box": [
+            9136,
+            5589,
+            10736,
+            7189
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-00-04.png",
+          "native_box": [
+            10608,
+            5589,
+            12000,
+            7189
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-01-00.png",
+          "native_box": [
+            4720,
+            7061,
+            6320,
+            7946
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-01-01.png",
+          "native_box": [
+            6192,
+            7061,
+            7792,
+            7946
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-01-02.png",
+          "native_box": [
+            7664,
+            7061,
+            9264,
+            7946
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-01-03.png",
+          "native_box": [
+            9136,
+            7061,
+            10736,
+            7946
+          ]
+        },
+        {
+          "path": "S02/S02-T01/tile-01-04.png",
+          "native_box": [
+            10608,
+            7061,
+            12000,
+            7946
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S02/S02-T01/ocr.txt",
+        "tsv": "S02/S02-T01/ocr.tsv",
+        "words": "S02/S02-T01/ocr_words.json",
+        "word_count": 94,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S02-N01",
+      "sheet": 2,
+      "title": "Field method, corrected keel and uncertainty",
+      "grid_box": [
+        1090,
+        70,
+        1340,
+        535
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S02",
+      "source_sha256": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+      "native_box": [
+        10945,
+        702,
+        13456,
+        5368
+      ],
+      "native_size": [
+        2511,
+        4666
+      ],
+      "native_image": "S02/S02-N01/native.png",
+      "preview": "S02/S02-N01/preview.png",
+      "preview_size": [
+        861,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.3428912783751493,
+          0,
+          -3752.9450418160095
+        ],
+        [
+          0,
+          0.3429061294470639,
+          -240.72010287183886
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S02/S02-N01/tile-00-00.png",
+          "native_box": [
+            10945,
+            702,
+            12545,
+            2302
+          ]
+        },
+        {
+          "path": "S02/S02-N01/tile-00-01.png",
+          "native_box": [
+            12417,
+            702,
+            13456,
+            2302
+          ]
+        },
+        {
+          "path": "S02/S02-N01/tile-01-00.png",
+          "native_box": [
+            10945,
+            2174,
+            12545,
+            3774
+          ]
+        },
+        {
+          "path": "S02/S02-N01/tile-01-01.png",
+          "native_box": [
+            12417,
+            2174,
+            13456,
+            3774
+          ]
+        },
+        {
+          "path": "S02/S02-N01/tile-02-00.png",
+          "native_box": [
+            10945,
+            3646,
+            12545,
+            5246
+          ]
+        },
+        {
+          "path": "S02/S02-N01/tile-02-01.png",
+          "native_box": [
+            12417,
+            3646,
+            13456,
+            5246
+          ]
+        },
+        {
+          "path": "S02/S02-N01/tile-03-00.png",
+          "native_box": [
+            10945,
+            5118,
+            12545,
+            5368
+          ]
+        },
+        {
+          "path": "S02/S02-N01/tile-03-01.png",
+          "native_box": [
+            12417,
+            5118,
+            13456,
+            5368
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S02/S02-N01/ocr.txt",
+        "tsv": "S02/S02-N01/ocr.tsv",
+        "words": "S02/S02-N01/ocr_words.json",
+        "word_count": 260,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S02-R01",
+      "sheet": 2,
+      "title": "Feet/metre scale bars",
+      "grid_box": [
+        130,
+        802,
+        1315,
+        895
+      ],
+      "kind": "scale",
+      "ocr_psm": 6,
+      "source_id": "S02",
+      "source_sha256": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+      "native_box": [
+        1305,
+        8047,
+        13205,
+        8980
+      ],
+      "native_size": [
+        11900,
+        933
+      ],
+      "native_image": "S02/S02-R01/native.png",
+      "preview": "S02/S02-R01/preview.png",
+      "preview_size": [
+        2000,
+        157
+      ],
+      "source_to_preview": [
+        [
+          0.16806722689075632,
+          0,
+          -219.327731092437
+        ],
+        [
+          0,
+          0.1682743837084673,
+          -1354.1039657020365
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S02/S02-R01/tile-00-00.png",
+          "native_box": [
+            1305,
+            8047,
+            2905,
+            8980
+          ]
+        },
+        {
+          "path": "S02/S02-R01/tile-00-01.png",
+          "native_box": [
+            2777,
+            8047,
+            4377,
+            8980
+          ]
+        },
+        {
+          "path": "S02/S02-R01/tile-00-02.png",
+          "native_box": [
+            4249,
+            8047,
+            5849,
+            8980
+          ]
+        },
+        {
+          "path": "S02/S02-R01/tile-00-03.png",
+          "native_box": [
+            5721,
+            8047,
+            7321,
+            8980
+          ]
+        },
+        {
+          "path": "S02/S02-R01/tile-00-04.png",
+          "native_box": [
+            7193,
+            8047,
+            8793,
+            8980
+          ]
+        },
+        {
+          "path": "S02/S02-R01/tile-00-05.png",
+          "native_box": [
+            8665,
+            8047,
+            10265,
+            8980
+          ]
+        },
+        {
+          "path": "S02/S02-R01/tile-00-06.png",
+          "native_box": [
+            10137,
+            8047,
+            11737,
+            8980
+          ]
+        },
+        {
+          "path": "S02/S02-R01/tile-00-07.png",
+          "native_box": [
+            11609,
+            8047,
+            13205,
+            8980
+          ]
+        },
+        {
+          "path": "S02/S02-R01/tile-00-08.png",
+          "native_box": [
+            13081,
+            8047,
+            13205,
+            8980
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S02/S02-R01/ocr.txt",
+        "tsv": "S02/S02-R01/ocr.tsv",
+        "words": "S02/S02-R01/ocr_words.json",
+        "word_count": 62,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S03-V01",
+      "sheet": 3,
+      "title": "Hull profile and rigging",
+      "grid_box": [
+        210,
+        85,
+        1155,
+        795
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S03",
+      "source_sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c",
+      "native_box": [
+        2108,
+        853,
+        11597,
+        7976
+      ],
+      "native_size": [
+        9489,
+        7123
+      ],
+      "native_image": "S03/S03-V01/native.png",
+      "preview": "S03/S03-V01/preview.png",
+      "preview_size": [
+        2000,
+        1501
+      ],
+      "source_to_preview": [
+        [
+          0.21077036568658447,
+          0,
+          -444.30393086732005
+        ],
+        [
+          0,
+          0.21072581777341007,
+          -179.74912256071877
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S03/S03-V01/tile-00-00.png",
+          "native_box": [
+            2108,
+            853,
+            3708,
+            2453
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-00-01.png",
+          "native_box": [
+            3580,
+            853,
+            5180,
+            2453
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-00-02.png",
+          "native_box": [
+            5052,
+            853,
+            6652,
+            2453
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-00-03.png",
+          "native_box": [
+            6524,
+            853,
+            8124,
+            2453
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-00-04.png",
+          "native_box": [
+            7996,
+            853,
+            9596,
+            2453
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-00-05.png",
+          "native_box": [
+            9468,
+            853,
+            11068,
+            2453
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-00-06.png",
+          "native_box": [
+            10940,
+            853,
+            11597,
+            2453
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-01-00.png",
+          "native_box": [
+            2108,
+            2325,
+            3708,
+            3925
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-01-01.png",
+          "native_box": [
+            3580,
+            2325,
+            5180,
+            3925
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-01-02.png",
+          "native_box": [
+            5052,
+            2325,
+            6652,
+            3925
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-01-03.png",
+          "native_box": [
+            6524,
+            2325,
+            8124,
+            3925
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-01-04.png",
+          "native_box": [
+            7996,
+            2325,
+            9596,
+            3925
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-01-05.png",
+          "native_box": [
+            9468,
+            2325,
+            11068,
+            3925
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-01-06.png",
+          "native_box": [
+            10940,
+            2325,
+            11597,
+            3925
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-02-00.png",
+          "native_box": [
+            2108,
+            3797,
+            3708,
+            5397
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-02-01.png",
+          "native_box": [
+            3580,
+            3797,
+            5180,
+            5397
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-02-02.png",
+          "native_box": [
+            5052,
+            3797,
+            6652,
+            5397
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-02-03.png",
+          "native_box": [
+            6524,
+            3797,
+            8124,
+            5397
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-02-04.png",
+          "native_box": [
+            7996,
+            3797,
+            9596,
+            5397
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-02-05.png",
+          "native_box": [
+            9468,
+            3797,
+            11068,
+            5397
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-02-06.png",
+          "native_box": [
+            10940,
+            3797,
+            11597,
+            5397
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-03-00.png",
+          "native_box": [
+            2108,
+            5269,
+            3708,
+            6869
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-03-01.png",
+          "native_box": [
+            3580,
+            5269,
+            5180,
+            6869
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-03-02.png",
+          "native_box": [
+            5052,
+            5269,
+            6652,
+            6869
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-03-03.png",
+          "native_box": [
+            6524,
+            5269,
+            8124,
+            6869
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-03-04.png",
+          "native_box": [
+            7996,
+            5269,
+            9596,
+            6869
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-03-05.png",
+          "native_box": [
+            9468,
+            5269,
+            11068,
+            6869
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-03-06.png",
+          "native_box": [
+            10940,
+            5269,
+            11597,
+            6869
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-04-00.png",
+          "native_box": [
+            2108,
+            6741,
+            3708,
+            7976
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-04-01.png",
+          "native_box": [
+            3580,
+            6741,
+            5180,
+            7976
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-04-02.png",
+          "native_box": [
+            5052,
+            6741,
+            6652,
+            7976
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-04-03.png",
+          "native_box": [
+            6524,
+            6741,
+            8124,
+            7976
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-04-04.png",
+          "native_box": [
+            7996,
+            6741,
+            9596,
+            7976
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-04-05.png",
+          "native_box": [
+            9468,
+            6741,
+            11068,
+            7976
+          ]
+        },
+        {
+          "path": "S03/S03-V01/tile-04-06.png",
+          "native_box": [
+            10940,
+            6741,
+            11597,
+            7976
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S03/S03-V01/ocr.txt",
+        "tsv": "S03/S03-V01/ocr.tsv",
+        "words": "S03/S03-V01/ocr_words.json",
+        "word_count": 357,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S03-V02",
+      "sheet": 3,
+      "title": "Aft rig view",
+      "grid_box": [
+        1170,
+        375,
+        1340,
+        785
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S03",
+      "source_sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c",
+      "native_box": [
+        11747,
+        3762,
+        13454,
+        7876
+      ],
+      "native_size": [
+        1707,
+        4114
+      ],
+      "native_image": "S03/S03-V02/native.png",
+      "preview": "S03/S03-V02/preview.png",
+      "preview_size": [
+        664,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.38898652606912715,
+          0,
+          -4569.424721734036
+        ],
+        [
+          0,
+          0.3889158969372873,
+          -1463.1016042780748
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S03/S03-V02/tile-00-00.png",
+          "native_box": [
+            11747,
+            3762,
+            13347,
+            5362
+          ]
+        },
+        {
+          "path": "S03/S03-V02/tile-00-01.png",
+          "native_box": [
+            13219,
+            3762,
+            13454,
+            5362
+          ]
+        },
+        {
+          "path": "S03/S03-V02/tile-01-00.png",
+          "native_box": [
+            11747,
+            5234,
+            13347,
+            6834
+          ]
+        },
+        {
+          "path": "S03/S03-V02/tile-01-01.png",
+          "native_box": [
+            13219,
+            5234,
+            13454,
+            6834
+          ]
+        },
+        {
+          "path": "S03/S03-V02/tile-02-00.png",
+          "native_box": [
+            11747,
+            6706,
+            13347,
+            7876
+          ]
+        },
+        {
+          "path": "S03/S03-V02/tile-02-01.png",
+          "native_box": [
+            13219,
+            6706,
+            13454,
+            7876
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S03/S03-V02/ocr.txt",
+        "tsv": "S03/S03-V02/ocr.tsv",
+        "words": "S03/S03-V02/ocr_words.json",
+        "word_count": 7,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S03-N01",
+      "sheet": 3,
+      "title": "Hull history, repairs and materials",
+      "grid_box": [
+        105,
+        60,
+        620,
+        590
+      ],
+      "kind": "notes",
+      "ocr_psm": 3,
+      "source_id": "S03",
+      "source_sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c",
+      "native_box": [
+        1054,
+        602,
+        6225,
+        5920
+      ],
+      "native_size": [
+        5171,
+        5318
+      ],
+      "native_image": "S03/S03-N01/native.png",
+      "preview": "S03/S03-N01/preview.png",
+      "preview_size": [
+        1556,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.3009089151034616,
+          0,
+          -317.15799651904854
+        ],
+        [
+          0,
+          0.30086498683715684,
+          -181.12072207596842
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S03/S03-N01/tile-00-00.png",
+          "native_box": [
+            1054,
+            602,
+            2654,
+            2202
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-00-01.png",
+          "native_box": [
+            2526,
+            602,
+            4126,
+            2202
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-00-02.png",
+          "native_box": [
+            3998,
+            602,
+            5598,
+            2202
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-00-03.png",
+          "native_box": [
+            5470,
+            602,
+            6225,
+            2202
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-01-00.png",
+          "native_box": [
+            1054,
+            2074,
+            2654,
+            3674
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-01-01.png",
+          "native_box": [
+            2526,
+            2074,
+            4126,
+            3674
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-01-02.png",
+          "native_box": [
+            3998,
+            2074,
+            5598,
+            3674
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-01-03.png",
+          "native_box": [
+            5470,
+            2074,
+            6225,
+            3674
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-02-00.png",
+          "native_box": [
+            1054,
+            3546,
+            2654,
+            5146
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-02-01.png",
+          "native_box": [
+            2526,
+            3546,
+            4126,
+            5146
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-02-02.png",
+          "native_box": [
+            3998,
+            3546,
+            5598,
+            5146
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-02-03.png",
+          "native_box": [
+            5470,
+            3546,
+            6225,
+            5146
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-03-00.png",
+          "native_box": [
+            1054,
+            5018,
+            2654,
+            5920
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-03-01.png",
+          "native_box": [
+            2526,
+            5018,
+            4126,
+            5920
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-03-02.png",
+          "native_box": [
+            3998,
+            5018,
+            5598,
+            5920
+          ]
+        },
+        {
+          "path": "S03/S03-N01/tile-03-03.png",
+          "native_box": [
+            5470,
+            5018,
+            6225,
+            5920
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S03/S03-N01/ocr.txt",
+        "tsv": "S03/S03-N01/ocr.tsv",
+        "words": "S03/S03-N01/ocr_words.json",
+        "word_count": 360,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S03-N02",
+      "sheet": 3,
+      "title": "Rigging and running-gear key",
+      "grid_box": [
+        1090,
+        65,
+        1345,
+        425
+      ],
+      "kind": "notes",
+      "ocr_psm": 3,
+      "source_id": "S03",
+      "source_sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c",
+      "native_box": [
+        10944,
+        652,
+        13504,
+        4264
+      ],
+      "native_size": [
+        2560,
+        3612
+      ],
+      "native_image": "S03/S03-N02/native.png",
+      "preview": "S03/S03-N02/preview.png",
+      "preview_size": [
+        1134,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.44296875,
+          0,
+          -4847.85
+        ],
+        [
+          0,
+          0.4429678848283499,
+          -288.81506090808415
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S03/S03-N02/tile-00-00.png",
+          "native_box": [
+            10944,
+            652,
+            12544,
+            2252
+          ]
+        },
+        {
+          "path": "S03/S03-N02/tile-00-01.png",
+          "native_box": [
+            12416,
+            652,
+            13504,
+            2252
+          ]
+        },
+        {
+          "path": "S03/S03-N02/tile-01-00.png",
+          "native_box": [
+            10944,
+            2124,
+            12544,
+            3724
+          ]
+        },
+        {
+          "path": "S03/S03-N02/tile-01-01.png",
+          "native_box": [
+            12416,
+            2124,
+            13504,
+            3724
+          ]
+        },
+        {
+          "path": "S03/S03-N02/tile-02-00.png",
+          "native_box": [
+            10944,
+            3596,
+            12544,
+            4264
+          ]
+        },
+        {
+          "path": "S03/S03-N02/tile-02-01.png",
+          "native_box": [
+            12416,
+            3596,
+            13504,
+            4264
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S03/S03-N02/ocr.txt",
+        "tsv": "S03/S03-N02/ocr.tsv",
+        "words": "S03/S03-N02/ocr_words.json",
+        "word_count": 151,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S03-R01",
+      "sheet": 3,
+      "title": "Feet/metre scale bars",
+      "grid_box": [
+        325,
+        797,
+        1125,
+        892
+      ],
+      "kind": "scale",
+      "ocr_psm": 6,
+      "source_id": "S03",
+      "source_sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c",
+      "native_box": [
+        3263,
+        7997,
+        11295,
+        8950
+      ],
+      "native_size": [
+        8032,
+        953
+      ],
+      "native_image": "S03/S03-R01/native.png",
+      "preview": "S03/S03-R01/preview.png",
+      "preview_size": [
+        2000,
+        237
+      ],
+      "source_to_preview": [
+        [
+          0.24900398406374502,
+          0,
+          -812.5
+        ],
+        [
+          0,
+          0.24868835257082897,
+          -1988.7607555089194
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S03/S03-R01/tile-00-00.png",
+          "native_box": [
+            3263,
+            7997,
+            4863,
+            8950
+          ]
+        },
+        {
+          "path": "S03/S03-R01/tile-00-01.png",
+          "native_box": [
+            4735,
+            7997,
+            6335,
+            8950
+          ]
+        },
+        {
+          "path": "S03/S03-R01/tile-00-02.png",
+          "native_box": [
+            6207,
+            7997,
+            7807,
+            8950
+          ]
+        },
+        {
+          "path": "S03/S03-R01/tile-00-03.png",
+          "native_box": [
+            7679,
+            7997,
+            9279,
+            8950
+          ]
+        },
+        {
+          "path": "S03/S03-R01/tile-00-04.png",
+          "native_box": [
+            9151,
+            7997,
+            10751,
+            8950
+          ]
+        },
+        {
+          "path": "S03/S03-R01/tile-00-05.png",
+          "native_box": [
+            10623,
+            7997,
+            11295,
+            8950
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S03/S03-R01/ocr.txt",
+        "tsv": "S03/S03-R01/ocr.tsv",
+        "words": "S03/S03-R01/ocr_words.json",
+        "word_count": 44,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S04-V01",
+      "sheet": 4,
+      "title": "Inboard profile",
+      "grid_box": [
+        245,
+        235,
+        1325,
+        465
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S04",
+      "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_box": [
+        2462,
+        2358,
+        13316,
+        4666
+      ],
+      "native_size": [
+        10854,
+        2308
+      ],
+      "native_image": "S04/S04-V01/native.png",
+      "preview": "S04/S04-V01/preview.png",
+      "preview_size": [
+        2000,
+        425
+      ],
+      "source_to_preview": [
+        [
+          0.18426386585590565,
+          0,
+          -453.6576377372397
+        ],
+        [
+          0,
+          0.1841421143847487,
+          -434.20710571923746
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S04/S04-V01/tile-00-00.png",
+          "native_box": [
+            2462,
+            2358,
+            4062,
+            3958
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-00-01.png",
+          "native_box": [
+            3934,
+            2358,
+            5534,
+            3958
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-00-02.png",
+          "native_box": [
+            5406,
+            2358,
+            7006,
+            3958
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-00-03.png",
+          "native_box": [
+            6878,
+            2358,
+            8478,
+            3958
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-00-04.png",
+          "native_box": [
+            8350,
+            2358,
+            9950,
+            3958
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-00-05.png",
+          "native_box": [
+            9822,
+            2358,
+            11422,
+            3958
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-00-06.png",
+          "native_box": [
+            11294,
+            2358,
+            12894,
+            3958
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-00-07.png",
+          "native_box": [
+            12766,
+            2358,
+            13316,
+            3958
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-01-00.png",
+          "native_box": [
+            2462,
+            3830,
+            4062,
+            4666
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-01-01.png",
+          "native_box": [
+            3934,
+            3830,
+            5534,
+            4666
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-01-02.png",
+          "native_box": [
+            5406,
+            3830,
+            7006,
+            4666
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-01-03.png",
+          "native_box": [
+            6878,
+            3830,
+            8478,
+            4666
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-01-04.png",
+          "native_box": [
+            8350,
+            3830,
+            9950,
+            4666
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-01-05.png",
+          "native_box": [
+            9822,
+            3830,
+            11422,
+            4666
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-01-06.png",
+          "native_box": [
+            11294,
+            3830,
+            12894,
+            4666
+          ]
+        },
+        {
+          "path": "S04/S04-V01/tile-01-07.png",
+          "native_box": [
+            12766,
+            3830,
+            13316,
+            4666
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S04/S04-V01/ocr.txt",
+        "tsv": "S04/S04-V01/ocr.tsv",
+        "words": "S04/S04-V01/ocr_words.json",
+        "word_count": 28,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S04-V02",
+      "sheet": 4,
+      "title": "Deck plan",
+      "grid_box": [
+        240,
+        500,
+        1325,
+        785
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S04",
+      "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_box": [
+        2412,
+        5017,
+        13316,
+        7876
+      ],
+      "native_size": [
+        10904,
+        2859
+      ],
+      "native_image": "S04/S04-V02/native.png",
+      "preview": "S04/S04-V02/preview.png",
+      "preview_size": [
+        2000,
+        524
+      ],
+      "source_to_preview": [
+        [
+          0.18341892883345562,
+          0,
+          -442.40645634629493
+        ],
+        [
+          0,
+          0.18328086743616648,
+          -919.5201119272472
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S04/S04-V02/tile-00-00.png",
+          "native_box": [
+            2412,
+            5017,
+            4012,
+            6617
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-00-01.png",
+          "native_box": [
+            3884,
+            5017,
+            5484,
+            6617
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-00-02.png",
+          "native_box": [
+            5356,
+            5017,
+            6956,
+            6617
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-00-03.png",
+          "native_box": [
+            6828,
+            5017,
+            8428,
+            6617
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-00-04.png",
+          "native_box": [
+            8300,
+            5017,
+            9900,
+            6617
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-00-05.png",
+          "native_box": [
+            9772,
+            5017,
+            11372,
+            6617
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-00-06.png",
+          "native_box": [
+            11244,
+            5017,
+            12844,
+            6617
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-00-07.png",
+          "native_box": [
+            12716,
+            5017,
+            13316,
+            6617
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-01-00.png",
+          "native_box": [
+            2412,
+            6489,
+            4012,
+            7876
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-01-01.png",
+          "native_box": [
+            3884,
+            6489,
+            5484,
+            7876
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-01-02.png",
+          "native_box": [
+            5356,
+            6489,
+            6956,
+            7876
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-01-03.png",
+          "native_box": [
+            6828,
+            6489,
+            8428,
+            7876
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-01-04.png",
+          "native_box": [
+            8300,
+            6489,
+            9900,
+            7876
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-01-05.png",
+          "native_box": [
+            9772,
+            6489,
+            11372,
+            7876
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-01-06.png",
+          "native_box": [
+            11244,
+            6489,
+            12844,
+            7876
+          ]
+        },
+        {
+          "path": "S04/S04-V02/tile-01-07.png",
+          "native_box": [
+            12716,
+            6489,
+            13316,
+            7876
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S04/S04-V02/ocr.txt",
+        "tsv": "S04/S04-V02/ocr.tsv",
+        "words": "S04/S04-V02/ocr_words.json",
+        "word_count": 49,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S04-V03",
+      "sheet": 4,
+      "title": "Port rail profile",
+      "grid_box": [
+        245,
+        55,
+        1070,
+        200
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S04",
+      "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_box": [
+        2462,
+        552,
+        10754,
+        2007
+      ],
+      "native_size": [
+        8292,
+        1455
+      ],
+      "native_image": "S04/S04-V03/native.png",
+      "preview": "S04/S04-V03/preview.png",
+      "preview_size": [
+        2000,
+        351
+      ],
+      "source_to_preview": [
+        [
+          0.241196333815726,
+          0,
+          -593.8253738543174
+        ],
+        [
+          0,
+          0.24123711340206186,
+          -133.16288659793815
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S04/S04-V03/tile-00-00.png",
+          "native_box": [
+            2462,
+            552,
+            4062,
+            2007
+          ]
+        },
+        {
+          "path": "S04/S04-V03/tile-00-01.png",
+          "native_box": [
+            3934,
+            552,
+            5534,
+            2007
+          ]
+        },
+        {
+          "path": "S04/S04-V03/tile-00-02.png",
+          "native_box": [
+            5406,
+            552,
+            7006,
+            2007
+          ]
+        },
+        {
+          "path": "S04/S04-V03/tile-00-03.png",
+          "native_box": [
+            6878,
+            552,
+            8478,
+            2007
+          ]
+        },
+        {
+          "path": "S04/S04-V03/tile-00-04.png",
+          "native_box": [
+            8350,
+            552,
+            9950,
+            2007
+          ]
+        },
+        {
+          "path": "S04/S04-V03/tile-00-05.png",
+          "native_box": [
+            9822,
+            552,
+            10754,
+            2007
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S04/S04-V03/ocr.txt",
+        "tsv": "S04/S04-V03/ocr.tsv",
+        "words": "S04/S04-V03/ocr_words.json",
+        "word_count": 18,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S04-V04",
+      "sheet": 4,
+      "title": "Cabin profile aft",
+      "grid_box": [
+        155,
+        465,
+        310,
+        560
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S04",
+      "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_box": [
+        1558,
+        4666,
+        3116,
+        5619
+      ],
+      "native_size": [
+        1558,
+        953
+      ],
+      "native_image": "S04/S04-V04/native.png",
+      "preview": "S04/S04-V04/preview.png",
+      "preview_size": [
+        1558,
+        953
+      ],
+      "source_to_preview": [
+        [
+          1.0,
+          0,
+          -1558.0
+        ],
+        [
+          0,
+          1.0,
+          -4666.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S04/S04-V04/tile-00-00.png",
+          "native_box": [
+            1558,
+            4666,
+            3116,
+            5619
+          ]
+        },
+        {
+          "path": "S04/S04-V04/tile-00-01.png",
+          "native_box": [
+            3030,
+            4666,
+            3116,
+            5619
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S04/S04-V04/ocr.txt",
+        "tsv": "S04/S04-V04/ocr.tsv",
+        "words": "S04/S04-V04/ocr_words.json",
+        "word_count": 4,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S04-N01",
+      "sheet": 4,
+      "title": "Spars, fittings and deck notes",
+      "grid_box": [
+        1090,
+        60,
+        1340,
+        235
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S04",
+      "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_box": [
+        10954,
+        602,
+        13467,
+        2358
+      ],
+      "native_size": [
+        2513,
+        1756
+      ],
+      "native_image": "S04/S04-N01/native.png",
+      "preview": "S04/S04-N01/preview.png",
+      "preview_size": [
+        2000,
+        1398
+      ],
+      "source_to_preview": [
+        [
+          0.7958615200955034,
+          0,
+          -8717.867091126143
+        ],
+        [
+          0,
+          0.7961275626423691,
+          -479.2687927107062
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S04/S04-N01/tile-00-00.png",
+          "native_box": [
+            10954,
+            602,
+            12554,
+            2202
+          ]
+        },
+        {
+          "path": "S04/S04-N01/tile-00-01.png",
+          "native_box": [
+            12426,
+            602,
+            13467,
+            2202
+          ]
+        },
+        {
+          "path": "S04/S04-N01/tile-01-00.png",
+          "native_box": [
+            10954,
+            2074,
+            12554,
+            2358
+          ]
+        },
+        {
+          "path": "S04/S04-N01/tile-01-01.png",
+          "native_box": [
+            12426,
+            2074,
+            13467,
+            2358
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S04/S04-N01/ocr.txt",
+        "tsv": "S04/S04-N01/ocr.tsv",
+        "words": "S04/S04-N01/ocr_words.json",
+        "word_count": 78,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S04-N02",
+      "sheet": 4,
+      "title": "Equipment, kingplank and steering key",
+      "grid_box": [
+        1080,
+        385,
+        1345,
+        595
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S04",
+      "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_box": [
+        10854,
+        3863,
+        13517,
+        5970
+      ],
+      "native_size": [
+        2663,
+        2107
+      ],
+      "native_image": "S04/S04-N02/native.png",
+      "preview": "S04/S04-N02/preview.png",
+      "preview_size": [
+        2000,
+        1582
+      ],
+      "source_to_preview": [
+        [
+          0.7510326699211416,
+          0,
+          -8151.708599324071
+        ],
+        [
+          0,
+          0.7508305647840532,
+          -2900.4584717607977
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S04/S04-N02/tile-00-00.png",
+          "native_box": [
+            10854,
+            3863,
+            12454,
+            5463
+          ]
+        },
+        {
+          "path": "S04/S04-N02/tile-00-01.png",
+          "native_box": [
+            12326,
+            3863,
+            13517,
+            5463
+          ]
+        },
+        {
+          "path": "S04/S04-N02/tile-01-00.png",
+          "native_box": [
+            10854,
+            5335,
+            12454,
+            5970
+          ]
+        },
+        {
+          "path": "S04/S04-N02/tile-01-01.png",
+          "native_box": [
+            12326,
+            5335,
+            13517,
+            5970
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S04/S04-N02/ocr.txt",
+        "tsv": "S04/S04-N02/ocr.tsv",
+        "words": "S04/S04-N02/ocr_words.json",
+        "word_count": 74,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S04-N03",
+      "sheet": 4,
+      "title": "Aft equipment and modification key",
+      "grid_box": [
+        1080,
+        695,
+        1345,
+        790
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S04",
+      "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_box": [
+        10854,
+        6973,
+        13517,
+        7926
+      ],
+      "native_size": [
+        2663,
+        953
+      ],
+      "native_image": "S04/S04-N03/native.png",
+      "preview": "S04/S04-N03/preview.png",
+      "preview_size": [
+        2000,
+        716
+      ],
+      "source_to_preview": [
+        [
+          0.7510326699211416,
+          0,
+          -8151.708599324071
+        ],
+        [
+          0,
+          0.751311647429171,
+          -5238.896117523609
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S04/S04-N03/tile-00-00.png",
+          "native_box": [
+            10854,
+            6973,
+            12454,
+            7926
+          ]
+        },
+        {
+          "path": "S04/S04-N03/tile-00-01.png",
+          "native_box": [
+            12326,
+            6973,
+            13517,
+            7926
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S04/S04-N03/ocr.txt",
+        "tsv": "S04/S04-N03/ocr.tsv",
+        "words": "S04/S04-N03/ocr_words.json",
+        "word_count": 34,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S04-R01",
+      "sheet": 4,
+      "title": "Feet/metre scale bars",
+      "grid_box": [
+        135,
+        805,
+        1310,
+        895
+      ],
+      "kind": "scale",
+      "ocr_psm": 6,
+      "source_id": "S04",
+      "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "native_box": [
+        1357,
+        8077,
+        13166,
+        8980
+      ],
+      "native_size": [
+        11809,
+        903
+      ],
+      "native_image": "S04/S04-R01/native.png",
+      "preview": "S04/S04-R01/preview.png",
+      "preview_size": [
+        2000,
+        153
+      ],
+      "source_to_preview": [
+        [
+          0.1693623507494284,
+          0,
+          -229.82470996697435
+        ],
+        [
+          0,
+          0.16943521594684385,
+          -1368.528239202658
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S04/S04-R01/tile-00-00.png",
+          "native_box": [
+            1357,
+            8077,
+            2957,
+            8980
+          ]
+        },
+        {
+          "path": "S04/S04-R01/tile-00-01.png",
+          "native_box": [
+            2829,
+            8077,
+            4429,
+            8980
+          ]
+        },
+        {
+          "path": "S04/S04-R01/tile-00-02.png",
+          "native_box": [
+            4301,
+            8077,
+            5901,
+            8980
+          ]
+        },
+        {
+          "path": "S04/S04-R01/tile-00-03.png",
+          "native_box": [
+            5773,
+            8077,
+            7373,
+            8980
+          ]
+        },
+        {
+          "path": "S04/S04-R01/tile-00-04.png",
+          "native_box": [
+            7245,
+            8077,
+            8845,
+            8980
+          ]
+        },
+        {
+          "path": "S04/S04-R01/tile-00-05.png",
+          "native_box": [
+            8717,
+            8077,
+            10317,
+            8980
+          ]
+        },
+        {
+          "path": "S04/S04-R01/tile-00-06.png",
+          "native_box": [
+            10189,
+            8077,
+            11789,
+            8980
+          ]
+        },
+        {
+          "path": "S04/S04-R01/tile-00-07.png",
+          "native_box": [
+            11661,
+            8077,
+            13166,
+            8980
+          ]
+        },
+        {
+          "path": "S04/S04-R01/tile-00-08.png",
+          "native_box": [
+            13133,
+            8077,
+            13166,
+            8980
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S04/S04-R01/ocr.txt",
+        "tsv": "S04/S04-R01/ocr.tsv",
+        "words": "S04/S04-R01/ocr_words.json",
+        "word_count": 52,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-V01",
+      "sheet": 5,
+      "title": "Main deck structural plan",
+      "grid_box": [
+        135,
+        95,
+        1075,
+        365
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        1355,
+        953,
+        10793,
+        3662
+      ],
+      "native_size": [
+        9438,
+        2709
+      ],
+      "native_image": "S05/S05-V01/native.png",
+      "preview": "S05/S05-V01/preview.png",
+      "preview_size": [
+        2000,
+        574
+      ],
+      "source_to_preview": [
+        [
+          0.21190930281839374,
+          0,
+          -287.1371053189235
+        ],
+        [
+          0,
+          0.21188630490956073,
+          -201.9276485788114
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-V01/tile-00-00.png",
+          "native_box": [
+            1355,
+            953,
+            2955,
+            2553
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-00-01.png",
+          "native_box": [
+            2827,
+            953,
+            4427,
+            2553
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-00-02.png",
+          "native_box": [
+            4299,
+            953,
+            5899,
+            2553
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-00-03.png",
+          "native_box": [
+            5771,
+            953,
+            7371,
+            2553
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-00-04.png",
+          "native_box": [
+            7243,
+            953,
+            8843,
+            2553
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-00-05.png",
+          "native_box": [
+            8715,
+            953,
+            10315,
+            2553
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-00-06.png",
+          "native_box": [
+            10187,
+            953,
+            10793,
+            2553
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-01-00.png",
+          "native_box": [
+            1355,
+            2425,
+            2955,
+            3662
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-01-01.png",
+          "native_box": [
+            2827,
+            2425,
+            4427,
+            3662
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-01-02.png",
+          "native_box": [
+            4299,
+            2425,
+            5899,
+            3662
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-01-03.png",
+          "native_box": [
+            5771,
+            2425,
+            7371,
+            3662
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-01-04.png",
+          "native_box": [
+            7243,
+            2425,
+            8843,
+            3662
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-01-05.png",
+          "native_box": [
+            8715,
+            2425,
+            10315,
+            3662
+          ]
+        },
+        {
+          "path": "S05/S05-V01/tile-01-06.png",
+          "native_box": [
+            10187,
+            2425,
+            10793,
+            3662
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-V01/ocr.txt",
+        "tsv": "S05/S05-V01/ocr.tsv",
+        "words": "S05/S05-V01/ocr_words.json",
+        "word_count": 42,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-V02",
+      "sheet": 5,
+      "title": "Hold plan and interior arrangement",
+      "grid_box": [
+        135,
+        465,
+        1075,
+        720
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        1355,
+        4666,
+        10793,
+        7224
+      ],
+      "native_size": [
+        9438,
+        2558
+      ],
+      "native_image": "S05/S05-V02/native.png",
+      "preview": "S05/S05-V02/preview.png",
+      "preview_size": [
+        2000,
+        542
+      ],
+      "source_to_preview": [
+        [
+          0.21190930281839374,
+          0,
+          -287.1371053189235
+        ],
+        [
+          0,
+          0.21188428459734168,
+          -988.6520719311962
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-V02/tile-00-00.png",
+          "native_box": [
+            1355,
+            4666,
+            2955,
+            6266
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-00-01.png",
+          "native_box": [
+            2827,
+            4666,
+            4427,
+            6266
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-00-02.png",
+          "native_box": [
+            4299,
+            4666,
+            5899,
+            6266
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-00-03.png",
+          "native_box": [
+            5771,
+            4666,
+            7371,
+            6266
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-00-04.png",
+          "native_box": [
+            7243,
+            4666,
+            8843,
+            6266
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-00-05.png",
+          "native_box": [
+            8715,
+            4666,
+            10315,
+            6266
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-00-06.png",
+          "native_box": [
+            10187,
+            4666,
+            10793,
+            6266
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-01-00.png",
+          "native_box": [
+            1355,
+            6138,
+            2955,
+            7224
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-01-01.png",
+          "native_box": [
+            2827,
+            6138,
+            4427,
+            7224
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-01-02.png",
+          "native_box": [
+            4299,
+            6138,
+            5899,
+            7224
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-01-03.png",
+          "native_box": [
+            5771,
+            6138,
+            7371,
+            7224
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-01-04.png",
+          "native_box": [
+            7243,
+            6138,
+            8843,
+            7224
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-01-05.png",
+          "native_box": [
+            8715,
+            6138,
+            10315,
+            7224
+          ]
+        },
+        {
+          "path": "S05/S05-V02/tile-01-06.png",
+          "native_box": [
+            10187,
+            6138,
+            10793,
+            7224
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-V02/ocr.txt",
+        "tsv": "S05/S05-V02/ocr.tsv",
+        "words": "S05/S05-V02/ocr_words.json",
+        "word_count": 49,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-V03",
+      "sheet": 5,
+      "title": "Main beam register-mark detail A",
+      "grid_box": [
+        610,
+        380,
+        825,
+        460
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        6125,
+        3813,
+        8283,
+        4615
+      ],
+      "native_size": [
+        2158,
+        802
+      ],
+      "native_image": "S05/S05-V03/native.png",
+      "preview": "S05/S05-V03/preview.png",
+      "preview_size": [
+        2000,
+        743
+      ],
+      "source_to_preview": [
+        [
+          0.9267840593141798,
+          0,
+          -5676.552363299352
+        ],
+        [
+          0,
+          0.92643391521197,
+          -3532.492518703242
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-V03/tile-00-00.png",
+          "native_box": [
+            6125,
+            3813,
+            7725,
+            4615
+          ]
+        },
+        {
+          "path": "S05/S05-V03/tile-00-01.png",
+          "native_box": [
+            7597,
+            3813,
+            8283,
+            4615
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-V03/ocr.txt",
+        "tsv": "S05/S05-V03/ocr.tsv",
+        "words": "S05/S05-V03/ocr_words.json",
+        "word_count": 11,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-N01",
+      "sheet": 5,
+      "title": "Interior arrangement key",
+      "grid_box": [
+        835,
+        63,
+        1095,
+        175
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        8384,
+        632,
+        10994,
+        1756
+      ],
+      "native_size": [
+        2610,
+        1124
+      ],
+      "native_image": "S05/S05-N01/native.png",
+      "preview": "S05/S05-N01/preview.png",
+      "preview_size": [
+        2000,
+        861
+      ],
+      "source_to_preview": [
+        [
+          0.7662835249042146,
+          0,
+          -6424.521072796935
+        ],
+        [
+          0,
+          0.7660142348754448,
+          -484.12099644128114
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-N01/tile-00-00.png",
+          "native_box": [
+            8384,
+            632,
+            9984,
+            1756
+          ]
+        },
+        {
+          "path": "S05/S05-N01/tile-00-01.png",
+          "native_box": [
+            9856,
+            632,
+            10994,
+            1756
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-N01/ocr.txt",
+        "tsv": "S05/S05-N01/ocr.tsv",
+        "words": "S05/S05-N01/ocr_words.json",
+        "word_count": 24,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-N02",
+      "sheet": 5,
+      "title": "Ceiling and clamp notes 5/6",
+      "grid_box": [
+        835,
+        350,
+        1090,
+        460
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        8384,
+        3512,
+        10944,
+        4615
+      ],
+      "native_size": [
+        2560,
+        1103
+      ],
+      "native_image": "S05/S05-N02/native.png",
+      "preview": "S05/S05-N02/preview.png",
+      "preview_size": [
+        2000,
+        862
+      ],
+      "source_to_preview": [
+        [
+          0.78125,
+          0,
+          -6550.0
+        ],
+        [
+          0,
+          0.7815049864007253,
+          -2744.645512239347
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-N02/tile-00-00.png",
+          "native_box": [
+            8384,
+            3512,
+            9984,
+            4615
+          ]
+        },
+        {
+          "path": "S05/S05-N02/tile-00-01.png",
+          "native_box": [
+            9856,
+            3512,
+            10944,
+            4615
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-N02/ocr.txt",
+        "tsv": "S05/S05-N02/ocr.tsv",
+        "words": "S05/S05-N02/ocr_words.json",
+        "word_count": 62,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-N03",
+      "sheet": 5,
+      "title": "Deck, frames, keelson and fittings notes",
+      "grid_box": [
+        1090,
+        60,
+        1340,
+        800
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        10944,
+        602,
+        13454,
+        8027
+      ],
+      "native_size": [
+        2510,
+        7425
+      ],
+      "native_image": "S05/S05-N03/native.png",
+      "preview": "S05/S05-N03/preview.png",
+      "preview_size": [
+        541,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.21553784860557768,
+          0,
+          -2358.846215139442
+        ],
+        [
+          0,
+          0.21548821548821548,
+          -129.72390572390572
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-N03/tile-00-00.png",
+          "native_box": [
+            10944,
+            602,
+            12544,
+            2202
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-00-01.png",
+          "native_box": [
+            12416,
+            602,
+            13454,
+            2202
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-01-00.png",
+          "native_box": [
+            10944,
+            2074,
+            12544,
+            3674
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-01-01.png",
+          "native_box": [
+            12416,
+            2074,
+            13454,
+            3674
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-02-00.png",
+          "native_box": [
+            10944,
+            3546,
+            12544,
+            5146
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-02-01.png",
+          "native_box": [
+            12416,
+            3546,
+            13454,
+            5146
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-03-00.png",
+          "native_box": [
+            10944,
+            5018,
+            12544,
+            6618
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-03-01.png",
+          "native_box": [
+            12416,
+            5018,
+            13454,
+            6618
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-04-00.png",
+          "native_box": [
+            10944,
+            6490,
+            12544,
+            8027
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-04-01.png",
+          "native_box": [
+            12416,
+            6490,
+            13454,
+            8027
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-05-00.png",
+          "native_box": [
+            10944,
+            7962,
+            12544,
+            8027
+          ]
+        },
+        {
+          "path": "S05/S05-N03/tile-05-01.png",
+          "native_box": [
+            12416,
+            7962,
+            13454,
+            8027
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-N03/ocr.txt",
+        "tsv": "S05/S05-N03/ocr.tsv",
+        "words": "S05/S05-N03/ocr_words.json",
+        "word_count": 374,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-N04",
+      "sheet": 5,
+      "title": "Deck-beam timber schedule note 7",
+      "grid_box": [
+        830,
+        650,
+        1090,
+        810
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        8333,
+        6522,
+        10944,
+        8127
+      ],
+      "native_size": [
+        2611,
+        1605
+      ],
+      "native_image": "S05/S05-N04/native.png",
+      "preview": "S05/S05-N04/preview.png",
+      "preview_size": [
+        2000,
+        1229
+      ],
+      "source_to_preview": [
+        [
+          0.7659900421294523,
+          0,
+          -6382.995021064726
+        ],
+        [
+          0,
+          0.7657320872274144,
+          -4994.104672897197
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-N04/tile-00-00.png",
+          "native_box": [
+            8333,
+            6522,
+            9933,
+            8122
+          ]
+        },
+        {
+          "path": "S05/S05-N04/tile-00-01.png",
+          "native_box": [
+            9805,
+            6522,
+            10944,
+            8122
+          ]
+        },
+        {
+          "path": "S05/S05-N04/tile-01-00.png",
+          "native_box": [
+            8333,
+            7994,
+            9933,
+            8127
+          ]
+        },
+        {
+          "path": "S05/S05-N04/tile-01-01.png",
+          "native_box": [
+            9805,
+            7994,
+            10944,
+            8127
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-N04/ocr.txt",
+        "tsv": "S05/S05-N04/ocr.tsv",
+        "words": "S05/S05-N04/ocr_words.json",
+        "word_count": 85,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-N05",
+      "sheet": 5,
+      "title": "Wood species and observed fastenings",
+      "grid_box": [
+        1090,
+        820,
+        1340,
+        900
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        10944,
+        8227,
+        13454,
+        9030
+      ],
+      "native_size": [
+        2510,
+        803
+      ],
+      "native_image": "S05/S05-N05/native.png",
+      "preview": "S05/S05-N05/preview.png",
+      "preview_size": [
+        2000,
+        640
+      ],
+      "source_to_preview": [
+        [
+          0.796812749003984,
+          0,
+          -8720.318725099602
+        ],
+        [
+          0,
+          0.797011207970112,
+          -6557.011207970112
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-N05/tile-00-00.png",
+          "native_box": [
+            10944,
+            8227,
+            12544,
+            9030
+          ]
+        },
+        {
+          "path": "S05/S05-N05/tile-00-01.png",
+          "native_box": [
+            12416,
+            8227,
+            13454,
+            9030
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-N05/ocr.txt",
+        "tsv": "S05/S05-N05/ocr.tsv",
+        "words": "S05/S05-N05/ocr_words.json",
+        "word_count": 40,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S05-R01",
+      "sheet": 5,
+      "title": "Feet/metre scale bars",
+      "grid_box": [
+        115,
+        805,
+        1085,
+        895
+      ],
+      "kind": "scale",
+      "ocr_psm": 6,
+      "source_id": "S05",
+      "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+      "native_box": [
+        1155,
+        8077,
+        10894,
+        8980
+      ],
+      "native_size": [
+        9739,
+        903
+      ],
+      "native_image": "S05/S05-R01/native.png",
+      "preview": "S05/S05-R01/preview.png",
+      "preview_size": [
+        2000,
+        185
+      ],
+      "source_to_preview": [
+        [
+          0.20535989321285553,
+          0,
+          -237.19067666084814
+        ],
+        [
+          0,
+          0.20487264673311184,
+          -1654.7563676633442
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S05/S05-R01/tile-00-00.png",
+          "native_box": [
+            1155,
+            8077,
+            2755,
+            8980
+          ]
+        },
+        {
+          "path": "S05/S05-R01/tile-00-01.png",
+          "native_box": [
+            2627,
+            8077,
+            4227,
+            8980
+          ]
+        },
+        {
+          "path": "S05/S05-R01/tile-00-02.png",
+          "native_box": [
+            4099,
+            8077,
+            5699,
+            8980
+          ]
+        },
+        {
+          "path": "S05/S05-R01/tile-00-03.png",
+          "native_box": [
+            5571,
+            8077,
+            7171,
+            8980
+          ]
+        },
+        {
+          "path": "S05/S05-R01/tile-00-04.png",
+          "native_box": [
+            7043,
+            8077,
+            8643,
+            8980
+          ]
+        },
+        {
+          "path": "S05/S05-R01/tile-00-05.png",
+          "native_box": [
+            8515,
+            8077,
+            10115,
+            8980
+          ]
+        },
+        {
+          "path": "S05/S05-R01/tile-00-06.png",
+          "native_box": [
+            9987,
+            8077,
+            10894,
+            8980
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S05/S05-R01/ocr.txt",
+        "tsv": "S05/S05-R01/ocr.tsv",
+        "words": "S05/S05-R01/ocr_words.json",
+        "word_count": 42,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S06-V01",
+      "sheet": 6,
+      "title": "Section at frame set 4, looking to bow",
+      "grid_box": [
+        205,
+        65,
+        580,
+        395
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S06",
+      "source_sha256": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+      "native_box": [
+        2060,
+        652,
+        5829,
+        3963
+      ],
+      "native_size": [
+        3769,
+        3311
+      ],
+      "native_image": "S06/S06-V01/native.png",
+      "preview": "S06/S06-V01/preview.png",
+      "preview_size": [
+        1821,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.48315202971610505,
+          0,
+          -995.2931812151764
+        ],
+        [
+          0,
+          0.48323769254001814,
+          -315.07097553609185
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S06/S06-V01/tile-00-00.png",
+          "native_box": [
+            2060,
+            652,
+            3660,
+            2252
+          ]
+        },
+        {
+          "path": "S06/S06-V01/tile-00-01.png",
+          "native_box": [
+            3532,
+            652,
+            5132,
+            2252
+          ]
+        },
+        {
+          "path": "S06/S06-V01/tile-00-02.png",
+          "native_box": [
+            5004,
+            652,
+            5829,
+            2252
+          ]
+        },
+        {
+          "path": "S06/S06-V01/tile-01-00.png",
+          "native_box": [
+            2060,
+            2124,
+            3660,
+            3724
+          ]
+        },
+        {
+          "path": "S06/S06-V01/tile-01-01.png",
+          "native_box": [
+            3532,
+            2124,
+            5132,
+            3724
+          ]
+        },
+        {
+          "path": "S06/S06-V01/tile-01-02.png",
+          "native_box": [
+            5004,
+            2124,
+            5829,
+            3724
+          ]
+        },
+        {
+          "path": "S06/S06-V01/tile-02-00.png",
+          "native_box": [
+            2060,
+            3596,
+            3660,
+            3963
+          ]
+        },
+        {
+          "path": "S06/S06-V01/tile-02-01.png",
+          "native_box": [
+            3532,
+            3596,
+            5132,
+            3963
+          ]
+        },
+        {
+          "path": "S06/S06-V01/tile-02-02.png",
+          "native_box": [
+            5004,
+            3596,
+            5829,
+            3963
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S06/S06-V01/ocr.txt",
+        "tsv": "S06/S06-V01/ocr.tsv",
+        "words": "S06/S06-V01/ocr_words.json",
+        "word_count": 11,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S06-V02",
+      "sheet": 6,
+      "title": "Section at frame set 5, looking aft to bulkhead",
+      "grid_box": [
+        120,
+        395,
+        680,
+        805
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S06",
+      "source_sha256": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+      "native_box": [
+        1206,
+        3963,
+        6834,
+        8077
+      ],
+      "native_size": [
+        5628,
+        4114
+      ],
+      "native_image": "S06/S06-V02/native.png",
+      "preview": "S06/S06-V02/preview.png",
+      "preview_size": [
+        2000,
+        1462
+      ],
+      "source_to_preview": [
+        [
+          0.35536602700781805,
+          0,
+          -428.57142857142856
+        ],
+        [
+          0,
+          0.35537190082644626,
+          -1408.3388429752065
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S06/S06-V02/tile-00-00.png",
+          "native_box": [
+            1206,
+            3963,
+            2806,
+            5563
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-00-01.png",
+          "native_box": [
+            2678,
+            3963,
+            4278,
+            5563
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-00-02.png",
+          "native_box": [
+            4150,
+            3963,
+            5750,
+            5563
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-00-03.png",
+          "native_box": [
+            5622,
+            3963,
+            6834,
+            5563
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-01-00.png",
+          "native_box": [
+            1206,
+            5435,
+            2806,
+            7035
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-01-01.png",
+          "native_box": [
+            2678,
+            5435,
+            4278,
+            7035
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-01-02.png",
+          "native_box": [
+            4150,
+            5435,
+            5750,
+            7035
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-01-03.png",
+          "native_box": [
+            5622,
+            5435,
+            6834,
+            7035
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-02-00.png",
+          "native_box": [
+            1206,
+            6907,
+            2806,
+            8077
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-02-01.png",
+          "native_box": [
+            2678,
+            6907,
+            4278,
+            8077
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-02-02.png",
+          "native_box": [
+            4150,
+            6907,
+            5750,
+            8077
+          ]
+        },
+        {
+          "path": "S06/S06-V02/tile-02-03.png",
+          "native_box": [
+            5622,
+            6907,
+            6834,
+            8077
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S06/S06-V02/ocr.txt",
+        "tsv": "S06/S06-V02/ocr.tsv",
+        "words": "S06/S06-V02/ocr_words.json",
+        "word_count": 30,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S06-V03",
+      "sheet": 6,
+      "title": "Structural conception, frame sets 13–16 starboard",
+      "grid_box": [
+        805,
+        70,
+        1335,
+        550
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S06",
+      "source_sha256": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+      "native_box": [
+        8090,
+        702,
+        13417,
+        5518
+      ],
+      "native_size": [
+        5327,
+        4816
+      ],
+      "native_image": "S06/S06-V03/native.png",
+      "preview": "S06/S06-V03/preview.png",
+      "preview_size": [
+        1770,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.33226957011451097,
+          0,
+          -2688.0608222263936
+        ],
+        [
+          0,
+          0.33222591362126247,
+          -233.22259136212625
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S06/S06-V03/tile-00-00.png",
+          "native_box": [
+            8090,
+            702,
+            9690,
+            2302
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-00-01.png",
+          "native_box": [
+            9562,
+            702,
+            11162,
+            2302
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-00-02.png",
+          "native_box": [
+            11034,
+            702,
+            12634,
+            2302
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-00-03.png",
+          "native_box": [
+            12506,
+            702,
+            13417,
+            2302
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-01-00.png",
+          "native_box": [
+            8090,
+            2174,
+            9690,
+            3774
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-01-01.png",
+          "native_box": [
+            9562,
+            2174,
+            11162,
+            3774
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-01-02.png",
+          "native_box": [
+            11034,
+            2174,
+            12634,
+            3774
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-01-03.png",
+          "native_box": [
+            12506,
+            2174,
+            13417,
+            3774
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-02-00.png",
+          "native_box": [
+            8090,
+            3646,
+            9690,
+            5246
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-02-01.png",
+          "native_box": [
+            9562,
+            3646,
+            11162,
+            5246
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-02-02.png",
+          "native_box": [
+            11034,
+            3646,
+            12634,
+            5246
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-02-03.png",
+          "native_box": [
+            12506,
+            3646,
+            13417,
+            5246
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-03-00.png",
+          "native_box": [
+            8090,
+            5118,
+            9690,
+            5518
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-03-01.png",
+          "native_box": [
+            9562,
+            5118,
+            11162,
+            5518
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-03-02.png",
+          "native_box": [
+            11034,
+            5118,
+            12634,
+            5518
+          ]
+        },
+        {
+          "path": "S06/S06-V03/tile-03-03.png",
+          "native_box": [
+            12506,
+            5118,
+            13417,
+            5518
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S06/S06-V03/ocr.txt",
+        "tsv": "S06/S06-V03/ocr.tsv",
+        "words": "S06/S06-V03/ocr_words.json",
+        "word_count": 20,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S06-N01",
+      "sheet": 6,
+      "title": "Survey access limitations and repair distinction",
+      "grid_box": [
+        580,
+        137,
+        808,
+        310
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S06",
+      "source_sha256": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+      "native_box": [
+        5829,
+        1375,
+        8120,
+        3110
+      ],
+      "native_size": [
+        2291,
+        1735
+      ],
+      "native_image": "S06/S06-N01/native.png",
+      "preview": "S06/S06-N01/preview.png",
+      "preview_size": [
+        2000,
+        1515
+      ],
+      "source_to_preview": [
+        [
+          0.8729812309035355,
+          0,
+          -5088.607594936709
+        ],
+        [
+          0,
+          0.8731988472622478,
+          -1200.6484149855908
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S06/S06-N01/tile-00-00.png",
+          "native_box": [
+            5829,
+            1375,
+            7429,
+            2975
+          ]
+        },
+        {
+          "path": "S06/S06-N01/tile-00-01.png",
+          "native_box": [
+            7301,
+            1375,
+            8120,
+            2975
+          ]
+        },
+        {
+          "path": "S06/S06-N01/tile-01-00.png",
+          "native_box": [
+            5829,
+            2847,
+            7429,
+            3110
+          ]
+        },
+        {
+          "path": "S06/S06-N01/tile-01-01.png",
+          "native_box": [
+            7301,
+            2847,
+            8120,
+            3110
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S06/S06-N01/ocr.txt",
+        "tsv": "S06/S06-N01/ocr.tsv",
+        "words": "S06/S06-N01/ocr_words.json",
+        "word_count": 62,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S06-N02",
+      "sheet": 6,
+      "title": "Construction notes 1–7",
+      "grid_box": [
+        727,
+        565,
+        1035,
+        835
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S06",
+      "source_sha256": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+      "native_box": [
+        7306,
+        5669,
+        10402,
+        8378
+      ],
+      "native_size": [
+        3096,
+        2709
+      ],
+      "native_image": "S06/S06-N02/native.png",
+      "preview": "S06/S06-N02/preview.png",
+      "preview_size": [
+        1829,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.5907622739018088,
+          0,
+          -4316.109173126615
+        ],
+        [
+          0,
+          0.5906238464378,
+          -3348.246585455888
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S06/S06-N02/tile-00-00.png",
+          "native_box": [
+            7306,
+            5669,
+            8906,
+            7269
+          ]
+        },
+        {
+          "path": "S06/S06-N02/tile-00-01.png",
+          "native_box": [
+            8778,
+            5669,
+            10378,
+            7269
+          ]
+        },
+        {
+          "path": "S06/S06-N02/tile-00-02.png",
+          "native_box": [
+            10250,
+            5669,
+            10402,
+            7269
+          ]
+        },
+        {
+          "path": "S06/S06-N02/tile-01-00.png",
+          "native_box": [
+            7306,
+            7141,
+            8906,
+            8378
+          ]
+        },
+        {
+          "path": "S06/S06-N02/tile-01-01.png",
+          "native_box": [
+            8778,
+            7141,
+            10378,
+            8378
+          ]
+        },
+        {
+          "path": "S06/S06-N02/tile-01-02.png",
+          "native_box": [
+            10250,
+            7141,
+            10402,
+            8378
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S06/S06-N02/ocr.txt",
+        "tsv": "S06/S06-N02/ocr.tsv",
+        "words": "S06/S06-N02/ocr_words.json",
+        "word_count": 145,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S06-N03",
+      "sheet": 6,
+      "title": "Construction notes 8–19",
+      "grid_box": [
+        1030,
+        565,
+        1340,
+        895
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S06",
+      "source_sha256": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+      "native_box": [
+        10352,
+        5669,
+        13467,
+        8980
+      ],
+      "native_size": [
+        3115,
+        3311
+      ],
+      "native_image": "S06/S06-N03/native.png",
+      "preview": "S06/S06-N03/preview.png",
+      "preview_size": [
+        1505,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.48314606741573035,
+          0,
+          -5001.528089887641
+        ],
+        [
+          0,
+          0.48323769254001814,
+          -2739.4744790093628
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S06/S06-N03/tile-00-00.png",
+          "native_box": [
+            10352,
+            5669,
+            11952,
+            7269
+          ]
+        },
+        {
+          "path": "S06/S06-N03/tile-00-01.png",
+          "native_box": [
+            11824,
+            5669,
+            13424,
+            7269
+          ]
+        },
+        {
+          "path": "S06/S06-N03/tile-00-02.png",
+          "native_box": [
+            13296,
+            5669,
+            13467,
+            7269
+          ]
+        },
+        {
+          "path": "S06/S06-N03/tile-01-00.png",
+          "native_box": [
+            10352,
+            7141,
+            11952,
+            8741
+          ]
+        },
+        {
+          "path": "S06/S06-N03/tile-01-01.png",
+          "native_box": [
+            11824,
+            7141,
+            13424,
+            8741
+          ]
+        },
+        {
+          "path": "S06/S06-N03/tile-01-02.png",
+          "native_box": [
+            13296,
+            7141,
+            13467,
+            8741
+          ]
+        },
+        {
+          "path": "S06/S06-N03/tile-02-00.png",
+          "native_box": [
+            10352,
+            8613,
+            11952,
+            8980
+          ]
+        },
+        {
+          "path": "S06/S06-N03/tile-02-01.png",
+          "native_box": [
+            11824,
+            8613,
+            13424,
+            8980
+          ]
+        },
+        {
+          "path": "S06/S06-N03/tile-02-02.png",
+          "native_box": [
+            13296,
+            8613,
+            13467,
+            8980
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S06/S06-N03/ocr.txt",
+        "tsv": "S06/S06-N03/ocr.tsv",
+        "words": "S06/S06-N03/ocr_words.json",
+        "word_count": 199,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S06-R01",
+      "sheet": 6,
+      "title": "Feet/metre scale bars and printed scales",
+      "grid_box": [
+        130,
+        810,
+        825,
+        900
+      ],
+      "kind": "scale",
+      "ocr_psm": 6,
+      "source_id": "S06",
+      "source_sha256": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+      "native_box": [
+        1306,
+        8127,
+        8291,
+        9030
+      ],
+      "native_size": [
+        6985,
+        903
+      ],
+      "native_image": "S06/S06-R01/native.png",
+      "preview": "S06/S06-R01/preview.png",
+      "preview_size": [
+        2000,
+        259
+      ],
+      "source_to_preview": [
+        [
+          0.2863278453829635,
+          0,
+          -373.94416607015035
+        ],
+        [
+          0,
+          0.2868217054263566,
+          -2331.0
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S06/S06-R01/tile-00-00.png",
+          "native_box": [
+            1306,
+            8127,
+            2906,
+            9030
+          ]
+        },
+        {
+          "path": "S06/S06-R01/tile-00-01.png",
+          "native_box": [
+            2778,
+            8127,
+            4378,
+            9030
+          ]
+        },
+        {
+          "path": "S06/S06-R01/tile-00-02.png",
+          "native_box": [
+            4250,
+            8127,
+            5850,
+            9030
+          ]
+        },
+        {
+          "path": "S06/S06-R01/tile-00-03.png",
+          "native_box": [
+            5722,
+            8127,
+            7322,
+            9030
+          ]
+        },
+        {
+          "path": "S06/S06-R01/tile-00-04.png",
+          "native_box": [
+            7194,
+            8127,
+            8291,
+            9030
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S06/S06-R01/ocr.txt",
+        "tsv": "S06/S06-R01/ocr.tsv",
+        "words": "S06/S06-R01/ocr_words.json",
+        "word_count": 26,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S07-V01",
+      "sheet": 7,
+      "title": "Section at frame set 13, looking aft to cabin bulkhead",
+      "grid_box": [
+        120,
+        75,
+        705,
+        435
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S07",
+      "source_sha256": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683",
+      "native_box": [
+        1207,
+        752,
+        7089,
+        4364
+      ],
+      "native_size": [
+        5882,
+        3612
+      ],
+      "native_image": "S07/S07-V01/native.png",
+      "preview": "S07/S07-V01/preview.png",
+      "preview_size": [
+        2000,
+        1228
+      ],
+      "source_to_preview": [
+        [
+          0.34002040122407345,
+          0,
+          -410.40462427745666
+        ],
+        [
+          0,
+          0.3399778516057586,
+          -255.66334440753047
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S07/S07-V01/tile-00-00.png",
+          "native_box": [
+            1207,
+            752,
+            2807,
+            2352
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-00-01.png",
+          "native_box": [
+            2679,
+            752,
+            4279,
+            2352
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-00-02.png",
+          "native_box": [
+            4151,
+            752,
+            5751,
+            2352
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-00-03.png",
+          "native_box": [
+            5623,
+            752,
+            7089,
+            2352
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-01-00.png",
+          "native_box": [
+            1207,
+            2224,
+            2807,
+            3824
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-01-01.png",
+          "native_box": [
+            2679,
+            2224,
+            4279,
+            3824
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-01-02.png",
+          "native_box": [
+            4151,
+            2224,
+            5751,
+            3824
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-01-03.png",
+          "native_box": [
+            5623,
+            2224,
+            7089,
+            3824
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-02-00.png",
+          "native_box": [
+            1207,
+            3696,
+            2807,
+            4364
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-02-01.png",
+          "native_box": [
+            2679,
+            3696,
+            4279,
+            4364
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-02-02.png",
+          "native_box": [
+            4151,
+            3696,
+            5751,
+            4364
+          ]
+        },
+        {
+          "path": "S07/S07-V01/tile-02-03.png",
+          "native_box": [
+            5623,
+            3696,
+            7089,
+            4364
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S07/S07-V01/ocr.txt",
+        "tsv": "S07/S07-V01/ocr.tsv",
+        "words": "S07/S07-V01/ocr_words.json",
+        "word_count": 36,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S07-V02",
+      "sheet": 7,
+      "title": "Section at cabin hatch, looking forward to cabin bulkhead",
+      "grid_box": [
+        130,
+        430,
+        665,
+        805
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S07",
+      "source_sha256": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683",
+      "native_box": [
+        1307,
+        4314,
+        6687,
+        8077
+      ],
+      "native_size": [
+        5380,
+        3763
+      ],
+      "native_image": "S07/S07-V02/native.png",
+      "preview": "S07/S07-V02/preview.png",
+      "preview_size": [
+        2000,
+        1399
+      ],
+      "source_to_preview": [
+        [
+          0.37174721189591076,
+          0,
+          -485.87360594795535
+        ],
+        [
+          0,
+          0.37177783683231463,
+          -1603.8495880946052
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S07/S07-V02/tile-00-00.png",
+          "native_box": [
+            1307,
+            4314,
+            2907,
+            5914
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-00-01.png",
+          "native_box": [
+            2779,
+            4314,
+            4379,
+            5914
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-00-02.png",
+          "native_box": [
+            4251,
+            4314,
+            5851,
+            5914
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-00-03.png",
+          "native_box": [
+            5723,
+            4314,
+            6687,
+            5914
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-01-00.png",
+          "native_box": [
+            1307,
+            5786,
+            2907,
+            7386
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-01-01.png",
+          "native_box": [
+            2779,
+            5786,
+            4379,
+            7386
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-01-02.png",
+          "native_box": [
+            4251,
+            5786,
+            5851,
+            7386
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-01-03.png",
+          "native_box": [
+            5723,
+            5786,
+            6687,
+            7386
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-02-00.png",
+          "native_box": [
+            1307,
+            7258,
+            2907,
+            8077
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-02-01.png",
+          "native_box": [
+            2779,
+            7258,
+            4379,
+            8077
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-02-02.png",
+          "native_box": [
+            4251,
+            7258,
+            5851,
+            8077
+          ]
+        },
+        {
+          "path": "S07/S07-V02/tile-02-03.png",
+          "native_box": [
+            5723,
+            7258,
+            6687,
+            8077
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S07/S07-V02/ocr.txt",
+        "tsv": "S07/S07-V02/ocr.tsv",
+        "words": "S07/S07-V02/ocr_words.json",
+        "word_count": 15,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S07-V03",
+      "sheet": 7,
+      "title": "Winder construction detail",
+      "grid_box": [
+        900,
+        70,
+        1330,
+        555
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S07",
+      "source_sha256": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683",
+      "native_box": [
+        9050,
+        702,
+        13374,
+        5568
+      ],
+      "native_size": [
+        4324,
+        4866
+      ],
+      "native_image": "S07/S07-V03/native.png",
+      "preview": "S07/S07-V03/preview.png",
+      "preview_size": [
+        1422,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.3288621646623497,
+          0,
+          -2976.2025901942648
+        ],
+        [
+          0,
+          0.32881216605014385,
+          -230.82614056720098
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S07/S07-V03/tile-00-00.png",
+          "native_box": [
+            9050,
+            702,
+            10650,
+            2302
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-00-01.png",
+          "native_box": [
+            10522,
+            702,
+            12122,
+            2302
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-00-02.png",
+          "native_box": [
+            11994,
+            702,
+            13374,
+            2302
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-01-00.png",
+          "native_box": [
+            9050,
+            2174,
+            10650,
+            3774
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-01-01.png",
+          "native_box": [
+            10522,
+            2174,
+            12122,
+            3774
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-01-02.png",
+          "native_box": [
+            11994,
+            2174,
+            13374,
+            3774
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-02-00.png",
+          "native_box": [
+            9050,
+            3646,
+            10650,
+            5246
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-02-01.png",
+          "native_box": [
+            10522,
+            3646,
+            12122,
+            5246
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-02-02.png",
+          "native_box": [
+            11994,
+            3646,
+            13374,
+            5246
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-03-00.png",
+          "native_box": [
+            9050,
+            5118,
+            10650,
+            5568
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-03-01.png",
+          "native_box": [
+            10522,
+            5118,
+            12122,
+            5568
+          ]
+        },
+        {
+          "path": "S07/S07-V03/tile-03-02.png",
+          "native_box": [
+            11994,
+            5118,
+            13374,
+            5568
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S07/S07-V03/ocr.txt",
+        "tsv": "S07/S07-V03/ocr.tsv",
+        "words": "S07/S07-V03/ocr_words.json",
+        "word_count": 4,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S07-N01",
+      "sheet": 7,
+      "title": "Survey access and winder operation",
+      "grid_box": [
+        700,
+        60,
+        915,
+        270
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S07",
+      "source_sha256": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683",
+      "native_box": [
+        7039,
+        602,
+        9201,
+        2709
+      ],
+      "native_size": [
+        2162,
+        2107
+      ],
+      "native_image": "S07/S07-N01/native.png",
+      "preview": "S07/S07-N01/preview.png",
+      "preview_size": [
+        1642,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.759481961147086,
+          0,
+          -5345.993524514338
+        ],
+        [
+          0,
+          0.7593735168485999,
+          -457.1428571428571
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S07/S07-N01/tile-00-00.png",
+          "native_box": [
+            7039,
+            602,
+            8639,
+            2202
+          ]
+        },
+        {
+          "path": "S07/S07-N01/tile-00-01.png",
+          "native_box": [
+            8511,
+            602,
+            9201,
+            2202
+          ]
+        },
+        {
+          "path": "S07/S07-N01/tile-01-00.png",
+          "native_box": [
+            7039,
+            2074,
+            8639,
+            2709
+          ]
+        },
+        {
+          "path": "S07/S07-N01/tile-01-01.png",
+          "native_box": [
+            8511,
+            2074,
+            9201,
+            2709
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S07/S07-N01/ocr.txt",
+        "tsv": "S07/S07-N01/ocr.tsv",
+        "words": "S07/S07-N01/ocr_words.json",
+        "word_count": 84,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S07-N02",
+      "sheet": 7,
+      "title": "Construction notes 1–8",
+      "grid_box": [
+        705,
+        570,
+        1035,
+        795
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S07",
+      "source_sha256": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683",
+      "native_box": [
+        7089,
+        5719,
+        10408,
+        7976
+      ],
+      "native_size": [
+        3319,
+        2257
+      ],
+      "native_image": "S07/S07-N02/native.png",
+      "preview": "S07/S07-N02/preview.png",
+      "preview_size": [
+        2000,
+        1360
+      ],
+      "source_to_preview": [
+        [
+          0.6025911419102139,
+          0,
+          -4271.768605001506
+        ],
+        [
+          0,
+          0.6025697828976517,
+          -3446.09658839167
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S07/S07-N02/tile-00-00.png",
+          "native_box": [
+            7089,
+            5719,
+            8689,
+            7319
+          ]
+        },
+        {
+          "path": "S07/S07-N02/tile-00-01.png",
+          "native_box": [
+            8561,
+            5719,
+            10161,
+            7319
+          ]
+        },
+        {
+          "path": "S07/S07-N02/tile-00-02.png",
+          "native_box": [
+            10033,
+            5719,
+            10408,
+            7319
+          ]
+        },
+        {
+          "path": "S07/S07-N02/tile-01-00.png",
+          "native_box": [
+            7089,
+            7191,
+            8689,
+            7976
+          ]
+        },
+        {
+          "path": "S07/S07-N02/tile-01-01.png",
+          "native_box": [
+            8561,
+            7191,
+            10161,
+            7976
+          ]
+        },
+        {
+          "path": "S07/S07-N02/tile-01-02.png",
+          "native_box": [
+            10033,
+            7191,
+            10408,
+            7976
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S07/S07-N02/ocr.txt",
+        "tsv": "S07/S07-N02/ocr.tsv",
+        "words": "S07/S07-N02/ocr_words.json",
+        "word_count": 140,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S07-N03",
+      "sheet": 7,
+      "title": "Construction and winder notes 9–19",
+      "grid_box": [
+        1030,
+        580,
+        1340,
+        895
+      ],
+      "kind": "notes",
+      "ocr_psm": 6,
+      "source_id": "S07",
+      "source_sha256": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683",
+      "native_box": [
+        10357,
+        5819,
+        13474,
+        8980
+      ],
+      "native_size": [
+        3117,
+        3161
+      ],
+      "native_image": "S07/S07-N03/native.png",
+      "preview": "S07/S07-N03/preview.png",
+      "preview_size": [
+        1578,
+        1600
+      ],
+      "source_to_preview": [
+        [
+          0.5062560153994226,
+          0,
+          -5243.293551491819
+        ],
+        [
+          0,
+          0.506168933881683,
+          -2945.3970262575135
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S07/S07-N03/tile-00-00.png",
+          "native_box": [
+            10357,
+            5819,
+            11957,
+            7419
+          ]
+        },
+        {
+          "path": "S07/S07-N03/tile-00-01.png",
+          "native_box": [
+            11829,
+            5819,
+            13429,
+            7419
+          ]
+        },
+        {
+          "path": "S07/S07-N03/tile-00-02.png",
+          "native_box": [
+            13301,
+            5819,
+            13474,
+            7419
+          ]
+        },
+        {
+          "path": "S07/S07-N03/tile-01-00.png",
+          "native_box": [
+            10357,
+            7291,
+            11957,
+            8891
+          ]
+        },
+        {
+          "path": "S07/S07-N03/tile-01-01.png",
+          "native_box": [
+            11829,
+            7291,
+            13429,
+            8891
+          ]
+        },
+        {
+          "path": "S07/S07-N03/tile-01-02.png",
+          "native_box": [
+            13301,
+            7291,
+            13474,
+            8891
+          ]
+        },
+        {
+          "path": "S07/S07-N03/tile-02-00.png",
+          "native_box": [
+            10357,
+            8763,
+            11957,
+            8980
+          ]
+        },
+        {
+          "path": "S07/S07-N03/tile-02-01.png",
+          "native_box": [
+            11829,
+            8763,
+            13429,
+            8980
+          ]
+        },
+        {
+          "path": "S07/S07-N03/tile-02-02.png",
+          "native_box": [
+            13301,
+            8763,
+            13474,
+            8980
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S07/S07-N03/ocr.txt",
+        "tsv": "S07/S07-N03/ocr.tsv",
+        "words": "S07/S07-N03/ocr_words.json",
+        "word_count": 178,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S07-R01",
+      "sheet": 7,
+      "title": "Feet/metre scale bars and printed scales",
+      "grid_box": [
+        130,
+        805,
+        825,
+        900
+      ],
+      "kind": "scale",
+      "ocr_psm": 6,
+      "source_id": "S07",
+      "source_sha256": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683",
+      "native_box": [
+        1307,
+        8077,
+        8296,
+        9030
+      ],
+      "native_size": [
+        6989,
+        953
+      ],
+      "native_image": "S07/S07-R01/native.png",
+      "preview": "S07/S07-R01/preview.png",
+      "preview_size": [
+        2000,
+        273
+      ],
+      "source_to_preview": [
+        [
+          0.28616397195593074,
+          0,
+          -374.0163113464015
+        ],
+        [
+          0,
+          0.2864637985309549,
+          -2313.7681007345227
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S07/S07-R01/tile-00-00.png",
+          "native_box": [
+            1307,
+            8077,
+            2907,
+            9030
+          ]
+        },
+        {
+          "path": "S07/S07-R01/tile-00-01.png",
+          "native_box": [
+            2779,
+            8077,
+            4379,
+            9030
+          ]
+        },
+        {
+          "path": "S07/S07-R01/tile-00-02.png",
+          "native_box": [
+            4251,
+            8077,
+            5851,
+            9030
+          ]
+        },
+        {
+          "path": "S07/S07-R01/tile-00-03.png",
+          "native_box": [
+            5723,
+            8077,
+            7323,
+            9030
+          ]
+        },
+        {
+          "path": "S07/S07-R01/tile-00-04.png",
+          "native_box": [
+            7195,
+            8077,
+            8296,
+            9030
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S07/S07-R01/ocr.txt",
+        "tsv": "S07/S07-R01/ocr.tsv",
+        "words": "S07/S07-R01/ocr_words.json",
+        "word_count": 29,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S08-V01",
+      "sheet": 8,
+      "title": "Complete sail-plan reference",
+      "grid_box": [
+        100,
+        55,
+        1345,
+        805
+      ],
+      "kind": "drawing",
+      "ocr_psm": 3,
+      "source_id": "S08",
+      "source_sha256": "c2323234f362d058b4aa44e3c6d8051c679126db060d54cccfad386e9d0ac5fd",
+      "native_box": [
+        1004,
+        552,
+        13510,
+        8077
+      ],
+      "native_size": [
+        12506,
+        7525
+      ],
+      "native_image": "S08/S08-V01/native.png",
+      "preview": "S08/S08-V01/preview.png",
+      "preview_size": [
+        2000,
+        1203
+      ],
+      "source_to_preview": [
+        [
+          0.15992323684631377,
+          0,
+          -160.56292979369903
+        ],
+        [
+          0,
+          0.1598671096345515,
+          -88.24664451827243
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S08/S08-V01/tile-00-00.png",
+          "native_box": [
+            1004,
+            552,
+            2604,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-00-01.png",
+          "native_box": [
+            2476,
+            552,
+            4076,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-00-02.png",
+          "native_box": [
+            3948,
+            552,
+            5548,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-00-03.png",
+          "native_box": [
+            5420,
+            552,
+            7020,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-00-04.png",
+          "native_box": [
+            6892,
+            552,
+            8492,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-00-05.png",
+          "native_box": [
+            8364,
+            552,
+            9964,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-00-06.png",
+          "native_box": [
+            9836,
+            552,
+            11436,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-00-07.png",
+          "native_box": [
+            11308,
+            552,
+            12908,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-00-08.png",
+          "native_box": [
+            12780,
+            552,
+            13510,
+            2152
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-00.png",
+          "native_box": [
+            1004,
+            2024,
+            2604,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-01.png",
+          "native_box": [
+            2476,
+            2024,
+            4076,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-02.png",
+          "native_box": [
+            3948,
+            2024,
+            5548,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-03.png",
+          "native_box": [
+            5420,
+            2024,
+            7020,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-04.png",
+          "native_box": [
+            6892,
+            2024,
+            8492,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-05.png",
+          "native_box": [
+            8364,
+            2024,
+            9964,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-06.png",
+          "native_box": [
+            9836,
+            2024,
+            11436,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-07.png",
+          "native_box": [
+            11308,
+            2024,
+            12908,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-01-08.png",
+          "native_box": [
+            12780,
+            2024,
+            13510,
+            3624
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-00.png",
+          "native_box": [
+            1004,
+            3496,
+            2604,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-01.png",
+          "native_box": [
+            2476,
+            3496,
+            4076,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-02.png",
+          "native_box": [
+            3948,
+            3496,
+            5548,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-03.png",
+          "native_box": [
+            5420,
+            3496,
+            7020,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-04.png",
+          "native_box": [
+            6892,
+            3496,
+            8492,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-05.png",
+          "native_box": [
+            8364,
+            3496,
+            9964,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-06.png",
+          "native_box": [
+            9836,
+            3496,
+            11436,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-07.png",
+          "native_box": [
+            11308,
+            3496,
+            12908,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-02-08.png",
+          "native_box": [
+            12780,
+            3496,
+            13510,
+            5096
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-00.png",
+          "native_box": [
+            1004,
+            4968,
+            2604,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-01.png",
+          "native_box": [
+            2476,
+            4968,
+            4076,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-02.png",
+          "native_box": [
+            3948,
+            4968,
+            5548,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-03.png",
+          "native_box": [
+            5420,
+            4968,
+            7020,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-04.png",
+          "native_box": [
+            6892,
+            4968,
+            8492,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-05.png",
+          "native_box": [
+            8364,
+            4968,
+            9964,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-06.png",
+          "native_box": [
+            9836,
+            4968,
+            11436,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-07.png",
+          "native_box": [
+            11308,
+            4968,
+            12908,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-03-08.png",
+          "native_box": [
+            12780,
+            4968,
+            13510,
+            6568
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-00.png",
+          "native_box": [
+            1004,
+            6440,
+            2604,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-01.png",
+          "native_box": [
+            2476,
+            6440,
+            4076,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-02.png",
+          "native_box": [
+            3948,
+            6440,
+            5548,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-03.png",
+          "native_box": [
+            5420,
+            6440,
+            7020,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-04.png",
+          "native_box": [
+            6892,
+            6440,
+            8492,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-05.png",
+          "native_box": [
+            8364,
+            6440,
+            9964,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-06.png",
+          "native_box": [
+            9836,
+            6440,
+            11436,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-07.png",
+          "native_box": [
+            11308,
+            6440,
+            12908,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-04-08.png",
+          "native_box": [
+            12780,
+            6440,
+            13510,
+            8040
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-00.png",
+          "native_box": [
+            1004,
+            7912,
+            2604,
+            8077
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-01.png",
+          "native_box": [
+            2476,
+            7912,
+            4076,
+            8077
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-02.png",
+          "native_box": [
+            3948,
+            7912,
+            5548,
+            8077
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-03.png",
+          "native_box": [
+            5420,
+            7912,
+            7020,
+            8077
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-04.png",
+          "native_box": [
+            6892,
+            7912,
+            8492,
+            8077
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-05.png",
+          "native_box": [
+            8364,
+            7912,
+            9964,
+            8077
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-06.png",
+          "native_box": [
+            9836,
+            7912,
+            11436,
+            8077
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-07.png",
+          "native_box": [
+            11308,
+            7912,
+            12908,
+            8077
+          ]
+        },
+        {
+          "path": "S08/S08-V01/tile-05-08.png",
+          "native_box": [
+            12780,
+            7912,
+            13510,
+            8077
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S08/S08-V01/ocr.txt",
+        "tsv": "S08/S08-V01/ocr.tsv",
+        "words": "S08/S08-V01/ocr_words.json",
+        "word_count": 150,
+        "review_status": "unreviewed OCR"
+      }
+    },
+    {
+      "id": "S08-R01",
+      "sheet": 8,
+      "title": "Scale and footer reference",
+      "grid_box": [
+        130,
+        805,
+        1315,
+        895
+      ],
+      "kind": "scale",
+      "ocr_psm": 6,
+      "source_id": "S08",
+      "source_sha256": "c2323234f362d058b4aa44e3c6d8051c679126db060d54cccfad386e9d0ac5fd",
+      "native_box": [
+        1306,
+        8077,
+        13208,
+        8980
+      ],
+      "native_size": [
+        11902,
+        903
+      ],
+      "native_image": "S08/S08-R01/native.png",
+      "preview": "S08/S08-R01/preview.png",
+      "preview_size": [
+        2000,
+        152
+      ],
+      "source_to_preview": [
+        [
+          0.16803898504453033,
+          0,
+          -219.4589144681566
+        ],
+        [
+          0,
+          0.16832779623477298,
+          -1359.5836101882614
+        ],
+        [
+          0,
+          0,
+          1
+        ]
+      ],
+      "tiles": [
+        {
+          "path": "S08/S08-R01/tile-00-00.png",
+          "native_box": [
+            1306,
+            8077,
+            2906,
+            8980
+          ]
+        },
+        {
+          "path": "S08/S08-R01/tile-00-01.png",
+          "native_box": [
+            2778,
+            8077,
+            4378,
+            8980
+          ]
+        },
+        {
+          "path": "S08/S08-R01/tile-00-02.png",
+          "native_box": [
+            4250,
+            8077,
+            5850,
+            8980
+          ]
+        },
+        {
+          "path": "S08/S08-R01/tile-00-03.png",
+          "native_box": [
+            5722,
+            8077,
+            7322,
+            8980
+          ]
+        },
+        {
+          "path": "S08/S08-R01/tile-00-04.png",
+          "native_box": [
+            7194,
+            8077,
+            8794,
+            8980
+          ]
+        },
+        {
+          "path": "S08/S08-R01/tile-00-05.png",
+          "native_box": [
+            8666,
+            8077,
+            10266,
+            8980
+          ]
+        },
+        {
+          "path": "S08/S08-R01/tile-00-06.png",
+          "native_box": [
+            10138,
+            8077,
+            11738,
+            8980
+          ]
+        },
+        {
+          "path": "S08/S08-R01/tile-00-07.png",
+          "native_box": [
+            11610,
+            8077,
+            13208,
+            8980
+          ]
+        },
+        {
+          "path": "S08/S08-R01/tile-00-08.png",
+          "native_box": [
+            13082,
+            8077,
+            13208,
+            8980
+          ]
+        }
+      ],
+      "ocr": {
+        "text": "S08/S08-R01/ocr.txt",
+        "tsv": "S08/S08-R01/ocr.tsv",
+        "words": "S08/S08-R01/ocr_words.json",
+        "word_count": 55,
+        "review_status": "unreviewed OCR"
+      }
+    }
+  ],
+  "ocr_model": {
+    "source_url": "https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/eng.traineddata",
+    "sha256": "7d4322bd2a7749724879683fc3912cb542f19906c83bcc1a52132556427170b2",
+    "license": "Apache-2.0, tessdata_fast repository"
+  }
+}

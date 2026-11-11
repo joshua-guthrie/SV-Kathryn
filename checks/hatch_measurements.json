@@ -1,0 +1,45 @@
+{
+  "source": "2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif",
+  "view": "sheet 4 deck plan",
+  "native_pixels_per_ft": 150.75,
+  "ruler_0_10_50_native_x": [
+    1653.2250000000001,
+    3160.7250000000004,
+    9190.725
+  ],
+  "dpi_and_printed_scale_check_pixels_per_ft": 150.0,
+  "footprint_pick_uncertainty_ft": 0.15,
+  "longitudinal_registration": "Existing normalized arrangement centres retained; raw scaled longitudinal positions are not yet reconciled across all assemblies.",
+  "measurements": {
+    "After deck hatch": {
+      "native_box": [
+        5396.85,
+        6170.5,
+        5909.400000000001,
+        6652.1
+      ],
+      "outer_length_ft": 3.4000000000000004,
+      "outer_width_ft": 3.19469320066335
+    },
+    "Main hold hatch": {
+      "native_box": [
+        7577.700000000001,
+        5919.666666666667,
+        8411.85,
+        6902.933333333333
+      ],
+      "outer_length_ft": 5.533333333333334,
+      "outer_width_ft": 6.522498618021006
+    },
+    "Forepeak hatch": {
+      "native_box": [
+        8653.050000000001,
+        5869.5,
+        8954.550000000001,
+        6180.533333333333
+      ],
+      "outer_length_ft": 2.0,
+      "outer_width_ft": 2.063239358761747
+    }
+  }
+}

@@ -1,0 +1,213 @@
+{
+  "status": "source-coordinate convention established; geometry migration assigned to M1",
+  "canonical_frame": {
+    "F": "forward from aft witness of the S02 50-ft recorded-length dimension",
+    "X": "positive port; plan pixels upward from centreline",
+    "Z": "up from lines-plan baseline; transverse traces retain a named local vertical datum until section station is established",
+    "units": "full-size feet",
+    "source_view": "S02-V01"
+  },
+  "reference_dimension": {
+    "native_x": [
+      1787.4166666666665,
+      9318.666666666666
+    ],
+    "feet": 50,
+    "imperial_bar_length_ft": 50.22148657981853,
+    "note": "Dimension witnesses define F=0/50. Projections beyond them are not silently compressed into that interval."
+  },
+  "transformations": {
+    "S02": {
+      "grid_x_to_F": [
+        0.06666666666666667,
+        -11.866666666666667
+      ],
+      "baseline_grid_y": 303.0
+    },
+    "S05": {
+      "grid_x_to_F": [
+        0.06687884574580946,
+        -11.932145130490145
+      ],
+      "centreline_grid_y": 232.0,
+      "method": "planked-hull aft edge and forward planking/stem junction aligned with S02"
+    },
+    "S04": {
+      "grid_x_to_F": [
+        0.06664790115506147,
+        -20.640752723186033
+      ],
+      "centreline_grid_y": 640.0,
+      "method": "four independently picked deck landmarks fitted to S05"
+    }
+  },
+  "homologous_deck_landmarks": [
+    {
+      "feature": "after hatch centre",
+      "sheet4_grid_x": 562.5,
+      "sheet5_grid_x": 429.0,
+      "residual_ft": 0.08981198207393554
+    },
+    {
+      "feature": "main hold hatch centre",
+      "sheet4_grid_x": 795.5,
+      "sheet5_grid_x": 661.5,
+      "residual_ft": 0.06944131530255279
+    },
+    {
+      "feature": "mast at deck",
+      "sheet4_grid_x": 914.0,
+      "sheet5_grid_x": 781.5,
+      "residual_ft": -0.058243887319796336
+    },
+    {
+      "feature": "forward cabin edge",
+      "sheet4_grid_x": 520.0,
+      "sheet5_grid_x": 389.5,
+      "residual_ft": -0.10100941005670719
+    }
+  ],
+  "max_deck_alignment_residual_ft": 0.10100941005670719,
+  "point_pick_uncertainty_ft": 0.2,
+  "line_stations": [
+    {
+      "lines_station": 0,
+      "sheet2_grid_x": 251,
+      "canonical_forward_ft": 4.866666666666666,
+      "legacy_model_forward_ft": 3.75
+    },
+    {
+      "lines_station": 0.5,
+      "sheet2_grid_x": 284,
+      "canonical_forward_ft": 7.066666666666666,
+      "legacy_model_forward_ft": 5.9375
+    },
+    {
+      "lines_station": 1,
+      "sheet2_grid_x": 317,
+      "canonical_forward_ft": 9.266666666666667,
+      "legacy_model_forward_ft": 8.124999999999998
+    },
+    {
+      "lines_station": 1.5,
+      "sheet2_grid_x": 350,
+      "canonical_forward_ft": 11.466666666666667,
+      "legacy_model_forward_ft": 10.3125
+    },
+    {
+      "lines_station": 2,
+      "sheet2_grid_x": 383,
+      "canonical_forward_ft": 13.666666666666666,
+      "legacy_model_forward_ft": 12.5
+    },
+    {
+      "lines_station": 3,
+      "sheet2_grid_x": 448,
+      "canonical_forward_ft": 18.0,
+      "legacy_model_forward_ft": 16.875
+    },
+    {
+      "lines_station": 4,
+      "sheet2_grid_x": 514,
+      "canonical_forward_ft": 22.4,
+      "legacy_model_forward_ft": 21.25
+    },
+    {
+      "lines_station": 5,
+      "sheet2_grid_x": 579,
+      "canonical_forward_ft": 26.733333333333334,
+      "legacy_model_forward_ft": 25.624999999999996
+    },
+    {
+      "lines_station": 6,
+      "sheet2_grid_x": 645,
+      "canonical_forward_ft": 31.133333333333333,
+      "legacy_model_forward_ft": 29.999999999999993
+    },
+    {
+      "lines_station": 7,
+      "sheet2_grid_x": 711,
+      "canonical_forward_ft": 35.53333333333333,
+      "legacy_model_forward_ft": 34.37499999999999
+    },
+    {
+      "lines_station": 8,
+      "sheet2_grid_x": 777,
+      "canonical_forward_ft": 39.93333333333333,
+      "legacy_model_forward_ft": 38.74999999999999
+    },
+    {
+      "lines_station": 8.5,
+      "sheet2_grid_x": 810,
+      "canonical_forward_ft": 42.13333333333333,
+      "legacy_model_forward_ft": 40.93749999999999
+    },
+    {
+      "lines_station": 9,
+      "sheet2_grid_x": 842,
+      "canonical_forward_ft": 44.266666666666666,
+      "legacy_model_forward_ft": 43.125
+    },
+    {
+      "lines_station": 9.5,
+      "sheet2_grid_x": 875,
+      "canonical_forward_ft": 46.46666666666667,
+      "legacy_model_forward_ft": 45.31249999999999
+    },
+    {
+      "lines_station": 10,
+      "sheet2_grid_x": 907,
+      "canonical_forward_ft": 48.6,
+      "legacy_model_forward_ft": 47.5
+    }
+  ],
+  "legacy_feature_migration": [
+    {
+      "name": "After deck hatch",
+      "source_view": "S04-V02",
+      "grid_x": 562.5,
+      "canonical_forward_ft": 16.848691676536045,
+      "legacy_model_forward_ft": 17.5,
+      "delta_ft": -0.6513083234639545,
+      "disposition": "M1 migration input; old CAD geometry not moved during M0"
+    },
+    {
+      "name": "Main hold hatch",
+      "source_view": "S04-V02",
+      "grid_x": 795.5,
+      "canonical_forward_ft": 32.377652645665364,
+      "legacy_model_forward_ft": 31.1,
+      "delta_ft": 1.2776526456653627,
+      "disposition": "M1 migration input; old CAD geometry not moved during M0"
+    },
+    {
+      "name": "Forepeak hatch",
+      "source_view": "S04-V02",
+      "grid_x": 876,
+      "canonical_forward_ft": 37.742808688647806,
+      "legacy_model_forward_ft": 35.2,
+      "delta_ft": 2.5428086886478027,
+      "disposition": "M1 migration input; old CAD geometry not moved during M0"
+    },
+    {
+      "name": "Mast at deck",
+      "source_view": "S04-V02",
+      "grid_x": 914,
+      "canonical_forward_ft": 40.275428932540144,
+      "legacy_model_forward_ft": 37.5,
+      "delta_ft": 2.7754289325401444,
+      "disposition": "M1 migration input; old CAD geometry not moved during M0"
+    }
+  ],
+  "numbering_rules": [
+    "Lines stations 0–10 are NOT deck-beam numbers or hull-frame set numbers.",
+    "Sheet 5 deck beams are keyed from bow; split side members count as a set.",
+    "Sheet 5 note 10 says the first hull-frame set is against the stern knee; preserve this wording and establish its independent numbering before assigning section positions.",
+    "Hull frame-set numbers in section captions need their own member schedule; do not equate to line stations."
+  ],
+  "decision": "Source coordinates above govern new members. M1 explicitly migrates the inherited normalized CAD using the recorded deltas and regression evidence; no force-fit of source dimensions to the old CAD.",
+  "source_conditions": [
+    "S02 lines are corrected to a straight keel; historical hogging/deadrise distortions are documented separately.",
+    "Deck/hold arrangements and repair sections depict the surveyed vessel. Record differences rather than inventing exact agreement."
+  ]
+}

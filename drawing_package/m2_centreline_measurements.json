@@ -1,0 +1,269 @@
+{
+  "source_views": [
+    "S05-V02",
+    "S04-V01",
+    "S06-V02",
+    "S07-V01"
+  ],
+  "source_hashes": {
+    "S04": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+    "S05": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+    "S06": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+    "S07": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683"
+  },
+  "trunk_outer_aft_ft": 24.53504785793199,
+  "trunk_outer_fore_ft": 39.59170397329025,
+  "trunk_end_length_ft": 0.5,
+  "trunk_gap_ft": 0.3333333333333333,
+  "trunk_wall_ft": 0.16666666666666666,
+  "trunk_course_height_ft": 0.9583333333333334,
+  "trunk_courses": 4,
+  "board_thickness_ft": 0.20833333333333334,
+  "trunk_basis": "Envelope from located plan; 2 x 11.5-in pine walls printed on S07. Gap/board thickness scaled from section; end timber length/course count reconstructed.",
+  "keelson_aft_width_ft": 1.1666666666666667,
+  "keelson_fore_width_ft": 1.3333333333333333,
+  "keelson_height_above_garboard_ft": 0.875,
+  "keelson_lower_foot_ft": 0.18,
+  "scarf_fore_ft": 23.84803734351792,
+  "scarf_length_ft": 3.5,
+  "keelson_fore_ft": 48.25881604073837,
+  "keelson_taper_start_ft": 42.77475068958199,
+  "keelson_tip_width_ft": 0.5,
+  "mast_fore_support_ft": 42.77475068958199,
+  "keelson_basis": "Printed widths/depth at garboard and scarf/older-member notes. Located joint limit and taper; 4:1 scarf length, lower seam and inaccessible continuation are construction inferences.",
+  "board_pivot_FZ": [
+    38.38468434564269,
+    4.244776310748112
+  ],
+  "board_source_outline_FZ": [
+    [
+      26.83127068041278,
+      4.117638818721722
+    ],
+    [
+      38.13177379774711,
+      6.186512552605675
+    ],
+    [
+      38.419172147628444,
+      5.666404630679541
+    ],
+    [
+      38.67208269552402,
+      4.892021724700633
+    ],
+    [
+      38.86751357344335,
+      3.9905013266953326
+    ],
+    [
+      38.92499324341961,
+      3.2623502359987504
+    ],
+    [
+      38.87900950743859,
+      2.8115900369961
+    ],
+    [
+      38.74105829949554,
+      2.2568082536082237
+    ],
+    [
+      38.38468434564269,
+      1.771374193143831
+    ],
+    [
+      37.89035918384679,
+      1.366845809423506
+    ],
+    [
+      36.77525358630717,
+      1.0085492409855066
+    ],
+    [
+      35.280782166924205,
+      0.6618106263680832
+    ],
+    [
+      33.55639206763615,
+      0.2803981502889181
+    ],
+    [
+      31.602083288443033,
+      -0.05478251050792249
+    ],
+    [
+      29.64777450924992,
+      -0.2743836330989593
+    ],
+    [
+      27.808425070009342,
+      -0.2743836330989593
+    ],
+    [
+      26.946230020365313,
+      -0.20503591017547418
+    ],
+    [
+      26.56686419852194,
+      -0.13568818725198994
+    ],
+    [
+      26.405921122588396,
+      0.4653254114182124
+    ],
+    [
+      26.244978046654836,
+      1.3090560403206046
+    ],
+    [
+      26.141514640697558,
+      2.1181128077612543
+    ],
+    [
+      26.1300187067023,
+      2.880937759919585
+    ],
+    [
+      26.16450650868807,
+      3.470393404769201
+    ],
+    [
+      26.221986178664338,
+      3.6899945273602346
+    ],
+    [
+      26.428912990578894,
+      3.73622634264256
+    ],
+    [
+      26.589856066512453,
+      3.7593422502837193
+    ]
+  ],
+  "board_source_native_outline": [
+    [
+      7158.4225,
+      3878.547877591313
+    ],
+    [
+      8862.453,
+      3568.2576505429415
+    ],
+    [
+      8905.7905,
+      3646.263573543929
+    ],
+    [
+      8943.9275,
+      3762.4057255676207
+    ],
+    [
+      8973.397,
+      3897.6159921026656
+    ],
+    [
+      8982.0645,
+      4006.824284304047
+    ],
+    [
+      8975.1305,
+      4074.4294175715695
+    ],
+    [
+      8954.3285,
+      4157.635735439289
+    ],
+    [
+      8900.59,
+      4230.441263573544
+    ],
+    [
+      8826.049500000001,
+      4291.1125370187565
+    ],
+    [
+      8657.9,
+      4344.849950641658
+    ],
+    [
+      8432.545,
+      4396.853899308983
+    ],
+    [
+      8172.52,
+      4454.058242843041
+    ],
+    [
+      7877.825,
+      4504.328726554788
+    ],
+    [
+      7583.13,
+      4537.264560710761
+    ],
+    [
+      7305.77,
+      4537.264560710761
+    ],
+    [
+      7175.7575,
+      4526.863770977296
+    ],
+    [
+      7118.552,
+      4516.462981243831
+    ],
+    [
+      7094.283,
+      4426.3228035538
+    ],
+    [
+      7070.014,
+      4299.779861796644
+    ],
+    [
+      7054.4125,
+      4178.437314906219
+    ],
+    [
+      7052.679,
+      4064.0286278381045
+    ],
+    [
+      7057.8795,
+      3975.6219151036526
+    ],
+    [
+      7066.5470000000005,
+      3942.6860809476802
+    ],
+    [
+      7097.75,
+      3935.75222112537
+    ],
+    [
+      7122.019,
+      3932.2852912142152
+    ]
+  ],
+  "board_source_native_pivot": [
+    8900.59,
+    3859.4797630799603
+  ],
+  "board_keel_reference_native": [
+    8900.59,
+    4237.375123395854
+  ],
+  "board_vertical_basis": "Same-column source keel/shoe point registered to the corrected M1 keel; retain as-surveyed/straight-keel uncertainty.",
+  "board_pick_uncertainty_ft": 0.15,
+  "board_raised_angle_degrees": -15.0,
+  "board_pose_note": "0 degrees is the traced source lowered outline. The -15-degree raised pose is clearance-limited by actual hatch/deck structure, not a printed historic stop angle; the trial -17-degree pose fouled the main-hatch aft beam.",
+  "mast_partner_section_ft": [
+    0.9166666666666666,
+    0.2916666666666667
+  ],
+  "mast_partner_span_ft": 4.2,
+  "mast_chock_radial_ft": 0.16666666666666666,
+  "mast_basis": "S06 notes 13/14: 2-in pine chocks and 3.5 x 11-in oak partners; span/arrangement scaled, fitted eight-facet count and corner joints inferred."
+}

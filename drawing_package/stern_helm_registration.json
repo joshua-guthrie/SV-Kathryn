@@ -1,0 +1,32 @@
+{
+  "source_views": [
+    "S02-V01",
+    "S04-V01",
+    "S04-V02"
+  ],
+  "source_hashes": {
+    "S02": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+    "S04": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4"
+  },
+  "photo_qa": [
+    "LOC-P28",
+    "LOC-P29",
+    "LOC-P30"
+  ],
+  "transom_forward_per_vertical_ft": 1.8,
+  "rake_basis": "Scaled counter guides in S02/S04, approximately 1.74/1.84 forward per vertical foot; rounded to 1.8. Upper deck length reference retained.",
+  "helm_box_aft_ft": 0.7462603340351883,
+  "helm_box_fore_ft": 4.161550791234852,
+  "helm_box_width_ft": 1.9269197354585903,
+  "helm_wheel_forward_ft": 4.493132389021227,
+  "rudder_stock_at_deck_ft": 2.3643785312326955,
+  "rudder_head_forward_ft": 2.131224702155196,
+  "helm_basis": "Native S04 deck-plan box faces and wheel, independent inboard-profile stock/deck crossing. Case height and fine wheel details reconstructed with LOC-P28/29.",
+  "aft_top_rail_above_deck_ft": 2.0536030398659024,
+  "aft_lower_rail_above_deck_ft": 1.3201733827709372,
+  "rear_rail_centre_ft": -0.6795405364462255,
+  "rear_rail_shoulder_ft": 1.0,
+  "rear_rail_halfwidth_ft": 5.0,
+  "rail_basis": "Inboard-profile vertical rail/deck witnesses and inset curved rail in S04 deck plan; shoulder blending reconstructed. Rail is distinct from aftmost deck edge.",
+  "pick_uncertainty_ft": 0.2
+}

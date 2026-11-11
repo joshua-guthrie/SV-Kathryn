@@ -1,0 +1,71 @@
+{
+  "view_id": "S04-V04",
+  "review_status": "unreviewed OCR",
+  "engine": "Tesseract C API",
+  "version": "5.5.0",
+  "language": "eng",
+  "psm": 3,
+  "ocr_size": [
+    1558,
+    953
+  ],
+  "source_to_ocr": [
+    [
+      1.0,
+      0,
+      -1558.0
+    ],
+    [
+      0,
+      1.0,
+      -4666.0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "words": [
+    {
+      "text": "Cabin",
+      "engine_confidence": 96.308182,
+      "native_box": [
+        1767.0,
+        5456.0,
+        2031.0,
+        5541.0
+      ]
+    },
+    {
+      "text": "Profile",
+      "engine_confidence": 93.233086,
+      "native_box": [
+        2089.0,
+        5457.0,
+        2391.0,
+        5541.0
+      ]
+    },
+    {
+      "text": "-",
+      "engine_confidence": 90.918129,
+      "native_box": [
+        2450.0,
+        5503.0,
+        2481.0,
+        5512.0
+      ]
+    },
+    {
+      "text": "Aft",
+      "engine_confidence": 96.830284,
+      "native_box": [
+        2537.0,
+        5458.0,
+        2692.0,
+        5540.0
+      ]
+    }
+  ]
+}

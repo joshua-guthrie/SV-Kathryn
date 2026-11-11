@@ -1,0 +1,132 @@
+[
+  {
+    "view": "S04-V02",
+    "label": "deck aft centre",
+    "source_native_point": [
+      2792.0,
+      6403.0
+    ],
+    "canonical_F_ft": -2.125236302794825,
+    "display_pick": [
+      162,
+      840
+    ]
+  },
+  {
+    "view": "S04-V02",
+    "label": "upper rail aft centre",
+    "source_native_point": [
+      3010.0,
+      6403.0
+    ],
+    "canonical_F_ft": -0.6795405364462255,
+    "display_pick": [
+      380,
+      840
+    ]
+  },
+  {
+    "view": "S04-V02",
+    "label": "helm box aft",
+    "source_native_point": [
+      3225.0,
+      6403.0
+    ],
+    "canonical_F_ft": 0.7462603340351883,
+    "display_pick": [
+      595,
+      840
+    ]
+  },
+  {
+    "view": "S04-V02",
+    "label": "helm box fore",
+    "source_native_point": [
+      3740.0,
+      6403.0
+    ],
+    "canonical_F_ft": 4.161550791234852,
+    "display_pick": [
+      1110,
+      840
+    ]
+  },
+  {
+    "view": "S04-V02",
+    "label": "wheel hub",
+    "source_native_point": [
+      3790.0,
+      6403.0
+    ],
+    "canonical_F_ft": 4.493132389021227,
+    "display_pick": [
+      1160,
+      840
+    ]
+  },
+  {
+    "view": "S04-V01",
+    "label": "counter upper",
+    "source_native_point": [
+      2956.0,
+      3380.0
+    ],
+    "canonical_F_ft": -1.0376486620555134,
+    "display_pick": [
+      223,
+      397
+    ]
+  },
+  {
+    "view": "S04-V01",
+    "label": "counter lower",
+    "source_native_point": [
+      3748.0,
+      3811.0
+    ],
+    "canonical_F_ft": 4.214603846880674,
+    "display_pick": [
+      1015,
+      828
+    ]
+  },
+  {
+    "view": "S04-V01",
+    "label": "stock at deck",
+    "source_native_point": [
+      3469.0,
+      3391.0
+    ],
+    "canonical_F_ft": 2.3643785312326955,
+    "display_pick": [
+      736,
+      408
+    ]
+  },
+  {
+    "view": "S02-V01",
+    "label": "counter upper",
+    "source_native_point": [
+      1513.0,
+      1915.0
+    ],
+    "canonical_F_ft": -1.8218533886583685,
+    "display_pick": [
+      182,
+      159
+    ]
+  },
+  {
+    "view": "S02-V01",
+    "label": "counter junction",
+    "source_native_point": [
+      2201.0,
+      2311.0
+    ],
+    "canonical_F_ft": 2.7457814661134154,
+    "display_pick": [
+      870,
+      555
+    ]
+  }
+]

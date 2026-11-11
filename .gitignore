@@ -1,0 +1,31 @@
+# Local Git metadata uses this directory because the session's .git is read-only.
+/.local-git/
+/.agents/
+/.aws/
+/.codex/
+
+# SOMA owns its state and regenerates the assembly, meshes and renders.
+/.soma/
+/output/
+/exports/
+/renders/
+/*.step
+
+# Keep source references, but omit duplicate downloaded archive containers.
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Interpreter caches, editor files and local credentials.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+.env.*
+!.env.example
+*~
+*.swp
+.DS_Store

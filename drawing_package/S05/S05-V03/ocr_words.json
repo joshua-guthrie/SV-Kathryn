@@ -1,0 +1,141 @@
+{
+  "view_id": "S05-V03",
+  "review_status": "unreviewed OCR",
+  "engine": "Tesseract C API",
+  "version": "5.5.0",
+  "language": "eng",
+  "psm": 3,
+  "ocr_size": [
+    2158,
+    802
+  ],
+  "source_to_ocr": [
+    [
+      1.0,
+      0,
+      -6125.0
+    ],
+    [
+      0,
+      1.0,
+      -3813.0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "words": [
+    {
+      "text": "7)",
+      "engine_confidence": 63.209927,
+      "native_box": [
+        6185.0,
+        4121.0,
+        6313.0,
+        4266.0
+      ]
+    },
+    {
+      "text": "NOUNS",
+      "engine_confidence": 0.0,
+      "native_box": [
+        6536.0,
+        4115.0,
+        7033.0,
+        4244.0
+      ]
+    },
+    {
+      "text": "TON",
+      "engine_confidence": 96.654358,
+      "native_box": [
+        7470.0,
+        4128.0,
+        7705.0,
+        4241.0
+      ]
+    },
+    {
+      "text": "[2",
+      "engine_confidence": 87.781509,
+      "native_box": [
+        7775.0,
+        4145.0,
+        7876.0,
+        4247.0
+      ]
+    },
+    {
+      "text": "Detail",
+      "engine_confidence": 96.038826,
+      "native_box": [
+        6176.0,
+        4339.0,
+        6450.0,
+        4419.0
+      ]
+    },
+    {
+      "text": "A,",
+      "engine_confidence": 96.660561,
+      "native_box": [
+        6493.0,
+        4339.0,
+        6586.0,
+        4432.0
+      ]
+    },
+    {
+      "text": "Scale:",
+      "engine_confidence": 94.78344,
+      "native_box": [
+        6646.0,
+        4337.0,
+        6925.0,
+        4420.0
+      ]
+    },
+    {
+      "text": "3/4\"",
+      "engine_confidence": 54.761002,
+      "native_box": [
+        7026.0,
+        4332.0,
+        7252.0,
+        4421.0
+      ]
+    },
+    {
+      "text": "=",
+      "engine_confidence": 54.761002,
+      "native_box": [
+        7294.0,
+        4381.0,
+        7340.0,
+        4403.0
+      ]
+    },
+    {
+      "text": "|'-~O\"",
+      "engine_confidence": 16.826439,
+      "native_box": [
+        7405.0,
+        4334.0,
+        7671.0,
+        4419.0
+      ]
+    },
+    {
+      "text": "45)",
+      "engine_confidence": 47.981636,
+      "native_box": [
+        6381.0,
+        4483.0,
+        6711.0,
+        4615.0
+      ]
+    }
+  ]
+}

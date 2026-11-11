@@ -1,0 +1,580 @@
+{
+  "collection_url": "https://www.loc.gov/item/md1454/",
+  "requested_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=24&st=text",
+  "retrieval": "Official catalog/resource JSON; ordinary HTML returned HTTP 403.",
+  "collection_title": "KATHRYN-Two-sail Bateau \"Skipjack\", Dogwood Harbor, Chesapeake Bay, Tilghman, Talbot County, MD",
+  "rights": "No known restrictions on images made by the U.S. Government; images     copied from other sources may be restricted.    https://www.loc.gov/rr/print/res/114_habs.html",
+  "dating": [
+    "Documentation compiled after 1968"
+  ],
+  "source_use": "Vessel-specific visual QA. Perspective, lens and temporary survey removals are not calibrated plan dimensions.",
+  "photos": [
+    {
+      "id": "LOC-C01",
+      "page": 1,
+      "title": "STARBOARD PROFILE WITH DREDGE BASKET BEING RAISED",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=1",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.color.572189c",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/color/572189cv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/color/572189cu.tif",
+      "review_file": "01-LOC-C01.jpg",
+      "master_file": "01-LOC-C01.tif",
+      "review_size": [
+        1024,
+        731
+      ],
+      "review_sha256": "608e130c0388cae0e07b64a30b0506fc844f812b6cc4dd7cfd2f80ff64e06a69"
+    },
+    {
+      "id": "LOC-P01",
+      "page": 2,
+      "title": "1.  STARBOARD PROFILE WITH DREDGE BASKET BEING RAISED-NOTE 'LAZYJACK' RIGGING TO GUIDE SAILS DOWN TO BOOM AND CLUB (REQUIRES LESS CREW)",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=2",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185739p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185739pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185739pu.tif",
+      "review_file": "02-LOC-P01.jpg",
+      "master_file": "02-LOC-P01.tif",
+      "review_size": [
+        1024,
+        728
+      ],
+      "review_sha256": "c6a8bab719cb22eb6fbf71d24997c18b28d7266505862f9c55f065118faf40de"
+    },
+    {
+      "id": "LOC-P02",
+      "page": 3,
+      "title": "2.  3/4 VIEW OF STARBOARD SIDE FROM STERN WITH PUSH BOAT",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=3",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185740p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185740pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185740pu.tif",
+      "review_file": "03-LOC-P02.jpg",
+      "master_file": "03-LOC-P02.tif",
+      "review_size": [
+        1024,
+        745
+      ],
+      "review_sha256": "75dc538c2deebac504fe430d22a69be5e6ca050d0aab8b9b7d625c072678de44"
+    },
+    {
+      "id": "LOC-P03",
+      "page": 4,
+      "title": "3.  SIMILAR VIEW IN VERTICAL FORMAT",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=4",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185741p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185741pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185741pu.tif",
+      "review_file": "04-LOC-P03.jpg",
+      "master_file": "04-LOC-P03.tif",
+      "review_size": [
+        738,
+        1024
+      ],
+      "review_sha256": "a34794ca3aa433aa01ca5b733979995d652633b39871fd0034685612c9ff7a9c"
+    },
+    {
+      "id": "LOC-P04",
+      "page": 5,
+      "title": "4.  3/4 VIEW OF STARBOARD SIDE FROM BOW",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=5",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185742p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185742pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185742pu.tif",
+      "review_file": "05-LOC-P04.jpg",
+      "master_file": "05-LOC-P04.tif",
+      "review_size": [
+        1024,
+        737
+      ],
+      "review_sha256": "fe4faf6a8ea0aa0d8026c80be7618b81ea8dcd246c909086e86ceaeb077e9be9"
+    },
+    {
+      "id": "LOC-P05",
+      "page": 6,
+      "title": "5.  PORT PROFILE WITH PUSH BOAT",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=6",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185743p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185743pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185743pu.tif",
+      "review_file": "06-LOC-P05.jpg",
+      "master_file": "06-LOC-P05.tif",
+      "review_size": [
+        1024,
+        739
+      ],
+      "review_sha256": "44926aeb4368bf225e38dc416df3558ae04e3e602e34f110685c396c4dbf1780"
+    },
+    {
+      "id": "LOC-P06",
+      "page": 7,
+      "title": "6.  PORT PROFILE WITH PUSH BOAT - CLOSER VIEW",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=7",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185744p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185744pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185744pu.tif",
+      "review_file": "07-LOC-P06.jpg",
+      "master_file": "07-LOC-P06.tif",
+      "review_size": [
+        1024,
+        741
+      ],
+      "review_sha256": "0e6ffa67d3efd0776d24dfdd02439bae6f2d83490394f6517d5485e171be0966"
+    },
+    {
+      "id": "LOC-P07",
+      "page": 8,
+      "title": "7.  DETAIL OF PUSH BOAT AND TACKLE FROM STERN RAIL",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=8",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185745p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185745pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185745pu.tif",
+      "review_file": "08-LOC-P07.jpg",
+      "master_file": "08-LOC-P07.tif",
+      "review_size": [
+        1024,
+        734
+      ],
+      "review_sha256": "94a4aa3cb04be5bbb2a2c9d1f9b6f93f80c5ac5b654f7a93bc1281ca6339826a",
+      "master_sha256": "9dcfb284f7906a17ef5866d60fdf643d91b38b9170a429b0b5b7847b82a27741",
+      "master_size": [
+        5000,
+        3585
+      ]
+    },
+    {
+      "id": "LOC-P08",
+      "page": 9,
+      "title": "8.  STARBOARD PROFILE WITH DREDGE BASKET LINE OUT",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=9",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185746p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185746pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185746pu.tif",
+      "review_file": "09-LOC-P08.jpg",
+      "master_file": "09-LOC-P08.tif",
+      "review_size": [
+        1024,
+        740
+      ],
+      "review_sha256": "82fb66d4ee71b879e203c665a10e5f69d87954ea03671bdd2d6876279d406fb5"
+    },
+    {
+      "id": "LOC-P09",
+      "page": 10,
+      "title": "9.  DREDGE ARRANGEMENT ALLOWS FOR TWO DREDGE BASKETS TO BE OUT AT ALTERNATING TIMES. WHILE STARBOARD IS HAULED IN, PORT IS RELEASED OUT TO DREDGE.",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=10",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185747p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185747pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185747pu.tif",
+      "review_file": "10-LOC-P09.jpg",
+      "master_file": "10-LOC-P09.tif",
+      "review_size": [
+        1024,
+        731
+      ],
+      "review_sha256": "27fb47e0cf8f793af40c646686b409b35718ddd4c3ad1fbe1c1663cb01e320c5"
+    },
+    {
+      "id": "LOC-P10",
+      "page": 11,
+      "title": "10.  PORT DREDGE BASKET BEING HAULED WITH OYSTERS",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=11",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185748p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185748pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185748pu.tif",
+      "review_file": "11-LOC-P10.jpg",
+      "master_file": "11-LOC-P10.tif",
+      "review_size": [
+        1024,
+        740
+      ],
+      "review_sha256": "039222c3ab29add24cd5ab675b4ecbe63a58fc0d87d774a6813c60db34852ffe"
+    },
+    {
+      "id": "LOC-P11",
+      "page": 12,
+      "title": "11.  STARBOARD DREDGE BASKET BEING HAULED WITH OYSTERS",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=12",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185749p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185749pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185749pu.tif",
+      "review_file": "12-LOC-P11.jpg",
+      "master_file": "12-LOC-P11.tif",
+      "review_size": [
+        732,
+        1024
+      ],
+      "review_sha256": "8208eacc42c0f74a713eaa29171fde5667d3c75823f6b33ee7c8a6242efc00b3"
+    },
+    {
+      "id": "LOC-P12",
+      "page": 13,
+      "title": "12.  PORT BASKET EMPTIED AND OYSTERS HAND SORTED",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=13",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185750p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185750pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185750pu.tif",
+      "review_file": "13-LOC-P12.jpg",
+      "master_file": "13-LOC-P12.tif",
+      "review_size": [
+        734,
+        1024
+      ],
+      "review_sha256": "dfe4bee72dd178e000d0a352d1db8e6a4b5fead7cbd1e410ad50e09dde3104b5"
+    },
+    {
+      "id": "LOC-P13",
+      "page": 14,
+      "title": "13.  STARBOARD BASKET EMPTIED AND OYSTERS HAND SORTED",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=14",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185751p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185751pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185751pu.tif",
+      "review_file": "14-LOC-P13.jpg",
+      "master_file": "14-LOC-P13.tif",
+      "review_size": [
+        733,
+        1024
+      ],
+      "review_sha256": "b4b9eee85012c4e0018501b5e6c71588d72f30f94b1a30bd158d79b65180fe92"
+    },
+    {
+      "id": "LOC-P14",
+      "page": 15,
+      "title": "14.  DETAIL OF DREDGE WINDER MACHINERY AND BASKET",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=15",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185752p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185752pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185752pu.tif",
+      "review_file": "15-LOC-P14.jpg",
+      "master_file": "15-LOC-P14.tif",
+      "review_size": [
+        732,
+        1024
+      ],
+      "review_sha256": "9bc722af5af4697e37d8d61c84410d797d4de1f5a379d809cbc0f4ebf3f00962"
+    },
+    {
+      "id": "LOC-P15",
+      "page": 16,
+      "title": "15.  DETAIL OF DREDGE BASKET WITH OYSTERS",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=16",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185753p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185753pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185753pu.tif",
+      "review_file": "16-LOC-P15.jpg",
+      "master_file": "16-LOC-P15.tif",
+      "review_size": [
+        1024,
+        744
+      ],
+      "review_sha256": "a2d18283723da78ca715a3c60df4b15be26b795ef8235838e19ecf520e7e7552"
+    },
+    {
+      "id": "LOC-P16",
+      "page": 17,
+      "title": "16.  DETAIL OF DREDGE BASKET WITH HANDLING RINGS",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=17",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185754p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185754pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185754pu.tif",
+      "review_file": "17-LOC-P16.jpg",
+      "master_file": "17-LOC-P16.tif",
+      "review_size": [
+        746,
+        1024
+      ],
+      "review_sha256": "bea5179b52123379f1ae2418185c707dedb5750f4715d0f11428621db6f46f17"
+    },
+    {
+      "id": "LOC-P17",
+      "page": 18,
+      "title": "17.  DECK VIEW FROM END OF BOWSPRIT LOOKING ASTERN",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=18",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185755p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185755pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185755pu.tif",
+      "review_file": "18-LOC-P17.jpg",
+      "master_file": "18-LOC-P17.tif",
+      "review_size": [
+        735,
+        1024
+      ],
+      "review_sha256": "330b375c8b7f115082233e1fab67f640c38e8f776623a97a7dc6fe080c778f2b",
+      "master_sha256": "df1320520218b7a8b2c8395f4b025c632d5fef837f477fece5938adb168bf9c7",
+      "master_size": [
+        3590,
+        5000
+      ]
+    },
+    {
+      "id": "LOC-P18",
+      "page": 19,
+      "title": "18.  DECK VIEW LOOKING FORWARD WITH MAST, RIGGING AND BOWSPRIT DETAILS",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=19",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185756p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185756pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185756pu.tif",
+      "review_file": "19-LOC-P18.jpg",
+      "master_file": "19-LOC-P18.tif",
+      "review_size": [
+        738,
+        1024
+      ],
+      "review_sha256": "f8455f918ec188ab2907d06457f9d4c02e4da4fc2d332668627ce01a47843d64"
+    },
+    {
+      "id": "LOC-P19",
+      "page": 20,
+      "title": "19.  DECK VIEW LOOKING FORWARD WITH MAST, RIGGING AND BOWSPRIT DETAILS - HATCH COVER REMOVED TO SHOW CENTERBOARD TRUNK",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=20",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185757p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185757pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185757pu.tif",
+      "review_file": "20-LOC-P19.jpg",
+      "master_file": "20-LOC-P19.tif",
+      "review_size": [
+        1024,
+        734
+      ],
+      "review_sha256": "c4b53c2228b908e610a9612be1e21eda2ad7412e4517b9483a0e815b3c9999db",
+      "master_sha256": "13dbb7f7a7e6d858b62f30069d4dbccd662e2b3ed7fce893b61884abc7ac99a3",
+      "master_size": [
+        5000,
+        3583
+      ]
+    },
+    {
+      "id": "LOC-P20",
+      "page": 21,
+      "title": "20.  DECK VIEW WITH DETAIL OF MAST AND JIB SHEET TRAVELER",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=21",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185758p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185758pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185758pu.tif",
+      "review_file": "21-LOC-P20.jpg",
+      "master_file": "21-LOC-P20.tif",
+      "review_size": [
+        1024,
+        738
+      ],
+      "review_sha256": "6bca02795a05f3d14a13e11287a66fc20d8bcee21f9acc992765e5c16c409892"
+    },
+    {
+      "id": "LOC-P21",
+      "page": 22,
+      "title": "21.  DETAIL IN HOLD OF MAST FOOT, DECK BEAMS, AND CENTERBOARD TRUNK",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=22",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185759p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185759pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185759pu.tif",
+      "review_file": "22-LOC-P21.jpg",
+      "master_file": "22-LOC-P21.tif",
+      "review_size": [
+        742,
+        1024
+      ],
+      "review_sha256": "cd4de07cc558e40a475f02f7db329d165e8913dd791fa7ac230af5769922a5b5",
+      "master_sha256": "c8bc95e99162534c82cfdd0845180057896edb28a69ce1cebea8674571fd0c8d",
+      "master_size": [
+        3623,
+        5000
+      ]
+    },
+    {
+      "id": "LOC-P22",
+      "page": 23,
+      "title": "22.  DECK DETAIL OF BOWSPRIT AND SAMSON POST (ANCHOR WINDLASS REMOVED)",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=23",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185760p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185760pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185760pu.tif",
+      "review_file": "23-LOC-P22.jpg",
+      "master_file": "23-LOC-P22.tif",
+      "review_size": [
+        744,
+        1024
+      ],
+      "review_sha256": "d9441c5c1bdbcc2dc3b955c443595217515a4dc14d4fbc535d0d182dfded8927"
+    },
+    {
+      "id": "LOC-P23",
+      "page": 24,
+      "title": "23.  DETAIL IN HOLD OF BOW CONSTRUCTION AND SAMSON POST",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=24",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185761p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185761pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185761pu.tif",
+      "review_file": "24-LOC-P23.jpg",
+      "master_file": "24-LOC-P23.tif",
+      "review_size": [
+        1024,
+        737
+      ],
+      "review_sha256": "54a5d64e8a9d3e29d2a06a48889c43a8c71596c3c70e91eb4e40d0d6d600b67d",
+      "master_sha256": "bba5a22f24d1090f175b5da55a1b2c3a4c04914c4fbc91f40803345f49751537",
+      "master_size": [
+        5000,
+        3597
+      ]
+    },
+    {
+      "id": "LOC-P24",
+      "page": 25,
+      "title": "24.  DECK VIEW ASTERN WITH DETAIL OF WINDER MACHINERY - WINDER ENGINE IS IN WHITE BOX",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=25",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185762p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185762pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185762pu.tif",
+      "review_file": "25-LOC-P24.jpg",
+      "master_file": "25-LOC-P24.tif",
+      "review_size": [
+        1024,
+        746
+      ],
+      "review_sha256": "b424258626ce843156cb47af98a91b0f2e653a8424eb53cc4fd27d4be6bbc37e"
+    },
+    {
+      "id": "LOC-P25",
+      "page": 26,
+      "title": "25.  DECK VIEW TOWARDS STERN OF 'DOGHOUSE' CABIN",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=26",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185763p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185763pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185763pu.tif",
+      "review_file": "26-LOC-P25.jpg",
+      "master_file": "26-LOC-P25.tif",
+      "review_size": [
+        1024,
+        734
+      ],
+      "review_sha256": "002281d0257ad645226cd11cbd69b19052f06d4eee75a3f70c2017c58f8b7a5a",
+      "master_sha256": "c7da0b3196c06bdcf3f787cc6724126ab6493549c8e470ba36cdf795def10a1e",
+      "master_size": [
+        5000,
+        3584
+      ]
+    },
+    {
+      "id": "LOC-P26",
+      "page": 27,
+      "title": "26.  INTERIOR DETAIL OF CABIN AND HELM THROUGH HATCH",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=27",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185764p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185764pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185764pu.tif",
+      "review_file": "27-LOC-P26.jpg",
+      "master_file": "27-LOC-P26.tif",
+      "review_size": [
+        1024,
+        737
+      ],
+      "review_sha256": "cfe7cca0407d6f5431199fd5495b831a44e374128b681437a254628a9964f364",
+      "master_sha256": "154d6bef10f94edcd6c70dfa0ea4d9632b766abe753d4e3ce814f60f733412c3",
+      "master_size": [
+        5000,
+        3598
+      ]
+    },
+    {
+      "id": "LOC-P27",
+      "page": 28,
+      "title": "27.  INTERIOR DETAIL OF CABIN WITH STOVE AND BERTH",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=28",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185765p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185765pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185765pu.tif",
+      "review_file": "28-LOC-P27.jpg",
+      "master_file": "28-LOC-P27.tif",
+      "review_size": [
+        1024,
+        732
+      ],
+      "review_sha256": "86c38fc3fe791e7a8c3337d40e08dc98c4e7227c552a0f99b20f9df2c62cb09a",
+      "master_sha256": "4add769064e085361002824ce3b563b8fcc4d01556157c8104f0ca8395a231da",
+      "master_size": [
+        5000,
+        3576
+      ]
+    },
+    {
+      "id": "LOC-P28",
+      "page": 29,
+      "title": "28.  DETAIL OF HELM AT STERN WITH WHEEL, PUSH BOAT CONTROLS, AND WINDER ENGINE CONTROLS",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=29",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185766p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185766pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185766pu.tif",
+      "review_file": "29-LOC-P28.jpg",
+      "master_file": "29-LOC-P28.tif",
+      "review_size": [
+        741,
+        1024
+      ],
+      "review_sha256": "04ca10c8e758f6911e14bff2e5c7cbf9a9020af6fd0afee28477376bc64745b2",
+      "master_sha256": "87b49c83301fe1b43339bcbf09d9d7f9c1f1da28b8463ca24761880e32b07235",
+      "master_size": [
+        3619,
+        5000
+      ]
+    },
+    {
+      "id": "LOC-P29",
+      "page": 30,
+      "title": "29.  DETAIL OF HYDRAULIC STEERING SYSTEM CONNECTED TO RUDDER POST (REPLACED GEAR MECHANISM)",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=30",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185767p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185767pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185767pu.tif",
+      "review_file": "30-LOC-P29.jpg",
+      "master_file": "30-LOC-P29.tif",
+      "review_size": [
+        735,
+        1024
+      ],
+      "review_sha256": "058c287ded24e7d97d9ce546aa72a9600ace8ec4076c70b932348be1999e49ca",
+      "master_sha256": "9cee087a1fb06c94a39e36905b11f3ba12998bc0555a218542f8ffd869c0466d",
+      "master_size": [
+        3587,
+        5000
+      ]
+    },
+    {
+      "id": "LOC-P30",
+      "page": 31,
+      "title": "30.  DETAIL OF STERN SHOWING HELM AND DAVITS AND BUMPER FOR THE PUSH BOAT",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=31",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185768p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185768pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185768pu.tif",
+      "review_file": "31-LOC-P30.jpg",
+      "master_file": "31-LOC-P30.tif",
+      "review_size": [
+        1024,
+        741
+      ],
+      "review_sha256": "7916fc8c137b03f4f61d48a83e27297eb2e612eb6d2a4d711f38ce063dc3e18f",
+      "master_sha256": "338bab6fc4dcd44a4b42f9483b707ec6310f0b24d2ad95e60091387ba5dd9e93",
+      "master_size": [
+        5000,
+        3619
+      ]
+    },
+    {
+      "id": "LOC-P31",
+      "page": 32,
+      "title": "31.  RUSSELL DIZE, CAPTAIN AND OWNER, AT HELM OF KATHRYN (Photocopy of 35mm color slide taken by Todd Croteau, 1997)",
+      "page_url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=32",
+      "caption_url": "https://www.loc.gov/resource/hhh.md1454.photos.185769p",
+      "review_url": "https://tile.loc.gov/storage-services/service/pnp/habshaer/md/md1400/md1454/photos/185769pv.jpg",
+      "master_url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185769pu.tif",
+      "review_file": "32-LOC-P31.jpg",
+      "master_file": "32-LOC-P31.tif",
+      "review_size": [
+        825,
+        1024
+      ],
+      "review_sha256": "deb5cf48a311745e4eba01e341e5a88fc8697f9a8178dc59749e53257713d868"
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "status": "passed",
+  "frame_pieces": 154,
+  "support_parts": 19,
+  "half_frame_members": 78,
+  "repair_pattern_additions": 24,
+  "limbers": 78,
+  "air_samples": 54,
+  "exterior_violations": 0,
+  "source": "drawing_package/m3_frame_schedule.json",
+  "unresolved": [
+    "inaccessible cabin and two aft planes",
+    "individual repair dates",
+    "fine laps and hidden head shapes"
+  ]
+}

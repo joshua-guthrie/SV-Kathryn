@@ -1,0 +1,18 @@
+{
+  "status": "passed",
+  "material_fraction": 0.07245319957998102,
+  "air_samples": 105,
+  "skin_samples": 144,
+  "hull_aft_ft": -1.8000000000000007,
+  "hull_fore_ft": 50.733333333333334,
+  "body_length_ft": 52.53333333333333,
+  "cabin_sole_ft": 4.808753704648469,
+  "partitions": 2,
+  "local_bearings": 2,
+  "mast_bearing": "forward oak keelson mortise",
+  "deck_reference": "Top of Deck, above offset-table underside of sheer strake",
+  "measured_band_profiles": 7,
+  "maximum_beam_ft": 16.7361915357236,
+  "transom_top_width_ft": 11.46,
+  "transom_nominal_topdeck_depth_ft": 2.8999999999999995
+}

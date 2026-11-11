@@ -1,0 +1,22 @@
+[
+  {
+    "source_view": "S06-V01",
+    "representative_F_ft": 42.177817246281435,
+    "plane_basis": "calibrated outline shape registration; NOT confirmed hull-frame station",
+    "local_datum_global_Z_ft": 1.9733181212095838,
+    "keel_shoe_global_Z_ft": 1.8449661328038531,
+    "local_datum_difference_ft": 0.1283519884057307,
+    "outline_RMS_inches": 1.1339837481021482,
+    "scope": "actual planking cross-section; detailed source frames/fit-out pending M2\u2013M5"
+  },
+  {
+    "source_view": "S07-V02",
+    "representative_F_ft": 7.273297929478824,
+    "plane_basis": "calibrated outline shape registration; NOT confirmed hull-frame station",
+    "local_datum_global_Z_ft": 1.172132642803491,
+    "keel_shoe_global_Z_ft": 0.47060143085190725,
+    "local_datum_difference_ft": 0.7015312119515837,
+    "outline_RMS_inches": 0.8783740070961177,
+    "scope": "actual planking cross-section; detailed source frames/fit-out pending M2\u2013M5"
+  }
+]

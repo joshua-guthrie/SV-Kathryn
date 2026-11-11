@@ -1,0 +1,883 @@
+{
+  "status": "checked transcription; retain survey uncertainty",
+  "notes": [
+    {
+      "id": "S02-METHOD",
+      "source_views": [
+        "S02-N01"
+      ],
+      "checked_text": "Seventeen field stations were placed irregularly between railway blocks, closer at bow and stern; the keel bottom centreline was the primary datum. The drawings were replotted into ten-section format.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S02-CORRECTION",
+      "source_views": [
+        "S02-N01"
+      ],
+      "checked_text": "Lines are based on a corrected/straight keel. The existing keel is dashed in the sheer plan. Stern sag about 8 inches and midship hollow deadrise about 3 inches port/2 inches starboard were left out of the lines for clarity.",
+      "dimensions_inches": {
+        "stern_sag_approx": 8,
+        "port_hollow_approx": 3,
+        "starboard_hollow_approx": 2
+      },
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S02-UNCERTAINTY",
+      "source_views": [
+        "S02-N01"
+      ],
+      "checked_text": "Stated accuracy of field notes is plus/minus 1/8 inch.",
+      "dimensions_inches": {
+        "field_note_accuracy_plus_minus": 0.125
+      },
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-05",
+      "source_views": [
+        "S05-N02"
+      ],
+      "checked_text": "Ceiling timbers: 1-3/4-inch pine. Forward timbers end at the chain locker; stern timbers end at the stern frame. Limber boards along the keelson are not present in the main hold. Ceiling members were removed by the recording team to inspect frames.",
+      "dimensions_inches": {
+        "thickness": 1.75
+      },
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-06",
+      "source_views": [
+        "S05-N02"
+      ],
+      "checked_text": "Clamp: 5-1/2 x 2-3/4-inch pine; reinforced forward with 5-1/2 x 2-3/4-inch oak.",
+      "dimensions_inches": {
+        "section": [
+          5.5,
+          2.75
+        ]
+      },
+      "material": "pine with forward oak reinforcement",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-07",
+      "source_views": [
+        "S05-N04"
+      ],
+      "checked_text": "Deck beams are keyed in reference to the bow. Members to either side of hatches/cabin are counted as a set. Beams 1–3 are 6 x 4-3/4-inch pine. Beams 4–23 average 5-1/2-inch square, plus/minus 1/2 inch, pine except 12–15 oak under winders. Stern timbers aft of rudder box are 4 x 3-1/2-inch oak except member d, 6 x 3-inch pine.",
+      "dimensions_inches": {
+        "beams_1_3": [
+          6,
+          4.75
+        ],
+        "beams_4_23": [
+          5.5,
+          5.5
+        ],
+        "variation_plus_minus": 0.5,
+        "stern_oak": [
+          4,
+          3.5
+        ],
+        "stern_d_pine": [
+          6,
+          3
+        ]
+      },
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-08",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Deck planks are mostly fir with some pine replacements, parallel to centreline, ends tapered to waterway. Thickness 1-3/4 inches; typical widths 3-1/2 to 4 inches, some inboard members 5 to 7 inches.",
+      "dimensions_inches": {
+        "thickness": 1.75,
+        "usual_width_range": [
+          3.5,
+          4
+        ],
+        "inboard_width_range": [
+          5,
+          7
+        ]
+      },
+      "material": "mostly fir, some pine replacements",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-10",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Frames are oak; dimensions and pairing are highly irregular with old and new timbers. Twenty sets exposed from bow, inaccessible under main cabin; two more aft of main cabin. The printed note says first set against STERN knee. Sets 2–18 mortised into keelson; sets 19/20 pass under keelson. Preserve the printed wording; frame numbering must be interpreted separately from deck-beam numbering.",
+      "dimensions_inches": {},
+      "material": "oak",
+      "repair_evidence": "mixed older and replacement members",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-11",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Hull strakes predominantly oak at/below chine; pine replacement noted under ceiling aft of main cabin. Above-chine strakes are pine.",
+      "dimensions_inches": {},
+      "material": "oak below/pine above, with documented replacement",
+      "repair_evidence": "pine replacement aft of main cabin",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-12",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Oak keelson, aft section inaccessible. Forward of main cabin it has two sections scarfed between frame sets 15 and 20. Aft section 1 foot 2 inches wide; forward section 1 foot 4 inches wide x 10-1/2 inches at garboard, tapered at bow.",
+      "dimensions_inches": {
+        "aft_width": 14,
+        "forward_width": 16,
+        "forward_depth_at_garboard": 10.5
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-13",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Knight heads: 11 x 4-inch oak.",
+      "dimensions_inches": {
+        "section": [
+          11,
+          4
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-16",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Only a few timbers could positively be identified as older, possibly original, by wear and structural characteristics: forward keelson and several frames, mostly below chine. The survey uses a graphic designation.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": "possibly original; do not assert certainty",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-18",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Rudder box interior inaccessible; composite oak front and pine.",
+      "dimensions_inches": {},
+      "material": "oak front and pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-19",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Sampson post: oak, 1 foot 2 inches x 5 inches at head, tapering to 5 x 5-inch foot; mortised into stem knee. Replaced by owner in 1995.",
+      "dimensions_inches": {
+        "head": [
+          14,
+          5
+        ],
+        "foot": [
+          5,
+          5
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": "owner replacement 1995",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-23",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Interior stanchions: oak, 5-1/2-inch square.",
+      "dimensions_inches": {
+        "section": [
+          5.5,
+          5.5
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-24",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Strong back: composite pine. Top piece 5-inch square; bottom piece 1 foot 3 inches at centre, tapered to sheer and beam. See sheet 4 side section.",
+      "dimensions_inches": {
+        "top_section": [
+          5,
+          5
+        ],
+        "bottom_depth_at_centre": 15
+      },
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-27",
+      "source_views": [
+        "S05-N03"
+      ],
+      "checked_text": "Transom: all oak. Fore/aft frames average 3-3/4 inches SIDED; molded dimension referred to sheet 4. Diagonal braces 6-3/4 x 2 inches; side molding 8 x 6 inches, rounded at chine.",
+      "dimensions_inches": {
+        "fore_aft_frame_sided": 3.75,
+        "diagonal_brace": [
+          6.75,
+          2
+        ],
+        "side_molding": [
+          8,
+          6
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S05-FASTENINGS",
+      "source_views": [
+        "S05-N05"
+      ],
+      "checked_text": "Drawing wood names refer to white oak, pine and fir. Keelson sections fastened with drift pins; all hull fastenings observed by the HAER team were nails.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-SURVEY",
+      "source_views": [
+        "S06-N01"
+      ],
+      "checked_text": "Fiberglass prevented measurement above/around chine except where ceiling was removed. Structural conception is based on partial ceiling removal, measured probing and nail patterns. New frames replaced in 1954 (11), versus older possibly original frames (15).",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": "1954 replacements versus possibly original frames",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-01",
+      "source_views": [
+        "S06-N02"
+      ],
+      "checked_text": "Ceiling: 1-3/4-inch pine; approximately 9 inches wide plus/minus 1 inch. Not shown in bow section to expose forward frames.",
+      "dimensions_inches": {
+        "thickness": 1.75,
+        "width": 9,
+        "width_variation_plus_minus": 1
+      },
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-02",
+      "source_views": [
+        "S06-N02"
+      ],
+      "checked_text": "Centerboard trunk: pine; see sheet 7.",
+      "dimensions_inches": {},
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-03",
+      "source_views": [
+        "S06-N02"
+      ],
+      "checked_text": "Clamp: 5-1/2 x 2-3/4-inch pine, reinforced forward with the same section in oak.",
+      "dimensions_inches": {
+        "section": [
+          5.5,
+          2.75
+        ]
+      },
+      "material": "pine/forward oak reinforcement",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-04",
+      "source_views": [
+        "S06-N02"
+      ],
+      "checked_text": "Deck: mostly fir with pine replacements, 1-3/4 inches thick; widths 3-1/2 to 4 inches, some inboard 5 to 7 inches.",
+      "dimensions_inches": {
+        "thickness": 1.75,
+        "width_range": [
+          3.5,
+          4
+        ],
+        "inboard_width_range": [
+          5,
+          7
+        ]
+      },
+      "material": "fir with pine replacements",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-05",
+      "source_views": [
+        "S06-N02"
+      ],
+      "checked_text": "Deck beams mostly pine, average 5-1/2-inch square plus/minus 1 inch. Beams in structural conception detail are oak. Sheet 5 gives the more specific schedule.",
+      "dimensions_inches": {
+        "section": [
+          5.5,
+          5.5
+        ],
+        "variation_plus_minus": 1
+      },
+      "material": "mostly pine, oak in detail",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-06",
+      "source_views": [
+        "S06-N02"
+      ],
+      "checked_text": "Hull strakes: estimated 2 inches thick, highly irregular widths; mostly oak below chine with some pine replacements (sheet 5 note 11). Chine oak; examined above-chine timbers pine.",
+      "dimensions_inches": {
+        "thickness_estimate": 2
+      },
+      "material": "oak/pine",
+      "repair_evidence": "pine replacements noted",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-07",
+      "source_views": [
+        "S06-N02",
+        "S06-N03"
+      ],
+      "checked_text": "Keel: oak, average width 8 inches plus/minus 1 inch. Traditionally separate from keelson; dotted line indicates probable seam below rabbet for more watertight construction.",
+      "dimensions_inches": {
+        "width": 8,
+        "variation_plus_minus": 1
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-08",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Keelson: oak; average 1 foot 4 inches wide x 10-1/2 inches at garboard. See sheet 5 note 12.",
+      "dimensions_inches": {
+        "section_at_garboard": [
+          16,
+          10.5
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-09",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Kingplank wood type not determined due to heavy paint.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-10",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Limber holes.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-11",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "New frames: oak, NOT mortised into keelson. Knees are ROUNDED, NOT GROWN, at chine. Highly irregular dimensions; generally molded 1/2 inch larger than older frames (15).",
+      "dimensions_inches": {
+        "molded_increase_approx": 0.5
+      },
+      "material": "oak",
+      "repair_evidence": "replacement frames; rounded rather than grown knees",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-12",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Mast: 1 foot 1-1/2 inches, pine; iron hoop at foot, traditionally mortised into keelson (mortise dimensions not determined). Sides at/below deck faceted for chocks.",
+      "dimensions_inches": {
+        "diameter": 13.5
+      },
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-13",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Mast chocks: 2-inch pine, faceted between mast, deck and partners.",
+      "dimensions_inches": {
+        "thickness": 2
+      },
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-14",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Mast partners: 3-1/2 x 11-inch oak.",
+      "dimensions_inches": {
+        "section": [
+          3.5,
+          11
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-15",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Old frames: oak, mortised into keelson, tapered at chine; highly irregular dimensions.",
+      "dimensions_inches": {},
+      "material": "oak",
+      "repair_evidence": "older members, possibly original",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-16",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Rails: 3-1/2 x 1-3/4-inch oak fastened with iron stanchions.",
+      "dimensions_inches": {
+        "section": [
+          3.5,
+          1.75
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-17",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Sampson post: 1 foot 2 inches x 5-inch head, 5 x 5-inch foot, mortised into stem knee.",
+      "dimensions_inches": {
+        "head": [
+          14,
+          5
+        ],
+        "foot": [
+          5,
+          5
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-18",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Waterway: oak.",
+      "dimensions_inches": {},
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S06-19",
+      "source_views": [
+        "S06-N03"
+      ],
+      "checked_text": "Worm shoe: traditionally pine, average 3 x 8 inches plus/minus 1 inch; maximum width at centerboard 10 inches.",
+      "dimensions_inches": {
+        "section": [
+          3,
+          8
+        ],
+        "variation_plus_minus": 1,
+        "max_width_at_centerboard": 10
+      },
+      "material": "traditionally pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-SURVEY",
+      "source_views": [
+        "S07-N01"
+      ],
+      "checked_text": "Fiberglass obscured hull strakes except where ceiling was removed. Winder is a Hettinger Engine Company unit; separate references describe dredge operation.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-01",
+      "source_views": [
+        "S07-N02"
+      ],
+      "checked_text": "Ceiling: 1-3/4-inch pine, approximately 9 inches wide plus/minus 1 inch; omitted in bow section to expose frames.",
+      "dimensions_inches": {
+        "thickness": 1.75,
+        "width": 9,
+        "variation_plus_minus": 1
+      },
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-02",
+      "source_views": [
+        "S07-N02"
+      ],
+      "checked_text": "Ceiling member removed by HAER team for access to frames and outer strakes. This is a survey-access condition, not proof of a permanent missing board.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-03",
+      "source_views": [
+        "S07-N02"
+      ],
+      "checked_text": "Centerboard trunk cuts through keel and keelson. Walls constructed of 2 x 11-1/2-inch pine.",
+      "dimensions_inches": {
+        "wall_stock": [
+          2,
+          11.5
+        ]
+      },
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-04",
+      "source_views": [
+        "S07-N02"
+      ],
+      "checked_text": "Clamp: 5-1/2 x 2-3/4-inch pine.",
+      "dimensions_inches": {
+        "section": [
+          5.5,
+          2.75
+        ]
+      },
+      "material": "pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-05",
+      "source_views": [
+        "S07-N02"
+      ],
+      "checked_text": "Deck mostly fir with pine replacements, 1-3/4-inch thick; usual widths 3-1/2 to 4 inches, some inboard 5 to 7 inches.",
+      "dimensions_inches": {
+        "thickness": 1.75,
+        "width_range": [
+          3.5,
+          4
+        ],
+        "inboard_width_range": [
+          5,
+          7
+        ]
+      },
+      "material": "fir with pine replacements",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-06",
+      "source_views": [
+        "S07-N02"
+      ],
+      "checked_text": "Deck beams mostly pine, average 5-1/2-inch square plus/minus 1 inch; oak under winders; see sheet 5 schedule.",
+      "dimensions_inches": {
+        "section": [
+          5.5,
+          5.5
+        ],
+        "variation_plus_minus": 1
+      },
+      "material": "mostly pine, oak under winders",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-07",
+      "source_views": [
+        "S07-N02"
+      ],
+      "checked_text": "Electrical boxes.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-08",
+      "source_views": [
+        "S07-N02"
+      ],
+      "checked_text": "Frames: oak, highly irregular sided dimensions. Molded dimension averages 3 inches at keelson. Frames in section 13 are possibly original; compare newer frames on sheet 6.",
+      "dimensions_inches": {
+        "molded_at_keelson_average": 3
+      },
+      "material": "oak",
+      "repair_evidence": "section 13 possibly original; not asserted certain",
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-09",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Fuse box.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-10",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Hull strakes estimated 2 inches thick; highly irregular widths. Mostly oak below chine with pine replacements, oak chine; examined above-chine members pine.",
+      "dimensions_inches": {
+        "thickness_estimate": 2
+      },
+      "material": "oak/pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-11",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Keel: oak, width 8 inches plus/minus 1 inch; traditionally separate from keelson, probable seam shown below rabbet.",
+      "dimensions_inches": {
+        "width": 8,
+        "variation_plus_minus": 1
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-12",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Keelson: oak, average 1 foot 4 inches wide x 10-1/2 inches at garboard; see sheet 5 note 12.",
+      "dimensions_inches": {
+        "section_at_garboard": [
+          16,
+          10.5
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-13",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Limber holes.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-14",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Rails: 3-1/2 x 1-3/4-inch oak on iron stanchions.",
+      "dimensions_inches": {
+        "section": [
+          3.5,
+          1.75
+        ]
+      },
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-15",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Roller bars.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-16",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Waterway: oak.",
+      "dimensions_inches": {},
+      "material": "oak",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-17",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Winder brake controls dredge payout; outboard position pulls iron strap around forward wheel.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-18",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Winder clutch hauls dredge; outboard position shifts cable barrel backward into gear. Releasing handle lets bottom weight pull winders out of gear.",
+      "dimensions_inches": {},
+      "material": null,
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    },
+    {
+      "id": "S07-19",
+      "source_views": [
+        "S07-N03"
+      ],
+      "checked_text": "Worm shoe traditionally pine, average 3 x 8 inches plus/minus 1 inch; maximum width at centerboard 10 inches.",
+      "dimensions_inches": {
+        "section": [
+          3,
+          8
+        ],
+        "variation_plus_minus": 1,
+        "max_width_at_centerboard": 10
+      },
+      "material": "traditionally pine",
+      "repair_evidence": null,
+      "review_status": "visually checked against source crop"
+    }
+  ],
+  "ocr_corrections": [
+    {
+      "source_view": "S06-N02",
+      "raw_example": "1-374",
+      "checked": "1-3/4",
+      "reason": "fraction slash misrecognized"
+    },
+    {
+      "source_view": "S06-N02",
+      "raw_example": "5-172",
+      "checked": "5-1/2",
+      "reason": "fraction slash misrecognized"
+    },
+    {
+      "source_view": "S06-N02",
+      "raw_example": "Sheet 5, note 17",
+      "checked": "Sheet 5, note 11",
+      "reason": "source cross-reference checked visually"
+    },
+    {
+      "source_view": "S05-N03",
+      "raw_example": "stern knee",
+      "checked": "stern knee (preserve as printed)",
+      "reason": "Do not silently change this to stem or assume hull-frame numbering follows the bow-keyed deck-beam schedule."
+    },
+    {
+      "source_view": "S06-N02",
+      "raw_example": "+ 1",
+      "checked": "plus/minus 1",
+      "reason": "OCR drops lower stroke of tolerance symbol"
+    },
+    {
+      "source_view": "S06-R01",
+      "raw_example": "METERS: 1:32",
+      "checked": "caption conflicts with 3/4-inch imperial scale; use measured bars",
+      "reason": "the conflicting caption is in the SOURCE, not an OCR correction"
+    }
+  ]
+}

@@ -1,0 +1,592 @@
+{
+  "source_views": [
+    "S04-V01",
+    "S04-V02",
+    "S05-V01",
+    "S05-V02"
+  ],
+  "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+  "condition": "Surveyed HAER arrangement/repair condition, locally registered to the retained S02 source coordinate frame; corrected offsets are not overwritten.",
+  "local_image_centre": {
+    "view": "S04-V02",
+    "native_crop_y": 841.5,
+    "source_native_y": 6404.5,
+    "basis": "Case mid-breadth and outer fastener midpoint agree; local image centre refinement, not a model translation."
+  },
+  "rail_fastener_observations": [
+    {
+      "native_crop_point": [
+        556,
+        103
+      ],
+      "across_ft": 4.92398122559986,
+      "forward_ft": 0.4876266877618143
+    },
+    {
+      "native_crop_point": [
+        425,
+        303
+      ],
+      "across_ft": 3.590472430582972,
+      "forward_ft": -0.38111709843849084
+    },
+    {
+      "native_crop_point": [
+        395,
+        493
+      ],
+      "across_ft": 2.3236390753169283,
+      "forward_ft": -0.5800660571103151
+    },
+    {
+      "native_crop_point": [
+        377,
+        732
+      ],
+      "across_ft": 0.7300960652717464,
+      "forward_ft": -0.6994354323134111
+    },
+    {
+      "native_crop_point": [
+        379,
+        925
+      ],
+      "across_ft": -0.5567399219195509,
+      "forward_ft": -0.6861721684019564
+    },
+    {
+      "native_crop_point": [
+        394,
+        1159
+      ],
+      "across_ft": -2.1169452120893104,
+      "forward_ft": -0.5866976890660425
+    },
+    {
+      "native_crop_point": [
+        440,
+        1406
+      ],
+      "across_ft": -3.7638285739351676,
+      "forward_ft": -0.2816426191025805
+    },
+    {
+      "native_crop_point": [
+        487,
+        1491
+      ],
+      "across_ft": -4.3305698118173455,
+      "forward_ft": 0.03004408281661597
+    },
+    {
+      "native_crop_point": [
+        568,
+        1580
+      ],
+      "across_ft": -4.92398122559986,
+      "forward_ft": 0.5672062712305461
+    }
+  ],
+  "outer_wood_observations": [
+    {
+      "native_crop_point": [
+        478,
+        103
+      ],
+      "across_ft": 4.92398122559986,
+      "forward_ft": -0.0296406047849338
+    },
+    {
+      "native_crop_point": [
+        354.5,
+        303
+      ],
+      "across_ft": 3.590472430582972,
+      "forward_ft": -0.8486471513172802
+    },
+    {
+      "native_crop_point": [
+        314,
+        493
+      ],
+      "across_ft": 2.3236390753169283,
+      "forward_ft": -1.1172282455242417
+    },
+    {
+      "native_crop_point": [
+        300.5,
+        732
+      ],
+      "across_ft": 0.7300960652717464,
+      "forward_ft": -1.2067552769265646
+    },
+    {
+      "native_crop_point": [
+        299.5,
+        925
+      ],
+      "across_ft": -0.5567399219195509,
+      "forward_ft": -1.213386908882292
+    },
+    {
+      "native_crop_point": [
+        306,
+        1159
+      ],
+      "across_ft": -2.1169452120893104,
+      "forward_ft": -1.1702813011700641
+    },
+    {
+      "native_crop_point": [
+        355.5,
+        1406
+      ],
+      "across_ft": -3.7638285739351676,
+      "forward_ft": -0.8420155193615528
+    },
+    {
+      "native_crop_point": [
+        401.5,
+        1491
+      ],
+      "across_ft": -4.3305698118173455,
+      "forward_ft": -0.5369604493980873
+    },
+    {
+      "native_crop_point": [
+        497,
+        1580
+      ],
+      "across_ft": -4.92398122559986,
+      "forward_ft": 0.09636040237388954
+    },
+    {
+      "native_crop_point": [
+        672.5,
+        0
+      ],
+      "across_ft": 5.610738255033558,
+      "forward_ft": 1.2602118106040692
+    },
+    {
+      "native_crop_point": [
+        612,
+        34
+      ],
+      "across_ft": 5.384041759880687,
+      "forward_ft": 0.8589980772825534
+    },
+    {
+      "native_crop_point": [
+        547,
+        69
+      ],
+      "across_ft": 5.150677720752731,
+      "forward_ft": 0.42794200016026807
+    }
+  ],
+  "fitted_outer_wood_controls": [
+    [
+      0,
+      -1.2200185408380193
+    ],
+    [
+      0.6435,
+      -1.2100710929044283
+    ],
+    [
+      2.2205,
+      -1.143754773347153
+    ],
+    [
+      3.6769999999999996,
+      -0.8453313353394165
+    ],
+    [
+      4.331,
+      -0.5369604493980873
+    ],
+    [
+      5.0375,
+      0.23065094947737297
+    ],
+    [
+      5.4975000000000005,
+      1.0596049439433113
+    ],
+    [
+      6.761169401039775,
+      4.529241625020166
+    ],
+    [
+      7.101180711240541,
+      6.06585706548179
+    ],
+    [
+      7.348461664113827,
+      7.602472505943407
+    ],
+    [
+      7.557104968100659,
+      9.13908794640503
+    ],
+    [
+      7.773475801864787,
+      10.675703386866644
+    ],
+    [
+      7.958936516519752,
+      12.212318827328268
+    ],
+    [
+      8.128942171620134,
+      13.748934267789892
+    ],
+    [
+      8.287756401139402,
+      18
+    ],
+    [
+      25,
+      100
+    ]
+  ],
+  "fitted_rail_controls": [
+    [
+      0,
+      -0.6941301267488278
+    ],
+    [
+      0.6435,
+      -0.6928038003576837
+    ],
+    [
+      2.2205,
+      -0.5833818730881788
+    ],
+    [
+      3.6769999999999996,
+      -0.33137985877053566
+    ],
+    [
+      4.331,
+      0.03004408281661597
+    ],
+    [
+      4.924,
+      0.5274164794961802
+    ],
+    [
+      5.7565905299920495,
+      1.9400446078423315
+    ],
+    [
+      6.158422078411136,
+      3.369096967471645
+    ],
+    [
+      6.4134305610617135,
+      4.736684709482482
+    ],
+    [
+      6.676166573489581,
+      6.158053991909487
+    ],
+    [
+      6.900264937030995,
+      7.6332048147526415
+    ],
+    [
+      7.09345318146325,
+      9.162137178011953
+    ],
+    [
+      7.2789138961182145,
+      10.698752618473577
+    ],
+    [
+      7.4411920214413065,
+      12.196952672923658
+    ],
+    [
+      7.595742616987113,
+      13.633688109755276
+    ]
+  ],
+  "counter": {
+    "rake_forward_per_vertical_ft": 1.827689590398984,
+    "anchor_forward_ft": -1.1397945507675211,
+    "anchor_height_ft": 7.650030770311476,
+    "guide_controls": [
+      {
+        "F_ft": -1.0376486620555134,
+        "Z_ft": 7.594142785147809
+      },
+      {
+        "F_ft": 4.214603846880674,
+        "Z_ft": 4.720431331886414
+      }
+    ],
+    "upper_deck_anchor_crop_point": [
+      721.7776164262725,
+      377.5
+    ],
+    "upper_deck_anchor_F_ft": 2.270060917838549,
+    "upper_deck_anchor_Z_ft": 7.724159892661955,
+    "basis": "Actual upper-deck stroke, not the lower deck/clamp line used in the preliminary review."
+  },
+  "rudder_head_forward_ft": 2.03690708876105,
+  "source_stock": {
+    "rail_inches": [
+      3.5,
+      1.75
+    ],
+    "moulding_inches": [
+      8,
+      6
+    ],
+    "transom_frame_sided_inches": 3.75,
+    "transom_brace_inches": [
+      6.75,
+      2
+    ],
+    "stern_deck_timber_inches": [
+      4,
+      3.5
+    ],
+    "stern_d_inches": [
+      6,
+      3
+    ]
+  },
+  "pick_uncertainty_ft": 0.2,
+  "fit_notes": "Paired aft controls averaged within source allowance. Original asymmetric picks retained. Port shoulder controls measured independently; mirrored to starboard. Final forward handoff and hidden joints inferred.",
+  "traveller": {
+    "forward_ft": 0.35,
+    "span_ft": 2.2,
+    "height_above_deck_ft": 0.32,
+    "basis": "S04 item18 short rod immediately aft of helm; section/feet inferred."
+  },
+  "rail_heights": {
+    "top_ft": 2.003596964512875,
+    "lower_ft": 1.2701671272535862,
+    "basis": "S04 profile upper deck line and separate upper/lower rail strokes"
+  },
+  "geometry_state": "accepted input for source-comparison implementation; final acceptance requires actual CAD comparisons",
+  "side_rail_observations": [
+    {
+      "derived_crop_point": [
+        363,
+        311
+      ],
+      "source_native_point": [
+        3405.01365,
+        5541.125037419548
+      ],
+      "across_ft": 5.7565905299920495,
+      "forward_ft": 1.9400446078423315
+    },
+    {
+      "derived_crop_point": [
+        549,
+        259
+      ],
+      "source_native_point": [
+        3620.5039500000003,
+        5480.858236042509
+      ],
+      "across_ft": 6.158422078411136,
+      "forward_ft": 3.369096967471645
+    },
+    {
+      "derived_crop_point": [
+        727,
+        226
+      ],
+      "source_native_point": [
+        3826.72585,
+        5442.61199670708
+      ],
+      "across_ft": 6.4134305610617135,
+      "forward_ft": 4.736684709482482
+    },
+    {
+      "derived_crop_point": [
+        912,
+        192
+      ],
+      "source_native_point": [
+        4041.0576,
+        5403.206780422092
+      ],
+      "across_ft": 6.676166573489581,
+      "forward_ft": 6.158053991909487
+    },
+    {
+      "derived_crop_point": [
+        1104,
+        163
+      ],
+      "source_native_point": [
+        4263.4992,
+        5369.596448884898
+      ],
+      "across_ft": 6.900264937030995,
+      "forward_ft": 7.6332048147526415
+    },
+    {
+      "derived_crop_point": [
+        1303,
+        138
+      ],
+      "source_native_point": [
+        4494.05065,
+        5340.622025145936
+      ],
+      "across_ft": 7.09345318146325,
+      "forward_ft": 9.162137178011953
+    },
+    {
+      "derived_crop_point": [
+        1503,
+        114
+      ],
+      "source_native_point": [
+        4725.76065,
+        5312.8065783565335
+      ],
+      "across_ft": 7.2789138961182145,
+      "forward_ft": 10.698752618473577
+    },
+    {
+      "derived_crop_point": [
+        1698,
+        93
+      ],
+      "source_native_point": [
+        4951.677900000001,
+        5288.468062415806
+      ],
+      "across_ft": 7.4411920214413065,
+      "forward_ft": 12.196952672923658
+    },
+    {
+      "derived_crop_point": [
+        1885,
+        73
+      ],
+      "source_native_point": [
+        5168.32675,
+        5265.288523424637
+      ],
+      "across_ft": 7.595742616987113,
+      "forward_ft": 13.633688109755276
+    }
+  ],
+  "side_wood_observations": [
+    {
+      "derived_crop_point": [
+        700,
+        181
+      ],
+      "source_native_point": [
+        3795.4449999999997,
+        5390.458033976949
+      ],
+      "across_ft": 6.761169401039775,
+      "forward_ft": 4.529241625020166
+    },
+    {
+      "derived_crop_point": [
+        900,
+        137
+      ],
+      "source_native_point": [
+        4027.1549999999997,
+        5339.463048196378
+      ],
+      "across_ft": 7.101180711240541,
+      "forward_ft": 6.06585706548179
+    },
+    {
+      "derived_crop_point": [
+        1100,
+        105
+      ],
+      "source_native_point": [
+        4258.865,
+        5302.375785810507
+      ],
+      "across_ft": 7.348461664113827,
+      "forward_ft": 7.602472505943407
+    },
+    {
+      "derived_crop_point": [
+        1300,
+        78
+      ],
+      "source_native_point": [
+        4490.575,
+        5271.08340817243
+      ],
+      "across_ft": 7.557104968100659,
+      "forward_ft": 9.13908794640503
+    },
+    {
+      "derived_crop_point": [
+        1500,
+        50
+      ],
+      "source_native_point": [
+        4722.285,
+        5238.632053584793
+      ],
+      "across_ft": 7.773475801864787,
+      "forward_ft": 10.675703386866644
+    },
+    {
+      "derived_crop_point": [
+        1700,
+        26
+      ],
+      "source_native_point": [
+        4953.995,
+        5210.81660679539
+      ],
+      "across_ft": 7.958936516519752,
+      "forward_ft": 12.212318827328268
+    },
+    {
+      "derived_crop_point": [
+        1900,
+        4
+      ],
+      "source_native_point": [
+        5185.705,
+        5185.319113905104
+      ],
+      "across_ft": 8.128942171620134,
+      "forward_ft": 13.748934267789892
+    }
+  ],
+  "side_control_crop": {
+    "file": "renders/stern-side-plan-controls.png",
+    "view": "S04-V02",
+    "preview_box": [
+      105,
+      30,
+      530,
+      160
+    ],
+    "display_size": [
+      2000,
+      612
+    ],
+    "pick_uncertainty_ft": 0.2
+  },
+  "moulding_handoff": {
+    "forward_ft": 18,
+    "outer_halfwidth_ft": 8.287756401139402,
+    "basis": "Inferred fair runout into retained side rubbing stock; outside radius comes from the actual section at F18, not an arbitrary aft-quarter squeeze."
+  }
+}

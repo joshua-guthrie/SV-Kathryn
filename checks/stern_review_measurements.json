@@ -1,0 +1,454 @@
+{
+  "snapshot": {
+    "parts": 446,
+    "build_status": "ok",
+    "warnings": [],
+    "scale": 1,
+    "glb_sha256": "77f270ab0a15833419914c1c9ebda2a0c0515565cec43fabe9ebebd7eb47db25",
+    "map_sha256": "9589086797e2c87bf5c99c070d8294df595ffdc3e7c9a9f84e0c247ca85c8561"
+  },
+  "margins": [
+    {
+      "across_ft": 0,
+      "deck_aft_ft": -2.089350279685714,
+      "rail_centre_ft": -0.6795405364462255,
+      "projected_deck_extension_aft_of_rail_ft": 1.4098097432394887
+    },
+    {
+      "across_ft": 2.5,
+      "deck_aft_ft": -2.056198152599219,
+      "rail_centre_ft": -0.2596554023346691,
+      "projected_deck_extension_aft_of_rail_ft": 1.7965427502645497
+    },
+    {
+      "across_ft": 4.5,
+      "deck_aft_ft": -1.9822562240821213,
+      "rail_centre_ft": 0.6808872980752172,
+      "projected_deck_extension_aft_of_rail_ft": 2.6631435221573385
+    }
+  ],
+  "deck_widths": [
+    {
+      "forward_ft": 0,
+      "deck_width_ft": 11.736033258646842
+    },
+    {
+      "forward_ft": 2,
+      "deck_width_ft": 12.184657535510922
+    },
+    {
+      "forward_ft": 4,
+      "deck_width_ft": 12.730780013312895
+    },
+    {
+      "forward_ft": 6,
+      "deck_width_ft": 13.401078909289568
+    }
+  ],
+  "profile_guide_residuals": [
+    {
+      "guide_label": "counter upper",
+      "source_forward_ft": -1.0376486620555134,
+      "review_Z_ft": 7.794159082958398,
+      "current_plane_forward_ft": -2.05943096276446,
+      "source_minus_current_F_ft": 1.0217823007089466,
+      "status": "Provisional existing guide identification / local deck anchor; not a certified target."
+    },
+    {
+      "guide_label": "counter lower",
+      "source_forward_ft": 4.214603846880674,
+      "review_Z_ft": 4.920447629697003,
+      "current_plane_forward_ft": 3.1132496531060507,
+      "source_minus_current_F_ft": 1.1013541937746236,
+      "status": "Provisional existing guide identification / local deck anchor; not a certified target."
+    }
+  ],
+  "helm": {
+    "box_aft_ft": 0.7462603340351883,
+    "box_fore_ft": 4.161550791234852,
+    "box_width_ft": 1.9269197354585903,
+    "case_height_ft": 1.85,
+    "wheel_forward_ft": 4.493132389021227,
+    "stock_head_ft": 2.131224702155196,
+    "wheel_height_above_deck_ft": 1.45,
+    "rim_radius_ft": 1.0,
+    "handle_radius_ft": 1.23,
+    "cabin_aft_ft": 5.885111936528432
+  },
+  "current_stern_parts": [
+    {
+      "name": "Cambered deck",
+      "group": "Deck/Planking",
+      "aft_ft": -2.089350393700787,
+      "fore_ft": 50.733333333333334
+    },
+    {
+      "name": "Main cabin",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.885111548556431,
+      "fore_ft": 14.016154855643045
+    },
+    {
+      "name": "Main cabin roof",
+      "group": "Deck/Cabin/Roofs",
+      "aft_ft": 5.725111548556431,
+      "fore_ft": 14.176154855643045
+    },
+    {
+      "name": "Raised companionway",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.885111548556431,
+      "fore_ft": 9.550748031496065
+    },
+    {
+      "name": "Companionway roof",
+      "group": "Deck/Cabin/Roofs",
+      "aft_ft": 5.685111548556431,
+      "fore_ft": 9.000748031496062
+    },
+    {
+      "name": "Port companionway window",
+      "group": "Deck/Cabin",
+      "aft_ft": 6.260111548556431,
+      "fore_ft": 8.975748031496064
+    },
+    {
+      "name": "Starboard companionway window",
+      "group": "Deck/Cabin",
+      "aft_ft": 6.260111548556431,
+      "fore_ft": 8.975748031496064
+    },
+    {
+      "name": "Companionway sill",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.645111548556432,
+      "fore_ft": 6.06511154855643
+    },
+    {
+      "name": "Port companionway jamb",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.795111548556431,
+      "fore_ft": 6.035111548556433
+    },
+    {
+      "name": "Port companionway hinge 1",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.720111548556432,
+      "fore_ft": 5.925111548556433
+    },
+    {
+      "name": "Port companionway hinge 2",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.720111548556432,
+      "fore_ft": 5.925111548556433
+    },
+    {
+      "name": "Starboard companionway jamb",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.795111548556431,
+      "fore_ft": 6.035111548556433
+    },
+    {
+      "name": "Starboard companionway hinge 1",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.720111548556432,
+      "fore_ft": 5.925111548556433
+    },
+    {
+      "name": "Starboard companionway hinge 2",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.720111548556432,
+      "fore_ft": 5.925111548556433
+    },
+    {
+      "name": "Companionway lintel",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.795111548556431,
+      "fore_ft": 6.035111548556433
+    },
+    {
+      "name": "Port companionway door",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.755111548556432,
+      "fore_ft": 5.81511154855643
+    },
+    {
+      "name": "Port companionway door window",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.7726115485564335,
+      "fore_ft": 5.797611548556432
+    },
+    {
+      "name": "Starboard companionway door",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.755111548556432,
+      "fore_ft": 5.81511154855643
+    },
+    {
+      "name": "Starboard companionway door window",
+      "group": "Deck/Cabin",
+      "aft_ft": 5.7726115485564335,
+      "fore_ft": 5.797611548556432
+    },
+    {
+      "name": "Companionway landing",
+      "group": "Deck/Cabin",
+      "aft_ft": 6.025111548556431,
+      "fore_ft": 13.876154855643046
+    },
+    {
+      "name": "Companionway tread 1",
+      "group": "Deck/Cabin",
+      "aft_ft": 6.035111548556433,
+      "fore_ft": 6.51511154855643
+    },
+    {
+      "name": "Companionway tread 2",
+      "group": "Deck/Cabin",
+      "aft_ft": 6.435111548556431,
+      "fore_ft": 6.915111548556428
+    },
+    {
+      "name": "Companionway tread 3",
+      "group": "Deck/Cabin",
+      "aft_ft": 6.83511154855643,
+      "fore_ft": 7.31511154855643
+    },
+    {
+      "name": "Port companionway stringer",
+      "group": "Deck/Cabin",
+      "aft_ft": 6.035111548556433,
+      "fore_ft": 7.475111548556431
+    },
+    {
+      "name": "Starboard companionway stringer",
+      "group": "Deck/Cabin",
+      "aft_ft": 6.035111548556433,
+      "fore_ft": 7.475111548556431
+    },
+    {
+      "name": "Transom oak fore-aft frame 1",
+      "group": "Interior/Clamps strongback and stanchions",
+      "aft_ft": -1.3395898950131233,
+      "fore_ft": 3.373172572178479
+    },
+    {
+      "name": "Transom oak fore-aft frame 2",
+      "group": "Interior/Clamps strongback and stanchions",
+      "aft_ft": -1.4463615485564283,
+      "fore_ft": 5.2239304461942275
+    },
+    {
+      "name": "Transom oak fore-aft frame 3",
+      "group": "Interior/Clamps strongback and stanchions",
+      "aft_ft": -1.4463615485564283,
+      "fore_ft": 5.2239304461942275
+    },
+    {
+      "name": "Transom oak fore-aft frame 4",
+      "group": "Interior/Clamps strongback and stanchions",
+      "aft_ft": -1.3395898950131233,
+      "fore_ft": 3.373172572178479
+    },
+    {
+      "name": "Port transom oak diagonal brace",
+      "group": "Interior/Clamps strongback and stanchions",
+      "aft_ft": -0.32925853018372564,
+      "fore_ft": 3.820652887139108
+    },
+    {
+      "name": "Starboard transom oak diagonal brace",
+      "group": "Interior/Clamps strongback and stanchions",
+      "aft_ft": -0.32925853018372564,
+      "fore_ft": 3.820652887139108
+    },
+    {
+      "name": "Steering pedestal",
+      "group": "Deck/Helm",
+      "aft_ft": 0.7462598425196845,
+      "fore_ft": 4.161551837270341
+    },
+    {
+      "name": "Helm lid timber 1",
+      "group": "Deck/Helm",
+      "aft_ft": 0.7162598425196869,
+      "fore_ft": 4.191551837270342
+    },
+    {
+      "name": "Helm lid timber 2",
+      "group": "Deck/Helm",
+      "aft_ft": 0.7162598425196869,
+      "fore_ft": 4.191551837270342
+    },
+    {
+      "name": "Helm lid timber 3",
+      "group": "Deck/Helm",
+      "aft_ft": 0.7162598425196869,
+      "fore_ft": 4.191551837270342
+    },
+    {
+      "name": "Helm wheel",
+      "group": "Deck/Helm",
+      "aft_ft": 4.3531332020997375,
+      "fore_ft": 4.633133202099739
+    },
+    {
+      "name": "Wheel shaft",
+      "group": "Deck/Helm",
+      "aft_ft": 2.131223753280839,
+      "fore_ft": 4.5931332020997395
+    },
+    {
+      "name": "Steering shaft",
+      "group": "Deck/Helm",
+      "aft_ft": 2.0134055118110226,
+      "fore_ft": 4.15258530183727
+    },
+    {
+      "name": "Rudder upper bearing",
+      "group": "Deck/Helm",
+      "aft_ft": 2.0365813648293987,
+      "fore_ft": 2.645544619422573
+    },
+    {
+      "name": "Port top rail",
+      "group": "Deck/Rails",
+      "aft_ft": 1.0,
+      "fore_ft": 48.599999999999994
+    },
+    {
+      "name": "Port lower rail",
+      "group": "Deck/Rails",
+      "aft_ft": 1.0,
+      "fore_ft": 48.599999999999994
+    },
+    {
+      "name": "Port rubbing strake",
+      "group": "Deck/Rails",
+      "aft_ft": -1.3323064304461951,
+      "fore_ft": 50.733333333333334
+    },
+    {
+      "name": "Port stanchion 01",
+      "group": "Deck/Rails",
+      "aft_ft": 0.9639993438320218,
+      "fore_ft": 1.0360006561679818
+    },
+    {
+      "name": "Port stanchion 02",
+      "group": "Deck/Rails",
+      "aft_ft": 2.5639993438320197,
+      "fore_ft": 2.6360006561679796
+    },
+    {
+      "name": "Port stanchion 03",
+      "group": "Deck/Rails",
+      "aft_ft": 5.618477690288714,
+      "fore_ft": 5.690475721784779
+    },
+    {
+      "name": "Port stanchion 04",
+      "group": "Deck/Rails",
+      "aft_ft": 7.546095800524935,
+      "fore_ft": 7.618093832020996
+    },
+    {
+      "name": "Port stanchion 05",
+      "group": "Deck/Rails",
+      "aft_ft": 9.473713910761155,
+      "fore_ft": 9.545715223097112
+    },
+    {
+      "name": "Starboard top rail",
+      "group": "Deck/Rails",
+      "aft_ft": 1.0,
+      "fore_ft": 48.599999999999994
+    },
+    {
+      "name": "Starboard lower rail",
+      "group": "Deck/Rails",
+      "aft_ft": 1.0,
+      "fore_ft": 48.599999999999994
+    },
+    {
+      "name": "Starboard rubbing strake",
+      "group": "Deck/Rails",
+      "aft_ft": -1.3323064304461951,
+      "fore_ft": 50.733333333333334
+    },
+    {
+      "name": "Starboard stanchion 01",
+      "group": "Deck/Rails",
+      "aft_ft": 0.9639993438320218,
+      "fore_ft": 1.0360006561679818
+    },
+    {
+      "name": "Starboard stanchion 02",
+      "group": "Deck/Rails",
+      "aft_ft": 2.5639993438320197,
+      "fore_ft": 2.6360006561679796
+    },
+    {
+      "name": "Starboard stanchion 03",
+      "group": "Deck/Rails",
+      "aft_ft": 5.618477690288714,
+      "fore_ft": 5.690475721784779
+    },
+    {
+      "name": "Starboard stanchion 04",
+      "group": "Deck/Rails",
+      "aft_ft": 7.546095800524935,
+      "fore_ft": 7.618093832020996
+    },
+    {
+      "name": "Starboard stanchion 05",
+      "group": "Deck/Rails",
+      "aft_ft": 9.473713910761155,
+      "fore_ft": 9.545715223097112
+    },
+    {
+      "name": "Transom top rail",
+      "group": "Deck/Rails",
+      "aft_ft": -0.769435695538057,
+      "fore_ft": 1.0763779527559052
+    },
+    {
+      "name": "Transom lower rail",
+      "group": "Deck/Rails",
+      "aft_ft": -0.769435695538057,
+      "fore_ft": 1.0763779527559052
+    },
+    {
+      "name": "Transom stanchion 1",
+      "group": "Deck/Rails",
+      "aft_ft": -0.29565616797900063,
+      "fore_ft": -0.22365485564304421
+    },
+    {
+      "name": "Transom stanchion 2",
+      "group": "Deck/Rails",
+      "aft_ft": -0.7155413385826748,
+      "fore_ft": -0.6435400262467184
+    },
+    {
+      "name": "Transom stanchion 3",
+      "group": "Deck/Rails",
+      "aft_ft": -0.29565616797900063,
+      "fore_ft": -0.22365485564304421
+    },
+    {
+      "name": "Port pushboat davit",
+      "group": "Deck/Equipment",
+      "aft_ft": -5.207381889763777,
+      "fore_ft": 0.94166666666667
+    },
+    {
+      "name": "Starboard pushboat davit",
+      "group": "Deck/Equipment",
+      "aft_ft": -5.207381889763777,
+      "fore_ft": 0.94166666666667
+    }
+  ],
+  "overall_stern_acceptance": false,
+  "status": "Remedy required; other milestones on hold"
+}

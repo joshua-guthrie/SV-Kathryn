@@ -1,0 +1,208 @@
+{
+  "added_in_milestone": "M1",
+  "source_views": [
+    "S02-V01",
+    "S02-V02",
+    "S02-T01"
+  ],
+  "source_sha256": "47fc474d10d7e0f9be0ef31124356dd11dffc1a795dace93f11239c1eeeb75e2",
+  "native_pixels_per_ft": 149.96071428571426,
+  "interpretation": "Offset-table Sheer reference is the underside of sheer strake; Top of Deck is a separately labelled higher/wider curve.",
+  "point_pick_uncertainty_inches": 1.5,
+  "measurements": [
+    {
+      "lines_station": 0,
+      "forward_ft": 4.866666666666666,
+      "profile_native_points": {
+        "top_of_deck": [
+          2535.520833333333,
+          1930.0120000000002
+        ],
+        "underside_sheer_strake": [
+          2535.520833333333,
+          2100.4783333333335
+        ]
+      },
+      "band_height_ft": 1.1367399398255087,
+      "half_breadth_native_points": null,
+      "outward_flare_ft": 0.16,
+      "flare_basis": "closure reconstruction near transom"
+    },
+    {
+      "lines_station": 2,
+      "forward_ft": 13.666666666666666,
+      "profile_native_points": {
+        "top_of_deck": [
+          3866.0416666666665,
+          1974.9613333333334
+        ],
+        "underside_sheer_strake": [
+          3866.0416666666665,
+          2165.4943333333335
+        ]
+      },
+      "band_height_ft": 1.2705527638190963,
+      "half_breadth_native_points": {
+        "top_of_deck": [
+          3866.0416666666665,
+          3888.518666666667
+        ],
+        "underside_sheer_strake": [
+          3866.0416666666665,
+          3918.5183333333334
+        ]
+      },
+      "outward_flare_ft": 0.20005017187041116,
+      "flare_basis": "scale-measured"
+    },
+    {
+      "lines_station": 3,
+      "forward_ft": 18.0,
+      "profile_native_points": {
+        "top_of_deck": [
+          4513.729166666666,
+          1974.9613333333334
+        ],
+        "underside_sheer_strake": [
+          4513.729166666666,
+          2165.996
+        ]
+      },
+      "band_height_ft": 1.273898084418935,
+      "half_breadth_native_points": {
+        "top_of_deck": [
+          4513.729166666666,
+          3834.539333333333
+        ],
+        "underside_sheer_strake": [
+          4513.729166666666,
+          3871.963666666667
+        ]
+      },
+      "outward_flare_ft": 0.24956091674803843,
+      "flare_basis": "scale-measured"
+    },
+    {
+      "lines_station": 4,
+      "forward_ft": 22.4,
+      "profile_native_points": {
+        "top_of_deck": [
+          5176.479166666666,
+          1958.005
+        ],
+        "underside_sheer_strake": [
+          5176.479166666666,
+          2152.451
+        ]
+      },
+      "band_height_ft": 1.2966462644978445,
+      "half_breadth_native_points": {
+        "top_of_deck": [
+          5176.479166666666,
+          3799.021333333333
+        ],
+        "underside_sheer_strake": [
+          5176.479166666666,
+          3841.4623333333334
+        ]
+      },
+      "outward_flare_ft": 0.28301412274643484,
+      "flare_basis": "scale-measured"
+    },
+    {
+      "lines_station": 6,
+      "forward_ft": 31.133333333333333,
+      "profile_native_points": {
+        "top_of_deck": [
+          6491.9375,
+          1889.4773333333333
+        ],
+        "underside_sheer_strake": [
+          6491.9375,
+          2090.5453333333335
+        ]
+      },
+      "band_height_ft": 1.3408044964157295,
+      "half_breadth_native_points": {
+        "top_of_deck": [
+          6491.9375,
+          3842.967333333333
+        ],
+        "underside_sheer_strake": [
+          6491.9375,
+          3896.5453333333335
+        ]
+      },
+      "outward_flare_ft": 0.3572802400628758,
+      "flare_basis": "scale-measured"
+    },
+    {
+      "lines_station": 8,
+      "forward_ft": 39.93333333333333,
+      "profile_native_points": {
+        "top_of_deck": [
+          7817.437499999999,
+          1796.97
+        ],
+        "underside_sheer_strake": [
+          7817.437499999999,
+          1981.9846666666665
+        ]
+      },
+      "band_height_ft": 1.2337542372208594,
+      "half_breadth_native_points": {
+        "top_of_deck": [
+          7817.437499999999,
+          4178.983666666667
+        ],
+        "underside_sheer_strake": [
+          7817.437499999999,
+          4221.525
+        ]
+      },
+      "outward_flare_ft": 0.2836831868664022,
+      "flare_basis": "scale-measured"
+    },
+    {
+      "lines_station": 10,
+      "forward_ft": 48.6,
+      "profile_native_points": {
+        "top_of_deck": [
+          9122.854166666666,
+          1681.4863333333333
+        ],
+        "underside_sheer_strake": [
+          9122.854166666666,
+          1838.0063333333333
+        ]
+      },
+      "band_height_ft": 1.0437400271499677,
+      "half_breadth_native_points": {
+        "top_of_deck": [
+          9122.854166666666,
+          4817.505
+        ],
+        "underside_sheer_strake": [
+          9122.854166666666,
+          4873.992666666666
+        ]
+      },
+      "outward_flare_ft": 0.3766830995419433,
+      "flare_basis": "scale-measured"
+    }
+  ],
+  "closures": [
+    {
+      "forward_ft": -1.8,
+      "band_height_ft": 1.1,
+      "outward_flare_ft": 0.08,
+      "basis": "transom closure reconstruction"
+    },
+    {
+      "forward_ft": 50.733333333333334,
+      "band_height_ft": 1.0,
+      "outward_flare_ft": 0,
+      "basis": "fine planked-stem closure reconstruction"
+    }
+  ]
+}

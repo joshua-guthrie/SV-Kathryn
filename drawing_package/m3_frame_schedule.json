@@ -1,0 +1,2032 @@
+{
+  "source_hashes": {
+    "S04": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+    "S05": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+    "S06": "86e6b7b3f2a1ae9b9b49ddcfcb6a01abc18f0712cd996af107e54c319cec421e",
+    "S07": "8e1e32bd0608a3214c250e2ebe4090f44ca68c3d9cf1ebfc27482f0b40d4e683"
+  },
+  "numbering": {
+    "interpretation": "bow-to-aft numbered exposed sets 1\u201320",
+    "printed_note": "First set fitted against stern knee.",
+    "conflict": "Printed stern-knee clause conflicts with from-bow exposure, sections 4/5/13 and the scarf between 15\u201320; retained verbatim.",
+    "checks": [
+      "F4/F5 bracket mast area shown in S06",
+      "F13 lies forward of the winder shown looking aft in S07",
+      "located scarf lies between F15 and F20"
+    ],
+    "frame1": "stem-knee abutment is a reconstruction, not an independently readable frame plane"
+  },
+  "bowsprit_heel_ft": 52.769927541159426,
+  "bowsprit_heel_above_post_deck_ft": 1.772788817242035,
+  "bowsprit_heel_source": {
+    "view": "S04-V02",
+    "preview_x": 1588.0,
+    "native_x": 11069.776,
+    "profile_grid_axis": [
+      1102,
+      292
+    ],
+    "profile_grid_post_deck": [
+      996,
+      318.5
+    ],
+    "profile_forward_ft": 52.80523434969171,
+    "plan_profile_delta_ft": -0.035306808532283185,
+    "basis": "visible rounded spar heel at stem head; profile height anchored to post deck. Native ruler retained; inherited aft extension crossed Samson post"
+  },
+  "members": [
+    {
+      "id": "F20-P-1",
+      "set": 20,
+      "side": 1,
+      "forward_ft": 15.937980117743088,
+      "sided_ft": 0.3457687208119893,
+      "preview_edges": [
+        594,
+        605
+      ],
+      "source_native_edges": [
+        4158.085999999999,
+        4209.995
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "underpass",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F19-P-1",
+      "set": 19,
+      "side": 1,
+      "forward_ft": 17.30659558175707,
+      "sided_ft": 0.3394820167972199,
+      "preview_edges": [
+        637.64,
+        648.44
+      ],
+      "source_native_edges": [
+        4364.023160000001,
+        4414.98836
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F19-P-2",
+      "set": 19,
+      "side": 1,
+      "forward_ft": 17.612915234876425,
+      "sided_ft": 0.273157289441464,
+      "preview_edges": [
+        648.44,
+        657.13
+      ],
+      "source_native_edges": [
+        4414.98836,
+        4455.99647
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "underpass",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F18-P-1",
+      "set": 18,
+      "side": 1,
+      "forward_ft": 18.725347510288795,
+      "sided_ft": 0.20651822688498456,
+      "preview_edges": [
+        684.89,
+        691.46
+      ],
+      "source_native_edges": [
+        4586.99591,
+        4617.99974
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F18-P-2",
+      "set": 18,
+      "side": 1,
+      "forward_ft": 18.975086827275266,
+      "sided_ft": 0.29296040708796056,
+      "preview_edges": [
+        691.46,
+        700.78
+      ],
+      "source_native_edges": [
+        4617.99974,
+        4661.98082
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F18-P-3",
+      "set": 18,
+      "side": 1,
+      "forward_ft": 19.298223413634105,
+      "sided_ft": 0.3533127656297097,
+      "preview_edges": [
+        700.78,
+        712.02
+      ],
+      "source_native_edges": [
+        4661.98082,
+        4715.02238
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F17-P-1",
+      "set": 17,
+      "side": 1,
+      "forward_ft": 20.40562632583467,
+      "sided_ft": 0.3432540392060801,
+      "preview_edges": [
+        736.17,
+        747.09
+      ],
+      "source_native_edges": [
+        4828.98623,
+        4880.51771
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F17-P-2",
+      "set": 17,
+      "side": 1,
+      "forward_ft": 20.73379227540531,
+      "sided_ft": 0.31307785993521264,
+      "preview_edges": [
+        747.09,
+        757.05
+      ],
+      "source_native_edges": [
+        4880.51771,
+        4927.51895
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F17-P-3",
+      "set": 17,
+      "side": 1,
+      "forward_ft": 21.045141291736474,
+      "sided_ft": 0.30962017272709375,
+      "preview_edges": [
+        757.05,
+        766.9
+      ],
+      "source_native_edges": [
+        4927.51895,
+        4974.0010999999995
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F16-P-1",
+      "set": 16,
+      "side": 1,
+      "forward_ft": 22.029324805247686,
+      "sided_ft": 0.2863593678724854,
+      "preview_edges": [
+        788.73,
+        797.84
+      ],
+      "source_native_edges": [
+        5077.0168699999995,
+        5120.006960000001
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F16-P-2",
+      "set": 16,
+      "side": 1,
+      "forward_ft": 22.349003704398402,
+      "sided_ft": 0.3529984304289613,
+      "preview_edges": [
+        797.84,
+        809.07
+      ],
+      "source_native_edges": [
+        5120.006960000001,
+        5173.00133
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F16-P-3",
+      "set": 16,
+      "side": 1,
+      "forward_ft": 22.70860317404286,
+      "sided_ft": 0.36620050885996136,
+      "preview_edges": [
+        809.07,
+        820.72
+      ],
+      "source_native_edges": [
+        5173.00133,
+        5227.97768
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F15-P-1",
+      "set": 15,
+      "side": 1,
+      "forward_ft": 23.74606650407919,
+      "sided_ft": 0.23638007095510005,
+      "preview_edges": [
+        844.14,
+        851.66
+      ],
+      "source_native_edges": [
+        5338.496660000001,
+        5373.98354
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F15-P-2",
+      "set": 15,
+      "side": 1,
+      "forward_ft": 24.035883559159775,
+      "sided_ft": 0.343254039206073,
+      "preview_edges": [
+        851.66,
+        862.58
+      ],
+      "source_native_edges": [
+        5373.98354,
+        5425.51502
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F14-P-1",
+      "set": 14,
+      "side": 1,
+      "forward_ft": 25.523003393852054,
+      "sided_ft": 0.25335417179498165,
+      "preview_edges": [
+        900.4,
+        908.46
+      ],
+      "source_native_edges": [
+        5603.9875999999995,
+        5642.02274
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F14-P-2",
+      "set": 14,
+      "side": 1,
+      "forward_ft": 25.8161209685404,
+      "sided_ft": 0.3328809775817092,
+      "preview_edges": [
+        908.46,
+        919.05
+      ],
+      "source_native_edges": [
+        5642.02274,
+        5691.99695
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F13-P-1",
+      "set": 13,
+      "side": 1,
+      "forward_ft": 27.61616149556752,
+      "sided_ft": 0.31622121194259734,
+      "preview_edges": [
+        965.99,
+        976.05
+      ],
+      "source_native_edges": [
+        5913.50681,
+        5960.97995
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F12-P-1",
+      "set": 12,
+      "side": 1,
+      "forward_ft": 29.219742522133284,
+      "sided_ft": 0.23983775816322606,
+      "preview_edges": [
+        1018.22,
+        1025.85
+      ],
+      "source_native_edges": [
+        6159.98018,
+        6195.98615
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F11-P-1",
+      "set": 11,
+      "side": 1,
+      "forward_ft": 30.868430650004985,
+      "sided_ft": 0.29956144630347836,
+      "preview_edges": [
+        1069.72,
+        1079.25
+      ],
+      "source_native_edges": [
+        6403.00868,
+        6447.98075
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F10-P-1",
+      "set": 10,
+      "side": 1,
+      "forward_ft": 32.22400120318832,
+      "sided_ft": 0.2665562502259604,
+      "preview_edges": [
+        1113.37,
+        1121.85
+      ],
+      "source_native_edges": [
+        6608.99303,
+        6649.010149999999
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F10-P-2",
+      "set": 10,
+      "side": 1,
+      "forward_ft": 32.50706005145305,
+      "sided_ft": 0.29956144630348547,
+      "preview_edges": [
+        1121.85,
+        1131.38
+      ],
+      "source_native_edges": [
+        6649.010149999999,
+        6693.982220000001
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F09-P-1",
+      "set": 9,
+      "side": 1,
+      "forward_ft": 34.09413847998006,
+      "sided_ft": 0.24989648458682723,
+      "preview_edges": [
+        1173.13,
+        1181.08
+      ],
+      "source_native_edges": [
+        6891.000470000001,
+        6928.516519999999
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F08-P-1",
+      "set": 8,
+      "side": 1,
+      "forward_ft": 35.444836837551975,
+      "sided_ft": 0.24675313257945675,
+      "preview_edges": [
+        1216.15,
+        1224
+      ],
+      "source_native_edges": [
+        7094.011850000001,
+        7131.056
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F07-P-1",
+      "set": 7,
+      "side": 1,
+      "forward_ft": 36.448823468709676,
+      "sided_ft": 0.5893785013840471,
+      "preview_edges": [
+        1242.64,
+        1261.39
+      ],
+      "source_native_edges": [
+        7219.0181600000005,
+        7307.49941
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F07-P-2",
+      "set": 7,
+      "side": 1,
+      "forward_ft": 37.4146183729777,
+      "sided_ft": 0.3294232903735974,
+      "preview_edges": [
+        1277.5,
+        1287.98
+      ],
+      "source_native_edges": [
+        7383.5225,
+        7432.97762
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F06-P-1",
+      "set": 6,
+      "side": 1,
+      "forward_ft": 39.036588008786666,
+      "sided_ft": 0.38977564891531813,
+      "preview_edges": [
+        1328.14,
+        1340.54
+      ],
+      "source_native_edges": [
+        7622.49266,
+        7681.00826
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F05-P-1",
+      "set": 5,
+      "side": 1,
+      "forward_ft": 41.049904969514614,
+      "sided_ft": 0.3394820167972341,
+      "preview_edges": [
+        1392.99,
+        1403.79
+      ],
+      "source_native_edges": [
+        7928.51981,
+        7979.485009999999
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F05-P-2",
+      "set": 5,
+      "side": 1,
+      "forward_ft": 41.3713127122694,
+      "sided_ft": 0.30333346871233857,
+      "preview_edges": [
+        1403.79,
+        1413.44
+      ],
+      "source_native_edges": [
+        7979.485009999999,
+        8025.02336
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F04-P-1",
+      "set": 4,
+      "side": 1,
+      "forward_ft": 42.571916011488824,
+      "sided_ft": 0.426238532200955,
+      "preview_edges": [
+        1440.03,
+        1453.59
+      ],
+      "source_native_edges": [
+        8150.50157,
+        8214.49121
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F03-P-1",
+      "set": 3,
+      "side": 1,
+      "forward_ft": 44.14406351798077,
+      "sided_ft": 0.5529156180984387,
+      "preview_edges": [
+        1488.03,
+        1505.62
+      ],
+      "source_native_edges": [
+        8377.01357,
+        8460.020779999999
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F02-P-1",
+      "set": 2,
+      "side": 1,
+      "forward_ft": 45.494447540351956,
+      "sided_ft": 0.3228222511581009,
+      "preview_edges": [
+        1534.65,
+        1544.92
+      ],
+      "source_native_edges": [
+        8597.013350000001,
+        8645.477480000001
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F01-P-1",
+      "set": 1,
+      "side": 1,
+      "forward_ft": 47.54438455196592,
+      "sided_ft": 0.37720224088579357,
+      "preview_edges": [
+        1599,
+        1611
+      ],
+      "source_native_edges": [
+        8900.681,
+        8957.309000000001
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred position against the stem knee",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "butt",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.5
+    },
+    {
+      "id": "F20-S-1",
+      "set": 20,
+      "side": -1,
+      "forward_ft": 15.937980117743088,
+      "sided_ft": 0.3457687208119893,
+      "preview_edges": [
+        594,
+        605
+      ],
+      "source_native_edges": [
+        4158.085999999999,
+        4209.995
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "underpass",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F19-S-1",
+      "set": 19,
+      "side": -1,
+      "forward_ft": 17.32655586700394,
+      "sided_ft": 0.2995614463034819,
+      "preview_edges": [
+        638.91,
+        648.44
+      ],
+      "source_native_edges": [
+        4370.01629,
+        4414.98836
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F19-S-2",
+      "set": 19,
+      "side": -1,
+      "forward_ft": 17.632875520123296,
+      "sided_ft": 0.3130778599352091,
+      "preview_edges": [
+        648.44,
+        658.4
+      ],
+      "source_native_edges": [
+        4414.98836,
+        4461.9896
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "underpass",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F18-S-1",
+      "set": 18,
+      "side": -1,
+      "forward_ft": 19.070016057898194,
+      "sided_ft": 0.2564975238023486,
+      "preview_edges": [
+        695.06,
+        703.22
+      ],
+      "source_native_edges": [
+        4634.9881399999995,
+        4673.49518
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F18-S-2",
+      "set": 18,
+      "side": -1,
+      "forward_ft": 19.354803749766983,
+      "sided_ft": 0.3130778599352162,
+      "preview_edges": [
+        703.22,
+        713.18
+      ],
+      "source_native_edges": [
+        4673.49518,
+        4720.4964199999995
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F17-S-1",
+      "set": 17,
+      "side": -1,
+      "forward_ft": 20.38393719698374,
+      "sided_ft": 0.23323671894772247,
+      "preview_edges": [
+        737.23,
+        744.65
+      ],
+      "source_native_edges": [
+        4833.98837,
+        4869.00335
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F17-S-2",
+      "set": 17,
+      "side": -1,
+      "forward_ft": 20.665424369244764,
+      "sided_ft": 0.3297376255743458,
+      "preview_edges": [
+        744.65,
+        755.14
+      ],
+      "source_native_edges": [
+        4869.00335,
+        4918.505660000001
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F17-S-3",
+      "set": 17,
+      "side": -1,
+      "forward_ft": 21.001763034034614,
+      "sided_ft": 0.3429397040053317,
+      "preview_edges": [
+        755.14,
+        766.05
+      ],
+      "source_native_edges": [
+        4918.505660000001,
+        4969.989949999999
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F16-S-1",
+      "set": 16,
+      "side": -1,
+      "forward_ft": 22.122525192266547,
+      "sided_ft": 0.23323671894772247,
+      "preview_edges": [
+        792.54,
+        799.96
+      ],
+      "source_native_edges": [
+        5094.99626,
+        5130.01124
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F16-S-2",
+      "set": 16,
+      "side": -1,
+      "forward_ft": 22.418943286562648,
+      "sided_ft": 0.359599469644472,
+      "preview_edges": [
+        799.96,
+        811.4
+      ],
+      "source_native_edges": [
+        5130.01124,
+        5183.9966
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F15-S-1",
+      "set": 15,
+      "side": -1,
+      "forward_ft": 23.75455355449912,
+      "sided_ft": 0.2665562502259604,
+      "preview_edges": [
+        843.93,
+        852.41
+      ],
+      "source_native_edges": [
+        5337.5056700000005,
+        5377.52279
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F15-S-2",
+      "set": 15,
+      "side": -1,
+      "forward_ft": 24.09262106289302,
+      "sided_ft": 0.409578766561836,
+      "preview_edges": [
+        852.41,
+        865.44
+      ],
+      "source_native_edges": [
+        5377.52279,
+        5439.01136
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F14-S-1",
+      "set": 14,
+      "side": -1,
+      "forward_ft": 25.26650587004971,
+      "sided_ft": 0.2596408758097084,
+      "preview_edges": [
+        892.14,
+        900.4
+      ],
+      "source_native_edges": [
+        5565.00866,
+        5603.9875999999995
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F14-S-2",
+      "set": 14,
+      "side": -1,
+      "forward_ft": 25.56292396434581,
+      "sided_ft": 0.33319531278247183,
+      "preview_edges": [
+        900.4,
+        911
+      ],
+      "source_native_edges": [
+        5603.9875999999995,
+        5654.009
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F14-S-3",
+      "set": 14,
+      "side": -1,
+      "forward_ft": 25.86940078506552,
+      "sided_ft": 0.2797583286569676,
+      "preview_edges": [
+        911,
+        919.9
+      ],
+      "source_native_edges": [
+        5654.009,
+        5696.0081
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F13-S-1",
+      "set": 13,
+      "side": -1,
+      "forward_ft": 27.091693213135887,
+      "sided_ft": 0.29956144630347836,
+      "preview_edges": [
+        949.57,
+        959.1
+      ],
+      "source_native_edges": [
+        5836.02083,
+        5880.9929
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F13-S-2",
+      "set": 13,
+      "side": -1,
+      "forward_ft": 27.367993854584736,
+      "sided_ft": 0.253039836594219,
+      "preview_edges": [
+        959.1,
+        967.15
+      ],
+      "source_native_edges": [
+        5880.9929,
+        5918.98085
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F13-S-3",
+      "set": 13,
+      "side": -1,
+      "forward_ft": 27.641151144026207,
+      "sided_ft": 0.293274742288709,
+      "preview_edges": [
+        967.15,
+        976.48
+      ],
+      "source_native_edges": [
+        5918.98085,
+        5963.00912
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F12-S-1",
+      "set": 12,
+      "side": -1,
+      "forward_ft": 29.28968210429753,
+      "sided_ft": 0.37971692249171696,
+      "preview_edges": [
+        1018.22,
+        1030.3
+      ],
+      "source_native_edges": [
+        6159.98018,
+        6216.9857
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F11-S-1",
+      "set": 11,
+      "side": -1,
+      "forward_ft": 30.90850838809909,
+      "sided_ft": 0.2998757815042197,
+      "preview_edges": [
+        1070.99,
+        1080.53
+      ],
+      "source_native_edges": [
+        6409.00181,
+        6454.021070000001
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F10-S-1",
+      "set": 10,
+      "side": -1,
+      "forward_ft": 32.557039348370424,
+      "sided_ft": 0.30647682071970905,
+      "preview_edges": [
+        1123.33,
+        1133.08
+      ],
+      "source_native_edges": [
+        6655.994269999999,
+        6702.0045199999995
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F09-S-1",
+      "set": 9,
+      "side": -1,
+      "forward_ft": 34.04243033945863,
+      "sided_ft": 0.2131192661004775,
+      "preview_edges": [
+        1172.07,
+        1178.85
+      ],
+      "source_native_edges": [
+        6885.99833,
+        6917.993149999999
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F08-S-1",
+      "set": 8,
+      "side": -1,
+      "forward_ft": 35.434620943527975,
+      "sided_ft": 0.2728429542407298,
+      "preview_edges": [
+        1215.41,
+        1224.09
+      ],
+      "source_native_edges": [
+        7090.51979,
+        7131.48071
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "scale-measured exposed plan edges",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F07-S-1",
+      "set": 7,
+      "side": -1,
+      "forward_ft": 36.448823468709676,
+      "sided_ft": 0.5893785013840471,
+      "preview_edges": [
+        1242.64,
+        1261.39
+      ],
+      "source_native_edges": [
+        7219.0181600000005,
+        7307.49941
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "opposite-side continuation; hidden by lining",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F07-S-2",
+      "set": 7,
+      "side": -1,
+      "forward_ft": 37.4146183729777,
+      "sided_ft": 0.3294232903735974,
+      "preview_edges": [
+        1277.5,
+        1287.98
+      ],
+      "source_native_edges": [
+        7383.5225,
+        7432.97762
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "opposite-side continuation; hidden by lining",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F06-S-1",
+      "set": 6,
+      "side": -1,
+      "forward_ft": 39.036588008786666,
+      "sided_ft": 0.38977564891531813,
+      "preview_edges": [
+        1328.14,
+        1340.54
+      ],
+      "source_native_edges": [
+        7622.49266,
+        7681.00826
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "opposite-side continuation; hidden by lining",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F05-S-1",
+      "set": 5,
+      "side": -1,
+      "forward_ft": 41.049904969514614,
+      "sided_ft": 0.3394820167972341,
+      "preview_edges": [
+        1392.99,
+        1403.79
+      ],
+      "source_native_edges": [
+        7928.51981,
+        7979.485009999999
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "opposite-side continuation; hidden by lining",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F05-S-2",
+      "set": 5,
+      "side": -1,
+      "forward_ft": 41.3713127122694,
+      "sided_ft": 0.30333346871233857,
+      "preview_edges": [
+        1403.79,
+        1413.44
+      ],
+      "source_native_edges": [
+        7979.485009999999,
+        8025.02336
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "opposite-side continuation; hidden by lining",
+      "role": "repair-pattern",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": "additional member at an existing set; 1954 newer-frame family S06-11, individual date unresolved",
+      "pairing_basis": "unmarked companion interpreted from narrow plan edge pairs; individual grouping/history is not independently certified",
+      "keelson_joint": "butt",
+      "molded_ft": 0.2916666666666667,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F04-S-1",
+      "set": 4,
+      "side": -1,
+      "forward_ft": 42.571916011488824,
+      "sided_ft": 0.426238532200955,
+      "preview_edges": [
+        1440.03,
+        1453.59
+      ],
+      "source_native_edges": [
+        8150.50157,
+        8214.49121
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "opposite-side continuation; hidden by lining",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F03-S-1",
+      "set": 3,
+      "side": -1,
+      "forward_ft": 44.17235368604722,
+      "sided_ft": 0.5296548132438232,
+      "preview_edges": [
+        1489.3,
+        1506.15
+      ],
+      "source_native_edges": [
+        8383.0067,
+        8462.521850000001
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "opposite-side continuation; hidden by lining",
+      "role": "primary",
+      "older_graphic": true,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "older, possibly original",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F02-S-1",
+      "set": 2,
+      "side": -1,
+      "forward_ft": 45.48281713792463,
+      "sided_ft": 0.29956144630347126,
+      "preview_edges": [
+        1534.65,
+        1544.18
+      ],
+      "source_native_edges": [
+        8597.013350000001,
+        8641.98542
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "opposite-side continuation; hidden by lining",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.2
+    },
+    {
+      "id": "F01-S-1",
+      "set": 1,
+      "side": -1,
+      "forward_ft": 47.54438455196592,
+      "sided_ft": 0.37720224088579357,
+      "preview_edges": [
+        1599,
+        1611
+      ],
+      "source_native_edges": [
+        8900.681,
+        8957.309000000001
+      ],
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred position against the stem knee",
+      "role": "primary",
+      "older_graphic": false,
+      "older_graphic_scope": "identified exposed bottom only; associated side-futtock age unresolved",
+      "age": "unresolved",
+      "repair_basis": null,
+      "pairing_basis": "primary member / older graphic where shown",
+      "keelson_joint": "butt",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08 3-in average at keelson; S06-11 newer frames generally 0.5 in larger",
+      "position_uncertainty_ft": 0.5
+    },
+    {
+      "id": "AFT-A-P",
+      "set": "AFT-A",
+      "side": 1,
+      "forward_ft": 3.25,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "none",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "AFT-A-S",
+      "set": "AFT-A",
+      "side": -1,
+      "forward_ft": 3.25,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "none",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "AFT-B-P",
+      "set": "AFT-B",
+      "side": 1,
+      "forward_ft": 5.15,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "none",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "AFT-B-S",
+      "set": "AFT-B",
+      "side": -1,
+      "forward_ft": 5.15,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "none",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-1-P",
+      "set": "CAB-1",
+      "side": 1,
+      "forward_ft": 7.1,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-1-S",
+      "set": "CAB-1",
+      "side": -1,
+      "forward_ft": 7.1,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-2-P",
+      "set": "CAB-2",
+      "side": 1,
+      "forward_ft": 8.85,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-2-S",
+      "set": "CAB-2",
+      "side": -1,
+      "forward_ft": 8.85,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-3-P",
+      "set": "CAB-3",
+      "side": 1,
+      "forward_ft": 10.6,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-3-S",
+      "set": "CAB-3",
+      "side": -1,
+      "forward_ft": 10.6,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-4-P",
+      "set": "CAB-4",
+      "side": 1,
+      "forward_ft": 12.5,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-4-S",
+      "set": "CAB-4",
+      "side": -1,
+      "forward_ft": 12.5,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-5-P",
+      "set": "CAB-5",
+      "side": 1,
+      "forward_ft": 14.2,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    },
+    {
+      "id": "CAB-5-S",
+      "set": "CAB-5",
+      "side": -1,
+      "forward_ft": 14.2,
+      "sided_ft": 0.2916666666666667,
+      "source_view": "S05-V02",
+      "dimension_basis": "construction-inferred in inaccessible/obscured bay",
+      "role": "primary",
+      "older_graphic": false,
+      "age": "unresolved",
+      "repair_basis": null,
+      "keelson_joint": "mortised",
+      "molded_ft": 0.25,
+      "molded_basis": "S07-08; individual inaccessible stock unresolved",
+      "position_uncertainty_ft": 0.75
+    }
+  ],
+  "source_limited_regions": [
+    "cabin inaccessible",
+    "two aft exposed sets not individually located",
+    "forward starboard lining obscures some edge pairs",
+    "some multi-member pairing assignments lack independent exposure"
+  ],
+  "inferred_joinery": {
+    "primary_chine_taper_inches": 2,
+    "limber_width_inches": 2,
+    "limber_height_inches": 1.25,
+    "tenon_inches": 1.5,
+    "chine_joint_seating_allowance_ft": 0.008,
+    "chine_joint_note": "Separate bottom/knee and side futtock with contacting lands; exact historic laps unresolved"
+  },
+  "supports": {
+    "stanchion_plan_preview_x": [
+      686,
+      759,
+      815
+    ],
+    "stanchion_section_inches": 5.5,
+    "strongback_forward_ft": 4.98339837201792,
+    "strongback_top_inches": 5,
+    "strongback_center_depth_inches": 15,
+    "clamp_oak_reinforcement_aft_ft": 27.615532825166046,
+    "basis": "S05-06/23/24; strongback and reinforcement limits scale/construction-inferred"
+  }
+}

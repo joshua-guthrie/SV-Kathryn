@@ -1,0 +1,141 @@
+{
+  "view_id": "S02-V03",
+  "review_status": "unreviewed OCR",
+  "engine": "Tesseract C API",
+  "version": "5.5.0",
+  "language": "eng",
+  "psm": 3,
+  "ocr_size": [
+    3364,
+    2158
+  ],
+  "source_to_ocr": [
+    [
+      1.0,
+      0,
+      -954.0
+    ],
+    [
+      0,
+      1.0,
+      -5518.0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "words": [
+    {
+      "text": "10",
+      "engine_confidence": 91.128403,
+      "native_box": [
+        2833.0,
+        5770.0,
+        2943.0,
+        5850.0
+      ]
+    },
+    {
+      "text": "0",
+      "engine_confidence": 94.898529,
+      "native_box": [
+        1625.0,
+        6015.0,
+        1679.0,
+        6100.0
+      ]
+    },
+    {
+      "text": "4",
+      "engine_confidence": 80.679657,
+      "native_box": [
+        3823.0,
+        5979.0,
+        3924.0,
+        6096.0
+      ]
+    },
+    {
+      "text": "4",
+      "engine_confidence": 96.822655,
+      "native_box": [
+        1347.0,
+        6057.0,
+        1398.0,
+        6133.0
+      ]
+    },
+    {
+      "text": ":",
+      "engine_confidence": 14.944397,
+      "native_box": [
+        2042.0,
+        6142.0,
+        2044.0,
+        6144.0
+      ]
+    },
+    {
+      "text": "cel",
+      "engine_confidence": 39.69532,
+      "native_box": [
+        1494.0,
+        6580.0,
+        2844.0,
+        6799.0
+      ]
+    },
+    {
+      "text": "lV",
+      "engine_confidence": 39.69532,
+      "native_box": [
+        2662.0,
+        6485.0,
+        2830.0,
+        6820.0
+      ]
+    },
+    {
+      "text": "BASE",
+      "engine_confidence": 95.914619,
+      "native_box": [
+        3451.0,
+        7136.0,
+        3735.0,
+        7218.0
+      ]
+    },
+    {
+      "text": "LINE",
+      "engine_confidence": 95.839439,
+      "native_box": [
+        3780.0,
+        7133.0,
+        4011.0,
+        7219.0
+      ]
+    },
+    {
+      "text": "BODY",
+      "engine_confidence": 96.352631,
+      "native_box": [
+        3279.0,
+        7412.0,
+        3627.0,
+        7516.0
+      ]
+    },
+    {
+      "text": "PLAN",
+      "engine_confidence": 96.522514,
+      "native_box": [
+        3684.0,
+        7411.0,
+        4003.0,
+        7516.0
+      ]
+    }
+  ]
+}

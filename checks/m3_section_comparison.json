@@ -1,0 +1,24 @@
+[
+  {
+    "source_view": "S06-V01",
+    "frame_set": 4,
+    "registered_forward_ft": 42.571916011488824,
+    "local_Z_shift_ft": 2.0666511140398036,
+    "keel_shoe_global_Z_ft": 1.8554960424020677,
+    "shell_guide_RMS_inches": 1.5379482118622971,
+    "source_overlay": "renders/m3-section-S06-V01.png",
+    "plane_basis": "M3 plan/caption/scarf registration; not free-fit longitudinally",
+    "source_condition": "source section local datum / corrected lines retained separately"
+  },
+  {
+    "source_view": "S07-V01",
+    "frame_set": 13,
+    "registered_forward_ft": 27.61616149556752,
+    "local_Z_shift_ft": 1.9120509122732556,
+    "keel_shoe_global_Z_ft": 1.3246242979556127,
+    "shell_guide_RMS_inches": 1.732989278123948,
+    "source_overlay": "renders/m3-section-S07-V01.png",
+    "plane_basis": "M3 plan/caption/scarf registration; not free-fit longitudinally",
+    "source_condition": "source section local datum / corrected lines retained separately"
+  }
+]

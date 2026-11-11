@@ -1,0 +1,130 @@
+[
+  {
+    "id": "m3-hold-frame-strip",
+    "view": "S05-V02",
+    "view_native_box": [
+      2643,
+      968,
+      5875,
+      1524
+    ],
+    "source_native_box": [
+      3998,
+      5634,
+      7230,
+      6190
+    ],
+    "preview_size": [
+      2400,
+      413
+    ]
+  },
+  {
+    "id": "m3-forward-frame-strip",
+    "view": "S05-V02",
+    "view_native_box": [
+      5757,
+      826,
+      8022,
+      1628
+    ],
+    "source_native_box": [
+      7112,
+      5492,
+      9377,
+      6294
+    ],
+    "preview_size": [
+      2265,
+      802
+    ]
+  },
+  {
+    "id": "m3-aft-frames",
+    "view": "S05-V02",
+    "view_native_box": [
+      118,
+      71,
+      2926,
+      2478
+    ],
+    "source_native_box": [
+      1473,
+      4737,
+      4281,
+      7144
+    ],
+    "preview_size": [
+      2100,
+      1800
+    ]
+  },
+  {
+    "id": "m3-frame-conception",
+    "view": "S06-V03",
+    "view_native_box": [
+      0,
+      1956,
+      5327,
+      4425
+    ],
+    "source_native_box": [
+      8090,
+      2658,
+      13417,
+      5127
+    ],
+    "preview_size": [
+      2400,
+      1112
+    ]
+  },
+  {
+    "id": "m3-samson-post-plan",
+    "view": "S05-V02",
+    "view_native_box": [
+      6937,
+      1038,
+      7598,
+      1463
+    ],
+    "source_native_box": [
+      8292,
+      5704,
+      8953,
+      6129
+    ],
+    "preview_size": [
+      661,
+      425
+    ]
+  },
+  {
+    "id": "m3-samson-post-profile",
+    "source": "S04",
+    "source_native_box": [
+      9447,
+      2157,
+      10854,
+      4415
+    ],
+    "preview_size": [
+      1122,
+      1800
+    ]
+  },
+  {
+    "id": "m3-bowsprit-heel-profile-grid",
+    "source": "S04",
+    "source_native_box": [
+      10854,
+      2709,
+      11558,
+      3311
+    ],
+    "preview_size": [
+      704,
+      602
+    ]
+  }
+]

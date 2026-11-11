@@ -1,0 +1,871 @@
+{
+  "view_id": "S07-N01",
+  "review_status": "unreviewed OCR",
+  "engine": "Tesseract C API",
+  "version": "5.5.0",
+  "language": "eng",
+  "psm": 6,
+  "ocr_size": [
+    2162,
+    2107
+  ],
+  "source_to_ocr": [
+    [
+      1.0,
+      0,
+      -7039.0
+    ],
+    [
+      0,
+      1.0,
+      -602.0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "words": [
+    {
+      "text": "NOTES:",
+      "engine_confidence": 93.833015,
+      "native_box": [
+        7075.0,
+        687.0,
+        7453.0,
+        775.0
+      ]
+    },
+    {
+      "text": "Fiberglass",
+      "engine_confidence": 70.900528,
+      "native_box": [
+        7650.0,
+        689.0,
+        8190.0,
+        802.0
+      ]
+    },
+    {
+      "text": "prevented",
+      "engine_confidence": 94.759293,
+      "native_box": [
+        8271.0,
+        687.0,
+        8804.0,
+        787.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 95.21244,
+      "native_box": [
+        8903.0,
+        689.0,
+        9064.0,
+        769.0
+      ]
+    },
+    {
+      "text": "©",
+      "engine_confidence": 56.880302,
+      "native_box": [
+        9129.0,
+        678.0,
+        9183.0,
+        806.0
+      ]
+    },
+    {
+      "text": "measurement",
+      "engine_confidence": 95.914108,
+      "native_box": [
+        7075.0,
+        821.0,
+        7740.0,
+        895.0
+      ]
+    },
+    {
+      "text": "of",
+      "engine_confidence": 96.537834,
+      "native_box": [
+        7797.0,
+        809.0,
+        7903.0,
+        888.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 96.517082,
+      "native_box": [
+        7944.0,
+        809.0,
+        8102.0,
+        898.0
+      ]
+    },
+    {
+      "text": "hull",
+      "engine_confidence": 93.245827,
+      "native_box": [
+        8155.0,
+        805.0,
+        8321.0,
+        892.0
+      ]
+    },
+    {
+      "text": "strakes",
+      "engine_confidence": 90.996674,
+      "native_box": [
+        8365.0,
+        809.0,
+        8721.0,
+        891.0
+      ]
+    },
+    {
+      "text": "above",
+      "engine_confidence": 95.773911,
+      "native_box": [
+        8771.0,
+        809.0,
+        9068.0,
+        889.0
+      ]
+    },
+    {
+      "text": "and",
+      "engine_confidence": 96.248535,
+      "native_box": [
+        7076.0,
+        930.0,
+        7255.0,
+        1016.0
+      ]
+    },
+    {
+      "text": "around",
+      "engine_confidence": 96.248535,
+      "native_box": [
+        7324.0,
+        931.0,
+        7675.0,
+        1011.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 96.097908,
+      "native_box": [
+        7753.0,
+        927.0,
+        7911.0,
+        1016.0
+      ]
+    },
+    {
+      "text": "chine,",
+      "engine_confidence": 96.033363,
+      "native_box": [
+        7989.0,
+        928.0,
+        8267.0,
+        1026.0
+      ]
+    },
+    {
+      "text": "except",
+      "engine_confidence": 96.611526,
+      "native_box": [
+        8355.0,
+        939.0,
+        8694.0,
+        1030.0
+      ]
+    },
+    {
+      "text": "where",
+      "engine_confidence": 96.856583,
+      "native_box": [
+        8773.0,
+        920.0,
+        9068.0,
+        1015.0
+      ]
+    },
+    {
+      "text": "ceiling",
+      "engine_confidence": 92.773949,
+      "native_box": [
+        7076.0,
+        1050.0,
+        7376.0,
+        1153.0
+      ]
+    },
+    {
+      "text": "timbers",
+      "engine_confidence": 95.760178,
+      "native_box": [
+        7431.0,
+        1051.0,
+        7796.0,
+        1138.0
+      ]
+    },
+    {
+      "text": "were",
+      "engine_confidence": 96.553589,
+      "native_box": [
+        7844.0,
+        1071.0,
+        8073.0,
+        1132.0
+      ]
+    },
+    {
+      "text": "removed",
+      "engine_confidence": 96.397224,
+      "native_box": [
+        8120.0,
+        1046.0,
+        8543.0,
+        1133.0
+      ]
+    },
+    {
+      "text": "(2).",
+      "engine_confidence": 94.954796,
+      "native_box": [
+        8596.0,
+        1045.0,
+        8765.0,
+        1147.0
+      ]
+    },
+    {
+      "text": "The",
+      "engine_confidence": 96.211433,
+      "native_box": [
+        7085.0,
+        1168.0,
+        7267.0,
+        1253.0
+      ]
+    },
+    {
+      "text": "winders",
+      "engine_confidence": 95.457962,
+      "native_box": [
+        7391.0,
+        1169.0,
+        7796.0,
+        1253.0
+      ]
+    },
+    {
+      "text": "were",
+      "engine_confidence": 83.789719,
+      "native_box": [
+        7926.0,
+        1189.0,
+        8170.0,
+        1250.0
+      ]
+    },
+    {
+      "text": "built",
+      "engine_confidence": 82.721786,
+      "native_box": [
+        8295.0,
+        1170.0,
+        8527.0,
+        1252.0
+      ]
+    },
+    {
+      "text": "by",
+      "engine_confidence": 50.451679,
+      "native_box": [
+        8653.0,
+        1170.0,
+        8775.0,
+        1274.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 81.126816,
+      "native_box": [
+        8902.0,
+        1170.0,
+        9065.0,
+        1251.0
+      ]
+    },
+    {
+      "text": "Hettinger",
+      "engine_confidence": 96.339554,
+      "native_box": [
+        7078.0,
+        1290.0,
+        7544.0,
+        1394.0
+      ]
+    },
+    {
+      "text": "Engine",
+      "engine_confidence": 96.170448,
+      "native_box": [
+        7581.0,
+        1291.0,
+        7895.0,
+        1400.0
+      ]
+    },
+    {
+      "text": "Company",
+      "engine_confidence": 96.150864,
+      "native_box": [
+        7948.0,
+        1282.0,
+        8391.0,
+        1394.0
+      ]
+    },
+    {
+      "text": "in",
+      "engine_confidence": 96.901581,
+      "native_box": [
+        8441.0,
+        1292.0,
+        8515.0,
+        1370.0
+      ]
+    },
+    {
+      "text": "Bridgeton,",
+      "engine_confidence": 96.351395,
+      "native_box": [
+        8566.0,
+        1285.0,
+        9058.0,
+        1392.0
+      ]
+    },
+    {
+      "text": "New",
+      "engine_confidence": 96.948547,
+      "native_box": [
+        7074.0,
+        1407.0,
+        7289.0,
+        1492.0
+      ]
+    },
+    {
+      "text": "Jersey.",
+      "engine_confidence": 96.079239,
+      "native_box": [
+        7349.0,
+        1413.0,
+        7698.0,
+        1510.0
+      ]
+    },
+    {
+      "text": "Operation",
+      "engine_confidence": 92.235489,
+      "native_box": [
+        7830.0,
+        1400.0,
+        8327.0,
+        1510.0
+      ]
+    },
+    {
+      "text": "of",
+      "engine_confidence": 95.665596,
+      "native_box": [
+        8372.0,
+        1404.0,
+        8507.0,
+        1489.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 96.874374,
+      "native_box": [
+        8564.0,
+        1407.0,
+        8723.0,
+        1490.0
+      ]
+    },
+    {
+      "text": "brake",
+      "engine_confidence": 96.33757,
+      "native_box": [
+        8795.0,
+        1407.0,
+        9061.0,
+        1490.0
+      ]
+    },
+    {
+      "text": "(17)",
+      "engine_confidence": 77.109673,
+      "native_box": [
+        7080.0,
+        1523.0,
+        7296.0,
+        1635.0
+      ]
+    },
+    {
+      "text": "and",
+      "engine_confidence": 95.950378,
+      "native_box": [
+        7364.0,
+        1531.0,
+        7535.0,
+        1612.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 95.970078,
+      "native_box": [
+        7588.0,
+        1528.0,
+        7756.0,
+        1611.0
+      ]
+    },
+    {
+      "text": "clutch",
+      "engine_confidence": 96.433151,
+      "native_box": [
+        7821.0,
+        1523.0,
+        8115.0,
+        1609.0
+      ]
+    },
+    {
+      "text": "(18)",
+      "engine_confidence": 89.744682,
+      "native_box": [
+        8183.0,
+        1521.0,
+        8395.0,
+        1635.0
+      ]
+    },
+    {
+      "text": "are",
+      "engine_confidence": 96.717751,
+      "native_box": [
+        8463.0,
+        1553.0,
+        8609.0,
+        1609.0
+      ]
+    },
+    {
+      "text": "detailed",
+      "engine_confidence": 96.650177,
+      "native_box": [
+        8672.0,
+        1529.0,
+        9068.0,
+        1640.0
+      ]
+    },
+    {
+      "text": "below.",
+      "engine_confidence": 95.476974,
+      "native_box": [
+        7077.0,
+        1651.0,
+        7378.0,
+        1731.0
+      ]
+    },
+    {
+      "text": "The",
+      "engine_confidence": 96.310913,
+      "native_box": [
+        7507.0,
+        1649.0,
+        7673.0,
+        1737.0
+      ]
+    },
+    {
+      "text": "dredge",
+      "engine_confidence": 95.941109,
+      "native_box": [
+        7736.0,
+        1645.0,
+        8070.0,
+        1752.0
+      ]
+    },
+    {
+      "text": "is",
+      "engine_confidence": 96.273773,
+      "native_box": [
+        8129.0,
+        1646.0,
+        8199.0,
+        1730.0
+      ]
+    },
+    {
+      "text": "shown",
+      "engine_confidence": 95.941658,
+      "native_box": [
+        8256.0,
+        1649.0,
+        8563.0,
+        1734.0
+      ]
+    },
+    {
+      "text": "in",
+      "engine_confidence": 96.372696,
+      "native_box": [
+        8625.0,
+        1652.0,
+        8702.0,
+        1738.0
+      ]
+    },
+    {
+      "text": "profile",
+      "engine_confidence": 96.372696,
+      "native_box": [
+        8754.0,
+        1640.0,
+        9062.0,
+        1750.0
+      ]
+    },
+    {
+      "text": "as",
+      "engine_confidence": 96.341339,
+      "native_box": [
+        7071.0,
+        1794.0,
+        7174.0,
+        1850.0
+      ]
+    },
+    {
+      "text": "it",
+      "engine_confidence": 96.37793,
+      "native_box": [
+        7225.0,
+        1771.0,
+        7288.0,
+        1850.0
+      ]
+    },
+    {
+      "text": "would",
+      "engine_confidence": 96.304192,
+      "native_box": [
+        7339.0,
+        1769.0,
+        7621.0,
+        1850.0
+      ]
+    },
+    {
+      "text": "be",
+      "engine_confidence": 96.184746,
+      "native_box": [
+        7665.0,
+        1771.0,
+        7780.0,
+        1849.0
+      ]
+    },
+    {
+      "text": "hauled",
+      "engine_confidence": 96.483017,
+      "native_box": [
+        7827.0,
+        1768.0,
+        8140.0,
+        1851.0
+      ]
+    },
+    {
+      "text": "over",
+      "engine_confidence": 96.103737,
+      "native_box": [
+        8183.0,
+        1791.0,
+        8403.0,
+        1851.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 96.882362,
+      "native_box": [
+        8442.0,
+        1769.0,
+        8594.0,
+        1856.0
+      ]
+    },
+    {
+      "text": "roll",
+      "engine_confidence": 95.363609,
+      "native_box": [
+        8640.0,
+        1767.0,
+        8791.0,
+        1851.0
+      ]
+    },
+    {
+      "text": "bars.",
+      "engine_confidence": 96.709236,
+      "native_box": [
+        8835.0,
+        1771.0,
+        9058.0,
+        1851.0
+      ]
+    },
+    {
+      "text": "For",
+      "engine_confidence": 95.848412,
+      "native_box": [
+        7077.0,
+        1891.0,
+        7234.0,
+        1972.0
+      ]
+    },
+    {
+      "text": "a",
+      "engine_confidence": 94.541924,
+      "native_box": [
+        7316.0,
+        1915.0,
+        7341.0,
+        1969.0
+      ]
+    },
+    {
+      "text": "more",
+      "engine_confidence": 94.541924,
+      "native_box": [
+        7402.0,
+        1911.0,
+        7654.0,
+        1971.0
+      ]
+    },
+    {
+      "text": "complete",
+      "engine_confidence": 95.907799,
+      "native_box": [
+        7723.0,
+        1891.0,
+        8170.0,
+        1989.0
+      ]
+    },
+    {
+      "text": "detail",
+      "engine_confidence": 96.100136,
+      "native_box": [
+        8234.0,
+        1887.0,
+        8508.0,
+        1971.0
+      ]
+    },
+    {
+      "text": "of",
+      "engine_confidence": 96.295982,
+      "native_box": [
+        8571.0,
+        1893.0,
+        8674.0,
+        1970.0
+      ]
+    },
+    {
+      "text": "dredge",
+      "engine_confidence": 96.600197,
+      "native_box": [
+        8724.0,
+        1892.0,
+        9063.0,
+        1995.0
+      ]
+    },
+    {
+      "text": "and",
+      "engine_confidence": 96.385674,
+      "native_box": [
+        7068.0,
+        2012.0,
+        7254.0,
+        2094.0
+      ]
+    },
+    {
+      "text": "winder",
+      "engine_confidence": 96.041214,
+      "native_box": [
+        7324.0,
+        2009.0,
+        7651.0,
+        2096.0
+      ]
+    },
+    {
+      "text": "operation,",
+      "engine_confidence": 96.386948,
+      "native_box": [
+        7717.0,
+        2014.0,
+        8214.0,
+        2112.0
+      ]
+    },
+    {
+      "text": "refer",
+      "engine_confidence": 95.60231,
+      "native_box": [
+        8293.0,
+        2010.0,
+        8535.0,
+        2097.0
+      ]
+    },
+    {
+      "text": "to",
+      "engine_confidence": 93.049034,
+      "native_box": [
+        8600.0,
+        2025.0,
+        8698.0,
+        2093.0
+      ]
+    },
+    {
+      "text": "HAER,",
+      "engine_confidence": 92.044281,
+      "native_box": [
+        8771.0,
+        2010.0,
+        9058.0,
+        2104.0
+      ]
+    },
+    {
+      "text": "MD-77,",
+      "engine_confidence": 91.7435,
+      "native_box": [
+        7074.0,
+        2129.0,
+        7425.0,
+        2226.0
+      ]
+    },
+    {
+      "text": "E.C.",
+      "engine_confidence": 92.591713,
+      "native_box": [
+        7505.0,
+        2125.0,
+        7676.0,
+        2216.0
+      ]
+    },
+    {
+      "text": "Collier",
+      "engine_confidence": 96.265732,
+      "native_box": [
+        7758.0,
+        2124.0,
+        8068.0,
+        2216.0
+      ]
+    },
+    {
+      "text": "Recording",
+      "engine_confidence": 95.155785,
+      "native_box": [
+        8126.0,
+        2129.0,
+        8613.0,
+        2235.0
+      ]
+    },
+    {
+      "text": "Project,",
+      "engine_confidence": 96.64492,
+      "native_box": [
+        8683.0,
+        2132.0,
+        9059.0,
+        2237.0
+      ]
+    },
+    {
+      "text": "Sheet",
+      "engine_confidence": 95.637291,
+      "native_box": [
+        7075.0,
+        2251.0,
+        7347.0,
+        2334.0
+      ]
+    },
+    {
+      "text": "8",
+      "engine_confidence": 96.389481,
+      "native_box": [
+        7392.0,
+        2256.0,
+        7445.0,
+        2334.0
+      ]
+    },
+    {
+      "text": "of",
+      "engine_confidence": 96.449608,
+      "native_box": [
+        7494.0,
+        2253.0,
+        7597.0,
+        2331.0
+      ]
+    },
+    {
+      "text": "8.",
+      "engine_confidence": 95.545265,
+      "native_box": [
+        7630.0,
+        2250.0,
+        7704.0,
+        2335.0
+      ]
+    }
+  ]
+}

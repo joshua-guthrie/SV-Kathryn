@@ -1,0 +1,431 @@
+{
+  "view_id": "S05-N05",
+  "review_status": "unreviewed OCR",
+  "engine": "Tesseract C API",
+  "version": "5.5.0",
+  "language": "eng",
+  "psm": 6,
+  "ocr_size": [
+    2510,
+    803
+  ],
+  "source_to_ocr": [
+    [
+      1.0,
+      0,
+      -10944.0
+    ],
+    [
+      0,
+      1.0,
+      -8227.0
+    ],
+    [
+      0,
+      0,
+      1
+    ]
+  ],
+  "words": [
+    {
+      "text": "Woods",
+      "engine_confidence": 96.38591,
+      "native_box": [
+        11020.0,
+        8291.0,
+        11333.0,
+        8398.0
+      ]
+    },
+    {
+      "text": "referred",
+      "engine_confidence": 96.093803,
+      "native_box": [
+        11384.0,
+        8293.0,
+        11778.0,
+        8376.0
+      ]
+    },
+    {
+      "text": "to",
+      "engine_confidence": 96.872398,
+      "native_box": [
+        11818.0,
+        8305.0,
+        11914.0,
+        8375.0
+      ]
+    },
+    {
+      "text": "are",
+      "engine_confidence": 96.968307,
+      "native_box": [
+        11954.0,
+        8317.0,
+        12110.0,
+        8377.0
+      ]
+    },
+    {
+      "text": "white",
+      "engine_confidence": 95.859062,
+      "native_box": [
+        12160.0,
+        8296.0,
+        12415.0,
+        8378.0
+      ]
+    },
+    {
+      "text": "oak,",
+      "engine_confidence": 96.59639,
+      "native_box": [
+        12464.0,
+        8297.0,
+        12653.0,
+        8390.0
+      ]
+    },
+    {
+      "text": "pine",
+      "engine_confidence": 96.223114,
+      "native_box": [
+        12703.0,
+        8299.0,
+        12902.0,
+        8397.0
+      ]
+    },
+    {
+      "text": "and",
+      "engine_confidence": 95.287514,
+      "native_box": [
+        12948.0,
+        8300.0,
+        13124.0,
+        8379.0
+      ]
+    },
+    {
+      "text": "fir.",
+      "engine_confidence": 96.293327,
+      "native_box": [
+        13173.0,
+        8293.0,
+        13283.0,
+        8376.0
+      ]
+    },
+    {
+      "text": "(See",
+      "engine_confidence": 96.375839,
+      "native_box": [
+        11017.0,
+        8407.0,
+        11230.0,
+        8509.0
+      ]
+    },
+    {
+      "text": "Sheet",
+      "engine_confidence": 96.019203,
+      "native_box": [
+        11280.0,
+        8411.0,
+        11560.0,
+        8498.0
+      ]
+    },
+    {
+      "text": "3,",
+      "engine_confidence": 96.130928,
+      "native_box": [
+        11617.0,
+        8417.0,
+        11705.0,
+        8509.0
+      ]
+    },
+    {
+      "text": "Hull\n5\t1\t1\t1\t2\t5\t1098\t190\t402\t102\t89.207108\tHistory",
+      "engine_confidence": 90.951935,
+      "native_box": [
+        11782.0,
+        8418.0,
+        11994.0,
+        8498.0
+      ]
+    },
+    {
+      "text": "for",
+      "engine_confidence": 96.369064,
+      "native_box": [
+        12500.0,
+        8415.0,
+        12640.0,
+        8499.0
+      ]
+    },
+    {
+      "text": "overview",
+      "engine_confidence": 95.853951,
+      "native_box": [
+        12673.0,
+        8421.0,
+        13125.0,
+        8504.0
+      ]
+    },
+    {
+      "text": "of",
+      "engine_confidence": 96.851021,
+      "native_box": [
+        13172.0,
+        8415.0,
+        13279.0,
+        8498.0
+      ]
+    },
+    {
+      "text": "wood",
+      "engine_confidence": 96.643745,
+      "native_box": [
+        11013.0,
+        8534.0,
+        11272.0,
+        8638.0
+      ]
+    },
+    {
+      "text": "types",
+      "engine_confidence": 96.226524,
+      "native_box": [
+        11314.0,
+        8547.0,
+        11576.0,
+        8635.0
+      ]
+    },
+    {
+      "text": "and",
+      "engine_confidence": 95.854759,
+      "native_box": [
+        11616.0,
+        8540.0,
+        11795.0,
+        8620.0
+      ]
+    },
+    {
+      "text": "reconstruction.)",
+      "engine_confidence": 95.854759,
+      "native_box": [
+        11831.0,
+        8535.0,
+        12605.0,
+        8636.0
+      ]
+    },
+    {
+      "text": "The",
+      "engine_confidence": 96.080544,
+      "native_box": [
+        12680.0,
+        8543.0,
+        12855.0,
+        8630.0
+      ]
+    },
+    {
+      "text": "keel",
+      "engine_confidence": 96.080544,
+      "native_box": [
+        12901.0,
+        8544.0,
+        13092.0,
+        8630.0
+      ]
+    },
+    {
+      "text": "sections",
+      "engine_confidence": 94.086754,
+      "native_box": [
+        11005.0,
+        8654.0,
+        11405.0,
+        8735.0
+      ]
+    },
+    {
+      "text": "are",
+      "engine_confidence": 96.696434,
+      "native_box": [
+        11450.0,
+        8673.0,
+        11607.0,
+        8738.0
+      ]
+    },
+    {
+      "text": "fastened",
+      "engine_confidence": 95.67112,
+      "native_box": [
+        11663.0,
+        8652.0,
+        12090.0,
+        8741.0
+      ]
+    },
+    {
+      "text": "with",
+      "engine_confidence": 96.361984,
+      "native_box": [
+        12128.0,
+        8657.0,
+        12333.0,
+        8742.0
+      ]
+    },
+    {
+      "text": "drift",
+      "engine_confidence": 96.372093,
+      "native_box": [
+        12378.0,
+        8656.0,
+        12594.0,
+        8744.0
+      ]
+    },
+    {
+      "text": "pins.",
+      "engine_confidence": 93.588684,
+      "native_box": [
+        12637.0,
+        8668.0,
+        12845.0,
+        8764.0
+      ]
+    },
+    {
+      "text": "All",
+      "engine_confidence": 83.165726,
+      "native_box": [
+        12941.0,
+        8663.0,
+        13074.0,
+        8746.0
+      ]
+    },
+    {
+      "text": "other",
+      "engine_confidence": 96.713005,
+      "native_box": [
+        11005.0,
+        8769.0,
+        11268.0,
+        8859.0
+      ]
+    },
+    {
+      "text": "hull",
+      "engine_confidence": 95.11763,
+      "native_box": [
+        11310.0,
+        8768.0,
+        11472.0,
+        8860.0
+      ]
+    },
+    {
+      "text": "fastenings",
+      "engine_confidence": 96.063644,
+      "native_box": [
+        11516.0,
+        8770.0,
+        12007.0,
+        8876.0
+      ]
+    },
+    {
+      "text": "observed",
+      "engine_confidence": 96.063644,
+      "native_box": [
+        12050.0,
+        8776.0,
+        12501.0,
+        8866.0
+      ]
+    },
+    {
+      "text": "by",
+      "engine_confidence": 96.926178,
+      "native_box": [
+        12538.0,
+        8779.0,
+        12652.0,
+        8884.0
+      ]
+    },
+    {
+      "text": "the",
+      "engine_confidence": 93.302101,
+      "native_box": [
+        12694.0,
+        8783.0,
+        12850.0,
+        8870.0
+      ]
+    },
+    {
+      "text": "HAER",
+      "engine_confidence": 92.436089,
+      "native_box": [
+        12895.0,
+        8787.0,
+        13150.0,
+        8869.0
+      ]
+    },
+    {
+      "text": "team",
+      "engine_confidence": 95.209511,
+      "native_box": [
+        11002.0,
+        8898.0,
+        11253.0,
+        8983.0
+      ]
+    },
+    {
+      "text": "were",
+      "engine_confidence": 96.577965,
+      "native_box": [
+        11310.0,
+        8912.0,
+        11540.0,
+        8975.0
+      ]
+    },
+    {
+      "text": "nails.",
+      "engine_confidence": 78.609528,
+      "native_box": [
+        11595.0,
+        8896.0,
+        11817.0,
+        8983.0
+      ]
+    },
+    {
+      "text": "|",
+      "engine_confidence": 60.374531,
+      "native_box": [
+        12182.0,
+        8913.0,
+        12185.0,
+        8917.0
+      ]
+    }
+  ]
+}
