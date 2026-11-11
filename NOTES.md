@@ -2,6 +2,19 @@
 
 ## Requirements
 
+- **2026-11-11 user continuation:** independently review the stern; when it
+  passes, proceed through M4 and M5 without awaiting separate user approval.
+  The review passes; see `STERN_INDEPENDENT_REVIEW.md`. Preserve the accepted
+  stern envelope and rerun relevant checks after new structure/planking.
+- The user authorizes frequent local Git commits with detailed change, evidence,
+  validation and remaining-work messages. Use `./project-git`; metadata is in
+  `.local-git/` because this session's `.git` mount is read-only. No remote.
+- Mast visibility diagnosis: its upper conical side was absent from the actual
+  viewer mesh despite a valid full-height CAD solid. An exact-surface repair is
+  rebuilding and gains explicit surface-completeness checks at scales 1/32/64.
+- Earlier stern-only holds and user-review gates below are historical and
+  superseded by the 2026-11-11 authorization and independent review.
+
 - Current stern checkpoint: **542 valid parts, 1:1/mm, captured successful415.49-s build**, with source/material/support/steering/door checks and actual-export images. Implementation/qualified inferences: `STERN_REMEDY_IMPLEMENTATION.md`; evidence: `renders/stern_remedy/`, `checks/stern_remedy_acceptance.json`. Await the user's stern appearance review; M4/M5 remain held. The earlier partial/unregistered-moulding handoff is superseded.
 
 - User markup `.soma/feedback/markup-20261110-2259.png` flags inward pinching at BOTH aft quarters. Treat the actual plan silhouette and fair side handoff as explicit stern acceptance, not just the centreline/back edge. Extend the measured shoulder to a qualified fair F18 runout and a shared rubbing-stock station; verify source controls, both actual widths and no gap. Hidden runout joints/stock taper are inferred (assumed).

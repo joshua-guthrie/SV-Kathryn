@@ -85,3 +85,13 @@ The user can also edit files directly in the app's editor. Read a file again rig
 No skills are switched on for this model. The user can switch on rule sets (for example 3D printing) in the app.
 <!-- /soma:skills -->
 <!-- /soma:folder -->
+
+## Local version history and continuation
+
+- The user authorizes frequent local commits with detailed messages explaining
+  changes, source evidence/assumptions, validation, and remaining work.
+- Use `./project-git` in this session: `.git` is a read-only mount, and repository
+  metadata lives in `.local-git`. See `VERSION_HISTORY.md`. Never add a remote or
+  publish without the user's instruction.
+- On 2026-11-11 the user authorized independent stern review and, once it passes,
+  continuation through M4/M5 without waiting for a separate user acceptance.

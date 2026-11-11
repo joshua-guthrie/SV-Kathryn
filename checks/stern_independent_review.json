@@ -1,0 +1,22 @@
+{
+  "date": "2026-11-11",
+  "stern_status": "accepted for reconstruction; M4/M5 may proceed",
+  "reviewer": "working agent independent source/appearance review; no separate reviewer",
+  "baseline_commit": "60b5c3d007e30c9ea967a6576c7ea08bbfc17449",
+  "reviewed_build_finished": 1794404215.7068515,
+  "sha256": {
+    ".soma/model.glb": "70f413f7f4acedf0faec5b0f9cae88c8586acc48a2a5f9e4e8f176cf9fffe6df",
+    ".soma/model.map.json": "05d615a86dcaadcb3d32e0e9b2aea4130b866deff8cf94a40a24df49a6fd87e9",
+    "drawing_package/stern_remedy_targets.json": "daa0ac3e1ed31248bfa8b3edb75eac9e5dee6e89939c389b732740e8e59da245",
+    "checks/stern_remedy_acceptance.json": "6457bdfd48cfcd69e120b8cb3af2342afe2bca9d40c02ad991fc904662411884",
+    "renders/current-stern-independent.png": "ad1ea3504cb988eca75565e324d06b9449770ff40de3c73b3f8133880c0a0a97",
+    "renders/stern_remedy/plan.png": "16a25a0c3b73df335e6fb064f8b512ee8045c79a3a53d6d9facf3aa6d332a882",
+    "renders/stern_remedy/quarter.png": "2e199bd5e3a441ada9e0a8c90e3b8dbe087e961367f1688547608db6269dde93",
+    "renders/stern_remedy/profile-source-overlay.png": "1aea40b7eb537d730433559a75a98603115e3ab662e950d7b0c2ec75c5d44b2d",
+    "renders/stern_remedy/plan-source-overlay.png": "e03c77a16855faa87c5098528231ba6b5d5442a3ffe29adb4dd6bb6554196550",
+    "Reference Material/LOC_Kathryn_photos/08-LOC-P07.jpg": "94a4aa3cb04be5bbb2a2c9d1f9b6f93f80c5ac5b654f7a93bc1281ca6339826a",
+    "Reference Material/LOC_Kathryn_photos/29-LOC-P28.jpg": "04ca10c8e758f6911e14bff2e5c7cbf9a9020af6fd0afee28477376bc64745b2",
+    "Reference Material/LOC_Kathryn_photos/30-LOC-P29.jpg": "058c287ded24e7d97d9ce546aa72a9600ace8ec4076c70b932348be1999e49ca",
+    "Reference Material/LOC_Kathryn_photos/31-LOC-P30.jpg": "7916fc8c137b03f4f61d48a83e27297eb2e612eb6d2a4d711f38ce063dc3e18f"
+  }
+}

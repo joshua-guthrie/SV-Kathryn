@@ -239,6 +239,11 @@ as one of those five outcomes. Historical review-pass counts remain historical.
 
 ## 7. Current checkpoint and next milestone
 
+- **2026-11-11 override:** the user authorized independent agent stern review
+  followed by M4/M5 without another approval round. That review passes:
+  `STERN_INDEPENDENT_REVIEW.md`. M4 is active. Older hold instructions below
+  describe the preceding checkpoint and are superseded.
+
 - **Latest user override: STERN ONLY.** General M4/M5 work is on hold until the
   stern is resolved. The current 446-part 1:1 assembly is geometrically valid
   but the overall stern is **not accepted**. Follow

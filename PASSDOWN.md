@@ -1,5 +1,24 @@
 # Passdown — Kathryn sailboat
 
+## LATEST — 2026-11-11 independent stern review passes; M4/M5 authorized
+
+User is away and explicitly authorized the agent's independent stern review,
+then continuation through remaining milestones. **No further user appearance
+approval is required.** `STERN_INDEPENDENT_REVIEW.md` closes that gate using
+fresh actual-CAD checks, fixed-scale source overlays and archived LOC photos.
+Retain the accepted stern geometry and rerun regressions during M4.
+
+Local repository baseline: `60b5c3d`; use `./project-git` because `.git` is mounted
+read-only. Metadata lives in `.local-git`. Frequent detailed commits authorized;
+no remote. See `VERSION_HISTORY.md` and the folder-owned AGENTS.md addition.
+
+Mast issue is real: its large conical side had zero triangles in the viewer
+GLB, although solid validity/bounds passed. `.toNURBS()` on the finished mast
+preserves exact material and repairs meshing in prototypes. A full SOMA build
+and three-scale mesh checks are underway; do not claim that repair verified
+until actual export/render checks pass. `checks/render_vessel.py` renders the
+actual export without clipping the mast and works without the live app bridge.
+
 ## LATEST — stern implementation built and checked; user review next
 
 **Read `STERN_REMEDY_IMPLEMENTATION.md` first.** It supersedes the partial-work
