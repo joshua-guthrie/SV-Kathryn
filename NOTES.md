@@ -2,6 +2,13 @@
 
 ## Requirements
 
+- **2026-11-11 stopping point requested by user:**650 valid parts,1:1/mm, no
+  warnings. First M4 deck increment built/verified:109 solids,53 runs, no backing,
+  material error0.0695 ppm, unchanged exported bounds, no missing board mesh
+  faces. Mast repair passes again. M4/M5 remain unfinished. Read
+  `PASSDOWN_2026-11-11.md` before continuing; provisional beam numbering/materials
+  need reconciliation before geometry use. Stop here until continuation requested.
+
 - **2026-11-11 user continuation:** independently review the stern; when it
   passes, proceed through M4 and M5 without awaiting separate user approval.
   The review passes; see `STERN_INDEPENDENT_REVIEW.md`. Preserve the accepted

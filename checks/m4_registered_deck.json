@@ -1,0 +1,22 @@
+{
+  "status": "passed",
+  "registered_boards": 109,
+  "assembly_parts": 650,
+  "bounds_mm": [
+    [
+      -2550.61,
+      -7843.52,
+      2160.597
+    ],
+    [
+      2550.61,
+      7737.407,
+      2839.416
+    ]
+  ],
+  "bbox_max_error_mm": 0.0,
+  "map_volume_relative_error": 3.7944964498516706e-05,
+  "high_accuracy_material_error_ppm": 0.06945415906280061,
+  "missing_mesh_faces": [],
+  "aggregate_backing": false
+}

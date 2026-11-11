@@ -1,5 +1,19 @@
 # Passdown — Kathryn sailboat
 
+## STOPPING POINT — 2026-11-11: read PASSDOWN_2026-11-11.md first
+
+**User requested a stop and passdown.** Current verified assembly: **650 valid
+single-solid parts, 1:1/mm, no warnings**. The first M4 increment replaces the
+aggregate deck with109 solid segments in53 runs. Material conserved to0.0695 ppm;
+actual exported deck bounds unchanged and no missing deck mesh faces. Mast repair
+and three-scale mesh checks pass. All final images were opened and inspected.
+
+Implementation checkpoint `9d7103b`; final validation/passdown follows it in Git.
+Use `./project-git`. Detailed status, commands, evidence, outstanding questions,
+and exact next steps: **`PASSDOWN_2026-11-11.md`**. M4 is incomplete; M5 is not
+implemented. The provisional23-pick beam ledger must be reconciled with existing
+stern-timber numbering/materials before geometry use. No next increment started.
+
 ## LATEST — 2026-11-11 independent stern review passes; M4/M5 authorized
 
 User is away and explicitly authorized the agent's independent stern review,
@@ -18,8 +32,8 @@ actual full-size GLB now includes the side (390,748 triangles). Three-scale mesh
 checks pass at 1/32/64 with no missing faces. Full build: 542 parts, no warnings,
 325.22 s recorded stages (CLI395.9 s included waiting). Inspected restored mast
 in `renders/current-full-vessel-side.png`. `checks/render_vessel.py` works without
-the live app bridge and does not clip the mast. M2 bearing/trunk/board checks pass;
-full companionway/scale regression is still running at this checkpoint.
+the live app bridge and does not clip the mast. M2 bearing/trunk/board, full
+companionway and scale regressions subsequently passed on that542-part envelope.
 
 ## LATEST — stern implementation built and checked; user review next
 
