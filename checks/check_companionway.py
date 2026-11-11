@@ -7,7 +7,7 @@ import cadquery as cq
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from parts import deck, hull, framing, interior,centreline,centreline_layout,hull_frames
+from parts import deck,deck_beams, hull, framing, interior,centreline,centreline_layout,hull_frames
 from geometry_checks import Contains
 from parts.access import companionway_access
 from parts.params import (
@@ -35,6 +35,7 @@ def check():
              if ' door' not in n and ' hinge ' not in n}
     fixed.update({'Topsides': upper, 'Underwater hull': lower, 'Deck': main_deck})
     fixed.update({n: s for n, s, _ in framing.make_opening_frames()})
+    fixed.update({n: s for n, s, _ in deck_beams.make_deck_beam_parts()})
     enclosures={n:s for n,s,_ in interior.make_enclosure_parts()}
     fixed.update(enclosures)
     fixed.update({n:s for n,s,_ in centreline.make_centreline_parts()})

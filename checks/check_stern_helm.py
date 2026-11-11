@@ -60,9 +60,12 @@ def check():
         assert overlap(helm[f'Helm lid timber {i}'],helm['Steering pedestal'])>1e-6
         assert overlap(helm[f'Helm lid timber {i}'],moving)<1e-7
     print('PASS: corrected counter/frames/boxing clear -35/0/+35-degree steering; axle bore and individual lid timbers fit.',flush=True)
+    moulding=hull.stern_moulding()
     for i in range(1,4):
         post=rail[f'Transom stanchion {i}']
-        assert overlap(post,main_deck)>1e-7,('Rear rail post floats',i)
+        # Inset stern posts land on the stern moulding (post 1 also grazes
+        # the deck edge); the moulding is the accepted wood bearing.
+        assert overlap(post,main_deck)+overlap(post,moulding)>1e-7,('Rear rail post floats',i)
         assert overlap(post,rail['Transom top rail'])>1e-7
     for label in ('Port','Starboard'):
         assert rail[f'{label} top rail'].distance(rail['Transom top rail'])<.01

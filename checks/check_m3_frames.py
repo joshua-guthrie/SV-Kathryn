@@ -7,7 +7,7 @@ import cadquery as cq
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from parts import hull,hull_frames as hf,frame_layout as schedule,centreline,centreline_layout as cl,framing,deck,spars
+from parts import deck_beams,hull,hull_frames as hf,frame_layout as schedule,centreline,centreline_layout as cl,framing,deck,spars
 from parts.params import *
 from geometry_checks import Contains
 from check_hatches import overlap
@@ -22,7 +22,8 @@ def inner_z(f,x):
 def check():
     frames={n:s for n,s,_ in hf.make_frame_parts()}
     supports={n:s for n,s,_ in hf.make_support_parts()}
-    all_parts={**frames,**supports}
+    beams={n:s for n,s,_ in deck_beams.make_deck_beam_parts()}
+    all_parts={**frames,**supports,**beams}
     for name,shape in all_parts.items():
         assert shape.isValid() and len(shape.Solids())==1,name
     print(f'PASS: {len(frames)} individual frame pieces plus {len(supports)} supports are valid single solids.',flush=True)
@@ -116,7 +117,7 @@ def check():
         post=supports[f'Hold oak stanchion {i}']
         f=schedule.source_plan_forward(schedule.SOURCE['supports']['stanchion_plan_preview_x'][i-1])
         name,_,new=hf.stanchion_beam(i,f)
-        beam=supports[name] if new else opening_parts[name]
+        beam=supports[name] if new else {**opening_parts,**beams}[name]
         assert overlap(post,beam)>1e-6
         assert any(overlap(post,s)>1e-6 for s in centreline.make_keelsons())
     knee=supports['Oak stem knee with Samson-post mortise']

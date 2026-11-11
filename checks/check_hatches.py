@@ -6,7 +6,7 @@ import cadquery as cq
 import numpy as np
 
 sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
-from parts import deck, hull, framing, spars,centreline,centreline_layout,hull_frames
+from parts import beam_layout,deck,deck_beams,hull,framing,spars,centreline,centreline_layout,hull_frames
 from parts.openings import hatch_openings, framed_openings
 from parts.params import (boat_point,DECK_BEAM_SIDED_FT,DECK_BEAM_DEPTH_FT,
                           KEELSON_AFT_FT,KEELSON_FORE_FT,CB_SLOT_AFT_FT,CB_SLOT_FORE_FT,
@@ -28,6 +28,7 @@ def check():
     main_deck = hull.make_deck()
     hatches = {n: s for n, s, _ in deck.make_hatches()}
     frames = {n: s for n, s, _ in framing.make_opening_frames()}
+    frames.update({n: s for n, s, _ in deck_beams.make_deck_beam_parts()})
     hull_members={n:s for maker in (hull_frames.make_frame_parts,hull_frames.make_support_parts) for n,s,_ in maker()}
     hull_sides=[s for n,s in hull_members.items() if n.endswith('side futtock')]
     for name, shape in {**hatches, **frames, 'upper': upper, 'lower': lower,
@@ -67,23 +68,29 @@ def check():
     for opening in framed_openings():
         print('Checking supports for', opening.name, flush=True)
         name = opening.name
+        all_clamps = [s for n, s in frames.items() if n.endswith('clamp')]
         for side in ('port', 'starboard'):
             carling = frames[f'{name} {side} carling']
+            clamp_name = 'Forebody' if name in ('Main hold hatch', 'Forepeak hatch') else name
+            clamp = frames[f'{clamp_name} {side} clamp']
             for end in ('aft', 'fore'):
-                header = frames[f'{name} {end} deck beam']
+                header_name = beam_layout.beam_name(beam_layout.opening_support(name, end))
+                header = frames[header_name]
                 assert header.intersect(carling).Volume() > 1e-6, ('header/carling', name, side, end)
-                clamp_name = 'Forebody' if name in ('Main hold hatch', 'Forepeak hatch') else name
-                clamp = frames[f'{clamp_name} {side} clamp']
-                assert header.intersect(clamp).Volume() > 1e-6, ('header/clamp', name, side, end)
+                assert any(header.intersect(other).Volume() > 1e-6 for other in all_clamps), \
+                    ('header/clamp', name, side, end)
                 assert any(overlap(clamp,s)>1e-7 for s in hull_sides), ('clamp/frame bearing', name, side)
-            half = frames[f'{name} {side} half beam']
-            assert half.intersect(carling).Volume() > 1e-6, ('half/carling', name, side)
-            assert half.intersect(clamp).Volume() > 1e-6, ('half/clamp', name, side)
-            assert half.intersect(main_deck).Volume() > 1e-6, ('beam/deck', name, side)
+            halves = [s for n, s in frames.items()
+                      if n.startswith(f'{name} {side} half beam')]
+            for half in halves:
+                assert half.intersect(carling).Volume() > 1e-6, ('half/carling', name, side)
+                assert half.intersect(clamp).Volume() > 1e-6, ('half/clamp', name, side)
+                assert half.intersect(main_deck).Volume() > 1e-6, ('beam/deck', name, side)
         # Section dimensions, not an axis-aligned bbox of a cambered member.
-        beam = frames[f'{name} aft deck beam']
+        # Measure away from the centreline centreboard clearance notch.
+        beam = frames[beam_layout.beam_name(beam_layout.opening_support(name, 'aft'))]
         face = cq.Face.makeFromWires(cq.Workplane('YZ').rect(100, 40).val())
-        section = beam.intersect(face).BoundingBox()
+        section = beam.intersect(face.translate(cq.Vector(1.0, 0, 0))).BoundingBox()
         assert abs(section.ylen - DECK_BEAM_SIDED_FT) < 1e-5
         assert abs(section.zlen - DECK_BEAM_DEPTH_FT) < 1e-5
     print('PASS: paired side members, headers, cambered half beams and hull-seated clamps join; '

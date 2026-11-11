@@ -8,7 +8,7 @@ import numpy as np
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from parts import hull,deck,framing,interior,spars,centreline,hull_frames,stern_layout
+from parts import deck_beams,hull,deck,framing,interior,spars,centreline,hull_frames,stern_layout
 from parts.params import *
 from parts.primitives import block
 from check_hatches import overlap
@@ -31,11 +31,20 @@ def check():
     def inside(point):
         return upper_inside(point) or lower_inside(point)
     air_samples=0
-    for f in np.linspace(HULL_AFT_FT+.7,LINE_STATIONS_FT[9],35):
+    # The raked aft counter has its own normal-ray check below.  Start the
+    # distributed interior-air samples at the first full hull station, where
+    # the section-table width is valid through the sampled height.
+    for f in np.linspace(LINE_STATIONS_FT[1],LINE_STATIONS_FT[9],35):
         row=[float(np.interp(f,rows[:,0],rows[:,i])) for i in range(8)]
         for x in (-row[1]*.35,0,row[1]*.35):
-            bottom=(hull_frames.frame_inner_height(f,x) if f<LINE_STATIONS_FT[1]
-                    else hull.inner_bottom_height(f,x))
+            if f<LINE_STATIONS_FT[1]:
+                try:
+                    bottom=hull_frames.frame_inner_height(f,x)
+                except ValueError:
+                    # Solid aft counter has no frame inner outline.
+                    bottom=hull.inner_bottom_height(f,x)
+            else:
+                bottom=hull.inner_bottom_height(f,x)
             z=(bottom+hull.deck_height(f,x)-DECK_THICKNESS_FT)/2
             p=boat_point(x,f,z)
             assert outer_inside(p)
@@ -89,7 +98,7 @@ def check():
                   CABIN_WIDTH_FT-2*CABIN_WALL_FT-.08,
                   CABIN_LENGTH_FT-2*CABIN_WALL_FT-.08,.65)
     assert overlap(opening,main_deck)<1e-7,'False cabin deck-level floor'
-    for name,shape,_ in framing.make_opening_frames():
+    for name,shape,_ in (*framing.make_opening_frames(), *deck_beams.make_deck_beam_parts()):
         if 'roof' not in name:
             assert overlap(opening,shape)<1e-7,('Cabin aperture blocked',name)
     for name in ('Cabin forward bulkhead','Forepeak aft bulkhead'):

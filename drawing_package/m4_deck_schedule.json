@@ -1,7 +1,10 @@
 {
-  "status": "provisional; not a geometry input",
+  "status": "reconciled for M4 integration; source for deck beams and stern timbers",
   "review_required": [
-    "Reconcile the 23-set numbering with existing stern oak timbers at preview X182/220 and member d before integration."
+    "The printed note gives stern-timber stock but no count; only the two distinguishable 4 x 3 1/2-in oak members are modelled.",
+    "Member d (6 x 3-in pine) is not lettered on the plan and cannot be identified without inventing stock; it remains unresolved.",
+    "The 7c leader also touches a line in the solid counter near F=-1.05; it is not a standard deck beam and is retained as an unresolved source line.",
+    "The after-deck hatch has no separate aft header set; its carlings bear on the cabin fore header (set 17) and fore header (set 15)."
   ],
   "source_view": "S05-V01",
   "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
@@ -11,6 +14,7 @@
     {
       "set": 1,
       "forward_ft": 47.82728623263027,
+      "build_forward_ft": 47.82728623263027,
       "preview_edges": [
         1608,
         1620
@@ -23,6 +27,8 @@
       "sided_ft": 0.3958333333333333,
       "molded_ft": 0.5,
       "material": "pine",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -30,6 +36,7 @@
     {
       "set": 2,
       "forward_ft": 45.862691228016715,
+      "build_forward_ft": 45.862691228016715,
       "preview_edges": [
         1545,
         1558
@@ -42,6 +49,8 @@
       "sided_ft": 0.3958333333333333,
       "molded_ft": 0.5,
       "material": "pine",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -49,6 +58,7 @@
     {
       "set": 3,
       "forward_ft": 43.89809622340316,
+      "build_forward_ft": 43.89809622340316,
       "preview_edges": [
         1482,
         1496
@@ -61,6 +71,8 @@
       "sided_ft": 0.3958333333333333,
       "molded_ft": 0.5,
       "material": "pine",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -68,6 +80,7 @@
     {
       "set": 4,
       "forward_ft": 41.603449258014535,
+      "build_forward_ft": 41.603449258014535,
       "preview_edges": [
         1407,
         1425
@@ -80,6 +93,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -87,6 +102,7 @@
     {
       "set": 5,
       "forward_ft": 38.90016653166629,
+      "build_forward_ft": 38.90016653166629,
       "preview_edges": [
         1322,
         1338
@@ -99,6 +115,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "header_fore",
+      "opening": "Forepeak hatch",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -106,6 +124,7 @@
     {
       "set": 6,
       "forward_ft": 36.96700504712655,
+      "build_forward_ft": 36.80530868864782,
       "preview_edges": [
         1262,
         1275
@@ -118,6 +137,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "header_aft",
+      "opening": "Forepeak hatch",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -125,6 +146,7 @@
     {
       "set": 7,
       "forward_ft": 35.049560322623734,
+      "build_forward_ft": 35.06515264566537,
       "preview_edges": [
         1200,
         1215
@@ -137,6 +159,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "header_fore",
+      "opening": "Main hold hatch",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -144,6 +168,7 @@
     {
       "set": 8,
       "forward_ft": 33.257849678416164,
+      "build_forward_ft": 33.257849678416164,
       "preview_edges": [
         1144,
         1157
@@ -156,6 +181,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "split",
+      "opening": "Main hold hatch",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -163,6 +190,7 @@
     {
       "set": 9,
       "forward_ft": 31.529006074356236,
+      "build_forward_ft": 31.529006074356236,
       "preview_edges": [
         1089,
         1102
@@ -175,6 +203,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "split",
+      "opening": "Main hold hatch",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -182,6 +212,7 @@
     {
       "set": 10,
       "forward_ft": 29.50154402959505,
+      "build_forward_ft": 29.50154402959505,
       "preview_edges": [
         1024,
         1038
@@ -194,6 +225,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "header_aft",
+      "opening": "Main hold hatch",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -201,6 +234,7 @@
     {
       "set": 11,
       "forward_ft": 27.1597467840957,
+      "build_forward_ft": 27.1597467840957,
       "preview_edges": [
         949,
         964
@@ -213,6 +247,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -220,6 +256,7 @@
     {
       "set": 12,
       "forward_ft": 24.896533338780888,
+      "build_forward_ft": 24.896533338780888,
       "preview_edges": [
         877,
         892
@@ -232,6 +269,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "oak",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -239,6 +278,7 @@
     {
       "set": 13,
       "forward_ft": 22.696186933613713,
+      "build_forward_ft": 22.696186933613713,
       "preview_edges": [
         807,
         822
@@ -251,6 +291,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "oak",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -258,6 +300,7 @@
     {
       "set": 14,
       "forward_ft": 20.888759529369235,
+      "build_forward_ft": 20.888759529369235,
       "preview_edges": [
         750,
         764
@@ -270,6 +313,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "oak",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -277,6 +322,7 @@
     {
       "set": 15,
       "forward_ft": 18.62554608405442,
+      "build_forward_ft": 18.62554608405442,
       "preview_edges": [
         678,
         692
@@ -289,6 +335,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "oak",
+      "role": "header_fore",
+      "opening": "After deck hatch",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -296,6 +344,7 @@
     {
       "set": 16,
       "forward_ft": 16.25231531848125,
+      "build_forward_ft": 16.25231531848125,
       "preview_edges": [
         603,
         616
@@ -308,6 +357,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "split",
+      "opening": "After deck hatch",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -315,6 +366,7 @@
     {
       "set": 17,
       "forward_ft": 13.926234833018807,
+      "build_forward_ft": 14.105322544112598,
       "preview_edges": [
         528,
         543
@@ -327,6 +379,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "header_fore",
+      "opening": "Cabin deck opening",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -334,6 +388,7 @@
     {
       "set": 18,
       "forward_ft": 12.008790108515985,
+      "build_forward_ft": 12.008790108515985,
       "preview_edges": [
         468,
         481
@@ -346,6 +401,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "split",
+      "opening": "Cabin deck opening",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -353,6 +410,7 @@
     {
       "set": 19,
       "forward_ft": 9.87131074349644,
+      "build_forward_ft": 9.87131074349644,
       "preview_edges": [
         400,
         413
@@ -365,6 +423,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "split",
+      "opening": "Cabin deck opening",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -372,6 +432,7 @@
     {
       "set": 20,
       "forward_ft": 7.670964338329259,
+      "build_forward_ft": 7.670964338329259,
       "preview_edges": [
         330,
         343
@@ -384,6 +445,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "split",
+      "opening": "Cabin deck opening",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -391,6 +454,7 @@
     {
       "set": 21,
       "forward_ft": 5.863536934084792,
+      "build_forward_ft": 5.7959452698617655,
       "preview_edges": [
         273,
         285
@@ -403,6 +467,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "header_aft",
+      "opening": "Cabin deck opening",
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -410,6 +476,7 @@
     {
       "set": 22,
       "forward_ft": 3.993242489692687,
+      "build_forward_ft": 3.993242489692687,
       "preview_edges": [
         213,
         226
@@ -422,6 +489,8 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
@@ -429,6 +498,7 @@
     {
       "set": 23,
       "forward_ft": 2.798768726887653,
+      "build_forward_ft": 2.798768726887653,
       "preview_edges": [
         175,
         188
@@ -441,11 +511,44 @@
       "sided_ft": 0.4583333333333333,
       "molded_ft": 0.4583333333333333,
       "material": "pine",
+      "role": "full",
+      "opening": null,
       "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
       "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
       "uncertainty_ft": 0.2
     }
   ],
+  "stern_timbers": [
+    {
+      "id": "1",
+      "label": "Stern oak deck timber 1 (S05-07c)",
+      "forward_ft": 0.8187712974379284,
+      "preview_edges": [
+        111.89,
+        125.13
+      ],
+      "source_native_edges": [
+        1883.00891,
+        1945.48847
+      ],
+      "observed_sided_ft": 0.41617980577733604,
+      "sided_ft": 0.3333333333333333,
+      "molded_ft": 0.2916666666666667,
+      "material": "oak",
+      "basis": "S05-07(c); full transverse timber at the rudder-box aft face",
+      "uncertainty_ft": 0.2
+    }
+  ],
+  "unresolved_stern_line": {
+    "forward_ft": -1.0463366161419945,
+    "preview_edges": [
+      52.87,
+      65.48
+    ],
+    "reason": "Transverse line touched by the 7c leader, but it lies in the solid counter/transom edge and outside the interior air; not a standard deck beam.",
+    "status": "unresolved; not a geometry input"
+  },
+  "split_set_test": "The picked edge lines are absent across the clear opening width, so these sets are paired half beams, not continuous beams.",
   "deck_planks": {
     "thickness_ft": 0.14583333333333334,
     "typical_width_ft": 0.3125,
@@ -462,6 +565,7 @@
   "inferences": [
     "fine beam end joints and concealed laps",
     "individual plank runs, spiling, and staggered butt positions",
-    "exact pine replacement-board identities"
+    "exact pine replacement-board identities",
+    "stern-timber count beyond the two visibly distinguishable members"
   ]
 }

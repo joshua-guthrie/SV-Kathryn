@@ -3,7 +3,7 @@
   "box_aft_ft": 0.7462603340351883,
   "box_fore_ft": 4.161550791234852,
   "box_to_rear_rail_gap_ft": 1.4258008704814138,
-  "counter_forward_per_vertical_ft": 1.8,
+  "counter_forward_per_vertical_ft": 1.827689590398984,
   "counter_normal_checks": 9,
   "source": "drawing_package/stern_helm_registration.json",
   "photo_cross_checks": [

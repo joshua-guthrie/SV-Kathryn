@@ -69,9 +69,12 @@ def make_hydraulics():
                 boat_point(side*.60,valve_f+.22,floor+1.08),
                 boat_point(.34+side*.20,valve_f,floor+.78)]
         yield f'{label} helm hydraulic pump hose',hose(points),RUBBER
+        # Cross the centreline forward of the rudder-stock envelope, then land
+        # on the crosshead outboard of it.  The hose routing is a
+        # reconstruction and must clear the moving stock.
         points=[boat_point(.34+side*.20,valve_f-.1,floor+.65),
-                boat_point(side*.48,aft+.35,floor+.42),
-                boat_point(side*.39,aft+.65,floor+.98),p(side*.13,aft+1.03)]
+                boat_point(side*.48,aft+.78,floor+.48),
+                boat_point(side*.34,aft+.92,floor+.95),p(side*.30,aft+1.03)]
         yield f'{label} hydraulic ram hose',hose(points),RUBBER
 
 

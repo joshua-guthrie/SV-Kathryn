@@ -7,7 +7,7 @@ import cadquery as cq
 
 ROOT=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(ROOT))
-from parts import hull,centreline,centreline_layout as layout,spars,interior,framing,deck
+from parts import deck_beams,hull,centreline,centreline_layout as layout,spars,interior,framing,deck
 from parts.params import *
 from parts.primitives import block
 from check_hatches import overlap
@@ -22,6 +22,7 @@ def check():
     members={n:s for n,s,_ in centreline.make_centreline_parts()}
     enclosures={n:s for n,s,_ in interior.make_enclosure_parts()}
     frames={n:s for n,s,_ in framing.make_opening_frames()}
+    frames.update({n:s for n,s,_ in deck_beams.make_deck_beam_parts()})
     upper,lower=hull.make_hull()
     fixed={**members,**enclosures,**frames,'Upper planking':upper,'Lower planking':lower,
            'Keel':hull.make_keel(),'Shoe':hull.make_worm_shoe(),'Skeg':hull.make_skeg(),

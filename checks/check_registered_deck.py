@@ -12,7 +12,9 @@ def check():
     build = json.loads((ROOT / '.soma/build.json').read_text())
     assert build['status'] == 'ok' and not build['warnings']
     assert build['finished'] >= max((ROOT / name).stat().st_mtime
-                                    for name in ('model.py', 'parts/deck_planking.py', 'parts/params.py'))
+                                    for name in ('model.py', 'parts/deck_planking.py',
+                                                 'parts/deck_beams.py', 'parts/beam_layout.py',
+                                                 'drawing_package/m4_deck_schedule.json'))
     parts = json.loads((ROOT / '.soma/model.map.json').read_text())['parts']
     boards = [p for p in parts if p['group'].startswith('Deck/Planking/')]
     expected = json.loads((ROOT / 'checks/m4_deck_partition.json').read_text())

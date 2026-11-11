@@ -18,6 +18,7 @@ from parts.centreline import make_centreline_parts
 from parts.hull_frames import make_frame_parts,make_support_parts
 from parts.stern_fittings import make_stern_fittings
 from parts.deck_planking import make_deck_board_parts
+from parts.deck_beams import make_deck_beam_parts
 
 
 def register(name, shape, color, group):
@@ -37,6 +38,9 @@ register("Skeg", make_skeg(), (.13, .18, .18), "Hull")
 for name, shape in make_rudder_fittings():
     register(name, shape, (.25, .27, .25), "Hull/Rudder fittings")
 register("Centreboard", make_centreboard(), (.16, .20, .20), "Hull")
+
+for name, shape, color in make_deck_beam_parts():
+    register(name, shape, color, "Deck/Beams")
 
 for maker, group in (
     (make_stern_moulding_parts, "Hull/Stern moulding"),

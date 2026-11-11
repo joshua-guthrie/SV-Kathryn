@@ -24,10 +24,14 @@ def check():
             assert overlap(letter,board)>1e-7,name
     assert overlap(parts['Boom gooseneck'],parts['Main boom'])>1e-7
     assert overlap(parts['Boom support'],hull.make_deck())>1e-8
+    moulding=hull.stern_moulding()
     for side in (-1,1):
         strake=rails.make_rubbing_strake(side)
         assert strake.isValid() and len(strake.Solids())==1
-        for old in (1,12,25,38,43,47,49):
+        # The aft shoulder hands off from the hull planking to the separate
+        # stern moulding; check that joint directly, then sample the body.
+        assert moulding.distance(strake)<.005,('strake/moulding handoff',side)
+        for old in (25,38,43,47,49):
             f=legacy_forward(old)
             w=float(np.interp(f,[s[0] for s in hull.SECTIONS],[s[1] for s in hull.SECTIONS]))
             sheer=float(np.interp(f,[s[0] for s in hull.SECTIONS],[s[2] for s in hull.SECTIONS]))

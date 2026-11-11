@@ -103,7 +103,13 @@ def check():
     opening={n:s for n,s,_ in framing.make_opening_frames()}
     for name,s in supports.items():
         if name.startswith('Stern oak deck timber'):
-            assert sum(overlap(s,t) for n,t in opening.items() if n.endswith('clamp'))>1e-6,('Unseated stern beam',name)
+            # The aftmost source timber bears on the transom framing/hull;
+            # forward timbers also land on the side clamps.
+            bearings=[t for n,t in opening.items() if n.endswith('clamp')]
+            bearings += [t for n,t in supports.items()
+                         if n.startswith('Transom oak fore-aft frame')]
+            assert (sum(overlap(s,t) for t in bearings)>1e-6 or
+                    overlap(s,upper)+overlap(s,lower)>1e-6),('Unseated stern beam',name)
         if name.startswith('Transom oak fore-aft frame'):
             assert sum(overlap(s,t) for t in (upper,lower,mould))>1e-7,('Unseated transom frame',name)
     print('PASS: aft posts bear on real wood; fair rail joins and source-stock stern deck timbers have real support.',flush=True)

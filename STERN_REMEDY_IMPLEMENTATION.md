@@ -101,7 +101,7 @@ appearance/arrangement checks, not uncalibrated absolute lengths.
 | **R5 — traveller** | Separate S04 item18 rod, sliding eye and supported feet; distinct from case-side item4d cleat |
 | **R6 — stern equipment** | Plate-web iron davits, stainless struts, pivot pedestals/pins, electric winches, rigid tackle, external timber/rubber bumper, control stations and speaker |
 | **R7 — operating space** | Existing access chain retained; new controls checked against doors; full 0–90° door sweep passes at15° samples |
-| **R8 — local construction** | Three inspectable oak moulding pieces, refitted transom frames/braces/clamps, three 4×3½-in oak deck timbers; existing pine header uses the6×3-in exception |
+| **R8 — local construction** | Three inspectable oak moulding pieces, refitted transom frames/braces/clamps. M4 reconciliation found the two old stern-timber picks at preview X182/220 are the measured deck beams **23/22**; the modelled 4×3½-in oak stern timber remains at the rudder-box aft face. Member-d identity and the F≈−1.05 counter line remain unresolved (see `milestones/M4.md`) |
 | **R9 — independent acceptance** | Raw-source/actual-CAD residuals, material partition, support, motion/access, actual-export images, fixed-scale overlays and hashes |
 
 The substantial moulding is separate material, not missing from registration or

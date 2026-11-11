@@ -1,0 +1,34 @@
+{
+  "status": "passed",
+  "measured_sets": 23,
+  "registered_beams": 29,
+  "roles": {
+    "full": 10,
+    "header_fore": 4,
+    "header_aft": 3,
+    "split": 6
+  },
+  "split_openings": {
+    "Cabin deck opening": [
+      18,
+      19,
+      20
+    ],
+    "After deck hatch": [
+      16
+    ],
+    "Main hold hatch": [
+      8,
+      9
+    ],
+    "Forepeak hatch": []
+  },
+  "stern_timbers": [
+    "Stern oak deck timber 1 (S05-07c)"
+  ],
+  "unresolved": [
+    "member d identity",
+    "7c counter line F=-1.05"
+  ],
+  "missing_mesh_faces": []
+}

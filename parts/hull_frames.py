@@ -9,7 +9,7 @@ import math
 import cadquery as cq
 import numpy as np
 from .params import *
-from . import hull,framing,frame_layout,stern_layout
+from . import beam_layout,hull,framing,frame_layout,stern_layout
 from .centreline_layout import keelson_width
 from .primitives import block,beam_between
 
@@ -188,24 +188,23 @@ def make_oak_reinforcement(side):
 
 
 def stanchion_beam(index,forward):
-    headers=[]
-    for opening in framing.framed_openings():
-        headers.extend([(f'{opening.name} aft deck beam',opening.aft-DECK_BEAM_SIDED_FT/2),
-                        (f'{opening.name} fore deck beam',opening.fore+DECK_BEAM_SIDED_FT/2)])
-    closest=min(headers,key=lambda row:abs(row[1]-forward))
-    if abs(closest[1]-forward)<DECK_BEAM_SIDED_FT*.8:return *closest,False
+    # The M3 stanchions sit on measured S05 deck-beam stations.
+    closest=min(beam_layout.BEAMS,key=lambda beam:abs(beam_layout.forward(beam)-forward))
+    if abs(beam_layout.forward(closest)-forward)<DECK_BEAM_SIDED_FT*.8:
+        return beam_layout.beam_name(closest),beam_layout.forward(closest),False
     return f'Stanchion {index} supporting deck beam',forward,True
 
 
 def make_support_parts():
     yield 'Oak stem knee with Samson-post mortise',make_stem_knee(),WOOD
-    # S05 deck-timber centres, distinct from hull-frame IDs; S05-07 oak stock.
-    # Pine member d uses the existing cabin aft header, without a duplicate.
-    for i,px in enumerate((118,182,220),1):
-        f=frame_layout.source_plan_forward(px)
+    # S05-07(c): the full transverse members aft of/at the rudder box are the
+    # 4 x 3 1/2-in oak class.  The lettered 6 x 3-in pine "d" is not located
+    # on the plan; beam_layout retains that open identification.
+    for timber in beam_layout.STERN_TIMBERS:
+        f=timber['forward_ft']
         span=framing.clamp_outer(f)-.015
-        timber=framing.make_cross_beam(f,-span,span,4/12,3.5/12)
-        yield f'Stern oak deck timber {i} (S05)',timber.cut(hull.rudder_stock_passage()),WOOD
+        shape=framing.make_cross_beam(f,-span,span,timber['sided_ft'],timber['molded_ft'])
+        yield timber['label'],shape.cut(hull.rudder_stock_passage()),WOOD
     for side,name in ((1,'Port'),(-1,'Starboard')):
         yield f'{name} forward oak clamp reinforcement',make_oak_reinforcement(side),(.53,.37,.22)
     for i,px in enumerate(frame_layout.SOURCE['supports']['stanchion_plan_preview_x'],1):

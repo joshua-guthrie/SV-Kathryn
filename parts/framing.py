@@ -16,7 +16,7 @@ from .params import (
 )
 from .openings import framed_openings
 from .hull import deck_height, topside_halfwidth
-from . import stern_layout
+from . import beam_layout, stern_layout
 
 
 def beam_top(forward, across):
@@ -66,22 +66,21 @@ def make_longitudinal(aft, fore, across, sided=DECK_BEAM_SIDED_FT,
 
 def make_opening_frames():
     openings = framed_openings()
-    forepeak = next(o for o in openings if o.name == 'Forepeak hatch')
     after=next(o for o in openings if o.name=='After deck hatch')
     main=next(o for o in openings if o.name=='Main hold hatch')
     for opening in openings:
         prefix = opening.name
-        aft_f = opening.aft - DECK_BEAM_SIDED_FT / 2
-        fore_f = opening.fore + DECK_BEAM_SIDED_FT / 2
-        for f, label in ((aft_f, 'aft'), (fore_f, 'fore')):
-            span = clamp_outer(f) - .015
-            # S05-07: stern member d is 6 x 3-in pine, not the general average.
-            size=(6/12,3/12) if prefix=='Cabin deck opening' and label=='aft' else (DECK_BEAM_SIDED_FT,DECK_BEAM_DEPTH_FT)
-            yield f'{prefix} {label} deck beam', make_cross_beam(f, -span, span,*size), WOOD
+        # Carlings run between the inner faces of the source beam sets that
+        # carry each side of the opening.  Headers and half beams are
+        # registered by parts/deck_beams.py, once per measured set.
+        aft_set = beam_layout.opening_support(prefix, 'aft')
+        fore_set = beam_layout.opening_support(prefix, 'fore')
+        carling_aft = beam_layout.forward(aft_set) - aft_set['sided_ft'] / 2 + .015
+        carling_fore = beam_layout.forward(fore_set) + fore_set['sided_ft'] / 2 - .015
         for side, label in ((PORT_SIDE, 'Port'), (-PORT_SIDE, 'Starboard')):
             x = opening.across + side * (opening.clear_width + DECK_BEAM_SIDED_FT) / 2
             yield f'{prefix} {label.lower()} carling', make_longitudinal(
-                opening.frame_aft + .015, opening.frame_fore - .015, x), WOOD
+                carling_aft, carling_fore, x), WOOD
             if prefix != 'Forepeak hatch':
                 start,end=((main.frame_aft-.04,KEELSON_FORE_FT) if prefix=='Main hold hatch' else
                            (HULL_AFT_FT+.3,after.frame_aft+.025) if prefix=='Cabin deck opening' else
@@ -90,13 +89,6 @@ def make_opening_frames():
                 yield f'{name} {label.lower()} clamp', make_longitudinal(
                     start, end, side,
                     DECK_CLAMP_SIDED_FT, DECK_CLAMP_DEPTH_FT, clamp=True), WOOD
-            span = clamp_outer(opening.forward) - .015
-            if side > 0:
-                left, right = x + DECK_BEAM_SIDED_FT / 2 - .025, span
-            else:
-                left, right = -span, x - DECK_BEAM_SIDED_FT / 2 + .025
-            yield f'{prefix} {label.lower()} half beam', make_cross_beam(
-                opening.forward, left, right), WOOD
 
     # The aft header is split around the full-height doorway; a single full
     # beam here would recreate the roof-level obstacle corrected previously.
