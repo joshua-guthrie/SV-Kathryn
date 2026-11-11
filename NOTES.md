@@ -9,9 +9,10 @@
 - The user authorizes frequent local Git commits with detailed change, evidence,
   validation and remaining-work messages. Use `./project-git`; metadata is in
   `.local-git/` because this session's `.git` mount is read-only. No remote.
-- Mast visibility diagnosis: its upper conical side was absent from the actual
-  viewer mesh despite a valid full-height CAD solid. An exact-surface repair is
-  rebuilding and gains explicit surface-completeness checks at scales 1/32/64.
+- Mast visibility repaired: its upper conical side was absent from the viewer
+  mesh despite a valid full-height CAD solid. Exact rational surfaces restore
+  it; successful 542-part build and inspected full-vessel image. Complete mesh
+  surfaces pass at scales 1/32/64; material conserved within one part per million.
 - Earlier stern-only holds and user-review gates below are historical and
   superseded by the 2026-11-11 authorization and independent review.
 

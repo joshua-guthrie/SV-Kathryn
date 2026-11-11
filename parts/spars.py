@@ -47,7 +47,10 @@ def make_mast():
     upper_keep=(cq.Workplane('XY').box(40,100,100,centered=(True,True,False))
                 .translate((0,0,transition)).val())
     faceted=centreline.mast_octagonal_prism(heel_z-.2,transition+.20,deck_height).cut(below)
-    return mast.intersect(upper_keep).fuse(faceted).clean()
+    # The trimmed periodic cone can be a valid CAD solid while OCCT silently
+    # omits its entire side face from the viewer mesh. Exact rational surfaces
+    # preserve the spar and its joints while making that face tessellate.
+    return mast.intersect(upper_keep).fuse(faceted).clean().toNURBS()
 
 
 _boom_front_forward = (mast_forward_at(BOOM_FRONT_HEIGHT_FT)

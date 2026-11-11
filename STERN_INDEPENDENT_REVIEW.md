@@ -37,9 +37,10 @@ interior inspection renders additionally clip the mast deliberately.
 
 The repair converts the completed mast to exact rational surfaces before
 registration. High-accuracy before/after volume agrees within one part per
-million, and exact Boolean differences contain no solids. Full SOMA export,
-three-scale mesh checks and post-repair visual inspection must pass before the
-mast repair is committed as verified.
+million, and exact Boolean differences contain no solids. The subsequent SOMA
+build succeeds with 542 parts and no warnings; actual export contains the full
+side surface. Three-scale mesh checks pass at 1/32/64 and the restored mast is
+visible in `renders/current-full-vessel-side.png`.
 
 ## Remaining qualifications
 

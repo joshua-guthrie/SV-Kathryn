@@ -1,0 +1,25 @@
+{
+  "status": "passed",
+  "accurate_volume_ft3": 27.972724575916132,
+  "original_accurate_volume_ft3": 27.97272912589371,
+  "scales": [
+    {
+      "scale_denominator": 1,
+      "triangles": 391054,
+      "meshed_to_CAD_area_ratio": 0.9975163201133348,
+      "missing_faces": []
+    },
+    {
+      "scale_denominator": 32,
+      "triangles": 44706,
+      "meshed_to_CAD_area_ratio": 0.9961637792413521,
+      "missing_faces": []
+    },
+    {
+      "scale_denominator": 64,
+      "triangles": 21500,
+      "meshed_to_CAD_area_ratio": 0.994615286221814,
+      "missing_faces": []
+    }
+  ]
+}

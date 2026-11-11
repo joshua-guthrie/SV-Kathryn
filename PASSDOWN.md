@@ -12,12 +12,14 @@ Local repository baseline: `60b5c3d`; use `./project-git` because `.git` is moun
 read-only. Metadata lives in `.local-git`. Frequent detailed commits authorized;
 no remote. See `VERSION_HISTORY.md` and the folder-owned AGENTS.md addition.
 
-Mast issue is real: its large conical side had zero triangles in the viewer
-GLB, although solid validity/bounds passed. `.toNURBS()` on the finished mast
-preserves exact material and repairs meshing in prototypes. A full SOMA build
-and three-scale mesh checks are underway; do not claim that repair verified
-until actual export/render checks pass. `checks/render_vessel.py` renders the
-actual export without clipping the mast and works without the live app bridge.
+Mast repair is built and visually verified: the conical side formerly had zero
+viewer triangles despite a valid solid. `.toNURBS()` preserves exact material;
+actual full-size GLB now includes the side (390,748 triangles). Three-scale mesh
+checks pass at 1/32/64 with no missing faces. Full build: 542 parts, no warnings,
+325.22 s recorded stages (CLI395.9 s included waiting). Inspected restored mast
+in `renders/current-full-vessel-side.png`. `checks/render_vessel.py` works without
+the live app bridge and does not clip the mast. M2 bearing/trunk/board checks pass;
+full companionway/scale regression is still running at this checkpoint.
 
 ## LATEST — stern implementation built and checked; user review next
 
