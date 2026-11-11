@@ -17,6 +17,7 @@ from parts.interior import make_enclosure_parts
 from parts.centreline import make_centreline_parts
 from parts.hull_frames import make_frame_parts,make_support_parts
 from parts.stern_fittings import make_stern_fittings
+from parts.deck_planking import make_deck_board_parts
 
 
 def register(name, shape, color, group):
@@ -27,7 +28,8 @@ def register(name, shape, color, group):
 upper_hull, underwater_hull = make_hull()
 register("Painted topsides", upper_hull, (.88, .88, .83), "Hull/Planking envelope")
 register("Underwater hull", underwater_hull, (.11, .17, .19), "Hull/Planking envelope")
-register("Cambered deck", make_deck(), (.63, .60, .51), "Deck/Planking")
+for name, shape, color, group in make_deck_board_parts():
+    register(name, shape, color, group)
 register("Keel", make_keel(), (.13, .18, .18), "Hull")
 register("Keel worm shoe", make_worm_shoe(), (.17, .21, .19), "Hull")
 register("Rudder", make_rudder(), (.25, .27, .25), "Hull")

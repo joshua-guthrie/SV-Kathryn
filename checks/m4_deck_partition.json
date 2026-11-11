@@ -1,0 +1,15 @@
+{
+  "status": "passed",
+  "boards": 109,
+  "runs": 53,
+  "reference_volume_ft3": 90.77145903545978,
+  "board_volume_ft3": 90.77146533991514,
+  "conservation_error_ppm": 0.06945415906280061,
+  "faces": 1931,
+  "seconds": 93.38013376400022,
+  "remaining": [
+    "waterways",
+    "supported staggered butt joints",
+    "full deck-beam integration"
+  ]
+}

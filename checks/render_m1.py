@@ -44,7 +44,7 @@ def render(filename,cutaway=False,camera=None,mast_clip=78,hide_groups=(),show_n
         for actor in pair:
             actor.GetProperty().SetAmbient(.45)
             actor.GetProperty().SetDiffuse(.55)
-            hide=(group=='Deck/Planking' or group=='Deck/Cabin/Roofs'
+            hide=(group.startswith('Deck/Planking') or group=='Deck/Cabin/Roofs'
                   or group.startswith('Deck/Equipment') or group.startswith('Deck/Rails')
                   or group.startswith('Deck/Foredeck') or group.startswith('Spars')
                   or 'hatch cover' in name

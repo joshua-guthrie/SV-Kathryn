@@ -38,7 +38,7 @@ def render(filename, mode='closed'):
                     keep = False
                 actor.SetVisibility(keep)
             elif mode == 'section':
-                if name in ('Painted topsides', 'Underwater hull', 'Cambered deck',
+                if part['group'].startswith('Deck/Planking') or name in ('Painted topsides', 'Underwater hull', 'Cambered deck',
                             'Main hold hatch'):
                     actor.GetMapper().AddClippingPlane(clip)
                 if group.startswith('Deck/Rails'):

@@ -52,7 +52,7 @@ def render(path, opened=False, cutaway=False):
                 transform.Translate(*[-v for v in pivot])
                 actor.SetUserTransform(transform)
             if cutaway:
-                if name in {'Painted topsides', 'Underwater hull', 'Cambered deck',
+                if part['group'].startswith('Deck/Planking') or name in {'Painted topsides', 'Underwater hull', 'Cambered deck',
                             'Main cabin', 'Main cabin roof', 'Raised companionway',
                             'Companionway roof', 'Companionway sill', 'Companionway lintel'}:
                     actor.GetMapper().AddClippingPlane(clip)

@@ -24,6 +24,7 @@ def check():
     expected=hull.make_hull()[0].BoundingBox().ylen*304.8
     assert abs(length-expected)<.1,('Body export length',length,expected)
     body=[p for p in parts if p['name'] in ('Painted topsides','Underwater hull','Cambered deck')
+          or p['group'].startswith('Deck/Planking')
           or p['group']=='Hull/Stern moulding']
     physical_span=max(p['bbox'][1][1] for p in body)-min(p['bbox'][0][1] for p in body)
     with (ROOT/'output/model.step').open() as f:header=f.read(20000)

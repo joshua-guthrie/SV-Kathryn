@@ -1,0 +1,28 @@
+{
+  "captured": "2026-11-11 before M4 deck registration",
+  "build_finished": 1794405140.0510402,
+  "part": {
+    "id": "2:Cambered_deck",
+    "name": "Cambered deck",
+    "step_name": "Cambered_deck",
+    "role": "part",
+    "group": "Deck/Planking",
+    "file": "model.py",
+    "line": 24,
+    "end_line": 24,
+    "bbox": [
+      [
+        -2550.61,
+        -7843.52,
+        2160.597
+      ],
+      [
+        2550.61,
+        7737.407,
+        2839.416
+      ]
+    ],
+    "volume": 2570362452.285
+  },
+  "glb_sha256": "0f7c669f87c8411dc048f79cefe32cd458bb581feb4062166072260fd00def0f"
+}

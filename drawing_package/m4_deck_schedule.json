@@ -1,0 +1,467 @@
+{
+  "status": "provisional; not a geometry input",
+  "review_required": [
+    "Reconcile the 23-set numbering with existing stern oak timbers at preview X182/220 and member d before integration."
+  ],
+  "source_view": "S05-V01",
+  "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+  "native_view_sha256": "8c7f188891ad762ff4b1aa3984e23d408cdadf2e8877ba21d6ed84518ebc260a",
+  "source_note": "S05-07",
+  "members": [
+    {
+      "set": 1,
+      "forward_ft": 47.82728623263027,
+      "preview_edges": [
+        1608,
+        1620
+      ],
+      "source_native_edges": [
+        8943.152,
+        8999.779999999999
+      ],
+      "observed_sided_ft": 0.37720224088579357,
+      "sided_ft": 0.3958333333333333,
+      "molded_ft": 0.5,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 2,
+      "forward_ft": 45.862691228016715,
+      "preview_edges": [
+        1545,
+        1558
+      ],
+      "source_native_edges": [
+        8645.855,
+        8707.202000000001
+      ],
+      "observed_sided_ft": 0.4086357609596263,
+      "sided_ft": 0.3958333333333333,
+      "molded_ft": 0.5,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 3,
+      "forward_ft": 43.89809622340316,
+      "preview_edges": [
+        1482,
+        1496
+      ],
+      "source_native_edges": [
+        8348.558,
+        8414.624
+      ],
+      "observed_sided_ft": 0.44006928103341636,
+      "sided_ft": 0.3958333333333333,
+      "molded_ft": 0.5,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 4,
+      "forward_ft": 41.603449258014535,
+      "preview_edges": [
+        1407,
+        1425
+      ],
+      "source_native_edges": [
+        7994.633,
+        8079.575
+      ],
+      "observed_sided_ft": 0.5658033613287046,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 5,
+      "forward_ft": 38.90016653166629,
+      "preview_edges": [
+        1322,
+        1338
+      ],
+      "source_native_edges": [
+        7593.518,
+        7669.022
+      ],
+      "observed_sided_ft": 0.5029363211810676,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 6,
+      "forward_ft": 36.96700504712655,
+      "preview_edges": [
+        1262,
+        1275
+      ],
+      "source_native_edges": [
+        7310.378,
+        7371.725
+      ],
+      "observed_sided_ft": 0.4086357609596263,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 7,
+      "forward_ft": 35.049560322623734,
+      "preview_edges": [
+        1200,
+        1215
+      ],
+      "source_native_edges": [
+        7017.8,
+        7088.585
+      ],
+      "observed_sided_ft": 0.47150280110724907,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 8,
+      "forward_ft": 33.257849678416164,
+      "preview_edges": [
+        1144,
+        1157
+      ],
+      "source_native_edges": [
+        6753.536,
+        6814.883
+      ],
+      "observed_sided_ft": 0.40863576095961207,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 9,
+      "forward_ft": 31.529006074356236,
+      "preview_edges": [
+        1089,
+        1102
+      ],
+      "source_native_edges": [
+        6493.991,
+        6555.338
+      ],
+      "observed_sided_ft": 0.40863576095961207,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 10,
+      "forward_ft": 29.50154402959505,
+      "preview_edges": [
+        1024,
+        1038
+      ],
+      "source_native_edges": [
+        6187.256,
+        6253.322
+      ],
+      "observed_sided_ft": 0.44006928103343057,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 11,
+      "forward_ft": 27.1597467840957,
+      "preview_edges": [
+        949,
+        964
+      ],
+      "source_native_edges": [
+        5833.331,
+        5904.116
+      ],
+      "observed_sided_ft": 0.47150280110724196,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 12,
+      "forward_ft": 24.896533338780888,
+      "preview_edges": [
+        877,
+        892
+      ],
+      "source_native_edges": [
+        5493.563,
+        5564.348
+      ],
+      "observed_sided_ft": 0.4715028011072562,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "oak",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 13,
+      "forward_ft": 22.696186933613713,
+      "preview_edges": [
+        807,
+        822
+      ],
+      "source_native_edges": [
+        5163.233,
+        5234.018
+      ],
+      "observed_sided_ft": 0.47150280110724907,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "oak",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 14,
+      "forward_ft": 20.888759529369235,
+      "preview_edges": [
+        750,
+        764
+      ],
+      "source_native_edges": [
+        4894.25,
+        4960.316
+      ],
+      "observed_sided_ft": 0.44006928103343057,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "oak",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 15,
+      "forward_ft": 18.62554608405442,
+      "preview_edges": [
+        678,
+        692
+      ],
+      "source_native_edges": [
+        4554.482,
+        4620.548
+      ],
+      "observed_sided_ft": 0.4400692810334341,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "oak",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 16,
+      "forward_ft": 16.25231531848125,
+      "preview_edges": [
+        603,
+        616
+      ],
+      "source_native_edges": [
+        4200.557,
+        4261.904
+      ],
+      "observed_sided_ft": 0.40863576095962273,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 17,
+      "forward_ft": 13.926234833018807,
+      "preview_edges": [
+        528,
+        543
+      ],
+      "source_native_edges": [
+        3846.632,
+        3917.417
+      ],
+      "observed_sided_ft": 0.4715028011072526,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 18,
+      "forward_ft": 12.008790108515985,
+      "preview_edges": [
+        468,
+        481
+      ],
+      "source_native_edges": [
+        3563.492,
+        3624.839
+      ],
+      "observed_sided_ft": 0.4086357609596156,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 19,
+      "forward_ft": 9.87131074349644,
+      "preview_edges": [
+        400,
+        413
+      ],
+      "source_native_edges": [
+        3242.6,
+        3303.947
+      ],
+      "observed_sided_ft": 0.40863576095962273,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 20,
+      "forward_ft": 7.670964338329259,
+      "preview_edges": [
+        330,
+        343
+      ],
+      "source_native_edges": [
+        2912.27,
+        2973.617
+      ],
+      "observed_sided_ft": 0.40863576095962273,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 21,
+      "forward_ft": 5.863536934084792,
+      "preview_edges": [
+        273,
+        285
+      ],
+      "source_native_edges": [
+        2643.2870000000003,
+        2699.915
+      ],
+      "observed_sided_ft": 0.3772022408858007,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 22,
+      "forward_ft": 3.993242489692687,
+      "preview_edges": [
+        213,
+        226
+      ],
+      "source_native_edges": [
+        2360.147,
+        2421.4939999999997
+      ],
+      "observed_sided_ft": 0.4086357609596156,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    },
+    {
+      "set": 23,
+      "forward_ft": 2.798768726887653,
+      "preview_edges": [
+        175,
+        188
+      ],
+      "source_native_edges": [
+        2180.825,
+        2242.172
+      ],
+      "observed_sided_ft": 0.40863576095962273,
+      "sided_ft": 0.4583333333333333,
+      "molded_ft": 0.4583333333333333,
+      "material": "pine",
+      "dimension_basis": "S05 note 7 printed stock; first-three orientation checked against projected plan widths",
+      "position_basis": "scale-measured S05-V01 timber edges; opposite half members form one set",
+      "uncertainty_ft": 0.2
+    }
+  ],
+  "deck_planks": {
+    "thickness_ft": 0.14583333333333334,
+    "typical_width_ft": 0.3125,
+    "inboard_width_ft": 0.5,
+    "material": "mostly fir; individual pine replacement identities unresolved"
+  },
+  "ceiling": {
+    "thickness_ft": 0.14583333333333334,
+    "nominal_width_ft": 0.75,
+    "width_allowance_ft": 0.08333333333333333,
+    "material": "pine",
+    "limber_boards": "Absent alongside keelson in main hold; survey removal is not permanent absence"
+  },
+  "inferences": [
+    "fine beam end joints and concealed laps",
+    "individual plank runs, spiling, and staggered butt positions",
+    "exact pine replacement-board identities"
+  ]
+}
