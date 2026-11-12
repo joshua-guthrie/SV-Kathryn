@@ -22,9 +22,11 @@ partition.
   (`Deck/Scarfs/Kingplank`).
 - Material: 83.621459 ft³ field + 7.150006 ft³ waterway = 90.771459 ft³ deck
   envelope; conservation 0.064 ppm.
-- Final build stages **417.8 s** (model 241.0, STEP 13.3, GLB 149.2), under the
-  600-s stage budget; wall 600.4 s. Earlier wall times of 694–837 s included
-  waiting for the app warm process.
+- Clean final build after clearing a stale 7-hour `soma warm` lock: **449.2 s
+  wall**, 792 parts, no warnings. The earlier 600.4-s CLI wall hit the app's
+  600-s limit while that stale warm process held the build path; build stages
+  themselves are ~418 s (model 241, STEP 13, GLB 149). Kill/clear the stale
+  warm process if the app reports the 600-s stop again.
 - Passing: `checks/check_m4_deck_pattern.py`, `check_registered_deck.py`,
   `prototype_deck_boards.py`, `check_m4_beams.py`, `check_model_scale.py`, plus
   the M1/M2/M3/stern/hatch/companionway/mast regressions.
