@@ -178,50 +178,67 @@ def build_source():
 
 
 def build_proposal(boards):
-    run_x, run_f = {}, {}
+    run_x, run_pieces = {}, {}
     for row in boards:
         bb = row['shape'].BoundingBox()
         x0, x1 = run_x.get(row['run'], (bb.xmin, bb.xmax))
         run_x[row['run']] = (min(x0, bb.xmin), max(x1, bb.xmax))
-        f0, f1 = run_f.get(row['run'], (25 - bb.ymax, 25 - bb.ymin))
-        run_f[row['run']] = (min(f0, 25 - bb.ymax), max(f1, 25 - bb.ymin))
+        run_pieces.setdefault(row['run'], []).append((25 - bb.ymax, 25 - bb.ymin))
+    for run in run_pieces:
+        run_pieces[run] = sorted(run_pieces[run])
     port_runs = sorted([r for r in run_x if r.startswith('Port')], key=lambda r: run_x[r][0])
     star_runs = sorted([r for r in run_x if r.startswith('Starboard')], key=lambda r: run_x[r][0])
     centre = [r for r in run_x if r.startswith('Deck centre')]
 
-    def near_opening(beam):
-        return any(o.aft - 1.2 < beam_forward(beam) < o.fore + 1.2 for o in framed_openings())
+    def beam_options(a, b):
+        return [beam for beam in BEAMS
+                if a + 1.0 <= beam_forward(beam) <= b - 1.0]
 
     def butt_stations(run_index, run, previous):
-        f0, f1 = run_f[run]
-        length = f1 - f0
-        if length < 12:
-            return []
-        count = max(1, int(round(length / 18.0)))
-        targets = np.linspace(f0 + 3.0, f1 - 3.0, count)
-        phase = ((run_index % 3) - 1) * 4.0
-        usable = [beam for beam in BEAMS
-                  if beam['role'] != 'split' and not near_opening(beam)
-                  and f0 + 2.0 < beam_forward(beam) < f1 - 2.0]
+        """Standard 12-ft lumber: never let a board exceed 12 ft.
+
+        Walk forward through each continuous deck piece. Whenever the rest of
+        the piece is longer than 12 ft, select a measured beam centre at or
+        before the 12-ft cap. Board lengths are therefore <= 12 ft; they may be
+        shorter. The two boards either side of every selected station share
+        that beam.
+        """
         result = []
-        for target in targets:
-            f = min(f1 - 3.0, max(f0 + 3.0, float(target) + phase))
-            options = []
-            nearest = min(usable, key=lambda beam: abs(beam_forward(beam) - f), default=None)
-            if nearest is not None and abs(beam_forward(nearest) - f) < 1.5:
-                options.append((beam_forward(nearest), 'beam'))
-            for shift in (0.0, 4.0, -4.0, 8.0, -8.0):
-                g = f + shift
-                if f0 + 3.0 <= g <= f1 - 3.0:
-                    options.append((g, 'ledger'))
-            for g, support in options:
-                if all(abs(g - p) >= 4.0 for p in previous):
-                    result.append((g, support))
+        for a, b in run_pieces[run]:
+            last = a
+            while b - last > 12.0 + 1e-9:
+                target = min(last + 12.0, b - 1.0)
+                options = [beam for beam in beam_options(a, b)
+                           if last + 1.0 < beam_forward(beam) <= target + 1e-9]
+                ordered = sorted(options, key=lambda beam: abs(beam_forward(beam) - target))
+                chosen = None
+                for minimum in (4.0, 2.0):
+                    for beam in ordered:
+                        f = beam_forward(beam)
+                        if any(abs(f - q) < 4.0 for q, _ in result):
+                            continue
+                        if all(abs(f - p) >= minimum for p in previous):
+                            chosen = beam
+                            break
+                    if chosen is not None:
+                        break
+                if chosen is None:
+                    # Keep the 12-ft cap even where the ideal 2-bay stagger
+                    # cannot also be met; the acceptance check reports this.
+                    for beam in ordered:
+                        f = beam_forward(beam)
+                        if any(abs(f - q) < 4.0 for q, _ in result):
+                            continue
+                        chosen = beam
+                        break
+                if chosen is None:
                     break
+                result.append((beam_forward(chosen), chosen['set']))
+                last = beam_forward(chosen)
         return result
 
-    fig = plt.figure(figsize=(18, 11), dpi=170)
-    gs = fig.add_gridspec(2, 2, height_ratios=[1.12, 1], hspace=.26, wspace=.14)
+    fig = plt.figure(figsize=(18, 12.5), dpi=170)
+    gs = fig.add_gridspec(2, 2, height_ratios=[1.02, 1.15], hspace=.24, wspace=.14)
     ax = fig.add_subplot(gs[0, :])
     for row in boards:
         for edge in row['shape'].Edges():
@@ -242,82 +259,110 @@ def build_proposal(boards):
         for index, run in enumerate(runs):
             x0, x1 = run_x[run]
             stations = butt_stations(index + offset, run, previous)
-            for f, support in stations:
-                color = '#b00020' if support == 'beam' else '#b35a00'
-                ax.plot([f, f], [x0, x1], color=color, lw=1.5)
+            for f, _ in stations:
+                ax.plot([f, f], [x0, x1], color='#b00020', lw=1.5)
                 ax.add_patch(Rectangle((f - .55, x0), 1.1, x1 - x0, fill=False,
-                                       edgecolor=color, lw=.6, alpha=.9))
+                                       edgecolor='#b00020', lw=.6, alpha=.9))
             previous = [f for f, _ in stations]
 
     draw_stations(port_runs)
     draw_stations(star_runs)
-    # Centre kingplank: keep its butts clear of both adjacent first runs.
     centre_previous = [f for f, _ in butt_stations(0, port_runs[0], [])] + \
                       [f for f, _ in butt_stations(0, star_runs[0], [])]
     for run in centre:
         x0, x1 = run_x[run]
-        for f, support in butt_stations(1, run, centre_previous):
-            color = '#b00020' if support == 'beam' else '#b35a00'
-            ax.plot([f, f], [x0, x1], color=color, lw=1.5)
+        for f, _ in butt_stations(1, run, centre_previous):
+            ax.plot([f, f], [x0, x1], color='#b00020', lw=1.5)
             ax.add_patch(Rectangle((f - .55, x0), 1.1, x1 - x0, fill=False,
-                                   edgecolor=color, lw=.6, alpha=.9))
+                                   edgecolor='#b00020', lw=.6, alpha=.9))
     ax.set_xlim(-2, 51)
     ax.set_ylim(-9, 9)
     ax.set_aspect('equal')
     ax.set_xlabel('Forward (ft) — bow at right')
     ax.set_ylabel('Across (ft) — port up')
-    ax.set_title('D. PROPOSED PATTERN — butts only over supported members, staggered between adjacent planks\n'
-                 'Red = butt over beam; amber = butt over 12-in ledger/block. Every plank is an individual board.',
-                 fontsize=9.5, loc='left')
-    legend = [Line2D([0], [0], color='#b00020', lw=2, label='butt over beam'),
-              Line2D([0], [0], color='#b35a00', lw=2, label='butt over 12-in ledger/block'),
+    ax.set_title('D. PROPOSED STANDARD-LUMBER PATTERN — no board over 12 ft; every butt centred on a measured beam\n'
+                 'Red = butt at beam centreline. Each adjoining plank covers half the beam’s sided width. No ledgers. Widths: 4-in/6-in nominal.\n'
+                 'Concept shown on the current run boundaries; implementation re-spaces courses to 3.5-in / 5.5-in actual stock.',
+                 fontsize=9.2, loc='left')
+    legend = [Line2D([0], [0], color='#b00020', lw=2, label='beam-centred butt'),
               Line2D([0], [0], color='#0b4f9c', lw=1.5, label='measured deck beam'),
               Line2D([0], [0], color='#c45a00', lw=1.2, ls='--', label='opening')]
     ax.legend(handles=legend, loc='lower left', fontsize=7, framealpha=.95)
 
-    axz = fig.add_subplot(gs[1, 0])
-    axz.axis('off')
-    axz.set_xlim(-.4, 5.4)
-    axz.set_ylim(-.6, 9.0)
+    sub = gs[1, 0].subgridspec(2, 1, hspace=.42)
+    axd = fig.add_subplot(sub[0])
+    axd.set_xlim(0, 6)
+    axd.set_ylim(0, 5.8)
+    axd.set_aspect('equal')
+    axd.axis('off')
+    axd.add_patch(Rectangle((2.0, .9), 1.0, 4.2, facecolor='#dbe8f7',
+                            edgecolor='#0b4f9c', lw=1.2))
+    axd.add_patch(Rectangle((.2, 1.9), 2.3, 1.0, facecolor='#e7d6b7',
+                            edgecolor='#7a4a17', lw=1.0))
+    axd.add_patch(Rectangle((2.5, 1.9), 3.3, 1.0, facecolor='#f0e2c8',
+                            edgecolor='#7a4a17', lw=1.0))
+    axd.plot([2.5, 2.5], [1.8, 3.0], color='#b00020', lw=2.5)
+    axd.text(2.5, 5.3, 'beam 5½ in; joint at beam centreline', fontsize=7.0,
+             ha='center', color='#0b4f9c')
+    axd.text(1.1, 3.25, 'plank A', fontsize=6.8, ha='center', color='#7a4a17')
+    axd.text(4.0, 3.25, 'plank B', fontsize=6.8, ha='center', color='#7a4a17')
+    axd.text(2.5, .15, 'each plank end covers 2¾ in = half of the 5½-in beam',
+             fontsize=6.4, ha='center', color='#111111')
+    axd.annotate('', xy=(2.5, 1.55), xytext=(2.0, 1.55),
+                 arrowprops=dict(arrowstyle='<->', color='#b00020', lw=1.0))
+    axd.annotate('', xy=(3.0, 1.55), xytext=(2.5, 1.55),
+                 arrowprops=dict(arrowstyle='<->', color='#b00020', lw=1.0))
+    axd.set_title('E. BEAM-CENTRED BUTT DETAIL — two boards share one beam',
+                  fontsize=8, loc='left')
+
+    axs = fig.add_subplot(sub[1])
+    axs.axis('off')
+    axs.set_xlim(-.4, 5.4)
+    axs.set_ylim(-.4, 7.2)
     for beam in range(6):
-        axz.plot([beam, beam], [0, 8], color='#0b4f9c', lw=1.4)
-        axz.text(beam, -.25, f'beam\n{beam+1}', fontsize=6.2, color='#0b4f9c', ha='center', va='top')
-    for run in range(8):
-        y = 7.5 - run
+        axs.plot([beam, beam], [0, 6.4], color='#0b4f9c', lw=1.1)
+    for run in range(6):
+        y = 5.8 - run
         phase = (2 * (run % 3)) % 6
-        axz.plot([0, 5], [y, y], color='#777777', lw=.7)
+        axs.plot([0, 5], [y, y], color='#777777', lw=.6)
         for j in range(6):
             if j == phase:
-                axz.plot([j - .38, j + .38], [y, y], color='#b00020', lw=3.0)
-                axz.add_patch(Rectangle((j - .38, y - .22), .76, .44, fill=False,
-                                        edgecolor='#b00020', lw=.9))
-    axz.annotate('', xy=(0, 8.55), xytext=(2, 8.55),
-                 arrowprops=dict(arrowstyle='<->', color='#0a7a35', lw=1.4))
-    axz.text(1, 8.65, '>= 2 bays', fontsize=7, color='#0a7a35', ha='center')
-    axz.text(2.5, 9.0, 'SCHEMATIC ZOOM — 8 planks / 6 beams', fontsize=8.2, ha='center', va='bottom')
-    axz.text(-.35, 8.2, 'adjacent butts never share a beam', fontsize=7.2, color='#111111')
+                axs.plot([j - .22, j + .22], [y, y], color='#b00020', lw=2.4)
+    axs.annotate('', xy=(0, 6.65), xytext=(2, 6.65),
+                 arrowprops=dict(arrowstyle='<->', color='#0a7a35', lw=1.1))
+    axs.text(1, 6.78, '>= 2 bays', fontsize=6.5, color='#0a7a35', ha='center')
+    axs.text(2.5, 7.0, 'adjacent planks never share a beam', fontsize=7,
+             ha='center', color='#111111')
 
     axr = fig.add_subplot(gs[1, 1])
     axr.axis('off')
     rules = [
         'PROPOSED RECONSTRUCTION RULES', '',
-        '1. One logical board per plank run segment; no aggregate backing.',
-        '2. Butt only over a deck beam, or over a 12-in butt block/ledger that',
-        '   spans to two adjacent beams; no unsupported butt in a span.',
-        '3. Target 16–20-ft plank lengths (reconstruction) with a three-phase',
-        '   stagger; adjacent butts >= 2 bay widths apart; never align adjacent planks.',
-        '4. Keep butts >= 12 in from opening coamings and plank ends;',
-        '   no butt at a hatch/cabin corner.',
-        '5. Spile/taper plank ends into the oak waterway at bow and stern;',
+        '1. One logical board per plank run; no aggregate backing.',
+        '2. Standard lumber: 4-in nominal (3½-in actual) typical deck',
+        '   stock; 6-in nominal (5½-in actual) inboard/kingplank stock.',
+        '3. Every internal butt is centred on a measured deck beam. The',
+        '   upstream plank ends at the beam centreline and covers half',
+        '   the beam’s sided width; the next plank covers the other half.',
+        '   No ledgers and no unsupported butts.',
+        '4. 12 ft is the maximum board length (standard 12-ft stock);',
+        '   shorter boards are allowed. Report actual lengths and reject',
+        '   any board over 12 ft.',
+        '5. Adjacent planks stagger by >= 2 beam bays; never put two',
+        '   adjacent planks on the same beam.',
+        '6. Keep internal butts >= 12 in from opening coamings. Opening',
+        '   edges are framed boundaries, not extra butt lines.',
+        '7. Spile/taper plank ends into the oak waterway at bow and stern;',
         '   do not leave triangular strip tips.',
-        '6. Keep the 6-in centre kingplank; stagger its butts on the same grid.',
-        '7. Butt blocks/ledgers are extra material below the deck (not carved from it);',
-        '   deck boards + waterway must still conserve the deck envelope.',
-        '8. Exact historic butt positions are not printed on S05;',
-        '   this pattern is a qualified reconstruction.',
+        '8. Keep the 6-in centre kingplank; stagger its butts on the',
+        '   same beam-centre grid.',
+        '9. No backing or ledger: deck boards + waterway must conserve',
+        '   the deck envelope; the beams are the only butt support.',
+        '10. Exact historic butt positions are not printed on S05; this',
+        '    is a qualified reconstruction.',
     ]
-    axr.text(0, 1, '\n'.join(rules), fontsize=8.2, va='top', ha='left', color='#111111')
-    fig.suptitle('Kathryn — proposed staggered, beam-supported deck planking pattern (for review)',
+    axr.text(0, 1, '\n'.join(rules), fontsize=8.0, va='top', ha='left', color='#111111')
+    fig.suptitle('Kathryn — standard-lumber deck pattern: ≤12-ft boards, 4/6-in nominal, beam-centred butts (for review)',
                  fontsize=12, x=.01, ha='left')
     fig.savefig(FIG / 'm4-deck-planking-gap-proposal.png', bbox_inches='tight')
     plt.close(fig)
