@@ -1,0 +1,24 @@
+{
+  "status": "passed",
+  "boards": 237,
+  "runs": 55,
+  "kingplank_boards": 6,
+  "waterway_parts": 4,
+  "scarfs": 1,
+  "internal_butts": 123,
+  "max_board_ft": 11.908775549989645,
+  "min_board_ft": 0.16313182198430098,
+  "boards_under_4ft": 31,
+  "min_adjacent_stagger_ft": 2.094858000000002,
+  "adjacent_pairs_under_4ft": 6,
+  "field_volume_ft3": 83.62145907988362,
+  "waterway_volume_ft3": 7.150005783332002,
+  "deck_volume_ft3": 90.77145903545978,
+  "conservation_ppm": 0.0642025137005934,
+  "seconds": 117.26924487499491,
+  "remaining": [
+    "measured waterway section",
+    "spiled/tapered edge treatment",
+    "side-planking pattern"
+  ]
+}

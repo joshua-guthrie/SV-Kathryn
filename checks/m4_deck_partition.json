@@ -1,15 +1,24 @@
 {
   "status": "passed",
-  "boards": 109,
-  "runs": 53,
-  "reference_volume_ft3": 90.77145903545978,
-  "board_volume_ft3": 90.77146533991514,
-  "conservation_error_ppm": 0.06945415906280061,
-  "faces": 1931,
-  "seconds": 93.38013376400022,
+  "boards": 237,
+  "runs": 55,
+  "kingplank_boards": 6,
+  "waterway_parts": 4,
+  "scarfs": 1,
+  "internal_butts": 123,
+  "max_board_ft": 11.908775549989645,
+  "min_board_ft": 0.16313182198430098,
+  "boards_under_4ft": 31,
+  "field_volume_ft3": 83.62145805240266,
+  "waterway_volume_ft3": 7.150006179091308,
+  "deck_volume_ft3": 90.77145903545978,
+  "board_volume_ft3": 83.62145907988362,
+  "conservation_error_ppm": 0.06856246676394241,
+  "faces": 3237,
+  "seconds": 117.87878319299489,
   "remaining": [
-    "waterways",
-    "supported staggered butt joints",
-    "full deck-beam integration"
+    "measured waterway section",
+    "spiled/tapered edge treatment",
+    "side-planking pattern"
   ]
 }

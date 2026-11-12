@@ -1,4 +1,4 @@
-"""Validate an exact deck-board partition before replacing the live aggregate."""
+"""Validate the standard-lumber deck partition before registration."""
 import json
 import sys
 import time
@@ -6,22 +6,43 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
-from parts import hull, deck_planking
+from parts import deck_planking
 
 
 def check():
     start = time.monotonic()
     boards = deck_planking.deck_boards()
-    reference = hull.make_deck().Volume(1e-9)
-    total = sum(board['shape'].Volume(1e-9) for board in boards)
-    result = dict(status='passed', boards=len(boards),
-                  runs=len({board['run'] for board in boards}),
-                  reference_volume_ft3=reference, board_volume_ft3=total,
-                  conservation_error_ppm=(total - reference) / reference * 1e6,
-                  faces=sum(len(board['shape'].Faces()) for board in boards),
-                  seconds=time.monotonic() - start,
-                  remaining=['waterways', 'supported staggered butt joints', 'full deck-beam integration'])
-    (ROOT / 'checks/m4_deck_partition.json').write_text(json.dumps(result, indent=2) + '\n')
+    field, margins, deck = deck_planking.pattern_waterway()
+    waterway = list(deck_planking.make_waterway_parts())
+    scarfs = list(deck_planking.make_kingplank_scarf_parts())
+    board_volume = sum(board['shape'].Volume(1e-9) for board in boards)
+    waterway_volume = sum(shape.Volume(1e-9) for _, shape, _ in waterway)
+    field_volume = field.Volume(1e-9)
+    deck_volume = deck.Volume(1e-9)
+    assert abs(board_volume - field_volume) < max(1e-6, field_volume * 1e-6)
+    assert abs(board_volume + waterway_volume - deck_volume) < deck_volume * 1e-6
+    internal = sum(bool(board['butt_aft']) for board in boards)
+    result = dict(
+        status='passed', boards=len(boards),
+        runs=len({board['run'] for board in boards}),
+        kingplank_boards=sum(board['run'] == 'Kingplank' for board in boards),
+        waterway_parts=len(waterway), scarfs=len(scarfs),
+        internal_butts=internal,
+        max_board_ft=max(board['length'] for board in boards),
+        min_board_ft=min(board['length'] for board in boards),
+        boards_under_4ft=sum(board['length'] < 4 for board in boards),
+        field_volume_ft3=field_volume,
+        waterway_volume_ft3=waterway_volume,
+        deck_volume_ft3=deck_volume,
+        board_volume_ft3=board_volume,
+        conservation_error_ppm=(board_volume + waterway_volume - deck_volume)
+        / deck_volume * 1e6,
+        faces=sum(len(board['shape'].Faces()) for board in boards),
+        seconds=time.monotonic() - start,
+        remaining=['measured waterway section', 'spiled/tapered edge treatment',
+                   'side-planking pattern'])
+    (ROOT / 'checks/m4_deck_partition.json').write_text(
+        json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2), flush=True)
     return result
 

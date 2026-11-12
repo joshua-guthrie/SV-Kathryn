@@ -14,7 +14,7 @@ import math
 import cadquery as cq
 import numpy as np
 
-from . import framing, hull
+from . import centreline_layout, framing, hull
 from .beam_layout import BEAMS, forward as beam_forward
 from .board_tools import plane_f, plane_x, segmented_loft, split_material
 from .openings import framed_openings
@@ -23,7 +23,7 @@ from .params import (
     DECK_CENTRE_PLANK_WIDTH_FT, DECK_KINGPLANK_NOMINAL_IN,
     DECK_MAX_BOARD_LENGTH_FT, DECK_MIN_BOARD_LENGTH_FT,
     DECK_PLANK_NOMINAL_IN, DECK_PLANK_WIDTH_FT, DECK_SCARF_LENGTH_FT,
-    DECK_SCARF_MIN_BOARD_FT, DECK_STAGGER_FT, PORT_SIDE,
+    DECK_SCARF_MIN_BOARD_FT, DECK_STAGGER_FT, BOW_POST_FORWARD_FT, PORT_SIDE,
     TRUNK_AFT_FT, TRUNK_FORE_FT, TRUNK_GAP_FT,
 )
 from .primitives import block
@@ -38,7 +38,7 @@ class RawPiece:
     x1: float
     f0: float
     f1: float
-    shape: object
+    shape: object = None
 
 
 @dataclass(frozen=True)
@@ -105,29 +105,95 @@ def _label(x, positive):
 
 
 @lru_cache(maxsize=1)
+def _deck_cuts():
+    stock = hull.rudder_stock_passage().BoundingBox()
+    bow = block(0, BOW_POST_FORWARD_FT, -5, 5 / 12 + .012, 5 / 12 + .012, 25).BoundingBox()
+    mast = centreline_layout.mast_chock_envelope(hull.deck_height, .006).BoundingBox()
+    return tuple((25 - box.ymax, 25 - box.ymin, box.xmin, box.xmax)
+                 for box in (stock, bow, mast))
+
+
+@lru_cache(maxsize=1)
+def _f_grid():
+    field = _waterway_split()[0]
+    box = field.BoundingBox()
+    fmin, fmax = 25 - box.ymax, 25 - box.ymin
+    positions = np.arange(fmin, fmax, .02)
+    clamps = np.array([framing.clamp_outer(float(f)) for f in positions])
+    return tuple(positions), tuple(clamps), fmin, fmax
+
+
+def _section_intervals(x0, x1):
+    section = _waterway_split()[0].intersect(plane_x((x0 + x1) / 2))
+    cuts = []
+    for face in section.Faces():
+        box = face.BoundingBox()
+        if face.Area() > 1e-5:
+            cuts.append((25 - box.ymax, 25 - box.ymin))
+    cuts.sort()
+    merged = []
+    for f0, f1 in cuts:
+        if merged and f0 <= merged[-1][1] + .05:
+            merged[-1] = (merged[-1][0], max(merged[-1][1], f1))
+        else:
+            merged.append((f0, f1))
+    return tuple(merged)
+
+
+def _f_intervals(x0, x1, use_section=False):
+    if use_section:
+        return _section_intervals(x0, x1)
+    positions, clamps, _, fmax = _f_grid()
+    inner = max(.02, min(abs(x0), abs(x1)))
+    cuts = []
+    for opening in framed_openings():
+        if x1 > opening.across - opening.clear_width / 2 and \
+                x0 < opening.across + opening.clear_width / 2:
+            cuts.append((opening.aft, opening.fore))
+    intervals = []
+    start = None
+    for f, clamp in zip(positions, clamps):
+        blocked = any(a - .02 < f < b + .02 for a, b in cuts)
+        present = clamp >= inner - .01 and not blocked
+        if present and start is None:
+            start = f
+        elif start is not None and not present:
+            intervals.append((start, f))
+            start = None
+    if start is not None:
+        intervals.append((start, fmax))
+    return tuple((a, b) for a, b in intervals if b - a > .05)
+
+
+@lru_cache(maxsize=1)
 def _raw_pieces():
-    source = _waterway_split()[0]
+    field = _waterway_split()[0]
+    box = field.BoundingBox()
+    field_max = max(abs(box.xmin), abs(box.xmax))
     positive = _course_edges()
-    edges = [plane_x(x) for edge in positive for x in (-edge, edge)]
-    pieces = split_material(source, edges)
-    groups = {}
-    for shape in pieces:
-        x = shape.Center().x
-        groups.setdefault(_label(x, positive), []).append(shape)
-    port = sorted(run for run in groups if run.startswith('Port'))
-    starboard = sorted(run for run in groups if run.startswith('Starboard'))
-    order = ('Kingplank', *port, *starboard)
+    runs = [('Kingplank', -DECK_CENTRE_PLANK_WIDTH_FT / 2,
+             DECK_CENTRE_PLANK_WIDTH_FT / 2)]
+    for index, left in enumerate(positive, 1):
+        right = min(positive[index] if index < len(positive) else field_max,
+                    field_max)
+        if left >= field_max - .01:
+            break
+        if right - left < .02:
+            continue
+        runs.append((f'Port deck plank {index:02d}', left, right))
+        runs.append((f'Starboard deck plank {index:02d}', -right, -left))
+    order = ('Kingplank', *[run for run, _, _ in runs if run.startswith('Port')],
+             *[run for run, _, _ in runs if run.startswith('Starboard')])
+    lookup = {run: (x0, x1) for run, x0, x1 in runs}
     result = []
     for run_index, run in enumerate(order):
-        shapes = sorted(groups[run], key=lambda s: 25 - s.Center().y)
+        x0, x1 = lookup[run]
         side = 0 if run == 'Kingplank' else (1 if run.startswith('Port') else -1)
-        for shape in shapes:
-            box = shape.BoundingBox()
-            result.append(RawPiece(run, run_index, side, box.xmin, box.xmax,
-                                   25 - box.ymax, 25 - box.ymin, shape))
-    total = sum(piece.shape.Volume(1e-9) for piece in result)
-    expected = source.Volume(1e-9)
-    assert abs(total - expected) < expected * 1e-6, 'Raw deck material not conserved'
+        cut_x = _deck_cuts()
+        use_section = run == 'Kingplank' or any(
+            x1 > a and x0 < b for _, _, a, b in cut_x)
+        for f0, f1 in _f_intervals(x0, x1, use_section):
+            result.append(RawPiece(run, run_index, side, x0, x1, f0, f1))
     return tuple(result), order
 
 
@@ -294,16 +360,84 @@ def _field_pieces(raw, order, selected):
     return rows
 
 
+def _repair_long_boards(boards, selected, order, previous_run, next_run):
+    """Split any board that the one-shot field split left over 12 ft.
+
+    The field splitter can leave a board wrapped around an opening sliver
+    connected. Re-cut those closures on a supporting beam so the standard
+    lumber limit is hard, not just an aiming target.
+    """
+    repaired = []
+    for board in boards:
+        if board['length'] <= DECK_MAX_BOARD_LENGTH_FT + 1e-6:
+            repaired.append(board)
+            continue
+        candidates = [support for support in _beam_supports()
+                      if _supported(support, board['x0'], board['x1'])
+                      and board['f0'] + DECK_MIN_BOARD_LENGTH_FT < support.forward
+                      < board['f1'] - DECK_MIN_BOARD_LENGTH_FT]
+        previous = [joint.forward for joint in selected[previous_run[board['run']]]]
+        following = next_run.get(board['run'])
+        if following is not None:
+            previous += [joint.forward for joint in selected[following]]
+        stations = []
+        last = board['f0']
+        while board['f1'] - last > DECK_MAX_BOARD_LENGTH_FT + 1e-6:
+            target = last + DECK_MAX_BOARD_LENGTH_FT
+            usable = [support for support in candidates
+                      if last + DECK_MIN_BOARD_LENGTH_FT < support.forward <= target + 1e-9
+                      and support.forward < board['f1'] - DECK_MIN_BOARD_LENGTH_FT]
+            chosen = None
+            for minimum in (DECK_STAGGER_FT, 2.0):
+                for support in sorted(usable, key=lambda item: abs(item.forward - target)):
+                    if all(abs(support.forward - other) >= minimum for other in previous):
+                        chosen = support
+                        break
+                if chosen is not None:
+                    break
+            if chosen is None:
+                break
+            stations.append(chosen)
+            last = chosen.forward
+        if not stations:
+            repaired.append(board)
+            continue
+        pieces = split_material(board['shape'],
+                                [plane_f(support.forward) for support in stations])
+        pieces.sort(key=lambda shape: 25 - shape.Center().y)
+        for index, shape in enumerate(pieces):
+            box = shape.BoundingBox()
+            aft = board['butt_aft'] if index == 0 else Joint(
+                stations[index - 1].forward, stations[index - 1].beam_set,
+                stations[index - 1].sided_ft)
+            fore = board['butt_fore'] if index == len(pieces) - 1 else Joint(
+                stations[index].forward, stations[index].beam_set,
+                stations[index].sided_ft)
+            repaired.append(dict(board, name=board['name'], shape=shape,
+                                 f0=25 - box.ymax, f1=25 - box.ymin,
+                                 length=(25 - box.ymin) - (25 - box.ymax),
+                                 butt_aft=aft, butt_fore=fore))
+    for run in order:
+        rows = sorted((board for board in repaired if board['run'] == run),
+                      key=lambda board: board['f0'])
+        for number, board in enumerate(rows, 1):
+            board['name'] = f"{run} board {number:02d}"
+    return repaired
+
+
 @lru_cache(maxsize=1)
 def deck_boards():
     raw, order = _raw_pieces()
     scarfs = _kingplank_scarfs()
     previous_run = {'Kingplank': None}
+    next_run = {}
     for side in ('Port', 'Starboard'):
         runs = sorted(run for run in order if run.startswith(side))
         previous_run[runs[0]] = 'Kingplank'
+        next_run['Kingplank'] = runs[0] if side == 'Port' else next_run.get('Kingplank')
         for aft, fore in zip(runs, runs[1:]):
             previous_run[fore] = aft
+            next_run[aft] = fore
     selected = {}
     for run in order:
         if run == 'Kingplank':
@@ -339,6 +473,7 @@ def deck_boards():
                 scarf_fore=centre and any(abs(row['f1'] - scarf['forward']) < .5
                                           for scarf in scarfs),
             ))
+    boards = _repair_long_boards(boards, selected, order, previous_run, next_run)
     source = _waterway_split()[0]
     total = sum(row['shape'].Volume(1e-9) for row in boards)
     expected = source.Volume(1e-9)
@@ -346,6 +481,18 @@ def deck_boards():
     assert all(row['shape'].isValid() and len(row['shape'].Solids()) == 1
                for row in boards), 'Invalid deck board'
     return tuple(boards)
+
+
+def pattern_supports():
+    return _beam_supports()
+
+
+def pattern_scarfs():
+    return _kingplank_scarfs()
+
+
+def pattern_waterway():
+    return _waterway_split()
 
 
 def make_deck_board_parts():
