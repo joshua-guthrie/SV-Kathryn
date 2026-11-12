@@ -468,6 +468,8 @@ def deck_boards():
                 material='kingplank stock; scarf joint inferred' if centre else
                 'fir; individual pine replacement identity unresolved',
                 butt_aft=butt_aft, butt_fore=butt_fore,
+                scarf=centre and any(row['f0'] - .1 <= scarf['forward'] <= row['f1'] + .1
+                                     for scarf in scarfs),
                 scarf_aft=centre and any(abs(row['f0'] - scarf['forward']) < .5
                                          for scarf in scarfs),
                 scarf_fore=centre and any(abs(row['f1'] - scarf['forward']) < .5

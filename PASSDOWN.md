@@ -28,7 +28,8 @@ partition.
   `prototype_deck_boards.py`, `check_m4_beams.py`, `check_model_scale.py`, plus
   the M1/M2/M3/stern/hatch/companionway/mast regressions.
 - Review artifacts: `M4_DECK_PLANKING_GAP_ANALYSIS.md`, `milestones/M4.md`,
-  `renders/m4-deck-planking-top.png`, `renders/m4-kingplank-scarf-close.png`.
+  `renders/m4-deck-planking-top.png`, `renders/m4-kingplank-scarf-close.png`,
+  and the 237-row cut list `checks/m4_deck_board_schedule.json`.
 - Git: model `453adc5`, pattern QA/repair `0eaea33`, validation docs `207651f`,
   resolved decisions `de38400`. Use `./project-git`; `.git` is read-only.
   No remote.

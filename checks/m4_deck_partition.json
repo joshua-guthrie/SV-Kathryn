@@ -15,7 +15,8 @@
   "board_volume_ft3": 83.62145907988362,
   "conservation_error_ppm": 0.06856246676394241,
   "faces": 3237,
-  "seconds": 117.87878319299489,
+  "seconds": 119.16311742300604,
+  "schedule_file": "checks/m4_deck_board_schedule.json",
   "remaining": [
     "measured waterway section",
     "spiled/tapered edge treatment",

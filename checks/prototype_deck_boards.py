@@ -22,6 +22,19 @@ def check():
     assert abs(board_volume - field_volume) < max(1e-6, field_volume * 1e-6)
     assert abs(board_volume + waterway_volume - deck_volume) < deck_volume * 1e-6
     internal = sum(bool(board['butt_aft']) for board in boards)
+    schedule = []
+    for board in sorted(boards, key=lambda item: (item['run'], item['f0'])):
+        schedule.append(dict(
+            id=board['name'], run=board['run'], stock=board['stock'],
+            finished_length_ft=round(board['length'], 4),
+            max_width_in=round((board['x1'] - board['x0']) * 12, 3),
+            f_aft_ft=round(board['f0'], 4), f_fore_ft=round(board['f1'], 4),
+            butt_aft_beam=(board['butt_aft'].beam_set
+                           if board['butt_aft'] else None),
+            butt_fore_beam=(board['butt_fore'].beam_set
+                            if board['butt_fore'] else None),
+            scarf=bool(board.get('scarf')),
+            material=board['material']))
     result = dict(
         status='passed', boards=len(boards),
         runs=len({board['run'] for board in boards}),
@@ -39,10 +52,13 @@ def check():
         / deck_volume * 1e6,
         faces=sum(len(board['shape'].Faces()) for board in boards),
         seconds=time.monotonic() - start,
+        schedule_file='checks/m4_deck_board_schedule.json',
         remaining=['measured waterway section', 'spiled/tapered edge treatment',
                    'side-planking pattern'])
     (ROOT / 'checks/m4_deck_partition.json').write_text(
         json.dumps(result, indent=2) + '\n')
+    (ROOT / 'checks/m4_deck_board_schedule.json').write_text(
+        json.dumps(schedule, indent=2) + '\n')
     print(json.dumps(result, indent=2), flush=True)
     return result
 

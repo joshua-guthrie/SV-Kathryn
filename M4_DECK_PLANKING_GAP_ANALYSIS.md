@@ -45,6 +45,8 @@ The first deck increment is registered in `parts/deck_planking.py`:
   `checks/m4_deck_pattern_acceptance.json`;
   `checks/check_registered_deck.py` passes on the actual 237-board + 4-waterway
   export. `checks/prototype_deck_boards.py` writes the partition ledger.
+- **Cut list:** `checks/m4_deck_board_schedule.json` lists all 237 boards with
+  nominal stock, finished length, max width, butt beams and scarf flags.
 - **Build:** 792 parts, no warnings. Build stages 418.2 s (model 242.2,
   STEP 13.2, GLB 148.5), under the 600-s stage budget; the 837.3-s wall
   included waiting for the app’s warm process. Deck generation was reduced
