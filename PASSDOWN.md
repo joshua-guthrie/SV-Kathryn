@@ -22,8 +22,9 @@ partition.
   (`Deck/Scarfs/Kingplank`).
 - Material: 83.621459 ft³ field + 7.150006 ft³ waterway = 90.771459 ft³ deck
   envelope; conservation 0.064 ppm.
-- Build stages **418.2 s** (model 242.2, STEP 13.2, GLB 148.5), under the 600-s
-  stage budget. The 837.3-s wall included waiting for the app warm process.
+- Final build stages **417.8 s** (model 241.0, STEP 13.3, GLB 149.2), under the
+  600-s stage budget; wall 600.4 s. Earlier wall times of 694–837 s included
+  waiting for the app warm process.
 - Passing: `checks/check_m4_deck_pattern.py`, `check_registered_deck.py`,
   `prototype_deck_boards.py`, `check_m4_beams.py`, `check_model_scale.py`, plus
   the M1/M2/M3/stern/hatch/companionway/mast regressions.
