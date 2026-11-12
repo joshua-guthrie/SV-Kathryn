@@ -1,6 +1,59 @@
 # Passdown — Kathryn sailboat
 
-## STOPPING POINT — 2026-11-11: read PASSDOWN_2026-11-11.md first
+## LATEST — 2026-11-11: M4 deck planking implemented and verified
+
+**Current verified assembly: 792 valid parts, 1:1 CAD/STEP in millimetres, no
+warnings.** The deck is now a standard-lumber plank schedule, not a material
+partition.
+
+- **237 deck boards in 55 runs**: 4-in nominal (3½-in actual) field stock and a
+  6-in nominal (5½-in actual) kingplank. **Hard 12-ft maximum**; max 11.909 ft;
+  min 0.163 ft (existing bow/stern closures); 31 boards under 4 ft reported.
+- **123 internal butts**, every one on a measured S05-07 beam centreline. The
+  two adjoining boards end/start at the beam centre and share the beam, each
+  covering half its sided width. No ledger, block or unsupported butt.
+- Six adjacent-run pairs fall below the 4-ft stagger target, minimum **2.095
+  ft**, where the split-beam/opening grid prevents a full two-bay offset; no
+  adjacent pair shares a beam. This is the approved “report the reduced stagger”
+  outcome.
+- **Waterway**: provisional 4-solid oak margin outboard of the accepted clamp;
+  its measured section is still outstanding. **Kingplank**: continuous within
+  each continuous deck piece; one visible 14-in scarf in the longest piece
+  (`Deck/Scarfs/Kingplank`).
+- Material: 83.621459 ft³ field + 7.150006 ft³ waterway = 90.771459 ft³ deck
+  envelope; conservation 0.064 ppm.
+- Build stages **418.2 s** (model 242.2, STEP 13.2, GLB 148.5), under the 600-s
+  stage budget. The 837.3-s wall included waiting for the app warm process.
+- Passing: `checks/check_m4_deck_pattern.py`, `check_registered_deck.py`,
+  `prototype_deck_boards.py`, `check_m4_beams.py`, `check_model_scale.py`, plus
+  the M1/M2/M3/stern/hatch/companionway/mast regressions.
+- Review artifacts: `M4_DECK_PLANKING_GAP_ANALYSIS.md`, `milestones/M4.md`,
+  `renders/m4-deck-planking-top.png`, `renders/m4-kingplank-scarf-close.png`.
+- Git: model `453adc5`, pattern QA/repair `0eaea33`, validation docs `207651f`,
+  resolved decisions `de38400`. Use `./project-git`; `.git` is read-only.
+  No remote.
+
+### Next work
+
+1. **Side planking** (same support/stagger/standard-lumber logic):
+   - The separate `parts/planking.py` prototype is **not live** and still fails
+     its starboard completeness assertion: 17 cells, missing courses 11 and 14;
+     boundaries 12/15 fail. Sequential partition takes ~459 s; the one-shot
+     split + profile-classification approach previously timed out at ~30 min.
+   - Try the seam-surface boundary tools (`longitudinal_cutters`) on the
+     starboard half, classify cells by `identify_course`, and add a post-pass
+     for any cell spanning two courses. Do not register side boards until the
+     16-course completeness, 12-ft limit, frame-centred half-frame joints,
+     stagger and volume checks pass.
+2. Measure/finalize the oak waterway section; the current clamp-margin piece is
+   provisional.
+3. Spiled/tapered edge treatment and remaining bow/stern closures.
+4. Build-time/part-count pass before side boards are added.
+
+## HISTORICAL — 2026-11-11: 650-part stopping point
+
+**Superseded by the latest section above.** Current verified assembly: **792
+valid parts** (was 650). The historical text below is retained.
 
 **User requested a stop and passdown.** Current verified assembly: **650 valid
 single-solid parts, 1:1/mm, no warnings**. The first M4 increment replaces the
