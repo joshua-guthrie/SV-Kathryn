@@ -384,26 +384,25 @@ The same principles apply to the hull:
   detail before it is cut from the deck envelope.
 - No new butt blocks/ledgers are added: the deck beams are the only support.
 
-## 5. Open questions / decisions for review
+## 5. Decisions resolved
 
-1. **12-ft maximum:** approved. Confirm that boards under 4 ft are acceptable
-   as needed for closures (they are reported, not rejected); no board may
-   exceed 12 ft.
-2. **Standard widths:** adopt 4-in nominal (3½ actual) typical and 6-in
-   nominal (5½ actual) inboard/kingplank, based on the cheap-production
-   assumption and the printed 3½–4 / 5–7 in ranges. Confirm, or identify a
-   source detail that requires a custom width.
-3. **Beam-centred joint:** the two boards meet exactly at the beam centreline;
-   each covers half the beam’s sided width. Confirm the ±1/16-in model
-   tolerance and whether a small fastening block is wanted as a non-structural
-   detail (not currently proposed).
-4. **Waterway:** approve a measured section detail (width/depth/profile) before
-   it is modeled; the preliminary 5.5 × 5 in is not final.
-5. **Kingplank:** continuous with scarfs, or butted on the same stagger grid?
-6. **Opening edges:** confirm that the existing headers/carlings are the
-   intended support at openings, with no additional butt line.
-7. **Scope:** implement the deck pattern first, then the side pattern, or
-   prototype both before replacing either live partition?
+- **Length:** 12 ft is a hard maximum; shorter boards are allowed. Boards under
+  4 ft are reported, not rejected; 31 exist as closures.
+- **Widths:** standard 4-in nominal (3½-in actual) field stock and 6-in nominal
+  (5½-in actual) inboard/kingplank stock.
+- **Joint:** the two boards meet exactly at the beam centreline; each covers
+  half the beam’s sided width. The ±1/16-in model tolerance is accepted. No
+  fastening block or ledger is used.
+- **Waterway:** the deck margin outboard of the clamp is separated provisionally
+  in the live model. A measured section detail is still required before it is
+  claimed final.
+- **Kingplank:** continuous within each continuous deck piece; one visible scarf
+  is modelled in the longest piece.
+- **Opening edges:** the existing headers/carlings are the intended support.
+  Butts that lie on those lines use the header/half-beam itself; no extra header
+  or butt line is added.
+- **Scope:** deck pattern first; the side pattern follows the same support and
+  standard-lumber logic after the existing hull-board prototype defect is fixed.
 
 ## 6. Recommendation
 
