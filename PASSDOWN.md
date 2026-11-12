@@ -45,12 +45,20 @@ partition.
    - Tested this evening: a one-shot split of the starboard half with all 15
      `longitudinal_cutters` seam surfaces **failed conservation** (29.130 ft³
      returned from an 86.018-ft³ half). Do not repeat that exact approach.
-     The sequential solid-slab partition still returns 17 cells with starboard
-     courses 11/14 missing. Next candidates are a per-cell continuation of the
-     two failed boundary cuts, or a different closed cutting solid; classify
-     every cell by `identify_course` and add a post-pass for any cell spanning
-     two courses. Do not register side boards until the 16-course completeness,
-     12-ft limit, frame-centred half-frame joints, stagger and volume checks pass.
+   - Targeted boundary test on the starboard half: `sublevel_tool` boundaries
+     11/13/14 cut into two pieces, but boundaries **12 and 15 return one piece**
+     (no cut). Mirroring the port tools gives the same result. This is why
+     courses 11/14 are absent.
+   - A horizontal outboard slab tool was tried for boundaries 11–15. It cuts,
+     but removes only ~0.7–0.86 ft³ per boundary (the whole half is 86.018 ft³),
+     so it peels a thin strip instead of separating a course. Do not use it as
+     the course tool.
+   - The next approach must use a closed cutting volume that spans the full
+     course along the hull surface, or a robust surface split with a validated
+     two-sided result. Classify every cell by `identify_course` and add a
+     post-pass for any cell spanning two courses. Do not register side boards
+     until the 16-course completeness, 12-ft limit, frame-centred half-frame
+     joints, stagger and volume checks pass.
 2. Measure/finalize the oak waterway section; the current clamp-margin piece is
    provisional.
 3. Spiled/tapered edge treatment and remaining bow/stern closures.
