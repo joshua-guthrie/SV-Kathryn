@@ -40,11 +40,15 @@ partition.
      its starboard completeness assertion: 17 cells, missing courses 11 and 14;
      boundaries 12/15 fail. Sequential partition takes ~459 s; the one-shot
      split + profile-classification approach previously timed out at ~30 min.
-   - Try the seam-surface boundary tools (`longitudinal_cutters`) on the
-     starboard half, classify cells by `identify_course`, and add a post-pass
-     for any cell spanning two courses. Do not register side boards until the
-     16-course completeness, 12-ft limit, frame-centred half-frame joints,
-     stagger and volume checks pass.
+   - Tested this evening: a one-shot split of the starboard half with all 15
+     `longitudinal_cutters` seam surfaces **failed conservation** (29.130 ft³
+     returned from an 86.018-ft³ half). Do not repeat that exact approach.
+     The sequential solid-slab partition still returns 17 cells with starboard
+     courses 11/14 missing. Next candidates are a per-cell continuation of the
+     two failed boundary cuts, or a different closed cutting solid; classify
+     every cell by `identify_course` and add a post-pass for any cell spanning
+     two courses. Do not register side boards until the 16-course completeness,
+     12-ft limit, frame-centred half-frame joints, stagger and volume checks pass.
 2. Measure/finalize the oak waterway section; the current clamp-margin piece is
    provisional.
 3. Spiled/tapered edge treatment and remaining bow/stern closures.
