@@ -1,7 +1,9 @@
 {
   "status": "passed",
-  "registered_boards": 109,
-  "assembly_parts": 659,
+  "registered_boards": 237,
+  "registered_waterways": 4,
+  "registered_scarfs": 1,
+  "assembly_parts": 792,
   "bounds_mm": [
     [
       -2550.61,
@@ -15,8 +17,10 @@
     ]
   ],
   "bbox_max_error_mm": 0.0,
-  "map_volume_relative_error": 3.7944964498516706e-05,
-  "high_accuracy_material_error_ppm": 0.06945415906280061,
+  "map_volume_relative_error": -7.994825197394824e-05,
+  "high_accuracy_material_error_ppm": 0.06856246676394241,
+  "max_board_ft": 11.908775549989645,
+  "internal_butts": 123,
   "missing_mesh_faces": [],
   "aggregate_backing": false
 }
