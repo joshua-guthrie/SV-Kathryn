@@ -9,7 +9,10 @@ continuous deck piece; a visible scarf is cut where a stock joint is modelled.
 from bisect import bisect_right
 from dataclasses import dataclass
 from functools import lru_cache
+import hashlib
+import json
 import math
+from pathlib import Path
 
 import cadquery as cq
 import numpy as np
@@ -425,8 +428,98 @@ def _repair_long_boards(boards, selected, order, previous_run, next_run):
     return repaired
 
 
+ROOT = Path(__file__).resolve().parents[1]
+CACHE_DIR = ROOT / 'output'
+CACHE_BREP = CACHE_DIR / 'm4_deck_cache.brep'
+CACHE_META = CACHE_DIR / 'm4_deck_cache.json'
+CACHE_SOURCES = (
+    'parts/deck_planking.py', 'parts/board_tools.py', 'parts/params.py',
+    'parts/beam_layout.py', 'parts/framing.py', 'parts/openings.py',
+    'parts/hull.py', 'parts/centreline_layout.py',
+    'drawing_package/m4_deck_schedule.json',
+)
+
+
+def _cache_key():
+    digest = hashlib.sha256()
+    for name in CACHE_SOURCES:
+        digest.update((ROOT / name).read_bytes())
+    source = hull.make_deck()
+    box = source.BoundingBox()
+    digest.update(repr((source.Volume(1e-6), box.xmin, box.xmax, box.ymin,
+                        box.ymax, box.zmin, box.zmax)).encode())
+    return digest.hexdigest()
+
+
+def _joint_meta(joint):
+    if joint is None:
+        return None
+    return dict(forward=joint.forward, beam_set=joint.beam_set,
+                sided_ft=joint.sided_ft, kind=joint.kind)
+
+
+def _joint_from(meta):
+    if meta is None:
+        return None
+    return Joint(meta['forward'], meta['beam_set'], meta['sided_ft'], meta['kind'])
+
+
+def _write_cache(boards, key):
+    CACHE_DIR.mkdir(exist_ok=True)
+    compound = cq.Compound.makeCompound([board['shape'] for board in boards])
+    cq.exporters.export(compound, str(CACHE_BREP), exportType='BREP')
+    rows = []
+    for board in boards:
+        rows.append(dict(
+            name=board['name'], run=board['run'], f0=board['f0'], f1=board['f1'],
+            length=board['length'], x0=board['x0'], x1=board['x1'],
+            stock=board['stock'], material=board['material'],
+            butt_aft=_joint_meta(board['butt_aft']),
+            butt_fore=_joint_meta(board['butt_fore']),
+            scarf=board['scarf'], scarf_aft=board['scarf_aft'],
+            scarf_fore=board['scarf_fore']))
+    CACHE_META.write_text(json.dumps(dict(key=key, boards=rows), indent=2) + '\n')
+
+
+def _read_cache(key):
+    if not CACHE_BREP.exists() or not CACHE_META.exists():
+        return None
+    meta = json.loads(CACHE_META.read_text())
+    if meta.get('key') != key:
+        return None
+    compound = cq.importers.importBrep(str(CACHE_BREP)).val()
+    solids = compound.Solids()
+    rows = meta['boards']
+    if len(solids) != len(rows):
+        return None
+    boards = []
+    for shape, row in zip(solids, rows):
+        boards.append(dict(
+            name=row['name'], run=row['run'], shape=shape,
+            f0=row['f0'], f1=row['f1'], length=row['length'],
+            x0=row['x0'], x1=row['x1'], stock=row['stock'],
+            material=row['material'], butt_aft=_joint_from(row['butt_aft']),
+            butt_fore=_joint_from(row['butt_fore']), scarf=row['scarf'],
+            scarf_aft=row['scarf_aft'], scarf_fore=row['scarf_fore']))
+    source = _waterway_split()[0]
+    total = sum(board['shape'].Volume(1e-9) for board in boards)
+    if abs(total - source.Volume(1e-9)) > source.Volume(1e-9) * 1e-6:
+        return None
+    return tuple(boards)
+
+
 @lru_cache(maxsize=1)
 def deck_boards():
+    key = _cache_key()
+    cached = _read_cache(key)
+    if cached is not None:
+        return cached
+    boards = _compute_deck_boards()
+    _write_cache(boards, key)
+    return boards
+
+
+def _compute_deck_boards():
     raw, order = _raw_pieces()
     scarfs = _kingplank_scarfs()
     previous_run = {'Kingplank': None}

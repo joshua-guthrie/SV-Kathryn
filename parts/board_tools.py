@@ -5,7 +5,7 @@ from OCP.TopTools import TopTools_ListOfShape
 from OCP.BRepOffsetAPI import BRepOffsetAPI_ThruSections
 
 
-def split_material(shape,tools):
+def split_material(shape,tools,parallel=False):
     arguments=TopTools_ListOfShape();arguments.Append(shape.wrapped)
     cutting=TopTools_ListOfShape()
     for tool in tools:cutting.Append(tool.wrapped)
@@ -13,7 +13,7 @@ def split_material(shape,tools):
     operation.SetArguments(arguments)
     operation.SetTools(cutting)
     operation.SetNonDestructive(True)
-    operation.SetRunParallel(False)
+    operation.SetRunParallel(parallel)
     operation.SetFuzzyValue(1e-7)
     operation.Build()
     assert operation.IsDone(),'Board partition failed'

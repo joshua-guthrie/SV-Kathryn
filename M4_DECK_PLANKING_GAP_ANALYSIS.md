@@ -47,10 +47,11 @@ The first deck increment is registered in `parts/deck_planking.py`:
   export. `checks/prototype_deck_boards.py` writes the partition ledger.
 - **Cut list:** `checks/m4_deck_board_schedule.json` lists all 237 boards with
   nominal stock, finished length, max width, butt beams and scarf flags.
-- **Build:** 792 parts, no warnings. Clean final build **449.2 s wall**, under
-  the 600-s app limit; stages ~417.8 s (model 241.0, STEP 13.3, GLB 149.2).
-  Earlier 600.4-s and 694–837-s walls were caused by a stale `soma warm`
-  process holding the build path. Deck generation is ~98–117 s.
+- **Build:** 792 parts, no warnings. Cache-backed build **382.6 s wall**, under
+  the 600-s app limit; stages model 189.2, STEP 16.1, GLB 159.3. The exact
+  board partition is cached in `output/m4_deck_cache.brep/json` (first
+  computation 96.8 s, cached reload 26 s). The app's 600-s stop is mostly
+  lock-wait/stale-warm overhead; kill the stale warm if it recurs.
 - **Remaining:** measured waterway section, spiled/tapered edge treatment,
   side-planking pattern, and build-time reduction.
 
