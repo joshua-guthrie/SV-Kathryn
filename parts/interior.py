@@ -67,7 +67,7 @@ def make_enclosure_parts():
 # clear of the companionway, steps and moving gear.
 from .params import (CABIN_AFT_FT as _CABIN_AFT, CABIN_FORE_FT as _CABIN_FORE,
                      INTERIOR_SKIN_FT as _SKIN, WOOD as _WOOD, IRON as _IRON)
-from .hull import topside_halfwidth as _halfwidth, deck_height as _deck
+from .hull import topside_halfwidth as _halfwidth, deck_height as _deck, continuous_interior
 from .deck import access_geometry as _access
 
 
@@ -164,10 +164,19 @@ def make_cabin_locker_parts():
                block(x, f - .255, z + .12, 1.38, .035, .80), _WOOD)
 
 
+def _cabin_air():
+    return continuous_interior()
+
+
+def _fitted(shape, name):
+    shape = shape.intersect(_cabin_air())
+    assert shape.isValid() and len(shape.Solids()) == 1, f'Cabin fit-out must stay inside the hull: {name}'
+    return shape
+
+
 def make_cabin_fitout_parts():
-    yield from make_cabin_sole_parts()
-    yield from make_cabin_settee_parts()
-    yield from make_cabin_lining_parts()
-    yield from make_cabin_stove_parts()
-    yield from make_cabin_table_parts()
-    yield from make_cabin_locker_parts()
+    for maker in (make_cabin_sole_parts, make_cabin_settee_parts,
+                  make_cabin_lining_parts, make_cabin_stove_parts,
+                  make_cabin_table_parts, make_cabin_locker_parts):
+        for name, shape, color in maker():
+            yield name, _fitted(shape, name), color

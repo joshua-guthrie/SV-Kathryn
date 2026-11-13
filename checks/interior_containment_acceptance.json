@@ -1,0 +1,12 @@
+{
+  "status": "passed",
+  "cabin_members": 49,
+  "transom_members": 6,
+  "outside_volume_ft3": 0.0,
+  "criterion": "each member cut by continuous_interior has <=1e-4 ft3 outside",
+  "source": [
+    "S07-V01/V02",
+    "S04-V01/V04",
+    "S05-27 transom framing"
+  ]
+}

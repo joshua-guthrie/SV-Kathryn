@@ -10,7 +10,10 @@ M1/M2/hatch/companionway/scale regressions pass. Review: `milestones/M5.md`,
 `checks/m5_cabin_acceptance.json`, `renders/m5-cabin-fitout-close.png`,
 `renders/m5-cabin-fitout-top.png`, `renders/m5-whole-vessel-cutaway.png`.
 
-M5 cabin fit-out, inspection set and whole-vessel cutaway are complete. M4 side
+M5 cabin fit-out, inspection set and whole-vessel cutaway are complete. The
+marked stern protrusion was the transom frames/braces trimmed to the filled
+outer hull; they and the cabin fit-out now pass
+`checks/check_interior_containment.py` with zero outside volume. M4 side
 planking/individual side lining and the measured waterway remain open and are
 tracked separately; do not register the failing hull strake prototype.
 

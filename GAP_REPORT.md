@@ -8,7 +8,9 @@ provisional waterway and kingplank scarf. The M5 cabin increment adds 49
 source-qualified fit-out members (sole, settees, lining, stove, table, lockers);
 `check_m5_cabin.py` passes. M4 side planking/individual side lining and the
 measured waterway remain open; the whole-vessel M5 review is not complete.
-Review artifacts: `milestones/M5.md`, `checks/m5_cabin_acceptance.json`,
+Interior containment is now checked against the true cavity: 49 cabin members
+and 6 transom members have zero outside volume. Review artifacts:
+`milestones/M5.md`, `checks/m5_cabin_acceptance.json`,
 `renders/m5-cabin-fitout-close.png`, `renders/m5-whole-vessel-cutaway.png`.
 
 

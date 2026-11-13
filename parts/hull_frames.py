@@ -241,7 +241,7 @@ def make_support_parts():
         for z in zs:
             forward=stern_layout.face_forward(z,reference,x,INTERIOR_SKIN_FT)+.24
             wires.append(cq.Workplane('XY',origin=boat_point(x,forward,z)).rect(3.75/12,.5).val())
-        stile=cq.Solid.makeLoft(wires,ruled=True).intersect(hull.solid_envelope()).cut(hull.rudder_stock_passage())
+        stile=cq.Solid.makeLoft(wires,ruled=True).intersect(hull.continuous_interior()).cut(hull.rudder_stock_passage())
         stiles.append(stile)
         yield f'Transom oak fore-aft frame {i}',stile,WOOD
     for side,name in ((1,'Port'),(-1,'Starboard')):
@@ -249,4 +249,4 @@ def make_support_parts():
         high=hull.deck_height(f,4.75)-DECK_THICKNESS_FT-.30
         brace=beam_between(boat_point(0,stern_layout.face_forward(base,reference,0,INTERIOR_SKIN_FT)+.55,base),
                            boat_point(side*4.75,stern_layout.face_forward(high,reference,side*4.75,INTERIOR_SKIN_FT)+.55,high),6.75/12,2/12)
-        yield f'{name} transom oak diagonal brace',brace.cut(hull.rudder_stock_passage()),WOOD
+        yield f'{name} transom oak diagonal brace',brace.intersect(hull.continuous_interior()).cut(hull.rudder_stock_passage()),WOOD
