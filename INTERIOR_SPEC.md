@@ -239,18 +239,15 @@ as one of those five outcomes. Historical review-pass counts remain historical.
 
 ## 7. Current checkpoint and next milestone
 
-- **2026-11-11 override:** the user authorized independent agent stern review
-  followed by M4/M5 without another approval round. That review passes:
-  `STERN_INDEPENDENT_REVIEW.md`. M4 is active. Older hold instructions below
-  describe the preceding checkpoint and are superseded.
-
-- **Latest user override: STERN ONLY.** General M4/M5 work is on hold until the
-  stern is resolved. The current 446-part 1:1 assembly is geometrically valid
-  but the overall stern is **not accepted**. Follow
-  **`STERN_REVIEW_AND_REMEDY_SPEC.md`**, its arrowed comparisons and independent
-  source/geometry acceptance criteria before resuming the roadmap below.
-- The M1–M3 entries below describe delivered increments and historical geometry
-  checkpoints, not acceptance of the current whole-stern appearance.
+- **2026-11-13 checkpoint:** 841-part 1:1 model. M4 deck planking is complete;
+  the M5 cabin fit-out increment (sole, settees, lining, stove, table, lockers)
+  is built and checked. M4 side planking/individual side lining and the measured
+  waterway remain open, so the M5 whole-vessel review is not complete.
+- **2026-11-11:** the user authorized independent stern review followed by
+  M4/M5 without another approval round. That review passed:
+  `STERN_INDEPENDENT_REVIEW.md`.
+- The historical M1–M3 entries below describe delivered increments and historical
+  geometry checkpoints.
 
 - Historical M3 geometry checkpoint: **439 parts**, successful build with no warnings,
   **304.0 s** (below the 600-second application limit).

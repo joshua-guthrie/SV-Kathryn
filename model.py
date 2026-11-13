@@ -13,7 +13,7 @@ from parts.deck import (make_deckhouse_parts, make_hatches, make_helm,
 from parts.rails import make_rails
 from parts.equipment import make_equipment
 from parts.framing import make_opening_frames
-from parts.interior import make_enclosure_parts
+from parts.interior import make_enclosure_parts, make_cabin_fitout_parts
 from parts.centreline import make_centreline_parts
 from parts.hull_frames import make_frame_parts,make_support_parts
 from parts.stern_fittings import make_stern_fittings
@@ -53,6 +53,7 @@ for maker, group in (
     (make_hatches, "Deck/Hatches"),
     (make_opening_frames, "Interior/Opening framing"),
     (make_enclosure_parts, "Interior/Enclosure and bearings"),
+    (make_cabin_fitout_parts, "Interior/Cabin fit-out"),
     (make_centreline_parts, "Interior/Keelson trunk and mast supports"),
     (make_frame_parts, "Interior/Hull frames and repairs"),
     (make_support_parts, "Interior/Clamps strongback and stanchions"),

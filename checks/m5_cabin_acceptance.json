@@ -1,0 +1,29 @@
+{
+  "status": "passed",
+  "source": [
+    "S07-V01 cabin section",
+    "S07-V02 cabin hatch section",
+    "S04-V01 inboard profile",
+    "S04-V04 cabin profile aft"
+  ],
+  "members": {
+    "cabin_sole_boards": 8,
+    "settee_parts": 8,
+    "lining_boards": 20,
+    "stove_parts": 7,
+    "table_parts": 2,
+    "aft_locker_parts": 4
+  },
+  "basis": "scale-measured cabin envelope; settee/stove/locker arrangement inferred from S07/S04",
+  "cabin_fore_aft_ft": [
+    5.885111936528432,
+    14.016155877445932
+  ],
+  "sole_ft": 4.808753704648469,
+  "unresolved": [
+    "exact historic settee/berth sections",
+    "stove model and flue route",
+    "individual locker door joinery",
+    "hold/forepeak loose fit-out absent per survey"
+  ]
+}

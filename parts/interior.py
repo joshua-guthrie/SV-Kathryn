@@ -60,3 +60,114 @@ def make_enclosure_parts():
     for forward,label in ((ACCESS_WELL_AFT_FT+1.2,'aft'),(ACCESS_WELL_FORE_FT-.7,'fore')):
         yield f'Cabin sole {label} bearer and feet',make_landing_support(forward),WOOD
     yield 'Hollow rudder-stock box',make_rudder_box(),WOOD
+
+
+# M5 cabin fit-out. Source: S07-V01/V02 cabin sections and S04-V01/V04.
+# Dimensions are scale-measured or construction-inferred; the fit-out is kept
+# clear of the companionway, steps and moving gear.
+from .params import (CABIN_AFT_FT as _CABIN_AFT, CABIN_FORE_FT as _CABIN_FORE,
+                     INTERIOR_SKIN_FT as _SKIN, WOOD as _WOOD, IRON as _IRON)
+from .hull import topside_halfwidth as _halfwidth, deck_height as _deck
+from .deck import access_geometry as _access
+
+
+def _cabin_sole_z():
+    return _access().sole
+
+
+def _cabin_half(f, z):
+    return max(.1, _halfwidth(f, z) - _SKIN - .03)
+
+
+def make_cabin_sole_parts():
+    """Individual athwartships cabin sole boards on the existing bearers."""
+    z = _cabin_sole_z() - .14
+    f = _CABIN_AFT + 1.95
+    index = 0
+    while f < _CABIN_FORE - .25:
+        index += 1
+        half = _cabin_half(f, z)
+        yield (f'Cabin sole board {index:02d}',
+               block(0, f, z, 2 * half, .72, .14), _WOOD)
+        f += .75
+
+
+def make_cabin_settee_parts():
+    """Port/starboard cabin settees/berths, with front panels and tops."""
+    z0 = _cabin_sole_z()
+    z1 = z0 + 1.35
+    f0, f1 = _CABIN_AFT + 2.05, _CABIN_FORE - 1.75
+    length = f1 - f0
+    centre = (f0 + f1) / 2
+    for side, label in ((1, 'Port'), (-1, 'Starboard')):
+        half = min(_cabin_half(f, z1) for f in (f0, centre, f1))
+        front = side * max(2.0, half - 1.65)
+        top_inner = side * (half - .10)
+        x = (front + top_inner) / 2
+        width = abs(top_inner - front)
+        yield (f'{label} cabin settee top',
+               block(x, centre, z1 - .14, width, length, .14), _WOOD)
+        yield (f'{label} cabin settee front',
+               block(front, centre, z0, .10, length, z1 - z0), _WOOD)
+        yield (f'{label} cabin settee aft end',
+               block(x, f0, z0, width, .10, z1 - z0), _WOOD)
+        yield (f'{label} cabin settee fore end',
+               block(x, f1, z0, width, .10, z1 - z0), _WOOD)
+
+
+def make_cabin_lining_parts():
+    """Vertical pine cabin lining boards just inboard of the hull skin."""
+    z0 = _cabin_sole_z()
+    f = _CABIN_AFT + .60
+    index = 0
+    while f < _CABIN_FORE - .2:
+        index += 1
+        z1 = _deck(f) - .22
+        half = _cabin_half(f, (z0 + z1) / 2)
+        for side, label in ((1, 'Port'), (-1, 'Starboard')):
+            yield (f'{label} cabin lining board {index:02d}',
+                   block(side * (half - .06), f, z0, .08, .72, z1 - z0), _WOOD)
+        f += .75
+
+
+def make_cabin_stove_parts():
+    """Four-burner cabin range against the forward cabin bulkhead (S07-V02)."""
+    f = _CABIN_FORE - 1.05
+    z = _cabin_sole_z()
+    yield 'Cabin stove body', block(0, f, z, 1.82, 1.18, 1.34), _IRON
+    for x in (-.46, .46):
+        for df in (-.31, .31):
+            yield (f'Cabin stove burner {x:+.2f}/{df:+.2f}',
+                   block(x, f + df, z + 1.34, .28, .28, .055), _IRON)
+    yield 'Cabin stove oven door', block(0, f - .60, z + .20, 1.0, .055, .72), _IRON
+    yield 'Cabin stove flue', block(.55, f - .18, z + 1.34, .16, .16,
+                                    max(.2, _deck(f) - (z + 1.34) - .18)), _IRON
+
+
+def make_cabin_table_parts():
+    """Small central cabin table on a sole pedestal."""
+    f = (_CABIN_AFT + _CABIN_FORE) / 2 - .35
+    z = _cabin_sole_z()
+    yield 'Cabin table top', block(0, f, z + 1.95, 2.3, 1.35, .12), _WOOD
+    yield 'Cabin table pedestal', block(0, f, z, .28, .28, 1.90), _WOOD
+
+
+def make_cabin_locker_parts():
+    """Aft cabin lockers above the settees, clear of the companionway."""
+    f = _CABIN_AFT + 1.90
+    z = _cabin_sole_z() + 1.35
+    for side, label in ((1, 'Port'), (-1, 'Starboard')):
+        x = side * 2.05
+        yield (f'{label} aft cabin locker',
+               block(x, f, z, 1.55, .46, .95), _WOOD)
+        yield (f'{label} aft cabin locker door',
+               block(x, f - .255, z + .12, 1.38, .035, .80), _WOOD)
+
+
+def make_cabin_fitout_parts():
+    yield from make_cabin_sole_parts()
+    yield from make_cabin_settee_parts()
+    yield from make_cabin_lining_parts()
+    yield from make_cabin_stove_parts()
+    yield from make_cabin_table_parts()
+    yield from make_cabin_locker_parts()

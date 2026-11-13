@@ -1,5 +1,17 @@
 # Kathryn — model gap review
 
+## Latest checkpoint — 2026-11-13: M5 cabin fit-out
+
+Current model: **841 valid parts**, 1:1/mm, app build 347 s, no warnings.
+The M4 deck is a 237-board standard-lumber schedule with beam-centred butts,
+provisional waterway and kingplank scarf. The M5 cabin increment adds 49
+source-qualified fit-out members (sole, settees, lining, stove, table, lockers);
+`check_m5_cabin.py` passes. M4 side planking/individual side lining and the
+measured waterway remain open; the whole-vessel M5 review is not complete.
+Review artifacts: `milestones/M5.md`, `checks/m5_cabin_acceptance.json`,
+`renders/m5-cabin-fitout-close.png`, `renders/m5-whole-vessel-cutaway.png`.
+
+
 ## Latest user-directed review — stern remedy required; other milestones held
 
 The user rejected the remaining stern appearance after the local rake/helm
@@ -157,8 +169,8 @@ the 439-part hollow enclosure with individual centreline/frame/repair structure.
 | S-V01 | Continuous hollow enclosure replaces the broad filled regions; material, space, support and section checks pass. | M1 complete |
 | S-C01 | Separate keelson/scarf, hollow trunk, real board passage and integrated mast supports pass; fine historical joint/stowage uncertainties are explicit. | M2 complete |
 | S-F01 | Registered frame construction, qualified older bottoms and repair-pattern companions, real mortises/underpasses and supported clamps pass. Hidden planes, some pairings and fine joints remain explicit reconstruction limits. | M3 complete against checks |
-| S-B01 | Individual planking/lining/floors/bulkheads and complete deck integration are incomplete. | M4 |
-| S-A01 | Complete historic fit-out and whole-vessel source/section acceptance remain pending. | M5 |
+| S-B01 | Deck planking is complete; individual side planking/lining and measured waterway remain open. | M4 |
+| S-A01 | Cabin fit-out increment complete; whole-vessel source/section acceptance remains pending M4 closure. | M5 |
 
 Each milestone closes by its documented acceptance criteria and gap analysis;
 multiple modification/review cycles may be needed within a milestone.

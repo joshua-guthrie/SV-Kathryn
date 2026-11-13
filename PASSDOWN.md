@@ -1,6 +1,20 @@
 # Passdown — Kathryn sailboat
 
-## LATEST — 2026-11-11: M4 deck planking implemented and verified
+## LATEST — 2026-11-13: M5 cabin fit-out increment
+
+**Current verified assembly: 841 parts**, 1:1/mm, app build 347 s, no warnings.
+The M5 cabin increment adds **49 valid members**: 8 sole boards, 8 settee parts,
+20 lining boards, 7 stove parts, 2 table parts and 4 aft-locker parts. Source
+basis: S07-V01/V02 and S04-V01/V04. `checks/check_m5_cabin.py` passes; the key
+M1/M2/hatch/companionway/scale regressions pass. Review: `milestones/M5.md`,
+`checks/m5_cabin_acceptance.json`, `renders/m5-cabin-fitout-close.png`,
+`renders/m5-cabin-fitout-top.png`, `renders/m5-whole-vessel-cutaway.png`.
+
+M4 side planking/individual side lining and the measured waterway remain open;
+the whole-vessel M5 review is not complete. Do not register the failing hull
+strake prototype.
+
+## PREVIOUS — 2026-11-11: M4 deck planking implemented and verified
 
 **Current verified assembly: 792 valid parts, 1:1 CAD/STEP in millimetres, no
 warnings.** The deck is now a standard-lumber plank schedule, not a material
