@@ -10,9 +10,9 @@ M1/M2/hatch/companionway/scale regressions pass. Review: `milestones/M5.md`,
 `checks/m5_cabin_acceptance.json`, `renders/m5-cabin-fitout-close.png`,
 `renders/m5-cabin-fitout-top.png`, `renders/m5-whole-vessel-cutaway.png`.
 
-M4 side planking/individual side lining and the measured waterway remain open;
-the whole-vessel M5 review is not complete. Do not register the failing hull
-strake prototype.
+M5 cabin fit-out, inspection set and whole-vessel cutaway are complete. M4 side
+planking/individual side lining and the measured waterway remain open and are
+tracked separately; do not register the failing hull strake prototype.
 
 ## PREVIOUS — 2026-11-11: M4 deck planking implemented and verified
 

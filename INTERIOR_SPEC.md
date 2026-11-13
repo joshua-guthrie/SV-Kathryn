@@ -240,9 +240,9 @@ as one of those five outcomes. Historical review-pass counts remain historical.
 ## 7. Current checkpoint and next milestone
 
 - **2026-11-13 checkpoint:** 841-part 1:1 model. M4 deck planking is complete;
-  the M5 cabin fit-out increment (sole, settees, lining, stove, table, lockers)
-  is built and checked. M4 side planking/individual side lining and the measured
-  waterway remain open, so the M5 whole-vessel review is not complete.
+  the M5 cabin fit-out and whole-vessel inspection set (sole, settees, lining,
+  stove, table, lockers, cutaway/evidence) are built and checked. M4 side
+  planking/individual side lining and the measured waterway remain open.
 - **2026-11-11:** the user authorized independent stern review followed by
   M4/M5 without another approval round. That review passed:
   `STERN_INDEPENDENT_REVIEW.md`.

@@ -170,7 +170,7 @@ the 439-part hollow enclosure with individual centreline/frame/repair structure.
 | S-C01 | Separate keelson/scarf, hollow trunk, real board passage and integrated mast supports pass; fine historical joint/stowage uncertainties are explicit. | M2 complete |
 | S-F01 | Registered frame construction, qualified older bottoms and repair-pattern companions, real mortises/underpasses and supported clamps pass. Hidden planes, some pairings and fine joints remain explicit reconstruction limits. | M3 complete against checks |
 | S-B01 | Deck planking is complete; individual side planking/lining and measured waterway remain open. | M4 |
-| S-A01 | Cabin fit-out increment complete; whole-vessel source/section acceptance remains pending M4 closure. | M5 |
+| S-A01 | M5 cabin fit-out, inspection set, evidence list and whole-vessel cutaway complete; M4 side-board/waterway gaps are tracked under S-B01. | M5 complete |
 
 Each milestone closes by its documented acceptance criteria and gap analysis;
 multiple modification/review cycles may be needed within a milestone.
