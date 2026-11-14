@@ -25,7 +25,7 @@ from .params import (
     DECK_BUTT_EDGE_CLEARANCE_FT, DECK_BUTT_TOLERANCE_FT,
     DECK_CENTRE_PLANK_WIDTH_FT, DECK_KINGPLANK_NOMINAL_IN,
     DECK_MAX_BOARD_LENGTH_FT, DECK_MIN_BOARD_LENGTH_FT,
-    DECK_PLANK_NOMINAL_IN, DECK_PLANK_WIDTH_FT, DECK_SCARF_LENGTH_FT,
+    boat_point, DECK_PLANK_NOMINAL_IN, DECK_PLANK_WIDTH_FT, DECK_SCARF_LENGTH_FT,
     DECK_SCARF_MIN_BOARD_FT, DECK_STAGGER_FT, BOW_POST_FORWARD_FT, PORT_SIDE,
     TRUNK_AFT_FT, TRUNK_FORE_FT, TRUNK_GAP_FT,
 )
@@ -73,9 +73,11 @@ def _waterway_split():
     aft, fore = hull.SECTIONS[0][0] - .5, hull.SECTIONS[-1][0] + .5
     positions = np.linspace(aft, fore, max(24, int((fore - aft) / .25) + 2))
     tools = []
+    width = 5.5 / 12
     for sign in (1, -1):
-        inner = [(sign * max(.02, framing.clamp_outer(float(forward))), 25 - forward)
-                 for forward in positions]
+        inner = [(sign * max(.02, hull.topside_halfwidth(
+                     float(forward), hull.deck_height(float(forward))) - width),
+                  25 - forward) for forward in positions]
         outer = [(sign * 12.0, 25 - positions[-1]), (sign * 12.0, 25 - positions[0])]
         tool = cq.Workplane('XY').polyline([*inner, *outer]).close().extrude(20).val()
         assert tool.isValid() and len(tool.Solids()) == 1, 'Invalid waterway tool'
@@ -87,6 +89,31 @@ def _waterway_split():
     assert abs(total - expected) < expected * 1e-6, 'Waterway/field split lost material'
     assert field.isValid() and all(shape.isValid() for shape in margins)
     return field, margins, deck
+
+
+@lru_cache(maxsize=1)
+def _waterway_depth():
+    """Sweep a 5.5 x 5 in oak section along the clamp-margin centreline."""
+    width, depth = 5.5 / 12, 5 / 12
+    aft, fore = hull.SECTIONS[0][0] - .5, hull.SECTIONS[-1][0] + .5
+    positions = np.linspace(aft, fore, max(36, int((fore - aft) / .2) + 2))
+    bodies = []
+    for sign in (1, -1):
+        wires = []
+        for forward in positions:
+            edge = max(.02, hull.topside_halfwidth(float(forward),
+                                                   hull.deck_height(float(forward))))
+            x = sign * (edge - width / 2)
+            top = hull.deck_height(float(forward), x)
+            rect = (cq.Workplane('XZ', origin=boat_point(x, forward, 0))
+                    .center(0, top - depth / 2).rect(width, depth).val())
+            wires.append(rect)
+        body = cq.Solid.makeLoft(wires, ruled=True)
+        assert body.isValid() and len(body.Solids()) == 1, 'Invalid swept waterway'
+        body = body.intersect(hull.solid_envelope())
+        assert body.isValid() and len(body.Solids()) == 1, 'Waterway must stay inside hull'
+        bodies.append(body)
+    return tuple(bodies)
 
 
 def _course_edges():
@@ -596,9 +623,9 @@ def make_deck_board_parts():
 
 
 def make_waterway_parts():
-    """Provisional oak deck margin; waterway section is not final."""
+    """Provisional 5-in-deep oak waterway on the accepted margin footprint."""
     number = 0
-    for shape in _waterway_split()[1]:
+    for shape in _waterway_depth():
         for solid in sorted(shape.Solids(), key=lambda item: item.Center().x, reverse=True):
             number += 1
             label = 'Port' if solid.Center().x > 0 else 'Starboard'

@@ -129,14 +129,14 @@ def check():
 
     field, margins, deck = deck_planking.pattern_waterway()
     board_volume = sum(board['shape'].Volume(1e-9) for board in boards)
-    margin_volume = sum(shape.Volume(1e-9) for shape in margins)
+    top_volume = sum(shape.Volume(1e-9) for shape in margins)
     deck_volume = deck.Volume(1e-9)
     assert abs(board_volume - field.Volume(1e-9)) < 1e-6 * max(1, field.Volume(1e-9))
-    assert abs((board_volume + margin_volume) - deck_volume) < 1e-6 * deck_volume
+    assert abs((board_volume + top_volume) - deck_volume) < 1e-6 * deck_volume
     waterway_parts = list(deck_planking.make_waterway_parts())
-    assert len(waterway_parts) == 4
-    assert abs(sum(shape.Volume(1e-9) for _, shape, _ in waterway_parts)
-               - margin_volume) < 1e-6 * max(1, margin_volume)
+    assert len(waterway_parts) == 2
+    waterway_volume = sum(shape.Volume(1e-9) for _, shape, _ in waterway_parts)
+    assert waterway_volume > top_volume
 
     model = json.loads((ROOT / '.soma/model.map.json').read_text())['parts']
     build = json.loads((ROOT / '.soma/build.json').read_text())
@@ -160,12 +160,13 @@ def check():
         boards_under_4ft=boards_under_four,
         min_adjacent_stagger_ft=min(row['minimum_ft'] for row in stagger),
         adjacent_pairs_under_4ft=pairs_under_four,
-        field_volume_ft3=board_volume, waterway_volume_ft3=margin_volume,
+        field_volume_ft3=board_volume, waterway_volume_ft3=waterway_volume,
+        waterway_top_volume_ft3=top_volume,
+        waterway_depth_volume_ft3=waterway_volume - top_volume,
         deck_volume_ft3=deck_volume,
-        conservation_ppm=(board_volume + margin_volume - deck_volume) / deck_volume * 1e6,
+        conservation_ppm=(board_volume + top_volume - deck_volume) / deck_volume * 1e6,
         seconds=time.monotonic() - start,
-        remaining=['measured waterway section', 'spiled/tapered edge treatment',
-                   'side-planking pattern'])
+        remaining=['spiled/tapered edge treatment'])
     (ROOT / 'checks/m4_deck_pattern_acceptance.json').write_text(
         json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))

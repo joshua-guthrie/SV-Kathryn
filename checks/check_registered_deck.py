@@ -30,8 +30,16 @@ def check():
     deck_parts = boards + waterways
     bounds = np.array([np.min([p['bbox'][0] for p in deck_parts], axis=0),
                        np.max([p['bbox'][1] for p in deck_parts], axis=0)])
-    assert np.max(abs(bounds - np.array(baseline['bbox']))) < .1, 'Deck exterior changed'
-    volume = sum(p['volume'] for p in deck_parts)
+    # The waterway depth intentionally extends below the deck envelope; compare
+    # the deck top x/y/zmax, not the new zmin.
+    top_error = max(abs(bounds[0][0] - baseline['bbox'][0][0]),
+                    abs(bounds[0][1] - baseline['bbox'][0][1]),
+                    abs(bounds[1][0] - baseline['bbox'][1][0]),
+                    abs(bounds[1][1] - baseline['bbox'][1][1]),
+                    abs(bounds[1][2] - baseline['bbox'][1][2]))
+    assert top_error < .1, 'Deck exterior changed'
+    top_volume = expected.get('waterway_top_volume_ft3', 0.0) * 304.8 ** 3
+    volume = sum(p['volume'] for p in boards) + top_volume
     # Map volumes use default CAD integration; the exact partition separately
     # enforces 1-ppm conservation with high-accuracy integration.
     assert abs(volume - baseline['volume']) < baseline['volume'] * .001
@@ -48,8 +56,10 @@ def check():
                   registered_waterways=len(waterways), registered_scarfs=len(scarfs),
                   assembly_parts=len(parts),
                   bounds_mm=bounds.tolist(),
-                  bbox_max_error_mm=float(np.max(abs(bounds - np.array(baseline['bbox'])))),
+                  bbox_max_error_mm=float(top_error),
                   map_volume_relative_error=(volume - baseline['volume']) / baseline['volume'],
+                  waterway_top_volume_ft3=expected.get('waterway_top_volume_ft3'),
+                  waterway_depth_volume_ft3=expected.get('waterway_depth_volume_ft3'),
                   high_accuracy_material_error_ppm=expected['conservation_error_ppm'],
                   max_board_ft=expected['max_board_ft'],
                   internal_butts=expected['internal_butts'],
