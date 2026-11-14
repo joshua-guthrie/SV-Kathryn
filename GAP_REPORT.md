@@ -121,7 +121,7 @@ source questions are in `milestones/M1.md`.
   **1.13 in** on 6a and from 2.45 to **0.88 in** on 7a. Scale is retained;
   representative plane/vertical registration is inferred, not a confirmed frame
   station. Data and datum differences: `checks/m1_section_comparison.json`.
-- Source picks: `drawing_package/sheer_band_measurements.json` and
+- Source picks: `references/drawing_package/sheer_band_measurements.json` and
   `renders/m1-sheer-band-source.png`. Current maximum beam is about **16.736 ft**;
   transom top width **11.46 ft**, nominal deck-to-bottom centre depth **2.9 ft**.
   The earlier 1.8-ft transom figure described the lower/undersheer reference,
@@ -187,7 +187,7 @@ multiple modification/review cycles may be needed within a milestone.
 
 ## M0 acceptance — AI-ready drawings and calibrated reference data
 
-- **Package:** `drawing_package/index.html` (local searchable contact sheet),
+- **Package:** `references/drawing_package/index.html` (local searchable contact sheet),
   `INDEX.md`, manifest, per-view pages, 51 lossless native views and 498 native
   tiles covering all eight main-vessel sheets.
 - **Text/data:** 4,623 OCR words with confidence and original pixel bounds;
@@ -210,7 +210,7 @@ multiple modification/review cycles may be needed within a milestone.
   `python checks/check_drawing_package.py`. Machine result: `validation.json`.
 
 Full acceptance and source-interpretation decisions are recorded in
-`drawing_package/ACCEPTANCE.md`. M0's checked sources specifically distinguish
+`references/drawing_package/ACCEPTANCE.md`. M0's checked sources specifically distinguish
 rounded replacement knees from grown knees, possible original frames from
 certain originals, and projected fittings from cut-plane material. Sheet 5's
 first-frame wording (*stern knee*) is preserved for the separate frame-number
@@ -232,7 +232,7 @@ has been reviewed. Full member evidence and measurements are in
 | I-F01 | Added 35 individually registered support timbers: cambered headers/half beams, paired carlings, local clamps and companionway roof supports. Main/forepeak share forebody clamps. | Local support increment verified; complete boat framing schedule remains next-stage work. |
 | I-M01 | Calibrated original sheet-4 ruler/footprints; 150.75 px/ft agrees within 0.5% with the printed 3/8-in scale at 400 dpi. Main hatch widened to a measured approximately 6.5 × 5.5-ft footprint; nearly flush forepeak follows vessel-specific alteration history. | Footprint calibration complete; JSON/pick coordinates retained. |
 | I-M02 | The old normalized hull/mast/deck arrangement is not fully registered to raw scaled drawing positions. Current hatch centres are inherited reconstruction coordinates, not newly measured stations. | Open: resolve common longitudinal registration before the full interior member schedule. |
-| I-R01 | Found `Reference Material/Migrations of an American Boat Type.pdf`; reviewed its relevant sharpie construction/development discussion and Kathryn HAER pp. 2–4. Kathryn has a fully framed fore-and-aft bottom, three narrow chine planks, no chine log, original inletted frames and later uninletted sisters. | Initial research complete; use these vessel-specific distinctions for subsequent framing. |
+| I-R01 | Found `references/loc_photos/Migrations of an American Boat Type.pdf`; reviewed its relevant sharpie construction/development discussion and Kathryn HAER pp. 2–4. Kathryn has a fully framed fore-and-aft bottom, three narrow chine planks, no chine log, original inletted frames and later uninletted sisters. | Initial research complete; use these vessel-specific distinctions for subsequent framing. |
 | I-B01 | Individual hatch cover boards and 35 support members are now inspectable components. | First board-level increment complete; full frames, lining, floors, bulkheads and furnishings remain staged work. |
 
 Verification: hatch passage/cover removal, timber contacts/sections, roof support

@@ -74,7 +74,7 @@ The review adds evidence and instructions; it does **not** claim that the model 
 | **S05**, notes 7 and 27 | Separate stern deck-timber and transom-framing/moulding schedules |
 | **S06/S07** rail/construction notes and sections | Rail stock, orientation, attachment and the relationship of planking, frames, clamps and deck |
 
-The original TIFFs are preserved in `2d model/`. M0's indexed native views, scales, source hashes and transformations are in `drawing_package/`. All figure crops are derived from that package, not re-scaled screen captures with an assumed physical size.
+The original TIFFs are preserved in `references/drawings/`. M0's indexed native views, scales, source hashes and transformations are in `references/drawing_package/`. All figure crops are derived from that package, not re-scaled screen captures with an assumed physical size.
 
 ### 3.2 Vessel-specific photographs
 
@@ -87,7 +87,7 @@ The original TIFFs are preserved in `2d model/`. M0's indexed native views, scal
 | **LOC-P30** | 31 | Overall stern, counter shoulder, rails, davits, moulding and external bumper |
 | **LOC-P31** | 32 | Operating position and cabin/helm/control relationship; caption dates the copied slide to 1997 |
 
-The user's supplied gallery page **24** is printed photo **23**, the bow construction/Samson-post image. Photo caption numbers and gallery page numbers differ because the gallery also includes a colour transparency. All 32 review images are archived, with selected high-resolution masters, in `Reference Material/LOC_Kathryn_photos/`.
+The user's supplied gallery page **24** is printed photo **23**, the bow construction/Samson-post image. Photo caption numbers and gallery page numbers differ because the gallery also includes a colour transparency. All 32 review images are archived, with selected high-resolution masters, in `references/loc_photos/LOC_Kathryn_photos/`.
 
 ### 3.3 Important interpretation rules
 
@@ -330,7 +330,7 @@ Keep the **source observations** separate from the **implementation parameters**
 
 | Location | Expected remedy responsibility |
 |---|---|
-| `drawing_package/stern_helm_registration.json` and review picks | Replace provisional assumptions with classified observations/targets; preserve prior evidence |
+| `references/drawing_package/stern_helm_registration.json` and review picks | Replace provisional assumptions with classified observations/targets; preserve prior evidence |
 | `parts/stern_layout.py` | Source-controlled anchor/surface/rail interfaces; eliminate unjustified coupling of a surface intercept to the current bounding-box reference |
 | `parts/hull.py` | Correct aft exterior, cavity and deck edge; preserve real closure, thickness and the named global datum |
 | `parts/rails.py` | Fair rectangular timber rails and registered posts/mounts |
@@ -389,8 +389,8 @@ Additional arrowed baseline views are available for detailed inspection: [plan](
 - [LOC-P29, hydraulic steering](https://www.loc.gov/resource/hhh.md1454.photos/?sp=30).
 - [LOC-P30, overall stern/davits/bumper](https://www.loc.gov/resource/hhh.md1454.photos/?sp=31).
 - [LOC-P31, operating position](https://www.loc.gov/resource/hhh.md1454.photos/?sp=32).
-- Local source inventory: `drawing_package/manifest.json`, `registration.json`, `calibration.json`; S04 native views and original TIFF remain unchanged.
-- Photo inventory/captions/master URLs/hashes: `Reference Material/LOC_Kathryn_photos/manifest.json`; local gallery `index.html` in that directory.
+- Local source inventory: `references/drawing_package/manifest.json`, `registration.json`, `calibration.json`; S04 native views and original TIFF remain unchanged.
+- Photo inventory/captions/master URLs/hashes: `references/loc_photos/LOC_Kathryn_photos/manifest.json`; local gallery `index.html` in that directory.
 - Exact model measurements and captured geometry hashes: `checks/stern_review_measurements.json`.
 - Figure generator: `checks/build_stern_report_assets.py`. It produces review evidence and does not modify model geometry. Re-running against a later model refreshes evidence, so preserve the present baseline before doing so.
 

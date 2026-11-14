@@ -21,8 +21,8 @@ def check():
     assert build['status'] == 'ok' and not build['warnings']
     assert build['finished'] >= max((ROOT / name).stat().st_mtime for name in (
         'model.py', 'parts/deck_beams.py', 'parts/beam_layout.py',
-        'drawing_package/m4_deck_schedule.json'))
-    schedule = json.loads((ROOT / 'drawing_package/m4_deck_schedule.json').read_text())
+        'references/drawing_package/m4_deck_schedule.json'))
+    schedule = json.loads((ROOT / 'references/drawing_package/m4_deck_schedule.json').read_text())
     assert len(schedule['members']) == EXPECTED_SETS
     assert len(BEAMS) == EXPECTED_SETS
 

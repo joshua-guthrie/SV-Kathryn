@@ -108,7 +108,7 @@ def build_current(boards):
 
 
 def build_source():
-    plan = Image.open(ROOT / 'drawing_package/S05/S05-V01/preview.png').convert('RGB')
+    plan = Image.open(ROOT / 'references/drawing_package/S05/S05-V01/preview.png').convert('RGB')
     scale = 2
     plan = plan.resize((plan.width * scale, plan.height * scale), Image.LANCZOS)
     top_margin, bottom_margin = 190, 330
@@ -118,8 +118,8 @@ def build_source():
     font_title = ImageFont.truetype(FONT, 38)
     font = ImageFont.truetype(FONT, 25)
     font_small = ImageFont.truetype(FONT, 21)
-    reg = json.loads((ROOT / 'drawing_package/registration.json').read_text())['transformations']['S05']
-    manifest = json.loads((ROOT / 'drawing_package/manifest.json').read_text())
+    reg = json.loads((ROOT / 'references/drawing_package/registration.json').read_text())['transformations']['S05']
+    manifest = json.loads((ROOT / 'references/drawing_package/manifest.json').read_text())
     view = next(v for v in manifest['views'] if v['id'] == 'S05-V01')
     source = next(s for s in manifest['sources'] if s['id'] == 'S05')
     a, b = reg['grid_x_to_F']
@@ -377,8 +377,8 @@ def build_photos():
         return ImageOps.autocontrast(im, cutoff=1).filter(
             ImageFilter.UnsharpMask(radius=2, percent=160, threshold=3))
 
-    p17 = enhanced(ROOT / 'Reference Material/LOC_Kathryn_photos/18-LOC-P17.jpg', (140, 430, 640, 900))
-    p25 = enhanced(ROOT / 'Reference Material/LOC_Kathryn_photos/26-LOC-P25.jpg', (220, 400, 900, 720))
+    p17 = enhanced(ROOT / 'references/loc_photos/LOC_Kathryn_photos/18-LOC-P17.jpg', (140, 430, 640, 900))
+    p25 = enhanced(ROOT / 'references/loc_photos/LOC_Kathryn_photos/26-LOC-P25.jpg', (220, 400, 900, 720))
     height = 620
     p17 = p17.resize((int(p17.width * height / p17.height), height), Image.LANCZOS)
     p25 = p25.resize((int(p25.width * height / p25.height), height), Image.LANCZOS)

@@ -12,7 +12,7 @@ from pathlib import Path
 from PIL import Image,ImageDraw,ImageOps
 
 ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'Reference Material/LOC_Kathryn_photos'
+OUT=ROOT/'references/loc_photos/LOC_Kathryn_photos'
 URLS={
     'item':'https://www.loc.gov/item/md1454/?fo=json',
     'resource':'https://www.loc.gov/resource/hhh.md1454.photos/?sp=24&fo=json',

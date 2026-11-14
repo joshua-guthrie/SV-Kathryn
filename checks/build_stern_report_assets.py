@@ -212,7 +212,7 @@ def profile_overlay(manifest,registration,crop_record):
 
 
 def photo_figures():
-    directory=ROOT/'Reference Material/LOC_Kathryn_photos'
+    directory=ROOT/'references/loc_photos/LOC_Kathryn_photos'
     manifest=json.loads((directory/'manifest.json').read_text())
     layouts={
         'LOC-P30':[

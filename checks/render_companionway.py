@@ -111,7 +111,7 @@ def main():
     render('renders/kathryn-companionway-open.png', opened=True)
     render('renders/kathryn-companionway-cutaway.png', opened=True, cutaway=True)
     Image.MAX_IMAGE_PIXELS = None
-    source = Image.open(ROOT / '2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif')
+    source = Image.open(ROOT / 'references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif')
     source.crop((3450, 2800, 5350, 4450)).save(ROOT / 'renders/kathryn-access-source-profile.png')
     source.crop((3400, 5600, 5300, 7150)).save(ROOT / 'renders/kathryn-access-source-plan.png')
     panels = [

@@ -20,7 +20,7 @@ def main():
     draw.text((22,15),'KATHRYN - DRAWING-BASED STERN / HELM CORRECTION, FULL-SIZE 1:1',fill='black',font_size=27)
     for file,xy,limit,title in (
         ('renders/stern-corrected-perspective.png',(15,75),(1150,850),'Actual CAD: corrected rail, longer helm case, wood lid'),
-        ('Reference Material/LOC_Kathryn_photos/LOC-P28-detail.jpg',(1200,75),(780,850),'LOC-P28: helm / stern reference'),
+        ('references/loc_photos/LOC_Kathryn_photos/LOC-P28-detail.jpg',(1200,75),(780,850),'LOC-P28: helm / stern reference'),
         ('renders/stern-corrected-cutaway.png',(15,1010),(1150,700),'Actual CAD section: raked counter and stock clearance'),
         ('renders/stern-profile-source.png',(1200,1010),(780,700),'S04 inboard profile: controlling geometry'),
     ):

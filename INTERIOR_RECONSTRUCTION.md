@@ -6,7 +6,7 @@ structure are built and verified. M4 individual boards/deck integration is next.
 ## M3 frames and repair members — complete
 
 Full member/source table, acceptance and source qualifications:
-`milestones/M3.md`. Geometry ledger: `drawing_package/m3_frame_schedule.json`;
+`milestones/M3.md`. Geometry ledger: `references/drawing_package/m3_frame_schedule.json`;
 reproduction: `checks/measure_m3_frames.py`, `checks/prepare_m3_sources.py`.
 
 154 frame pieces and 15 supports include primary mortises, uninletted companions,
@@ -37,7 +37,7 @@ Latest build: 439 parts, no warnings, 304.0 s. Inspection: `renders/m3-review.pn
 
 See `milestones/M2.md` for the member/source table, acceptance and unresolved
 fine-joint/stowage evidence. Measurements and source hashes:
-`drawing_package/m2_centreline_measurements.json`; actual-solid records:
+`references/drawing_package/m2_centreline_measurements.json`; actual-solid records:
 `checks/m2_acceptance.json`, `checks/m2_source_comparison.json`.
 
 Two oak keelson sections (14/16-in widths, complementary scarf), eight separate
@@ -67,7 +67,7 @@ samples, 144 normal-ray checks, four sections and actual supports pass.
 M1 migrated source coordinates and corrected a crucial older reference error:
 offset-table Sheer is the underside of sheer strake, while Top of Deck is a
 separate higher/wider curve. Native picks are retained in
-`drawing_package/sheer_band_measurements.json`. Source-shell guide RMS is now
+`references/drawing_package/sheer_band_measurements.json`. Source-shell guide RMS is now
 1.13/0.88 in on representative 6a/7a comparisons; plane identity remains inferred.
 The source records, model envelope and exact keel/frame-plane references must
 remain distinguished in M2/M3.
@@ -83,7 +83,7 @@ and earlier local-hatch evidence below are inputs, not milestone completion.
 
 ## M0 reference package — accepted
 
-Start at `drawing_package/index.html` or `INDEX.md`. The package contains eight
+Start at `references/drawing_package/index.html` or `INDEX.md`. The package contains eight
 indexed sheets, 51 lossless native views, 498 tiles, 4,623 coordinate-linked OCR
 words, 58 checked construction records, all source offsets, six ruler calibrations
 and two complete section demonstrations. Raw OCR is not the checked data layer.
@@ -91,7 +91,7 @@ and two complete section demonstrations. Raw OCR is not the checked data layer.
 Key files: `manifest.json`, `notes_verified.json`, `offsets_verified.json`,
 `calibration.json`, `registration.json`, `demos/S06-V01.html`,
 `demos/S07-V02.html`, `traces/`, `ACCEPTANCE.md`, `validation.json`, all under
-`drawing_package/`. Reproduction commands are in its README.
+`references/drawing_package/`. Reproduction commands are in its README.
 
 M0 established source coordinates and a legacy-CAD migration ledger. M1 has
 applied the principal hatch/mast/station coordinates. Sheet-4/5 deck landmarks align within
@@ -152,13 +152,13 @@ Keep the evidence for each member or dimension identifiable:
 
 | ID | Source | Reviewed / use |
 |---|---|---|
-| K-01 | Local HAER MD-117 sheets 1–8 in `2d model/` | Primary geometry. Sheets 4–7 read. Sheet-4 hatch footprint/ruler calibration is saved in `checks/hatch_measurements.json`; full longitudinal station registration remains pending. |
-| S-01 | Local HAER MD-77 E. C. Collier descriptive report, `sistership/Two-Sail Bateau E. C. COLLIER, Chesapeake Bay Maritime Museum, Mills Street, Saint Michaels, Talbot County, MD/master-pnp-habshaer-md-md1200-md1203-data-md1203data.pdf` | Read. Printed pp. 2–4 (PDF pp. 3–5) describe materials, strongbacks/tie rods, crowned beams, natural-crook knees, notched replacement frames and interior alterations. Comparative construction evidence, not Kathryn dimensions. Printed p. 12 lists Chapelle references. |
+| K-01 | Local HAER MD-117 sheets 1–8 in `references/drawings/` | Primary geometry. Sheets 4–7 read. Sheet-4 hatch footprint/ruler calibration is saved in `checks/hatch_measurements.json`; full longitudinal station registration remains pending. |
+| S-01 | Local HAER MD-77 E. C. Collier descriptive report, `references/sistership/Two-Sail Bateau E. C. COLLIER, Chesapeake Bay Maritime Museum, Mills Street, Saint Michaels, Talbot County, MD/master-pnp-habshaer-md-md1200-md1203-data-md1203data.pdf` | Read. Printed pp. 2–4 (PDF pp. 3–5) describe materials, strongbacks/tie rods, crowned beams, natural-crook knees, notched replacement frames and interior alterations. Comparative construction evidence, not Kathryn dimensions. Printed p. 12 lists Chapelle references. |
 | W-01 | [CBMM working Shipyard](https://cbmm.org/shipyard/) | Page read 2026-11-07; identifies the museum's traditional construction/preservation work and Rosie Parks restoration in 2011–2013. Useful route to technical restoration records; no specific joint detail adopted from the overview. |
 | L-01 | [CBMM, The Chesapeake Log, Summer 2012](https://cbmm.org/resources/the-chesapeake-log-summer-2012/) | Landing page read; advertises Rosie Parks restoration coverage. Underlying article/issue still to obtain and review. |
-| K-02 | [Kathryn HAER descriptive data, CAMM-hosted PDF](https://councilofamericanmaritimemuseums.org/wp-content/uploads/2024/12/kathryn-data.pdf), saved as `Reference Material/Kathryn HAER MD-117 descriptive data.pdf` | Construction/alteration discussion reviewed, printed pp. 2–4. Fully framed fore-and-aft bottom; original frames inletted to keelson, later sisters not inletted; three narrow chine planks and no chine log. White-oak hatch coamings; forepeak lowered nearly flush in 1981. |
+| K-02 | [Kathryn HAER descriptive data, CAMM-hosted PDF](https://councilofamericanmaritimemuseums.org/wp-content/uploads/2024/12/kathryn-data.pdf), saved as `references/loc_photos/Kathryn HAER MD-117 descriptive data.pdf` | Construction/alteration discussion reviewed, printed pp. 2–4. Fully framed fore-and-aft bottom; original frames inletted to keelson, later sisters not inletted; three narrow chine planks and no chine log. White-oak hatch coamings; forepeak lowered nearly flush in 1981. |
 | L-03 | [Kathryn National Historic Landmark nomination](https://npgallery.nps.gov/pdfhost/docs/NHLS/Text/94001192.pdf) | Located through online search; full document not yet reviewed. |
-| B-01 | Howard I. Chapelle, *The Migrations of an American Boat Type*, `Reference Material/Migrations of an American Boat Type.pdf` | Found in the resumed workspace. Relevant construction discussion reviewed: printed pp. 137–139 (sharpie structure) and 146–149 (building sequence/Chesapeake development). This is a sharpie/development study; use its comparative methods with Kathryn's own construction evidence. |
+| B-01 | Howard I. Chapelle, *The Migrations of an American Boat Type*, `references/loc_photos/Migrations of an American Boat Type.pdf` | Found in the resumed workspace. Relevant construction discussion reviewed: printed pp. 137–139 (sharpie structure) and 146–149 (building sequence/Chesapeake development). This is a sharpie/development study; use its comparative methods with Kathryn's own construction evidence. |
 
 The LOC catalogue page returned HTTP 403 during research; the local TIFFs remain
 readable. That web retrieval failure is not a source-drawing readability failure.
@@ -179,7 +179,7 @@ readable. That web retrieval failure is not a source-drawing readability failure
 
 | Milestone | Outcome | Current state |
 |---|---|---|
-| M0 | Indexed AI-ready drawing package, searchable/checked notes and tables, per-view calibration and common registration | Complete; acceptance and validation in `drawing_package/` |
+| M0 | Indexed AI-ready drawing package, searchable/checked notes and tables, per-view calibration and common registration | Complete; acceptance and validation in `references/drawing_package/` |
 | M1 | Continuous hollow planked enclosure and real cabin/hold/forepeak volume | Complete; `milestones/M1.md` and `checks/m1_acceptance.json` |
 | M2 | Keelson, centreboard trunk and centreline supports | Pending |
 | M3 | Hull frames, clamps, knees and documented repair/sister members | Pending; local opening supports are prior work |

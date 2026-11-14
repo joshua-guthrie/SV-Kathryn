@@ -135,7 +135,7 @@ def check():
     print(f'PASS: {air} distributed hold/forepeak samples beside the trunk remain genuine air.',flush=True)
     return dict(status='passed',centreline_parts=len(members),slot_probes=len(passage),
                 poses=minimums,air_samples=air,chock_mast_distances_ft=support_distances,
-                source='drawing_package/m2_centreline_measurements.json',
+                source='references/drawing_package/m2_centreline_measurements.json',
                 inferred_details=['scarf slope and inaccessible aft continuation','mortise, hoop and fine laps',
                                   'board raised stop, gap and thickness','chock facets and partner span'])
 

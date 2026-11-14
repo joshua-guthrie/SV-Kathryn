@@ -378,7 +378,7 @@ The same principles apply to the hull:
 
 - `parts/deck_planking.py` and `checks/prototype_deck_boards.py` are replaced
   or extended; `checks/check_registered_deck.py` and
-  `drawing_package/m4_deck_partition.json` must be regenerated.
+  `references/drawing_package/m4_deck_partition.json` must be regenerated.
 - Board count will change; export/build time and the part tree change.
 - The course re-spacing from 3.75/6.0 to 3.5/5.5 actual changes the deck
   partition and the material conservation ledger; this is expected.

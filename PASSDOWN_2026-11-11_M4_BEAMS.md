@@ -23,7 +23,7 @@ M4/M5 without a separate acceptance round.
 
 ## What this increment did
 
-`drawing_package/m4_deck_schedule.json` is now a reconciled geometry source
+`references/drawing_package/m4_deck_schedule.json` is now a reconciled geometry source
 produced by `checks/measure_m4_layout.py`:
 
 - **23 S05-07 deck-beam sets** are registered as **29 parts** by

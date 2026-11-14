@@ -161,7 +161,7 @@ Next action is **the user's stern appearance review** of the new images/overlays
 in `renders/stern_remedy/`. **M4/M5 remain held** until that is resolved. Use
 `checks/check_stern_remedy.py` for current stern acceptance; the older
 `check_stern_helm.py` describes the superseded preliminary checkpoint.
-The required new source input is `drawing_package/stern_remedy_targets.json`.
+The required new source input is `references/drawing_package/stern_remedy_targets.json`.
 Everything below retains earlier source research, baseline findings and history.
 
 Checkpoint updated: 2026-11-09.
@@ -241,7 +241,7 @@ switch model to **1:1**, and use feet/inches display only if SOMA supports it.
   1.8 ft forward per vertical foot. Aftmost deck limit retained separately;
   curved rail is inset, about 1 ft 5 in behind box instead of old roughly 4 ft.
   Aft rails are taller per S04 profile, with proper deck-supported posts.
-- Geometry input `drawing_package/stern_helm_registration.json`, exposed as
+- Geometry input `references/drawing_package/stern_helm_registration.json`, exposed as
   `STERN_SOURCE` by datum.py; reproduce `checks/measure_stern_review.py`.
   `parts/stern_layout.py` shares the exact counter keep/normal-offset cavity
   planes. Upper body bounds stay M0 references; deck gets its small aft eave.
@@ -257,7 +257,7 @@ switch model to **1:1**, and use feet/inches display only if SOMA supports it.
   supports full-size views and sets a valid up vector for plan cameras.
 - LOC access: normal HTML 403; official `?fo=json` endpoints work. All **32**
   review JPEGs, metadata/captions, hashes, local HTML index and contact sheets in
-  `Reference Material/LOC_Kathryn_photos/`. Gallery page 24 = printed photo 23.
+  `references/loc_photos/LOC_Kathryn_photos/`. Gallery page 24 = printed photo 23.
   Stern masters P28/29/30 downloaded; hold/deck masters being extended for M4.
   One cabin-master transfer was interrupted; review JPEG remains available;
   `prepare_loc_photos.py` now retries incomplete transfers and saves per-row metadata.
@@ -313,7 +313,7 @@ Full source/member evidence and caveats: `milestones/M3.md`. M4 is next.
 
 - `parts/hull_frames.py`: 154 individual frame pieces and 15 additional supports.
   `parts/frame_layout.py`: schedule and shared mortise/underpass tools.
-  `drawing_package/m3_frame_schedule.json` is a required geometry input, now read
+  `references/drawing_package/m3_frame_schedule.json` is a required geometry input, now read
   through `parts/datum.py` as `FRAME_SOURCE` (alongside registration, sheer-band
   and M2-centreline JSON). Reproduce with `checks/measure_m3_frames.py`.
 - 78 half-frame records: 20 numbered exposed sets, separately named five hidden
@@ -403,7 +403,7 @@ Acceptance/member evidence/gaps: `milestones/M2.md`. Next milestone is M3.
 - New `parts/centreline_layout.py` provides shared cutting/member interfaces;
   `parts/centreline.py` builds 29 separate centreline members. One interim M1
   mast pad is removed: 241 + 29 - 1 = 269.
-- `drawing_package/m2_centreline_measurements.json` is now a required geometry
+- `references/drawing_package/m2_centreline_measurements.json` is now a required geometry
   input, alongside registration/sheer-band JSON. Reproduce with
   `checks/measure_m2_layout.py`; its measurements retain source hashes and the
   corrected-keel/profile vertical anchor. Preparation: `checks/prepare_m2_sources.py`.
@@ -462,7 +462,7 @@ no warnings, default 1:32; final build took 382.4 s.
   offset tuples.** `SOURCE_SECTIONS` retains lower/table-reference data (including
   the existing deliberate sheer fairing); `SECTIONS` carries model deck-edge W/Z.
   True printed offsets remain in M0's separate checked table.
-- `drawing_package/sheer_band_measurements.json` records source pixels/hash and
+- `references/drawing_package/sheer_band_measurements.json` records source pixels/hash and
   endpoint closure assumptions. `parts/datum.py` reads it and M0 registration.
   These two JSON files are required geometry inputs when copying the project.
 - Body F limits are **-1.800 / 50.733 ft**, span **52.533 ft** (500.38 mm at 1:32).
@@ -548,7 +548,7 @@ The hull still contains filled reference regions, so M1 remains pending.
 
 ### Main artifacts
 
-- **Open `drawing_package/index.html`** for the local searchable contact sheet;
+- **Open `references/drawing_package/index.html`** for the local searchable contact sheet;
   `INDEX.md` and `manifest.json` are AI/file-navigation entry points.
 - Eight source overviews, **51 native view crops**, **498 lossless tiles**, and
   **4,623 OCR words** with original coordinates/confidence. All eight source
@@ -605,11 +605,11 @@ and supports instead, without weakening outside-hull/clearance requirements.
 Scripts: `checks/drawing_catalog.py`, `build_drawing_package.py`,
 `ocr_tesseract.py`, `drawing_evidence.py`, `register_drawings.py`,
 `build_drawing_demos.py`, `check_drawing_package.py`. Commands are in
-`drawing_package/README.md`. The Tesseract executable was absent, but its 5.5 C
+`references/drawing_package/README.md`. The Tesseract executable was absent, but its 5.5 C
 library works. The wrapper uses that library without changing the app environment.
 English `tessdata_fast` model cache: `/tmp/opencode/tessdata/`; download URL and
 exact model SHA-256 are in the manifest if the cache disappears. The auxiliary
-`Reference Material/Kathryn HAER drawing sheets.pdf` is also image-only; text was
+`references/loc_photos/Kathryn HAER drawing sheets.pdf` is also image-only; text was
 generated from the TIFF views, not extracted from that PDF.
 
 `python checks/check_drawing_package.py` passes all source-integrity, pixel,
@@ -636,7 +636,7 @@ asked that outcomes be called **milestones**, and confirmed:
 
 | Milestone | Accepted outcome to achieve | Current state |
 |---|---|---|
-| M0 | AI-ready source package and common calibration/registration | Complete; `drawing_package/ACCEPTANCE.md` and `validation.json` |
+| M0 | AI-ready source package and common calibration/registration | Complete; `references/drawing_package/ACCEPTANCE.md` and `validation.json` |
 | M1 | Continuous hollow planked enclosure and real interior volume | Complete; `milestones/M1.md` and M1 actual-solid/source evidence |
 | M2 | Keelson, centreboard trunk and centreline support structure | Pending |
 | M3 | Hull frames/clamps/knees and documented repair members | Pending |
@@ -667,11 +667,11 @@ The first hatch/local-framing stage is now implemented, built and inspected.
 
 ### Completed in this increment
 
-- Found the supplied book: `Reference Material/Migrations of an American Boat Type.pdf`,
+- Found the supplied book: `references/loc_photos/Migrations of an American Boat Type.pdf`,
   Howard I. Chapelle. Relevant printed pp. 137–139 and 146–149 discuss sharpie
   structure/building sequence and Chesapeake development; treat it as comparative
   context. No need to ask the user to identify the book now.
-- Downloaded `Reference Material/Kathryn HAER MD-117 descriptive data.pdf` from
+- Downloaded `references/loc_photos/Kathryn HAER MD-117 descriptive data.pdf` from
   the CAMM source in `INTERIOR_RECONSTRUCTION.md`. Reviewed printed pp. 2–4:
   fully framed fore-and-aft bottom, three narrow chine planks, **no chine log**,
   original frames inletted to keelson/later sister frames not inletted; white-oak
@@ -779,7 +779,7 @@ There is no pending geometry build. Resume only when the user returns.
 ### First steps on resume
 
 1. **Identify the user's book.** The local PDFs found in this project are the
-   E. C. Collier descriptive report and photo captions under `sistership/`.
+   E. C. Collier descriptive report and photo captions under `references/sistership/`.
    No separate construction book was positively identified. Ask whether that
    report is intended, or request the book's title/file path. Do not claim it
    has already been read.
@@ -830,7 +830,7 @@ await user direction; do not start an automatic seventh iteration.
 
 ## Active objective and user decisions
 
-- Build a 3D model of the sailboat in `2d model/`, viewable live in SOMA.
+- Build a 3D model of the sailboat in `references/drawings/`, viewable live in SOMA.
 - The main subject is **Kathryn**, the 1901 two-sail bateau / Chesapeake skipjack in the eight HAER MD-117 sheets.
 - User: **"keep the mast and bowsprit.. draw it as if the sails were just removed"**.
 - Retain mast, main boom, bowsprit, jib club and walking boards. Omit sailcloth and rope/wire rigging, as originally requested.
@@ -926,7 +926,7 @@ only when requested.
 3. User: **"the rudder don't look right"**.
    - Initial polygonal blade was too far aft and lacked a stock/support.
    - Earlier attempts used a rounded blade hanging behind the transom. These were still too far aft and are superseded by the wheel-box-aligned correction in item 7 below.
-   - Reference: E.C. Collier (sister ship) drawings in `sistership/` used to understand the skeg/rudder arrangement (shape only, not dimensions).
+   - Reference: E.C. Collier (sister ship) drawings in `references/sistership/` used to understand the skeg/rudder arrangement (shape only, not dimensions).
    - The centreboard was also retracted so the hull bottom is clean, matching the profile drawings and the under-power photos.
 4. User: **"there is a weird bend halfway"** (`.soma/feedback/markup-20261105-0713.png`).
    - Cause: an isolated hollow in the sheer line at station 4 (table value 5-9-7).
@@ -992,7 +992,7 @@ only when requested.
 
 ## Reference drawings and useful crops
 
-Original files: `2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00001a.tif`
+Original files: `references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00001a.tif`
 through `...00008a.tif`; companion pushboat is `...md1494-sheet-00001a.tif`.
 
 - Sheet 1: identity, general illustration, registered dimensions.
@@ -1016,7 +1016,7 @@ used when preparing their previews.
 
 ## Environment and required workflow
 
-- Workspace: `/home/jlguthri/Downloads/experimetalCadWork`.
+- Workspace: `/home/jlguthri/Downloads/SV Kathryn`.
 - In the latest session, `python` and `soma` on PATH point to the currently running SOMA AppImage. Use:
 
   ```bash

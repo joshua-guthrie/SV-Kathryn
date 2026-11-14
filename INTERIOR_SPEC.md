@@ -48,7 +48,7 @@ individual boards, deck integration and fit-out and are currently on hold.
 ### Primary construction views
 
 - Sheet 5a: structural/hold plans, beam/member arrangement and timber notes.
-- Sheet 6a (`2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00006a.tif`):
+- Sheet 6a (`references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00006a.tif`):
   frame-set sections and structural conception, including connections among
   planking, bottom/side frames, keel/keelson and deck structure.
 - Sheet 7a (`...sheet-00007a.tif`): frame-set 13 and cabin-hatch sections,
@@ -265,8 +265,8 @@ as one of those five outcomes. Historical review-pass counts remain historical.
   supports, corrected source/deck references and inspected full cutaways. See
   `milestones/M1.md`, `checks/m1_acceptance.json` and `renders/m1-review.png`.
 - **M0 is complete:** indexed reference package, checked records, calibrated
-  coordinate ledger and section demonstrations are in `drawing_package/`.
-  Acceptance: `drawing_package/ACCEPTANCE.md`; validation: `validation.json`.
+  coordinate ledger and section demonstrations are in `references/drawing_package/`.
+  Acceptance: `references/drawing_package/ACCEPTANCE.md`; validation: `validation.json`.
 - Next action: **M4**, individual hull/deck/lining/floor/bulkhead boards and the
   complete deck-member/joint integration. Use the existing shell/frame/centreline
   interfaces; retain source/repair qualifications and corrected/as-surveyed

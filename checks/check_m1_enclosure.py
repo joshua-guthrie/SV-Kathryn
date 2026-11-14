@@ -134,14 +134,14 @@ def check():
     boxing=parts['Hollow rudder-stock box']
     assert overlap(boxing,hull.make_steering_shaft())<1e-7,'Stock/boxing collision'
     print('PASS: floor and mast have real hull-bearing supports; stock boxing is hollow and shaft-clear.',flush=True)
-    source=json.loads((ROOT/'drawing_package/registration.json').read_text())
+    source=json.loads((ROOT/'references/drawing_package/registration.json').read_text())
     target={r['name']:r['canonical_forward_ft'] for r in source['legacy_feature_migration']}
     for name,f,_,_ in HATCHES_FT:
         assert abs(f-target[name])<1e-8
     assert abs(spars.mast_forward_at(hull.deck_height(MAST_DECK_FORWARD_FT))-target['Mast at deck'])<1e-8
     assert np.allclose([s[0] for s in hull.SOURCE_SECTIONS[1:-1]],list(LINE_STATIONS_FT.values()))
     print('PASS: source line stations, three hatch centres and mast/deck intersection migrated to the M0 coordinate ledger.',flush=True)
-    band=json.loads((ROOT/'drawing_package/sheer_band_measurements.json').read_text())
+    band=json.loads((ROOT/'references/drawing_package/sheer_band_measurements.json').read_text())
     for pick in band['measurements']:
         f=pick['forward_ft']
         raw=next(r for r in hull.SOURCE_SECTIONS if abs(r[0]-f)<1e-8)

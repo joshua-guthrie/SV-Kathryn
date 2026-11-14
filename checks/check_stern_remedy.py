@@ -20,7 +20,7 @@ def cross_section(shape,x):
 
 
 def check():
-    target=json.loads((ROOT/'drawing_package/stern_remedy_targets.json').read_text())
+    target=json.loads((ROOT/'references/drawing_package/stern_remedy_targets.json').read_text())
     upper,lower=hull.make_hull()
     main=hull.make_deck()
     mould=hull.stern_moulding()

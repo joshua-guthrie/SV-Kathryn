@@ -42,7 +42,7 @@ datum must not be shortened indiscriminately.
 ## Photographic evidence
 
 All 32 official review images and catalog metadata are archived in
-`Reference Material/LOC_Kathryn_photos/`. `index.html` has captions and original
+`references/loc_photos/LOC_Kathryn_photos/`. `index.html` has captions and original
 TIFF links; `manifest.json` retains URLs and hashes. Gallery page 24 is printed
 photo **23**, bow construction/Samson post; page numbers and caption numbers
 are not interchangeable. Stern/helm: LOC-P28, P29, P30; overall profiles: P01,

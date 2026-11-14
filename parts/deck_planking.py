@@ -463,7 +463,7 @@ CACHE_SOURCES = (
     'parts/deck_planking.py', 'parts/board_tools.py', 'parts/params.py',
     'parts/beam_layout.py', 'parts/framing.py', 'parts/openings.py',
     'parts/hull.py', 'parts/centreline_layout.py',
-    'drawing_package/m4_deck_schedule.json',
+    'references/drawing_package/m4_deck_schedule.json',
 )
 
 

@@ -72,7 +72,7 @@ def check():
     print('PASS: inset bowed stern rails have actual deck-supported posts and meet side rails.',flush=True)
     return dict(status='passed',box_aft_ft=STERN_SOURCE['helm_box_aft_ft'],box_fore_ft=STERN_SOURCE['helm_box_fore_ft'],
                 box_to_rear_rail_gap_ft=gap,counter_forward_per_vertical_ft=STERN_RAKE_FT_PER_FT,
-                counter_normal_checks=samples,source='drawing_package/stern_helm_registration.json',
+                counter_normal_checks=samples,source='references/drawing_package/stern_helm_registration.json',
                 photo_cross_checks=['LOC-P28','LOC-P29','LOC-P30'],model_scale=MODEL_SCALE,
                 expected_body_length_mm=(HULL_FORE_FT-HULL_AFT_FT)*MODEL_MM_PER_FOOT)
 

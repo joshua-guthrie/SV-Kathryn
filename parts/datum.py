@@ -4,7 +4,7 @@ import json
 from pathlib import Path
 
 _record = json.loads((Path(__file__).resolve().parents[1] /
-                      'drawing_package/registration.json').read_text())
+                      'references/drawing_package/registration.json').read_text())
 LINE_STATIONS_FT = {row['lines_station']: row['canonical_forward_ft']
                     for row in _record['line_stations']}
 
@@ -38,17 +38,17 @@ def legacy_forward(forward):
 
 
 _band_record = json.loads((Path(__file__).resolve().parents[1] /
-                          'drawing_package/sheer_band_measurements.json').read_text())
+                          'references/drawing_package/sheer_band_measurements.json').read_text())
 _band_rows = sorted([*_band_record['measurements'], *_band_record['closures']],
                     key=lambda row: row['forward_ft'])
 CENTRELINE_SOURCE = json.loads((Path(__file__).resolve().parents[1] /
-                               'drawing_package/m2_centreline_measurements.json').read_text())
+                               'references/drawing_package/m2_centreline_measurements.json').read_text())
 FRAME_SOURCE = json.loads((Path(__file__).resolve().parents[1] /
-                          'drawing_package/m3_frame_schedule.json').read_text())
+                          'references/drawing_package/m3_frame_schedule.json').read_text())
 STERN_SOURCE = json.loads((Path(__file__).resolve().parents[1] /
-                          'drawing_package/stern_helm_registration.json').read_text())
+                          'references/drawing_package/stern_helm_registration.json').read_text())
 STERN_REMEDY_SOURCE = json.loads((Path(__file__).resolve().parents[1] /
-                                 'drawing_package/stern_remedy_targets.json').read_text())
+                                 'references/drawing_package/stern_remedy_targets.json').read_text())
 
 
 def _band_value(forward, key):

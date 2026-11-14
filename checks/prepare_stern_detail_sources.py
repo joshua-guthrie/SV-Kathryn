@@ -6,7 +6,7 @@ from PIL import Image,ImageDraw
 ROOT=Path(__file__).resolve().parents[1]
 
 def main():
-    manifest=json.loads((ROOT/'drawing_package/manifest.json').read_text())
+    manifest=json.loads((ROOT/'references/drawing_package/manifest.json').read_text())
     for view_id,box,name in (
         ('S04-V02',(105,30,530,160),'stern-side-plan-controls'),
         ('S04-V01',(20,0,410,200),'stern-davit-profile-controls'),

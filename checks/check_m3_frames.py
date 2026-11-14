@@ -156,7 +156,7 @@ def check():
     return dict(status='passed',frame_pieces=len(frames),support_parts=len(supports),
                 half_frame_members=len(rows),repair_pattern_additions=sum(r['role']=='repair-pattern' for r in rows),
                 limbers=limbers,air_samples=air,exterior_violations=0,
-                source='drawing_package/m3_frame_schedule.json',
+                source='references/drawing_package/m3_frame_schedule.json',
                 unresolved=['inaccessible cabin and two aft planes','individual repair dates','fine laps and hidden head shapes'])
 
 

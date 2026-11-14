@@ -17,7 +17,7 @@ It does not convert inferred hidden construction into observed historical fact.
 | Recorded 50-ft reference | **15,240 mm**, separate from physical wood/fitting bounds |
 | Captured successful build | **415.49 s** total, within the existing600-s limit |
 | Build stages | Model333.812 s; STEP10.443 s; GLB65.945 s |
-| Accepted-input/source ledger | `drawing_package/stern_remedy_targets.json` |
+| Accepted-input/source ledger | `references/drawing_package/stern_remedy_targets.json` |
 | Actual-CAD check record | `checks/stern_remedy_acceptance.json` |
 | Mesh/source provenance | `renders/stern_remedy/provenance.json` |
 | GLB SHA256 | `70f413f7f4acedf0faec5b0f9cae88c8586acc48a2a5f9e4e8f176cf9fffe6df` |

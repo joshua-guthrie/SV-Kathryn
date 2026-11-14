@@ -30,7 +30,7 @@ User requested a passdown and immediate stop because usage is nearly exhausted.
 
 Files: `checks/extract_stern_controls.py`,
 `checks/measure_stern_remedy_targets.py`, and required geometry input
-**`drawing_package/stern_remedy_targets.json`**.
+**`references/drawing_package/stern_remedy_targets.json`**.
 
 - Nine clear native cap-rail fastener centres found at ring score>0.90.
   Review images: `renders/stern-fastener-picks.png`,

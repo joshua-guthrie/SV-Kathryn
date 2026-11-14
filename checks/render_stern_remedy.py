@@ -83,7 +83,7 @@ def overlays():
 def main():
     build=json.loads((ROOT/'.soma/build.json').read_text())
     inputs=[ROOT/'model.py',*sorted((ROOT/'parts').glob('*.py')),
-            ROOT/'drawing_package/stern_remedy_targets.json']
+            ROOT/'references/drawing_package/stern_remedy_targets.json']
     assert build['status']=='ok','A successful export is required before rendering acceptance images'
     assert build['finished']>=max(p.stat().st_mtime for p in inputs),'Export predates current geometry sources'
     parts=json.loads((ROOT/'.soma/model.map.json').read_text())['parts']

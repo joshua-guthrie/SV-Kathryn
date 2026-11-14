@@ -8,7 +8,7 @@ Image.MAX_IMAGE_PIXELS = None
 
 
 def main():
-    path = ROOT / '2d model/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif'
+    path = ROOT / 'references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif'
     source = Image.open(path)
     sx, sy = source.width / 1440, source.height / 960
     # Coordinates locate native scan points through a documented proportional

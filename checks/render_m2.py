@@ -24,9 +24,9 @@ def lines(shape):
 
 def source_comparison():
     data=CENTRELINE_SOURCE
-    manifest=json.loads((ROOT/'drawing_package/manifest.json').read_text())
-    registration=json.loads((ROOT/'drawing_package/registration.json').read_text())
-    calibration=json.loads((ROOT/'drawing_package/calibration.json').read_text())
+    manifest=json.loads((ROOT/'references/drawing_package/manifest.json').read_text())
+    registration=json.loads((ROOT/'references/drawing_package/registration.json').read_text())
+    calibration=json.loads((ROOT/'references/drawing_package/calibration.json').read_text())
     source=next(s for s in manifest['sources'] if s['id']=='S04')
     image=Image.open(ROOT/'renders/m2-board-profile-source.png').convert('RGB')
     crop=(6231,2809,9698,4565)
