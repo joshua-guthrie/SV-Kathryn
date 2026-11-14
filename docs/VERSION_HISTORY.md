@@ -16,8 +16,18 @@ therefore fails. The repository metadata lives in `.local-git/`; use the helper:
 
 Source code, checks, measured drawing data, reports and original reference files
 are versioned. SOMA state, generated STEP exports, renders, Python caches and
-duplicate downloaded archive containers are ignored. The original reference
-files remain local; no remote is configured.
+duplicate downloaded archive containers are ignored.
+
+## Remote
+
+`origin` is https://github.com/joshua-guthrie/SV-Kathryn.git, branch `main`.
+The user requested the first push on 2026-11-14. The remote's initial commit
+(a README stub and GPL-3.0 LICENSE) had no common ancestor, so it was merged
+with `--allow-unrelated-histories`; the project README replaced the stub and
+the LICENSE is kept. Push only when the user asks. The pushed tree contains the
+source, checks, docs and references; `.local-git/`, `.soma/`, `output/`,
+`renders/` and `exports/` remain local. The README links to `SV-Kathryn.stl` and
+`SV-Kathryn.soma`, which are not in the repository yet.
 
 Commits are authored as `Codex <codex@local.invalid>` because this environment
 has no configured Git user identity. This identity is scoped to this repository.
