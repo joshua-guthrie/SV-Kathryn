@@ -29,6 +29,12 @@ source, checks, docs and references; `.local-git/`, `.soma/`, `output/`,
 `renders/` and `exports/` remain local. The README links to `SV-Kathryn.stl` and
 `SV-Kathryn.soma`, which are not in the repository yet.
 
+On 2026-11-14 the user removed the sistership reference package
+(`references/sistership/`, 94 files, 969 MB) as not useful. It remains only in
+the earlier history; the research notes that cite it are left as a record of
+what was consulted. Removing it from the current tree does not shrink the
+repository history or the GitHub storage.
+
 Commits are authored as `Codex <codex@local.invalid>` because this environment
 has no configured Git user identity. This identity is scoped to this repository.
 
