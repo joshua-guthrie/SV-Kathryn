@@ -20,11 +20,18 @@ from parts.stern_fittings import make_stern_fittings
 from parts.deck_planking import (make_deck_board_parts, make_kingplank_scarf_parts,
                                   make_waterway_parts)
 from parts.deck_beams import make_deck_beam_parts
+from parts.rigging import make_rigging_parts, make_sail_parts
 
 
 def register(name, shape, color, group):
     assert shape.isValid() and len(shape.Solids()) == 1, f"Invalid part: {name}"
     add_part(name, shape.scale(MODEL_MM_PER_FOOT), color=color, group=group)
+
+
+def register_reference(name, shape, color, group):
+    assert shape.isValid() and len(shape.Solids()) == 1, f"Invalid reference: {name}"
+    add_part(name, shape.scale(MODEL_MM_PER_FOOT), color=color, group=group,
+             role="reference")
 
 
 upper_hull, underwater_hull = make_hull()
@@ -70,5 +77,9 @@ register("Jib sheet traveller", make_jib_traveller(), (.18, .21, .22), "Deck/For
 
 for name, shape, color in make_spars():
     register(name, shape, color, "Spars")
+for name, shape, color, group in make_rigging_parts():
+    register(name, shape, color, group)
+for name, shape, color, group in make_sail_parts():
+    register_reference(name, shape, color, group)
 for name, shape, color in make_bow_details():
     register(name, shape, color, "Spars/Bow details")

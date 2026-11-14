@@ -1,0 +1,32 @@
+{
+  "status": "passed",
+  "rigging_parts": 33,
+  "sail_parts": 2,
+  "groups": [
+    "Rigging/Fittings",
+    "Rigging/Running",
+    "Rigging/Standing"
+  ],
+  "main_plan_ft": {
+    "luff": 45.5,
+    "foot": 49.333,
+    "leech_s08": 68.0,
+    "straight_leech": 59.24,
+    "roach_unmodelled": 8.76
+  },
+  "jib_plan_ft": {
+    "luff": 49.5,
+    "foot": 25.667,
+    "leech": 42.0
+  },
+  "source": [
+    "S03-V01 hull profile and rigging",
+    "S03-N02 rigging/running-gear key",
+    "S08-V01 sail plan"
+  ],
+  "unresolved": [
+    "main-sail roached leech not modelled",
+    "exact cleat/pin-rail positions",
+    "hoops/hanks intentionally omitted per S08 note"
+  ]
+}

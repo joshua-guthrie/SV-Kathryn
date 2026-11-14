@@ -1,6 +1,20 @@
 # Passdown — Kathryn sailboat
 
-## LATEST — 2026-11-13: M5 cabin fit-out increment
+## LATEST — 2026-11-13: M6 rigging and sails
+
+**Current verified assembly: 876 parts**, 1:1/mm, app build no warnings
+(model 222.6 s, STEP 22.0 s, GLB 167.4 s). M6 adds **33 rigging/fitting parts**
+and **2 reference sails** from S03/S08. The jib matches S08; the main luff/foot
+match and its straight leech is 59.24 ft vs the 68-ft roached leech, so the
+8.76-ft roach is explicitly unmodelled. `check_m6_rigging.py`,
+`check_model_scale.py`, `check_registered_deck.py` and the M1–M5 regressions
+pass. Render: `renders/m6-exterior-rig.png`.
+
+Active remaining work: measured oak waterway/spiled deck edge (M4). Individual
+side planking is deferred pending a future user specification. M5 remains
+closed; M6 is closed with the roach qualification above.
+
+## PREVIOUS — 2026-11-13: M5 cabin fit-out increment
 
 **Current verified assembly: 841 parts**, 1:1/mm, app build 347 s, no warnings.
 The M5 cabin increment adds **49 valid members**: 8 sole boards, 8 settee parts,

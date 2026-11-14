@@ -1,6 +1,13 @@
 # Kathryn — model gap review
 
-## Latest checkpoint — 2026-11-13: M5 cabin fit-out
+## Latest checkpoint — 2026-11-13: M6 rigging and sails
+
+Current model: **876 parts**, no warnings. M6 registers 33 rigging/fitting
+parts and two S08 reference sails. Jib dimensions match S08; main luff/foot
+match with the 8.76-ft roach unmodelled. Active remaining work is the measured
+oak waterway/spiled deck edge; side planking is deferred pending a user spec.
+
+## Previous checkpoint — 2026-11-13: M5 cabin fit-out
 
 Current model: **841 valid parts**, 1:1/mm, app build 347 s, no warnings.
 The M4 deck is a 237-board standard-lumber schedule with beam-centred butts,
@@ -172,7 +179,8 @@ the 439-part hollow enclosure with individual centreline/frame/repair structure.
 | S-C01 | Separate keelson/scarf, hollow trunk, real board passage and integrated mast supports pass; fine historical joint/stowage uncertainties are explicit. | M2 complete |
 | S-F01 | Registered frame construction, qualified older bottoms and repair-pattern companions, real mortises/underpasses and supported clamps pass. Hidden planes, some pairings and fine joints remain explicit reconstruction limits. | M3 complete against checks |
 | S-B01 | Deck planking is complete; side planking/lining is deferred pending a user specification; measured waterway/spiled edge remain open. | M4 |
-| S-A01 | M5 cabin fit-out, inspection set, evidence list and whole-vessel cutaway complete; M4 side-board/waterway gaps are tracked under S-B01. | M5 complete |
+| S-A01 | M5 cabin fit-out and inspection complete. M6 rigging/fittings and S08 demonstration sails complete except the main roach. | M5/M6 complete (qualified) |
+| S-R01 | Rigging lines, mast/chainplate/bowsprit fittings and sails. | M6 complete with main-roach qualification |
 
 Each milestone closes by its documented acceptance criteria and gap analysis;
 multiple modification/review cycles may be needed within a milestone.
