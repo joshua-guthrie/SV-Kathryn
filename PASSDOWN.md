@@ -13,9 +13,9 @@ M1/M2/hatch/companionway/scale regressions pass. Review: `milestones/M5.md`,
 M5 cabin fit-out, inspection set and whole-vessel cutaway are complete. The
 marked stern protrusion was the transom frames/braces trimmed to the filled
 outer hull; they and the cabin fit-out now pass
-`checks/check_interior_containment.py` with zero outside volume. M4 side
-planking/individual side lining and the measured waterway remain open and are
-tracked separately; do not register the failing hull strake prototype.
+`checks/check_interior_containment.py` with zero outside volume. Individual side planking/lining is **deferred by user decision** pending a
+future detailed specification; do not register the hull strake prototype. The
+measured waterway/spiled deck edge remain open M4 deck work.
 
 ## PREVIOUS — 2026-11-11: M4 deck planking implemented and verified
 
