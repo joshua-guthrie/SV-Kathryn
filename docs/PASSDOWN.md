@@ -1,6 +1,35 @@
 # Passdown — Kathryn sailboat
 
-## LATEST — 2026-11-13: M6 rigging and sails
+## LATEST — 2026-11-14: src/ cleanup finished, waterway trimmed, clean-build gate
+
+**Current verified assembly: 874 registered entries** (872 parts plus the 2 S08
+reference sails), 1:1/mm, build 234.8 s model + 14.7 s STEP + 154.4 s GLB, no
+warnings. The interrupted cleanup is complete: commit 403cc6c restores the
+vessel `model.py` (d86d3c2 had accidentally committed the frame-ledger script),
+commits the `parents[2]`/`sys.path`/cache-key path fixes, and finishes the
+`src/` + `docs/` layout. `check_model_scale.py`, `check_m4_deck_pattern.py`,
+`prototype_deck_boards.py` and `check_registered_deck.py` pass.
+
+The provisional M4 oak waterway (3341177) is trimmed to the deck margins: the
+fixed-width sweep no longer crosses the centreline at the fine ends, and it
+butts against the stern moulding instead of sharing its volume. Per side
+5.0829 ft3 (10.1658 total), top 6.4720, below-deck depth 3.6938; deck exterior
+matches the pre-M4 baseline; conservation 0.064 ppm.
+
+Post-commit gate (53eb028): **always verify the committed tree, not only the
+worktree.** Run `./project-git status --short` (empty) and
+`python src/checks/check_committed_build.py`. The check archives the ref, does
+a full clean `python -m soma build` with no caches or app state, and runs the
+scale and registered-deck checks there. HEAD 53eb028 passes: **574.6 s build,
+874 entries, 0 warnings, 624.8 s including checks.** Details in
+`docs/VERSION_HISTORY.md`.
+
+Active remaining work is unchanged: measured oak waterway section and the
+spiled/tapered deck edge (M4). Individual side planking remains deferred by
+user decision. M5 and M6 are closed (M6 with the unmodelled 8.76-ft mainsail
+roach qualification).
+
+## PREVIOUS — 2026-11-13: M6 rigging and sails
 
 **Current verified assembly: 876 parts**, 1:1/mm, app build no warnings
 (model 222.6 s, STEP 22.0 s, GLB 167.4 s). M6 adds **33 rigging/fitting parts**

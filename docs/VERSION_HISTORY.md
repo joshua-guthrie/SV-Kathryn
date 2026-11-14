@@ -29,7 +29,8 @@ the metadata can be moved into `.git` and normal `git` commands will work.
 ## Post-commit build verification
 
 The interrupted src/ cleanup showed that a clean working tree is not enough:
-the committed tree must build on its own. After every commit run
+the committed tree must build on its own. After every commit that touches
+model geometry, `src/`, checks, build inputs or reference data, run
 
 ```sh
 ./project-git status --short          # must print nothing
