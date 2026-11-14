@@ -1,25 +1,27 @@
 {
   "status": "passed",
   "registered_boards": 237,
-  "registered_waterways": 4,
+  "registered_waterways": 2,
   "registered_scarfs": 1,
-  "assembly_parts": 876,
+  "assembly_parts": 874,
   "bounds_mm": [
     [
-      -2550.61,
+      -2550.584,
       -7843.52,
-      2160.597
+      2079.694
     ],
     [
-      2550.61,
+      2550.584,
       7737.407,
       2839.416
     ]
   ],
-  "bbox_max_error_mm": 0.0,
-  "map_volume_relative_error": -7.994825197394824e-05,
-  "high_accuracy_material_error_ppm": 0.06856246676394241,
-  "max_board_ft": 11.908775549989645,
+  "bbox_max_error_mm": 0.026000000000294676,
+  "map_volume_relative_error": -6.409571295762369e-05,
+  "waterway_top_volume_ft3": 6.472039989150393,
+  "waterway_depth_volume_ft3": 5.48319743513678,
+  "high_accuracy_material_error_ppm": 0.06400351953111778,
+  "max_board_ft": 11.931599222813894,
   "internal_butts": 123,
   "missing_mesh_faces": [],
   "aggregate_backing": false

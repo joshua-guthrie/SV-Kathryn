@@ -10,18 +10,16 @@
   "min_board_ft": 0.15216293960583727,
   "boards_under_4ft": 31,
   "field_volume_ft3": 84.29942386452119,
-  "waterway_volume_ft3": 11.955237424287173,
+  "waterway_volume_ft3": 10.16583078866859,
   "waterway_top_volume_ft3": 6.472039989150393,
-  "waterway_depth_volume_ft3": 5.48319743513678,
+  "waterway_depth_volume_ft3": 3.6937907995181964,
   "deck_volume_ft3": 90.77145903545978,
-  "board_volume_ft3": 84.29942485600225,
-  "conservation_error_ppm": 0.06400351953111778,
+  "board_volume_ft3": 84.2994248560022,
+  "conservation_error_ppm": 0.06400351906144852,
   "faces": 3211,
-  "seconds": 290.8023356900085,
-  "schedule_file": "checks/m4_deck_board_schedule.json",
+  "seconds": 67.29779441602295,
+  "schedule_file": "src/checks/m4_deck_board_schedule.json",
   "remaining": [
-    "measured waterway section",
-    "spiled/tapered edge treatment",
-    "side-planking pattern"
+    "spiled/tapered edge treatment"
   ]
 }

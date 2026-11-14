@@ -143,7 +143,7 @@ def check():
     assert build['status'] == 'ok' and not build['warnings']
     registered = [part for part in model if part['group'].startswith('Deck/Planking/')]
     assert len(registered) == len(boards), ('Registered board count', len(registered), len(boards))
-    assert sum(part['group'].startswith('Deck/Waterway') for part in model) == 4
+    assert sum(part['group'].startswith('Deck/Waterway') for part in model) == 2
     assert sum(part['group'].startswith('Deck/Scarfs/Kingplank') for part in model) == 1
     assert not any('Cambered deck' == part['name'] for part in model), 'Aggregate backing returned'
     assert not any(any(word in part['name'].lower() or word in part['group'].lower()

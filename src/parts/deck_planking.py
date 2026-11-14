@@ -62,14 +62,8 @@ class Joint:
 
 
 @lru_cache(maxsize=1)
-def _waterway_split():
-    """Separate the deck margin outboard of the clamp from the plank field.
-
-    The margin is a provisional oak waterway, following the accepted clamp
-    curve. Its exact section is still to be measured; this split only removes
-    the unbraced edge from the standard-lumber plank field.
-    """
-    deck = hull.make_deck()
+def _waterway_tools():
+    """Plan prisms of the 5.5-in deck margin, one per side."""
     aft, fore = hull.SECTIONS[0][0] - .5, hull.SECTIONS[-1][0] + .5
     positions = np.linspace(aft, fore, max(24, int((fore - aft) / .25) + 2))
     tools = []
@@ -82,6 +76,19 @@ def _waterway_split():
         tool = cq.Workplane('XY').polyline([*inner, *outer]).close().extrude(20).val()
         assert tool.isValid() and len(tool.Solids()) == 1, 'Invalid waterway tool'
         tools.append(tool)
+    return tuple(tools)
+
+
+@lru_cache(maxsize=1)
+def _waterway_split():
+    """Separate the deck margin outboard of the clamp from the plank field.
+
+    The margin is a provisional oak waterway, following the accepted clamp
+    curve. Its exact section is still to be measured; this split only removes
+    the unbraced edge from the standard-lumber plank field.
+    """
+    deck = hull.make_deck()
+    tools = _waterway_tools()
     margins = tuple(deck.intersect(tool) for tool in tools)
     field = deck.cut(*tools)
     total = sum(shape.Volume(1e-9) for shape in (field, *margins))
@@ -103,15 +110,26 @@ def _waterway_depth():
         for forward in positions:
             edge = max(.02, hull.topside_halfwidth(float(forward),
                                                    hull.deck_height(float(forward))))
-            x = sign * (edge - width / 2)
+            inner = max(.02, edge - width)
+            local = edge - inner
+            if local < 1e-4:
+                continue
+            x = sign * (edge + inner) / 2
             top = hull.deck_height(float(forward), x)
             rect = (cq.Workplane('XZ', origin=boat_point(x, forward, 0))
-                    .center(0, top - depth / 2).rect(width, depth).val())
+                    .center(0, top - depth / 2).rect(local, depth).val())
             wires.append(rect)
         body = cq.Solid.makeLoft(wires, ruled=True)
         assert body.isValid() and len(body.Solids()) == 1, 'Invalid swept waterway'
+        # The sections narrow to the margin at the ends so the timber never
+        # crosses the centreline or overlaps its opposite number.
         body = body.intersect(hull.solid_envelope())
         assert body.isValid() and len(body.Solids()) == 1, 'Waterway must stay inside hull'
+        # The sheer sweep continues into the stern moulding above the deck. The
+        # moulding is the finished margin there; butt the waterway against it
+        # instead of sharing its volume.
+        body = body.cut(hull.stern_moulding())
+        assert body.isValid() and len(body.Solids()) == 1, 'Waterway/stern moulding overlap'
         bodies.append(body)
     return tuple(bodies)
 

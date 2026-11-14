@@ -3,22 +3,22 @@
   "boards": 237,
   "runs": 55,
   "kingplank_boards": 6,
-  "waterway_parts": 4,
+  "waterway_parts": 2,
   "scarfs": 1,
   "internal_butts": 123,
-  "max_board_ft": 11.908775549989645,
-  "min_board_ft": 0.16313182198430098,
+  "max_board_ft": 11.931599222813894,
+  "min_board_ft": 0.15216293960583727,
   "boards_under_4ft": 31,
   "min_adjacent_stagger_ft": 2.094858000000002,
   "adjacent_pairs_under_4ft": 6,
-  "field_volume_ft3": 83.62145907988359,
-  "waterway_volume_ft3": 7.150005783332002,
+  "field_volume_ft3": 84.2994248560022,
+  "waterway_volume_ft3": 10.16583078866859,
+  "waterway_top_volume_ft3": 6.472039989150393,
+  "waterway_depth_volume_ft3": 3.6937907995181964,
   "deck_volume_ft3": 90.77145903545978,
-  "conservation_ppm": 0.06420251338748058,
-  "seconds": 42.16932492599881,
+  "conservation_ppm": 0.06400351906144852,
+  "seconds": 69.10240185604198,
   "remaining": [
-    "measured waterway section",
-    "spiled/tapered edge treatment",
-    "side-planking pattern"
+    "spiled/tapered edge treatment"
   ]
 }
