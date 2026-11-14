@@ -4,7 +4,7 @@ from pathlib import Path
 from PIL import Image,ImageOps,ImageDraw
 from render_m1 import render
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 
 
 def main():

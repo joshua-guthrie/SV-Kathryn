@@ -2,12 +2,12 @@
 from pathlib import Path
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 Image.MAX_IMAGE_PIXELS = None
 
 
 def crop(sheet, box, output, size):
-    source = Image.open(ROOT / '2d model' /
+    source = Image.open(ROOT / 'references/drawings' /
                         f'master-pnp-habshaer-md-md1400-md1454-sheet-{sheet:05d}a.tif')
     # Boxes are located on the existing 1440 x 960 review thumbnails.
     box = tuple(round(v * (source.width / 1440 if i % 2 == 0 else source.height / 960))

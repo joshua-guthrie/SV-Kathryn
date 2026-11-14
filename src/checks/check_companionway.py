@@ -6,7 +6,7 @@ from pathlib import Path
 import cadquery as cq
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from parts import deck,deck_beams, hull, framing, interior,centreline,centreline_layout,hull_frames
 from geometry_checks import Contains
 from parts.access import companionway_access

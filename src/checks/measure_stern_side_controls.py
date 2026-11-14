@@ -5,11 +5,11 @@ from pathlib import Path
 import numpy as np
 from PIL import Image,ImageDraw
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 
 def main():
-    package=ROOT/'drawing_package'
+    package=ROOT/'references/drawing_package'
     data=json.loads((package/'stern_remedy_targets.json').read_text())
     manifest=json.loads((package/'manifest.json').read_text())
     view=next(v for v in manifest['views'] if v['id']=='S04-V02')

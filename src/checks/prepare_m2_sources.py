@@ -3,8 +3,8 @@ import json
 from pathlib import Path
 from PIL import Image,ImageDraw
 
-ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'drawing_package'
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/'references/drawing_package'
 Image.MAX_IMAGE_PIXELS=None
 
 
@@ -27,7 +27,7 @@ def main():
         (5,(380,560,830,620),'m2-keelson-trunk-plan-source.png'),
         (5,(705,192,835,272),'m2-mast-partners-source.png'),
         (7,(365,190,430,392),'m2-trunk-section-source.png')):
-        path=ROOT/'2d model'/f'master-pnp-habshaer-md-md1400-md1454-sheet-{sheet:05d}a.tif'
+        path=ROOT/'references/drawings'/f'master-pnp-habshaer-md-md1400-md1454-sheet-{sheet:05d}a.tif'
         with Image.open(path) as image:
             native=tuple(round(v*(image.width/1440 if i%2==0 else image.height/960)) for i,v in enumerate(box))
             crop=image.crop(native).convert('L')

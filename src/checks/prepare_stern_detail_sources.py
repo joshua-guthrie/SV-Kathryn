@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from PIL import Image,ImageDraw
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 
 def main():
     manifest=json.loads((ROOT/'references/drawing_package/manifest.json').read_text())
@@ -14,7 +14,7 @@ def main():
         view=next(v for v in manifest['views'] if v['id']==view_id)
         sx,sy=[n/p for n,p in zip(view['native_size'],view['preview_size'])]
         bounds=tuple(round(v*(sx if i%2==0 else sy)) for i,v in enumerate(box))
-        with Image.open(ROOT/'drawing_package'/view['native_image']) as source:
+        with Image.open(ROOT/'references/drawing_package'/view['native_image']) as source:
             image=source.crop(bounds).convert('RGB')
         image.thumbnail((2000,1400))
         draw=ImageDraw.Draw(image)

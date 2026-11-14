@@ -5,8 +5,8 @@ import time
 from collections import Counter
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import deck_planking
 from parts.openings import framed_openings
 from parts.params import (DECK_BUTT_EDGE_CLEARANCE_FT, DECK_BUTT_TOLERANCE_FT,
@@ -167,7 +167,7 @@ def check():
         conservation_ppm=(board_volume + top_volume - deck_volume) / deck_volume * 1e6,
         seconds=time.monotonic() - start,
         remaining=['spiled/tapered edge treatment'])
-    (ROOT / 'checks/m4_deck_pattern_acceptance.json').write_text(
+    (ROOT / 'src/checks/m4_deck_pattern_acceptance.json').write_text(
         json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
     return result

@@ -5,8 +5,8 @@ from pathlib import Path
 import numpy as np
 import cadquery as cq
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import deck_beams,hull,centreline,centreline_layout as layout,spars,interior,framing,deck
 from parts.params import *
 from parts.primitives import block
@@ -142,4 +142,4 @@ def check():
 
 if __name__=='__main__':
     report=check()
-    (ROOT/'checks/m2_acceptance.json').write_text(json.dumps(report,indent=2)+'\n')
+    (ROOT/'src/checks/m2_acceptance.json').write_text(json.dumps(report,indent=2)+'\n')

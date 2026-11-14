@@ -5,7 +5,7 @@ from pathlib import Path
 import cadquery as cq
 import numpy as np
 
-sys.path.insert(0, str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
 from parts import beam_layout,deck,deck_beams,hull,framing,spars,centreline,centreline_layout,hull_frames
 from parts.openings import hatch_openings, framed_openings
 from parts.params import (boat_point,DECK_BEAM_SIDED_FT,DECK_BEAM_DEPTH_FT,

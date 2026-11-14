@@ -11,7 +11,7 @@ from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from PIL import Image,ImageDraw,ImageOps
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'references/loc_photos/LOC_Kathryn_photos'
 URLS={
     'item':'https://www.loc.gov/item/md1454/?fo=json',

@@ -14,9 +14,9 @@ from pathlib import Path
 import numpy as np
 from PIL import Image, ImageDraw
 
-ROOT = Path(__file__).resolve().parents[1]
-PACKAGE = ROOT / 'drawing_package'
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[2]
+PACKAGE = ROOT / 'references/drawing_package'
+sys.path.insert(0, str(ROOT / 'src'))
 from parts.openings import framed_openings
 
 # Reviewed edge pairs in the existing 2000-pixel preview, bow to stern.

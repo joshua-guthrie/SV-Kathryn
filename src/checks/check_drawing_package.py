@@ -7,8 +7,8 @@ from urllib.parse import unquote, urlsplit
 import numpy as np
 from PIL import Image
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'drawing_package'
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / 'references/drawing_package'
 Image.MAX_IMAGE_PIXELS = None
 
 

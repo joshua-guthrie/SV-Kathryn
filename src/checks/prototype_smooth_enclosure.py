@@ -5,8 +5,8 @@ import time
 from pathlib import Path
 import numpy as np
 import cadquery as cq
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import hull,stern_layout
 from parts.params import *
 from parts.board_tools import segmented_loft,split_material,plane_x
@@ -49,7 +49,7 @@ def main():
     planking=planking.cut(centreboard_slot())
     assert planking.isValid() and len(planking.Solids())==1
     print('Planking',len(planking.Faces()),'faces; volume',planking.Volume(),'elapsed',time.time()-start,flush=True)
-    (ROOT/'checks/m4_loft_prototype.json').write_text(json.dumps(dict(
+    (ROOT/'src/checks/m4_loft_prototype.json').write_text(json.dumps(dict(
         source_boundary_max_deviation_inches=error*12,envelope_relative_volume_difference=relative,
         old_outer_faces=len(old_outer.Faces()),new_outer_faces=len(outer.Faces()),new_planking_faces=len(planking.Faces()),
         source_boundary_samples=len(distances)),indent=2)+'\n')

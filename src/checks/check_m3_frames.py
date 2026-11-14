@@ -5,8 +5,8 @@ from pathlib import Path
 import numpy as np
 import cadquery as cq
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import deck_beams,hull,hull_frames as hf,frame_layout as schedule,centreline,centreline_layout as cl,framing,deck,spars
 from parts.params import *
 from geometry_checks import Contains
@@ -162,4 +162,4 @@ def check():
 
 if __name__=='__main__':
     report=check()
-    (ROOT/'checks/m3_acceptance.json').write_text(json.dumps(report,indent=2)+'\n')
+    (ROOT/'src/checks/m3_acceptance.json').write_text(json.dumps(report,indent=2)+'\n')

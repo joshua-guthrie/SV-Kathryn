@@ -10,8 +10,8 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import hull
 from parts.params import CABIN_AFT_FT,CABIN_FORE_FT,LINE_STATIONS_FT
 
@@ -123,7 +123,7 @@ def point_distances(points,segments):
 
 
 def section_overlay(view_id,limits):
-    package=ROOT/'drawing_package'
+    package=ROOT/'references/drawing_package'
     manifest=json.loads((package/'manifest.json').read_text())
     view=next(v for v in manifest['views'] if v['id']==view_id)
     trace=json.loads((package/'traces'/f'{view_id}.json').read_text())
@@ -185,7 +185,7 @@ def main():
     render('m1-longitudinal-cutaway.png',True)
     result=[section_overlay('S06-V01',(LINE_STATIONS_FT[7],LINE_STATIONS_FT[9])),
             section_overlay('S07-V02',(CABIN_AFT_FT+.3,CABIN_FORE_FT-.3))]
-    (ROOT/'checks/m1_section_comparison.json').write_text(json.dumps(result,indent=2)+'\n')
+    (ROOT/'src/checks/m1_section_comparison.json').write_text(json.dumps(result,indent=2)+'\n')
     canvas=Image.new('RGB',(1800,1780),'white')
     draw=ImageDraw.Draw(canvas)
     draw.text((24,18),'KATHRYN M1 - CONTINUOUS OPEN INTERIOR',fill='black',font_size=30)

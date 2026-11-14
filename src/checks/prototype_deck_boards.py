@@ -4,8 +4,8 @@ import sys
 import time
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import deck_planking
 
 
@@ -57,11 +57,11 @@ def check():
         / deck_volume * 1e6,
         faces=sum(len(board['shape'].Faces()) for board in boards),
         seconds=time.monotonic() - start,
-        schedule_file='checks/m4_deck_board_schedule.json',
+        schedule_file='src/checks/m4_deck_board_schedule.json',
         remaining=['spiled/tapered edge treatment'])
-    (ROOT / 'checks/m4_deck_partition.json').write_text(
+    (ROOT / 'src/checks/m4_deck_partition.json').write_text(
         json.dumps(result, indent=2) + '\n')
-    (ROOT / 'checks/m4_deck_board_schedule.json').write_text(
+    (ROOT / 'src/checks/m4_deck_board_schedule.json').write_text(
         json.dumps(schedule, indent=2) + '\n')
     print(json.dumps(result, indent=2), flush=True)
     return result

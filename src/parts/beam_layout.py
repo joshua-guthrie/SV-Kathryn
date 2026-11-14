@@ -2,7 +2,7 @@
 import json
 from pathlib import Path
 
-_RECORD = json.loads((Path(__file__).resolve().parents[1] /
+_RECORD = json.loads((Path(__file__).resolve().parents[2] /
                       'references/drawing_package/m4_deck_schedule.json').read_text())
 
 BEAMS = _RECORD['members']

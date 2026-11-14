@@ -5,8 +5,8 @@ from pathlib import Path
 import numpy as np
 from PIL import Image,ImageDraw
 
-ROOT=Path(__file__).resolve().parents[1]
-PACKAGE=ROOT/'drawing_package'
+ROOT=Path(__file__).resolve().parents[2]
+PACKAGE=ROOT/'references/drawing_package'
 
 # Reviewed timber edge pairs in the 2000-pixel S05-V02 preview. These transform
 # back to native scan pixels before registration. 'o' is the explicit older

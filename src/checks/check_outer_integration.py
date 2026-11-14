@@ -4,7 +4,7 @@ from pathlib import Path
 import cadquery as cq
 import numpy as np
 
-sys.path.insert(0,str(Path(__file__).resolve().parents[1]))
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
 from parts import bow,hull,spars,rails,deck,interior,equipment
 from parts.params import *
 from check_hatches import overlap

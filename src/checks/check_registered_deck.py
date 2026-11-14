@@ -5,23 +5,23 @@ from pathlib import Path
 
 import numpy as np
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def check():
     build = json.loads((ROOT / '.soma/build.json').read_text())
     assert build['status'] == 'ok' and not build['warnings']
     assert build['finished'] >= max((ROOT / name).stat().st_mtime
-                                    for name in ('model.py', 'parts/params.py',
-                                                 'parts/deck_planking.py',
-                                                 'parts/deck_beams.py', 'parts/beam_layout.py',
+                                    for name in ('model.py', 'src/parts/params.py',
+                                                 'src/parts/deck_planking.py',
+                                                 'src/parts/deck_beams.py', 'src/parts/beam_layout.py',
                                                  'references/drawing_package/m4_deck_schedule.json'))
     parts = json.loads((ROOT / '.soma/model.map.json').read_text())['parts']
     boards = [p for p in parts if p['group'].startswith('Deck/Planking/')]
     waterways = [p for p in parts if p['group'].startswith('Deck/Waterway')]
     scarfs = [p for p in parts if p['group'].startswith('Deck/Scarfs/Kingplank')]
-    expected = json.loads((ROOT / 'checks/m4_deck_partition.json').read_text())
-    baseline = json.loads((ROOT / 'checks/m4_deck_baseline.json').read_text())['part']
+    expected = json.loads((ROOT / 'src/checks/m4_deck_partition.json').read_text())
+    baseline = json.loads((ROOT / 'src/checks/m4_deck_baseline.json').read_text())['part']
     assert len(boards) == expected['boards'], ('Missing deck boards', len(boards), expected['boards'])
     assert len(waterways) == expected['waterway_parts'], (
         'Missing waterway parts', len(waterways), expected['waterway_parts'])
@@ -64,7 +64,7 @@ def check():
                   max_board_ft=expected['max_board_ft'],
                   internal_butts=expected['internal_butts'],
                   missing_mesh_faces=missing, aggregate_backing=False)
-    (ROOT / 'checks/m4_registered_deck.json').write_text(json.dumps(result, indent=2) + '\n')
+    (ROOT / 'src/checks/m4_registered_deck.json').write_text(json.dumps(result, indent=2) + '\n')
     print(f'PASS: {len(boards)} exported deck boards + {len(waterways)} waterway parts; '
           f'conserved material, unchanged exterior, beam-centred pattern, no backing or missing mesh faces.')
     return result

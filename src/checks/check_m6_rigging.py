@@ -4,8 +4,8 @@ import math
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import rigging
 
 
@@ -43,7 +43,7 @@ def check():
                   unresolved=['main-sail roached leech not modelled',
                               'exact cleat/pin-rail positions',
                               'hoops/hanks intentionally omitted per S08 note'])
-    (ROOT / 'checks/m6_rigging_acceptance.json').write_text(
+    (ROOT / 'src/checks/m6_rigging_acceptance.json').write_text(
         json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
     return result

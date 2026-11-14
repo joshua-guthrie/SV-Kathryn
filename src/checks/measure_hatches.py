@@ -3,7 +3,7 @@ import json
 from pathlib import Path
 from PIL import Image, ImageDraw
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 Image.MAX_IMAGE_PIXELS = None
 
 
@@ -42,7 +42,7 @@ def main():
         print(f'{name}: {width:.3f} ft across x {length:.3f} ft fore/aft')
     draw.line((164.5, 835, 914.5, 835), fill='red', width=3)
     view.save(ROOT / 'renders/hatch-scale-measurements.png')
-    (ROOT / 'checks/hatch_measurements.json').write_text(json.dumps(ledger, indent=2) + '\n')
+    (ROOT / 'src/checks/hatch_measurements.json').write_text(json.dumps(ledger, indent=2) + '\n')
     print('Native ruler calibration:', pixels_per_ft, 'px/ft; printed-scale check:', dpi_check)
 
 

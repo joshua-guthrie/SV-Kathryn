@@ -10,8 +10,8 @@ from scipy.ndimage import distance_transform_edt
 
 from drawing_evidence import NOTES, STATIONS, OFFSETS, OCR_CORRECTIONS
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'drawing_package'
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / 'references/drawing_package'
 Image.MAX_IMAGE_PIXELS = None
 
 
@@ -42,7 +42,7 @@ def checked_data():
              'SHEER_WIDTHS','CHINE_TOP_WIDTHS','CHINE_BOTTOM_WIDTHS']
     keys = list(OFFSETS)[:7]
     values = {}
-    for node in ast.parse((ROOT / 'parts/params.py').read_text()).body:
+    for node in ast.parse((ROOT / 'src/parts/params.py').read_text()).body:
         if isinstance(node, ast.Assign) and isinstance(node.targets[0], ast.Name):
             if node.targets[0].id in names:
                 values[node.targets[0].id] = ast.literal_eval(node.value.func.value).split()

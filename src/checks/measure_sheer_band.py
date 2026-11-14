@@ -7,8 +7,8 @@ import json
 from pathlib import Path
 from PIL import Image,ImageDraw
 
-ROOT=Path(__file__).resolve().parents[1]
-OUT=ROOT/'drawing_package'
+ROOT=Path(__file__).resolve().parents[2]
+OUT=ROOT/'references/drawing_package'
 
 
 def main():

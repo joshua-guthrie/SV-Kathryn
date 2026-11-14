@@ -3,8 +3,8 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import hull, interior
 from parts.deck import access_geometry
 from parts.params import (CABIN_AFT_FT, CABIN_FORE_FT, INTERIOR_SKIN_FT,
@@ -70,7 +70,7 @@ def check():
         cabin_fore_aft_ft=[CABIN_AFT_FT, CABIN_FORE_FT], sole_ft=sole_z,
         unresolved=['exact historic settee/berth sections', 'stove model and flue route',
                     'individual locker door joinery', 'hold/forepeak loose fit-out absent per survey'])
-    (ROOT / 'checks/m5_cabin_acceptance.json').write_text(
+    (ROOT / 'src/checks/m5_cabin_acceptance.json').write_text(
         json.dumps(evidence, indent=2) + '\n')
     print(json.dumps(evidence, indent=2))
     return evidence

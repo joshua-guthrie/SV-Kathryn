@@ -4,7 +4,7 @@ from pathlib import Path
 import vtk
 from PIL import Image, ImageDraw, ImageOps
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 
 
 def render(filename, mode='closed'):

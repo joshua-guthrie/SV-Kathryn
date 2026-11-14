@@ -3,8 +3,8 @@ import json
 import sys
 from pathlib import Path
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import deck,hull
 from parts.params import *
 
@@ -34,7 +34,7 @@ def check():
                 topsides_component_length_mm=length,
                 recorded_50ft_reference_mm=50*304.8,parts=len(parts),
                 viewer_units='Installed SOMA measurement display is fixed to millimetres; no feet/inches display switch found.')
-    (ROOT/'checks/model_scale_acceptance.json').write_text(json.dumps(result,indent=2)+'\n')
+    (ROOT/'src/checks/model_scale_acceptance.json').write_text(json.dumps(result,indent=2)+'\n')
     print(f'PASS: 1:1, {actual:.6f} mm/ft; wood body {physical_span:.2f} mm; 50-ft reference 15,240 mm; {len(parts)} parts; STEP explicitly mm.')
 
 

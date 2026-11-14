@@ -16,13 +16,13 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import hull,deck,rails,stern_layout
 from parts.params import *
 
 OUT=ROOT/'renders/stern_review'
-PACKAGE=ROOT/'drawing_package'
+PACKAGE=ROOT/'references/drawing_package'
 RED='#cf2929';BLUE='#006fae';AMBER='#a86900';GREEN='#16704a'
 
 
@@ -294,7 +294,7 @@ def measurements():
                   handle_radius_ft=HELM_HANDLE_RADIUS_FT,cabin_aft_ft=CABIN_AFT_FT),
         current_stern_parts=stern_parts,
         overall_stern_acceptance=False,status='Remedy required; other milestones on hold')
-    (ROOT/'checks/stern_review_measurements.json').write_text(json.dumps(result,indent=2)+'\n')
+    (ROOT/'src/checks/stern_review_measurements.json').write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps({k:result[k] for k in ('snapshot','margins','deck_widths','profile_guide_residuals','helm')},indent=2),flush=True)
     return result
 

@@ -12,9 +12,9 @@ import numpy as np
 from scipy.interpolate import PchipInterpolator
 from PIL import Image,ImageDraw
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
-PACKAGE=ROOT/'drawing_package'
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
+PACKAGE=ROOT/'references/drawing_package'
 
 
 def main():

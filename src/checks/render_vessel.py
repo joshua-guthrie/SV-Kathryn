@@ -9,7 +9,7 @@ from pathlib import Path
 import numpy as np
 import vtk
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 DIRECTIONS = {"iso": (1, 1, .65), "side": (1, 0, 0),
               "aft": (0, 1, .25), "plan": (0, 0, 1)}
 

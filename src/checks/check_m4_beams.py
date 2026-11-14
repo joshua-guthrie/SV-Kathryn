@@ -4,8 +4,8 @@ import struct
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import deck_beams, hull_frames
 from parts.beam_layout import (BEAMS, STERN_TIMBERS, beam_name, forward,
                                opening_splits, opening_support)
@@ -20,7 +20,7 @@ def check():
     build = json.loads((ROOT / '.soma/build.json').read_text())
     assert build['status'] == 'ok' and not build['warnings']
     assert build['finished'] >= max((ROOT / name).stat().st_mtime for name in (
-        'model.py', 'parts/deck_beams.py', 'parts/beam_layout.py',
+        'model.py', 'src/parts/deck_beams.py', 'src/parts/beam_layout.py',
         'references/drawing_package/m4_deck_schedule.json'))
     schedule = json.loads((ROOT / 'references/drawing_package/m4_deck_schedule.json').read_text())
     assert len(schedule['members']) == EXPECTED_SETS
@@ -106,7 +106,7 @@ def check():
                   stern_timbers=[STERN_TIMBERS[0]['label']],
                   unresolved=['member d identity', '7c counter line F=-1.05'],
                   missing_mesh_faces=missing)
-    (ROOT / 'checks/m4_beams_acceptance.json').write_text(json.dumps(result, indent=2) + '\n')
+    (ROOT / 'src/checks/m4_beams_acceptance.json').write_text(json.dumps(result, indent=2) + '\n')
     print(f'PASS: {EXPECTED_SETS} measured sets -> {EXPECTED_BEAMS} registered beams; '
           'stock, opening splits, stanchions, stern timbers and actual export all agree.')
     return result

@@ -15,8 +15,8 @@ from PIL import Image, ImageDraw
 from drawing_catalog import SHEET_TITLES, VIEWS
 from ocr_tesseract import Tesseract
 
-ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'drawing_package'
+ROOT = Path(__file__).resolve().parents[2]
+OUT = ROOT / 'references/drawing_package'
 Image.MAX_IMAGE_PIXELS = None
 MODEL_URL = 'https://raw.githubusercontent.com/tesseract-ocr/tessdata_fast/main/eng.traineddata'
 
@@ -42,7 +42,7 @@ def images():
                 'coordinate_system': 'original scan pixels; x right, y down',
                 'sources': [], 'views': []}
     for sheet, title in SHEET_TITLES.items():
-        path = ROOT / '2d model' / f'master-pnp-habshaer-md-md1400-md1454-sheet-{sheet:05d}a.tif'
+        path = ROOT / 'references/drawings' / f'master-pnp-habshaer-md-md1400-md1454-sheet-{sheet:05d}a.tif'
         folder = OUT / f'S{sheet:02d}'
         folder.mkdir(parents=True, exist_ok=True)
         with Image.open(path) as source:

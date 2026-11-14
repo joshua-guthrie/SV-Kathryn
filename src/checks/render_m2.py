@@ -9,8 +9,8 @@ matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 from PIL import Image,ImageDraw,ImageOps
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import hull,centreline,centreline_layout as layout
 from parts.params import *
 from render_m1 import render
@@ -73,7 +73,7 @@ def source_comparison():
                 keelson_loft_sections=len(positions),source_pick_uncertainty_ft=data['board_pick_uncertainty_ft'],
                 vertical_basis=data['board_vertical_basis'],board_pose_note=data['board_pose_note'],
                 source_overlay='renders/m2-source-profile-comparison.png')
-    (ROOT/'checks/m2_source_comparison.json').write_text(json.dumps(record,indent=2)+'\n')
+    (ROOT/'src/checks/m2_source_comparison.json').write_text(json.dumps(record,indent=2)+'\n')
     print('M2 optimized keelson base error:',error*12,'in;',len(positions),'sections',flush=True)
 
 

@@ -8,8 +8,8 @@ import json
 import sys
 from pathlib import Path
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import hull, hull_frames, interior
 
 
@@ -35,7 +35,7 @@ def check():
                   transom_members=len(transom), outside_volume_ft3=0.0,
                   criterion='each member cut by continuous_interior has <=1e-4 ft3 outside',
                   source=['S07-V01/V02', 'S04-V01/V04', 'S05-27 transom framing'])
-    (ROOT / 'checks/interior_containment_acceptance.json').write_text(
+    (ROOT / 'src/checks/interior_containment_acceptance.json').write_text(
         json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
     return result

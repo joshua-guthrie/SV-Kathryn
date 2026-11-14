@@ -7,8 +7,8 @@ from pathlib import Path
 import numpy as np
 from OCP.BRepTools import BRepTools
 
-ROOT = Path(__file__).resolve().parents[1]
-sys.path.insert(0, str(ROOT))
+ROOT = Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts.spars import make_mast
 from soma.mesher import mesh_shape
 
@@ -17,7 +17,7 @@ def exported_mast_mesh():
     """Inspect the actual full-size viewer mesh, avoiding an expensive remesh."""
     build = json.loads((ROOT / '.soma/build.json').read_text())
     assert build['status'] == 'ok'
-    assert build['finished'] >= (ROOT / 'parts/spars.py').stat().st_mtime
+    assert build['finished'] >= (ROOT / 'src/parts/spars.py').stat().st_mtime
     raw = (ROOT / '.soma/model.glb').read_bytes()
     json_size = struct.unpack_from('<I', raw, 12)[0]
     document = json.loads(raw[20:20 + json_size])
@@ -64,7 +64,7 @@ def check():
                             meshed_to_CAD_area_ratio=ratio, missing_faces=missing))
     result = dict(status='passed', accurate_volume_ft3=mast.Volume(1e-9),
                   original_accurate_volume_ft3=before_volume, scales=results)
-    (ROOT / 'checks/mast_mesh_acceptance.json').write_text(json.dumps(result, indent=2) + '\n')
+    (ROOT / 'src/checks/mast_mesh_acceptance.json').write_text(json.dumps(result, indent=2) + '\n')
     print('PASS: complete mast viewer surfaces at 1:1, 1:32 and 1:64; original material conserved.', flush=True)
     return result
 

@@ -4,8 +4,8 @@ import math
 from pathlib import Path
 from PIL import Image,ImageDraw
 
-ROOT=Path(__file__).resolve().parents[1]
-PACKAGE=ROOT/'drawing_package'
+ROOT=Path(__file__).resolve().parents[2]
+PACKAGE=ROOT/'references/drawing_package'
 
 
 def main():

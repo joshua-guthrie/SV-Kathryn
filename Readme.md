@@ -8,6 +8,12 @@ A 3D CAD model of the *Kathryn*, a historic Chesapeake Bay skipjack sailboat bui
 
 The model was created using SOMA CAD and AI-assisted CAD modeling, using historic vessel drawings and archival photographs as references.
 
+## Model files
+
+- [Whole-boat STL](SV-Kathryn.stl)
+- [SOMA project archive](SV-Kathryn.soma)
+- [Source and reference package](src/) / [references/](references/)
+
 ## About Skipjacks
 
 The Chesapeake Bay skipjack is a traditional wooden sailing vessel developed in the late 19th century to harvest oysters from the shallow waters of the Chesapeake Bay.

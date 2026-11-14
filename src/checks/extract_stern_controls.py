@@ -4,7 +4,7 @@ import numpy as np
 from scipy.ndimage import convolve,maximum_filter
 from PIL import Image,ImageDraw
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 
 if __name__=='__main__':
     path=ROOT/'renders/stern-deck-source.png'

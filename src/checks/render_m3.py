@@ -10,15 +10,15 @@ import matplotlib
 matplotlib.use('Agg')
 import matplotlib.pyplot as plt
 
-ROOT=Path(__file__).resolve().parents[1]
-sys.path.insert(0,str(ROOT))
+ROOT=Path(__file__).resolve().parents[2]
+sys.path.insert(0, str(ROOT / 'src'))
 from parts import hull,hull_frames as hf,frame_layout,centreline,framing
 from parts.params import *
 from render_m1 import render,edge_segments,point_distances
 
 
 def section(view_id,number):
-    package=ROOT/'drawing_package'
+    package=ROOT/'references/drawing_package'
     manifest=json.loads((package/'manifest.json').read_text())
     cal=json.loads((package/'calibration.json').read_text())
     view=next(v for v in manifest['views'] if v['id']==view_id)
@@ -102,7 +102,7 @@ def main():
            hide_groups=('Hull/Planking envelope',),
            show_names=('Samson post','Bowsprit','Port bowsprit walking board','Starboard bowsprit walking board',*headwork))
     results=[section('S06-V01',4),section('S07-V01',13)]
-    (ROOT/'checks/m3_section_comparison.json').write_text(json.dumps(results,indent=2)+'\n')
+    (ROOT/'src/checks/m3_section_comparison.json').write_text(json.dumps(results,indent=2)+'\n')
     canvas=Image.new('RGB',(1800,1810),'white')
     draw=ImageDraw.Draw(canvas)
     draw.text((25,18),'KATHRYN M3 - FRAMES, KNEES AND REPAIR MEMBERS',fill='black',font_size=28)

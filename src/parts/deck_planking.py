@@ -455,14 +455,14 @@ def _repair_long_boards(boards, selected, order, previous_run, next_run):
     return repaired
 
 
-ROOT = Path(__file__).resolve().parents[1]
+ROOT = Path(__file__).resolve().parents[2]
 CACHE_DIR = ROOT / 'output'
 CACHE_BREP = CACHE_DIR / 'm4_deck_cache.brep'
 CACHE_META = CACHE_DIR / 'm4_deck_cache.json'
 CACHE_SOURCES = (
-    'parts/deck_planking.py', 'parts/board_tools.py', 'parts/params.py',
-    'parts/beam_layout.py', 'parts/framing.py', 'parts/openings.py',
-    'parts/hull.py', 'parts/centreline_layout.py',
+    'src/parts/deck_planking.py', 'src/parts/board_tools.py', 'src/parts/params.py',
+    'src/parts/beam_layout.py', 'src/parts/framing.py', 'src/parts/openings.py',
+    'src/parts/hull.py', 'src/parts/centreline_layout.py',
     'references/drawing_package/m4_deck_schedule.json',
 )
 

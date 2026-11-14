@@ -11,7 +11,7 @@ import matplotlib.pyplot as plt
 from render_m1 import render
 from parts import hull,rails
 
-ROOT=Path(__file__).resolve().parents[1]
+ROOT=Path(__file__).resolve().parents[2]
 OUT=ROOT/'renders/stern_remedy'
 
 
@@ -25,7 +25,7 @@ def top_boundary(shape):
 
 
 def overlays():
-    package=ROOT/'drawing_package'
+    package=ROOT/'references/drawing_package'
     manifest=json.loads((package/'manifest.json').read_text())
     data=json.loads((package/'stern_remedy_targets.json').read_text())
     a,b=json.loads((package/'registration.json').read_text())['transformations']['S04']['grid_x_to_F']
