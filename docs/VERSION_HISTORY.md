@@ -25,3 +25,25 @@ has no configured Git user identity. This identity is scoped to this repository.
 SOMA's automatic Git timeline expects standard `.git` metadata and may not show
 this alternate local history. When that mount is writable in a future session,
 the metadata can be moved into `.git` and normal `git` commands will work.
+
+## Post-commit build verification
+
+The interrupted src/ cleanup showed that a clean working tree is not enough:
+the committed tree must build on its own. After every commit run
+
+```sh
+./project-git status --short          # must print nothing
+python src/checks/check_committed_build.py
+```
+
+The check exports the commit with `project-git archive` into a temporary
+directory (no `.soma`, `output/`, renders or caches), runs a full
+`python -m soma build` there, and requires status `ok`, no warnings, the
+expected part count (874) and a STEP export. It then runs
+`check_model_scale.py` and `check_registered_deck.py` in the clean tree.
+Use `--ref <commit>` to verify an older checkpoint and `--keep` to inspect the
+temporary tree. A failed check keeps the tree and prints its path.
+
+Do not accept a model increment until this check passes for its commit. When
+the part count legitimately changes, update `EXPECTED_PARTS` in the check and
+the count in the commit message together.
