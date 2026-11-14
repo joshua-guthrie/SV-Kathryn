@@ -203,7 +203,7 @@ the earlier footprint/member evidence.
 
 ### Scale-measured footprints
 
-`python checks/measure_hatches.py` records original-TIFF pixel coordinates and
+`python src/checks/measure_hatches.py` records original-TIFF pixel coordinates and
 reproduces `checks/hatch_measurements.json` / `renders/hatch-scale-measurements.png`.
 The 0/10/50-ft ruler gives **150.75 native pixels/ft**, agreeing within 0.5% with
 the 400-dpi, 3/8-in-per-foot printed scale (150 px/ft). Footprint picks have an
@@ -245,11 +245,11 @@ full interior structure is reconstructed.
 
 ### Verification and evidence
 
-- `python checks/check_hatches.py`: clear passages, cover seating and vertical
+- `python src/checks/check_hatches.py`: clear passages, cover seating and vertical
   removal at 0/0.05/0.5/1.5 ft; board/cleat connections; header/carling/half-beam/
   clamp contacts; actual 5.5-in-square sections; roof support joints; 75 bottom
   normal-ray samples; mast/framing clearance.
-- `python checks/check_companionway.py` now includes all the new framing among
+- `python src/checks/check_companionway.py` now includes all the new framing among
   its obstacles. Doorway, stairs, landing, bottom thickness and 0–90° door sweep pass.
 - Prior detail, bow/attachment, chine/transom, body-keel, 35-section aft-keel and
   -35/0/+35 rudder regressions pass.
@@ -257,7 +257,7 @@ full interior structure is reconstructed.
   `hatch-deck-closed.png`, `hatch-deck-open.png`, `hatch-hold-section.png`,
   `hatch-framing-plan.png` inspected. Source comparison is explicitly the local
   support subset; the full frame schedule and station registration are pending.
-- Reproduce views with `python checks/render_hatches.py`. Normal assembly has
+- Reproduce views with `python src/checks/render_hatches.py`. Normal assembly has
   covers seated; open/section/isolated-support views are inspection views.
 
 ## Next milestone

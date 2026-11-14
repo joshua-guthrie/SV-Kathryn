@@ -207,7 +207,7 @@ multiple modification/review cycles may be needed within a milestone.
 - **Validation:** eight original SHA-256 hashes unchanged; native crop/tile pixel
   samples and coordinate transforms verified; OCR/text search, source-table
   distinctions, scales, registration and section-guide data pass
-  `python checks/check_drawing_package.py`. Machine result: `validation.json`.
+  `python src/checks/check_drawing_package.py`. Machine result: `validation.json`.
 
 Full acceptance and source-interpretation decisions are recorded in
 `references/drawing_package/ACCEPTANCE.md`. M0's checked sources specifically distinguish
@@ -306,7 +306,7 @@ verify the static geometry, not manufacture-ready scale hinge tolerances.
 
 - `python -m soma build`: **179 valid single-solid parts**, no warnings;
   `output/model.step` and the live SOMA geometry are current at 1:32.
-- `python checks/check_companionway.py`: continuous doorway and roof/deck
+- `python src/checks/check_companionway.py`: continuous doorway and roof/deck
   passage, low sill, supported treads/stringers/landing, preserved bottom
   material, embedded glazing and door sweep all pass.
 - Existing pass-6 detail checks, source chine/transom checks, bow/spar/strake
@@ -319,7 +319,7 @@ verify the static geometry, not manufacture-ready scale hinge tolerances.
   Source comparison: `renders/kathryn-companionway-source-comparison.png`.
   Detailed evidence: `renders/kathryn-cabin-detail.png`,
   `kathryn-companionway-open.png`, `kathryn-companionway-cutaway.png`.
-  Reproduce the access views with `python checks/render_companionway.py`.
+  Reproduce the access views with `python src/checks/render_companionway.py`.
 
 The local access well and descent are now represented; the broader internal
 fit-out and timber/fastening schedules remain the separate construction-plan

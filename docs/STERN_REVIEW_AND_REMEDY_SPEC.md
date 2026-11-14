@@ -29,13 +29,13 @@ The remaining issue is **more than one incorrect distance**:
 
 ### Figure 1 — current CAD, remaining overall defects
 
-![Current stern with arrows identifying the deck projection, rear rail form and placeholder davits](renders/stern_review/cad-quarter-annotated.png)
+![Current stern with arrows identifying the deck projection, rear rail form and placeholder davits](../renders/stern_review/cad-quarter-annotated.png)
 
 *Actual current CAD, aft-quarter orthographic view. Stern hardware is shown; long spars are suppressed for clarity. This is a diagnostic view, not a camera-calibrated match to the photograph.*
 
 ### Figure 2 — the same vessel's stern reference
 
-![LOC photo 30 annotated with the counter shoulder, davits, external bumper and transom moulding](renders/stern_review/LOC-P30-annotated.png)
+![LOC photo 30 annotated with the counter shoulder, davits, external bumper and transom moulding](../renders/stern_review/LOC-P30-annotated.png)
 
 *LOC-P30: “Detail of stern showing helm and davits and bumper for the push boat.” The photograph controls identification and appearance. Perspective and the water surface do not provide an uncalibrated absolute length or an underwater rudder dimension.*
 
@@ -98,7 +98,7 @@ The user's supplied gallery page **24** is printed photo **23**, the bow constru
 
 ### Figure 3 — classify the source plan before choosing trim curves
 
-![Annotated S04 stern plan identifying the traveller, rail/waterway contours and helm landmarks](renders/stern_review/source-plan-annotated.png)
+![Annotated S04 stern plan identifying the traveller, rail/waterway contours and helm landmarks](../renders/stern_review/source-plan-annotated.png)
 
 *The source's own note/leader identifies item 18. Trace wood, rail and hardware on separate named layers. The curved boundary group is not interchangeable with the outer projected straight lines.*
 
@@ -131,7 +131,7 @@ No target widths are invented here. The first remedy work order must extract and
 
 ### Figure 4 — locked plan-scale overlay
 
-![Locked scale overlay showing actual CAD deck in red, current rail path in purple and helm footprint in green over S04](renders/stern_review/plan-locked-overlay.png)
+![Locked scale overlay showing actual CAD deck in red, current rail path in purple and helm footprint in green over S04](../renders/stern_review/plan-locked-overlay.png)
 
 *Red is the actual CAD deck top boundary, including its aft corners. Purple is the current rail centre path; green is the current case footprint. Native S04 scale and the existing F transformation are retained; there is no separate horizontal/vertical stretch. The improved case footprint aligns broadly, while the aft outline and corner relationships remain unresolved.*
 
@@ -159,7 +159,7 @@ Using the **existing provisional S04 guide picks**, fixed longitudinal scale and
 
 ### Figure 5 — counter/profile diagnostic with a fixed review anchor
 
-![Current CAD centreline outline and deck over S04 with an arrow showing the counter discrepancy](renders/stern_review/profile-locked-overlay.png)
+![Current CAD centreline outline and deck over S04 with an arrow showing the counter discrepancy](../renders/stern_review/profile-locked-overlay.png)
 
 *Red: current CAD centreline exterior outline. Magenta: deck section. Green: stock axis. Blue dots: existing provisional source guides. The local vertical anchor is the previously picked stock/deck crossing; no best-fit shift was applied. Source equipment may be projected or shown cut away, so it must not be treated as filled section material.*
 
@@ -212,7 +212,7 @@ Required corrections:
 
 ### Figure 6 — rail form in the reference
 
-![LOC photo 7 annotated to show the broad rectangular timber rail in the foreground](renders/stern_review/LOC-P07-annotated.png)
+![LOC photo 7 annotated to show the broad rectangular timber rail in the foreground](../renders/stern_review/LOC-P07-annotated.png)
 
 *The reference arrow points to Kathryn's foreground timber rail, not the separate pushboat. The pushboat remains outside the main-vessel modeling scope.*
 
@@ -246,21 +246,21 @@ Required corrections:
 
 ### Figure 7 — current case defect
 
-![Current helm model with an arrow to the closed lower front panel that should contain an opening](renders/stern_review/cad-helm-annotated.png)
+![Current helm model with an arrow to the closed lower front panel that should contain an opening](../renders/stern_review/cad-helm-annotated.png)
 
 ### Figure 8 — actual closed-case arrangement
 
-![LOC photo 28 annotated with the lid, lower front opening and local control assemblies](renders/stern_review/LOC-P28-annotated.png)
+![LOC photo 28 annotated with the lid, lower front opening and local control assemblies](../renders/stern_review/LOC-P28-annotated.png)
 
 ### Figure 9 — current inspection contents
 
-![Current helm internals with case and lid deliberately hidden, showing only shafts and a bearing](renders/stern_review/cad-helm-internals-annotated.png)
+![Current helm internals with case and lid deliberately hidden, showing only shafts and a bearing](../renders/stern_review/cad-helm-internals-annotated.png)
 
 *This is deliberately isolated: the case and lid are hidden for inspection. The missing hydraulic components are also absent from the current registered inventory; their absence is not inferred solely from a visibility setting.*
 
 ### Figure 10 — photographed hydraulic replacement
 
-![LOC photo 29 annotated with the hydraulic replacement mechanism inside the open case](renders/stern_review/LOC-P29-annotated.png)
+![LOC photo 29 annotated with the hydraulic replacement mechanism inside the open case](../renders/stern_review/LOC-P29-annotated.png)
 
 ### R5 / R6 — traveller, davits, bumper and controls
 
@@ -282,7 +282,7 @@ This review does **not** establish that the entire cabin should be moved or unif
 - Check S04's plan and profile together with LOC-P25/P28/P31. Use the operator photo for arrangement/context, not as a ruler based on an assumed human height.
 - Include the overhanging roof/hatch envelope in the visibility and clearance review; it can obscure the helm in an incorrectly chosen diagnostic camera.
 
-![LOC photo 25 annotated as an aft-cabin and working-deck reference](renders/stern_review/LOC-P25-annotated.png)
+![LOC photo 25 annotated as an aft-cabin and working-deck reference](../renders/stern_review/LOC-P25-annotated.png)
 
 ### R8 — transom moulding and associated construction
 
@@ -378,7 +378,7 @@ Photo perspective is a qualitative check unless camera calibration is explicitly
 
 Preserve this report's baseline figures. Save after-remedy validation under a separate directory so the before/after comparison is not overwritten.
 
-Additional arrowed baseline views are available for detailed inspection: [plan](renders/stern_review/cad-plan-annotated.png), [opaque side](renders/stern_review/cad-side-annotated.png), [aft elevation](renders/stern_review/cad-aft-annotated.png), [centreline cutaway](renders/stern_review/cad-section-annotated.png), [lower aft-quarter view](renders/stern_review/cad-photo-quarter-annotated.png), [S04 profile identification](renders/stern_review/source-profile-annotated.png), and [S02 datum witnesses](renders/stern_review/source-lines-annotated.png).
+Additional arrowed baseline views are available for detailed inspection: [plan](../renders/stern_review/cad-plan-annotated.png), [opaque side](../renders/stern_review/cad-side-annotated.png), [aft elevation](../renders/stern_review/cad-aft-annotated.png), [centreline cutaway](../renders/stern_review/cad-section-annotated.png), [lower aft-quarter view](../renders/stern_review/cad-photo-quarter-annotated.png), [S04 profile identification](../renders/stern_review/source-profile-annotated.png), and [S02 datum witnesses](../renders/stern_review/source-lines-annotated.png).
 
 ## 9. Provenance, reference links and reproduction
 

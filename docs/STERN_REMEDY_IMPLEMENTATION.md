@@ -30,7 +30,7 @@ surface or a render of only the construction references.
 
 | Preserved baseline | Implemented stern |
 |---|---|
-| ![Baseline defects](renders/stern_review/cad-quarter-annotated.png) | ![Implemented stern](renders/stern_remedy/quarter.png) |
+| ![Baseline defects](../renders/stern_review/cad-quarter-annotated.png) | ![Implemented stern](../renders/stern_remedy/quarter.png) |
 
 The new stern has separate rectangular oak rails, a source-controlled curved
 outside timber edge, a correctly anchored counter, registered oak moulding,
@@ -38,7 +38,7 @@ the traveller, braced iron davits, rigid tackle, external bumper and controls.
 
 ### The two concave regions identified in the markup
 
-![Actual rebuilt plan, including fair quarter-to-side transitions](renders/stern_remedy/plan.png)
+![Actual rebuilt plan, including fair quarter-to-side transitions](../renders/stern_remedy/plan.png)
 
 The initial inferred shoulder controls were replaced with reviewed native S04
 side observations. The moulding now has a qualified fair runout to a shared F18
@@ -72,9 +72,9 @@ construction inferences; the measured aft/shoulder controls remain separate.
 - The independent counter anchor isF−1.139795/Z7.650031, rake1.827690 forward/
   vertical foot. Stock headF2.036907 is separate from box faces and wheel plane.
 
-![Fixed-scale actual wood/rail plan overlay, with source observations and handoff arrows](renders/stern_remedy/plan-source-overlay.png)
+![Fixed-scale actual wood/rail plan overlay, with source observations and handoff arrows](../renders/stern_remedy/plan-source-overlay.png)
 
-![Actual counter/deck/moulding profile over S04 with corrected upper-deck anchor](renders/stern_remedy/profile-source-overlay.png)
+![Actual counter/deck/moulding profile over S04 with corrected upper-deck anchor](../renders/stern_remedy/profile-source-overlay.png)
 
 | Actual-solid comparison | Result |
 |---|---|
@@ -112,7 +112,7 @@ are inferred. Fitted stock is8×6 in before the qualified side runout.
 
 | Closed case | Open inspection |
 |---|---|
-| ![Isolated closed helm and real lower front opening](renders/stern_remedy/helm-closed.png) | ![Case/lid hidden to inspect hydraulic steering](renders/stern_remedy/helm-open.png) |
+| ![Isolated closed helm and real lower front opening](../renders/stern_remedy/helm-closed.png) | ![Case/lid hidden to inspect hydraulic steering](../renders/stern_remedy/helm-open.png) |
 
 Closed view isolates the helm assembly to expose its opening. Open view hides
 case/lid while retaining deck/rails. These visibility changes are documented in

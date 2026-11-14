@@ -294,7 +294,7 @@ switch model to **1:1**, and use feet/inches display only if SOMA supports it.
   conservation guard. Closed sublevel tools with cubic lofts failed validity.
   Latest attempt uses **closed ruled loft tools**, sequential lower-region
   partitioning (`split_strakes` / `sublevel_tool`). This latest attempt still
-  needs `python checks/prototype_hull_boards.py` validation. Do not register it
+  needs `python src/checks/prototype_hull_boards.py` validation. Do not register it
   until all16 courses/side, conservation and solid checks pass.
 - Still pending: full independent23-set deck-beam schedule (S05-V01 / note7),
   individual deck/hull/lining/floor/bulkhead boards, exact support/material/access
@@ -432,7 +432,7 @@ Acceptance/member evidence/gaps: `milestones/M2.md`. Next milestone is M3.
   booleans for passage/foot samples; real board/member booleans remain where useful.
   M1/hatch/access centreline tests now distinguish actual oak from the open slot.
 - Inspection: `renders/m2-review.png`, `m2-mast-supports.png`,
-  `m2-source-profile-comparison.png`; regenerate with `python checks/render_m2.py`.
+  `m2-source-profile-comparison.png`; regenerate with `python src/checks/render_m2.py`.
   Group **Interior/Keelson trunk and mast supports**. Hide deck/roofs/covers and
   equipment as useful; an X section exposes the trunk/board. Full STEP is assembled.
 - M3 must map actual hull-frame numbers/planes and original mortised versus later
@@ -493,7 +493,7 @@ no warnings, default 1:32; final build took 382.4 s.
 
 ### Acceptance and inspection
 
-- `python checks/check_m1_enclosure.py`: one cavity, 105 air samples, four actual
+- `python src/checks/check_m1_enclosure.py`: one cavity, 105 air samples, four actual
   transverse material checks, **144 normal-ray skin checks**, thin transom,
   full cabin aperture, hull-seated partitions, floor/mast bearings, stock box,
   source datum and upper-band geometry all pass. `checks/m1_acceptance.json`.
@@ -612,7 +612,7 @@ exact model SHA-256 are in the manifest if the cache disappears. The auxiliary
 `references/loc_photos/Kathryn HAER drawing sheets.pdf` is also image-only; text was
 generated from the TIFF views, not extracted from that PDF.
 
-`python checks/check_drawing_package.py` passes all source-integrity, pixel,
+`python src/checks/check_drawing_package.py` passes all source-integrity, pixel,
 OCR/checked-note search, offset-table, calibration, registration and section-guide
 checks. CAD geometry was not edited in M0; its existing build/export is 235 parts.
 
@@ -696,7 +696,7 @@ The first hatch/local-framing stage is now implemented, built and inspected.
 ### Verification and views
 
 - `python -m soma build`: **235 parts**, no warnings (191.6 s).
-- `python checks/check_hatches.py`: clear shafts, coaming/cover seating, vertical
+- `python src/checks/check_hatches.py`: clear shafts, coaming/cover seating, vertical
   cover removal, board/cleat attachments, beam/carlings/clamp contacts, actual
   sections, roof joints, 75 normal-ray skin samples and mast clearance pass.
 - `checks/check_companionway.py` now includes new framing as obstacles; passage,
@@ -709,7 +709,7 @@ The first hatch/local-framing stage is now implemented, built and inspected.
 - `renders/hatch-review.png` is the overview. Source/measurement evidence:
   `hatch-source-comparison.png`, `hatch-scale-measurements.png`. Details:
   `hatch-deck-closed.png`, `hatch-deck-open.png`, `hatch-hold-section.png`,
-  `hatch-framing-plan.png`. Render with `python checks/render_hatches.py`.
+  `hatch-framing-plan.png`. Render with `python src/checks/render_hatches.py`.
 - Overall/stern/side and companionway views are refreshed. Covers are seated in
   the normal assembly; removed-cover/isolated/cutaway views are inspection-only.
 
@@ -986,9 +986,9 @@ only when requested.
     - Clear doorway is 19.8 in wide × 45.27 in high; sill is 2.16 in above the aft deck. Three treads give four 7.29-in risers, with 4.8-in going; landing is 27 in below deck. These dimensions and fine hinge/wall/tread details are approximate, not printed historical labels.
     - Doors now extend to the sill; default `ACCESS_DOOR_OPEN_DEG=0` is closed. `make_companionway_doors(angle)` supplies inspection/sweep poses. Hinges intentionally contact the door edges; these are static details, not working-hinge tolerance design.
     - The local well preserves the outer hull and at least 2.04 in of normal bottom material at sampled sections including the worst aft corners. Cabin bodies are hollow above deck; the complete lower accommodation is not reconstructed.
-    - `python checks/check_companionway.py` passes: actual doorway/roof/deck route, stair/landing clearances, both-stringer support, sill/landing connections, embedded glazing, preserved bottom material and door sweeps 0–90° at 15° samples including helm clearance.
+    - `python src/checks/check_companionway.py` passes: actual doorway/roof/deck route, stair/landing clearances, both-stringer support, sill/landing connections, embedded glazing, preserved bottom material and door sweeps 0–90° at 15° samples including helm clearance.
     - Full build: **179 parts**, no warnings. Prior pass-6, source chine/transom, bow/spar/strake, body-keel, 35-section aft-keel and -35/0/+35 rudder tests all pass. All access views and the overall/stern/side views were refreshed and inspected.
-    - Use `renders/kathryn-companionway-review.png` for the before/after overview and `kathryn-companionway-source-comparison.png` for source comparison. `python checks/render_companionway.py` recreates the views without changing the default closed model.
+    - Use `renders/kathryn-companionway-review.png` for the before/after overview and `kathryn-companionway-source-comparison.png` for source comparison. `python src/checks/render_companionway.py` recreates the views without changing the default closed model.
 
 ## Reference drawings and useful crops
 
@@ -1038,7 +1038,7 @@ used when preparing their previews.
 ## Validation and render details
 
 - Current 241-part assembly builds at 1:32; `register()` asserts one valid solid per part. M1's enclosure/source-coordinate checks pass; M2 centreline structure is next.
-- `python checks/check_companionway.py` passed on the 179-part checkpoint; rerun it after opening/framing changes to protect the continuous door/stair path, bottom material and door sweep.
+- `python src/checks/check_companionway.py` passed on the 179-part checkpoint; rerun it after opening/framing changes to protect the continuous door/stair path, bottom material and door sweep.
 - Final detail check: `/tmp/opencode/check_pass6.py` covers side handedness, source-plan hatch side, raked body sections, pane/roof contacts and camber, winder supports/bearings/wheels/controls/clearances and compact seated bow relief.
 - Aft-keel regression: `/tmp/opencode/check_aft_keel.py`; monotone actual sections, endpoint/tangent agreement, <0.5-inch chord deviation and material joining contacts.
 - Current source/construction check: `/tmp/opencode/check_review3.py` checks fit residuals, monotonic chine runs, plan radii, lower-stem intersections, preserved source values and transom/rudder sizing.
