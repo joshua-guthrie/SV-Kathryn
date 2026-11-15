@@ -245,6 +245,32 @@ def annotate_model_top(image, px, out_path):
     image.save(out_path)
 
 
+def annotate_floating(image, px, out_path):
+    draw = ImageDraw.Draw(image, 'RGBA')
+    title = _font(25)
+    body = _font(20)
+    _label(draw, (36, 34),
+           'Current model — why the bowsprit looks unsupported at the heel', title)
+    _arrow(draw, px['saddle'], (px['saddle'][0] - 60, px['saddle'][1] - 150), RED_PX)
+    _label(draw, (px['saddle'][0] - 330, px['saddle'][1] - 260),
+           'Heel saddle sits 3.2 ft forward of the stem head\n'
+           'and 1.5 ft above the stem knee; no stem-head timber is beneath it', body, fill=RED_INK)
+    _arrow(draw, px['stem_head'], (px['stem_head'][0] - 140, px['stem_head'][1] + 80), (80, 80, 80))
+    _label(draw, (px['stem_head'][0] - 470, px['stem_head'][1] + 90),
+           'Stem head/knee ends here', body, fill=(60, 60, 60))
+    _arrow(draw, px['trailboard'], (px['trailboard'][0] + 120, px['trailboard'][1] + 160), GREEN_PX)
+    _label(draw, (px['trailboard'][0] + 130, px['trailboard'][1] + 170),
+           'The only trailboard is this centreline shelf under the\n'
+           'bowsprit; it bridges the gap and hides the missing support.', body, fill=GREEN_INK)
+    _arrow(draw, px['samson'], (px['samson'][0] + 130, px['samson'][1] + 170), PURPLE_PX)
+    _label(draw, (px['samson'][0] + 140, px['samson'][1] + 180),
+           'Samson post 7 ft aft of the heel;\nthe photo puts it beside the heel', body, fill=PURPLE_INK)
+    _label(draw, (36, SIZE[1] - 110),
+           'Support path: heel saddle -> cross-bearer -> headrails. There is no knee or\n'
+           'stem-head timber under the heel, so the platform reads as floating.', body)
+    image.save(out_path)
+
+
 def annotate_s01(out_path):
     native = Image.open(ROOT / 'references/drawing_package/S01/S01-V03/native.png')
     crop = native.crop((0, 0, 3400, 2050)).convert('RGB')
@@ -341,9 +367,37 @@ def main():
     px = dict(zip(names, display))
     annotate_model_top(image, px, OUT / 'model-bow-top-annotated.png')
 
+    image, display = scene.render(
+        direction=(-.9, .5, .55), up=(0, 0, 1), focus=(0, -27, 9.8), scale=6.0,
+        hide=('Jib sail (S08 demonstration)',), points=points)
+    px = dict(zip(names, display))
+    annotate_floating(image, px, OUT / 'model-bow-floating-annotated.png')
+
     annotate_s01(OUT / 'source-s01-trailboard-annotated.png')
     annotate_s03(OUT / 'source-s03-bow-annotated.png')
     annotate_p22(OUT / 'source-loc-p22-heel-annotated.png')
+    # Side-by-side trailboard comparison.
+    top = Image.open(OUT / 'source-s01-trailboard-annotated.png').convert('RGB')
+    bottom = Image.open(OUT / 'model-bow-floating-annotated.png').convert('RGB')
+    width = 1500
+    top = top.resize((width, int(top.height * width / top.width)), Image.LANCZOS)
+    bottom = bottom.resize((width, int(bottom.height * width / bottom.width)),
+                           Image.LANCZOS)
+    header = 46
+    gap = 16
+    canvas = Image.new('RGB', (width + 40, header + top.height + gap + header
+                               + bottom.height + 20), (245, 245, 245))
+    cdraw = ImageDraw.Draw(canvas)
+    cdraw.text((20, 10), 'DRAWING — S01-V03: carved trailboard on the bow side',
+               font=_font(26), fill=GREEN_INK)
+    canvas.paste(top, (20, header))
+    y2 = header + top.height + gap
+    cdraw.text((20, y2 + 8),
+               'MODEL — one centreline trailboard under the bowsprit',
+               font=_font(26), fill=GREEN_INK)
+    canvas.paste(bottom, (20, y2 + header))
+    canvas.save(OUT / 'trailboard-comparison-annotated.png')
+
 
     for path in sorted(OUT.glob('*.png')):
         print(path.relative_to(ROOT))
