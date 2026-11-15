@@ -4,11 +4,78 @@ A 3D CAD model of the *Kathryn*, a historic Chesapeake Bay skipjack sailboat bui
 
 The model was created using SOMA CAD and AI-assisted CAD modeling, using historic vessel drawings and archival photographs as references.
 
+## Gallery
+
+| Bow | Stern |
+|:---:|:---:|
+| ![Bow view](docs/images/bow.png) | ![Stern view](docs/images/stern.png) |
+| **Port side** | **Starboard side** |
+| ![Port side](docs/images/port-side.png) | ![Starboard side](docs/images/starboard-side.png) |
+| **Bow quarter** | **Stern quarter** |
+| ![Bow quarter](docs/images/bow-quarter.png) | ![Stern quarter](docs/images/stern-quarter.png) |
+| **Plan** | **Centreline section** |
+| ![Plan view](docs/images/plan.png) | ![Centreline section](docs/images/section-centreline.png) |
+| **Hold section** | **Interior cutaway** |
+| ![Hold section](docs/images/section-hold.png) | ![Interior cutaway](docs/images/interior-cutaway.png) |
+
+The pictures are rendered from the current build; see
+[Regenerating the images](#regenerating-the-images).
+
 ## Model files
 
-- [Whole-boat STL](SV-Kathryn.stl)
-- [SOMA project archive](SV-Kathryn.soma)
-- [Source and reference package](src/) / [references/](references/)
+- `model.py` — the entry point; builds and registers every part
+- `src/parts/` — hull, deck, spars, rigging and interior geometry
+- `src/checks/` — validation, measured-drawing checks and render scripts
+- `references/` — measured drawings, source notes and archived photographs
+- `output/` — generated STEP/STL files (not committed)
+
+## Building and viewing the model
+
+### In SOMA
+
+1. Install [SOMA](https://somacad.app/) (the app bundles the CadQuery Python
+   environment it needs).
+2. Start SOMA and choose **Open folder** on the start page (or **Model → Open
+   folder**), then select this repository folder. SOMA uses `model.py` as the
+   entry point and builds the model automatically; with **Auto on** it rebuilds
+   whenever the code changes.
+3. The **Parameters** panel exposes `MODEL_SCALE` (1 = full size in
+   millimetres, 32 = 1:32). The **section** tool in the viewer cuts the model
+   open for inspection; the part tree shows every timber by group.
+
+The repository is the SOMA project folder itself; no separate `.soma` archive
+is needed.
+
+### Without SOMA
+
+The geometry is plain CadQuery. With Python 3.10 or newer:
+
+```sh
+python -m pip install cadquery numpy scipy
+python build_without_soma.py
+```
+
+This runs `model.py` with a small stand-in for the four `soma` helper
+functions and writes `output/model_standalone.step` as a named STEP assembly.
+Add `--stl` for a whole-model STL, `--out PATH` to choose another file, and
+`--help` for the options. Values in `parameters.json` are applied by name when
+present. The SOMA viewer cache, Parameters panel and GLB export are SOMA-only.
+
+## Regenerating the images
+
+The gallery is rendered from the current SOMA build:
+
+```sh
+soma build
+python src/checks/render_readme_images.py
+```
+
+The script reads `.soma/model.glb` and `.soma/model.map.json`, writes the PNGs
+in `docs/images/`, and needs VTK (included with SOMA's Python; otherwise
+`python -m pip install vtk`). It renders the six exterior views, the plan, and
+three cutaways (centreline, hold and an interior three-quarter cut). The `VIEWS`
+list at the top of the script defines the cameras, hidden groups and section
+planes; `--only <name>` renders a subset.
 
 ## About Skipjacks
 

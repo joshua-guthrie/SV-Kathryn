@@ -25,9 +25,10 @@ The user requested the first push on 2026-11-14. The remote's initial commit
 (a README stub and GPL-3.0 LICENSE) had no common ancestor, so it was merged
 with `--allow-unrelated-histories`; the project README replaced the stub and
 the LICENSE is kept. Push only when the user asks. The pushed tree contains the
-source, checks, docs and references; `.local-git/`, `.soma/`, `output/`,
-`renders/` and `exports/` remain local. The README links to `SV-Kathryn.stl` and
-`SV-Kathryn.soma`, which are not in the repository yet.
+source, checks, docs, references and the README gallery in `docs/images/`;
+`.local-git/`, `.soma/`, `output/`, `renders/` and `exports/` remain local.
+The README documents the SOMA workflow, the standalone CadQuery builder
+(`build_without_soma.py`) and how to regenerate the gallery.
 
 On 2026-11-14 the user removed the sistership reference package
 (`references/sistership/`, 94 files, 969 MB) as not useful. It remains only in
