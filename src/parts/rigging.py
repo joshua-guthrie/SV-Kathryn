@@ -140,7 +140,12 @@ def _running_parts():
     trav = STERN_REMEDY_SOURCE['traveller']
     tf = trav['forward_ft']
     tz = deck_height(tf) + trav['height_above_deck_ft']
-    yield 'Main sheet', _line(BOOM_AFT, boat_point(0, tf, tz + .08), .017), ROPE
+    traveller = boat_point(0, tf, tz + .08)
+    # The main sheet hangs vertically from the boom directly above the
+    # traveller car. It does not lead aft to the boom end or through the rails.
+    t = (traveller[1] - BOOM_FRONT[1]) / (BOOM_AFT[1] - BOOM_FRONT[1])
+    boom_sheet = tuple(a + (b - a) * t for a, b in zip(BOOM_FRONT, BOOM_AFT))
+    yield 'Main sheet', _line(boat_point(0, tf, boom_sheet[2]), traveller, .017), ROPE
     yield 'Jib sheet to hounds', _line(JIB_CLEW, HOUNDS, .015), ROPE
     yield 'Jib sheet to pin rail', _line(HOUNDS, _pin_rail(1), .015), ROPE
     yield 'Jib downhaul', _line(JIB_HEAD, TIP, .013), ROPE

@@ -31,6 +31,14 @@ def check():
                      'Jib halyard', 'Main sheet', 'Jib downhaul',
                      'Topping lift', 'Boom lift', 'Spectacle/jack iron'):
         assert required in names, required
+    sheet = next(shape for name, shape, _, _ in rig if name == 'Main sheet')
+    box = sheet.BoundingBox()
+    assert box.xlen < .05 and box.ylen < .05, 'Main sheet must hang vertically'
+    traveller = rigging.boat_point(0, rigging.STERN_REMEDY_SOURCE['traveller']['forward_ft'],
+                                   rigging.deck_height(rigging.STERN_REMEDY_SOURCE['traveller']['forward_ft'])
+                                   + rigging.STERN_REMEDY_SOURCE['traveller']['height_above_deck_ft'])
+    assert abs((box.ymin + box.ymax) / 2 - traveller[1]) < .05, 'Main sheet is not above the traveller'
+    assert box.zmin >= traveller[2], 'Main sheet must rise from the traveller'
     result = dict(status='passed', rigging_parts=len(rig), sail_parts=len(sails),
                   groups=sorted(groups),
                   main_plan_ft=dict(luff=45.5, foot=49.333, leech_s08=68.0,
