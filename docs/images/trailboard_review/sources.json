@@ -1,0 +1,117 @@
+{
+  "S01-V03(0, 0, 3960, 1450)": {
+    "source": "references/drawing_package/S01/S01-V03/native.png",
+    "source_sha256": "1055509566f971f1d0d6c6542abb8607e47c8a4dc5c5e331a452955255e0d772",
+    "crop_native_view_px": [
+      0,
+      0,
+      3960,
+      1450
+    ],
+    "native_view_to_sheet_translation": [
+      9522,
+      853
+    ],
+    "original_sheet_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f"
+  },
+  "S01-V03(3000, 245, 3820, 745)": {
+    "source": "references/drawing_package/S01/S01-V03/native.png",
+    "source_sha256": "1055509566f971f1d0d6c6542abb8607e47c8a4dc5c5e331a452955255e0d772",
+    "crop_native_view_px": [
+      3000,
+      245,
+      3820,
+      745
+    ],
+    "native_view_to_sheet_translation": [
+      9522,
+      853
+    ],
+    "original_sheet_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f"
+  },
+  "S01-V03(1050, 700, 2200, 1090)": {
+    "source": "references/drawing_package/S01/S01-V03/native.png",
+    "source_sha256": "1055509566f971f1d0d6c6542abb8607e47c8a4dc5c5e331a452955255e0d772",
+    "crop_native_view_px": [
+      1050,
+      700,
+      2200,
+      1090
+    ],
+    "native_view_to_sheet_translation": [
+      9522,
+      853
+    ],
+    "original_sheet_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f"
+  },
+  "S04-V01(7990, 502, 10151, 1254)": {
+    "source": "references/drawing_package/S04/S04-V01/native.png",
+    "source_sha256": "c7c62358c5b416b9b36f9ee44cdcae9bf29bcb205ea864ca5c375dae61948ac1",
+    "crop_native_view_px": [
+      7990,
+      502,
+      10151,
+      1254
+    ],
+    "native_view_to_sheet_translation": [
+      2462,
+      2358
+    ],
+    "original_sheet_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4"
+  },
+  "S04-V02(8040, 1003, 10201, 1755)": {
+    "source": "references/drawing_package/S04/S04-V02/native.png",
+    "source_sha256": "6bb502da96d4565c8d54179b3e76e27557d6b6890565f2f5bfad8174eea223ac",
+    "crop_native_view_px": [
+      8040,
+      1003,
+      10201,
+      1755
+    ],
+    "native_view_to_sheet_translation": [
+      2412,
+      5017
+    ],
+    "original_sheet_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4"
+  },
+  "LOC-P06": {
+    "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/photos/185744pu.tif",
+    "catalog": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=7",
+    "caption": "6.  PORT PROFILE WITH PUSH BOAT - CLOSER VIEW",
+    "original_sha256": "ef923a4a61f8ed7b605c23a760271c18128cd5c66cba02dd447acd5e49c2d71a",
+    "original_size": [
+      5000,
+      3620
+    ],
+    "crop_original_px": [
+      620,
+      1890,
+      1250,
+      2200
+    ],
+    "crop_file": "source-loc-p06-crop.png",
+    "crop_sha256": "ab3a10d90b384bf8c84a334e8ccdf759ac4ffebc4f5c82221ca09d605d2bd6f7",
+    "context_file": "source-loc-p06-context.png",
+    "treatment": "native crop, RGB conversion only; no mirroring, enhancement or invented detail"
+  },
+  "LOC-C01": {
+    "url": "https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/color/572189cu.tif",
+    "catalog": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=1",
+    "caption": "STARBOARD PROFILE WITH DREDGE BASKET BEING RAISED",
+    "original_sha256": "82d38d4ea6b78e889fe9ea1d1f5516a20ef8fe3f1d9531dee9d72278e66a777a",
+    "original_size": [
+      4958,
+      3540
+    ],
+    "crop_original_px": [
+      3000,
+      2030,
+      3570,
+      2250
+    ],
+    "crop_file": "source-loc-c01-crop.png",
+    "crop_sha256": "e35867ec54a06cf40a8ed5aa7a066997a953c44741294fed5b42155d52e5fa86",
+    "context_file": "source-loc-c01-context.png",
+    "treatment": "native crop, RGB conversion only; no mirroring, enhancement or invented detail"
+  }
+}

@@ -1,0 +1,45 @@
+{
+  "schema_version": 1,
+  "status": "review_artifacts_verified; proposed model correction not implemented",
+  "pdf": {
+    "file": "docs/trailboard-gap-analysis.pdf",
+    "pdf_pages": 29,
+    "figure_pages": [
+      3,
+      5,
+      6,
+      7,
+      9,
+      10,
+      12,
+      14,
+      15,
+      17,
+      19,
+      21,
+      22
+    ],
+    "hyperlink_annotations": 9,
+    "text_margin_violations": [],
+    "all_rendered_pages_visually_inspected": true
+  },
+  "annotated_figures": 13,
+  "all_annotated_figures_visually_inspected": true,
+  "local_markdown_links_checked": 42,
+  "original_S01_S04_hashes_verified": true,
+  "model_sources_and_export_hashes_unchanged": true,
+  "frozen_snapshot_guard_rejection_checked": true,
+  "generator_compiles": true,
+  "git_whitespace_check": "pass",
+  "baseline_export": {
+    "parts": 928,
+    "status": "ok",
+    "warnings": 0,
+    "fresh_build_during_review": false
+  },
+  "implementation_criteria": {
+    "count": 10,
+    "run": false,
+    "reason": "These checks specify future implementation acceptance, not repairs performed by this review."
+  }
+}

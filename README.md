@@ -4,7 +4,9 @@ A 3D CAD model of the *Kathryn*, a historic Chesapeake Bay skipjack sailboat bui
 
 The model was created using SOMA CAD and AI-assisted CAD modeling, using historic vessel drawings and archival photographs as references.
 
-**Bow attachment review (15 November 2026):** The current bow still requires correction. See the [illustrated gap analysis and detailed repair plan](docs/BOWSPRIT_ATTACHMENT_REVIEW.md) ([PDF](docs/bowsprit-trailboards-gap-analysis.pdf)), including measured attachment gaps and annotated original drawings.
+**Trailboard appearance review (15 November 2026):** See the [current gap analysis and implementation specification](docs/TRAILBOARD_GAP_ANALYSIS.md) ([PDF](docs/trailboard-gap-analysis.pdf)), with annotated original drawings, archival photographs, current CAD views and acceptance criteria.
+
+**Earlier bow attachment review (903-part model):** The [illustrated attachment analysis](docs/BOWSPRIT_ATTACHMENT_REVIEW.md) ([PDF](docs/bowsprit-trailboards-gap-analysis.pdf)) preserves the earlier structural gaps and repair plan. Its measurements describe that earlier model.
 
 ## Gallery
 

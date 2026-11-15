@@ -1,0 +1,114 @@
+{
+  "schema_version": 1,
+  "basis": "Final reviewed documentation artifacts; frozen model/source provenance is recorded separately.",
+  "files": {
+    "README.md": {
+      "sha256": "5aef81fd68fee75c86061b7d350b6f4e580b7f7d964e4a4089c51c127fbdc11a",
+      "bytes": 9606
+    },
+    "docs/TRAILBOARD_GAP_ANALYSIS.md": {
+      "sha256": "c78c2e22223dd0703970431df8442645fc935ed40ed30c97e02cbcbdf9342bad",
+      "bytes": 38877
+    },
+    "docs/trailboard-gap-analysis.pdf": {
+      "sha256": "96b10ead4b3fa3866676ef065d53b861791ee988c1e76dbdb738cb438654841e",
+      "bytes": 2657708
+    },
+    "docs/tools/build_trailboard_review.py": {
+      "sha256": "c52aeb2d8aa2a6ee2fa1936d4c2633dd5a11dd7aa47a91ce1c5f1d005c9ddf82",
+      "bytes": 26737
+    },
+    "docs/images/trailboard_review/drawing-head.png": {
+      "sha256": "8944df5a945bfbde377eb7a7e4bc05d5ed00b9cacc9178bbc488d590eb86a746",
+      "bytes": 1203699
+    },
+    "docs/images/trailboard_review/drawing-name.png": {
+      "sha256": "3c42681fce597f54dda030bd77b87a03c285cc9cf871ddb2d096fdc1f0cad124",
+      "bytes": 747310
+    },
+    "docs/images/trailboard_review/drawing-ornament.png": {
+      "sha256": "42211998233cd9273fe316de3d2bcaa0d02e98e9700c72df0f4c2b32664f2773",
+      "bytes": 803773
+    },
+    "docs/images/trailboard_review/drawing-plan-overlay.png": {
+      "sha256": "8fe02f29d523af4266c9e69aed9efe5480615d453820e9f7082ac3382b91766e",
+      "bytes": 526113
+    },
+    "docs/images/trailboard_review/drawing-profile-overlay.png": {
+      "sha256": "591610acc22129f5ed6e1b4cf29e9fc0bba6593f83d2f34f0ba2bc21c7483ad9",
+      "bytes": 576129
+    },
+    "docs/images/trailboard_review/implementation-contract.json": {
+      "sha256": "88d6ae312c54b5ed8207358eda211e8e3f7487f4515fae35cf91fe7ea86289a8",
+      "bytes": 9573
+    },
+    "docs/images/trailboard_review/model-context.png": {
+      "sha256": "f60d433efafd80ba0db5b8b32c5531999dc0777cddfafc5c242ea71e20dba3fa",
+      "bytes": 562500
+    },
+    "docs/images/trailboard_review/model-head.png": {
+      "sha256": "729ea6f181e8799ed94351c0eedd7a81dd423dd47d79c6fb3b445f787781c577",
+      "bytes": 180291
+    },
+    "docs/images/trailboard_review/model-plan.png": {
+      "sha256": "fe0456678965ce48a56a4f35c9865859686a5a66e0a295d66b794ecb43996cea",
+      "bytes": 132279
+    },
+    "docs/images/trailboard_review/model-port.png": {
+      "sha256": "d14d3dd1b3c700dd825c54f287528a4d7c7c74024f5e8500bcc0e2e30bd42c54",
+      "bytes": 223297
+    },
+    "docs/images/trailboard_review/model-quarter.png": {
+      "sha256": "e82fc61558a2772054bd40b9560b395569bd2d6ea08857ebf7f46f8d307ec4c0",
+      "bytes": 814825
+    },
+    "docs/images/trailboard_review/model-starboard.png": {
+      "sha256": "fb501f2ca543dfa9dd692c8868490829ba2e9a90b136c4e406450a55e208a881",
+      "bytes": 222565
+    },
+    "docs/images/trailboard_review/photo-loc-c01.png": {
+      "sha256": "5056f3dbd05a85257667c0cf6b38966eebe59cb9c34a5642a3320c1c8afa14f7",
+      "bytes": 968326
+    },
+    "docs/images/trailboard_review/photo-loc-p06.png": {
+      "sha256": "0b80957c2c4a72312edbd6da1955e9a74fdbe2fa0ee54a993ba54208d1550ad1",
+      "bytes": 862370
+    },
+    "docs/images/trailboard_review/provenance.json": {
+      "sha256": "dbdf69093aa7768425b7a3294be35de03d0fe67c24d1379aafd7937ba53af6cf",
+      "bytes": 16314
+    },
+    "docs/images/trailboard_review/source-loc-c01-context.png": {
+      "sha256": "57a2f151205fdbb13f0729885ba7e4e8243700f6ffd5d44ac7b517ea35d6bc65",
+      "bytes": 2000186
+    },
+    "docs/images/trailboard_review/source-loc-c01-crop.png": {
+      "sha256": "e35867ec54a06cf40a8ed5aa7a066997a953c44741294fed5b42155d52e5fa86",
+      "bytes": 165135
+    },
+    "docs/images/trailboard_review/source-loc-p06-context.png": {
+      "sha256": "1c6f1ac2dbd3f9a5a3b41a2244055a1cf39c287625db18acdeaeffb689920baa",
+      "bytes": 1316401
+    },
+    "docs/images/trailboard_review/source-loc-p06-crop.png": {
+      "sha256": "ab3a10d90b384bf8c84a334e8ccdf759ac4ffebc4f5c82221ca09d605d2bd6f7",
+      "bytes": 178801
+    },
+    "docs/images/trailboard_review/source-s04-plan-clean.png": {
+      "sha256": "861cd1caf2d9ffbf472b99d82cd2df24f93136d6cd1547fe9ba849400402fed5",
+      "bytes": 59122
+    },
+    "docs/images/trailboard_review/source-s04-profile-clean.png": {
+      "sha256": "58b2c6f9843d4704453a21be6d19b84090934a4abe3b84d0e72cc1112bb84609",
+      "bytes": 62801
+    },
+    "docs/images/trailboard_review/sources.json": {
+      "sha256": "766cde34490f996ce53f32911bac19a9a8aeb63d76c9f8398962061f08554994",
+      "bytes": 3775
+    },
+    "docs/images/trailboard_review/validation.json": {
+      "sha256": "6190021a749091d70e285856851eac61073e140c6f09a50604d8499fa722ee64",
+      "bytes": 1097
+    }
+  }
+}

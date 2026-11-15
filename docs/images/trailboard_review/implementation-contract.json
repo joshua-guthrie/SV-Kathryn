@@ -1,0 +1,227 @@
+{
+  "schema_version": 1,
+  "status": "specified_not_implemented",
+  "review_date": "2026-11-15",
+  "report": "docs/TRAILBOARD_GAP_ANALYSIS.md",
+  "pdf": "docs/trailboard-gap-analysis.pdf",
+  "baseline": {
+    "provenance": "docs/images/trailboard_review/provenance.json",
+    "source_evidence": "docs/images/trailboard_review/sources.json",
+    "parts": 928,
+    "source_state": "uncommitted working-tree model at capture; HEAD 085c2f1 is an image-only commit"
+  },
+  "target_state": "HAER documented arrangement and S01 ornament, cross-checked with vessel-specific photos",
+  "authority": {
+    "physical_arrangement": [
+      "S04-V01",
+      "S04-V02"
+    ],
+    "ornament": [
+      "S01-V03"
+    ],
+    "photo_cross_checks": [
+      "LOC-P06",
+      "LOC-C01"
+    ],
+    "uncalibrated": [
+      "S01 pictorial ornament scale",
+      "photo perspective dimensions",
+      "photo RGB samples",
+      "carving depth",
+      "facing thickness"
+    ]
+  },
+  "allowed_model_scope": [
+    "trailboard faces",
+    "longhead backing and fitted return",
+    "source-traced border, field, name enclosure, lettering and head",
+    "independently confirmed headrail correction with separate evidence"
+  ],
+  "fixed_assemblies": [
+    "Samson-post station",
+    "repaired complete spar and its support",
+    "hull",
+    "accepted stern",
+    "mast",
+    "jib connections"
+  ],
+  "findings": [
+    {
+      "id": "TB-01",
+      "title": "High: the forward head is a pointed polygon rather than the drawn carving",
+      "status": "correction_required"
+    },
+    {
+      "id": "TB-02",
+      "title": "High: the vines and scrolls are generated decoration rather than the documented pattern",
+      "status": "correction_required"
+    },
+    {
+      "id": "TB-03",
+      "title": "High: the shaped name enclosure is missing; lettering placement is not source-controlled",
+      "status": "correction_required"
+    },
+    {
+      "id": "TB-04",
+      "title": "High: the aft return and body envelope need an independent boundary trace",
+      "status": "correction_required"
+    },
+    {
+      "id": "TB-05",
+      "title": "Medium: flat relief and uniform insets are modeling assumptions",
+      "status": "correction_required"
+    },
+    {
+      "id": "TB-06",
+      "title": "Medium: the plan width and rail relationship remain qualified, not historically accepted",
+      "status": "source_confirmation_required"
+    },
+    {
+      "id": "TB-07",
+      "title": "Medium: the existing pass criteria can accept the wrong-looking result",
+      "status": "correction_required"
+    },
+    {
+      "id": "TB-08",
+      "title": "Qualified: palette and photo-state differences need documentation",
+      "status": "assumption_record_required"
+    }
+  ],
+  "proposed_thresholds": {
+    "digital_trace_max_native_px": 6,
+    "historical_registration_max_unexplained_ft": 0.2,
+    "assembly_contact_max_full_size_mm": 1.0,
+    "unintended_timber_intersection_max_ft3": 1e-06,
+    "min_independent_held_out_landmarks": 6,
+    "interpretation": "QA requirements for future implementation; not measured pass results or historic builders tolerances"
+  },
+  "required_target_ledger": "references/drawing_package/trailboard_targets.json",
+  "target_ledger_fields": [
+    "schema_version",
+    "target_state",
+    "sources",
+    "physical_transforms",
+    "surface_mapping",
+    "features",
+    "held_out_landmarks",
+    "uncertainty_masks",
+    "assumptions",
+    "review_status"
+  ],
+  "feature_fields": [
+    "id",
+    "source_id",
+    "source_sha256",
+    "native_points",
+    "closed",
+    "holes",
+    "role",
+    "evidence_class",
+    "mapping_id",
+    "notes"
+  ],
+  "required_features": [
+    "outer facing",
+    "oblique aft return",
+    "border inner and outer",
+    "name enclosure",
+    "seven glyphs",
+    "aft scroll",
+    "forward scroll or vine",
+    "head outline",
+    "eye",
+    "brow",
+    "beak and mouth",
+    "jaw",
+    "feather transition"
+  ],
+  "acceptance_output": "docs/images/trailboard_correction/acceptance.json",
+  "acceptance_result_fields": [
+    "id",
+    "status",
+    "actual",
+    "limit",
+    "units",
+    "method",
+    "evidence_paths"
+  ],
+  "result_status_values": [
+    "pass",
+    "fail",
+    "unresolved"
+  ],
+  "required_after_views": [
+    "isolated port face",
+    "isolated starboard face",
+    "head close-up",
+    "full bow profile",
+    "common-registration profile overlay",
+    "common-registration plan overlay",
+    "quarter view",
+    "underside or attachment view",
+    "drawing and photo comparison"
+  ],
+  "checks": [
+    {
+      "id": "AC-01",
+      "name": "Reproducible baseline",
+      "status": "not_run",
+      "requirement": "implementation names its starting commit and working-tree hashes; original source hashes match; all before images remain preserved. Source changes since this snapshot are explicitly described."
+    },
+    {
+      "id": "AC-02",
+      "name": "Independent registration",
+      "status": "not_run",
+      "requirement": "the source transform is recorded once per physical view, with at least six held-out S04 landmarks and their residuals. Maximum unexplained physical-view discrepancy is no greater than the provisional 0.20 ft historical envelope. A larger residual fails or remains unresolved until the view/state conflict is resolved; it cannot be fixed by fitting each part independently."
+    },
+    {
+      "id": "AC-03",
+      "name": "Outer outline",
+      "status": "not_run",
+      "requirement": "model-projected aft return, body and head are compared to independently traced source boundaries. The aft edge is oblique as selected from the source; the head has its documented contour. For digitization itself, curve-to-reviewed-native-trace deviation must be at most six original pixels outside declared occlusion masks. Report this digital metric separately from AC-02's physical uncertainty."
+    },
+    {
+      "id": "AC-04",
+      "name": "Head anatomy",
+      "status": "not_run",
+      "requirement": "eye, brow, hooked beak/mouth region, jaw and feather transition are identifiable in an isolated close-up and represented by named features. Their curves meet the six-pixel trace criterion in the declared S01 mapping. Each interior feature is classified as relief, recess, paint boundary or confirmed through-cut. A polygon with an eye fails."
+    },
+    {
+      "id": "AC-05",
+      "name": "Ornament composition",
+      "status": "not_run",
+      "requirement": "aft scroll, name enclosure, forward scroll/vine and neck transition match reviewed trace topology and landmarks. Source branch junctions and intended negative regions survive CAD operations. No sine-wave repetition, arbitrary stock leaves, stipple-as-geometry or invented bridges substitute for source paths. Border and field boundaries come from traces, not just global offsets."
+    },
+    {
+      "id": "AC-06",
+      "name": "Lettering",
+      "status": "not_run",
+      "requirement": "seven correctly ordered letters read KATHRYN from each outward face. Individual glyph contour or justified-font residuals, baseline, tilt, bounding boxes, spacing and counters are documented against D3/P1. All glyphs fit within the traced name enclosure without unintended contact with adjacent scrolls. The two sides are shown at matching camera scale. Filled versus outlined treatment is resolved as a representation choice, not inferred solely from line art."
+    },
+    {
+      "id": "AC-07",
+      "name": "Assembly",
+      "status": "not_run",
+      "requirement": "every registered part is a valid solid. Boards and intended backing/fixing contacts are within 1 mm at full size; unintended timber-to-timber common volume is below 0.000001 ft3 unless a declared lap/recess is modeled. No unexplained board/spar/rail clash, out-of-wood fixing, disconnected head feature or false contact is accepted. Paint/relief embed is explicitly distinguished from an unintended timber overlap. The repaired spar, post, hull and jib connections retain their regression results."
+    },
+    {
+      "id": "AC-08",
+      "name": "Material and state record",
+      "status": "not_run",
+      "requirement": "physical depth, board thickness, backing width, color values and engraving/paint interpretations each carry an evidence class and source or assumption. Existing 0.36 in net relief stand-off, 1.44 in boards, 6.00 in backing and palette remain provisional if not independently resolved. No unsupported historical measurement is labeled verified."
+    },
+    {
+      "id": "AC-09",
+      "name": "Rail relationship",
+      "status": "not_run",
+      "requirement": "item-11 rail identity is resolved in profile and plan. Independently traced endpoint stations/heights and their residuals are reported. Any confirmed rail correction is documented separately and preserves its hull connection. A no-collision result alone does not pass this criterion."
+    },
+    {
+      "id": "AC-10",
+      "name": "Final package",
+      "status": "not_run",
+      "requirement": "completed SOMA build, actual-export checks, clean committed-tree build, required annotated after views, source/photo comparison, acceptance JSON and refreshed README gallery all identify the same final model. Every TB finding has a disposition. Remaining uncertainty is explicit and cannot be silently counted as a historical-fidelity pass."
+    }
+  ],
+  "completion": "All criteria have evidence and dispositions; uncertainty is retained explicitly and never converted into a historical-fidelity pass. Preserve as-found evidence and validate the final committed model."
+}

@@ -1,0 +1,655 @@
+{
+  "review_date": "2026-11-15",
+  "head": "085c2f16e05d5baaaed82dc428b71b6d7eb0316c",
+  "basis": "928-part working-tree export; CAD source changes are not committed at capture",
+  "build_finished": "2026-11-15T22:03:12.178347+00:00",
+  "parts": 928,
+  "warnings": [],
+  "model_files": {
+    "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
+    "src/parts/__init__.py": "4a74abd352dec4511cfcce1291ff50d0855e9e6eaaad3e4e64fe13933510eac6",
+    "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
+    "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
+    "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
+    "src/parts/bow.py": "5761c1f0cd29265f773409209903a69f0cc3e4ea950da49820fb643b9fa1542f",
+    "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
+    "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
+    "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
+    "src/parts/datum.py": "52a2c4a92e253bcdd0bce699ed618dc0ecfc4d0f2277bed138ff1f1394ae8bd8",
+    "src/parts/deck.py": "a105aa32710157a1e52a2bf114f6a1930d156ace0f08973df36cbc9c5e4f59fb",
+    "src/parts/deck_beams.py": "45c75ba2c5cb4636fd39ba5f5b781b4e662f9928ca5449cae1b652f4e04d7258",
+    "src/parts/deck_planking.py": "d62d99981b0f770d4849af6c0afdd51a8cb5030e3529d3d871eaf9f3bd2e31ac",
+    "src/parts/equipment.py": "4626483fa20da574ef5235b028d45f1bc85ff98267d158c982242d1ad29f21d0",
+    "src/parts/frame_layout.py": "278a3d364eabe8664110f6d1717f5a9f81b5302e2d8b6cf141c43269b7a512c7",
+    "src/parts/framing.py": "691543fa0850f023a090a9e4b9cff8ca9e32a636bca1637ac12c043ca904ebd5",
+    "src/parts/hull.py": "3cdc658529b7d417444d5fc65f68206cc207eda87b1caa1b7c100c27f0b92da3",
+    "src/parts/hull_frames.py": "18aa452a17037c7ebeba04a4dabc5ae1c9e65c21f45b2afb09ad67432175b3ba",
+    "src/parts/interior.py": "e591f1cc8c158f7d1f3918418c509b7a8716aa9b8a016182e692fdde751084ad",
+    "src/parts/openings.py": "f0300e7025f9aeb89fbe676833e1cfeacf31d4088fe04f1ed3e7a4eda24e40de",
+    "src/parts/params.py": "f1d06a08d7c17deae9d54ca9b97a3cc3dbcd225e220fa0dfb382061be3bf5e8c",
+    "src/parts/planking.py": "36415d74373ce49a01e67067919c96e73921606e247f0c6dc4b0572ace172ed3",
+    "src/parts/primitives.py": "c6694b4ab5502078d94a01ef4b487b00eccc2863075bb33a8dd21dadf31a6ae4",
+    "src/parts/rails.py": "000dca29d1782580a1518371268da2daf7b1d107fa30567eacc3d54ebc53a1ef",
+    "src/parts/rigging.py": "aa0d8011001da5c553297e6a6c179be8d96d388a06177afea291c594620da658",
+    "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
+    "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
+    "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
+    "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7"
+  },
+  "build_files": {
+    ".soma/build.json": "c8b37ea301391c176f2d99763034b066ca0430a73b061c31d8dd5caac2f3287b",
+    ".soma/model.glb": "256bdcfd55c7ae02b276092ca5b18664597e40fb84c34ee66e99b674b53d2933",
+    ".soma/model.map.json": "4af0bae0f0a9e530c0c03f3485f68ef078fb6311abec6979d8bf099bffec2c52",
+    "output/model.step": "00736c66929b36009ce29b19104194f2d2caa4ee4d02465ea6b05b8fc29613ee"
+  },
+  "units": "full-size feet; exported BREP divided by 304.8",
+  "geometry": {
+    "Longhead trailboard backing": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 4.643839654637917,
+      "across_ft": [
+        -0.25,
+        0.25
+      ],
+      "forward_ft": [
+        49.809211608940814,
+        62.55
+      ],
+      "height_ft": [
+        7.155523300965605,
+        10.8
+      ]
+    },
+    "Port trailboard board": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 1.0982277340588686,
+      "across_ft": [
+        0.25,
+        0.37
+      ],
+      "forward_ft": [
+        50.4059099081095,
+        62.55
+      ],
+      "height_ft": [
+        7.155523300965605,
+        10.8
+      ]
+    },
+    "Port trailboard painted field": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.03957573076809737,
+      "across_ft": [
+        0.368,
+        0.3740000000000001
+      ],
+      "forward_ft": [
+        50.5059099081095,
+        62.31081663115074
+      ],
+      "height_ft": [
+        7.28730234198183,
+        10.700000000000001
+      ]
+    },
+    "Port carved border and scrollwork": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.09310893751359436,
+      "across_ft": [
+        0.365,
+        0.4000000000000001
+      ],
+      "forward_ft": [
+        50.4059099081095,
+        62.55
+      ],
+      "height_ft": [
+        7.155523300965605,
+        10.8
+      ]
+    },
+    "Port trailboard letter K": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.002390900756835917,
+      "across_ft": [
+        0.365,
+        0.4
+      ],
+      "forward_ft": [
+        55.38717895346626,
+        55.81132834696581
+      ],
+      "height_ft": [
+        8.535818052032688,
+        8.942606976900233
+      ]
+    },
+    "Port trailboard letter A": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0017242895050048506,
+      "across_ft": [
+        0.365,
+        0.4
+      ],
+      "forward_ft": [
+        55.03043970703333,
+        55.41198757670696
+      ],
+      "height_ft": [
+        8.440687406714895,
+        8.819558194777048
+      ]
+    },
+    "Port trailboard letter T": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0016145307312011533,
+      "across_ft": [
+        0.365,
+        0.4
+      ],
+      "forward_ft": [
+        54.59730512734133,
+        54.95331062527604
+      ],
+      "height_ft": [
+        8.358636095247153,
+        8.744043134516549
+      ]
+    },
+    "Port trailboard letter H": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.00272310424804687,
+      "across_ft": [
+        0.365,
+        0.4
+      ],
+      "forward_ft": [
+        54.162965281469255,
+        54.61979593100499
+      ],
+      "height_ft": [
+        8.248508921329996,
+        8.65529784619754
+      ]
+    },
+    "Port trailboard letter R": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.002498785308837895,
+      "across_ft": [
+        0.3649999,
+        0.4000001
+      ],
+      "forward_ft": [
+        53.81039801027499,
+        54.18962826037159
+      ],
+      "height_ft": [
+        8.15947926214198,
+        8.561783406127958
+      ]
+    },
+    "Port trailboard letter Y": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0016152151794433414,
+      "across_ft": [
+        0.365,
+        0.4
+      ],
+      "forward_ft": [
+        53.385723572039154,
+        53.73737156916904
+      ],
+      "height_ft": [
+        8.091748771987145,
+        8.478094528185236
+      ]
+    },
+    "Port trailboard letter N": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0021403734741211296,
+      "across_ft": [
+        0.365,
+        0.4
+      ],
+      "forward_ft": [
+        52.95845307587706,
+        53.404389973400725
+      ],
+      "height_ft": [
+        8.004441853973477,
+        8.402956162951005
+      ]
+    },
+    "Port longhead eagle eye": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 7.06858347057723e-05,
+      "across_ft": [
+        0.369,
+        0.394
+      ],
+      "forward_ft": [
+        62.14,
+        62.2
+      ],
+      "height_ft": [
+        10.65,
+        10.709999999999999
+      ]
+    },
+    "Port trailboard fixing F51.5": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0003716661188829435,
+      "across_ft": [
+        0.14,
+        0.398
+      ],
+      "forward_ft": [
+        51.461,
+        51.539
+      ],
+      "height_ft": [
+        7.801637592666651,
+        7.879637592666651
+      ]
+    },
+    "Port trailboard fixing F56.0": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0003716661188829507,
+      "across_ft": [
+        0.14,
+        0.398
+      ],
+      "forward_ft": [
+        55.961,
+        56.039
+      ],
+      "height_ft": [
+        8.797886756288635,
+        8.875886756288635
+      ]
+    },
+    "Port trailboard fixing F60.0": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0003716661188829515,
+      "across_ft": [
+        0.14,
+        0.398
+      ],
+      "forward_ft": [
+        59.961,
+        60.039
+      ],
+      "height_ft": [
+        9.955342201958997,
+        10.033342201958998
+      ]
+    },
+    "Starboard trailboard board": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 1.0982277340588686,
+      "across_ft": [
+        -0.37,
+        -0.25
+      ],
+      "forward_ft": [
+        50.4059099081095,
+        62.55
+      ],
+      "height_ft": [
+        7.155523300965605,
+        10.8
+      ]
+    },
+    "Starboard trailboard painted field": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.03957573076809737,
+      "across_ft": [
+        -0.3740000000000001,
+        -0.368
+      ],
+      "forward_ft": [
+        50.5059099081095,
+        62.31081663115074
+      ],
+      "height_ft": [
+        7.28730234198183,
+        10.700000000000001
+      ]
+    },
+    "Starboard carved border and scrollwork": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.09301362914037219,
+      "across_ft": [
+        -0.4000000000000001,
+        -0.365
+      ],
+      "forward_ft": [
+        50.4059099081095,
+        62.55
+      ],
+      "height_ft": [
+        7.155523300965605,
+        10.8
+      ]
+    },
+    "Starboard trailboard letter K": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0023909007568359295,
+      "across_ft": [
+        -0.4,
+        -0.365
+      ],
+      "forward_ft": [
+        52.97235999333927,
+        53.429190642875
+      ],
+      "height_ft": [
+        7.999887338504603,
+        8.401774074966715
+      ]
+    },
+    "Starboard trailboard letter A": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.001724289505004872,
+      "across_ft": [
+        -0.4,
+        -0.365
+      ],
+      "forward_ft": [
+        53.419401490493485,
+        53.80094936016712
+      ],
+      "height_ft": [
+        8.077824470878106,
+        8.455965145773495
+      ]
+    },
+    "Starboard trailboard letter T": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0016145307312011466,
+      "across_ft": [
+        -0.4,
+        -0.365
+      ],
+      "forward_ft": [
+        53.79143834613484,
+        54.14744384406955
+      ],
+      "height_ft": [
+        8.175889524747385,
+        8.56129656401678
+      ]
+    },
+    "Starboard trailboard letter H": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0027231042480468947,
+      "across_ft": [
+        -0.4,
+        -0.365
+      ],
+      "forward_ft": [
+        54.163892409300075,
+        54.62072305883581
+      ],
+      "height_ft": [
+        8.24864799050462,
+        8.655436915372162
+      ]
+    },
+    "Starboard trailboard letter R": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0024987853088378536,
+      "across_ft": [
+        -0.4000001,
+        -0.3649999
+      ],
+      "forward_ft": [
+        54.594060079933485,
+        55.02099105692546
+      ],
+      "height_ft": [
+        8.346050234943856,
+        8.724605808090024
+      ]
+    },
+    "Starboard trailboard letter Y": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0016152151794433392,
+      "across_ft": [
+        -0.4,
+        -0.365
+      ],
+      "forward_ft": [
+        54.99861604424064,
+        55.35026404137052
+      ],
+      "height_ft": [
+        8.455932864982843,
+        8.841235602371269
+      ]
+    },
+    "Starboard trailboard letter N": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.002140373474121139,
+      "across_ft": [
+        -0.4,
+        -0.365
+      ],
+      "forward_ft": [
+        55.379298366904344,
+        55.78096491050665
+      ],
+      "height_ft": [
+        8.539538152453831,
+        8.944693014519562
+      ]
+    },
+    "Starboard longhead eagle eye": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 7.068583470577228e-05,
+      "across_ft": [
+        -0.394,
+        -0.369
+      ],
+      "forward_ft": [
+        62.14,
+        62.2
+      ],
+      "height_ft": [
+        10.65,
+        10.709999999999999
+      ]
+    },
+    "Starboard trailboard fixing F51.5": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.00037166611888294357,
+      "across_ft": [
+        -0.398,
+        -0.14
+      ],
+      "forward_ft": [
+        51.461,
+        51.539
+      ],
+      "height_ft": [
+        7.801637592666651,
+        7.879637592666651
+      ]
+    },
+    "Starboard trailboard fixing F56.0": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0003716661188829507,
+      "across_ft": [
+        -0.398,
+        -0.14
+      ],
+      "forward_ft": [
+        55.961,
+        56.039
+      ],
+      "height_ft": [
+        8.797886756288635,
+        8.875886756288635
+      ]
+    },
+    "Starboard trailboard fixing F60.0": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.0003716661188829515,
+      "across_ft": [
+        -0.398,
+        -0.14
+      ],
+      "forward_ft": [
+        59.961,
+        60.039
+      ],
+      "height_ft": [
+        9.955342201958997,
+        10.033342201958996
+      ]
+    },
+    "Port projecting headrail": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.3502710260478404,
+      "across_ft": [
+        0.48132594878785895,
+        2.738674051212138
+      ],
+      "forward_ft": [
+        46.773804027555514,
+        58.69644562378163
+      ],
+      "height_ft": [
+        9.018646221320004,
+        10.821353778680002
+      ]
+    },
+    "Starboard projecting headrail": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 0.35027102604783966,
+      "across_ft": [
+        -2.738674051212138,
+        -0.48132594878785895
+      ],
+      "forward_ft": [
+        46.773804027555514,
+        58.69644562378162
+      ],
+      "height_ft": [
+        9.018646221320006,
+        10.82135377868
+      ]
+    },
+    "Bowsprit": {
+      "valid": true,
+      "solids": 1,
+      "volume_ft3": 10.489967604418755,
+      "across_ft": [
+        -0.5000001,
+        0.5000001
+      ],
+      "forward_ft": [
+        45.92575313573094,
+        67.33447690149511
+      ],
+      "height_ft": [
+        8.906183302440946,
+        12.16896342152322
+      ]
+    }
+  },
+  "contacts": {
+    "Port board / Longhead trailboard backing": {
+      "separation_mm": 0.0,
+      "common_ft3": 0.0
+    },
+    "Port board / Port projecting headrail": {
+      "separation_mm": 207.4995522549773,
+      "common_ft3": 0.0
+    },
+    "Starboard board / Longhead trailboard backing": {
+      "separation_mm": 0.0,
+      "common_ft3": 0.0
+    },
+    "Starboard board / Starboard projecting headrail": {
+      "separation_mm": 207.4995522549773,
+      "common_ft3": 0.0
+    }
+  },
+  "board_depth_samples": [
+    {
+      "forward_ft": 51,
+      "upper_ft": 8.110277285513936,
+      "lower_ft": 7.3200822694461705,
+      "depth_in": 9.482340192813187
+    },
+    {
+      "forward_ft": 52,
+      "upper_ft": 8.35835712097243,
+      "lower_ft": 7.555804148529037,
+      "depth_in": 9.630635669320714
+    },
+    {
+      "forward_ft": 54,
+      "upper_ft": 8.826794925113186,
+      "lower_ft": 7.890443311032184,
+      "depth_in": 11.236219368972016
+    },
+    {
+      "forward_ft": 56,
+      "upper_ft": 9.315260216450998,
+      "lower_ft": 8.358513296126274,
+      "depth_in": 11.480963043896686
+    },
+    {
+      "forward_ft": 58,
+      "upper_ft": 9.803750912010692,
+      "lower_ft": 8.99395125680177,
+      "depth_in": 9.71759586250706
+    },
+    {
+      "forward_ft": 60,
+      "upper_ft": 10.292256055095283,
+      "lower_ft": 9.696428348822709,
+      "depth_in": 7.149932475270894
+    },
+    {
+      "forward_ft": 61.33616569753958,
+      "upper_ft": 10.607444167746323,
+      "lower_ft": 10.23281709693291,
+      "depth_in": 4.4955248497609475
+    }
+  ],
+  "capture_status": "geometry evidence only; no historical-shape acceptance asserted"
+}
