@@ -13,9 +13,9 @@
   "source_original_hashes": "Verified against drawing-package manifest for every cited scan; all model/export hashes match snapshot.",
   "pdf_pages": 23,
   "pdf_text_margins": "All searchable text within checked page margins.",
-  "pdf_visual_review": "All pages rendered; contact sheets reviewed; corrected key pages and diagram inspected at larger size.",
-  "pdf_sha256": "39558ddf86b0fac9c8a82192c07b608829a7fe58fe616532151899a11f139bb5",
-  "report_sha256": "8fceb095a97c8d7c03f14e300077d25ee00b75b14c5141a659abf976ef7c06f1",
+  "pdf_visual_review": "All pages rendered; contact sheets reviewed; corrected key pages and diagram inspected at larger size. After relocation, all text margins rechecked and final page re-rendered for inspection.",
+  "pdf_sha256": "2c1518e96090960730f04b25fbee77c9caf5b53b155c5704f6384a73a7f9d2f2",
+  "report_sha256": "c0a3efd395f03357a8c61eaf421161e64fc01af9a442003fbc5c2ff27cc7283a",
   "checks": [
     "Fresh OCCT distances and intersections",
     "40 valid single solids",
@@ -26,5 +26,6 @@
     "Git whitespace"
   ],
   "full_build": "Not rerun successfully; attempted build interrupted (143). Prior 903-part cache reports ok/no warnings. No model geometry changed.",
-  "remaining": "Implement phases 1-6; geometric review does not establish structural strength."
+  "remaining": "Implement phases 1-6; geometric review does not establish structural strength.",
+  "pdf_file": "docs/bowsprit-trailboards-gap-analysis.pdf"
 }

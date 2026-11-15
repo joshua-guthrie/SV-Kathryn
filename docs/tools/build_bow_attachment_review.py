@@ -384,7 +384,7 @@ def pdf():
     matplotlib.rcParams['pdf.fonttype']=42
     matplotlib.rcParams['figure.max_open_warning']=0
     source=ROOT/'docs/BOWSPRIT_ATTACHMENT_REVIEW.md'
-    output=ROOT/'output/pdf/bowsprit-trailboards-gap-analysis.pdf'
+    output=ROOT/'docs/bowsprit-trailboards-gap-analysis.pdf'
     output.parent.mkdir(parents=True,exist_ok=True)
     # Markdown is deliberately simple: paragraphs, headings, bullets, figures.
     lines=source.read_text().splitlines()

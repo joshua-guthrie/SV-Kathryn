@@ -234,6 +234,6 @@ Original scans remain in `references/drawings/`; unmodified native drawing views
 
 Implementation ownership: `src/parts/bow.py` for headwork, boards and bow stays; `src/parts/spars.py` for the complete spar; `src/parts/rigging.py` for sail and line solutions; `src/parts/params.py` plus the new source ledger for shared bow stations. Coordinate internal changes with `deck.py`, `hull_frames.py` and the frame/source layout rather than moving the post in isolation.
 
-Reproduce measurements with `python docs/tools/build_bow_attachment_review.py --measure`, illustrations with `--figures`, and the searchable illustrated PDF with `--pdf`. The PDF is written to `output/pdf/bowsprit-trailboards-gap-analysis.pdf`. These commands read the geometry and references; they do not repair or alter the model.
+Reproduce measurements with `python docs/tools/build_bow_attachment_review.py --measure`, illustrations with `--figures`, and the searchable illustrated PDF with `--pdf`. The PDF is written to `docs/bowsprit-trailboards-gap-analysis.pdf`, beside this report. These commands read the geometry and references; they do not repair or alter the model.
 
 Primary online source addresses for the standalone PDF: https://npgallery.nps.gov/NRHP/GetAsset/NHLS/94001192_text and https://www.loc.gov/item/md1454/ . Photograph captions: https://tile.loc.gov/storage-services/master/pnp/habshaer/md/md1400/md1454/data/md1454cap.pdf .
