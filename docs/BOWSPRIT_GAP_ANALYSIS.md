@@ -1,6 +1,8 @@
 # Bowsprit, trailboards and jib — gap analysis and fix plan
 
-**Status: implemented 2026-11-14.**
+> **Current review (15 November 2026):** This report records the earlier investigation and partial repair. Its implemented status does not mean bow attachments are accepted. See [Bowsprit and trailboards: attachment gap analysis](BOWSPRIT_ATTACHMENT_REVIEW.md) for freshly measured defects, current annotated pictures, annotated original drawings and the detailed correction plan.
+
+**Historical status: partial visual repair implemented 2026-11-14; attachment correction remains required.**
 The bow was broken mainly because the added S08 jib demonstration sail was a
 flat centreline plate whose foot passed through the bowsprit. The bowsprit
 part itself was not changed when the sails were added (`d299778` added

@@ -1,5 +1,7 @@
 # Kathryn — skipjack reconstruction
 
+**Current bow review, 2026-11-15:** [Bowsprit and trailboards: attachment gap analysis](BOWSPRIT_ATTACHMENT_REVIEW.md) records eight unresolved findings with fresh CAD measurements, annotated original drawings and a staged correction plan. Earlier claims below that the rounded outer transition is the full heel, or that the bow attachments pass, are superseded. This task is analysis only; model geometry remains at e341989.
+
 ## Requirements
 
 - **2026-11-11 stopping point requested by user:**650 valid parts,1:1/mm, no

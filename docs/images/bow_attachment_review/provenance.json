@@ -1,0 +1,117 @@
+{
+  "source-s04-profile-annotated.png": {
+    "view": "S04-V01",
+    "native_crop_box": [
+      6985,
+      231,
+      10834,
+      1906
+    ],
+    "source_file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif",
+    "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+    "view_sha256": "c7c62358c5b416b9b36f9ee44cdcae9bf29bcb205ea864ca5c375dae61948ac1"
+  },
+  "source-s04-plan-annotated.png": {
+    "view": "S04-V02",
+    "native_crop_box": [
+      7035,
+      582,
+      10884,
+      2137
+    ],
+    "source_file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif",
+    "source_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+    "view_sha256": "6bb502da96d4565c8d54179b3e76e27557d6b6890565f2f5bfad8174eea223ac"
+  },
+  "source-s01-ornament-annotated.png": {
+    "view": "S01-V03",
+    "native_crop_box": [
+      0,
+      0,
+      3960,
+      2107
+    ],
+    "source_file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00001a.tif",
+    "source_sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f",
+    "view_sha256": "1055509566f971f1d0d6c6542abb8607e47c8a4dc5c5e331a452955255e0d772"
+  },
+  "source-s03-stays-annotated.png": {
+    "view": "S03-V01",
+    "native_crop_box": [
+      6700,
+      4200,
+      9489,
+      6500
+    ],
+    "source_file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00003a.tif",
+    "source_sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c",
+    "view_sha256": "ecf45f68343046805ba20af6dcad47856042f40bea96135a05346ec7aa5e14a1"
+  },
+  "source-s05-structure-annotated.png": {
+    "view": "S05-V01",
+    "native_crop_box": [
+      6748,
+      422,
+      9237,
+      2388
+    ],
+    "source_file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00005a.tif",
+    "source_sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3",
+    "view_sha256": "8c7f188891ad762ff4b1aa3984e23d408cdadf2e8877ba21d6ed84518ebc260a"
+  },
+  "source-s08-dimensions-annotated.png": {
+    "view": "S08-V01",
+    "native_crop_box": [
+      0,
+      0,
+      3000,
+      1550
+    ],
+    "source_file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00008a.tif",
+    "source_sha256": "c2323234f362d058b4aa44e3c6d8051c679126db060d54cccfad386e9d0ac5fd",
+    "view_sha256": "ae6c8ea224451daec3654b86811e96fe3a79fb0725f29dd6843eff9ab30ea897"
+  },
+  "source-loc-p22-annotated.png": {
+    "file": "references/loc_photos/LOC_Kathryn_photos/23-LOC-P22.jpg",
+    "sha256": "d9441c5c1bdbcc2dc3b955c443595217515a4dc14d4fbc535d0d182dfded8927",
+    "url": "https://www.loc.gov/resource/hhh.md1454.photos/?sp=23"
+  },
+  "model": {
+    "commit": "e34198968cd623355762824cdf5157096f53469d",
+    "files": {
+      "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
+      "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
+      "src/parts/deck_beams.py": "45c75ba2c5cb4636fd39ba5f5b781b4e662f9928ca5449cae1b652f4e04d7258",
+      "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
+      "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
+      "src/parts/framing.py": "691543fa0850f023a090a9e4b9cff8ca9e32a636bca1637ac12c043ca904ebd5",
+      "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
+      "src/parts/deck.py": "a105aa32710157a1e52a2bf114f6a1930d156ace0f08973df36cbc9c5e4f59fb",
+      "src/parts/interior.py": "e591f1cc8c158f7d1f3918418c509b7a8716aa9b8a016182e692fdde751084ad",
+      "src/parts/hull.py": "3cdc658529b7d417444d5fc65f68206cc207eda87b1caa1b7c100c27f0b92da3",
+      "src/parts/equipment.py": "4626483fa20da574ef5235b028d45f1bc85ff98267d158c982242d1ad29f21d0",
+      "src/parts/__init__.py": "4a74abd352dec4511cfcce1291ff50d0855e9e6eaaad3e4e64fe13933510eac6",
+      "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
+      "src/parts/deck_planking.py": "d62d99981b0f770d4849af6c0afdd51a8cb5030e3529d3d871eaf9f3bd2e31ac",
+      "src/parts/params.py": "7f41170cffd4e1aea406cbe99f83bb4611c9c92dec4dd2764d01acd60f81eb00",
+      "src/parts/bow.py": "e8592b3aa576967970cf1970148676ab2f1b29388135242b156094900a5aa8a7",
+      "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
+      "src/parts/datum.py": "52a2c4a92e253bcdd0bce699ed618dc0ecfc4d0f2277bed138ff1f1394ae8bd8",
+      "src/parts/planking.py": "36415d74373ce49a01e67067919c96e73921606e247f0c6dc4b0572ace172ed3",
+      "src/parts/rails.py": "000dca29d1782580a1518371268da2daf7b1d107fa30567eacc3d54ebc53a1ef",
+      "src/parts/openings.py": "f0300e7025f9aeb89fbe676833e1cfeacf31d4088fe04f1ed3e7a4eda24e40de",
+      "src/parts/primitives.py": "c6694b4ab5502078d94a01ef4b487b00eccc2863075bb33a8dd21dadf31a6ae4",
+      "src/parts/frame_layout.py": "278a3d364eabe8664110f6d1717f5a9f81b5302e2d8b6cf141c43269b7a512c7",
+      "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
+      "src/parts/rigging.py": "3ef537ef0a0c495045b1d7a1f50d3d56bffccd755b6b5a161bf962e0f3f1aa05",
+      "src/parts/spars.py": "08048a11a4bda58f38b3f72c5df2d6971916392cd180a1e1450b3f8e9bc2561e",
+      "src/parts/hull_frames.py": "e2340ef1ba8dcca5df4792639913383da94138c3ea1f3e10b633a23aae649816",
+      ".soma/model.glb": "38e8f9d153635aba9ef9d6e3c22f589d2c5ee0cb8f44f309c092488b354814b1",
+      ".soma/model.map.json": "0bdb7f97f382ae09e78dd18fc95ed989c7c58752f82dc2e83166b665d584be64",
+      ".soma/build.json": "ff04f72fe8fcfe63b021c884a90a591a94485edc6a0dad50693ce9b83c662a84"
+    },
+    "render_source": "Existing successful 903-part SOMA GLB; fresh targeted BREP audit; no model edits.",
+    "soma_render": "Viewer RPC unavailable in sandbox; VTK EGL reads the actual exported GLB.",
+    "new_full_build": "Attempt interrupted (exit 143); prior successful cache retained. No fresh full-build claim."
+  }
+}
