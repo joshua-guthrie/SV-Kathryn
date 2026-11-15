@@ -18,6 +18,10 @@ The model was created using SOMA CAD and AI-assisted CAD modeling, using histori
 | **Hold section** | **Interior cutaway** |
 | ![Hold section](docs/images/section-hold.png) | ![Interior cutaway](docs/images/interior-cutaway.png) |
 
+## Aft deck from above
+
+![High stern-quarter view of the aft deck](docs/images/stern-quarter-high.png)
+
 ## Model files
 
 - `model.py` — the entry point; builds and registers every part

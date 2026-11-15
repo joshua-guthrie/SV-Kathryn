@@ -29,6 +29,8 @@ VIEWS = (
     dict(name='starboard-side', direction=(-1, 0, 0), up=(0, 0, 1), hide=()),
     dict(name='bow-quarter', direction=(1, -1, .45), up=(0, 0, 1), hide=()),
     dict(name='stern-quarter', direction=(1, 1, .45), up=(0, 0, 1), hide=()),
+    dict(name='stern-quarter-high', direction=(1, 1, 1.0), up=(0, 0, 1),
+         hide=(), zoom=1.95, focus=(-2150, 1100, 5650)),
     dict(name='plan', direction=(0, 0, 1), up=(0, -1, 0),
          hide=('Rigging', 'Spars') + SAILS),
     dict(name='section-centreline', direction=(-1, 0, 0), up=(0, 0, 1),
@@ -105,7 +107,11 @@ def render(view):
     camera.SetPosition(*(focus + direction * np.linalg.norm(high - low) * 3))
     camera.SetViewUp(*view['up'])
     renderer.ResetCamera(low[0], high[0], low[1], high[1], low[2], high[2])
-    camera.Zoom(1.06)
+    camera.Zoom(view.get('zoom', 1.06))
+    if view.get('focus'):
+        shift = np.array(view['focus'], float) - np.array(camera.GetFocalPoint())
+        camera.SetFocalPoint(*(np.array(camera.GetFocalPoint()) + shift))
+        camera.SetPosition(*(np.array(camera.GetPosition()) + shift))
     renderer.ResetCameraClippingRange()
 
     window = vtk.vtkEGLRenderWindow()
