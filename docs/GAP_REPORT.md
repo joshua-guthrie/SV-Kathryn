@@ -266,7 +266,7 @@ The verified model remains the **179-part** companionway checkpoint below.
 | I-B01 | Model interior structure, lining/floors/bulkheads and furnishings as identifiable timbers/boards. | Saved as phased project goal; implementation pending. |
 
 Details, citations, measurement rules and the exact resume point are in
-`INTERIOR_RECONSTRUCTION.md` and `PASSDOWN.md`. Hatch source crops are
+`INTERIOR_RECONSTRUCTION.md`. Hatch source crops are
 `renders/hatch-source-structural-plan.png`, `hatch-source-beam-notes.png`,
 `hatch-source-deck-notes.png`, `hatch-source-deck-plan.png`,
 `hatch-source-inboard-profile.png` and `hatch-source-cabin-roof-support.png`.
