@@ -18,9 +18,6 @@ The model was created using SOMA CAD and AI-assisted CAD modeling, using histori
 | **Hold section** | **Interior cutaway** |
 | ![Hold section](docs/images/section-hold.png) | ![Interior cutaway](docs/images/interior-cutaway.png) |
 
-The pictures are rendered from the current build; see
-[Regenerating the images](#regenerating-the-images).
-
 ## Model files
 
 - `model.py` — the entry point; builds and registers every part
@@ -60,22 +57,6 @@ functions and writes `output/model_standalone.step` as a named STEP assembly.
 Add `--stl` for a whole-model STL, `--out PATH` to choose another file, and
 `--help` for the options. Values in `parameters.json` are applied by name when
 present. The SOMA viewer cache, Parameters panel and GLB export are SOMA-only.
-
-## Regenerating the images
-
-The gallery is rendered from the current SOMA build:
-
-```sh
-soma build
-python src/checks/render_readme_images.py
-```
-
-The script reads `.soma/model.glb` and `.soma/model.map.json`, writes the PNGs
-in `docs/images/`, and needs VTK (included with SOMA's Python; otherwise
-`python -m pip install vtk`). It renders the six exterior views, the plan, and
-three cutaways (centreline, hold and an interior three-quarter cut). The `VIEWS`
-list at the top of the script defines the cameras, hidden groups and section
-planes; `--only <name>` renders a subset.
 
 ## About Skipjacks
 
