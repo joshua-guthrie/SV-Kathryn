@@ -343,32 +343,37 @@ def annotate_photo(out_path):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     scene = ModelScene()
-    lazy_lines = scene.lazyjack_endpoints()
+    as_found = 'Port lazy jack 1' in {p['name'] for p in scene.parts}
+    lazy_lines = scene.lazyjack_endpoints() if as_found else []
 
-    # 1. Starboard profile, sails hidden so the rig reads clearly.
-    image, (top_px, bottom_px) = scene.render(
-        direction=(-1, 0, .04), up=(0, 0, 1), focus=(0, 11.8, 15), scale=20,
-        hide=('Sails',), overlay_lines=lazy_lines, points=(TOP_FT, BOOM_TIP_FT))
-    annotate_profile(image, top_px, bottom_px,
-                     OUT / 'model-lazyjacks-profile-annotated.png')
+    if as_found:
+        # 1. Starboard profile, sails hidden so the rig reads clearly.
+        image, (top_px, bottom_px) = scene.render(
+            direction=(-1, 0, .04), up=(0, 0, 1), focus=(0, 11.8, 15), scale=20,
+            hide=('Sails',), overlay_lines=lazy_lines, points=(TOP_FT, BOOM_TIP_FT))
+        annotate_profile(image, top_px, bottom_px,
+                         OUT / 'model-lazyjacks-profile-annotated.png')
 
-    # 2. Plan over the whole boom with the sails hidden.
-    stations_ft = [(x, BOOM_AFT_FT - f * BOOM_LENGTH_FT, 12.8)
-                   for x in (.8, -.8) for f in S03_FRACTIONS]
-    guide_ft = [((x, -12, 12.8), (x, 37.3, 12.8)) for x in (.8, -.8)]
-    image, display = scene.render(
-        direction=(0, 0, 1), up=(1, 0, 0), focus=(0, 11.7, 16), scale=19,
-        hide=('Sails', 'Rigging/Standing', 'Rigging/Fittings'),
-        overlay_lines=lazy_lines,
-        points=(BOOM_TIP_FT,
-                *[p for pair in guide_ft for p in pair],
-                *stations_ft))
-    tip_px = display[0]
-    guide_px = display[1:9]
-    station_px = display[9:]
-    annotate_plan(image, tip_px, [(guide_px[0], guide_px[1]),
-                                  (guide_px[2], guide_px[3])],
-                  station_px, OUT / 'model-lazyjacks-plan-annotated.png')
+        # 2. Plan over the whole boom with the sails hidden.
+        stations_ft = [(x, BOOM_AFT_FT - f * BOOM_LENGTH_FT, 12.8)
+                       for x in (.8, -.8) for f in S03_FRACTIONS]
+        guide_ft = [((x, -12, 12.8), (x, 37.3, 12.8)) for x in (.8, -.8)]
+        image, display = scene.render(
+            direction=(0, 0, 1), up=(1, 0, 0), focus=(0, 11.7, 16), scale=19,
+            hide=('Sails', 'Rigging/Standing', 'Rigging/Fittings'),
+            overlay_lines=lazy_lines,
+            points=(BOOM_TIP_FT,
+                    *[p for pair in guide_ft for p in pair],
+                    *stations_ft))
+        tip_px = display[0]
+        guide_px = display[1:9]
+        station_px = display[9:]
+        annotate_plan(image, tip_px, [(guide_px[0], guide_px[1]),
+                                      (guide_px[2], guide_px[3])],
+                      station_px, OUT / 'model-lazyjacks-plan-annotated.png')
+    else:
+        print('As-found lazyjacks are no longer registered; keeping the '
+              'committed as-found figures.')
 
     # 3. Design and photo evidence.
     annotate_s03(OUT / 'source-s03-lazyjacks-annotated.png')

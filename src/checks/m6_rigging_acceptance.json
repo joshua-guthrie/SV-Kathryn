@@ -1,12 +1,50 @@
 {
   "status": "passed",
-  "rigging_parts": 33,
+  "rigging_parts": 59,
   "sail_parts": 2,
   "groups": [
     "Rigging/Fittings",
     "Rigging/Running",
     "Rigging/Standing"
   ],
+  "lazyjacks": {
+    "main_stations_y_ft": [
+      30.3,
+      17.7,
+      4.0,
+      -8.2
+    ],
+    "main_junctions_y_z_ft": [
+      [
+        -8.2,
+        37.0
+      ],
+      [
+        6.0,
+        26.0
+      ]
+    ],
+    "outboard_x_ft": 0.75,
+    "jib_junction_z_ft": 24.0,
+    "jib_legs": 2,
+    "sources": [
+      "S03-V01 callout (6)",
+      "LOC-C01/P01 caption: gear to the boom and club"
+    ]
+  },
+  "jib_club_ft": {
+    "fore": [
+      0.0,
+      -39.233,
+      12.013
+    ],
+    "aft": [
+      0.0,
+      -13.588,
+      10.97
+    ],
+    "foot_raise_ft": 0.75
+  },
   "main_plan_ft": {
     "luff": 45.5,
     "foot": 49.333,
@@ -27,6 +65,7 @@
   "unresolved": [
     "main-sail roached leech not modelled",
     "exact cleat/pin-rail positions",
-    "hoops/hanks intentionally omitted per S08 note"
+    "hoops/hanks intentionally omitted per S08 note",
+    "lazyjack junction heights and leg split inferred from the S03 profile"
   ]
 }

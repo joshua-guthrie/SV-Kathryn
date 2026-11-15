@@ -23,7 +23,7 @@ from parts.stern_fittings import make_stern_fittings
 from parts.deck_planking import (make_deck_board_parts, make_kingplank_scarf_parts,
                                   make_waterway_parts)
 from parts.deck_beams import make_deck_beam_parts
-from parts.rigging import make_rigging_parts, make_sail_parts
+from parts.rigging import make_rigging_parts, make_sail_parts, make_sail_spars
 
 
 def register(name, shape, color, group):
@@ -79,6 +79,8 @@ register("Samson post", make_bow_post(), IVORY, "Deck/Foredeck")
 register("Jib sheet traveller", make_jib_traveller(), (.18, .21, .22), "Deck/Foredeck")
 
 for name, shape, color in make_spars():
+    register(name, shape, color, "Spars")
+for name, shape, color in make_sail_spars():
     register(name, shape, color, "Spars")
 for name, shape, color, group in make_rigging_parts():
     register(name, shape, color, group)

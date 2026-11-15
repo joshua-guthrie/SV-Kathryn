@@ -17,6 +17,10 @@ from .params import (
     CARVED_IVORY, PORT_SIDE,
     legacy_forward, RIG_HEIGHT_RISE_FT,FRAME_SOURCE,BOW_POST_FORWARD_FT,
 )
+
+# The trailboard is mounted on the bow side faces, not on the centreline.
+# This is the clear distance from the centreline to the inner board face.
+TRAILBOARD_SIDE_OFFSET_FT = .32
 from .hull import SECTIONS, deck_height, section_plane, fair_loft, topside_halfwidth, smooth_blend
 from .primitives import block, beam_between, spar_between
 
@@ -96,8 +100,9 @@ _relief_offset = -.005
 
 def panel_plane(side, offset=0):
     normal = cq.Vector(side, 0, 0)
-    origin = cq.Vector(*boat_point(side * TRAILBOARD_THICKNESS_FT / 2,
-                                  TRAILBOARD_ROOT_FT, 0)) + normal * offset
+    origin = cq.Vector(*boat_point(
+        side * (TRAILBOARD_SIDE_OFFSET_FT + TRAILBOARD_THICKNESS_FT / 2),
+        TRAILBOARD_ROOT_FT, 0)) + normal * offset
     return cq.Plane(origin=origin, xDir=(0, side, 0), normal=normal)
 
 
@@ -308,9 +313,10 @@ def make_bow_details():
              .translate((0, 0, WATERLINE_FT - 40)).val())
     yield 'Painted stem and cutwater', stem.cut(water), IVORY
     yield 'Underwater stem shoe', stem.intersect(water), (.13, .18, .18)
-    outline = panel_outline(-1)
-    yield 'Centreline carved trailboard', _extrude_wire(
-        outline, -1, TRAILBOARD_THICKNESS_FT, -TRAILBOARD_THICKNESS_FT), TRAILBOARD_PAINT
+    for side, label in ((PORT_SIDE, 'Port'), (-PORT_SIDE, 'Starboard')):
+        outline = panel_outline(side)
+        yield f'{label} trailboard board', _extrude_wire(
+            outline, side, TRAILBOARD_THICKNESS_FT, -TRAILBOARD_THICKNESS_FT), TRAILBOARD_PAINT
     for side, label in ((PORT_SIDE, 'Port'), (-PORT_SIDE, 'Starboard')):
         start_x, start_z = headrail_point(side, HEADRAIL_ROOT_FT)
         end_x, end_z = headrail_point(side, HEADRAIL_TIP_FT)
@@ -324,6 +330,21 @@ def make_bow_details():
         outline = panel_outline(side)
         yield f'{label} carved border and scrollwork', make_trailboard_relief(side, outline), CARVED_IVORY
         yield from make_name_letters(side, label)
+    # Timber knee from the stem head up to the heel bearing cross-timber.
+    # Without it the saddle/cross-bearer/floating heel has no visible path
+    # down to the stem, which is what made the bowsprit read as floating.
+    knee_start = boat_point(0, stem_forward_at(7.95), 7.95)
+    knee_end = boat_point(0, BOWSPRIT_HEEL_FT,
+                          bowsprit_height(BOWSPRIT_HEEL_FT)
+                          - BOWSPRIT_HEEL_RADIUS_FT - .18 - .22)
+    yield 'Bowsprit heel knee', beam_between(knee_start, knee_end, .34, .28), IVORY
+    # Fid through the heel mortise and the bearing cross-timber.
+    fid_f = BOWSPRIT_HEEL_FT
+    fid = spar_between(boat_point(0, fid_f, 9.70),
+                       boat_point(0, fid_f, 11.08), .05)
+    fid = fid.fuse(spar_between(boat_point(0, fid_f, 11.04),
+                                boat_point(0, fid_f, 11.16), .09))
+    yield 'Bowsprit fid', fid, IRON
     for i,f in enumerate((BOWSPRIT_HEEL_FT,legacy_forward(54.8),legacy_forward(60.0)),1):
         x, rail_z = headrail_point(1, f)
         top = bowsprit_height(f) + bowsprit_radius(f) + .01

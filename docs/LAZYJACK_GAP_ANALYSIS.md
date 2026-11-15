@@ -1,9 +1,28 @@
 # M6 lazyjacks — gap analysis and fix plan
 
-**Status: review only, 2026-11-14. No model change in this pass.**
-The four registered lazyjack parts do not represent the rig shown on the
-source drawings. This document records the evidence, the gaps and a concrete
-fix plan for approval.
+**Status: implemented 2026-11-14.**
+The four as-found lazyjack parts did not represent the rig shown on the
+source drawings. The fix below is now in the model: a main cradle per side
+and jib lazyjacks down to the club.
+
+## 0a. Implementation update (2026-11-14)
+
+- **Main lazyjacks:** one pendant per side from the hounds to two junction
+  blocks (`Y −8.2/Z 37.0` and `Y 6.0/Z 26.0`), with legs to four boom
+  stations at `Y 30.3 / 17.7 / 4.0 / −8.2 ft`, an outboard line plane at
+  `X ±0.75 ft`, boom-side attachments, and short adjuster tails.
+- **Jib lazyjacks:** a pendant per side from the hounds to a junction at
+  `Z 24 ft` above the jib club, with two legs landing at one-third and
+  two-thirds of the club and an adjuster tail. The club itself was rebuilt
+  for the bow fix (see `docs/BOWSPRIT_GAP_ANALYSIS.md`): it is now the
+  25.7-ft spar along the raised jib foot, so the jib lazyjacks were rebased
+  onto it.
+- **Validation:** `check_m6_rigging.py` passes with 59 rigging parts and
+  checks the mast/boom stations, the four main legs, the jib legs on the
+  club, and the boom-tip containment. `soma build` is 903 parts.
+- **Figures:** the annotated model figures in §3 are the as-found evidence
+  captured before this change; the generator now skips them when the old
+  `Port lazy jack 1` parts are no longer registered.
 
 ## 0. Summary
 

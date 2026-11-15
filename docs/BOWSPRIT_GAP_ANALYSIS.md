@@ -1,14 +1,41 @@
 # Bowsprit, trailboards and jib — gap analysis and fix plan
 
-**Status: review only, 2026-11-14. No model change in this pass.**
-The bow looks broken mainly because the added S08 jib demonstration sail is a
-flat centreline plate whose foot passes through the bowsprit. The bowsprit
+**Status: implemented 2026-11-14.**
+The bow was broken mainly because the added S08 jib demonstration sail was a
+flat centreline plate whose foot passed through the bowsprit. The bowsprit
 part itself was not changed when the sails were added (`d299778` added
 `parts/rigging.py` and registered it; it did not touch `parts/bow.py` or
-`parts/spars.py`). Trailboard, jib-club and heel attachment disagree with the drawings and
-photos. The lazyjack rig is included here as well, because the jib lazyjacks
-attach to the same bowsprit/club assembly; the detailed lazyjack analysis is
-in `docs/LAZYJACK_GAP_ANALYSIS.md`.
+`parts/spars.py`). Trailboard, jib-club and heel attachment disagreed with the
+drawings and photos. The lazyjack rig is included here as well, because the
+jib lazyjacks attach to the same bowsprit/club assembly; the detailed lazyjack
+analysis is in `docs/LAZYJACK_GAP_ANALYSIS.md`.
+
+## 0a. Implementation update (2026-11-14)
+
+- **Jib:** the S08 triangle (luff 49′6″, foot 25′8″, leech 42′0″) is raised
+  0.75 ft, putting the foot above the bowsprit. The jib club is now a 25.7-ft
+  spar along the foot from the raised tack at the bowsprit tip to the raised
+  clew; the jib stay follows the raised tack; the jib lazyjacks were rebased
+  onto the new club at one-third and two-thirds of its length. The sail plate
+  no longer intersects the bowsprit.
+- **Trailboards:** the single centreline shelf is gone. Port and starboard
+  side boards now sit at X ±0.24…0.40 ft, re-using the carved border,
+  scrollwork and KATHRYN letters. The headrail still crosses the upper part
+  of the side board in profile; that is a remaining cosmetic mismatch.
+- **Heel:** a `Bowsprit heel knee` now runs from the stem head up to the heel
+  bearing cross-timber, and a `Bowsprit fid` passes through the heel mortise
+  and cross-timber. The heel has a visible support path to the stem. The
+  Samson post remains at its S05 position, still about 7 ft aft of the heel
+  (LOC-P22 suggests it should be closer). Moving it touches the foredeck
+  framing and is left as an open item.
+- **Validation:** `soma build` is 903 parts; `check_m6_rigging.py` passes
+  (luff/foot/leech preserved, lazyjacks checked against the new club); the
+  README gallery images were regenerated. The annotated model figures in
+  §2 are the **as-found** evidence captured before this change; the figure
+  generator guards them from being overwritten by the fixed build.
+- **Remaining:** Samson-post proximity, headrail/trailboard overlap, and the
+  jib head sits about 0.5 ft off the new stay because the whole triangle was
+  translated rather than re-triangulated. The S08 dimensions still hold.
 
 ## 0. Summary
 

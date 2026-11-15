@@ -342,6 +342,7 @@ def annotate_p22(out_path):
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
     scene = ModelScene()
+    as_found = 'Centreline carved trailboard' in {p['name'] for p in scene.parts}
     points = (BOWSPRIT_TIP_FT, BOWSPRIT_HEEL_FT, JIB_TACK_FT, JIB_CLEW_FT,
               CLUB_AFT_FT, CLUB_FORE_FT, TRAILBOARD_FT, SAMSON_FT,
               STEM_HEAD_FT, SADDLE_FT, CROSS_BEARER_FT, HEEL_RAIL_FT,
@@ -349,29 +350,34 @@ def main():
     names = ('tip', 'heel', 'tack', 'clew', 'club_aft', 'club_fore',
              'trailboard', 'samson', 'stem_head', 'saddle', 'cross_bearer',
              'heel_rail', 'intersection', 'traveller')
-    image, display = scene.render(
-        direction=(-1, 0, .03), up=(0, 0, 1), focus=(0, -30, 9.0), scale=8.5,
-        jib_opacity=.30, points=points)
-    px = dict(zip(names, display))
-    annotate_model_profile(image, px, OUT / 'model-bow-profile-annotated.png')
+    if as_found:
+        image, display = scene.render(
+            direction=(-1, 0, .03), up=(0, 0, 1), focus=(0, -30, 9.0), scale=8.5,
+            jib_opacity=.30, points=points)
+        px = dict(zip(names, display))
+        annotate_model_profile(image, px, OUT / 'model-bow-profile-annotated.png')
 
-    image, display = scene.render(
-        direction=(-1, 0, .03), up=(0, 0, 1), focus=(0, -30, 9.0), scale=8.5,
-        hide=('Jib sail (S08 demonstration)',), jib_opacity=1.0, points=points)
-    px = dict(zip(names, display))
-    annotate_model_nojib(image, px, OUT / 'model-bow-nojib-annotated.png')
+        image, display = scene.render(
+            direction=(-1, 0, .03), up=(0, 0, 1), focus=(0, -30, 9.0), scale=8.5,
+            hide=('Jib sail (S08 demonstration)',), jib_opacity=1.0, points=points)
+        px = dict(zip(names, display))
+        annotate_model_nojib(image, px, OUT / 'model-bow-nojib-annotated.png')
 
-    image, display = scene.render(
-        direction=(0, -.05, 1), up=(0, 1, 0), focus=(0, -32, 10.5), scale=7.0,
-        hide=('Jib sail (S08 demonstration)',), points=points)
-    px = dict(zip(names, display))
-    annotate_model_top(image, px, OUT / 'model-bow-top-annotated.png')
+        image, display = scene.render(
+            direction=(0, -.05, 1), up=(0, 1, 0), focus=(0, -32, 10.5), scale=7.0,
+            hide=('Jib sail (S08 demonstration)',), points=points)
+        px = dict(zip(names, display))
+        annotate_model_top(image, px, OUT / 'model-bow-top-annotated.png')
 
-    image, display = scene.render(
-        direction=(-.9, .5, .55), up=(0, 0, 1), focus=(0, -27, 9.8), scale=6.0,
-        hide=('Jib sail (S08 demonstration)',), points=points)
-    px = dict(zip(names, display))
-    annotate_floating(image, px, OUT / 'model-bow-floating-annotated.png')
+        image, display = scene.render(
+            direction=(-.9, .5, .55), up=(0, 0, 1), focus=(0, -27, 9.8), scale=6.0,
+            hide=('Jib sail (S08 demonstration)',), points=points)
+        px = dict(zip(names, display))
+        annotate_floating(image, px, OUT / 'model-bow-floating-annotated.png')
+
+    else:
+        print('Model now has side trailboards; keeping the committed '
+              'as-found model figures.')
 
     annotate_s01(OUT / 'source-s01-trailboard-annotated.png')
     annotate_s03(OUT / 'source-s03-bow-annotated.png')

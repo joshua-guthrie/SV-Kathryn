@@ -8,13 +8,61 @@ ROOT = Path(__file__).resolve().parents[2]
 sys.path.insert(0, str(ROOT / 'src'))
 from parts import rigging
 
+def _box(shape):
+    return shape.BoundingBox()
+
+
+def _contains(box, point, tol=.05):
+    return (box.xmin - tol <= point[0] <= box.xmax + tol and
+            box.ymin - tol <= point[1] <= box.ymax + tol and
+            box.zmin - tol <= point[2] <= box.zmax + tol)
+
+
+def _check_lazyjack_geometry(rig):
+    shapes = {name: shape for name, shape, _, _ in rig}
+    top_z = rigging.HOUNDS_Z - .3
+    mast_r = rigging.mast_radius_at(top_z)
+    for side, label in ((1, 'Port'), (-1, 'Starboard')):
+        pendant = _box(shapes[f'{label} main lazyjack pendant'])
+        if side > 0:
+            assert pendant.xmin > mast_r + .02, 'main pendant starts inside the mast'
+        else:
+            assert pendant.xmax < -mast_r - .02, 'main pendant starts inside the mast'
+        for i, y in enumerate(rigging.MAIN_LAZYJACK_STATIONS_Y_FT, 1):
+            point = rigging._main_lazyjack_station(side, y)
+            box = _box(shapes[f'{label} main lazyjack leg {i}'])
+            assert _contains(box, point), f'main leg {i} misses its boom station'
+            assert abs(point[0]) > .25, f'main leg {i} is not outboard of the boom'
+            assert box.ymax <= 37.50, f'main leg {i} runs past the boom tip'
+        club_low = min(rigging.JIB_TACK[1], rigging.JIB_CLEW[1])
+        club_high = max(rigging.JIB_TACK[1], rigging.JIB_CLEW[1])
+        for i, t in enumerate((1 / 3, 2 / 3), 1):
+            point = rigging._jib_club_point(t, side)
+            box = _box(shapes[f'{label} jib lazyjack leg {i}'])
+            assert _contains(box, point), f'jib leg {i} misses the club'
+            assert club_low - .1 <= box.ymin and box.ymax <= club_high + .1, \
+                f'jib leg {i} runs outside the club'
+    return dict(
+        main_stations_y_ft=list(rigging.MAIN_LAZYJACK_STATIONS_Y_FT),
+        main_junctions_y_z_ft=[list(rigging.MAIN_LAZYJACK_J1_Y_Z_FT),
+                               list(rigging.MAIN_LAZYJACK_J2_Y_Z_FT)],
+        outboard_x_ft=rigging.LAZYJACK_X_FT,
+        jib_junction_z_ft=rigging.JIB_LAZYJACK_JUNCTION_Z_FT,
+        jib_legs=2,
+        sources=['S03-V01 callout (6)',
+                 'LOC-C01/P01 caption: gear to the boom and club'],
+    )
+
 
 def check():
     rig = list(rigging.make_rigging_parts())
     sails = list(rigging.make_sail_parts())
-    assert len(rig) == 33 and len(sails) == 2
+    sail_spars = list(rigging.make_sail_spars())
+    assert len(rig) == 59 and len(sails) == 2 and len(sail_spars) == 1
     assert all(shape.isValid() and len(shape.Solids()) == 1
                for _, shape, _, _ in (*rig, *sails))
+    assert sail_spars[0][0] == 'Jib club'
+    assert sail_spars[0][1].isValid() and len(sail_spars[0][1].Solids()) == 1
     groups = {group for _, _, _, group in rig}
     assert groups == {'Rigging/Standing', 'Rigging/Running', 'Rigging/Fittings'}
     main = math.dist(rigging.MAIN_TACK, rigging.MAIN_HEAD)
@@ -31,6 +79,21 @@ def check():
                      'Jib halyard', 'Main sheet', 'Jib downhaul',
                      'Topping lift', 'Boom lift', 'Spectacle/jack iron'):
         assert required in names, required
+    lazy_required = []
+    for label in ('Port', 'Starboard'):
+        lazy_required += [f'{label} main lazyjack pendant',
+                          f'{label} main lazyjack branch']
+        lazy_required += [f'{label} main lazyjack leg {i}' for i in range(1, 5)]
+        lazy_required += [f'{label} main lazyjack tail {i}' for i in (1, 2)]
+        lazy_required += [f'{label} main lazyjack junction {i}' for i in (1, 2)]
+        lazy_required += [f'{label} jib lazyjack pendant',
+                          f'{label} jib lazyjack leg 1',
+                          f'{label} jib lazyjack leg 2',
+                          f'{label} jib lazyjack tail',
+                          f'{label} jib lazyjack junction']
+    for required in lazy_required:
+        assert required in names, required
+    lazyjacks = _check_lazyjack_geometry(rig)
     sheet = next(shape for name, shape, _, _ in rig if name == 'Main sheet')
     box = sheet.BoundingBox()
     assert box.xlen < .05 and box.ylen < .05, 'Main sheet must hang vertically'
@@ -41,6 +104,10 @@ def check():
     assert box.zmin >= traveller[2], 'Main sheet must rise from the traveller'
     result = dict(status='passed', rigging_parts=len(rig), sail_parts=len(sails),
                   groups=sorted(groups),
+                  lazyjacks=lazyjacks,
+                  jib_club_ft=dict(fore=[round(v, 3) for v in rigging.JIB_TACK],
+                                   aft=[round(v, 3) for v in rigging.JIB_CLEW],
+                                   foot_raise_ft=rigging.JIB_FOOT_RAISE_FT),
                   main_plan_ft=dict(luff=45.5, foot=49.333, leech_s08=68.0,
                                     straight_leech=round(main_leech, 3),
                                     roach_unmodelled=round(68.0 - main_leech, 3)),
@@ -50,7 +117,9 @@ def check():
                           'S03-N02 rigging/running-gear key', 'S08-V01 sail plan'],
                   unresolved=['main-sail roached leech not modelled',
                               'exact cleat/pin-rail positions',
-                              'hoops/hanks intentionally omitted per S08 note'])
+                              'hoops/hanks intentionally omitted per S08 note',
+                              'lazyjack junction heights and leg split inferred '
+                              'from the S03 profile'])
     (ROOT / 'src/checks/m6_rigging_acceptance.json').write_text(
         json.dumps(result, indent=2) + '\n')
     print(json.dumps(result, indent=2))
