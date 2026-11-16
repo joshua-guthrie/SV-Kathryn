@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "built_parts": 1024,
-  "build_id": "2b3be73245eb42c6b7a6b9279b1de3ab",
+  "built_parts": 1025,
+  "build_id": "2312e0dae74a44bc88e3c7aa0ef9d541",
   "method": "Exact completed-build BREP solids; 1 mm CAD tolerance; source picks remain +/-0.2 ft.",
   "full_spar_axis_ft": 21.576368975966385,
   "inboard_section_in": [
@@ -16,7 +16,7 @@
     "Bowsprit heel bearing cross-timber / Bowsprit stem-head extension": 0.0,
     "Bowsprit stem-head extension / Oak stem knee with Samson-post mortise": 0.0,
     "Bowsprit stem-head extension / Painted stem and cutwater": 0.0,
-    "Longhead trailboard backing / Bowsprit stem-head extension": 1.2106822558556303e-12,
+    "Longhead trailboard backing / Bowsprit stem-head extension": 0.0,
     "Jib club / Jib tack pivot pin": 0.45719828580994387,
     "Jib tack pivot pin / Jib tack collar and fork": 8.459899447643693e-15,
     "Jib stay / Jib tack pivot pin": 0.0,
@@ -41,7 +41,7 @@
     "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
     "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
     "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
-    "src/parts/bow.py": "e1988a56324824f52bbb97c03bae5b1b15d1f1b6b7094f54a46f4ffe76683e0a",
+    "src/parts/bow.py": "e40ee30fee6b0d5ff95e9b699db9ddfa368e7774c1dab39e5ffe154ccf93e5f1",
     "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
     "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
     "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
@@ -64,7 +64,7 @@
     "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
     "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
     "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
-    "src/parts/trailboard_layout.py": "cd01ed8c9f111ec21deba0a8d7d15a5cdc40ff34b83e6107df22abe11745d7e0",
+    "src/parts/trailboard_layout.py": "6b52176660f9405ffce2312a2bb1d41fd568e6b42fbb18f2cfa6be5472dfa3ac",
     "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
     "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7"
   },

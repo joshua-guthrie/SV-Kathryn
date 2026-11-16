@@ -1,10 +1,12 @@
 # Trailboard correction: implementation and verification
 
-15 November 2026. Status: **implemented and verified from committed tree bb9a621**. The current model contains **1024 registered parts**. This report implements the approved [gap analysis and specification](TRAILBOARD_GAP_ANALYSIS.md); its before figures remain preserved as the 928-part review snapshot. An [illustrated PDF](trailboard-correction.pdf) is provided beside this file.
+15 November 2026. Status: **implemented and verified from committed tree bb9a621**, then extended by the [timber-envelope correction](TRAILBOARD_ENVELOPE_CORRECTION.md). The current model contains **1025 registered parts**. This report implements the approved [gap analysis and specification](TRAILBOARD_GAP_ANALYSIS.md); its before figures remain preserved as the 928-part review snapshot. An [illustrated PDF](trailboard-correction.pdf) is provided beside this file.
 
 The square plaque-like return, pointed head and generic leaf pattern have been replaced with the composition traced from HAER Sheet 1. The boards now have an oblique aft return, broad unequal curls, a shaped enclosure around KATHRYN, the original glyph contours, and a hooked head with eye, mouth/jaw and feather regions. The separate headrails now follow their identified Sheet 4 profile and plan positions.
 
 ## What changed
+
+The subsequent [timber-envelope correction](TRAILBOARD_ENVELOPE_CORRECTION.md) adds the solid wood above and below these faces; the face contours and headrail positions described below are unchanged.
 
 - The ornament comes from original native scan regions, not a substituted font, stock bird or repeated sine wave. Small enclosed stipple is excluded. White regions on foreground objects outside the facing are excluded, including the incidental fragment found in the first build.
 

@@ -10,11 +10,12 @@ import numpy as np
 import cadquery as cq
 from scipy.interpolate import PchipInterpolator
 from .params import boat_point,HULL_LENGTH_FT,WATERLINE_FT,IVORY,IRON,WOOD,CARVED_IVORY,PORT_SIDE,legacy_forward
-from .hull import solid_envelope,SECTIONS,deck_height,section_plane,fair_loft,topside_halfwidth,smooth_blend
+from .hull import solid_envelope,SECTIONS,deck_height,section_plane,fair_loft,topside_halfwidth,smooth_blend,make_keel
 from .primitives import block,beam_between,spar_between
 from .bow_layout import SOURCE,SPAR,HEADWORK,LONGHEAD,RIG,axis_height,radius_at,half_depth_at
 from . import trailboards as traced
-from .trailboard_layout import panel_top,panel_bottom,source_headrail_points
+from .trailboard_layout import (panel_top,panel_bottom,source_headrail_points,
+                                outer_top,outer_bottom,ENVELOPE_ROOT_F,ENVELOPE_TIP_F)
 
 BOWSPRIT_HEEL_FT=SPAR['heel_f']
 BOWSPRIT_END_FT=SPAR['end_f']
@@ -101,6 +102,19 @@ def panel_outline(side):
     return traced.outline(side)
 
 
+@lru_cache(maxsize=2)
+def envelope_outline(side):
+    f=np.linspace(ENVELOPE_ROOT_F,ENVELOPE_TIP_F,240)
+    upper=np.column_stack((f,[outer_top(x) for x in f]))
+    lower=np.column_stack((f[::-1],[outer_bottom(x) for x in f[::-1]]))
+    points=np.vstack((upper,lower))
+    local=np.column_stack((-side*(points[:,0]-TRAILBOARD_ROOT_FT),points[:,1]))
+    keep=np.r_[True,np.linalg.norm(np.diff(local,axis=0),axis=1)>1e-7]
+    local=local[keep]
+    if np.linalg.norm(local[0]-local[-1])<1e-7:local=local[:-1]
+    return cq.Workplane(panel_plane(side)).polyline(local.tolist()).close().val()
+
+
 def _extrude_wire(wire,side,height,offset=0):
     return cq.Workplane(panel_plane(side)).add(wire).toPending().extrude(height).val().translate(panel_plane(side).zDir.multiply(offset))
 
@@ -122,24 +136,28 @@ def make_trailboard(side):
 
 @lru_cache(maxsize=1)
 def _raw_longhead_backing():
-    core=_extrude_wire(panel_outline(1),1,LONGHEAD['backing_width_ft'],
+    core=_extrude_wire(envelope_outline(1),1,LONGHEAD['backing_width_ft'],
                        -TRAILBOARD_THICKNESS_FT-LONGHEAD['backing_width_ft'])
-    core=core.fuse(longhead_splice_mortise())
+    core=core.fuse(longhead_splice_mortise()).cut(make_stem()).cut(make_cross_timber()).cut(solid_envelope()).cut(make_keel())
     for side in (-1,1):
         for f in LONGHEAD['mount_stations_f']:core=core.cut(board_fastener_bore(side,f))
     return core.clean()
 
 
 @lru_cache(maxsize=1)
-def longhead_backing():
+def longhead_pieces():
     pieces=_raw_longhead_backing().cut(make_stemhead_extension()).Solids()
-    return max(pieces,key=lambda s:s.Volume())
+    return sorted(pieces,key=lambda s:s.Volume(),reverse=True)
+
+
+@lru_cache(maxsize=1)
+def longhead_backing():
+    return longhead_pieces()[0]
 
 
 @lru_cache(maxsize=1)
 def make_longhead_aft_filling():
-    pieces=_raw_longhead_backing().cut(make_stemhead_extension()).Solids()
-    return [p.cut(solid_envelope()).clean() for p in sorted(pieces,key=lambda s:s.Volume(),reverse=True)[1:]]
+    return [p.cut(solid_envelope()).clean() for p in longhead_pieces()[1:]]
 
 
 def make_painted_field(side):
@@ -418,7 +436,10 @@ def make_bow_details():
     yield from make_bow_structure()
     yield 'Longhead trailboard backing',longhead_backing(),IVORY
     for i,filling in enumerate(make_longhead_aft_filling(),1):
-        for k,solid in enumerate(filling.Solids(),1):yield f'Longhead aft filling {i}.{k}',solid,IVORY
+        for k,solid in enumerate(filling.Solids(),1):
+            b=solid.BoundingBox()
+            name='Longhead upper shoulder' if b.zmin>8.5 and b.ymax<-25.3 else f'Longhead aft filling {i}.{k}'
+            yield name,solid,IVORY
     for side,label in ((PORT_SIDE,'Port'),(-PORT_SIDE,'Starboard')):
         outline=panel_outline(side)
         yield label+' trailboard board',make_trailboard(side),TRAILBOARD_PAINT

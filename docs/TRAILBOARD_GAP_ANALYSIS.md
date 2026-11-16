@@ -1,6 +1,6 @@
 # Trailboards: gap analysis and implementation specification
 
-15 November 2026. Status: **approved correction implemented and verified from a clean committed tree**; current verification is recorded in the [implementation report](TRAILBOARD_CORRECTION.md). Scope: the paired decorated faces, their longhead backing, the eagle-like forward termination, the name field, and their visible relationship to the stem, bowsprit and headrails. Read this report with the [illustrated PDF](trailboard-gap-analysis.pdf). Requirements are also indexed in the [implementation contract](images/trailboard_review/implementation-contract.json).
+15 November 2026. Status: **approved correction implemented and verified from a clean committed tree**; the later [timber-envelope correction](TRAILBOARD_ENVELOPE_CORRECTION.md) adds the solid wood above and below the faces. Current verification is recorded in those implementation reports. Scope: the paired decorated faces, their longhead backing, the eagle-like forward termination, the name field, and their visible relationship to the stem, bowsprit and headrails. Read this report with the [illustrated PDF](trailboard-gap-analysis.pdf). Requirements are also indexed in the [implementation contract](images/trailboard_review/implementation-contract.json).
 
 ## Implemented correction
 

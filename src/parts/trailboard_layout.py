@@ -6,6 +6,8 @@ from scipy.interpolate import PchipInterpolator
 
 TARGET_PATH=Path(__file__).resolve().parents[2]/'references/drawing_package/trailboard_targets.json'
 TARGET=json.loads(TARGET_PATH.read_text())
+ENVELOPE_PATH=Path(__file__).resolve().parents[2]/'references/drawing_package/longhead_envelope.json'
+ENVELOPE=json.loads(ENVELOPE_PATH.read_text())
 MAPPING=TARGET['surface_mapping']
 PHYSICAL=TARGET['physical_transforms']
 FEATURES={f['id']:f for f in TARGET['features']}
@@ -13,6 +15,10 @@ GUIDE=np.asarray(MAPPING['source_body_guides_flat'])
 SCALE=(MAPPING['physical_tip_f']-MAPPING['physical_root_f'])/(MAPPING['source_tip_x']-MAPPING['source_root_x'])
 _upper=PchipInterpolator(*np.asarray(PHYSICAL['upper_fz']).T)
 _lower=PchipInterpolator(*np.asarray(PHYSICAL['lower_fz']).T)
+_outer_upper=PchipInterpolator(*np.asarray(ENVELOPE['picks']['outer_upper_fz']).T)
+_outer_lower=PchipInterpolator(*np.asarray(ENVELOPE['picks']['outer_lower_fz']).T)
+ENVELOPE_ROOT_F=ENVELOPE['picks']['aft_root_f_ft']
+ENVELOPE_TIP_F=ENVELOPE['picks']['forward_head_f_ft']
 _a,_b=PHYSICAL['registration']['F_from_S04_grid_x']
 _unit=PHYSICAL['registration']['profile_grid_height_ft_per_unit']
 _deck=PHYSICAL['deck_anchor_z_ft']
@@ -22,6 +28,8 @@ _head_z=_deck+(318.5-_gy)*_unit
 
 def panel_top(f):return float(_upper(f))
 def panel_bottom(f):return float(_lower(f))
+def outer_top(f):return float(_outer_upper(f))
+def outer_bottom(f):return float(_outer_lower(f))
 
 
 def source_guides(x):

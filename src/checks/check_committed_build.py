@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 GIT = ROOT / 'project-git'
-EXPECTED_PARTS = 1024
+EXPECTED_PARTS = 1025
 
 
 def git(*arguments):
@@ -58,7 +58,7 @@ def verify(tree, commit, expect_parts, timeout):
     parts = len(build['parts'])
     assert parts == expect_parts, ('Part count changed', parts, expect_parts)
     assert (tree / 'output/model.step').is_file(), 'STEP export missing'
-    for check in ('check_model_scale.py', 'check_registered_deck.py', 'check_bow_attachment.py', 'check_trailboards.py'):
+    for check in ('check_model_scale.py', 'check_registered_deck.py', 'check_bow_attachment.py', 'check_trailboards.py', 'check_longhead_envelope.py'):
         print(f'Running {check} in the clean tree ...', flush=True)
         run([sys.executable, f'src/checks/{check}'], tree, timeout)
     print(f'PASS: {commit} builds from scratch: {parts} parts, 0 warnings, '

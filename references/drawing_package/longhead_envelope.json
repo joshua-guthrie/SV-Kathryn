@@ -1,0 +1,344 @@
+{
+  "schema_version": 1,
+  "status": "source-controlled outer timber envelope; forward head closure and hidden interfaces inferred",
+  "units": "full-size feet; SOMA registers millimetres at 304.8 mm/ft",
+  "source": {
+    "id": "S04-V01",
+    "file": "references/drawing_package/S04/S04-V01/native.png",
+    "parent_file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif",
+    "sha256": "c7c62358c5b416b9b36f9ee44cdcae9bf29bcb205ea864ca5c375dae61948ac1",
+    "parent_sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+    "native_size": [
+      10854,
+      2308
+    ],
+    "registration_reference": "references/drawing_package/bow_remedy_registration.json",
+    "ornament_reference": "references/drawing_package/trailboard_targets.json"
+  },
+  "registration": {
+    "F_from_S04_grid_x": [
+      0.06664790115506147,
+      -20.640752723186033
+    ],
+    "profile_grid_height_ft_per_unit": 0.06689769121668057,
+    "deck_anchor_z_ft": 8.802576129554163,
+    "vertical_anchor": "S04 post deck grid y318.5 at the unchanged S05 Samson station; spar centre about y310.0",
+    "point_pick_uncertainty_ft": 0.2,
+    "source_registration_sha256": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7"
+  },
+  "classification": {
+    "upper_outer": "Continuous outer upper timber line immediately below the item-11 headrail and above the decorated fascia; includes the three visible fastening blocks. The headrail line itself is not used as the timber boundary.",
+    "lower_outer": "Solid outer lower timber line above the solid chain hardware and the dashed cable. Dashed cable and chain hardware are rigging and excluded.",
+    "face_upper_lower": "Existing S01-V03 transferred decorated-face contours; retained unchanged and nested inside this envelope.",
+    "aft_root": "Existing longhead root station; the envelope closes at the unchanged stem/head interface.",
+    "forward_head": "Forward closure follows the source head/eagle silhouette and must contain the S01 face; the last segment is an inferred fitted transition.",
+    "rejected": "Item-1 bowsprit, item-11 headrail line, dashed cable, solid chain hardware, and the foreground rail crossing S01-V03 are not outer timber edges."
+  },
+  "picks": {
+    "outer_upper_grid": [
+      [
+        1066,
+        309.6
+      ],
+      [
+        1080,
+        308.4
+      ],
+      [
+        1100,
+        306.8
+      ],
+      [
+        1120,
+        305.0
+      ],
+      [
+        1140,
+        302.6
+      ],
+      [
+        1160,
+        300.0
+      ],
+      [
+        1180,
+        297.4
+      ],
+      [
+        1200,
+        294.8
+      ],
+      [
+        1220,
+        292.2
+      ],
+      [
+        1230,
+        290.6
+      ],
+      [
+        1240,
+        286.5
+      ],
+      [
+        1248,
+        283.8
+      ]
+    ],
+    "outer_lower_grid": [
+      [
+        1066,
+        349.0
+      ],
+      [
+        1080,
+        348.9
+      ],
+      [
+        1100,
+        348.8
+      ],
+      [
+        1120,
+        348.8
+      ],
+      [
+        1140,
+        342.0
+      ],
+      [
+        1160,
+        334.0
+      ],
+      [
+        1180,
+        326.0
+      ],
+      [
+        1200,
+        318.0
+      ],
+      [
+        1220,
+        310.0
+      ],
+      [
+        1240,
+        302.0
+      ],
+      [
+        1248,
+        299.0
+      ]
+    ],
+    "outer_upper_fz": [
+      [
+        50.405909908,
+        9.397965581
+      ],
+      [
+        51.338980524,
+        9.478242811
+      ],
+      [
+        52.671938547,
+        9.585279117
+      ],
+      [
+        54.00489657,
+        9.705694961
+      ],
+      [
+        55.337854594,
+        9.86624942
+      ],
+      [
+        56.670812617,
+        10.040183417
+      ],
+      [
+        58.00377064,
+        10.214117414
+      ],
+      [
+        59.336728663,
+        10.388051411
+      ],
+      [
+        60.669686686,
+        10.561985409
+      ],
+      [
+        61.336165698,
+        10.669021714
+      ],
+      [
+        62.002644709,
+        10.943302248
+      ],
+      [
+        62.535827918,
+        11.123926015
+      ]
+    ],
+    "outer_lower_fz": [
+      [
+        50.405909908,
+        6.762196547
+      ],
+      [
+        51.338980524,
+        6.768886317
+      ],
+      [
+        52.671938547,
+        6.775576086
+      ],
+      [
+        54.00489657,
+        6.775576086
+      ],
+      [
+        55.337854594,
+        7.230480386
+      ],
+      [
+        56.670812617,
+        7.765661916
+      ],
+      [
+        58.00377064,
+        8.300843445
+      ],
+      [
+        59.336728663,
+        8.836024975
+      ],
+      [
+        60.669686686,
+        9.371206505
+      ],
+      [
+        62.002644709,
+        9.906388035
+      ],
+      [
+        62.535827918,
+        10.107081108
+      ]
+    ],
+    "bowsprit_clearance_station": {
+      "grid_x": 1066,
+      "f_ft": 50.405909908,
+      "note": "Closest parallel span; nominal minimum clearance governs."
+    },
+    "aft_root_f_ft": 50.405909908,
+    "forward_head_f_ft": 62.535827918
+  },
+  "clearance": {
+    "nominal_min_ft": 0.07,
+    "acceptance_band_ft": [
+      0.04,
+      0.5
+    ],
+    "method": "Source line separation between the upper envelope and the bowsprit underside, reduced to the nearest parallel station; CAD clearance tolerance is 0.005 ft.",
+    "cad_tolerance_ft": 0.005,
+    "measured_min_ft": 0.0695,
+    "measured_note": "Actual exported backing/upper-shoulder to bowsprit minimum separation 21.17 mm (0.0695 ft); common volume zero."
+  },
+  "assumptions": {
+    "backing_width_ft": 0.5,
+    "facing_thickness_ft": 0.12,
+    "inboard_section": "Keep the existing half-foot-wide common longhead backing and 1.44 in facing thickness; S04-V01/V02 do not independently dimension the side-timber width.",
+    "forward_transition": "The envelope follows the source head silhouette and closes over the S01 eagle; the final fitted closure is an inferred hand transition.",
+    "hidden_interfaces": "Aft root, stem/head fairing and any concealed joint are fitted to the existing accepted structure."
+  },
+  "held_out_outer": [
+    {
+      "role": "upper",
+      "grid_x": 1073,
+      "grid_y": 307.2,
+      "fz": [
+        50.872445216,
+        9.55852004
+      ]
+    },
+    {
+      "role": "upper",
+      "grid_x": 1110,
+      "grid_y": 307.8,
+      "fz": [
+        53.338417559,
+        9.518381426
+      ]
+    },
+    {
+      "role": "upper",
+      "grid_x": 1170,
+      "grid_y": 299.1,
+      "fz": [
+        57.337291628,
+        10.100391339
+      ]
+    },
+    {
+      "role": "upper",
+      "grid_x": 1235,
+      "grid_y": 288.0,
+      "fz": [
+        61.669405203,
+        10.842955712
+      ]
+    },
+    {
+      "role": "lower",
+      "grid_x": 1073,
+      "grid_y": 349.0,
+      "fz": [
+        50.872445216,
+        6.762196547
+      ]
+    },
+    {
+      "role": "lower",
+      "grid_x": 1090,
+      "grid_y": 350.5,
+      "fz": [
+        52.005459536,
+        6.661850011
+      ]
+    },
+    {
+      "role": "lower",
+      "grid_x": 1150,
+      "grid_y": 337.7,
+      "fz": [
+        56.004333605,
+        7.518140458
+      ]
+    },
+    {
+      "role": "lower",
+      "grid_x": 1185,
+      "grid_y": 323.5,
+      "fz": [
+        58.337010146,
+        8.468087673
+      ]
+    },
+    {
+      "role": "lower",
+      "grid_x": 1235,
+      "grid_y": 305.6,
+      "fz": [
+        61.669405203,
+        9.665556346
+      ]
+    }
+  ],
+  "implementation": {
+    "backing": "Enlarged common longhead backing cut to the outer envelope; fitted seats cut against stem, cross-timber and stem-head extension.",
+    "upper_shoulder": "Aft shoulder piece above the stem-head extension; separate registered timber with fitted contact faces.",
+    "facing": "Existing S01-V03 faces, paint field and relief retained unchanged and seated on the backing."
+  }
+}
