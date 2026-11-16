@@ -1,0 +1,294 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "geometry_commit": "bb9a6216169d4a98e573f74a28e5d8502c0605ec",
+  "acceptance_checks_passed": [
+    "AC-01",
+    "AC-02",
+    "AC-03",
+    "AC-04",
+    "AC-05",
+    "AC-06",
+    "AC-07",
+    "AC-08",
+    "AC-09",
+    "AC-10"
+  ],
+  "markdown_links": {
+    "README.md": {
+      "local_links_checked": 16,
+      "missing": []
+    },
+    "docs/TRAILBOARD_CORRECTION.md": {
+      "local_links_checked": 26,
+      "missing": []
+    },
+    "docs/TRAILBOARD_GAP_ANALYSIS.md": {
+      "local_links_checked": 33,
+      "missing": []
+    },
+    "docs/BOWSPRIT_REMEDY_IMPLEMENTATION.md": {
+      "local_links_checked": 14,
+      "missing": []
+    }
+  },
+  "pdfs": {
+    "docs/trailboard-correction.pdf": {
+      "pages": 20,
+      "searchable_pages": 20,
+      "image_placements": 13,
+      "hyperlinks": 0,
+      "margin_violations": 0,
+      "visual_review": "All figure compositions reviewed; final verification/reproduction pages checked after clean proof was inserted"
+    },
+    "docs/trailboard-gap-analysis.pdf": {
+      "pages": 32,
+      "searchable_pages": 32,
+      "image_placements": 16,
+      "hyperlinks": 9,
+      "margin_violations": 0,
+      "visual_review": "All figure compositions reviewed; final verification/reproduction pages checked after clean proof was inserted"
+    }
+  },
+  "current_images": {
+    "docs/images/bow-quarter.png": {
+      "sha256": "56eb767092c1af40f32599a371def5737d1fe3cf1463c9df0f6517abc3ab8196",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/bow.png": {
+      "sha256": "186433c211c0d9d8295def2dd62abcbc55f25495b340721c914d9f80cee74d02",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/bow_remedy/after-heel.png": {
+      "sha256": "d191a8411bdc5332a38cd3e636c6155ccf234c1aeb933f06b0d56bef659b39e9",
+      "size_px": [
+        1600,
+        1280
+      ]
+    },
+    "docs/images/bow_remedy/after-plan.png": {
+      "sha256": "239c52d8bf1eb7509e25d7f223133978aa6f7944ded5e2dff11961cf10ec0f2f",
+      "size_px": [
+        1600,
+        1280
+      ]
+    },
+    "docs/images/bow_remedy/after-profile.png": {
+      "sha256": "7576dabe650184d98506160655988f62ce77012e67a933b40dc7d90359c360e7",
+      "size_px": [
+        1600,
+        1280
+      ]
+    },
+    "docs/images/bow_remedy/after-quarter.png": {
+      "sha256": "8da8ee95c2dbab4002ba6dc9c2c1f89bc42c5a2e3f733e80ad2488167f235ec6",
+      "size_px": [
+        1600,
+        1280
+      ]
+    },
+    "docs/images/bow_remedy/after-splice.png": {
+      "sha256": "fe754ef08d4da3605e2a054a130d135a232d6a9c1f59b880fbdbbbd1d6f05f05",
+      "size_px": [
+        1600,
+        1280
+      ]
+    },
+    "docs/images/bow_remedy/after-tip.png": {
+      "sha256": "077a293d9f8ebf427e5f2a23e3c34b6c729f9bc047dc1cc21a86e55ae8da222a",
+      "size_px": [
+        1600,
+        1280
+      ]
+    },
+    "docs/images/bow_remedy/source-plan-overlay.png": {
+      "sha256": "b3624f59549c9b5da7552b73254f42d851a391d79cd636dcfdc4c44c2b27a1db",
+      "size_px": [
+        2000,
+        739
+      ]
+    },
+    "docs/images/bow_remedy/source-profile-overlay.png": {
+      "sha256": "3748741d07076600ab273d7c3d46b0a9fc76831cea7de11db5621b85d154e2eb",
+      "size_px": [
+        2000,
+        654
+      ]
+    },
+    "docs/images/interior-cutaway.png": {
+      "sha256": "28d07ee52eb77c0495e8e0aab8ebd8297504a687437b35b2e58b1665360545a0",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/plan.png": {
+      "sha256": "e06034bd03b519aa3289b5b0dd1c9795544860b90abc1b2c2922b2b45469b983",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/port-side.png": {
+      "sha256": "6f967411cd317aebb09f3ed80af202a8812f88a7301e3d8bbec450ba960cd7aa",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/section-centreline.png": {
+      "sha256": "2f1a97c1e5dbb354cb9db19f604f94ef28107c39b6ffdf44f8195d531d0a2edb",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/section-hold.png": {
+      "sha256": "ad8314e7929c500fcf9d2708a1c949e6dc5c303b72cac4984149e3d7c92e4a85",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/starboard-side.png": {
+      "sha256": "d7b7c5eae4d89f0cc9e78ad2ec18e7b083d287269835e3d4a023dcad0e79138e",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/stern-quarter-high.png": {
+      "sha256": "a7b46a9153a8981b07a4a2ee681ebe0d100bfe5d0371bc0f94d1a1ec440aa226",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/stern-quarter.png": {
+      "sha256": "6f3263ba0e5bbea7b61ddc794c4aced65d5265831ae41399c1583780866033e1",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/stern.png": {
+      "sha256": "5671d29e6ab2894d30e3f5f5e2a9a4387dd6fbec21f4ff422ca37ab0e78f6832",
+      "size_px": [
+        1600,
+        1000
+      ]
+    },
+    "docs/images/trailboard_correction/after-head.png": {
+      "sha256": "4b5e529827fe2fcb64851342eeca614ced2fad3959c1342fbd44e91a71f58fb7",
+      "size_px": [
+        1800,
+        1535
+      ]
+    },
+    "docs/images/trailboard_correction/after-name.png": {
+      "sha256": "23b6c7b6c744fcb26f1dffa0e2d9f4c5096bf1f2ce9e611ec3001b582d42155c",
+      "size_px": [
+        1800,
+        1535
+      ]
+    },
+    "docs/images/trailboard_correction/after-plan.png": {
+      "sha256": "19c28be604832ea510e678e2581cb699ed5f7e54ea5da534153924e0fc46c645",
+      "size_px": [
+        1800,
+        1535
+      ]
+    },
+    "docs/images/trailboard_correction/after-port.png": {
+      "sha256": "ca3ac307f3bb0a2adfc79ffb57d1c54a6fe6a58f4ce0585e695f571ad9a4aa54",
+      "size_px": [
+        1800,
+        1535
+      ]
+    },
+    "docs/images/trailboard_correction/after-profile.png": {
+      "sha256": "4d30940306fe9e5c6d5167cf3e515bc92f23ae4cc7c334b6a9cef31c6cdb7a59",
+      "size_px": [
+        1800,
+        1535
+      ]
+    },
+    "docs/images/trailboard_correction/after-quarter.png": {
+      "sha256": "5b688dfd10b48ac6b32162ddad11154988c0ee5a2723003d4eae10e26be4fc7e",
+      "size_px": [
+        1800,
+        1535
+      ]
+    },
+    "docs/images/trailboard_correction/after-starboard.png": {
+      "sha256": "f7c13d906138711425c7b7026228c8d466b491e7ccfa03238541926cfa8704fb",
+      "size_px": [
+        1800,
+        1535
+      ]
+    },
+    "docs/images/trailboard_correction/after-underside.png": {
+      "sha256": "efb727c5973122a5c8bf4767de1517ef871708069858c503fa6bbd2a796261e2",
+      "size_px": [
+        1800,
+        1535
+      ]
+    },
+    "docs/images/trailboard_correction/comparison-drawing.png": {
+      "sha256": "00c2f06d4e5f87cbd181bcab273ac53d0b39547274125597c06e0f1c2dcacbf7",
+      "size_px": [
+        1800,
+        1450
+      ]
+    },
+    "docs/images/trailboard_correction/comparison-photo.png": {
+      "sha256": "752b7371fa1e03b8872fadbc3584c3094432ff8ffa6ca86f85a53378fe46cf32",
+      "size_px": [
+        1800,
+        1450
+      ]
+    },
+    "docs/images/trailboard_correction/source-ornament-after.png": {
+      "sha256": "57a4f6632e1c32d2e507874e38268979834fc113d9d0fd62d52c94a5cafe1c4c",
+      "size_px": [
+        1800,
+        1069
+      ]
+    },
+    "docs/images/trailboard_correction/source-plan-after.png": {
+      "sha256": "b017b00ed004753a92970aec1ad549624c106b50fa012f2b88f95bb7e38b90ca",
+      "size_px": [
+        1800,
+        1056
+      ]
+    },
+    "docs/images/trailboard_correction/source-profile-after.png": {
+      "sha256": "202e95478a8a9363ab774b54e3907e3157652791c405f0fcb0d7f48d4c753bd8",
+      "size_px": [
+        1800,
+        895
+      ]
+    }
+  },
+  "before_evidence": "docs/images/trailboard_review unchanged from approved specification commit 94ac917",
+  "document_sha256": {
+    "README.md": "dd7bacc94eb8923fe0a06f47a904ed58b6b1180446631e9ca98e495618dc1971",
+    "docs/TRAILBOARD_CORRECTION.md": "3d21d23f238b003ab3c0536e67366592a2728f058b56ddaf7412409fd1493173",
+    "docs/TRAILBOARD_GAP_ANALYSIS.md": "b84b880b67fe4413fe498d747238117622b5aa0eb3f49152bf2a097a47c36b6b",
+    "docs/BOWSPRIT_REMEDY_IMPLEMENTATION.md": "31959cea069406d9967931849baff771f275b4904c753848c7838ac117e40380",
+    "docs/trailboard-correction.pdf": "e26d0fc02c31d987edb7d70ef6e35d6f8dbfaae7b4bb6da8635f8a3edef40a94",
+    "docs/trailboard-gap-analysis.pdf": "44b11c66ffb11a3a109f919bf190745d8e37017107a44defabc4ca3afc3f5671"
+  },
+  "image_count": 32,
+  "readme_gallery_images": 11,
+  "trailboard_after_figures": 13,
+  "bow_implementation_figures": 8,
+  "visual_review": "Inspected current port/starboard faces, head, name, complete bow, plan, underside, source overlays and drawing/photo comparison; inspected all README and bow figures and all PDF page contact sheets",
+  "limitations": "Thickness, backing width, relief depth, palette, photo state and hidden handoff remain qualified reconstruction assumptions, as recorded in acceptance and source ledger"
+}

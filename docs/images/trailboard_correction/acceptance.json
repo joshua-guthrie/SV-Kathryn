@@ -1,8 +1,8 @@
 {
   "schema_version": 1,
   "status": "passed",
-  "model_commit": null,
-  "model_commit_note": "Filled by the committed-tree validation record after the model commit",
+  "model_commit": "bb9a6216169d4a98e573f74a28e5d8502c0605ec",
+  "model_commit_note": "Geometry commit validated from scratch; later documentation-only checkpoints retain these source hashes",
   "model_source_hashes": {
     "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
     "src/parts/__init__.py": "4a74abd352dec4511cfcce1291ff50d0855e9e6eaaad3e4e64fe13933510eac6",
@@ -926,6 +926,21 @@
       "units": "mixed",
       "method": "Item-11 plan/profile registration and actual after-handoff contact; short concealed handoff remains inferred",
       "evidence_paths": []
+    },
+    {
+      "id": "AC-10",
+      "status": "pass",
+      "actual": {
+        "verified_model_commit": "bb9a6216169d4a98e573f74a28e5d8502c0605ec",
+        "same_model_sources": true,
+        "changed_images": [],
+        "clean_build_parts": 1024,
+        "proof": "docs/images/trailboard_correction/committed-build.json"
+      },
+      "limit": "Same model sources; fresh committed-tree build and checked documentation images",
+      "units": "package",
+      "method": "The model commit is rebuilt from an archive without app state or caches; final documentation keeps the verified geometry unchanged",
+      "evidence_paths": []
     }
   ],
   "finding_disposition": {
@@ -953,5 +968,6 @@
   "source_hashes": {
     "S01-V03": "1055509566f971f1d0d6c6542abb8607e47c8a4dc5c5e331a452955255e0d772",
     "S04": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4"
-  }
+  },
+  "package_validation": "passed"
 }

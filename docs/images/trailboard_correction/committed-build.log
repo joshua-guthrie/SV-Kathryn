@@ -1,0 +1,151 @@
+Building committed tree bb9a621 from scratch ...
+Build ok: 1024 part(s), 643.4 s -> output/model.step
+Parameters: 1, all at the defaults from the code
+Running check_model_scale.py in the clean tree ...
+PASS: 1:1, 304.800089 mm/ft; wood body 15835.46 mm; 50-ft reference 15,240 mm; 1024 parts; STEP explicitly mm.
+Running check_registered_deck.py in the clean tree ...
+PASS: 237 exported deck boards + 2 waterway parts; conserved material, unchanged exterior, beam-centred pattern, no backing or missing mesh faces.
+Running check_bow_attachment.py in the clean tree ...
+{
+  "status": "passed",
+  "built_parts": 1024,
+  "build_id": "ae158e5fdb43431eb0f2edd12c21cac0",
+  "method": "Exact completed-build BREP solids; 1 mm CAD tolerance; source picks remain +/-0.2 ft.",
+  "full_spar_axis_ft": 21.576368975966385,
+  "inboard_section_in": [
+    12.0000024,
+    11.000002400000021
+  ],
+  "unchanged_samson_station_ft": 45.71741990239761,
+  "attachment_distances_mm": {
+    "Bowsprit / Bowsprit inboard heel bed": 0.0,
+    "Bowsprit / Bowsprit heel saddle": 0.0,
+    "Bowsprit heel saddle / Bowsprit heel bearing cross-timber": 0.0,
+    "Bowsprit heel bearing cross-timber / Bowsprit stem-head extension": 0.0,
+    "Bowsprit stem-head extension / Oak stem knee with Samson-post mortise": 0.0,
+    "Bowsprit stem-head extension / Painted stem and cutwater": 0.0,
+    "Longhead trailboard backing / Bowsprit stem-head extension": 1.2106822558556303e-12,
+    "Jib club / Jib tack pivot pin": 0.45719828580994387,
+    "Jib tack pivot pin / Jib tack collar and fork": 8.459899447643693e-15,
+    "Jib stay / Jib tack pivot pin": 0.0,
+    "Head stay / Head stay stem-head pin": 0.0,
+    "Bowsprit cheek block / Bowsprit": 8.459899447643693e-15,
+    "Bowsprit downhaul sheave / Bowsprit cheek block": 0.45719999999846755,
+    "Jib downhaul / Jib downhaul foredeck cleat": 0.0,
+    "Port projecting headrail / Port lower rail": 0.0,
+    "Starboard projecting headrail / Starboard lower rail": 0.0
+  },
+  "head_to_stay_mm": 0.0,
+  "jib_lengths_ft": {
+    "luff": 49.5,
+    "foot": 25.66666666666667,
+    "leech": 42.00000000000001
+  },
+  "club_to_bowsprit_clearance_in": 1.3919259925385359,
+  "source_registration_sha256": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
+  "model_input_sha256": {
+    "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
+    "src/parts/__init__.py": "4a74abd352dec4511cfcce1291ff50d0855e9e6eaaad3e4e64fe13933510eac6",
+    "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
+    "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
+    "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
+    "src/parts/bow.py": "e1988a56324824f52bbb97c03bae5b1b15d1f1b6b7094f54a46f4ffe76683e0a",
+    "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
+    "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
+    "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
+    "src/parts/datum.py": "52a2c4a92e253bcdd0bce699ed618dc0ecfc4d0f2277bed138ff1f1394ae8bd8",
+    "src/parts/deck.py": "a105aa32710157a1e52a2bf114f6a1930d156ace0f08973df36cbc9c5e4f59fb",
+    "src/parts/deck_beams.py": "45c75ba2c5cb4636fd39ba5f5b781b4e662f9928ca5449cae1b652f4e04d7258",
+    "src/parts/deck_planking.py": "d62d99981b0f770d4849af6c0afdd51a8cb5030e3529d3d871eaf9f3bd2e31ac",
+    "src/parts/equipment.py": "4626483fa20da574ef5235b028d45f1bc85ff98267d158c982242d1ad29f21d0",
+    "src/parts/frame_layout.py": "278a3d364eabe8664110f6d1717f5a9f81b5302e2d8b6cf141c43269b7a512c7",
+    "src/parts/framing.py": "691543fa0850f023a090a9e4b9cff8ca9e32a636bca1637ac12c043ca904ebd5",
+    "src/parts/hull.py": "3cdc658529b7d417444d5fc65f68206cc207eda87b1caa1b7c100c27f0b92da3",
+    "src/parts/hull_frames.py": "18aa452a17037c7ebeba04a4dabc5ae1c9e65c21f45b2afb09ad67432175b3ba",
+    "src/parts/interior.py": "e591f1cc8c158f7d1f3918418c509b7a8716aa9b8a016182e692fdde751084ad",
+    "src/parts/openings.py": "f0300e7025f9aeb89fbe676833e1cfeacf31d4088fe04f1ed3e7a4eda24e40de",
+    "src/parts/params.py": "f1d06a08d7c17deae9d54ca9b97a3cc3dbcd225e220fa0dfb382061be3bf5e8c",
+    "src/parts/planking.py": "36415d74373ce49a01e67067919c96e73921606e247f0c6dc4b0572ace172ed3",
+    "src/parts/primitives.py": "c6694b4ab5502078d94a01ef4b487b00eccc2863075bb33a8dd21dadf31a6ae4",
+    "src/parts/rails.py": "000dca29d1782580a1518371268da2daf7b1d107fa30567eacc3d54ebc53a1ef",
+    "src/parts/rigging.py": "aa0d8011001da5c553297e6a6c179be8d96d388a06177afea291c594620da658",
+    "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
+    "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
+    "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
+    "src/parts/trailboard_layout.py": "cd01ed8c9f111ec21deba0a8d7d15a5cdc40ff34b83e6107df22abe11745d7e0",
+    "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
+    "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7"
+  },
+  "closed_findings": [
+    "G1 full spar and source stations",
+    "G2 fitted bed, stem splice and drilled retention",
+    "G3 supported, fixed board faces",
+    "G4 coordinated headrail/board silhouette",
+    "G5 tack collar, fork and pivot",
+    "G6 jib head on stay",
+    "G7 two bobstays and returning sheaved downhaul",
+    "G8 exact exported-solid acceptance"
+  ],
+  "limits": [
+    "Abutting heel stop at forward post face; no post relocation or unexplained timber interpenetration.",
+    "Bed housings, fastener diameters, transverse tack pin/shackle, hidden backing and bolt spacing are reconstruction choices, not printed historical sizes.",
+    "Two facing boards fit a common half-foot longhead backing; their silhouette follows S01/S04, and they carry no invented primary rig load.",
+    "Extend stem/headwork from the existing stem into the source raked head to provide an explicit structural connection; do not alter accepted hull or stern.",
+    "Flat display sails remain reference envelopes. Real cloth draft, flexible line behavior and strength are not simulated.",
+    "Longhead rear knee/filling is housed against the new stem-head timber; all remaining filling pieces are registered separately.",
+    "The primary stem-head splice has a matching pocket and two transverse pin passages in the existing oak knee.",
+    "Timber/fastener strength and flexible cloth/rope dynamics are not certified."
+  ]
+}
+Running check_trailboards.py in the clean tree ...
+Fixed assembly witnesses checked.
+Independent source stations checked.
+Port exported carving/letter contours checked.
+Starboard exported carving/letter contours checked.
+{
+  "status": "passed",
+  "parts": 1024,
+  "checks": [
+    {
+      "id": "AC-01",
+      "status": "pass"
+    },
+    {
+      "id": "AC-02",
+      "status": "pass"
+    },
+    {
+      "id": "AC-03",
+      "status": "pass"
+    },
+    {
+      "id": "AC-04",
+      "status": "pass"
+    },
+    {
+      "id": "AC-05",
+      "status": "pass"
+    },
+    {
+      "id": "AC-06",
+      "status": "pass"
+    },
+    {
+      "id": "AC-07",
+      "status": "pass"
+    },
+    {
+      "id": "AC-08",
+      "status": "pass"
+    },
+    {
+      "id": "AC-09",
+      "status": "pass"
+    }
+  ],
+  "max_physical_ft": 0.12570131271522378,
+  "outer_trace_px": 0.9948090966777815,
+  "max_region_contact_mm": 0.0
+}
+PASS: bb9a621 builds from scratch: 1024 parts, 0 warnings, 794.5 s, scale, deck, bow attachment and trailboard fidelity checks pass.
+Clean tree: /tmp/kathryn-committed-build-1ylllnxc

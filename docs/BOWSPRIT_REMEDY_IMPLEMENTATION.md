@@ -1,6 +1,6 @@
 # Bowsprit and trailboard correction
 
-15 November 2026. Implementation of the six phases in [the attachment review](BOWSPRIT_ATTACHMENT_REVIEW.md). Status: **working export and attachment checks passed**; clean committed-tree verification is recorded with the [trailboard correction](TRAILBOARD_CORRECTION.md). The original review and its pictures remain the as-found record of e341989.
+15 November 2026. Implementation of the six phases in [the attachment review](BOWSPRIT_ATTACHMENT_REVIEW.md). Status: **clean committed-tree build and attachment checks passed**; verification of geometry commit **bb9a621** is recorded with the [trailboard correction](TRAILBOARD_CORRECTION.md). The original review and its pictures remain the as-found record of e341989.
 
 The correction replaces the shortened outer cone with a complete spar, seats it against the existing Samson post, houses the stem-head structure into the receiving oak knee, and connects the jib through a real collar, fork and transverse pivot. The carved boards fit a common longhead backing and have their own fixing passages. The sail is solved around the actual tack and stay, and the downhaul returns through its cheek block to a foredeck cleat.
 
@@ -84,6 +84,6 @@ These overlays use the declared registration and original imperial scale. Each c
 
 ## Validation and remaining limits
 
-The official working build succeeds with 1024 parts and zero warnings, and the exact exported-solid joint checks pass. The cache-free committed-tree result is recorded in the linked trailboard implementation package. The machine-readable acceptance record is written to `docs/images/bow_remedy/acceptance.json`.
+The official working build and cache-free archive build of **bb9a621** both succeed with 1024 parts and zero warnings, and the exact exported-solid joint checks pass. All 1024 part bounds and volumes agree between those exports. The committed-tree log and source/image fingerprints are recorded in the linked trailboard implementation package. The machine-readable attachment acceptance is written to `docs/images/bow_remedy/acceptance.json`.
 
 Known limits are recorded in the source ledger: unprinted hidden joint dimensions and local timber fairing are reconstruction choices; the nominal historic length differs from the assembled survey trace; flexible rope and cloth behaviour are not simulated. These limits do not restore permission for disconnected fittings, unbored pins or decorative boards used to conceal missing support.
