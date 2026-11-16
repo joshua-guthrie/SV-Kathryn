@@ -26,7 +26,8 @@ CAD_TOL_FT=1/304.8  # 1 mm CAD attachment tolerance, not source uncertainty.
 def check(project=ROOT,out=None):
     project=Path(project)
     inputs=[ROOT/'model.py',*sorted((ROOT/'src/parts').glob('*.py')),
-            ROOT/'references/drawing_package/bow_remedy_registration.json']
+            ROOT/'references/drawing_package/bow_remedy_registration.json',
+            ROOT/'references/drawing_package/jib_club.json']
     hashes={str(p.relative_to(ROOT)):hashlib.sha256(p.read_bytes()).hexdigest() for p in inputs}
     changed=[name for name,digest in hashes.items()
              if hashlib.sha256((project/name).read_bytes()).hexdigest()!=digest]
@@ -68,7 +69,7 @@ def check(project=ROOT,out=None):
               ('Bowsprit stem-head extension','Oak stem knee with Samson-post mortise'),
               ('Bowsprit stem-head extension','Painted stem and cutwater'),
               ('Longhead trailboard backing','Bowsprit stem-head extension'),
-              ('Jib club','Jib tack pivot pin'),('Jib tack pivot pin','Jib tack collar and fork'),
+              ('Jib tack pivot pin','Jib tack collar and fork'),
               ('Jib stay','Jib tack pivot pin'),('Head stay','Head stay stem-head pin'),
               ('Bowsprit cheek block','Bowsprit'),('Bowsprit downhaul sheave','Bowsprit cheek block'),
               ('Jib downhaul','Jib downhaul foredeck cleat'),
@@ -82,7 +83,7 @@ def check(project=ROOT,out=None):
     for fastener,wood in [('Bowsprit fid','Bowsprit'),('Bowsprit fid','Bowsprit heel saddle'),
                           ('Bowsprit fid','Bowsprit heel bearing cross-timber'),
                           ('Bowsprit fid','Bowsprit stem-head extension'),
-                          ('Jib tack pivot pin','Jib club')]:
+                          ('Jib tack pivot pin','Jib tack collar and fork')]:
         volume=part(fastener).intersect(part(wood)).Volume()
         if volume>1e-7:uncut.append((fastener,wood,volume))
     assert not uncut,('Fastener through uncut material',uncut)
@@ -116,8 +117,11 @@ def check(project=ROOT,out=None):
     T=np.array(rigging.JIB_TACK);H=np.array(rigging.JIB_HEAD);M=np.array(rigging.HEAD);C=np.array(rigging.JIB_CLEW)
     head_residual=float(np.linalg.norm(np.cross(H-T,M-T))/np.linalg.norm(M-T))
     assert head_residual*304.8<.01,head_residual
+    club=rigging.JIB_CLUB
     lengths={'luff':float(np.linalg.norm(H-T)),'foot':float(np.linalg.norm(C-T)),'leech':float(np.linalg.norm(H-C))}
-    for key,value in zip(('luff','foot','leech'),(49.5,25+8/12,42.0)):assert abs(lengths[key]-value)<1e-7,(key,lengths[key])
+    expected={'luff':49.5,'foot':club['jib_pose']['foot_ft'],
+              'leech':club['jib_pose']['straight_leech_ft']}
+    for key,value in expected.items():assert abs(lengths[key]-value)<1e-7,(key,lengths[key],value)
     clearance=part('Bowsprit').distance(part('Jib club'))
     assert clearance>.02,('Club fouls spar',clearance)
     assert part('Jib sail (S08 demonstration)').intersect(part('Bowsprit')).Volume()<1e-8
@@ -134,13 +138,16 @@ def check(project=ROOT,out=None):
             'unchanged_samson_station_ft':BOW_POST_FORWARD_FT,'attachment_distances_mm':distances,
             'head_to_stay_mm':head_residual*304.8,'jib_lengths_ft':lengths,
             'club_to_bowsprit_clearance_in':clearance*12,
+            'jib_club_length_ft':rigging.JIB_CLUB_LENGTH_FT,
+            'jib_clew_above_deck_ft':rigging.JIB_CLEW_ABOVE_DECK_FT,
             'source_registration_sha256':hashlib.sha256((ROOT/'references/drawing_package/bow_remedy_registration.json').read_bytes()).hexdigest(),
             'model_input_sha256':hashes,
             'closed_findings':['G1 full spar and source stations','G2 fitted bed, stem splice and drilled retention',
                                'G3 supported, fixed board faces','G4 coordinated headrail/board silhouette',
-                               'G5 tack collar, fork and pivot','G6 jib head on stay',
+                               'G5 jib tack collar, fork and pivot','G6 jib head on stay',
                                'G7 two bobstays and returning sheaved downhaul','G8 exact exported-solid acceptance'],
-            'limits':SOURCE['inferred_details']+['Timber/fastener strength and flexible cloth/rope dynamics are not certified.']}
+            'limits':SOURCE['inferred_details']+['Timber/fastener strength and flexible cloth/rope dynamics are not certified.',
+                                      'The jib clew follows the high S03/S04 short club; the straight 3D leech chord is shorter than the S08 plan leech.']}
     if out:
         out=Path(out);out.parent.mkdir(parents=True,exist_ok=True);out.write_text(json.dumps(result,indent=2)+'\n')
     print(json.dumps(result,indent=2))

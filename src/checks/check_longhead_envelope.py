@@ -183,7 +183,8 @@ def check(project=ROOT, out=None, strict=True):
 
     paths = [ROOT / 'model.py', *sorted((ROOT / 'src/parts').glob('*.py')),
              ROOT / 'references/drawing_package/longhead_envelope.json',
-             ROOT / 'references/drawing_package/bow_remedy_registration.json']
+             ROOT / 'references/drawing_package/bow_remedy_registration.json',
+             ROOT / 'references/drawing_package/jib_club.json']
     record = dict(schema_version=1,
                   status='passed' if all(c['status'] == 'pass' for c in checks) else 'failed',
                   part_count=len(records),

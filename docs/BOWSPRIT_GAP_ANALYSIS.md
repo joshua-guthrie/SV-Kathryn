@@ -14,6 +14,8 @@ analysis is in `docs/LAZYJACK_GAP_ANALYSIS.md`.
 
 ## 0a. Implementation update (2026-11-14)
 
+**Later correction (2026-11-15):** the full-foot jib club was replaced by the short S03/S04 club under the aft part of the foot and the jib bottom was raised; see the [jib-club correction](JIB_CLUB_CORRECTION.md). The 25.7-ft club below is the earlier implementation state.
+
 - **Jib:** the S08 triangle (luff 49′6″, foot 25′8″, leech 42′0″) is raised
   0.75 ft, putting the foot above the bowsprit. The jib club is now a 25.7-ft
   spar along the foot from the raised tack at the bowsprit tip to the raised

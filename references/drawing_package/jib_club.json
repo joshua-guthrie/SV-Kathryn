@@ -1,0 +1,46 @@
+{
+  "schema_version": 1,
+  "status": "source-controlled short jib club and raised three-dimensional jib pose",
+  "units": "full-size feet; model Y is negative forward",
+  "source": {
+    "S03-V01": {
+      "file": "references/drawing_package/S03/S03-V01/native.png",
+      "sha256": "ecf45f68343046805ba20af6dcad47856042f40bea96135a05346ec7aa5e14a1",
+      "parent_file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00003a.tif",
+      "parent_sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c"
+    },
+    "S04": {
+      "file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif",
+      "sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4",
+      "items": "13 Jib Club / 14 Jib Sheet Traveler"
+    }
+  },
+  "club": {
+    "aft_f_ft": 41.61,
+    "aft_z_ft": 11.96,
+    "fore_f_ft": 49.97,
+    "fore_z_ft": 12.76,
+    "length_ft": 8.39819028124512,
+    "fore_radius_ft": 0.11,
+    "aft_radius_ft": 0.07,
+    "note": "Short tapered spar under the aft part of the jib foot. It does not extend forward to the tack or the full foot."
+  },
+  "jib_pose": {
+    "tack": "bowsprit tip jib tack",
+    "clew_f_ft": 41.61,
+    "clew_z_ft": 11.96,
+    "foot_ft": 25.527906396090454,
+    "straight_leech_ft": 40.21228140003571,
+    "luff_ft": 49.5,
+    "s08_foot_ft": 25.666666666666668,
+    "s08_leech_ft": 42.0,
+    "note": "The clew follows the source club aft end, raising the jib bottom above deck. The S08 foot and 42-ft plan leech remain plan dimensions; the raised straight 3D chord is recorded explicitly."
+  },
+  "deck": {
+    "clew_station_f_ft": 41.61,
+    "deck_z_ft": 8.49586231917867,
+    "clew_above_deck_ft": 3.464137680821331,
+    "club_fore_above_deck_ft": 3.542635421295042
+  },
+  "excluded": "The old full-foot club running from the bowsprit tip to the clew is withdrawn; it is not the source club."
+}

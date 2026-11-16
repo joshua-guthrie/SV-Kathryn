@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "built_parts": 1025,
-  "build_id": "2312e0dae74a44bc88e3c7aa0ef9d541",
+  "build_id": "2831aa672b4c47fa95d026027395c3e5",
   "method": "Exact completed-build BREP solids; 1 mm CAD tolerance; source picks remain +/-0.2 ft.",
   "full_spar_axis_ft": 21.576368975966385,
   "inboard_section_in": [
@@ -17,7 +17,6 @@
     "Bowsprit stem-head extension / Oak stem knee with Samson-post mortise": 0.0,
     "Bowsprit stem-head extension / Painted stem and cutwater": 0.0,
     "Longhead trailboard backing / Bowsprit stem-head extension": 0.0,
-    "Jib club / Jib tack pivot pin": 0.45719828580994387,
     "Jib tack pivot pin / Jib tack collar and fork": 8.459899447643693e-15,
     "Jib stay / Jib tack pivot pin": 0.0,
     "Head stay / Head stay stem-head pin": 0.0,
@@ -30,10 +29,12 @@
   "head_to_stay_mm": 0.0,
   "jib_lengths_ft": {
     "luff": 49.5,
-    "foot": 25.66666666666667,
-    "leech": 42.00000000000001
+    "foot": 25.527906396090454,
+    "leech": 40.21228140003571
   },
-  "club_to_bowsprit_clearance_in": 1.3919259925385359,
+  "club_to_bowsprit_clearance_in": 27.614481673454208,
+  "jib_club_length_ft": 8.39819028124512,
+  "jib_clew_above_deck_ft": 3.464137680821331,
   "source_registration_sha256": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
   "model_input_sha256": {
     "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
@@ -60,20 +61,21 @@
     "src/parts/planking.py": "36415d74373ce49a01e67067919c96e73921606e247f0c6dc4b0572ace172ed3",
     "src/parts/primitives.py": "c6694b4ab5502078d94a01ef4b487b00eccc2863075bb33a8dd21dadf31a6ae4",
     "src/parts/rails.py": "000dca29d1782580a1518371268da2daf7b1d107fa30567eacc3d54ebc53a1ef",
-    "src/parts/rigging.py": "aa0d8011001da5c553297e6a6c179be8d96d388a06177afea291c594620da658",
+    "src/parts/rigging.py": "e31cd3f26ce0a73ea105a6f37a852d1a6f78eb168b6d16c1aff781452a1d3baa",
     "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
     "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
     "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
     "src/parts/trailboard_layout.py": "6b52176660f9405ffce2312a2bb1d41fd568e6b42fbb18f2cfa6be5472dfa3ac",
     "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
-    "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7"
+    "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
+    "references/drawing_package/jib_club.json": "807eb75811640d999024324075f0fae20e5c1bc46690de6ee5b605106a30e4e4"
   },
   "closed_findings": [
     "G1 full spar and source stations",
     "G2 fitted bed, stem splice and drilled retention",
     "G3 supported, fixed board faces",
     "G4 coordinated headrail/board silhouette",
-    "G5 tack collar, fork and pivot",
+    "G5 jib tack collar, fork and pivot",
     "G6 jib head on stay",
     "G7 two bobstays and returning sheaved downhaul",
     "G8 exact exported-solid acceptance"
@@ -86,6 +88,7 @@
     "Flat display sails remain reference envelopes. Real cloth draft, flexible line behavior and strength are not simulated.",
     "Longhead rear knee/filling is housed against the new stem-head timber; all remaining filling pieces are registered separately.",
     "The primary stem-head splice has a matching pocket and two transverse pin passages in the existing oak knee.",
-    "Timber/fastener strength and flexible cloth/rope dynamics are not certified."
+    "Timber/fastener strength and flexible cloth/rope dynamics are not certified.",
+    "The jib clew follows the high S03/S04 short club; the straight 3D leech chord is shorter than the S08 plan leech."
   ]
 }

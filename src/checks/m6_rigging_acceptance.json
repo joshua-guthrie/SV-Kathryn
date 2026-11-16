@@ -35,14 +35,22 @@
   "jib_club_ft": {
     "fore": [
       0,
-      -42.134,
-      12.378
+      -24.97,
+      12.76
     ],
     "aft": [
-      0.0,
-      -16.564,
-      10.158
+      0,
+      -16.61,
+      11.96
     ],
+    "clew": [
+      0,
+      -16.61,
+      11.96
+    ],
+    "length": 8.398,
+    "club_fore_above_deck_ft": 3.543,
+    "clew_above_deck_ft": 3.464,
     "foot_raise_ft": 0.3294730266763217
   },
   "main_plan_ft": {
@@ -54,18 +62,22 @@
   },
   "jib_plan_ft": {
     "luff": 49.5,
-    "foot": 25.667,
-    "leech": 42.0
+    "foot": 25.528,
+    "straight_leech": 40.212,
+    "s08_foot": 25.666666666666668,
+    "s08_leech": 42.0
   },
   "source": [
     "S03-V01 hull profile and rigging",
     "S03-N02 rigging/running-gear key",
+    "S04 items 13/14",
     "S08-V01 sail plan"
   ],
   "unresolved": [
     "main-sail roached leech not modelled",
     "exact cleat/pin-rail positions",
     "hoops/hanks intentionally omitted per S08 note",
+    "jib clew follows the high S03 club; the straight 3D leech chord is shorter than the S08 plan leech",
     "lazyjack junction heights and leg split inferred from the S03 profile"
   ]
 }

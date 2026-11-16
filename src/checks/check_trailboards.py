@@ -171,7 +171,7 @@ def check(project=ROOT,out=None,strict=True):
     result('AC-09',rail_residual<=.2 and max(rail_contacts.values())<=1,
            {'source_profile_residual_ft':rail_residual,'hull_rail_contact_mm':rail_contacts,'handoff':PHYSICAL['handoff']},
            {'source_ft':.2,'contact_mm':1},'mixed','Item-11 plan/profile registration and actual after-handoff contact; short concealed handoff remains inferred')
-    paths=[ROOT/'model.py',*sorted((ROOT/'src/parts').glob('*.py')),ROOT/'references/drawing_package/bow_remedy_registration.json',ROOT/'references/drawing_package/trailboard_targets.json',ROOT/'references/drawing_package/longhead_envelope.json']
+    paths=[ROOT/'model.py',*sorted((ROOT/'src/parts').glob('*.py')),ROOT/'references/drawing_package/bow_remedy_registration.json',ROOT/'references/drawing_package/trailboard_targets.json',ROOT/'references/drawing_package/longhead_envelope.json',ROOT/'references/drawing_package/jib_club.json']
     record={'schema_version':1,'status':'passed' if all(c['status']=='pass' for c in checks) else 'failed',
             'model_commit':None,'model_commit_note':'Filled by the committed-tree validation record after the model commit',
             'model_source_hashes':{str(p.relative_to(ROOT)):sha(p) for p in paths},

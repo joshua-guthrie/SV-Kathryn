@@ -5,7 +5,9 @@ paths are reconstructions of the S03 rigging key; sails follow the S08 plan
 and are registered as display references because the notes call the hoops/hanks
 demonstration only.
 """
+import json
 import math
+from pathlib import Path
 import numpy as np
 
 import cadquery as cq
@@ -77,16 +79,19 @@ MAIN_CLEW = tuple(a + (b - a) * MAIN_FOOT_FT / _boom_length
 # Solve the sail on the physical tack/stay. No whole-triangle translation.
 JIB_CLUB_RADIUS_FORE=RIG['club_fore_radius_ft']
 JIB_CLUB_RADIUS_AFT=RIG['club_aft_radius_ft']
+CLUB_PATH=Path(__file__).resolve().parents[2]/'references/drawing_package/jib_club.json'
+JIB_CLUB=json.loads(CLUB_PATH.read_text())
 JIB_TACK=tack_point()
 JIB_FOOT_RAISE_FT=JIB_TACK[2]-TIP[2]  # Measured fitting elevation, not an arbitrary offset.
 _t=np.array(JIB_TACK);_mast=np.array(HEAD)
 JIB_HEAD=tuple(_t+(_mast-_t)*JIB_LUFF_FT/np.linalg.norm(_mast-_t))
-_u=(np.array(JIB_HEAD)-_t)/JIB_LUFF_FT
-_a=(JIB_FOOT_FT**2-JIB_LEECH_FT**2+JIB_LUFF_FT**2)/(2*JIB_LUFF_FT)
-_half=math.sqrt(JIB_FOOT_FT**2-_a**2)
-_perp=np.array((0.,-_u[2],_u[1]))
-_candidates=[_t+_u*_a+sign*_perp*_half for sign in (-1,1)]
-JIB_CLEW=tuple(max(_candidates,key=lambda p:p[1]))
+# S03/S04 source club: a short spar under the aft part of the foot, not a
+# full-foot boom. The clew follows its aft end so the jib bottom stays high.
+JIB_CLUB_AFT=boat_point(0,JIB_CLUB['club']['aft_f_ft'],JIB_CLUB['club']['aft_z_ft'])
+JIB_CLUB_FORE=boat_point(0,JIB_CLUB['club']['fore_f_ft'],JIB_CLUB['club']['fore_z_ft'])
+JIB_CLUB_LENGTH_FT=math.dist(JIB_CLUB_AFT,JIB_CLUB_FORE)
+JIB_CLEW=JIB_CLUB_AFT
+JIB_CLEW_ABOVE_DECK_FT=JIB_CLEW[2]-deck_height(25-JIB_CLEW[1])
 
 
 def _chain_f(i=0):
@@ -151,16 +156,14 @@ def _main_lazyjack_junctions(side):
 
 
 def _jib_lazyjack_junction(side):
-    mid_y = (JIB_TACK[1] + JIB_CLEW[1]) / 2
+    mid_y = (JIB_CLUB_AFT[1] + JIB_CLUB_FORE[1]) / 2
     return (side * LAZYJACK_X_FT * 1.0,
             mid_y, JIB_LAZYJACK_JUNCTION_Z_FT)
 
 
 def _club_station(t):
-    point=np.array(JIB_TACK)+(np.array(JIB_CLEW)-np.array(JIB_TACK))*t
-    length=math.dist(JIB_TACK,JIB_CLEW)
-    q=(length*t+RIG['club_fore_overhang_ft'])/(length+RIG['club_fore_overhang_ft'])
-    radius=JIB_CLUB_RADIUS_FORE+(JIB_CLUB_RADIUS_AFT-JIB_CLUB_RADIUS_FORE)*q
+    point=np.array(JIB_CLUB_AFT)+(np.array(JIB_CLUB_FORE)-np.array(JIB_CLUB_AFT))*t
+    radius=JIB_CLUB_RADIUS_AFT+(JIB_CLUB_RADIUS_FORE-JIB_CLUB_RADIUS_AFT)*t
     return point,radius
 
 
@@ -172,7 +175,7 @@ def _jib_club_point(t, side):
 
 def _jib_club_strop(t):
     point,radius=_club_station(t)
-    direction=np.array(JIB_CLEW)-np.array(JIB_TACK)
+    direction=np.array(JIB_CLUB_FORE)-np.array(JIB_CLUB_AFT)
     direction/=np.linalg.norm(direction)
     return cq.Solid.makeTorus(radius+.013,.012,tuple(point),tuple(direction))
 
@@ -285,7 +288,7 @@ def _fitting_parts():
             yield (f'{label} main lazyjack junction {i}',
                    block(side * LAZYJACK_X_FT, _boat_y(y), z - .06,
                          .10, .12, .14), IRON)
-        jib_mid_y = (JIB_TACK[1] + JIB_CLEW[1]) / 2
+        jib_mid_y = (JIB_CLUB_AFT[1] + JIB_CLUB_FORE[1]) / 2
         yield (f'{label} jib lazyjack junction',
                block(side * LAZYJACK_X_FT, _boat_y(jib_mid_y),
                      JIB_LAZYJACK_JUNCTION_Z_FT - .06, .10, .12, .14), IRON)
@@ -308,13 +311,9 @@ def _triangle(a, b, c, thickness=.018):
 
 
 def make_jib_club():
-    t=np.array(JIB_TACK);c=np.array(JIB_CLEW);u=(c-t)/np.linalg.norm(c-t)
-    start=tuple(t-u*RIG['club_fore_overhang_ft'])
-    raw=spar_between(start,tuple(c),JIB_CLUB_RADIUS_FORE,JIB_CLUB_RADIUS_AFT)
-    # Transverse pivot passage aligns with the retained tack pin.
-    x,y,z=JIB_TACK
-    bore=spar_between((-.3,y,z),(.3,y,z),RIG['tack_pin_radius_ft']+.0015)
-    return raw.cut(bore).clean()
+    # S03/S04 short club: aft end at the clew, fore end under the aft foot.
+    return spar_between(JIB_CLUB_FORE,JIB_CLUB_AFT,
+                        JIB_CLUB_RADIUS_FORE,JIB_CLUB_RADIUS_AFT).clean()
 
 
 def make_sail_spars():

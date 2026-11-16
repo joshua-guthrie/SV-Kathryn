@@ -36,7 +36,7 @@ The board upper edge comes from the traced longhead, independently of the spar u
 
 ### G5 - Connected tack and club
 
-The jib stay now terminates at a transverse pin held by a fork on a fitted bowsprit collar. The club has a matching pivot passage and a short forward overhang beyond the pivot. The collar, fork, pin and timber create the missing connection. The previous free-space termination above the spar is gone.
+The jib stay now terminates at a transverse pin held by a fork on a fitted bowsprit collar. The collar, fork, pin and timber create the missing connection. The previous free-space termination above the spar is gone. **Later correction:** the full-foot club with the pivot passage has been replaced by the short S03/S04 club under the aft part of the foot; see the [jib-club correction](JIB_CLUB_CORRECTION.md).
 
 The club clears the bowsprit by approximately **1.39 inches**. Small collar and pin clearances are explicit CAD assembly allowances, checked at a one-millimetre attachment tolerance.
 

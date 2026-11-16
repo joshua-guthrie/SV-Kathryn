@@ -2,6 +2,7 @@
 import json
 import math
 import sys
+import numpy as np
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
@@ -34,8 +35,8 @@ def _check_lazyjack_geometry(rig):
             assert _contains(box, point), f'main leg {i} misses its boom station'
             assert abs(point[0]) > .25, f'main leg {i} is not outboard of the boom'
             assert box.ymax <= 37.50, f'main leg {i} runs past the boom tip'
-        club_low = min(rigging.JIB_TACK[1], rigging.JIB_CLEW[1])
-        club_high = max(rigging.JIB_TACK[1], rigging.JIB_CLEW[1])
+        club_low = min(rigging.JIB_CLUB_AFT[1], rigging.JIB_CLUB_FORE[1])
+        club_high = max(rigging.JIB_CLUB_AFT[1], rigging.JIB_CLUB_FORE[1])
         for i, t in enumerate((1 / 3, 2 / 3), 1):
             point = rigging._jib_club_point(t, side)
             box = _box(shapes[f'{label} jib lazyjack leg {i}'])
@@ -72,8 +73,20 @@ def check():
     jib_foot = math.dist(rigging.JIB_TACK, rigging.JIB_CLEW)
     jib_leech = math.dist(rigging.JIB_HEAD, rigging.JIB_CLEW)
     assert abs(main - 45.5) < .01 and abs(main_foot - 49.333) < .01
-    assert abs(jib_luff - 49.5) < .01 and abs(jib_foot - 25.667) < .01
-    assert abs(jib_leech - 42.0) < .01
+    club=rigging.JIB_CLUB
+    assert abs(jib_luff - 49.5) < .01
+    assert abs(jib_foot - club['jib_pose']['foot_ft']) < .01
+    assert abs(jib_leech - club['jib_pose']['straight_leech_ft']) < .01
+    assert math.dist(rigging.JIB_CLUB_AFT, rigging.JIB_CLEW) < 1e-9
+    assert abs(rigging.JIB_CLUB_LENGTH_FT - club['club']['length_ft']) < .01
+    assert rigging.JIB_CLUB_LENGTH_FT < .5 * jib_foot, 'club must not span the full jib foot'
+    assert math.dist(rigging.JIB_CLUB_FORE, rigging.JIB_TACK) > 15.0
+    assert rigging.JIB_CLEW_ABOVE_DECK_FT >= 3.0, 'jib bottom/club must stay high above deck'
+    # The short club sits under the aft foot, not on a full-length boom.
+    t=np.array(rigging.JIB_TACK);c=np.array(rigging.JIB_CLEW);f=np.array(rigging.JIB_CLUB_FORE)
+    foot_dir=(c-t)/np.linalg.norm(c-t)
+    off=float(np.linalg.norm(np.cross(f-t,foot_dir)))
+    assert off < 1.0, ('club fore end is not near the jib foot',off)
     names = {name for name, _, _, _ in rig}
     for required in ('Head stay', 'Jib stay', 'Main halyard',
                      'Jib halyard', 'Main sheet', 'Jib downhaul',
@@ -93,7 +106,6 @@ def check():
                           f'{label} jib lazyjack junction']
     for required in lazy_required:
         assert required in names, required
-    import numpy as np
     h=np.array(rigging.JIB_HEAD);t=np.array(rigging.JIB_TACK);m=np.array(rigging.HEAD)
     assert np.linalg.norm(np.cross(h-t,m-t))/np.linalg.norm(m-t)<1e-7,'Jib head is off its actual stay'
     lazyjacks = _check_lazyjack_geometry(rig)
@@ -108,19 +120,30 @@ def check():
     result = dict(status='passed', rigging_parts=len(rig), sail_parts=len(sails),
                   groups=sorted(groups),
                   lazyjacks=lazyjacks,
-                  jib_club_ft=dict(fore=[round(v, 3) for v in rigging.JIB_TACK],
-                                   aft=[round(v, 3) for v in rigging.JIB_CLEW],
+                  jib_club_ft=dict(fore=[round(v, 3) for v in rigging.JIB_CLUB_FORE],
+                                   aft=[round(v, 3) for v in rigging.JIB_CLUB_AFT],
+                                   clew=[round(v, 3) for v in rigging.JIB_CLEW],
+                                   length=round(rigging.JIB_CLUB_LENGTH_FT, 3),
+                                   club_fore_above_deck_ft=round(
+                                       rigging.JIB_CLUB_FORE[2] -
+                                       rigging.deck_height(25 - rigging.JIB_CLUB_FORE[1]), 3),
+                                   clew_above_deck_ft=round(rigging.JIB_CLEW_ABOVE_DECK_FT, 3),
                                    foot_raise_ft=rigging.JIB_FOOT_RAISE_FT),
                   main_plan_ft=dict(luff=45.5, foot=49.333, leech_s08=68.0,
                                     straight_leech=round(main_leech, 3),
                                     roach_unmodelled=round(68.0 - main_leech, 3)),
                   jib_plan_ft=dict(luff=round(jib_luff, 3), foot=round(jib_foot, 3),
-                                   leech=round(jib_leech, 3)),
+                                   straight_leech=round(jib_leech, 3),
+                                   s08_foot=club['jib_pose']['s08_foot_ft'],
+                                   s08_leech=club['jib_pose']['s08_leech_ft']),
                   source=['S03-V01 hull profile and rigging',
-                          'S03-N02 rigging/running-gear key', 'S08-V01 sail plan'],
+                          'S03-N02 rigging/running-gear key', 'S04 items 13/14',
+                          'S08-V01 sail plan'],
                   unresolved=['main-sail roached leech not modelled',
                               'exact cleat/pin-rail positions',
                               'hoops/hanks intentionally omitted per S08 note',
+                              'jib clew follows the high S03 club; the straight 3D '
+                              'leech chord is shorter than the S08 plan leech',
                               'lazyjack junction heights and leg split inferred '
                               'from the S03 profile'])
     (ROOT / 'src/checks/m6_rigging_acceptance.json').write_text(
