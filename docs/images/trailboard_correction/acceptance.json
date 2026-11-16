@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "passed",
-  "model_commit": "bb9a6216169d4a98e573f74a28e5d8502c0605ec",
+  "model_commit": "df87bf35417aa2a9b06761de0b7cd6bc92aef724",
   "model_commit_note": "Geometry commit validated from scratch; later documentation-only checkpoints retain these source hashes",
   "model_source_hashes": {
     "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
@@ -9,7 +9,7 @@
     "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
     "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
     "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
-    "src/parts/bow.py": "e1988a56324824f52bbb97c03bae5b1b15d1f1b6b7094f54a46f4ffe76683e0a",
+    "src/parts/bow.py": "e40ee30fee6b0d5ff95e9b699db9ddfa368e7774c1dab39e5ffe154ccf93e5f1",
     "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
     "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
     "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
@@ -32,19 +32,20 @@
     "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
     "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
     "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
-    "src/parts/trailboard_layout.py": "cd01ed8c9f111ec21deba0a8d7d15a5cdc40ff34b83e6107df22abe11745d7e0",
+    "src/parts/trailboard_layout.py": "6b52176660f9405ffce2312a2bb1d41fd568e6b42fbb18f2cfa6be5472dfa3ac",
     "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
     "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
-    "references/drawing_package/trailboard_targets.json": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad"
+    "references/drawing_package/trailboard_targets.json": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
+    "references/drawing_package/longhead_envelope.json": "cf29d401a6218709b598c1d40d7d42f95579ef79947a4dae167a9a6022eb0f21"
   },
   "build_hashes": {
-    ".soma/build.json": "2a781c0087a5f10b1ce33ee3ee5c62a925503a08912e6c0e83aa78e1f9cdc0a6",
-    ".soma/model.glb": "3de316b7c304a5ffd654fa6ca45a96d3c35f6f144500289f50584fda35123412",
-    ".soma/model.map.json": "71cb7b5144ac5bf236c7b85e38c31dee8f0d27abd902c0174fd82cf0ea6a2144",
-    "output/model.step": "cbcde2e59814e41a012b54e518acc79c3fc36ce7b8a1d8bac7129064ea2c9964"
+    ".soma/build.json": "795ebbf08a69cfe60735cadb97667d7974fe977279a66f46fdb1921d441db866",
+    ".soma/model.glb": "f7ea7c767b1984c7463608ba894afffcf024faf08cfda311732170620d904660",
+    ".soma/model.map.json": "8dc9c3d1e3dac5a2cd2ded8b3288283d8abc890103f5b6f7e3f44ac07ffc0d74",
+    "output/model.step": "49881be789f23dbd019ac3d75b8c671b075b8f1f3dbbd4c78b2a44fde1d23988"
   },
   "target_hash": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
-  "part_count": 1024,
+  "part_count": 1025,
   "checks": [
     {
       "id": "AC-01",
@@ -931,10 +932,10 @@
       "id": "AC-10",
       "status": "pass",
       "actual": {
-        "verified_model_commit": "bb9a6216169d4a98e573f74a28e5d8502c0605ec",
+        "verified_model_commit": "df87bf35417aa2a9b06761de0b7cd6bc92aef724",
         "same_model_sources": true,
         "changed_images": [],
-        "clean_build_parts": 1024,
+        "clean_build_parts": 1025,
         "proof": "docs/images/trailboard_correction/committed-build.json"
       },
       "limit": "Same model sources; fresh committed-tree build and checked documentation images",
