@@ -7,7 +7,7 @@
   "limbers": 78,
   "air_samples": 54,
   "exterior_violations": 0,
-  "source": "drawing_package/m3_frame_schedule.json",
+  "source": "references/drawing_package/m3_frame_schedule.json",
   "unresolved": [
     "inaccessible cabin and two aft planes",
     "individual repair dates",

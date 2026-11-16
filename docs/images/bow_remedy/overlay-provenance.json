@@ -1,0 +1,38 @@
+{
+  "profile": {
+    "view": "S04-V01",
+    "view_native_crop": [
+      7337,
+      251,
+      10854,
+      1154
+    ],
+    "drawing_grid_crop": [
+      975,
+      260,
+      1325,
+      350
+    ],
+    "source_native_sha256": "c7c62358c5b416b9b36f9ee44cdcae9bf29bcb205ea864ca5c375dae61948ac1",
+    "model_build": "2b3be73245eb42c6b7a6b9279b1de3ab",
+    "transform": "Source ledger F/grid fit; original imperial bar for Z/X; no independently fitted scaling per component."
+  },
+  "plan": {
+    "view": "S04-V02",
+    "view_native_crop": [
+      7387,
+      853,
+      10904,
+      1906
+    ],
+    "drawing_grid_crop": [
+      975,
+      585,
+      1325,
+      690
+    ],
+    "source_native_sha256": "6bb502da96d4565c8d54179b3e76e27557d6b6890565f2f5bfad8174eea223ac",
+    "model_build": "2b3be73245eb42c6b7a6b9279b1de3ab",
+    "transform": "Source ledger F/grid fit; original imperial bar for Z/X; no independently fitted scaling per component."
+  }
+}

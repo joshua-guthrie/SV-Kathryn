@@ -58,7 +58,7 @@ def check():
     rig = list(rigging.make_rigging_parts())
     sails = list(rigging.make_sail_parts())
     sail_spars = list(rigging.make_sail_spars())
-    assert len(rig) == 59 and len(sails) == 2 and len(sail_spars) == 1
+    assert len(rig) == 60 and len(sails) == 2 and len(sail_spars) == 1
     assert all(shape.isValid() and len(shape.Solids()) == 1
                for _, shape, _, _ in (*rig, *sails))
     assert sail_spars[0][0] == 'Jib club'
@@ -75,7 +75,7 @@ def check():
     assert abs(jib_luff - 49.5) < .01 and abs(jib_foot - 25.667) < .01
     assert abs(jib_leech - 42.0) < .01
     names = {name for name, _, _, _ in rig}
-    for required in ('Bobstay', 'Head stay', 'Jib stay', 'Main halyard',
+    for required in ('Head stay', 'Jib stay', 'Main halyard',
                      'Jib halyard', 'Main sheet', 'Jib downhaul',
                      'Topping lift', 'Boom lift', 'Spectacle/jack iron'):
         assert required in names, required
@@ -93,6 +93,9 @@ def check():
                           f'{label} jib lazyjack junction']
     for required in lazy_required:
         assert required in names, required
+    import numpy as np
+    h=np.array(rigging.JIB_HEAD);t=np.array(rigging.JIB_TACK);m=np.array(rigging.HEAD)
+    assert np.linalg.norm(np.cross(h-t,m-t))/np.linalg.norm(m-t)<1e-7,'Jib head is off its actual stay'
     lazyjacks = _check_lazyjack_geometry(rig)
     sheet = next(shape for name, shape, _, _ in rig if name == 'Main sheet')
     box = sheet.BoundingBox()

@@ -5,12 +5,12 @@ import numpy as np
 from .params import (
     boat_point, MAST_POSITION_FT, MAST_DIAMETER_FT, MAST_HEIGHT_FT,
     MAST_STEP_HEIGHT_FT, MAST_RAKE_FT, BOOM_AFT_POSITION_FT, BOWSPRIT_END_FT,
-    WOOD, IRON, BOWSPRIT_HEEL_FT, BOOM_FRONT_HEIGHT_FT, BOOM_AFT_HEIGHT_FT,
+    WOOD, IRON, IVORY, BOWSPRIT_HEEL_FT, BOOM_FRONT_HEIGHT_FT, BOOM_AFT_HEIGHT_FT,
     BOWSPRIT_HEEL_RADIUS_FT, BOWSPRIT_TIP_RADIUS_FT,
     MAST_DECK_FORWARD_FT, legacy_forward,
 )
 from .primitives import spar_between
-from .bow import bowsprit_height, make_walking_boards
+from .bow import bowsprit_height, make_walking_boards, make_bowsprit_timber, make_varnished_tip_finish
 from .hull import deck_height, rabbet_height
 from . import centreline_layout as centreline
 
@@ -71,10 +71,7 @@ def make_boom_gooseneck():
 
 
 def make_bowsprit():
-    return spar_between(
-        boat_point(0,BOWSPRIT_HEEL_FT,bowsprit_height(BOWSPRIT_HEEL_FT)),
-        boat_point(0,BOWSPRIT_END_FT,bowsprit_height(BOWSPRIT_END_FT)),
-        BOWSPRIT_HEEL_RADIUS_FT,BOWSPRIT_TIP_RADIUS_FT)
+    return make_bowsprit_timber()
 
 
 def make_spars():
@@ -84,7 +81,8 @@ def make_spars():
         boom_front, boat_point(0, BOOM_AFT_POSITION_FT, BOOM_AFT_HEIGHT_FT), .24, .15,
     ), WOOD
     yield 'Boom gooseneck', make_boom_gooseneck(), IRON
-    yield "Bowsprit",make_bowsprit(),WOOD
+    yield "Bowsprit",make_bowsprit(),IVORY
+    yield "Bowsprit varnished tip finish",make_varnished_tip_finish(),WOOD
     yield from make_walking_boards()
     support_f = legacy_forward(1.5)
     t = (support_f - _boom_front_forward) / (BOOM_AFT_POSITION_FT - _boom_front_forward)

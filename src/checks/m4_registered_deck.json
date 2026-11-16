@@ -3,7 +3,7 @@
   "registered_boards": 237,
   "registered_waterways": 2,
   "registered_scarfs": 1,
-  "assembly_parts": 874,
+  "assembly_parts": 1024,
   "bounds_mm": [
     [
       -2550.584,
@@ -19,8 +19,8 @@
   "bbox_max_error_mm": 0.026000000000294676,
   "map_volume_relative_error": -6.409571295762369e-05,
   "waterway_top_volume_ft3": 6.472039989150393,
-  "waterway_depth_volume_ft3": 5.48319743513678,
-  "high_accuracy_material_error_ppm": 0.06400351953111778,
+  "waterway_depth_volume_ft3": 3.6937907995181964,
+  "high_accuracy_material_error_ppm": 0.06400351906144852,
   "max_board_ft": 11.931599222813894,
   "internal_butts": 123,
   "missing_mesh_faces": [],

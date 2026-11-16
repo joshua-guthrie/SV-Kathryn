@@ -1,0 +1,957 @@
+{
+  "schema_version": 1,
+  "status": "passed",
+  "model_commit": null,
+  "model_commit_note": "Filled by the committed-tree validation record after the model commit",
+  "model_source_hashes": {
+    "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
+    "src/parts/__init__.py": "4a74abd352dec4511cfcce1291ff50d0855e9e6eaaad3e4e64fe13933510eac6",
+    "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
+    "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
+    "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
+    "src/parts/bow.py": "e1988a56324824f52bbb97c03bae5b1b15d1f1b6b7094f54a46f4ffe76683e0a",
+    "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
+    "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
+    "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
+    "src/parts/datum.py": "52a2c4a92e253bcdd0bce699ed618dc0ecfc4d0f2277bed138ff1f1394ae8bd8",
+    "src/parts/deck.py": "a105aa32710157a1e52a2bf114f6a1930d156ace0f08973df36cbc9c5e4f59fb",
+    "src/parts/deck_beams.py": "45c75ba2c5cb4636fd39ba5f5b781b4e662f9928ca5449cae1b652f4e04d7258",
+    "src/parts/deck_planking.py": "d62d99981b0f770d4849af6c0afdd51a8cb5030e3529d3d871eaf9f3bd2e31ac",
+    "src/parts/equipment.py": "4626483fa20da574ef5235b028d45f1bc85ff98267d158c982242d1ad29f21d0",
+    "src/parts/frame_layout.py": "278a3d364eabe8664110f6d1717f5a9f81b5302e2d8b6cf141c43269b7a512c7",
+    "src/parts/framing.py": "691543fa0850f023a090a9e4b9cff8ca9e32a636bca1637ac12c043ca904ebd5",
+    "src/parts/hull.py": "3cdc658529b7d417444d5fc65f68206cc207eda87b1caa1b7c100c27f0b92da3",
+    "src/parts/hull_frames.py": "18aa452a17037c7ebeba04a4dabc5ae1c9e65c21f45b2afb09ad67432175b3ba",
+    "src/parts/interior.py": "e591f1cc8c158f7d1f3918418c509b7a8716aa9b8a016182e692fdde751084ad",
+    "src/parts/openings.py": "f0300e7025f9aeb89fbe676833e1cfeacf31d4088fe04f1ed3e7a4eda24e40de",
+    "src/parts/params.py": "f1d06a08d7c17deae9d54ca9b97a3cc3dbcd225e220fa0dfb382061be3bf5e8c",
+    "src/parts/planking.py": "36415d74373ce49a01e67067919c96e73921606e247f0c6dc4b0572ace172ed3",
+    "src/parts/primitives.py": "c6694b4ab5502078d94a01ef4b487b00eccc2863075bb33a8dd21dadf31a6ae4",
+    "src/parts/rails.py": "000dca29d1782580a1518371268da2daf7b1d107fa30567eacc3d54ebc53a1ef",
+    "src/parts/rigging.py": "aa0d8011001da5c553297e6a6c179be8d96d388a06177afea291c594620da658",
+    "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
+    "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
+    "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
+    "src/parts/trailboard_layout.py": "cd01ed8c9f111ec21deba0a8d7d15a5cdc40ff34b83e6107df22abe11745d7e0",
+    "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
+    "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
+    "references/drawing_package/trailboard_targets.json": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad"
+  },
+  "build_hashes": {
+    ".soma/build.json": "2a781c0087a5f10b1ce33ee3ee5c62a925503a08912e6c0e83aa78e1f9cdc0a6",
+    ".soma/model.glb": "3de316b7c304a5ffd654fa6ca45a96d3c35f6f144500289f50584fda35123412",
+    ".soma/model.map.json": "71cb7b5144ac5bf236c7b85e38c31dee8f0d27abd902c0174fd82cf0ea6a2144",
+    "output/model.step": "cbcde2e59814e41a012b54e518acc79c3fc36ce7b8a1d8bac7129064ea2c9964"
+  },
+  "target_hash": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
+  "part_count": 1024,
+  "checks": [
+    {
+      "id": "AC-01",
+      "status": "pass",
+      "actual": {
+        "changed_fixed_parts": {},
+        "fixed_parts_compared": 893
+      },
+      "limit": 0.1,
+      "units": "mm",
+      "method": "Compare accepted hull/stern/spar/jib and remaining fixed-part bounds against the frozen 928-part map",
+      "evidence_paths": []
+    },
+    {
+      "id": "AC-02",
+      "status": "pass",
+      "actual": {
+        "maximum_residual_ft": 0.12570131271522378,
+        "held_out_points": [
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1075,
+              329.05
+            ],
+            "forward_ft": 51.005741018505056,
+            "height_ft": 8.096805487218182,
+            "role": "upper",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 8.152903457783928,
+            "residual_ft": 0.05609797056574628
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1110,
+              320.33
+            ],
+            "forward_ft": 53.3384175589322,
+            "height_ft": 8.680153354627638,
+            "role": "upper",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 8.675163626723608,
+            "residual_ft": 0.0049897279040305165
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1135,
+              315.15
+            ],
+            "forward_ft": 55.00461508780874,
+            "height_ft": 9.026683395130044,
+            "role": "upper",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 9.023593465587213,
+            "residual_ft": 0.003089929542831271
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1165,
+              309.17
+            ],
+            "forward_ft": 57.004052122460585,
+            "height_ft": 9.426731588605792,
+            "role": "upper",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 9.423241275383392,
+            "residual_ft": 0.003490313222400232
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1200,
+              301.25
+            ],
+            "forward_ft": 59.33672866288773,
+            "height_ft": 9.956561303041903,
+            "role": "upper",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 9.945430549723177,
+            "residual_ft": 0.01113075331872615
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1220,
+              296.11
+            ],
+            "forward_ft": 60.66968668598897,
+            "height_ft": 10.30041543589564,
+            "role": "upper",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 10.405437155840211,
+            "residual_ft": 0.10502171994457044
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1110,
+              334.04
+            ],
+            "forward_ft": 53.3384175589322,
+            "height_ft": 7.762986008046946,
+            "role": "lower",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 7.768256030136679,
+            "residual_ft": 0.00527002208973304
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1135,
+              329.98
+            ],
+            "forward_ft": 55.00461508780874,
+            "height_ft": 8.034590634386669,
+            "role": "lower",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 8.160291947101893,
+            "residual_ft": 0.12570131271522378
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1165,
+              320.73
+            ],
+            "forward_ft": 57.004052122460585,
+            "height_ft": 8.653394278140965,
+            "role": "lower",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 8.627548333622535,
+            "residual_ft": 0.02584594451843003
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1200,
+              309.57
+            ],
+            "forward_ft": 59.33672866288773,
+            "height_ft": 9.39997251211912,
+            "role": "lower",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 9.386722199526261,
+            "residual_ft": 0.013250312592859359
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1220,
+              302.04
+            ],
+            "forward_ft": 60.66968668598897,
+            "height_ft": 9.903712126980723,
+            "role": "lower",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 10.011530623076391,
+            "residual_ft": 0.10781849609566763
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1100,
+              308.575
+            ],
+            "forward_ft": 52.67193854738159,
+            "height_ft": 9.466535714879718,
+            "role": "rail",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 9.469259406593544,
+            "residual_ft": 0.0027236917138253602
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1150,
+              301.7
+            ],
+            "forward_ft": 56.004333605134654,
+            "height_ft": 9.926457341994398,
+            "role": "rail",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 9.949967102050543,
+            "residual_ft": 0.023509760056144913
+          },
+          {
+            "source_id": "S04-V01",
+            "grid_xy": [
+              1180,
+              297.16
+            ],
+            "forward_ft": 58.0037706397865,
+            "height_ft": 10.230172860118124,
+            "role": "rail",
+            "used_in_fit": false,
+            "uncertainty_ft": 0.2,
+            "actual_height_ft": 10.238391719324746,
+            "residual_ft": 0.008218859206621687
+          }
+        ]
+      },
+      "limit": 0.2,
+      "units": "ft",
+      "method": "Intersect actual exported board/rail with independent source-station planes; no per-part fit",
+      "evidence_paths": []
+    },
+    {
+      "id": "AC-03",
+      "status": "pass",
+      "actual": {
+        "outer_profile_trace_error_px": 0.9948090966777815
+      },
+      "limit": 6,
+      "units": "native pixels",
+      "method": "Invert the declared transfer on actual exported edges; compare both directions to independent native boundary paths",
+      "evidence_paths": []
+    },
+    {
+      "id": "AC-04",
+      "status": "pass",
+      "actual": {
+        "head_maximum_trace_error_px": 1.0527497737721585
+      },
+      "limit": 6,
+      "units": "native pixels",
+      "method": "Actual head, neck, eye and mouth edges compared with classified source contours; retained negative region is a recess",
+      "evidence_paths": []
+    },
+    {
+      "id": "AC-05",
+      "status": "pass",
+      "actual": {
+        "missing_regions": [],
+        "maximum_ornament_error_px": 1.817795556907492,
+        "all_region_errors": {
+          "Port trailboard carving neck-ground": {
+            "model_to_source_px": 0.7714118481681949,
+            "source_to_model_px": 0.837820056662267,
+            "maximum_px": 0.837820056662267
+          },
+          "Port trailboard carving head-face": {
+            "model_to_source_px": 0.9127653016397246,
+            "source_to_model_px": 1.0527497737721585,
+            "maximum_px": 1.0527497737721585
+          },
+          "Port trailboard carving border-upper": {
+            "model_to_source_px": 1.7297465235043346,
+            "source_to_model_px": 1.817795556907492,
+            "maximum_px": 1.817795556907492
+          },
+          "Port trailboard carving carving-region-4889": {
+            "model_to_source_px": 1.1464807842648532,
+            "source_to_model_px": 1.033936651807593,
+            "maximum_px": 1.1464807842648532
+          },
+          "Port trailboard carving carving-region-4913": {
+            "model_to_source_px": 0.7986351862109956,
+            "source_to_model_px": 0.962201765420239,
+            "maximum_px": 0.962201765420239
+          },
+          "Port trailboard carving carving-region-4949": {
+            "model_to_source_px": 1.141178624780563,
+            "source_to_model_px": 1.1540838431219869,
+            "maximum_px": 1.1540838431219869
+          },
+          "Port trailboard carving carving-region-4968": {
+            "model_to_source_px": 0.8006775272718798,
+            "source_to_model_px": 0.8911881048585922,
+            "maximum_px": 0.8911881048585922
+          },
+          "Port trailboard carving carving-region-5043": {
+            "model_to_source_px": 0.8434907402257177,
+            "source_to_model_px": 1.0809029934559111,
+            "maximum_px": 1.0809029934559111
+          },
+          "Port trailboard carving carving-region-5112": {
+            "model_to_source_px": 1.2552433483785863,
+            "source_to_model_px": 1.2552433483785863,
+            "maximum_px": 1.2552433483785863
+          },
+          "Port trailboard carving carving-region-5162": {
+            "model_to_source_px": 1.0471137569272504,
+            "source_to_model_px": 1.10198815182695,
+            "maximum_px": 1.10198815182695
+          },
+          "Port trailboard carving carving-region-5222": {
+            "model_to_source_px": 0.9455589691200674,
+            "source_to_model_px": 1.0499403408829504,
+            "maximum_px": 1.0499403408829504
+          },
+          "Port trailboard carving carving-region-5227": {
+            "model_to_source_px": 0.8242630887334496,
+            "source_to_model_px": 0.9399025818870435,
+            "maximum_px": 0.9399025818870435
+          },
+          "Port trailboard carving carving-region-5261": {
+            "model_to_source_px": 1.1095433638626373,
+            "source_to_model_px": 1.1303264785374973,
+            "maximum_px": 1.1303264785374973
+          },
+          "Port trailboard carving carving-region-5392": {
+            "model_to_source_px": 0.7434870848778313,
+            "source_to_model_px": 0.8666750546279177,
+            "maximum_px": 0.8666750546279177
+          },
+          "Port trailboard carving carving-region-5399": {
+            "model_to_source_px": 1.1906915597379644,
+            "source_to_model_px": 1.245066985484562,
+            "maximum_px": 1.245066985484562
+          },
+          "Port trailboard carving aft-scroll-name-enclosure": {
+            "model_to_source_px": 1.056814322466709,
+            "source_to_model_px": 1.1310624196721408,
+            "maximum_px": 1.1310624196721408
+          },
+          "Port trailboard carving carving-region-5454": {
+            "model_to_source_px": 1.306516553054604,
+            "source_to_model_px": 1.306516553054604,
+            "maximum_px": 1.306516553054604
+          },
+          "Port trailboard carving border-lower": {
+            "model_to_source_px": 1.4134874944870406,
+            "source_to_model_px": 1.432482252525401,
+            "maximum_px": 1.432482252525401
+          },
+          "Port trailboard carving carving-region-5526": {
+            "model_to_source_px": 1.3753137415206775,
+            "source_to_model_px": 1.118199971980687,
+            "maximum_px": 1.3753137415206775
+          },
+          "Port trailboard carving name-enclosure-upper": {
+            "model_to_source_px": 1.179609166671385,
+            "source_to_model_px": 1.6255366494666017,
+            "maximum_px": 1.6255366494666017
+          },
+          "Port trailboard carving carving-region-5636": {
+            "model_to_source_px": 1.5476344353974127,
+            "source_to_model_px": 1.5476344353974127,
+            "maximum_px": 1.5476344353974127
+          },
+          "Port trailboard letter T": {
+            "model_to_source_px": 0.8332308285189975,
+            "source_to_model_px": 1.0387193133488395,
+            "maximum_px": 1.0387193133488395
+          },
+          "Port trailboard letter R": {
+            "model_to_source_px": 0.8340222519630031,
+            "source_to_model_px": 1.038530683741778,
+            "maximum_px": 1.038530683741778
+          },
+          "Port trailboard letter K": {
+            "model_to_source_px": 0.8313662490149615,
+            "source_to_model_px": 1.1007553630667153,
+            "maximum_px": 1.1007553630667153
+          },
+          "Port trailboard carving carving-region-6013": {
+            "model_to_source_px": 0.9231529507209362,
+            "source_to_model_px": 0.977112019228334,
+            "maximum_px": 0.977112019228334
+          },
+          "Port trailboard letter A": {
+            "model_to_source_px": 0.8219777978507039,
+            "source_to_model_px": 1.1017441919333353,
+            "maximum_px": 1.1017441919333353
+          },
+          "Port trailboard letter H": {
+            "model_to_source_px": 0.8143978644278147,
+            "source_to_model_px": 1.0075179300756762,
+            "maximum_px": 1.0075179300756762
+          },
+          "Port trailboard letter Y": {
+            "model_to_source_px": 0.834215039684779,
+            "source_to_model_px": 0.9734873191699461,
+            "maximum_px": 0.9734873191699461
+          },
+          "Port trailboard letter N": {
+            "model_to_source_px": 0.8347966883363596,
+            "source_to_model_px": 1.010265078396371,
+            "maximum_px": 1.010265078396371
+          },
+          "Port trailboard carving carving-region-6133": {
+            "model_to_source_px": 1.3815104167486145,
+            "source_to_model_px": 1.4911052204515884,
+            "maximum_px": 1.4911052204515884
+          },
+          "Port trailboard carving carving-region-6174": {
+            "model_to_source_px": 1.044574496373795,
+            "source_to_model_px": 1.09588124206761,
+            "maximum_px": 1.09588124206761
+          },
+          "Port trailboard carving carving-region-6249": {
+            "model_to_source_px": 0.9762114382829081,
+            "source_to_model_px": 1.065338605607241,
+            "maximum_px": 1.065338605607241
+          },
+          "Port trailboard carving name-enclosure-lower": {
+            "model_to_source_px": 1.164699779805956,
+            "source_to_model_px": 1.2689553065618762,
+            "maximum_px": 1.2689553065618762
+          },
+          "Port trailboard carving carving-region-6433": {
+            "model_to_source_px": 0.8334089470933971,
+            "source_to_model_px": 0.9308536428963214,
+            "maximum_px": 0.9308536428963214
+          },
+          "Port trailboard carving carving-region-6452": {
+            "model_to_source_px": 0.7325841541253332,
+            "source_to_model_px": 0.9600005302328931,
+            "maximum_px": 0.9600005302328931
+          },
+          "Port trailboard carving carving-region-6697": {
+            "model_to_source_px": 1.017404272189209,
+            "source_to_model_px": 0.9553228297339363,
+            "maximum_px": 1.017404272189209
+          },
+          "Port trailboard carving carving-region-6716": {
+            "model_to_source_px": 0.8883952004291156,
+            "source_to_model_px": 1.0131624248777968,
+            "maximum_px": 1.0131624248777968
+          },
+          "Port trailboard carving carving-region-6725": {
+            "model_to_source_px": 0.8351125389181255,
+            "source_to_model_px": 0.939683786606434,
+            "maximum_px": 0.939683786606434
+          },
+          "Port trailboard carving carving-region-6776": {
+            "model_to_source_px": 0.048153630950082515,
+            "source_to_model_px": 0.048153630950082515,
+            "maximum_px": 0.048153630950082515
+          },
+          "Port trailboard carving carving-region-6914": {
+            "model_to_source_px": 0.7809543452821719,
+            "source_to_model_px": 0.8976304315786424,
+            "maximum_px": 0.8976304315786424
+          },
+          "Port trailboard carving carving-region-6915": {
+            "model_to_source_px": 0.8076428523262729,
+            "source_to_model_px": 0.9577103425963709,
+            "maximum_px": 0.9577103425963709
+          },
+          "Port trailboard carving carving-region-7150": {
+            "model_to_source_px": 1.1227949446180858,
+            "source_to_model_px": 1.1901710255100202,
+            "maximum_px": 1.1901710255100202
+          },
+          "Port longhead eagle eye": {
+            "model_to_source_px": 0.8338749600283794,
+            "source_to_model_px": 0.9067221949689154,
+            "maximum_px": 0.9067221949689154
+          },
+          "Port trailboard mouth recess": {
+            "model_to_source_px": 0.8464936683578923,
+            "source_to_model_px": 0.9761389359007628,
+            "maximum_px": 0.9761389359007628
+          },
+          "Starboard trailboard carving neck-ground": {
+            "model_to_source_px": 0.7714118481681949,
+            "source_to_model_px": 0.837820056662267,
+            "maximum_px": 0.837820056662267
+          },
+          "Starboard trailboard carving head-face": {
+            "model_to_source_px": 0.9127653016397246,
+            "source_to_model_px": 1.0527497737721585,
+            "maximum_px": 1.0527497737721585
+          },
+          "Starboard trailboard carving border-upper": {
+            "model_to_source_px": 1.7297465235043346,
+            "source_to_model_px": 1.817795556907492,
+            "maximum_px": 1.817795556907492
+          },
+          "Starboard trailboard carving carving-region-4889": {
+            "model_to_source_px": 1.1464807842648532,
+            "source_to_model_px": 1.033936651807593,
+            "maximum_px": 1.1464807842648532
+          },
+          "Starboard trailboard carving carving-region-4913": {
+            "model_to_source_px": 0.7986351862109956,
+            "source_to_model_px": 0.962201765420239,
+            "maximum_px": 0.962201765420239
+          },
+          "Starboard trailboard carving carving-region-4949": {
+            "model_to_source_px": 1.141178624780563,
+            "source_to_model_px": 1.1540838431219869,
+            "maximum_px": 1.1540838431219869
+          },
+          "Starboard trailboard carving carving-region-4968": {
+            "model_to_source_px": 0.8006775272718798,
+            "source_to_model_px": 0.8911881048585922,
+            "maximum_px": 0.8911881048585922
+          },
+          "Starboard trailboard carving carving-region-5043": {
+            "model_to_source_px": 0.8434907402257177,
+            "source_to_model_px": 1.0809029934559111,
+            "maximum_px": 1.0809029934559111
+          },
+          "Starboard trailboard carving carving-region-5112": {
+            "model_to_source_px": 1.2552433483785863,
+            "source_to_model_px": 1.2552433483785863,
+            "maximum_px": 1.2552433483785863
+          },
+          "Starboard trailboard carving carving-region-5162": {
+            "model_to_source_px": 1.0471137569272504,
+            "source_to_model_px": 1.10198815182695,
+            "maximum_px": 1.10198815182695
+          },
+          "Starboard trailboard carving carving-region-5222": {
+            "model_to_source_px": 0.9455589691200674,
+            "source_to_model_px": 1.0499403408829504,
+            "maximum_px": 1.0499403408829504
+          },
+          "Starboard trailboard carving carving-region-5227": {
+            "model_to_source_px": 0.8242630887334496,
+            "source_to_model_px": 0.9399025818870435,
+            "maximum_px": 0.9399025818870435
+          },
+          "Starboard trailboard carving carving-region-5261": {
+            "model_to_source_px": 1.1095433638626373,
+            "source_to_model_px": 1.1303264785374973,
+            "maximum_px": 1.1303264785374973
+          },
+          "Starboard trailboard carving carving-region-5392": {
+            "model_to_source_px": 0.7434870848778313,
+            "source_to_model_px": 0.8666750546279177,
+            "maximum_px": 0.8666750546279177
+          },
+          "Starboard trailboard carving carving-region-5399": {
+            "model_to_source_px": 1.1906915597379644,
+            "source_to_model_px": 1.245066985484562,
+            "maximum_px": 1.245066985484562
+          },
+          "Starboard trailboard carving aft-scroll-name-enclosure": {
+            "model_to_source_px": 1.056814322466709,
+            "source_to_model_px": 1.1310624196721408,
+            "maximum_px": 1.1310624196721408
+          },
+          "Starboard trailboard carving carving-region-5454": {
+            "model_to_source_px": 1.306516553054604,
+            "source_to_model_px": 1.306516553054604,
+            "maximum_px": 1.306516553054604
+          },
+          "Starboard trailboard carving border-lower": {
+            "model_to_source_px": 1.4134874944870406,
+            "source_to_model_px": 1.432482252525401,
+            "maximum_px": 1.432482252525401
+          },
+          "Starboard trailboard carving carving-region-5526": {
+            "model_to_source_px": 1.3753137415206775,
+            "source_to_model_px": 1.118199971980687,
+            "maximum_px": 1.3753137415206775
+          },
+          "Starboard trailboard carving name-enclosure-upper": {
+            "model_to_source_px": 1.179609166671385,
+            "source_to_model_px": 1.6255366494666017,
+            "maximum_px": 1.6255366494666017
+          },
+          "Starboard trailboard carving carving-region-5636": {
+            "model_to_source_px": 1.5476344353974127,
+            "source_to_model_px": 1.5476344353974127,
+            "maximum_px": 1.5476344353974127
+          },
+          "Starboard trailboard letter T": {
+            "model_to_source_px": 0.8319365598126855,
+            "source_to_model_px": 0.9737323005695276,
+            "maximum_px": 0.9737323005695276
+          },
+          "Starboard trailboard letter R": {
+            "model_to_source_px": 0.8330562567931669,
+            "source_to_model_px": 0.9423898852915459,
+            "maximum_px": 0.9423898852915459
+          },
+          "Starboard trailboard letter K": {
+            "model_to_source_px": 0.8396190716624953,
+            "source_to_model_px": 0.9602439259288212,
+            "maximum_px": 0.9602439259288212
+          },
+          "Starboard trailboard carving carving-region-6013": {
+            "model_to_source_px": 0.9231529507209362,
+            "source_to_model_px": 0.977112019228334,
+            "maximum_px": 0.977112019228334
+          },
+          "Starboard trailboard letter A": {
+            "model_to_source_px": 0.8219650899569547,
+            "source_to_model_px": 1.0276126047892513,
+            "maximum_px": 1.0276126047892513
+          },
+          "Starboard trailboard letter H": {
+            "model_to_source_px": 0.8393240662698228,
+            "source_to_model_px": 0.941219719615276,
+            "maximum_px": 0.941219719615276
+          },
+          "Starboard trailboard letter Y": {
+            "model_to_source_px": 0.8857217569495491,
+            "source_to_model_px": 0.9240045484091804,
+            "maximum_px": 0.9240045484091804
+          },
+          "Starboard trailboard letter N": {
+            "model_to_source_px": 0.8050489607942585,
+            "source_to_model_px": 0.976742525675107,
+            "maximum_px": 0.976742525675107
+          },
+          "Starboard trailboard carving carving-region-6133": {
+            "model_to_source_px": 1.3815104167486145,
+            "source_to_model_px": 1.4911052204515884,
+            "maximum_px": 1.4911052204515884
+          },
+          "Starboard trailboard carving carving-region-6174": {
+            "model_to_source_px": 1.044574496373795,
+            "source_to_model_px": 1.09588124206761,
+            "maximum_px": 1.09588124206761
+          },
+          "Starboard trailboard carving carving-region-6249": {
+            "model_to_source_px": 0.9762114382829081,
+            "source_to_model_px": 1.065338605607241,
+            "maximum_px": 1.065338605607241
+          },
+          "Starboard trailboard carving name-enclosure-lower": {
+            "model_to_source_px": 1.164699779805956,
+            "source_to_model_px": 1.2689553065618762,
+            "maximum_px": 1.2689553065618762
+          },
+          "Starboard trailboard carving carving-region-6433": {
+            "model_to_source_px": 0.8334089470933971,
+            "source_to_model_px": 0.9308536428963214,
+            "maximum_px": 0.9308536428963214
+          },
+          "Starboard trailboard carving carving-region-6452": {
+            "model_to_source_px": 0.7325841541253332,
+            "source_to_model_px": 0.9600005302328931,
+            "maximum_px": 0.9600005302328931
+          },
+          "Starboard trailboard carving carving-region-6697": {
+            "model_to_source_px": 1.017404272189209,
+            "source_to_model_px": 0.9553228297339363,
+            "maximum_px": 1.017404272189209
+          },
+          "Starboard trailboard carving carving-region-6716": {
+            "model_to_source_px": 0.8883952004291156,
+            "source_to_model_px": 1.0131624248777968,
+            "maximum_px": 1.0131624248777968
+          },
+          "Starboard trailboard carving carving-region-6725": {
+            "model_to_source_px": 0.8351125389181255,
+            "source_to_model_px": 0.939683786606434,
+            "maximum_px": 0.939683786606434
+          },
+          "Starboard trailboard carving carving-region-6776": {
+            "model_to_source_px": 0.048153630950082515,
+            "source_to_model_px": 0.048153630950082515,
+            "maximum_px": 0.048153630950082515
+          },
+          "Starboard trailboard carving carving-region-6914": {
+            "model_to_source_px": 0.7809543452821719,
+            "source_to_model_px": 0.8976304315786424,
+            "maximum_px": 0.8976304315786424
+          },
+          "Starboard trailboard carving carving-region-6915": {
+            "model_to_source_px": 0.8076428523262729,
+            "source_to_model_px": 0.9577103425963709,
+            "maximum_px": 0.9577103425963709
+          },
+          "Starboard trailboard carving carving-region-7150": {
+            "model_to_source_px": 1.1227949446180858,
+            "source_to_model_px": 1.1901710255100202,
+            "maximum_px": 1.1901710255100202
+          },
+          "Starboard longhead eagle eye": {
+            "model_to_source_px": 0.8338749600283794,
+            "source_to_model_px": 0.9067221949689154,
+            "maximum_px": 0.9067221949689154
+          },
+          "Starboard trailboard mouth recess": {
+            "model_to_source_px": 0.8464936683578923,
+            "source_to_model_px": 0.9761389359007628,
+            "maximum_px": 0.9761389359007628
+          }
+        }
+      },
+      "limit": 6,
+      "units": "native pixels",
+      "method": "Retain every source region/island; compare actual exported edge clouds against reviewed contours",
+      "evidence_paths": []
+    },
+    {
+      "id": "AC-06",
+      "status": "pass",
+      "actual": {
+        "glyphs_compared": 14,
+        "maximum_glyph_error_px": 1.1017441919333353,
+        "unintended_fixing_contacts": []
+      },
+      "limit": 6,
+      "units": "native pixels",
+      "method": "Trace seven glyphs; invert the declared port name reflection; check counters and fixing clearance",
+      "evidence_paths": []
+    },
+    {
+      "id": "AC-07",
+      "status": "pass",
+      "actual": {
+        "valid_region_solids": true,
+        "maximum_region_to_board_mm": 0.0,
+        "region_contacts_mm": {
+          "Port trailboard carving neck-ground": 0.0,
+          "Port trailboard carving carving-region-3314": 0.0,
+          "Port trailboard carving head-face": 0.0,
+          "Port trailboard carving carving-region-3527": 0.0,
+          "Port trailboard carving border-upper": 0.0,
+          "Port trailboard carving carving-region-3751": 0.0,
+          "Port trailboard carving carving-region-4024": 0.0,
+          "Port trailboard carving carving-region-4482": 0.0,
+          "Port trailboard carving carving-region-4757": 0.0,
+          "Port trailboard carving carving-region-4889": 0.0,
+          "Port trailboard carving carving-region-4913": 0.0,
+          "Port trailboard carving carving-region-4949": 0.0,
+          "Port trailboard carving carving-region-4968": 0.0,
+          "Port trailboard carving carving-region-5043": 0.0,
+          "Port trailboard carving carving-region-5060": 0.0,
+          "Port trailboard carving carving-region-5112": 0.0,
+          "Port trailboard carving aft-leaf-upper": 0.0,
+          "Port trailboard carving carving-region-5162": 0.0,
+          "Port trailboard carving carving-region-5222": 0.0,
+          "Port trailboard carving carving-region-5227": 0.0,
+          "Port trailboard carving carving-region-5261": 0.0,
+          "Port trailboard carving carving-region-5261 2.1": 0.0,
+          "Port trailboard carving carving-region-5392": 0.0,
+          "Port trailboard carving carving-region-5399": 0.0,
+          "Port trailboard carving aft-scroll-name-enclosure": 0.0,
+          "Port trailboard carving carving-region-5454": 0.0,
+          "Port trailboard carving border-lower": 0.0,
+          "Port trailboard carving carving-region-5526": 0.0,
+          "Port trailboard carving name-enclosure-upper": 0.0,
+          "Port trailboard carving carving-region-5636": 0.0,
+          "Port trailboard carving aft-leaf-lower": 0.0,
+          "Port trailboard letter T": 0.0,
+          "Port trailboard letter R": 0.0,
+          "Port trailboard letter K": 0.0,
+          "Port trailboard carving carving-region-6013": 0.0,
+          "Port trailboard letter A": 0.0,
+          "Port trailboard letter H": 0.0,
+          "Port trailboard letter Y": 0.0,
+          "Port trailboard letter N": 0.0,
+          "Port trailboard carving carving-region-6133": 0.0,
+          "Port trailboard carving carving-region-6174": 0.0,
+          "Port trailboard carving carving-region-6249": 0.0,
+          "Port trailboard carving name-enclosure-lower": 0.0,
+          "Port trailboard carving carving-region-6433": 0.0,
+          "Port trailboard carving carving-region-6452": 0.0,
+          "Port trailboard carving carving-region-6580": 0.0,
+          "Port trailboard carving carving-region-6623": 0.0,
+          "Port trailboard carving carving-region-6697": 0.0,
+          "Port trailboard carving carving-region-6716": 0.0,
+          "Port trailboard carving carving-region-6725": 0.0,
+          "Port trailboard carving carving-region-6776": 0.0,
+          "Port trailboard carving carving-region-6914": 0.0,
+          "Port trailboard carving carving-region-6915": 0.0,
+          "Port trailboard carving carving-region-7150": 0.0,
+          "Port longhead eagle eye": 0.0,
+          "Port trailboard mouth recess": 0.0,
+          "Port trailboard carving aft-frame-return": 0.0,
+          "Starboard trailboard carving neck-ground": 0.0,
+          "Starboard trailboard carving carving-region-3314": 0.0,
+          "Starboard trailboard carving head-face": 0.0,
+          "Starboard trailboard carving carving-region-3527": 0.0,
+          "Starboard trailboard carving border-upper": 0.0,
+          "Starboard trailboard carving carving-region-3751": 0.0,
+          "Starboard trailboard carving carving-region-4024": 0.0,
+          "Starboard trailboard carving carving-region-4482": 0.0,
+          "Starboard trailboard carving carving-region-4757": 0.0,
+          "Starboard trailboard carving carving-region-4889": 0.0,
+          "Starboard trailboard carving carving-region-4913": 0.0,
+          "Starboard trailboard carving carving-region-4949": 0.0,
+          "Starboard trailboard carving carving-region-4968": 0.0,
+          "Starboard trailboard carving carving-region-5043": 0.0,
+          "Starboard trailboard carving carving-region-5060": 0.0,
+          "Starboard trailboard carving carving-region-5112": 0.0,
+          "Starboard trailboard carving aft-leaf-upper": 0.0,
+          "Starboard trailboard carving carving-region-5162": 0.0,
+          "Starboard trailboard carving carving-region-5222": 0.0,
+          "Starboard trailboard carving carving-region-5227": 0.0,
+          "Starboard trailboard carving carving-region-5261": 0.0,
+          "Starboard trailboard carving carving-region-5261 2.1": 0.0,
+          "Starboard trailboard carving carving-region-5392": 0.0,
+          "Starboard trailboard carving carving-region-5399": 0.0,
+          "Starboard trailboard carving aft-scroll-name-enclosure": 0.0,
+          "Starboard trailboard carving carving-region-5454": 0.0,
+          "Starboard trailboard carving border-lower": 0.0,
+          "Starboard trailboard carving carving-region-5526": 0.0,
+          "Starboard trailboard carving name-enclosure-upper": 0.0,
+          "Starboard trailboard carving carving-region-5636": 0.0,
+          "Starboard trailboard carving aft-leaf-lower": 0.0,
+          "Starboard trailboard letter T": 0.0,
+          "Starboard trailboard letter R": 0.0,
+          "Starboard trailboard letter K": 0.0,
+          "Starboard trailboard carving carving-region-6013": 0.0,
+          "Starboard trailboard letter A": 0.0,
+          "Starboard trailboard letter H": 0.0,
+          "Starboard trailboard letter Y": 0.0,
+          "Starboard trailboard letter N": 0.0,
+          "Starboard trailboard carving carving-region-6133": 0.0,
+          "Starboard trailboard carving carving-region-6174": 0.0,
+          "Starboard trailboard carving carving-region-6249": 0.0,
+          "Starboard trailboard carving name-enclosure-lower": 0.0,
+          "Starboard trailboard carving carving-region-6433": 0.0,
+          "Starboard trailboard carving carving-region-6452": 0.0,
+          "Starboard trailboard carving carving-region-6580": 0.0,
+          "Starboard trailboard carving carving-region-6623": 0.0,
+          "Starboard trailboard carving carving-region-6697": 0.0,
+          "Starboard trailboard carving carving-region-6716": 0.0,
+          "Starboard trailboard carving carving-region-6725": 0.0,
+          "Starboard trailboard carving carving-region-6776": 0.0,
+          "Starboard trailboard carving carving-region-6914": 0.0,
+          "Starboard trailboard carving carving-region-6915": 0.0,
+          "Starboard trailboard carving carving-region-7150": 0.0,
+          "Starboard longhead eagle eye": 0.0,
+          "Starboard trailboard mouth recess": 0.0,
+          "Starboard trailboard carving aft-frame-return": 0.0
+        },
+        "unintended_common_ft3": {}
+      },
+      "limit": {
+        "contact_mm": 1,
+        "unintended_common_ft3": 1e-06
+      },
+      "units": "mixed",
+      "method": "Exact exported solids; paint/relief embed classified separately from timber interference",
+      "evidence_paths": []
+    },
+    {
+      "id": "AC-08",
+      "status": "pass",
+      "actual": {
+        "facing_thickness_ft": 0.12,
+        "backing_width_ft": 0.5,
+        "relief_extrusion_ft": 0.035,
+        "relief_embed_ft": 0.005,
+        "fastener_height_fraction": 0.14,
+        "fastener_placement": "Unprinted fitting detail; lower band keeps holes and heads clear of the name",
+        "palette": "Retain current green/maroon/pale gold; not calibrated historic paint values",
+        "mouth": "Dark recess boundary, not an unsupported through-cut",
+        "lettering": "S01 traced glyph boundaries; filled strokes, with counters; serif-like P06 photo state recorded separately",
+        "hidden_handoff": "Short source/hull transition remains a fitted reconstruction"
+      },
+      "limit": "explicit evidence classes",
+      "units": "qualified reconstruction",
+      "method": "Keep thickness, backing, relief depth and palette provisional; do not promote them to historical measurements",
+      "evidence_paths": []
+    },
+    {
+      "id": "AC-09",
+      "status": "pass",
+      "actual": {
+        "source_profile_residual_ft": 0.023509760056144913,
+        "hull_rail_contact_mm": {
+          "Port": 0.0,
+          "Starboard": 0.0
+        },
+        "handoff": "Short fitted transition to the unchanged accepted hull-rail root; concealed handoff is inferred"
+      },
+      "limit": {
+        "source_ft": 0.2,
+        "contact_mm": 1
+      },
+      "units": "mixed",
+      "method": "Item-11 plan/profile registration and actual after-handoff contact; short concealed handoff remains inferred",
+      "evidence_paths": []
+    }
+  ],
+  "finding_disposition": {
+    "TB-01": "Source head, eye, mouth and feather regions implemented",
+    "TB-02": "Source regions replace generated waves/leaves",
+    "TB-03": "Traced name enclosure and seven glyphs on both outward faces",
+    "TB-04": "Traced oblique return and physical body envelope",
+    "TB-05": "Traced border/field boundaries; relief depth remains an explicit assumption",
+    "TB-06": "Source headrails corrected; local after handoff remains an inferred fitting",
+    "TB-07": "Exported-edge, held-out-source and contact acceptance added",
+    "TB-08": "Palette and photo state retained as qualified observations"
+  },
+  "remaining_assumptions": {
+    "facing_thickness_ft": 0.12,
+    "backing_width_ft": 0.5,
+    "relief_extrusion_ft": 0.035,
+    "relief_embed_ft": 0.005,
+    "fastener_height_fraction": 0.14,
+    "fastener_placement": "Unprinted fitting detail; lower band keeps holes and heads clear of the name",
+    "palette": "Retain current green/maroon/pale gold; not calibrated historic paint values",
+    "mouth": "Dark recess boundary, not an unsupported through-cut",
+    "lettering": "S01 traced glyph boundaries; filled strokes, with counters; serif-like P06 photo state recorded separately",
+    "hidden_handoff": "Short source/hull transition remains a fitted reconstruction"
+  },
+  "source_hashes": {
+    "S01-V03": "1055509566f971f1d0d6c6542abb8607e47c8a4dc5c5e331a452955255e0d772",
+    "S04": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4"
+  }
+}

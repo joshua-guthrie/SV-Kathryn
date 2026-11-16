@@ -1,0 +1,5 @@
+{
+  "schema_version": 1,
+  "status": "not_run",
+  "note": "The geometry commit must pass a cache-free archive build before this package is pushed."
+}

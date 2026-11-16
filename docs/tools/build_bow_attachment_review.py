@@ -373,7 +373,7 @@ def measure():
     print('Largest bbox residual (mm):',max(residuals.values()))
 
 
-def pdf():
+def pdf(source=None, output=None, footer=None):
     """Paginate the exact Markdown report, with searchable vector text."""
     import re
     import matplotlib
@@ -383,8 +383,9 @@ def pdf():
     from matplotlib.font_manager import FontProperties
     matplotlib.rcParams['pdf.fonttype']=42
     matplotlib.rcParams['figure.max_open_warning']=0
-    source=ROOT/'docs/BOWSPRIT_ATTACHMENT_REVIEW.md'
-    output=ROOT/'docs/bowsprit-trailboards-gap-analysis.pdf'
+    source=Path(source) if source else ROOT/'docs/BOWSPRIT_ATTACHMENT_REVIEW.md'
+    output=Path(output) if output else ROOT/'docs/bowsprit-trailboards-gap-analysis.pdf'
+    footer=footer or '2026-11-15 | As found: e341989 | Geometry review and correction plan'
     output.parent.mkdir(parents=True,exist_ok=True)
     # Markdown is deliberately simple: paragraphs, headings, bullets, figures.
     lines=source.read_text().splitlines()
@@ -393,7 +394,7 @@ def pdf():
         nonlocal page,y
         page=plt.figure(figsize=(8.5,11),facecolor='white');pages.append(page);y=10.1
         page.text(.065,.957,'KATHRYN  /  BOW ATTACHMENT REVIEW',fontsize=9,weight='bold',color=BLUE)
-        page.text(.065,.033,'2026-11-15 | As found: e341989 | Geometry review and correction plan',fontsize=8,color='#526473')
+        page.text(.065,.033,footer,fontsize=8,color='#526473')
         page.text(.935,.033,str(len(pages)),ha='right',fontsize=8,color='#526473')
     def textline(t,size=10.5,bold=False,color=INK,indent=0):
         nonlocal y
@@ -461,9 +462,9 @@ def pdf():
 
 if __name__=='__main__':
     p=argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--sources-only',action='store_true');p.add_argument('--render',choices=list(VIEWS));p.add_argument('--figures',action='store_true');p.add_argument('--measure',action='store_true');p.add_argument('--pdf',action='store_true');a=p.parse_args()
+    p.add_argument('--pdf-source',type=Path);p.add_argument('--pdf-out',type=Path);p.add_argument('--pdf-footer');p.add_argument('--sources-only',action='store_true');p.add_argument('--render',choices=list(VIEWS));p.add_argument('--figures',action='store_true');p.add_argument('--measure',action='store_true');p.add_argument('--pdf',action='store_true');a=p.parse_args()
     OUT.mkdir(parents=True,exist_ok=True)
     if a.render:render_view(a.render)
     if a.measure:measure()
     if a.figures or a.sources_only:figures(a.sources_only)
-    if a.pdf:pdf()
+    if a.pdf:pdf(a.pdf_source,a.pdf_out,a.pdf_footer)

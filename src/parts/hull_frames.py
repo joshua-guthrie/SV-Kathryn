@@ -172,7 +172,12 @@ def make_stem_knee():
     knee=cq.Solid.makeLoft(wires,ruled=False).intersect(hull.solid_envelope())
     mortise=block(0,BOW_POST_FORWARD_FT,frame_layout.samson_heel(hull.deck_height,hull.rabbet_height)+.015,
                   5/12+.012,5/12+.012,4)
-    return knee.cut(mortise)
+    # Fitted new headwork splices into a matching housing, not overlapping oak.
+    # Hidden mortise/bolt sizes are reconstruction choices in the bow ledger.
+    from .bow import stem_splice_mortise,stem_splice_bore,longhead_splice_mortise
+    knee=knee.cut(mortise).cut(stem_splice_mortise()).cut(longhead_splice_mortise())
+    for i in (0,1):knee=knee.cut(stem_splice_bore(i))
+    return knee.clean()
 
 
 def make_oak_reinforcement(side):

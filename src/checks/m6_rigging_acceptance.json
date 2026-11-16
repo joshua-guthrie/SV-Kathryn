@@ -1,6 +1,6 @@
 {
   "status": "passed",
-  "rigging_parts": 59,
+  "rigging_parts": 60,
   "sail_parts": 2,
   "groups": [
     "Rigging/Fittings",
@@ -34,16 +34,16 @@
   },
   "jib_club_ft": {
     "fore": [
-      0.0,
-      -39.233,
-      12.013
+      0,
+      -42.134,
+      12.378
     ],
     "aft": [
       0.0,
-      -13.588,
-      10.97
+      -16.564,
+      10.158
     ],
-    "foot_raise_ft": 0.75
+    "foot_raise_ft": 0.3294730266763217
   },
   "main_plan_ft": {
     "luff": 45.5,

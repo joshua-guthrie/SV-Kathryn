@@ -1,0 +1,336 @@
+{
+  "schema_version": 1,
+  "status": "source-controlled reconstruction; small hidden joints explicitly inferred",
+  "units": "full-size feet",
+  "source_files": {
+    "S01": {
+      "file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00001a.tif",
+      "sha256": "2331daad060a890dcaf424a5c3148d069958564fa24096fce737f284e43e9b7f"
+    },
+    "S03": {
+      "file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00003a.tif",
+      "sha256": "fede6b7745aa3936961fd5b686034f624a1d56b7bd0f774192670cbb40c1dd9c"
+    },
+    "S04": {
+      "file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00004a.tif",
+      "sha256": "26613443160fe74ec23712f68d934a4e5e39086e7aed33f81e43dee582ec8fd4"
+    },
+    "S05": {
+      "file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00005a.tif",
+      "sha256": "bb1d4a25c174f080601e9248d7445ea734ca6092790c4a931ddecf51de027cf3"
+    },
+    "S08": {
+      "file": "references/drawings/master-pnp-habshaer-md-md1400-md1454-sheet-00008a.tif",
+      "sha256": "c2323234f362d058b4aa44e3c6d8051c679126db060d54cccfad386e9d0ac5fd"
+    }
+  },
+  "registration": {
+    "F_from_S04_grid_x": [
+      0.06664790115506147,
+      -20.640752723186033
+    ],
+    "profile_grid_height_ft_per_unit": 0.06689769121668057,
+    "point_pick_uncertainty_ft": 0.2,
+    "plan_centreline_grid_y": 636.5,
+    "vertical_anchor": "S04 post deck grid y318.5 at the unchanged S05 Samson station; spar centre about y310.0"
+  },
+  "picks": {
+    "heel_abutment": {
+      "view": "S04-V02",
+      "grid_xy": [
+        999.0,
+        636.5
+      ],
+      "note": "Visible square inboard section at front face of post. Hidden heel after end inferred as an abutting vertical face; post is not moved."
+    },
+    "rounded_transition": {
+      "view": "S04-V02",
+      "grid_xy": [
+        1101.5,
+        636.5
+      ]
+    },
+    "timber_tip": {
+      "view": "S04-V02",
+      "grid_xy": [
+        1320,
+        636.5
+      ],
+      "note": "Forward wooden projection beyond terminal band; source stroke/pick uncertainty retained."
+    },
+    "axis_profile": {
+      "view": "S04-V01",
+      "grid_xy": [
+        [
+          999,
+          310.1
+        ],
+        [
+          1320,
+          270.0
+        ]
+      ]
+    },
+    "stemhead": {
+      "view": "S04-V01",
+      "grid_xy": [
+        1093,
+        298
+      ]
+    },
+    "samson_post": {
+      "view": "S05-V01",
+      "grid_xy": [
+        862,
+        232
+      ],
+      "note": "Existing surveyed station and geometry unchanged."
+    },
+    "longhead_upper": {
+      "view": "S04-V01",
+      "grid_xy": [
+        [
+          1066,
+          331
+        ],
+        [
+          1090,
+          325
+        ],
+        [
+          1120,
+          318
+        ],
+        [
+          1150,
+          310.7
+        ],
+        [
+          1180,
+          303.4
+        ],
+        [
+          1210,
+          296.1
+        ],
+        [
+          1230,
+          291.4
+        ]
+      ],
+      "note": "Carved-field envelope below upper longhead/headrail edge; silhouette refined from S01 detail."
+    },
+    "longhead_lower": {
+      "view": "S04-V01",
+      "grid_xy": [
+        [
+          1066,
+          343
+        ],
+        [
+          1090,
+          337
+        ],
+        [
+          1120,
+          332
+        ],
+        [
+          1150,
+          325
+        ],
+        [
+          1180,
+          315.5
+        ],
+        [
+          1210,
+          305
+        ],
+        [
+          1230,
+          297
+        ]
+      ]
+    },
+    "headrail_plan": {
+      "view": "S04-V02",
+      "grid_xy": [
+        [
+          1015,
+          681
+        ],
+        [
+          1112,
+          661.5
+        ],
+        [
+          1152,
+          652.5
+        ],
+        [
+          1190,
+          645
+        ]
+      ],
+      "note": "Upper/lower line edges bound item-11 timbers. Root is fitted to the existing lower rail; local hull/survey differences are retained as a qualified short handoff."
+    },
+    "walking_board_bearers": {
+      "view": "S04-V02",
+      "grid_xy": [
+        [
+          1112,
+          636.5
+        ],
+        [
+          1152,
+          636.5
+        ]
+      ],
+      "note": "Two visible cross-bearers; three short forward spar pads are inferred supports for the owner-added walking boards."
+    }
+  },
+  "spar": {
+    "heel_f": 45.925753235730944,
+    "end_f": 67.3344768014951,
+    "shoulder_f": 52.771910399114184,
+    "round_start_f": 53.271910399114184,
+    "heel_z": 9.364516735774279,
+    "slope": 0.1253903147239374,
+    "square_width_ft": 1.0,
+    "square_depth_ft": 0.9166666666666666,
+    "round_radius_ft": 0.44,
+    "tip_radius_ft": 0.12,
+    "varnished_tip_length_ft": 5.5
+  },
+  "headwork": {
+    "stemhead_f": 52.35,
+    "stem_root_f": 49.2,
+    "stem_root_z": 7.25,
+    "stem_top_z": 10.05,
+    "stem_width_ft": 0.5,
+    "stem_molded_ft": 0.55,
+    "bearing_f": 52.42,
+    "pin_f": 52.42,
+    "pin_radius_ft": 0.045,
+    "pin_clearance_ft": 0.0015,
+    "inboard_bed_aft_f": 46.2,
+    "inboard_bed_fore_f": 49.25,
+    "headrail_root_f": 46.8,
+    "headrail_tip_f": 58.67024965133712,
+    "headrail_root_x_ft": 2.65,
+    "headrail_tip_x_ft": 0.57,
+    "headrail_depth_ft": 0.16,
+    "headrail_width_ft": 0.18,
+    "walking_board_start_f": 53.271910399114184,
+    "cross_bearer_stations_f": [
+      53.47171336124233,
+      56.137629407444784,
+      61.3,
+      64.5,
+      66.3
+    ],
+    "headrail_root_z": 9.1,
+    "headrail_tip_z": 10.74
+  },
+  "longhead": {
+    "root_f": 50.4059099081095,
+    "body_tip_f": 61.33616569753958,
+    "eagle_tip_f": 62.55,
+    "backing_width_ft": 0.5,
+    "board_thickness_ft": 0.12,
+    "upper_fz": [
+      [
+        50.4059099081095,
+        7.9582955955657715
+      ],
+      [
+        52.00545953583097,
+        8.359681742865854
+      ],
+      [
+        54.00489657048282,
+        8.82796558138262
+      ],
+      [
+        56.004333605134654,
+        9.316318727264388
+      ],
+      [
+        58.0037706397865,
+        9.804671873146157
+      ],
+      [
+        60.00320767443835,
+        10.293025019027922
+      ],
+      [
+        61.33616569753958,
+        10.607444167746323
+      ]
+    ],
+    "lower_fz": [
+      [
+        50.4059099081095,
+        7.155523300965605
+      ],
+      [
+        52.00545953583097,
+        7.556909448265688
+      ],
+      [
+        54.00489657048282,
+        7.891397904349091
+      ],
+      [
+        56.004333605134654,
+        8.359681742865854
+      ],
+      [
+        58.0037706397865,
+        8.99520980942432
+      ],
+      [
+        60.00320767443835,
+        9.697635567199466
+      ],
+      [
+        61.33616569753958,
+        10.23281709693291
+      ]
+    ],
+    "mount_stations_f": [
+      51.5,
+      56.0,
+      60.0
+    ],
+    "fastener_radius_ft": 0.018
+  },
+  "rig": {
+    "tack_station_from_tip_ft": 0.2,
+    "tack_eye_above_surface_ft": 0.23,
+    "tack_pin_radius_ft": 0.03,
+    "club_fore_radius_ft": 0.11,
+    "club_aft_radius_ft": 0.07,
+    "club_fore_overhang_ft": 0.18,
+    "headstay_f": 52.6,
+    "downhaul_cleat_f": 48.6730644780779,
+    "downhaul_cleat_port_x_ft": 0.72
+  },
+  "dimension_reconciliation": {
+    "NPS_record": "NHL nomination printed p4: nominal 22 ft, inboard section 12 x 11 in; p5 club and chain stays. HAER drawing/photograph survey state governs stations.",
+    "traced_assembled_axis_ft": 21.576368975966385,
+    "nominal_length_ft": 22,
+    "difference_ft": 0.4236310240336145,
+    "decision": "Use the HAER-traced complete spar, about 21.6 ft, not a forced extension of the old 11.48-ft cone. The nominal 22-ft earlier record differs by about 2 percent; exact after-end allowance and fitting inclusion are not dimensioned. Retain this discrepancy explicitly rather than claiming exact agreement."
+  },
+  "inferred_details": [
+    "Abutting heel stop at forward post face; no post relocation or unexplained timber interpenetration.",
+    "Bed housings, fastener diameters, transverse tack pin/shackle, hidden backing and bolt spacing are reconstruction choices, not printed historical sizes.",
+    "Two facing boards fit a common half-foot longhead backing; their silhouette follows S01/S04, and they carry no invented primary rig load.",
+    "Extend stem/headwork from the existing stem into the source raked head to provide an explicit structural connection; do not alter accepted hull or stern.",
+    "Flat display sails remain reference envelopes. Real cloth draft, flexible line behavior and strength are not simulated.",
+    "Longhead rear knee/filling is housed against the new stem-head timber; all remaining filling pieces are registered separately.",
+    "The primary stem-head splice has a matching pocket and two transverse pin passages in the existing oak knee."
+  ]
+}

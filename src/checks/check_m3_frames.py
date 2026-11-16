@@ -127,7 +127,7 @@ def check():
     assert overlap(knee,post)<.02
     assert overlap(post,hull.make_deck())<1e-7,'Post/deck passage closed'
     assert overlap(post,spars.make_bowsprit())<1e-7,'Post crown/bowsprit collision'
-    assert post.BoundingBox().ymin>spars.make_bowsprit().BoundingBox().ymax,'Bowsprit heel still extends aft through Samson post'
+    assert spars.make_bowsprit().distance(post)<1/304.8,'Full bowsprit does not meet the unchanged Samson stop'
     assert overlap(supports['Aft composite pine strongback top'],supports['Aft composite pine strongback lower'])>1e-6
     print('PASS: stanchions have real keelson/beam seats; strongback components join; Samson post enters the stem-knee mortise through open deck.',flush=True)
     for angle in np.linspace(0,CENTREBOARD_ANGLE_DEG,5):

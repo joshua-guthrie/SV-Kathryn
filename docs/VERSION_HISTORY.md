@@ -56,9 +56,13 @@ python src/checks/check_committed_build.py
 
 The check exports the commit with `project-git archive` into a temporary
 directory (no `.soma`, `output/`, renders or caches), runs a full
-`python -m soma build` there, and requires status `ok`, no warnings, the
-expected part count (874) and a STEP export. It then runs
-`check_model_scale.py` and `check_registered_deck.py` in the clean tree.
+official SOMA build CLI there, and requires status `ok`, no warnings, the
+expected part count (1024) and a STEP export. The additional parts retain the
+separate source-traced ornament regions instead of fusing a generic pattern.
+The OCCT worker pool is bounded
+to two threads for this workstation. It then runs `check_model_scale.py`,
+`check_registered_deck.py`, `check_bow_attachment.py` and `check_trailboards.py`
+in the clean tree.
 Use `--ref <commit>` to verify an older checkpoint and `--keep` to inspect the
 temporary tree. A failed check keeps the tree and prints its path.
 

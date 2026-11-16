@@ -4,7 +4,7 @@ from pathlib import Path
 import cadquery as cq
 import numpy as np
 
-sys.path.insert(0,str(Path(__file__).resolve().parents[2]))
+sys.path.insert(0,str(Path(__file__).resolve().parents[2]/'src'))
 from parts import bow,hull,spars,rails,deck,interior,equipment
 from parts.params import *
 from check_hatches import overlap
@@ -14,14 +14,8 @@ def check():
     upper,lower=hull.make_hull()
     body=cq.Compound.makeCompound([upper,lower])
     parts={n:s for n,s,_ in spars.make_spars()}
-    board=bow._extrude_wire(bow.panel_outline(-1),-1,TRAILBOARD_THICKNESS_FT,-TRAILBOARD_THICKNESS_FT)
-    assert overlap(board,parts['Bowsprit'])>1e-6
-    for side,label in ((PORT_SIDE,'Port'),(-PORT_SIDE,'Starboard')):
-        relief=bow.make_trailboard_relief(side,bow.panel_outline(side))
-        assert relief.isValid() and len(relief.Solids())==1
-        assert overlap(relief,board)>1e-6
-        for name,letter,_ in bow.make_name_letters(side,label):
-            assert overlap(letter,board)>1e-7,name
+    from check_bow_attachment import check as check_bow
+    check_bow(out=None)
     assert overlap(parts['Boom gooseneck'],parts['Main boom'])>1e-7
     assert overlap(parts['Boom support'],hull.make_deck())>1e-8
     moulding=hull.stern_moulding()
@@ -40,25 +34,7 @@ def check():
             p=cq.Vector(*boat_point(x,f,z))
             assert upper.isInside(p,1e-5) or lower.isInside(p,1e-5),('strake/planking',side,f)
             assert strake.isInside(p,1e-5)
-    details={}
-    for name,shape,_ in bow.make_bow_details():
-        if name.endswith('stem strap and eye'):
-            break
-        details[name]=shape
-    for i in (1,2,3):
-        bearer=details[f'Bowsprit cross-bearer {i}']
-        assert overlap(bearer,parts['Bowsprit'])>1e-7
-        for label in ('Port','Starboard'):
-            assert overlap(bearer,parts[f'{label} bowsprit walking board'])>1e-7
-    heel_saddle=details['Bowsprit heel saddle']
-    heel_bearing=details['Bowsprit heel bearing cross-timber']
-    assert overlap(heel_saddle,parts['Bowsprit'])<1e-7,'Uncut bowsprit heel housing'
-    assert heel_saddle.distance(parts['Bowsprit'])<1e-5,'Floating bowsprit heel'
-    assert overlap(heel_saddle,heel_bearing)>1e-6
-    for label in ('Port','Starboard'):
-        assert overlap(heel_bearing,details[f'{label} projecting headrail'])>1e-6
-    assert overlap(deck.make_bow_post(),parts['Bowsprit'])<1e-7,'Bowsprit still passes through Samson post'
-    print('PASS: single seated trailboard, relief/name contacts, boom/crutch, rubbing strakes and walking-board supports.',flush=True)
+    print('PASS: full housed bow, fitted facing boards, pivoted tack, stay alignment and downhaul checks.',flush=True)
     keel,shoe,deadwood=hull.make_keel(),hull.make_worm_shoe(),hull.make_skeg()
     assert overlap(keel,shoe)>1e-6 and overlap(keel,deadwood)>1e-6
     for f in (STERN_DEADWOOD_END_FT,28,30,32,34.375,38.75,40.9375,43.125):

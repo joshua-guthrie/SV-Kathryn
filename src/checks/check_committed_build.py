@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 GIT = ROOT / 'project-git'
-EXPECTED_PARTS = 874
+EXPECTED_PARTS = 1024
 
 
 def git(*arguments):
@@ -41,18 +41,28 @@ def run(command, cwd, timeout):
 def verify(tree, commit, expect_parts, timeout):
     started = time.monotonic()
     print(f'Building committed tree {commit} from scratch ...', flush=True)
-    run([sys.executable, '-m', 'soma', 'build'], tree, timeout)
+    # Bound the OCCT pool before its first job. On this small workstation,
+    # concurrent automatic builds otherwise push the CAD process into swap.
+    # The official SOMA CLI still owns all output and registry operations.
+    bootstrap = ("from OCP.OSD import OSD_Parallel,OSD_ThreadPool; "
+                 "OSD_Parallel.SetUseOcctThreads_s(True); "
+                 "p=OSD_ThreadPool.DefaultPool_s(2); "
+                 "p.Init(2) if p.NbThreads()!=2 else None; "
+                 "p.SetNbDefaultThreadsToLaunch(2); "
+                 "import runpy,sys; sys.argv=['soma','build']; "
+                 "runpy.run_module('soma',run_name='__main__')")
+    run([sys.executable, '-c', bootstrap], tree, timeout)
     build = json.loads((tree / '.soma/build.json').read_text())
     assert build['status'] == 'ok', ('Clean build failed', build.get('error'))
     assert not build['warnings'], ('Clean build warnings', build['warnings'])
     parts = len(build['parts'])
     assert parts == expect_parts, ('Part count changed', parts, expect_parts)
     assert (tree / 'output/model.step').is_file(), 'STEP export missing'
-    for check in ('check_model_scale.py', 'check_registered_deck.py'):
+    for check in ('check_model_scale.py', 'check_registered_deck.py', 'check_bow_attachment.py', 'check_trailboards.py'):
         print(f'Running {check} in the clean tree ...', flush=True)
         run([sys.executable, f'src/checks/{check}'], tree, timeout)
     print(f'PASS: {commit} builds from scratch: {parts} parts, 0 warnings, '
-          f'{time.monotonic() - started:.1f} s, scale and deck checks pass.')
+          f'{time.monotonic() - started:.1f} s, scale, deck, bow attachment and trailboard fidelity checks pass.')
 
 
 def main():

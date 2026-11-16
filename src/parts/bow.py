@@ -1,225 +1,149 @@
-"""Stem, projecting headrails and decorated trailboards from HAER sheets 1/3/4.
+"""Source-coordinated full bowsprit, structural headwork and fitted trailboards.
 
-Carving proportions are traced visually; fine relief cuts and colours are
-approximations at display scale. All positions below are in source feet.
+Full-size feet. HAER source picks and qualified hidden construction details are
+in bow_remedy_registration.json. Decorative facing boards are carried by the
+longhead backing; the spar is seated and restrained by separate structural parts.
 """
 import math
+from functools import lru_cache
 import numpy as np
 import cadquery as cq
 from scipy.interpolate import PchipInterpolator
+from .params import boat_point,HULL_LENGTH_FT,WATERLINE_FT,IVORY,IRON,WOOD,CARVED_IVORY,PORT_SIDE,legacy_forward
+from .hull import solid_envelope,SECTIONS,deck_height,section_plane,fair_loft,topside_halfwidth,smooth_blend
+from .primitives import block,beam_between,spar_between
+from .bow_layout import SOURCE,SPAR,HEADWORK,LONGHEAD,RIG,axis_height,radius_at,half_depth_at
+from . import trailboards as traced
+from .trailboard_layout import panel_top,panel_bottom,source_headrail_points
 
-from .params import (
-    boat_point, HULL_LENGTH_FT, WATERLINE_FT, BOWSPRIT_HEEL_FT,
-    BOWSPRIT_END_FT, BOWSPRIT_HEEL_RADIUS_FT, BOWSPRIT_TIP_RADIUS_FT,
-    BOWSPRIT_TIP_HEIGHT_FT, HEADRAIL_ROOT_FT, HEADRAIL_TIP_FT,
-    TRAILBOARD_ROOT_FT, TRAILBOARD_TIP_FT, TRAILBOARD_THICKNESS_FT,
-    IVORY, IRON, WOOD, TRAILBOARD_PAINT,
-    CARVED_IVORY, PORT_SIDE,
-    legacy_forward, RIG_HEIGHT_RISE_FT,FRAME_SOURCE,BOW_POST_FORWARD_FT,
-)
+BOWSPRIT_HEEL_FT=SPAR['heel_f']
+BOWSPRIT_END_FT=SPAR['end_f']
+BOWSPRIT_HEEL_RADIUS_FT=SPAR['square_depth_ft']/2
+BOWSPRIT_TIP_RADIUS_FT=SPAR['tip_radius_ft']
+TRAILBOARD_ROOT_FT=LONGHEAD['root_f']
+TRAILBOARD_TIP_FT=LONGHEAD['body_tip_f']
+TRAILBOARD_THICKNESS_FT=LONGHEAD['board_thickness_ft']
+TRAILBOARD_SIDE_OFFSET_FT=LONGHEAD['backing_width_ft']/2
+TRAILBOARD_PAINT=(.035,.16,.09)
+PANEL_FIELD=(.25,.045,.035)
 
-# The trailboard is mounted on the bow side faces, not on the centreline.
-# This is the clear distance from the centreline to the inner board face.
-TRAILBOARD_SIDE_OFFSET_FT = .32
-from .hull import SECTIONS, deck_height, section_plane, fair_loft, topside_halfwidth, smooth_blend
-from .primitives import block, beam_between, spar_between
-
-_heel_z = deck_height(BOW_POST_FORWARD_FT)+FRAME_SOURCE['bowsprit_heel_above_post_deck_ft']
-_headrail_root_x = float(np.interp(HEADRAIL_ROOT_FT,
-                                  [s[0] for s in SECTIONS],
-                                  [s[1] for s in SECTIONS])) - .08
-_headrail_root_z = deck_height(HEADRAIL_ROOT_FT) + .36
+bowsprit_height=axis_height
+bowsprit_radius=radius_at
 
 
-def bowsprit_height(forward):
-    t = (forward - BOWSPRIT_HEEL_FT) / (BOWSPRIT_END_FT - BOWSPRIT_HEEL_FT)
-    return _heel_z + t * (BOWSPRIT_TIP_HEIGHT_FT - _heel_z)
+def spar_section(f):
+    return cq.Workplane(cq.Plane(origin=boat_point(0,f,axis_height(f)),xDir=(1,0,0),normal=(0,-1,0)))
 
 
-def bowsprit_radius(forward):
-    t = (forward - BOWSPRIT_HEEL_FT) / (BOWSPRIT_END_FT - BOWSPRIT_HEEL_FT)
-    return BOWSPRIT_HEEL_RADIUS_FT + t * (BOWSPRIT_TIP_RADIUS_FT - BOWSPRIT_HEEL_RADIUS_FT)
+@lru_cache(maxsize=1)
+def raw_bowsprit():
+    rect=lambda f:spar_section(f).rect(SPAR['square_width_ft'],SPAR['square_depth_ft']).val()
+    circ=lambda f:spar_section(f).circle(radius_at(f)).val()
+    a,b,c,d=(SPAR[k] for k in ('heel_f','shoulder_f','round_start_f','end_f'))
+    square=cq.Solid.makeLoft([rect(a),rect(b)],ruled=True)
+    transition=cq.Solid.makeLoft([rect(b),circ(c)],ruled=True)
+    round_part=cq.Solid.makeLoft([circ(c),circ(d)],ruled=True)
+    result=square.fuse(transition,round_part).clean()
+    assert result.isValid() and len(result.Solids())==1,'Full bowsprit loft'
+    return result
 
 
-def headrail_point(side, forward):
-    t = (forward - HEADRAIL_ROOT_FT) / (HEADRAIL_TIP_FT - HEADRAIL_ROOT_FT)
-    across = side * (_headrail_root_x + t * (.16 - _headrail_root_x))
-    z = _headrail_root_z + t * (bowsprit_height(HEADRAIL_TIP_FT) - .1 - _headrail_root_z)
-    return across, z
+def fid_head_counterbore():
+    f=HEADWORK['pin_f'];bottom=axis_height(f)+half_depth_at(f)-.012
+    return spar_between(boat_point(0,f,bottom),boat_point(0,f,bottom+1),HEADWORK['pin_radius_ft']+.0415)
+
+
+def fid_bore():
+    f=HEADWORK['pin_f'];r=HEADWORK['pin_radius_ft']+HEADWORK['pin_clearance_ft']
+    return spar_between(boat_point(0,f,7.0),boat_point(0,f,12.0),r)
+
+
+@lru_cache(maxsize=1)
+def make_bowsprit_timber():
+    return raw_bowsprit().cut(fid_bore()).cut(fid_head_counterbore()).clean().toNURBS()
 
 
 def make_walking_boards():
-    for side, label in ((PORT_SIDE, 'Port'), (-PORT_SIDE, 'Starboard')):
-        wires = []
-        start = BOWSPRIT_HEEL_FT
-        for f in np.linspace(start, BOWSPRIT_END_FT - .3, 12):
-            t = (f - start) / (BOWSPRIT_END_FT - .3 - start)
-            x = side * (.62 + t * (.23 - .62))
-            z = bowsprit_height(f) + bowsprit_radius(f) + .03
-            wires.append(section_plane(f).center(x, z)
-                         .rect(.45 + t * (.18 - .45), .09).val())
-        yield f'{label} bowsprit walking board', fair_loft(wires), IVORY
+    start=HEADWORK['walking_board_start_f'];end=SPAR['end_f']-.40
+    for side,label in ((PORT_SIDE,'Port'),(-PORT_SIDE,'Starboard')):
+        wires=[]
+        for f in np.linspace(start,end,14):
+            t=(f-start)/(end-start);x=side*(.64*(1-t)+.25*t)
+            z=axis_height(f)+radius_at(f)+.075
+            wires.append(section_plane(f).center(x,z).rect(.42*(1-t)+.20*t,.07).val())
+        yield f'{label} bowsprit walking board',fair_loft(wires),IVORY
 
 
-_stem_sections = [s for s in SECTIONS if s[0] >= legacy_forward(43.125)]
-_stem_forward = PchipInterpolator([s[7] for s in _stem_sections],
-                                  [s[0] for s in _stem_sections])
+_stem_sections=[s for s in SECTIONS if s[0]>=legacy_forward(43.125)]
+_stem_forward=PchipInterpolator([s[7] for s in _stem_sections],[s[0] for s in _stem_sections])
 
-
-def stem_forward_at(z):
-    return float(_stem_forward(z))
+def stem_forward_at(z):return float(_stem_forward(z))
 
 
 def make_stem():
-    points = [(s[0], s[7]) for s in _stem_sections]
-    front = [(HULL_LENGTH_FT / 2 - f - .12, z) for f, z in points]
-    back = [(HULL_LENGTH_FT / 2 - f + .12, z) for f, z in reversed(points)]
-    return (cq.Workplane('YZ').moveTo(*front[0]).spline(front[1:], includeCurrent=True)
-            .lineTo(*back[0]).spline(back[1:], includeCurrent=True).close()
-            .extrude(.23, both=True).val())
+    points=[(s[0],s[7]) for s in _stem_sections]
+    front=[(HULL_LENGTH_FT/2-f-.12,z) for f,z in points]
+    back=[(HULL_LENGTH_FT/2-f+.12,z) for f,z in reversed(points)]
+    return (cq.Workplane('YZ').moveTo(*front[0]).spline(front[1:],includeCurrent=True)
+            .lineTo(*back[0]).spline(back[1:],includeCurrent=True).close().extrude(.23,both=True).val())
 
 
-_lower_edge = PchipInterpolator(
-    [legacy_forward(f) for f in (48, 50, 54, 57, 59, 60.2)],
-    [z+RIG_HEIGHT_RISE_FT for z in (6.75, 7.05, 7.8, 8.6, 9.15, 9.38)])
+def panel_plane(side,offset=0):
+    normal=cq.Vector(side,0,0)
+    origin=cq.Vector(*boat_point(side*(TRAILBOARD_SIDE_OFFSET_FT+TRAILBOARD_THICKNESS_FT),TRAILBOARD_ROOT_FT,0))+normal*offset
+    return cq.Plane(origin=origin,xDir=(0,side,0),normal=normal)
 
 
-def panel_top(f):
-    # One board on the centreline, seated directly into the bowsprit's
-    # underside. The two decorated faces are not separated headrail panels.
-    return bowsprit_height(f) - bowsprit_radius(f) + .025
-
-
-def panel_bottom(f):
-    return float(_lower_edge(f))
-
-
-_panel_length_factor = 1.0
-_relief_offset = -.005
-
-
-def panel_plane(side, offset=0):
-    normal = cq.Vector(side, 0, 0)
-    origin = cq.Vector(*boat_point(
-        side * (TRAILBOARD_SIDE_OFFSET_FT + TRAILBOARD_THICKNESS_FT / 2),
-        TRAILBOARD_ROOT_FT, 0)) + normal * offset
-    return cq.Plane(origin=origin, xDir=(0, side, 0), normal=normal)
-
-
-def panel_u(side, forward):
-    return -side * (forward - TRAILBOARD_ROOT_FT) * _panel_length_factor
+def panel_u(side,f):return -side*(f-TRAILBOARD_ROOT_FT)
 
 
 def panel_outline(side):
-    plane = panel_plane(side)
-    lower = [(panel_u(side, f), panel_bottom(f))
-             for f in np.linspace(TRAILBOARD_TIP_FT, TRAILBOARD_ROOT_FT, 12)]
-    return (cq.Workplane(plane)
-            .moveTo(panel_u(side, TRAILBOARD_ROOT_FT), panel_top(TRAILBOARD_ROOT_FT))
-            .lineTo(panel_u(side, TRAILBOARD_TIP_FT), panel_top(TRAILBOARD_TIP_FT))
-            .lineTo(*lower[0]).spline(lower[1:], includeCurrent=True).close().val())
+    return traced.outline(side)
 
 
-def _extrude_wire(wire, side, height, offset=0):
-    return (cq.Workplane(panel_plane(side)).add(wire).toPending().extrude(height)
-            .val().translate(panel_plane(side).zDir.multiply(offset)))
+def _extrude_wire(wire,side,height,offset=0):
+    return cq.Workplane(panel_plane(side)).add(wire).toPending().extrude(height).val().translate(panel_plane(side).zDir.multiply(offset))
 
 
-def _ribbon(side, points, width=.035):
-    points = np.asarray(points)
-    tangents = np.gradient(points, axis=0)
-    normals = np.column_stack((-tangents[:, 1], tangents[:, 0]))
-    normals /= np.linalg.norm(normals, axis=1)[:, None]
-    outline = np.vstack((points + width / 2 * normals,
-                         (points - width / 2 * normals)[::-1]))
-    return (cq.Workplane(panel_plane(side, _relief_offset)).polyline(outline.tolist())
-            .close().extrude(.035).val())
+def board_fastener_centre(f):return traced.fastener_centre(f)
 
 
-def _leaf(side, f, upper):
-    u = panel_u(side, f)
-    z = panel_top(f) - .025 if upper else panel_bottom(f) + .025
-    length = min(.34, (panel_top(f) - panel_bottom(f)) * .6)
-    du, dz = -side * length * .75, (-1 if upper else 1) * length * .65
-    return _leaf_at(side, u, z, du, dz, length * .22)
+def board_fastener_bore(side,f):
+    z=board_fastener_centre(f);r=LONGHEAD['fastener_radius_ft']+.0015
+    return spar_between(boat_point(side*.12,f,z),boat_point(side*.42,f,z),r)
 
 
-def _leaf_at(side, u, z, du, dz, w):
-    length = math.hypot(du, dz)
-    return (cq.Workplane(panel_plane(side, _relief_offset)).moveTo(u, z)
-            .threePointArc((u + du * .45 - dz * w / length,
-                            z + dz * .45 + du * w / length), (u + du, z + dz))
-            .threePointArc((u + du * .55 + dz * w / length,
-                            z + dz * .55 - du * w / length), (u, z))
-            .close().extrude(.035).val())
+@lru_cache(maxsize=2)
+def make_trailboard(side):
+    panel=_extrude_wire(panel_outline(side),side,TRAILBOARD_THICKNESS_FT,-TRAILBOARD_THICKNESS_FT)
+    for f in LONGHEAD['mount_stations_f']:panel=panel.cut(board_fastener_bore(side,f))
+    return panel.cut(solid_envelope()).clean()
 
 
-def _vine(side, start, end):
-    fs = np.linspace(start, end, 100)
-    def centre(f):
-        h = panel_top(f) - panel_bottom(f)
-        wave = ((panel_top(f) + panel_bottom(f)) / 2
-                + h * .22 * math.sin(2 * math.pi * (f - start) / 1.6))
-        border = panel_bottom(f) + .02
-        blend = smooth_blend((f-start)/.30)*smooth_blend((end-f)/.30)
-        return border + blend*(wave-border)
-    # Blend continuously into the border; vertical endpoint jumps could make
-    # the thin ribbon self-intersect after the source-coordinate migration.
-    path = [(panel_u(side, f), centre(f)) for f in fs]
-    stem = _ribbon(side, path, .04)
-    leaves = []
-    for i, f in enumerate(np.linspace(start + .25, end - .2, max(3, int((end - start) / .5)))):
-        h = panel_top(f) - panel_bottom(f)
-        length = min(.30, h * .45)
-        leaves.append(_leaf_at(side, panel_u(side, f), centre(f),
-                               -side * length * .8, (-1 if i % 2 else 1) * length * .6,
-                               length * .22))
-    return stem.fuse(*leaves)
+@lru_cache(maxsize=1)
+def _raw_longhead_backing():
+    core=_extrude_wire(panel_outline(1),1,LONGHEAD['backing_width_ft'],
+                       -TRAILBOARD_THICKNESS_FT-LONGHEAD['backing_width_ft'])
+    core=core.fuse(longhead_splice_mortise())
+    for side in (-1,1):
+        for f in LONGHEAD['mount_stations_f']:core=core.cut(board_fastener_bore(side,f))
+    return core.clean()
 
 
-def make_trailboard_relief(side, outline):
-    border = _extrude_wire(outline, side, .035, _relief_offset)
-    inner_wires = outline.offset2D(-.065)
-    assert inner_wires, 'Trailboard border needs an inset'
-    for inner in inner_wires:
-        border = border.cut(_extrude_wire(inner, side, .08, _relief_offset - .02))
-    leaves = [_leaf(side, legacy_forward(f), upper) for f in (49.8, 50.2, 54.8, 55.8, 56.8, 57.8, 58.8)
-              for upper in (False, True)]
-    # Volutes at the broad aft end and the carved forward head. Their stems
-    # meet the continuous border, keeping the relief a single carved part.
-    scrolls = []
-    for f, r in ((50.3, .22), (59.1, .12)):
-        f = legacy_forward(f)
-        centre = np.array((panel_u(side, f),
-                           (panel_top(f) + panel_bottom(f)) / 2))
-        theta = np.linspace(-math.pi / 2, 2.5 * math.pi, 40)
-        radius = np.linspace(r, .025, len(theta))
-        spiral = centre + np.column_stack((radius * np.cos(theta), radius * np.sin(theta)))
-        start = (panel_u(side, f), panel_bottom(f) + .015)
-        scrolls.append(_ribbon(side, [start, *spiral.tolist()]))
-    vines = [_vine(side, legacy_forward(48.35), legacy_forward(50.6)),
-             _vine(side, legacy_forward(54.4), legacy_forward(59.4))]
-    relief = border.fuse(*leaves, *scrolls, *vines).clean()
-    assert relief.isValid() and len(relief.Solids()) == 1, 'Carving must join its border'
-    return relief
+@lru_cache(maxsize=1)
+def longhead_backing():
+    pieces=_raw_longhead_backing().cut(make_stemhead_extension()).Solids()
+    return max(pieces,key=lambda s:s.Volume())
 
 
-def make_name_letters(side, label):
-    # Begin the name forward of the cutwater so its first letter is not
-    # hidden where the centreline board passes into the stem structure.
-    forward_positions = np.linspace(legacy_forward(51.1), legacy_forward(53.8), 7)
-    if side > 0:
-        forward_positions = forward_positions[::-1]
-    plane = panel_plane(side, _relief_offset)
-    for char, f in zip('KATHRYN', forward_positions):
-        centre = plane.toWorldCoords((panel_u(side, f), (panel_top(f) + panel_bottom(f)) / 2))
-        letter_plane = cq.Plane(origin=centre, xDir=plane.xDir, normal=plane.zDir)
-        letter = cq.Workplane(letter_plane).text(
-            char, .48, .035, font='DejaVu Serif', kind='bold',
-            halign='center', valign='center', combine=False).solids().val()
-        angle = -side * math.degrees(math.atan(.15 / _panel_length_factor))
-        letter = letter.rotate(centre.toTuple(), (centre + plane.zDir).toTuple(), angle)
-        yield f'{label} trailboard letter {char}', letter, CARVED_IVORY
+@lru_cache(maxsize=1)
+def make_longhead_aft_filling():
+    pieces=_raw_longhead_backing().cut(make_stemhead_extension()).Solids()
+    return [p.cut(solid_envelope()).clean() for p in sorted(pieces,key=lambda s:s.Volume(),reverse=True)[1:]]
+
+
+def make_painted_field(side):
+    return traced.field(side)
 
 
 _chain_link = (cq.Workplane('XY').ellipse(.17, .078).ellipse(.136, .044)
@@ -249,119 +173,314 @@ def linked_chain(start, end):
     return chain
 
 
+
+def headrail_points(side):
+    # The small after handoff retains the accepted hull rail; the visible arm
+    # follows the independently identified S04 item-11 plan/profile points.
+    return [[side*HEADWORK['headrail_root_x_ft'],HEADWORK['headrail_root_f'],HEADWORK['headrail_root_z']],
+            *source_headrail_points(side)]
+
+
+def headrail_point(side,f):
+    points=np.asarray(headrail_points(side))
+    return float(np.interp(f,points[:,1],points[:,0])),float(np.interp(f,points[:,1],points[:,2]))
+
+
+@lru_cache(maxsize=2)
+def make_headrail(side):
+    points=headrail_points(side)
+    pieces=[beam_between(boat_point(*a),boat_point(*b),HEADWORK['headrail_width_ft'],HEADWORK['headrail_depth_ft'])
+            for a,b in zip(points,points[1:])]
+    rail=pieces[0].fuse(*pieces[1:]).clean()
+    assert rail.isValid() and len(rail.Solids())==1,'Fitted headrail and after handoff'
+    return rail
+
+
 def _bowsprit_band(f):
-    p = np.array(boat_point(0, f, bowsprit_height(f)))
-    tangent = np.array((0., -1., (BOWSPRIT_TIP_HEIGHT_FT - _heel_z)
-                        / (BOWSPRIT_END_FT - BOWSPRIT_HEEL_FT)))
-    tangent /= np.linalg.norm(tangent)
-    outer = spar_between(tuple(p - tangent * .09), tuple(p + tangent * .09),
-                         bowsprit_radius(f) + .045)
-    inner = spar_between(tuple(p - tangent * .14), tuple(p + tangent * .14),
-                         bowsprit_radius(f) + .004)
-    return outer.cut(inner)
+    # Loft both boundaries along the actual spar rake, not a horizontal extrusion.
+    def wire(g,outer):
+        pad=.045 if outer else .0015
+        if g<=SPAR['shoulder_f']:
+            return spar_section(g).rect(SPAR['square_width_ft']+2*pad,SPAR['square_depth_ft']+2*pad).val()
+        return spar_section(g).circle(radius_at(g)+pad).val()
+    outer=cq.Solid.makeLoft([wire(f-.09,True),wire(f+.09,True)],ruled=True)
+    inner=cq.Solid.makeLoft([wire(f-.13,False),wire(f+.13,False)],ruled=True)
+    return outer.cut(inner).cut(fid_bore())
 
 
-def _bobstay_anchors(stem_z, tip_f):
-    return (boat_point(0, stem_forward_at(stem_z) + .20, stem_z),
-            boat_point(0, tip_f, bowsprit_height(tip_f) - bowsprit_radius(tip_f) - .10))
+def tack_point():
+    f=SPAR['end_f']-RIG['tack_station_from_tip_ft']
+    return boat_point(0,f,axis_height(f)+radius_at(f)+RIG['tack_eye_above_surface_ft'])
 
 
-def _stem_eye(stem_z, point):
-    f = stem_forward_at(stem_z)
-    strap = block(0, f, stem_z - .075, .75, .24, .15)
-    eye = cq.Solid.makeTorus(.10, .025, point, (1, 0, 0))
-    return strap.fuse(eye)
+def headstay_point():
+    f=RIG['headstay_f']
+    return boat_point(0,f,axis_height(f)+half_depth_at(f)+.18)
+
+
+def _ear(x,f,z,r=.03):
+    outer=cq.Solid.makeCylinder(.12,.06,(x-.03,25-f,z),(1,0,0))
+    bore=cq.Solid.makeCylinder(r+.0015,.10,(x-.05,25-f,z),(1,0,0))
+    return outer.cut(bore)
+
+
+@lru_cache(maxsize=1)
+def make_tack_fitting():
+    _,y,z=tack_point();f=25-y;parts=[_bowsprit_band(f)]
+    bridge=block(0,f,axis_height(f)+radius_at(f)-.095,.43,.17,.16).cut(raw_bowsprit())
+    parts.append(bridge)
+    for side in (-1,1):
+        x=side*.16
+        web=block(x,f,axis_height(f)+radius_at(f)-.025,.06,.16,z-(axis_height(f)+radius_at(f))+.025)
+        web=web.cut(spar_between((x-.1,y,z),(x+.1,y,z),RIG['tack_pin_radius_ft']+.0015))
+        parts.extend([web,_ear(x,f,z,RIG['tack_pin_radius_ft'])])
+    return parts[0].fuse(*parts[1:]).clean()
+
+
+def make_tack_pin():
+    _,y,z=tack_point();r=RIG['tack_pin_radius_ft']
+    pin=spar_between((-.19,y,z),(.19,y,z),r)
+    return pin.fuse(spar_between((-.22,y,z),(-.190,y,z),r+.026),spar_between((.190,y,z),(.22,y,z),r+.026)).clean()
+
+
+def make_headstay_fitting():
+    _,y,z=headstay_point();f=25-y
+    base=_bowsprit_band(f)
+    web=block(0,f,axis_height(f)+half_depth_at(f)-.02,.09,.17,z-axis_height(f)-half_depth_at(f)+.02)
+    web=web.cut(spar_between((-.1,y,z),(.1,y,z),.0255))
+    return base.fuse(web,_ear(0,f,z,.024)).clean()
+
+
+def make_headstay_pin():
+    _,y,z=headstay_point()
+    return spar_between((-.03,y,z),(.03,y,z),.024).fuse(spar_between((-.06,y,z),(-.03,y,z),.045),spar_between((.03,y,z),(.06,y,z),.045))
+
+
+def _bobstay_anchors(stem_z,f):
+    return (boat_point(0,stem_forward_at(stem_z)+.20,stem_z),boat_point(0,f,axis_height(f)-radius_at(f)-.10))
+
+
+def _stem_eye(z,point):
+    f=stem_forward_at(z)
+    return block(0,f,z-.075,.75,.24,.15).fuse(cq.Solid.makeTorus(.10,.025,point,(1,0,0)))
 
 
 def _side_anchor(side):
-    f = legacy_forward(45.5)
-    z = deck_height(f) - .45
-    x = side * (topside_halfwidth(f, z) + .15)
-    return boat_point(x, f, z)
+    f=legacy_forward(45.5);z=deck_height(f)-.45
+    return boat_point(side*(topside_halfwidth(f,z)+.15),f,z)
 
 
 def _side_tip(side):
-    f = legacy_forward(62.0)
-    return boat_point(side * (bowsprit_radius(f) + .10), f, bowsprit_height(f))
+    f=SPAR['end_f']-.65
+    return boat_point(side*(radius_at(f)+.10),f,axis_height(f))
 
 
 def make_bow_chains():
-    for name, z, f in (('Bowsprit bobstay', 4.7, 62.3),
-                       ('Bowsprit inner bobstay', 5.25, 60.4)):
-        f = legacy_forward(f)
-        root, tip = _bobstay_anchors(z, f)
-        yield f'{name} stem strap and eye', _stem_eye(z, root), IRON
-        band = _bowsprit_band(f).fuse(cq.Solid.makeTorus(.10, .025, tip, (1, 0, 0)))
-        yield f'{name} collar and eye', band, IRON
-        yield name, linked_chain(root, tip), IRON
-    tip_band = _bowsprit_band(legacy_forward(62.0))
-    for side in (-1, 1):
-        tip_band = tip_band.fuse(cq.Solid.makeTorus(.10, .025, _side_tip(side), (0, 1, 0)))
-    yield 'Bowsprit side-stay collar', tip_band, IRON
-    for side, label in ((PORT_SIDE, 'Port'), (-PORT_SIDE, 'Starboard')):
-        root = _side_anchor(side)
-        x, _, z = root
-        plate = block(x - side * .12, legacy_forward(45.5), z - .17, .12, .32, .34)
-        eye = cq.Solid.makeTorus(.10, .025, root, (0, 1, 0))
-        yield f'{label} bowsprit chainplate and eye', plate.fuse(eye), IRON
-        yield f'{label} bowsprit shroud', linked_chain(root, _side_tip(side)), IRON
+    # Two survey chain bobstays; no third invented straight wire bobstay.
+    for name,z,d in [('Bowsprit bobstay',4.7,.35),('Bowsprit inner bobstay',5.25,1.55)]:
+        f=SPAR['end_f']-d;root,tip=_bobstay_anchors(z,f)
+        yield name+' stem strap and eye',_stem_eye(z,root),IRON
+        yield name+' collar and eye',_bowsprit_band(f).fuse(cq.Solid.makeTorus(.10,.025,tip,(1,0,0))),IRON
+        yield name,linked_chain(root,tip),IRON
+    f=SPAR['end_f']-.65;tip_band=_bowsprit_band(f)
+    for side in (-1,1):tip_band=tip_band.fuse(cq.Solid.makeTorus(.10,.025,_side_tip(side),(0,1,0)))
+    yield 'Bowsprit side-stay collar',tip_band,IRON
+    for side,label in ((PORT_SIDE,'Port'),(-PORT_SIDE,'Starboard')):
+        root=_side_anchor(side);x,y,z=root
+        plate=block(x-side*.12,25-y,z-.17,.12,.32,.34)
+        yield label+' bowsprit chainplate and eye',plate.fuse(cq.Solid.makeTorus(.10,.025,root,(0,1,0))),IRON
+        yield label+' bowsprit shroud',linked_chain(root,_side_tip(side)),IRON
+
+
+def longhead_splice_mortise():
+    return beam_between(boat_point(0,49.45,7.58),boat_point(0,51.20,7.80),.50,.40)
+
+
+def stem_splice_mortise():
+    h=HEADWORK
+    return beam_between(boat_point(0,h['stem_root_f'],h['stem_root_z']),
+                        boat_point(0,h['stemhead_f'],h['stem_top_z']),h['stem_width_ft'],h['stem_molded_ft'])
+
+
+def stem_splice_station(i):
+    f=(49.40,49.65)[i]
+    t=(f-HEADWORK['stem_root_f'])/(HEADWORK['stemhead_f']-HEADWORK['stem_root_f'])
+    z=HEADWORK['stem_root_z']+t*(HEADWORK['stem_top_z']-HEADWORK['stem_root_z'])
+    return f,z
+
+
+def stem_splice_bore(i):
+    f,z=stem_splice_station(i)
+    return spar_between(boat_point(-.42,f,z),boat_point(.42,f,z),.0265)
+
+
+def make_stem_splice_bolt(i):
+    f,z=stem_splice_station(i)
+    shaft=spar_between(boat_point(-1/3,f,z),boat_point(1/3,f,z),.025)
+    caps=[spar_between(boat_point(side*(1/3),f,z),boat_point(side*(1/3+.035),f,z),.052) for side in (-1,1)]
+    return shaft.fuse(*caps).clean()
+
+
+@lru_cache(maxsize=1)
+def make_stemhead_extension():
+    member=stem_splice_mortise().cut(raw_bowsprit()).cut(fid_bore()).cut(make_cross_timber()).cut(make_stem())
+    for i in (0,1):member=member.cut(stem_splice_bore(i))
+    for side in (-1,1):
+        for f in LONGHEAD['mount_stations_f']:member=member.cut(board_fastener_bore(side,f))
+    return member.clean()
+
+
+def _bed(f0,f1,width,bottom):
+    wires=[]
+    for f in np.linspace(f0,f1,10):
+        top=axis_height(f)-half_depth_at(f)+.025
+        low=bottom(f)
+        wires.append(section_plane(f).center(0,(top+low)/2).rect(width,top-low).val())
+    return cq.Solid.makeLoft(wires,ruled=False).cut(raw_bowsprit()).cut(fid_bore()).clean()
+
+
+@lru_cache(maxsize=1)
+def make_inboard_bed():
+    return _bed(HEADWORK['inboard_bed_aft_f'],HEADWORK['inboard_bed_fore_f'],1.15,lambda f:deck_height(f)-.012)
+
+
+def make_stemhead_saddle():
+    f=HEADWORK['bearing_f']
+    return _bed(f-.34,f+.34,1.12,lambda x:axis_height(x)-half_depth_at(x)-.17).cut(make_cross_timber())
+
+
+def make_cross_timber():
+    f=HEADWORK['bearing_f'];low=axis_height(f)-half_depth_at(f)-.35
+    return block(0,f,low,1.85,.64,.20).cut(raw_bowsprit()).cut(fid_bore())
+
+
+def fid_limits():
+    f=HEADWORK['pin_f'];low=axis_height(f)-half_depth_at(f)-.35
+    return low-.05,axis_height(f)+half_depth_at(f)+.013,low-.015
+
+
+def make_fid():
+    f=HEADWORK['pin_f'];r=HEADWORK['pin_radius_ft'];bottom,top,clip=fid_limits()
+    pin=spar_between(boat_point(0,f,bottom),boat_point(0,f,top),r).fuse(
+        spar_between(boat_point(0,f,top-.025),boat_point(0,f,top+.045),r+.04))
+    return pin.cut(spar_between(boat_point(-.12,f,clip),boat_point(.12,f,clip),.0155))
+
+
+def make_fid_clip():
+    f=HEADWORK['pin_f'];_,_,z=fid_limits()
+    return spar_between(boat_point(-.115,f,z),boat_point(.115,f,z),.014).fuse(
+        spar_between(boat_point(-.13,f,z),boat_point(-.114,f,z),.024))
+
+
+def make_cross_bearer(f):
+    x,rail_z=headrail_point(1,f);r=radius_at(f);z=axis_height(f)+r+.04
+    # Outboard spacers beyond the end of headrails seat directly on the spar.
+    if f>HEADWORK['headrail_tip_f']:
+        x=.32
+        return block(0,f,axis_height(f)+r-.15,2*x+.3,.15,.19).cut(raw_bowsprit())
+    bar=block(0,f,z-.13,2*abs(x)+.20,.18,.13)
+    feet=[block(side*abs(x),f,rail_z-.04,.16,.18,z-.13-rail_z+.08) for side in (-1,1)]
+    return bar.fuse(*feet).cut(raw_bowsprit()).clean()
+
+
+def make_bow_structure():
+    yield 'Bowsprit stem-head extension',make_stemhead_extension(),IVORY
+    for i in (0,1):yield f'Stem-head splice bolt {i+1}',make_stem_splice_bolt(i),IRON
+    yield 'Bowsprit inboard heel bed',make_inboard_bed(),IVORY
+    yield 'Bowsprit heel bearing cross-timber',make_cross_timber(),IVORY
+    yield 'Bowsprit heel saddle',make_stemhead_saddle(),IVORY
+    yield 'Bowsprit fid',make_fid(),IRON
+    yield 'Bowsprit fid retaining clip',make_fid_clip(),IRON
+    # Side cheeks rise from the unchanged stem and receive the cross-timber.
+    f=HEADWORK['bearing_f'];z=axis_height(f)-half_depth_at(f)
+    for side,label in ((1,'Port'),(-1,'Starboard')):
+        cheek=beam_between(boat_point(side*.24,50.0,8.0),boat_point(side*.70,f,z+.13),.26,.40)
+        fitted=cheek.cut(raw_bowsprit()).cut(fid_bore()).cut(make_cross_timber()).cut(make_stemhead_extension())
+        yield label+' stem-head cheek',max(fitted.Solids(),key=lambda s:s.Volume()),IVORY
+    yield 'Head stay stem-head fitting',make_headstay_fitting(),IRON
+    yield 'Head stay stem-head pin',make_headstay_pin(),IRON
+    yield 'Jib tack collar and fork',make_tack_fitting(),IRON
+    yield 'Jib tack pivot pin',make_tack_pin(),IRON
+    for i,f in enumerate(HEADWORK['cross_bearer_stations_f'],1):
+        yield f'Bowsprit cross-bearer {i}',make_cross_bearer(f),IVORY
+    for side,label in ((1,'Port'),(-1,'Starboard')):
+        rail=make_headrail(side)
+        yield label+' projecting headrail',rail,IVORY
+        kx,kz=headrail_point(side,49.4)
+        knee=beam_between(boat_point(side*.58,49.35,7.65),boat_point(kx,49.4,kz),.19,.16)
+        yield label+' headrail knee',max(knee.cut(rail).Solids(),key=lambda s:s.Volume()),IVORY
 
 
 def make_bow_details():
-    stem = make_stem()
-    water = (cq.Workplane('XY').box(40, 100, 40, centered=(True, True, False))
-             .translate((0, 0, WATERLINE_FT - 40)).val())
-    yield 'Painted stem and cutwater', stem.cut(water), IVORY
-    yield 'Underwater stem shoe', stem.intersect(water), (.13, .18, .18)
-    for side, label in ((PORT_SIDE, 'Port'), (-PORT_SIDE, 'Starboard')):
-        outline = panel_outline(side)
-        yield f'{label} trailboard board', _extrude_wire(
-            outline, side, TRAILBOARD_THICKNESS_FT, -TRAILBOARD_THICKNESS_FT), TRAILBOARD_PAINT
-    for side, label in ((PORT_SIDE, 'Port'), (-PORT_SIDE, 'Starboard')):
-        start_x, start_z = headrail_point(side, HEADRAIL_ROOT_FT)
-        end_x, end_z = headrail_point(side, HEADRAIL_TIP_FT)
-        yield f'{label} projecting headrail', beam_between(
-            boat_point(start_x, HEADRAIL_ROOT_FT, start_z),
-            boat_point(end_x, HEADRAIL_TIP_FT, end_z), .17, .16), IVORY
-        knee_x, knee_z = headrail_point(side, legacy_forward(48.0))
-        yield f'{label} headrail knee', beam_between(
-            boat_point(side * .4, legacy_forward(48.6), 7.0+RIG_HEIGHT_RISE_FT),
-            boat_point(knee_x, legacy_forward(48.0), knee_z), .16, .15), IVORY
-        outline = panel_outline(side)
-        yield f'{label} carved border and scrollwork', make_trailboard_relief(side, outline), CARVED_IVORY
-        yield from make_name_letters(side, label)
-    # Timber knee from the stem head up to the heel bearing cross-timber.
-    # Without it the saddle/cross-bearer/floating heel has no visible path
-    # down to the stem, which is what made the bowsprit read as floating.
-    knee_start = boat_point(0, stem_forward_at(7.95), 7.95)
-    knee_end = boat_point(0, BOWSPRIT_HEEL_FT,
-                          bowsprit_height(BOWSPRIT_HEEL_FT)
-                          - BOWSPRIT_HEEL_RADIUS_FT - .18 - .22)
-    yield 'Bowsprit heel knee', beam_between(knee_start, knee_end, .34, .28), IVORY
-    # Fid through the heel mortise and the bearing cross-timber.
-    fid_f = BOWSPRIT_HEEL_FT
-    fid = spar_between(boat_point(0, fid_f, 9.70),
-                       boat_point(0, fid_f, 11.08), .05)
-    fid = fid.fuse(spar_between(boat_point(0, fid_f, 11.04),
-                                boat_point(0, fid_f, 11.16), .09))
-    yield 'Bowsprit fid', fid, IRON
-    for i,f in enumerate((BOWSPRIT_HEEL_FT,legacy_forward(54.8),legacy_forward(60.0)),1):
-        x, rail_z = headrail_point(1, f)
-        top = bowsprit_height(f) + bowsprit_radius(f) + .01
-        bearer = block(0, f, top - .12, 2 * abs(x) + .2, .18, .12)
-        feet = [block(side * abs(x), f, rail_z - .05, .16, .18,
-                      top - .12 - rail_z + .08) for side in (-1, 1)]
-        yield f'Bowsprit cross-bearer {i}', bearer.fuse(*feet), IVORY
-    floor=bowsprit_height(BOWSPRIT_HEEL_FT)-BOWSPRIT_HEEL_RADIUS_FT
-    saddle=block(0,BOWSPRIT_HEEL_FT,floor-.18,1.0,.7,.24)
-    sprit=spar_between(boat_point(0,BOWSPRIT_HEEL_FT,bowsprit_height(BOWSPRIT_HEEL_FT)),
-                       boat_point(0,BOWSPRIT_END_FT,bowsprit_height(BOWSPRIT_END_FT)),
-                       BOWSPRIT_HEEL_RADIUS_FT,BOWSPRIT_TIP_RADIUS_FT)
-    yield 'Bowsprit heel saddle',saddle.cut(sprit),IVORY
-    x,z=headrail_point(1,BOWSPRIT_HEEL_FT)
-    top=floor-.18+.012
-    yield 'Bowsprit heel bearing cross-timber',block(0,BOWSPRIT_HEEL_FT,top-.22,
-                                                   2*abs(x)+.20,.32,.22),IVORY
-    yield 'Bowsprit heel band', _bowsprit_band(BOWSPRIT_HEEL_FT + .5), IRON
-    yield 'Bowsprit stem-head band', _bowsprit_band(BOWSPRIT_HEEL_FT+.08), IRON
+    stem=make_stem();water=block(0,25,WATERLINE_FT-40,40,100,40)
+    yield 'Painted stem and cutwater',stem.cut(water),IVORY
+    yield 'Underwater stem shoe',stem.intersect(water),(.13,.18,.18)
+    yield from make_bow_structure()
+    yield 'Longhead trailboard backing',longhead_backing(),IVORY
+    for i,filling in enumerate(make_longhead_aft_filling(),1):
+        for k,solid in enumerate(filling.Solids(),1):yield f'Longhead aft filling {i}.{k}',solid,IVORY
+    for side,label in ((PORT_SIDE,'Port'),(-PORT_SIDE,'Starboard')):
+        outline=panel_outline(side)
+        yield label+' trailboard board',make_trailboard(side),TRAILBOARD_PAINT
+        yield label+' trailboard painted field',make_painted_field(side),PANEL_FIELD
+        yield from traced.region_parts(side,label)
+        for f in LONGHEAD['mount_stations_f']:
+            z=board_fastener_centre(f);r=LONGHEAD['fastener_radius_ft'];inner=side*.14;outer=side*.37
+            bolt=spar_between(boat_point(inner,f,z),boat_point(outer,f,z),r)
+            head=spar_between(boat_point(side*.369,f,z),boat_point(side*.398,f,z),r+.021)
+            yield f'{label} trailboard fixing F{f:.1f}',bolt.fuse(head),IRON
+    yield 'Bowsprit downhaul sheave',make_downhaul_sheave(),IRON
+    yield 'Jib downhaul foredeck cleat',make_downhaul_cleat(),IRON
     yield from make_bow_chains()
+
+
+def downhaul_block_point():
+    f=SPAR['end_f']-.70
+    return boat_point(.24,f,axis_height(f)+.02)
+
+
+def downhaul_cleat_point():
+    f=RIG['downhaul_cleat_f'];x=RIG['downhaul_cleat_port_x_ft']
+    return boat_point(x,f,deck_height(f,x)+.20)
+
+
+def make_downhaul_block():
+    x,y,z=downhaul_block_point();f=25-y
+    frame=block(x,f,z-.17,.18,.38,.34)
+    window=block(x,f,z-.13,.13,.28,.26)
+    frame=frame.cut(window)
+    axle=spar_between((x-.105,y,z),(x+.105,y,z),.020)
+    return frame.fuse(axle,_bowsprit_band(f)).clean()
+
+
+def make_downhaul_sheave():
+    x,y,z=downhaul_block_point()
+    wheel=spar_between((x-.031,y,z),(x+.031,y,z),.12)
+    bore=spar_between((x-.06,y,z),(x+.06,y,z),.0215)
+    groove=cq.Solid.makeTorus(.12,.014,(x,y,z),(1,0,0))
+    return wheel.cut(bore).cut(groove).clean()
+
+
+def make_downhaul_cleat():
+    x,y,z=downhaul_cleat_point();f=25-y
+    base=block(x,f,z-.208,.24,.48,.08)
+    posts=[spar_between(boat_point(x,f+d,z-.15),boat_point(x,f+d,z),.026) for d in (-.12,.12)]
+    horn=spar_between(boat_point(x,f-.34,z),boat_point(x,f+.34,z),.035)
+    return base.fuse(*posts,horn).clean()
+
+
+def downhaul_route(head):
+    c=np.array(downhaul_block_point());a=np.array(head);b=np.array(downhaul_cleat_point());r=.12
+    def angle(p,sign):
+        delta=p[1:]-c[1:];distance=float(np.linalg.norm(delta))
+        return math.atan2(delta[1],delta[0])+sign*math.acos(r/distance)
+    start=angle(a,1);end=angle(b,-1)
+    while end<start:end+=2*math.pi
+    arc=[(float(c[0]),float(c[1]+r*math.cos(t)),float(c[2]+r*math.sin(t))) for t in np.linspace(start,end,18)]
+    return [tuple(a),*arc,tuple(b)]
+
+
+def make_varnished_tip_finish():
+    a=SPAR['end_f']-SPAR['varnished_tip_length_ft'];b=SPAR['end_f']
+    wires=[spar_section(f).circle(radius_at(f)+.0015).val() for f in (a,b)]
+    return cq.Solid.makeLoft(wires,ruled=True).cut(raw_bowsprit()).clean()

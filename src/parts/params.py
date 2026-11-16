@@ -36,16 +36,18 @@ BOOM_AFT_POSITION_FT = legacy_forward(-10.5)
 RIG_HEIGHT_RISE_FT = sheer_band_height(legacy_forward(42.0))
 BOOM_FRONT_HEIGHT_FT = 11.0 + sheer_band_height(MAST_DECK_FORWARD_FT)
 BOOM_AFT_HEIGHT_FT = 12.0 + sheer_band_height(legacy_forward(1.5))
-BOWSPRIT_END_FT = legacy_forward(63.5)
-BOWSPRIT_HEEL_FT = FRAME_SOURCE['bowsprit_heel_ft']  # S04 deck-plan stem-head heel.
-BOWSPRIT_HEEL_RADIUS_FT = .34
-BOWSPRIT_TIP_RADIUS_FT = .12
-BOWSPRIT_TIP_HEIGHT_FT = 10.1 + RIG_HEIGHT_RISE_FT
-HEADRAIL_ROOT_FT = legacy_forward(46.4)
-HEADRAIL_TIP_FT = legacy_forward(62.3)
-TRAILBOARD_ROOT_FT = legacy_forward(48.0)
-TRAILBOARD_TIP_FT = legacy_forward(60.2)
-TRAILBOARD_THICKNESS_FT = .16
+# Full spar and headwork share the new original-drawing registration.
+from .bow_layout import SPAR as BOW_SPAR, HEADWORK as BOW_HEADWORK, LONGHEAD as BOW_LONGHEAD
+BOWSPRIT_END_FT = BOW_SPAR['end_f']
+BOWSPRIT_HEEL_FT = BOW_SPAR['heel_f']
+BOWSPRIT_HEEL_RADIUS_FT = BOW_SPAR['square_depth_ft']/2
+BOWSPRIT_TIP_RADIUS_FT = BOW_SPAR['tip_radius_ft']
+BOWSPRIT_TIP_HEIGHT_FT = BOW_SPAR['heel_z']+(BOWSPRIT_END_FT-BOWSPRIT_HEEL_FT)*BOW_SPAR['slope']
+HEADRAIL_ROOT_FT = BOW_HEADWORK['headrail_root_f']
+HEADRAIL_TIP_FT = BOW_HEADWORK['headrail_tip_f']
+TRAILBOARD_ROOT_FT = BOW_LONGHEAD['root_f']
+TRAILBOARD_TIP_FT = BOW_LONGHEAD['body_tip_f']
+TRAILBOARD_THICKNESS_FT = BOW_LONGHEAD['board_thickness_ft']
 
 IVORY = (.88, .88, .83)
 WOOD = (.57, .38, .20)

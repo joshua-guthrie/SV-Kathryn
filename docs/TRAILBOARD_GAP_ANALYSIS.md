@@ -1,6 +1,20 @@
 # Trailboards: gap analysis and implementation specification
 
-15 November 2026. Status: **review complete; correction specified, not implemented**. Scope: the paired decorated faces, their longhead backing, the eagle-like forward termination, the name field, and their visible relationship to the stem, bowsprit and headrails. Read this report with the [illustrated PDF](trailboard-gap-analysis.pdf). Requirements are also indexed in the [implementation contract](images/trailboard_review/implementation-contract.json).
+15 November 2026. Status: **approved correction implemented**; current verification is recorded in the [implementation report](TRAILBOARD_CORRECTION.md). Scope: the paired decorated faces, their longhead backing, the eagle-like forward termination, the name field, and their visible relationship to the stem, bowsprit and headrails. Read this report with the [illustrated PDF](trailboard-gap-analysis.pdf). Requirements are also indexed in the [implementation contract](images/trailboard_review/implementation-contract.json).
+
+## Implemented correction
+
+The approved work replaces the generic pattern with traced source regions, adds the shaped name enclosure and hooked head, corrects the visible headrail span, and coordinates the lower-band fixings. See the [current implementation and verification](TRAILBOARD_CORRECTION.md) ([PDF](trailboard-correction.pdf)) for all regenerated after views, original-source overlays and acceptance results.
+
+![Current corrected bow profile. These after images are from the completed 1024-part export.](images/trailboard_correction/after-profile.png)
+
+![Current corrected head with source-traced eye, beak, jaw and feather regions.](images/trailboard_correction/after-head.png)
+
+![The original ornament drawing compared with the corrected exported face.](images/trailboard_correction/comparison-drawing.png)
+
+## Original approved analysis: before correction
+
+**The analysis and C figures below describe the preserved 928-part snapshot. Its uses of “current” refer to that reviewed state.** Original measurements and source figures remain intact as the approved specification; use the implementation report for the present model and after measurements.
 
 The current trailboards do not reproduce the ornament shown in the supplied drawings and vessel photographs. The clearest differences are the simplified pointed head, generic repeating vines, missing shaped enclosure around the name, and square aft return. The board has become a bordered plaque decorated with text and leaves. The source shows a coordinated carved composition in which the frame, scrolls, name enclosure and bird-like head form one design.
 

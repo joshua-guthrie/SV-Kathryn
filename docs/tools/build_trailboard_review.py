@@ -343,7 +343,7 @@ def sources():
     (OUT / 'sources.json').write_text(json.dumps(records, indent=2) + '\n')
 
 
-def pdf():
+def pdf(source=None, target=None, footer=None, title=None):
     """Searchable PDF of the Markdown, with full-page figures for legible labels."""
     import matplotlib
     matplotlib.use('Agg')
@@ -353,8 +353,10 @@ def pdf():
     from matplotlib.textpath import TextToPath
     matplotlib.rcParams['pdf.fonttype'] = 42
     matplotlib.rcParams['figure.max_open_warning'] = 0
-    source = ROOT / 'docs/TRAILBOARD_GAP_ANALYSIS.md'
-    target = ROOT / 'docs/trailboard-gap-analysis.pdf'
+    source = Path(source) if source else ROOT / 'docs/TRAILBOARD_GAP_ANALYSIS.md'
+    target = Path(target) if target else ROOT / 'docs/trailboard-gap-analysis.pdf'
+    footer = footer or '15 November 2026 | Review snapshot and correction specification | See document status'
+    title = title or 'Kathryn - trailboard gap analysis and implementation specification'
     pages, page, y = [], None, 0
     metrics = TextToPath()
     def newpage():
@@ -362,8 +364,8 @@ def pdf():
         page = plt.figure(figsize=(8.5, 11), facecolor='white')
         pages.append(page)
         y = 10.06
-        page.text(.065, .96, 'KATHRYN / TRAILBOARD GAP ANALYSIS AND IMPLEMENTATION SPECIFICATION', fontsize=8.2, weight='bold', color=INK)
-        page.text(.065, .032, '15 November 2026 | 928-part as-found export | Proposed correction, not implemented', fontsize=7.7, color='#526473')
+        page.text(.065, .96, 'KATHRYN / TRAILBOARDS / SOURCE EVIDENCE AND MODEL VERIFICATION', fontsize=8.2, weight='bold', color=INK)
+        page.text(.065, .032, footer, fontsize=7.7, color='#526473')
         page.text(.935, .032, str(len(pages)), fontsize=8, ha='right', color='#526473')
     def clean(text):
         text = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', text)
@@ -407,7 +409,8 @@ def pdf():
         if pending:
             paragraph(' '.join(pending))
             pending.clear()
-    for line in source.read_text().splitlines():
+    source_lines = source.read_text().splitlines()
+    for index, line in enumerate(source_lines):
         if line.startswith('!['):
             flush()
             match = re.fullmatch(r'!\[(.*?)\]\((.*?)\)', line)
@@ -428,7 +431,17 @@ def pdf():
         elif line.startswith('#'):
             flush()
             level = len(line) - len(line.lstrip('#'))
-            paragraph(line.lstrip('# '), size={1:20, 2:14, 3:11.5}.get(level, 10.5), bold=True, reserve=.60)
+            following = []
+            for candidate in source_lines[index + 1:]:
+                if not candidate.strip():
+                    if following:
+                        break
+                    continue
+                if candidate.startswith(('#', '![')):
+                    break
+                following.append(candidate.strip())
+            reserve = max(.60, len(wrap(clean(' '.join(following)))) * 10.2 / 72 * 1.38 + .10)
+            paragraph(line.lstrip('# '), size={1:20, 2:14, 3:11.5}.get(level, 10.5), bold=True, reserve=reserve)
         elif not line.strip():
             flush()
         elif line.startswith('- ') or re.match(r'^\d+\. ', line):
@@ -438,7 +451,7 @@ def pdf():
             pending.append(line.strip())
     flush()
     with PdfPages(target) as handle:
-        handle.infodict().update(Title='Kathryn - trailboard gap analysis and implementation specification',
+        handle.infodict().update(Title=title,
                                 Author='Kathryn project review', Subject='Annotated original drawings, photographs, exported CAD, and correction acceptance criteria')
         for fig in pages:
             handle.savefig(fig)

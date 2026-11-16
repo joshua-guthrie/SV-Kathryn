@@ -6,6 +6,7 @@ and are registered as display references because the notes call the hoops/hanks
 demonstration only.
 """
 import math
+import numpy as np
 
 import cadquery as cq
 
@@ -17,7 +18,8 @@ from .params import (
     STERN_REMEDY_SOURCE, IRON, WOOD, HULL_LENGTH_FT,
 )
 from .spars import mast_forward_at, mast_radius_at, _boom_front_forward
-from .bow import bowsprit_height, stem_forward_at
+from .bow import (bowsprit_height, stem_forward_at, tack_point, headstay_point, make_tack_pin, make_downhaul_block, downhaul_route)
+from .bow_layout import RIG,SPAR
 from .hull import deck_height, topside_halfwidth
 from .primitives import spar_between, block
 
@@ -30,11 +32,9 @@ HEAD_F = mast_forward_at(HEAD_Z)
 HEAD = boat_point(0, HEAD_F, HEAD_Z)
 HOUNDS_Z = HEAD_Z - .8
 HOUNDS = boat_point(0, mast_forward_at(HOUNDS_Z), HOUNDS_Z)
-TIP = boat_point(0, BOWSPRIT_END_FT, bowsprit_height(BOWSPRIT_END_FT))
-TIP_UNDER = boat_point(0, BOWSPRIT_END_FT - .12,
-                       bowsprit_height(BOWSPRIT_END_FT) - .13)
-BOWSPRIT_HEEL = boat_point(0, BOWSPRIT_HEEL_FT,
-                           bowsprit_height(BOWSPRIT_HEEL_FT))
+TIP = boat_point(0, SPAR['end_f'], bowsprit_height(SPAR['end_f']))
+TIP_UNDER = boat_point(0, SPAR['end_f']-.12, bowsprit_height(SPAR['end_f'])-.13)
+BOWSPRIT_HEEL = headstay_point()  # Source stem-head eye, distinct from timber after end.
 STEM_Z = WATERLINE_FT + 1.0
 STEM = boat_point(0, stem_forward_at(STEM_Z), STEM_Z)
 BOOM_FRONT = boat_point(0, _boom_front_forward, BOOM_FRONT_HEIGHT_FT)
@@ -74,28 +74,19 @@ MAIN_HEAD = _mast_point_at_distance(MAIN_TACK, MAIN_LUFF_FT)
 _boom_length = math.dist(BOOM_FRONT, BOOM_AFT)
 MAIN_CLEW = tuple(a + (b - a) * MAIN_FOOT_FT / _boom_length
                   for a, b in zip(BOOM_FRONT, BOOM_AFT))
-# The jib foot is carried on a club above the bowsprit. Raising the whole
-# S08 triangle by this amount clears the spar (about 0.5 ft of air above the
-# club) without changing the sail's luff, foot or leech.
-JIB_FOOT_RAISE_FT = .75
-JIB_CLUB_RADIUS_FORE = .11
-JIB_CLUB_RADIUS_AFT = .07
-_JIB_RAISE = (0.0, 0.0, JIB_FOOT_RAISE_FT)
-JIB_TACK = tuple(a + b for a, b in zip(TIP, _JIB_RAISE))
-_JIB_HEAD_BASE = tuple(a + (b - a) * JIB_LUFF_FT / math.dist(TIP, HEAD)
-                       for a, b in zip(TIP, HEAD))
-JIB_HEAD = tuple(a + b for a, b in zip(_JIB_HEAD_BASE, _JIB_RAISE))
-_t = __import__('numpy').array(JIB_TACK)
-_h = __import__('numpy').array(JIB_HEAD)
-_d = float(__import__('numpy').linalg.norm(_h - _t))
-_u = (_h - _t) / _d
-_a = (JIB_FOOT_FT ** 2 - JIB_LEECH_FT ** 2 + _d ** 2) / (2 * _d)
-_half = math.sqrt(max(0.0, JIB_FOOT_FT ** 2 - _a ** 2))
-_base = _t + _u * _a
-_perp = __import__('numpy').array((0.0, -_u[2], _u[1]))
-_perp /= __import__('numpy').linalg.norm(_perp)
-_c1, _c2 = _base + _perp * _half, _base - _perp * _half
-JIB_CLEW = tuple(_c1 if _c1[1] > _c2[1] else _c2)
+# Solve the sail on the physical tack/stay. No whole-triangle translation.
+JIB_CLUB_RADIUS_FORE=RIG['club_fore_radius_ft']
+JIB_CLUB_RADIUS_AFT=RIG['club_aft_radius_ft']
+JIB_TACK=tack_point()
+JIB_FOOT_RAISE_FT=JIB_TACK[2]-TIP[2]  # Measured fitting elevation, not an arbitrary offset.
+_t=np.array(JIB_TACK);_mast=np.array(HEAD)
+JIB_HEAD=tuple(_t+(_mast-_t)*JIB_LUFF_FT/np.linalg.norm(_mast-_t))
+_u=(np.array(JIB_HEAD)-_t)/JIB_LUFF_FT
+_a=(JIB_FOOT_FT**2-JIB_LEECH_FT**2+JIB_LUFF_FT**2)/(2*JIB_LUFF_FT)
+_half=math.sqrt(JIB_FOOT_FT**2-_a**2)
+_perp=np.array((0.,-_u[2],_u[1]))
+_candidates=[_t+_u*_a+sign*_perp*_half for sign in (-1,1)]
+JIB_CLEW=tuple(max(_candidates,key=lambda p:p[1]))
 
 
 def _chain_f(i=0):
@@ -126,6 +117,12 @@ def _pin_rail(side):
 
 def _line(a, b, r=.018):
     return spar_between(tuple(a), tuple(b), r)
+
+
+def _rope_path(points,r):
+    segments=[_line(a,b,r) for a,b in zip(points,points[1:])]
+    nodes=[cq.Solid.makeSphere(r,cq.Vector(*p)) for p in points[1:-1]]
+    return segments[0].fuse(*segments[1:],*nodes).clean()
 
 
 def _boat_y(y):
@@ -159,13 +156,25 @@ def _jib_lazyjack_junction(side):
             mid_y, JIB_LAZYJACK_JUNCTION_Z_FT)
 
 
+def _club_station(t):
+    point=np.array(JIB_TACK)+(np.array(JIB_CLEW)-np.array(JIB_TACK))*t
+    length=math.dist(JIB_TACK,JIB_CLEW)
+    q=(length*t+RIG['club_fore_overhang_ft'])/(length+RIG['club_fore_overhang_ft'])
+    radius=JIB_CLUB_RADIUS_FORE+(JIB_CLUB_RADIUS_AFT-JIB_CLUB_RADIUS_FORE)*q
+    return point,radius
+
+
 def _jib_club_point(t, side):
-    point = [a + (b - a) * t for a, b in zip(JIB_TACK, JIB_CLEW)]
-    radius = (JIB_CLUB_RADIUS_FORE
-              + (JIB_CLUB_RADIUS_AFT - JIB_CLUB_RADIUS_FORE) * t)
-    point[0] = side * (radius + .10)
-    point[2] += radius + .02
+    point,radius=_club_station(t)
+    point[0]=side*(radius+.013)  # Centreline of the actual rope strop.
     return tuple(point)
+
+
+def _jib_club_strop(t):
+    point,radius=_club_station(t)
+    direction=np.array(JIB_CLEW)-np.array(JIB_TACK)
+    direction/=np.linalg.norm(direction)
+    return cq.Solid.makeTorus(radius+.013,.012,tuple(point),tuple(direction))
 
 
 def _main_lazyjack_lines():
@@ -204,7 +213,6 @@ def _jib_lazyjack_lines():
 
 
 def _standing_parts():
-    yield 'Bobstay', _line(TIP_UNDER, STEM, .024), STAINLESS
     yield 'Head stay', _line(HEAD, BOWSPRIT_HEEL, .024), STAINLESS
     yield 'Jib stay', _line(HEAD, JIB_TACK, .022), STAINLESS
     for side, label in ((1, 'Port'), (-1, 'Starboard')):
@@ -234,11 +242,13 @@ def _running_parts():
     yield 'Main sheet', _line(boat_point(0, tf, boom_sheet[2]), traveller, .017), ROPE
     yield 'Jib sheet to hounds', _line(JIB_CLEW, HOUNDS, .015), ROPE
     yield 'Jib sheet to pin rail', _line(HOUNDS, _pin_rail(1), .015), ROPE
-    yield 'Jib downhaul', _line(JIB_HEAD, TIP, .013), ROPE
+    yield 'Jib downhaul', _rope_path(downhaul_route(JIB_HEAD),.013), ROPE
     yield 'Spectacle/jack iron', _line(HEAD, _pin_rail(-1), .015), ROPE
 
 
 def _fitting_parts():
+    for i,t in enumerate((1/3,2/3),1):
+        yield f'Jib club lazyjack strop {i}',_jib_club_strop(t),ROPE
     # Hounds band and masthead cap
     hz = HOUNDS_Z
     hf = mast_forward_at(hz)
@@ -265,9 +275,7 @@ def _fitting_parts():
         py = 25 - pf
         yield f'{label} pin rail', block(px, pf, deck_height(pf, px) + .02,
                                         .12, 1.20, .10), WOOD
-    yield 'Bowsprit cheek block', block(.18, BOWSPRIT_END_FT - .55,
-                                        bowsprit_height(BOWSPRIT_END_FT - .55),
-                                        .18, .30, .20), IRON
+    yield 'Bowsprit cheek block', make_downhaul_block(), IRON
     yield 'Boom reefing cheek block', block(.20, _boom_front_forward + 1.0,
                                             BOOM_FRONT_HEIGHT_FT + .18,
                                             .16, .28, .18), IRON
@@ -299,9 +307,18 @@ def _triangle(a, b, c, thickness=.018):
     return cq.Solid.extrudeLinear(wire, [], normal.multiply(thickness))
 
 
+def make_jib_club():
+    t=np.array(JIB_TACK);c=np.array(JIB_CLEW);u=(c-t)/np.linalg.norm(c-t)
+    start=tuple(t-u*RIG['club_fore_overhang_ft'])
+    raw=spar_between(start,tuple(c),JIB_CLUB_RADIUS_FORE,JIB_CLUB_RADIUS_AFT)
+    # Transverse pivot passage aligns with the retained tack pin.
+    x,y,z=JIB_TACK
+    bore=spar_between((-.3,y,z),(.3,y,z),RIG['tack_pin_radius_ft']+.0015)
+    return raw.cut(bore).clean()
+
+
 def make_sail_spars():
-    yield 'Jib club', spar_between(JIB_TACK, JIB_CLEW,
-                                   JIB_CLUB_RADIUS_FORE, JIB_CLUB_RADIUS_AFT), WOOD
+    yield 'Jib club', make_jib_club(), WOOD
 
 
 def make_sail_parts():
@@ -314,4 +331,4 @@ def make_sail_parts():
     jib_tack = JIB_TACK
     jib_clew = JIB_CLEW
     yield 'Main sail (S08 demonstration)', _triangle(main_tack, main_head, main_clew), SAIL, 'Sails'
-    yield 'Jib sail (S08 demonstration)', _triangle(jib_tack, jib_head, jib_clew), SAIL, 'Sails'
+    yield 'Jib sail (S08 demonstration)', max(_triangle(jib_tack, jib_head, jib_clew).cut(make_jib_club()).Solids(),key=lambda s:s.Volume()), SAIL, 'Sails'
