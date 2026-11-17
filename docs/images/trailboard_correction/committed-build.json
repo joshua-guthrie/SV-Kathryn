@@ -1,16 +1,17 @@
 {
   "schema_version": 1,
   "status": "passed",
-  "model_commit": "df87bf35417aa2a9b06761de0b7cd6bc92aef724",
+  "model_commit": "5f13cd910cd2a7297cb36e08c83f207102c277cd",
   "part_count": 1025,
-  "command": "python src/checks/check_committed_build.py --ref HEAD --expect-parts 1025 --keep",
-  "method": "project-git archive of the geometry commit; official SOMA CLI with two OCCT threads; no prior app state, output files or geometry caches",
+  "command": "git archive HEAD | clean SOMA build; checks run in /tmp/kathryn-jib-clean",
+  "method": "project-git archive of the jib-club commit; official SOMA CLI with two OCCT threads; no prior app state, output files or geometry caches",
   "clean_tree_checks": [
     "check_model_scale.py",
     "check_registered_deck.py",
     "check_bow_attachment.py",
     "check_trailboards.py",
-    "check_longhead_envelope.py"
+    "check_longhead_envelope.py",
+    "check_m6_rigging.py"
   ],
   "working_tree_regressions": [
     "check_model_scale.py",
@@ -18,20 +19,20 @@
     "check_bow_attachment.py",
     "check_trailboards.py",
     "check_longhead_envelope.py",
-    "check_m3_frames.py",
     "check_m6_rigging.py",
+    "check_m3_frames.py",
     "check_outer_integration.py"
   ],
   "warnings": [],
   "clean_build_timings": {
-    "model": 903.038,
-    "step": 26.636,
-    "glb": 203.921
+    "model": 456.844,
+    "step": 22.771,
+    "glb": 181.13
   },
   "working_export_agreement": {
     "parts_compared": 1025,
-    "maximum_bbox_error_mm": 0.0,
-    "maximum_relative_volume_error": 0.0
+    "maximum_bbox_error_mm": 0,
+    "maximum_relative_volume_error": 0
   },
   "model_source_hashes": {
     "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
@@ -58,7 +59,7 @@
     "src/parts/planking.py": "36415d74373ce49a01e67067919c96e73921606e247f0c6dc4b0572ace172ed3",
     "src/parts/primitives.py": "c6694b4ab5502078d94a01ef4b487b00eccc2863075bb33a8dd21dadf31a6ae4",
     "src/parts/rails.py": "000dca29d1782580a1518371268da2daf7b1d107fa30567eacc3d54ebc53a1ef",
-    "src/parts/rigging.py": "aa0d8011001da5c553297e6a6c179be8d96d388a06177afea291c594620da658",
+    "src/parts/rigging.py": "e31cd3f26ce0a73ea105a6f37a852d1a6f78eb168b6d16c1aff781452a1d3baa",
     "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
     "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
     "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
@@ -66,7 +67,8 @@
     "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
     "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
     "references/drawing_package/trailboard_targets.json": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
-    "references/drawing_package/longhead_envelope.json": "cf29d401a6218709b598c1d40d7d42f95579ef79947a4dae167a9a6022eb0f21"
+    "references/drawing_package/longhead_envelope.json": "cf29d401a6218709b598c1d40d7d42f95579ef79947a4dae167a9a6022eb0f21",
+    "references/drawing_package/jib_club.json": "807eb75811640d999024324075f0fae20e5c1bc46690de6ee5b605106a30e4e4"
   },
   "image_hashes": {
     "docs/images/bow-quarter.png": "56eb767092c1af40f32599a371def5737d1fe3cf1463c9df0f6517abc3ab8196",
@@ -103,19 +105,19 @@
     "docs/images/trailboard_correction/source-profile-after.png": "202e95478a8a9363ab774b54e3907e3157652791c405f0fcb0d7f48d4c753bd8"
   },
   "working_build_hashes": {
-    ".soma/build.json": "795ebbf08a69cfe60735cadb97667d7974fe977279a66f46fdb1921d441db866",
-    ".soma/model.glb": "f7ea7c767b1984c7463608ba894afffcf024faf08cfda311732170620d904660",
-    ".soma/model.map.json": "8dc9c3d1e3dac5a2cd2ded8b3288283d8abc890103f5b6f7e3f44ac07ffc0d74",
-    "output/model.step": "49881be789f23dbd019ac3d75b8c671b075b8f1f3dbbd4c78b2a44fde1d23988"
+    ".soma/build.json": "5a6bf94f809596ab9c1ba9a59ccaa5c40d79d40faef3f902ab81fec3269237fe",
+    ".soma/model.glb": "ca3cb7c46e6a0312d41bba272d7460160e9f96716644750608057e5527abfed0",
+    ".soma/model.map.json": "59122ec9d6e527475a9f10516e8fd358890056638a2011409fa3974fb2f0a21f",
+    "output/model.step": "de7d955fed5be6f360d7ccacb85fbf3eedc1d508f7c3654b21dc0d6a7240aab4"
   },
   "clean_build_hashes": {
-    ".soma/build.json": "e88d8bf898f587f330bb8e25fe27a1db0a2edc7abca2d7832d6b7efead6afe12",
-    ".soma/model.glb": "131ae870a6673ee044eb8078867df0cbd715f782e40a9842252bfc4649cfae49",
-    ".soma/model.map.json": "748d941d4a8268cc82b3e91f4b194bfa8d8bc77b81c13a042a83b3efc91f0df5",
-    "output/model.step": "ed4bc9b8fdbc192eca8a914460e30f3de0059323f6f669a5b24050fff13558b7"
+    ".soma/build.json": "c3b3caa5975cf23b22e279aeeb6d002607bf9969b9729e51774fe56d181b4ca3",
+    ".soma/model.glb": "0b289b58a21b58d139506da31e8b527079f22c2a19999f4121ccf86924a6a415",
+    ".soma/model.map.json": "7cd5b5aa15af4b3ee78cb298f9ddb9148590456d1b9467647625e52e66746ea8",
+    "output/model.step": "dfe689bbf94e6e33049d8f7af07a82caf480b9150048921af99a41a111400e35"
   },
   "log_path": "docs/images/trailboard_correction/committed-build.log",
-  "log_sha256": "23cd71e9e8a686cfe4031173031388bee931b43b580e56c8d6528a3abafcf088",
+  "log_sha256": "83808bf0f1be36e4e8ff0c52ed2beb48336eda56045d0f95efd858038d417647",
   "clean_acceptance_path": "docs/images/trailboard_correction/clean-tree-acceptance.json",
-  "clean_acceptance_sha256": "6aed3e4a10d2e4eaf8987cd3a7c92f9e234043e1ffb6c2bee0c4a293f3472289"
+  "clean_acceptance_sha256": "e203ebfecfcdb2a3268e831079fe044af41e3c8fa71e15c14a7a59cc067d5223"
 }

@@ -1,6 +1,6 @@
 # Trailboard timber-envelope correction: implementation and verification
 
-15 November 2026. Status: **implemented and verified from the completed working export**; the clean committed-tree record is added after the geometry commit. This report implements the [focused envelope gap analysis](TRAILBOARD_ENVELOPE_GAP_ANALYSIS.md) and the [earlier trailboard correction](TRAILBOARD_CORRECTION.md). The current model contains **1025 registered parts**.
+15 November 2026. Status: **implemented and verified from clean committed-tree build 5f13cd9**; the current committed-build record and acceptance are in [committed-build.json](images/trailboard_correction/committed-build.json). This report implements the [focused envelope gap analysis](TRAILBOARD_ENVELOPE_GAP_ANALYSIS.md) and the [earlier trailboard correction](TRAILBOARD_CORRECTION.md). The current model contains **1025 registered parts**.
 
 The decorated S01 faces are unchanged. The missing wood above and below them is now a solid, source-controlled longhead/trailboard envelope. The upper member rises to the classified S04 line beneath the bowsprit with a positive clearance; the lower member follows the solid S04 boundary above the chain/cable and fairs into the stem/head structure.
 

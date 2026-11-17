@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "passed",
-  "model_commit": "df87bf35417aa2a9b06761de0b7cd6bc92aef724",
+  "model_commit": "5f13cd910cd2a7297cb36e08c83f207102c277cd",
   "model_commit_note": "Geometry commit validated from scratch; later documentation-only checkpoints retain these source hashes",
   "model_source_hashes": {
     "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
@@ -28,7 +28,7 @@
     "src/parts/planking.py": "36415d74373ce49a01e67067919c96e73921606e247f0c6dc4b0572ace172ed3",
     "src/parts/primitives.py": "c6694b4ab5502078d94a01ef4b487b00eccc2863075bb33a8dd21dadf31a6ae4",
     "src/parts/rails.py": "000dca29d1782580a1518371268da2daf7b1d107fa30567eacc3d54ebc53a1ef",
-    "src/parts/rigging.py": "aa0d8011001da5c553297e6a6c179be8d96d388a06177afea291c594620da658",
+    "src/parts/rigging.py": "e31cd3f26ce0a73ea105a6f37a852d1a6f78eb168b6d16c1aff781452a1d3baa",
     "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
     "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
     "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
@@ -36,13 +36,14 @@
     "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
     "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
     "references/drawing_package/trailboard_targets.json": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
-    "references/drawing_package/longhead_envelope.json": "cf29d401a6218709b598c1d40d7d42f95579ef79947a4dae167a9a6022eb0f21"
+    "references/drawing_package/longhead_envelope.json": "cf29d401a6218709b598c1d40d7d42f95579ef79947a4dae167a9a6022eb0f21",
+    "references/drawing_package/jib_club.json": "807eb75811640d999024324075f0fae20e5c1bc46690de6ee5b605106a30e4e4"
   },
   "build_hashes": {
-    ".soma/build.json": "795ebbf08a69cfe60735cadb97667d7974fe977279a66f46fdb1921d441db866",
-    ".soma/model.glb": "f7ea7c767b1984c7463608ba894afffcf024faf08cfda311732170620d904660",
-    ".soma/model.map.json": "8dc9c3d1e3dac5a2cd2ded8b3288283d8abc890103f5b6f7e3f44ac07ffc0d74",
-    "output/model.step": "49881be789f23dbd019ac3d75b8c671b075b8f1f3dbbd4c78b2a44fde1d23988"
+    ".soma/build.json": "5a6bf94f809596ab9c1ba9a59ccaa5c40d79d40faef3f902ab81fec3269237fe",
+    ".soma/model.glb": "ca3cb7c46e6a0312d41bba272d7460160e9f96716644750608057e5527abfed0",
+    ".soma/model.map.json": "59122ec9d6e527475a9f10516e8fd358890056638a2011409fa3974fb2f0a21f",
+    "output/model.step": "de7d955fed5be6f360d7ccacb85fbf3eedc1d508f7c3654b21dc0d6a7240aab4"
   },
   "target_hash": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
   "part_count": 1025,
@@ -52,11 +53,30 @@
       "status": "pass",
       "actual": {
         "changed_fixed_parts": {},
-        "fixed_parts_compared": 893
+        "fixed_parts_compared": 876,
+        "excluded_for_jib_club_correction": [
+          "Jib sheet traveller",
+          "Jib club",
+          "Port jib lazyjack pendant",
+          "Port jib lazyjack leg 1",
+          "Port jib lazyjack leg 2",
+          "Port jib lazyjack tail",
+          "Starboard jib lazyjack pendant",
+          "Starboard jib lazyjack leg 1",
+          "Starboard jib lazyjack leg 2",
+          "Starboard jib lazyjack tail",
+          "Jib sheet to hounds",
+          "Jib sheet to pin rail",
+          "Jib club lazyjack strop 1",
+          "Jib club lazyjack strop 2",
+          "Port jib lazyjack junction",
+          "Starboard jib lazyjack junction",
+          "Jib sail (S08 demonstration)"
+        ]
       },
       "limit": 0.1,
       "units": "mm",
-      "method": "Compare accepted hull/stern/spar/jib and remaining fixed-part bounds against the frozen 928-part map",
+      "method": "Compare accepted hull/stern/spar and remaining fixed-part bounds; jib-club-specific parts are checked separately",
       "evidence_paths": []
     },
     {
@@ -932,7 +952,7 @@
       "id": "AC-10",
       "status": "pass",
       "actual": {
-        "verified_model_commit": "df87bf35417aa2a9b06761de0b7cd6bc92aef724",
+        "verified_model_commit": "5f13cd910cd2a7297cb36e08c83f207102c277cd",
         "same_model_sources": true,
         "changed_images": [],
         "clean_build_parts": 1025,

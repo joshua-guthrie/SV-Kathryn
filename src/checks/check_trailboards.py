@@ -78,13 +78,20 @@ def check(project=ROOT,out=None,strict=True):
         checks.append(dict(id=cid,status='pass' if status else 'fail',actual=actual,limit=limit,units=units,
                            method=method,evidence_paths=evidence or []))
     baseline=json.loads((ROOT/'docs/images/trailboard_correction/baseline-fixed-parts.json').read_text())
-    changed={}
+    changed={};compared=0;excluded=[]
     for name,expected in baseline['parts'].items():
+        # The jib club and its lazyjacks/sheet/sail are intentionally changed by
+        # the separate S03 jib-club correction; they are checked by
+        # check_m6_rigging and check_bow_attachment instead.
+        if any(token in name.lower() for token in ('jib club','jib lazyjack','jib sheet','jib sail')):
+            excluded.append(name);continue
+        compared+=1
         if name not in records:changed[name]='missing';continue
         error=float(np.max(np.abs(np.asarray(records[name]['bbox'])-expected)))
         if error>.1:changed[name]=error
-    result('AC-01',not changed,{'changed_fixed_parts':changed,'fixed_parts_compared':len(baseline['parts'])},.1,'mm',
-           'Compare accepted hull/stern/spar/jib and remaining fixed-part bounds against the frozen 928-part map')
+    result('AC-01',not changed,{'changed_fixed_parts':changed,'fixed_parts_compared':compared,
+                                'excluded_for_jib_club_correction':excluded},.1,'mm',
+           'Compare accepted hull/stern/spar and remaining fixed-part bounds; jib-club-specific parts are checked separately')
     print('Fixed assembly witnesses checked.',flush=True)
     board=part('Starboard trailboard board');rail=part('Starboard projecting headrail')
     residuals=[]

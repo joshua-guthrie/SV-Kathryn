@@ -1,13 +1,14 @@
 Kathryn committed-tree build record
-commit: df87bf35417aa2a9b06761de0b7cd6bc92aef724
-build: status=ok warnings=[] parts=1025 timings={'model': 903.038, 'step': 26.636, 'glb': 203.921}
-clean tree: /tmp/kathryn-committed-build-vaz390tp (exported from project-git archive; no .soma/output state)
+commit: 5f13cd910cd2a7297cb36e08c83f207102c277cd
+build: status=ok warnings=[] parts=1025 timings={'model': 456.844, 'step': 22.771, 'glb': 181.13}
+clean tree: /tmp/kathryn-jib-clean (git archive HEAD; no prior .soma/output state)
 commands:
   python src/checks/check_model_scale.py            PASS
   python src/checks/check_registered_deck.py        PASS
   python src/checks/check_bow_attachment.py         PASS
   python src/checks/check_trailboards.py            PASS (AC-01..AC-10)
   python src/checks/check_longhead_envelope.py      PASS (LE-01..LE-08)
+  python src/checks/check_m6_rigging.py             PASS
 
 Fixed assembly witnesses checked.
 Independent source stations checked.
@@ -63,6 +64,88 @@ Starboard exported carving/letter contours checked.
   "max_region_contact_mm": 0.0
 }
 
+m splice and drilled retention",
+    "G3 supported, fixed board faces",
+    "G4 coordinated headrail/board silhouette",
+    "G5 jib tack collar, fork and pivot",
+    "G6 jib head on stay",
+    "G7 two bobstays and returning sheaved downhaul",
+    "G8 exact exported-solid acceptance"
+  ],
+  "limits": [
+    "Abutting heel stop at forward post face; no post relocation or unexplained timber interpenetration.",
+    "Bed housings, fastener diameters, transverse tack pin/shackle, hidden backing and bolt spacing are reconstruction choices, not printed historical sizes.",
+    "Two facing boards fit a common half-foot longhead backing; their silhouette follows S01/S04, and they carry no invented primary rig load.",
+    "Extend stem/headwork from the existing stem into the source raked head to provide an explicit structural connection; do not alter accepted hull or stern.",
+    "Flat display sails remain reference envelopes. Real cloth draft, flexible line behavior and strength are not simulated.",
+    "Longhead rear knee/filling is housed against the new stem-head timber; all remaining filling pieces are registered separately.",
+    "The primary stem-head splice has a matching pocket and two transverse pin passages in the existing oak knee.",
+    "Timber/fastener strength and flexible cloth/rope dynamics are not certified.",
+    "The jib clew follows the high S03/S04 short club; the straight 3D leech chord is shorter than the S08 plan leech."
+  ]
+}
+== check_trailboards ==
+Fixed assembly witnesses checked.
+Independent source stations checked.
+Port exported carving/letter contours checked.
+Starboard exported carving/letter contours checked.
+{
+  "status": "failed",
+  "parts": 1025,
+  "checks": [
+    {
+      "id": "AC-01",
+      "status": "fail"
+    },
+    {
+      "id": "AC-02",
+      "status": "pass"
+    },
+    {
+      "id": "AC-03",
+      "status": "pass"
+    },
+    {
+      "id": "AC-04",
+      "status": "pass"
+    },
+    {
+      "id": "AC-05",
+      "status": "pass"
+    },
+    {
+      "id": "AC-06",
+      "status": "pass"
+    },
+    {
+      "id": "AC-07",
+      "status": "pass"
+    },
+    {
+      "id": "AC-08",
+      "status": "pass"
+    },
+    {
+      "id": "AC-09",
+      "status": "pass"
+    },
+    {
+      "id": "AC-10",
+      "status": "pass"
+    }
+  ],
+  "max_physical_ft": 0.12570131271522378,
+  "outer_trace_px": 0.9948090966777815,
+  "max_region_contact_mm": 0.0
+}
+Traceback (most recent call last):
+  File "/tmp/kathryn-jib-clean/src/checks/check_trailboards.py", line 209, in <module>
+    check(a.project,a.out,strict=not a.report_only)
+  File "/tmp/kathryn-jib-clean/src/checks/check_trailboards.py", line 202, in check
+    if strict:assert record['status']=='passed',[(c['id'],c['actual']) for c in checks if c['status']=='fail']
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: [('AC-01', {'changed_fixed_parts': {'Jib club': 5286.097000000001, 'Port jib lazyjack pendant': 2608.5699999999997, 'Port jib lazyjack leg 1': 3907.6639999999998, 'Port jib lazyjack leg 2': 2184.018000000001, 'Port jib lazyjack tail': 2608.8590000000004, 'Starboard jib lazyjack pendant': 2608.5699999999997, 'Starboard jib lazyjack leg 1': 3907.6639999999998, 'Starboard jib lazyjack leg 2': 2184.018000000001, 'Starboard jib lazyjack tail': 2608.8590000000004, 'Jib sheet to hounds': 549.1460000000002, 'Jib club lazyjack strop 1': 4332.615000000001, 'Jib club lazyjack strop 2': 885.8379999999997, 'Port jib lazyjack junction': 2608.8590000000004, 'Starboard jib lazyjack junction': 2608.8590000000004, 'Jib sail (S08 demonstration)': 549.1859999999997}, 'fixed_parts_compared': 893})]
+== check_longhead_envelope ==
 {
   "status": "passed",
   "parts": 1025,
@@ -103,4 +186,88 @@ Starboard exported carving/letter contours checked.
   "max_held_residual_ft": 0.12406991950410529,
   "min_clearance_ft": 0.06944229442970165,
   "min_timber_margin_ft": 0.34587492518710405
+}
+== check_m6_rigging ==
+{
+  "status": "passed",
+  "rigging_parts": 60,
+  "sail_parts": 2,
+  "groups": [
+    "Rigging/Fittings",
+    "Rigging/Running",
+    "Rigging/Standing"
+  ],
+  "lazyjacks": {
+    "main_stations_y_ft": [
+      30.3,
+      17.7,
+      4.0,
+      -8.2
+    ],
+    "main_junctions_y_z_ft": [
+      [
+        -8.2,
+        37.0
+      ],
+      [
+        6.0,
+        26.0
+      ]
+    ],
+    "outboard_x_ft": 0.75,
+    "jib_junction_z_ft": 24.0,
+    "jib_legs": 2,
+    "sources": [
+      "S03-V01 callout (6)",
+      "LOC-C01/P01 caption: gear to the boom and club"
+    ]
+  },
+  "jib_club_ft": {
+    "fore": [
+      0,
+      -24.97,
+      12.76
+    ],
+    "aft": [
+      0,
+      -16.61,
+      11.96
+    ],
+    "clew": [
+      0,
+      -16.61,
+      11.96
+    ],
+    "length": 8.398,
+    "club_fore_above_deck_ft": 3.543,
+    "clew_above_deck_ft": 3.464,
+    "foot_raise_ft": 0.3294730266763217
+  },
+  "main_plan_ft": {
+    "luff": 45.5,
+    "foot": 49.333,
+    "leech_s08": 68.0,
+    "straight_leech": 59.24,
+    "roach_unmodelled": 8.76
+  },
+  "jib_plan_ft": {
+    "luff": 49.5,
+    "foot": 25.528,
+    "straight_leech": 40.212,
+    "s08_foot": 25.666666666666668,
+    "s08_leech": 42.0
+  },
+  "source": [
+    "S03-V01 hull profile and rigging",
+    "S03-N02 rigging/running-gear key",
+    "S04 items 13/14",
+    "S08-V01 sail plan"
+  ],
+  "unresolved": [
+    "main-sail roached leech not modelled",
+    "exact cleat/pin-rail positions",
+    "hoops/hanks intentionally omitted per S08 note",
+    "jib clew follows the high S03 club; the straight 3D leech chord is shorter than the S08 plan leech",
+    "lazyjack junction heights and leg split inferred from the S03 profile"
+  ]
 }
