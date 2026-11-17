@@ -1,7 +1,7 @@
 {
   "schema_version": 1,
   "status": "passed",
-  "model_commit": "5f13cd910cd2a7297cb36e08c83f207102c277cd",
+  "model_commit": "7580bcb48c951cfa9277773b2816d033dfe8ab37",
   "model_commit_note": "Geometry commit validated from scratch; later documentation-only checkpoints retain these source hashes",
   "model_source_hashes": {
     "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
@@ -9,7 +9,7 @@
     "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
     "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
     "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
-    "src/parts/bow.py": "e40ee30fee6b0d5ff95e9b699db9ddfa368e7774c1dab39e5ffe154ccf93e5f1",
+    "src/parts/bow.py": "190a820adc8a305a40bc5be57b38032e6b09d7033743ab1dcdc307da54401eb1",
     "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
     "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
     "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
@@ -36,17 +36,17 @@
     "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
     "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
     "references/drawing_package/trailboard_targets.json": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
-    "references/drawing_package/longhead_envelope.json": "cf29d401a6218709b598c1d40d7d42f95579ef79947a4dae167a9a6022eb0f21",
+    "references/drawing_package/longhead_envelope.json": "4a9df8a0b90c1f726adfb43e2b85970e40aeba5bf1189c2782306dbc767f51d8",
     "references/drawing_package/jib_club.json": "807eb75811640d999024324075f0fae20e5c1bc46690de6ee5b605106a30e4e4"
   },
   "build_hashes": {
-    ".soma/build.json": "c3b3caa5975cf23b22e279aeeb6d002607bf9969b9729e51774fe56d181b4ca3",
-    ".soma/model.glb": "0b289b58a21b58d139506da31e8b527079f22c2a19999f4121ccf86924a6a415",
-    ".soma/model.map.json": "7cd5b5aa15af4b3ee78cb298f9ddb9148590456d1b9467647625e52e66746ea8",
-    "output/model.step": "dfe689bbf94e6e33049d8f7af07a82caf480b9150048921af99a41a111400e35"
+    ".soma/build.json": "964c334050c35aa87515113e72acd6593d367b8873ca1bbf4b268dc9344dcad8",
+    ".soma/model.glb": "0c410ab987c436407d6476f5958948d150e174910c16189a27ee51ea5c4e985a",
+    ".soma/model.map.json": "87e63e44190dd5a4ff4a3de861585528ec5d611b9cc37e6765d8fa8c0846cee8",
+    "output/model.step": "8f3109cf3b46a9420c1bd54536a56713609d7977ad654be46ecd78d4e4ca5f44"
   },
   "target_hash": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
-  "part_count": 1025,
+  "part_count": 1026,
   "checks": [
     {
       "id": "AC-01",
@@ -952,10 +952,10 @@
       "id": "AC-10",
       "status": "pass",
       "actual": {
-        "verified_model_commit": "5f13cd910cd2a7297cb36e08c83f207102c277cd",
+        "verified_model_commit": "7580bcb48c951cfa9277773b2816d033dfe8ab37",
         "same_model_sources": true,
         "changed_images": [],
-        "clean_build_parts": 1025,
+        "clean_build_parts": 1026,
         "proof": "docs/images/trailboard_correction/committed-build.json"
       },
       "limit": "Same model sources; fresh committed-tree build and checked documentation images",

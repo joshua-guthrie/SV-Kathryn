@@ -1,10 +1,10 @@
 {
   "schema_version": 1,
   "status": "passed",
-  "model_commit": "5f13cd910cd2a7297cb36e08c83f207102c277cd",
-  "part_count": 1025,
-  "command": "git archive HEAD | clean SOMA build; checks run in /tmp/kathryn-jib-clean",
-  "method": "project-git archive of the jib-club commit; official SOMA CLI with two OCCT threads; no prior app state, output files or geometry caches",
+  "model_commit": "7580bcb48c951cfa9277773b2816d033dfe8ab37",
+  "part_count": 1026,
+  "command": "git archive HEAD | clean SOMA build; checks run in /tmp/kathryn-fair-clean",
+  "method": "project-git archive of the lower-fairing commit; official SOMA CLI with two OCCT threads; no prior app state, output files or geometry caches",
   "clean_tree_checks": [
     "check_model_scale.py",
     "check_registered_deck.py",
@@ -25,12 +25,12 @@
   ],
   "warnings": [],
   "clean_build_timings": {
-    "model": 456.844,
-    "step": 22.771,
-    "glb": 181.13
+    "model": 507.929,
+    "step": 23.01,
+    "glb": 189.798
   },
   "working_export_agreement": {
-    "parts_compared": 1025,
+    "parts_compared": 1026,
     "maximum_bbox_error_mm": 0,
     "maximum_relative_volume_error": 0
   },
@@ -40,7 +40,7 @@
     "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
     "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
     "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
-    "src/parts/bow.py": "e40ee30fee6b0d5ff95e9b699db9ddfa368e7774c1dab39e5ffe154ccf93e5f1",
+    "src/parts/bow.py": "190a820adc8a305a40bc5be57b38032e6b09d7033743ab1dcdc307da54401eb1",
     "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
     "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
     "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
@@ -67,7 +67,7 @@
     "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
     "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
     "references/drawing_package/trailboard_targets.json": "a6f0504d3dcc6454d513402499d123c686de0d9b8cb707e3b01a5d4f31ec53ad",
-    "references/drawing_package/longhead_envelope.json": "cf29d401a6218709b598c1d40d7d42f95579ef79947a4dae167a9a6022eb0f21",
+    "references/drawing_package/longhead_envelope.json": "4a9df8a0b90c1f726adfb43e2b85970e40aeba5bf1189c2782306dbc767f51d8",
     "references/drawing_package/jib_club.json": "807eb75811640d999024324075f0fae20e5c1bc46690de6ee5b605106a30e4e4"
   },
   "image_hashes": {
@@ -105,19 +105,19 @@
     "docs/images/trailboard_correction/source-profile-after.png": "202e95478a8a9363ab774b54e3907e3157652791c405f0fcb0d7f48d4c753bd8"
   },
   "working_build_hashes": {
-    ".soma/build.json": "5a6bf94f809596ab9c1ba9a59ccaa5c40d79d40faef3f902ab81fec3269237fe",
-    ".soma/model.glb": "ca3cb7c46e6a0312d41bba272d7460160e9f96716644750608057e5527abfed0",
-    ".soma/model.map.json": "59122ec9d6e527475a9f10516e8fd358890056638a2011409fa3974fb2f0a21f",
-    "output/model.step": "de7d955fed5be6f360d7ccacb85fbf3eedc1d508f7c3654b21dc0d6a7240aab4"
+    ".soma/build.json": "37eb9bbfcb4f4cb60f76655f07fe371dbf4892180ed7cde152fa4ab49db9a458",
+    ".soma/model.glb": "7d16cc23723c754d05954b52c1470190df112052c45e1eb4d5d9da39226f4f47",
+    ".soma/model.map.json": "cce88026c574ce90dc919108a3d7636f38478f16eeda7a76fe547e6f0d5d38e6",
+    "output/model.step": "5cf12492e9833fa4acd96ffa02dc2995da21d4ff98383b2b912b7f36429bfc56"
   },
   "clean_build_hashes": {
-    ".soma/build.json": "c3b3caa5975cf23b22e279aeeb6d002607bf9969b9729e51774fe56d181b4ca3",
-    ".soma/model.glb": "0b289b58a21b58d139506da31e8b527079f22c2a19999f4121ccf86924a6a415",
-    ".soma/model.map.json": "7cd5b5aa15af4b3ee78cb298f9ddb9148590456d1b9467647625e52e66746ea8",
-    "output/model.step": "dfe689bbf94e6e33049d8f7af07a82caf480b9150048921af99a41a111400e35"
+    ".soma/build.json": "964c334050c35aa87515113e72acd6593d367b8873ca1bbf4b268dc9344dcad8",
+    ".soma/model.glb": "0c410ab987c436407d6476f5958948d150e174910c16189a27ee51ea5c4e985a",
+    ".soma/model.map.json": "87e63e44190dd5a4ff4a3de861585528ec5d611b9cc37e6765d8fa8c0846cee8",
+    "output/model.step": "8f3109cf3b46a9420c1bd54536a56713609d7977ad654be46ecd78d4e4ca5f44"
   },
   "log_path": "docs/images/trailboard_correction/committed-build.log",
-  "log_sha256": "83808bf0f1be36e4e8ff0c52ed2beb48336eda56045d0f95efd858038d417647",
+  "log_sha256": "3217889de4e35e52e7c8781c55052563d9cf22de702497aa66ce5e3cb9cbc3da",
   "clean_acceptance_path": "docs/images/trailboard_correction/clean-tree-acceptance.json",
-  "clean_acceptance_sha256": "e203ebfecfcdb2a3268e831079fe044af41e3c8fa71e15c14a7a59cc067d5223"
+  "clean_acceptance_sha256": "1007098ed0f3f7b7e1b3e4a34000284a993ab136865ef98c6a9a5715b56f816c"
 }

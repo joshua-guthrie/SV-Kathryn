@@ -1,70 +1,40 @@
 Kathryn committed-tree build record
-commit: 5f13cd910cd2a7297cb36e08c83f207102c277cd
-build: status=ok warnings=[] parts=1025 timings={'model': 456.844, 'step': 22.771, 'glb': 181.13}
-clean tree: /tmp/kathryn-jib-clean (git archive HEAD; no prior .soma/output state)
+commit: 7580bcb48c951cfa9277773b2816d033dfe8ab37
+build: status=ok warnings=[] parts=1026 timings={'model': 507.929, 'step': 23.01, 'glb': 189.798}
+clean tree: /tmp/kathryn-fair-clean (git archive HEAD; no prior .soma/output state)
 commands:
   python src/checks/check_model_scale.py            PASS
   python src/checks/check_registered_deck.py        PASS
   python src/checks/check_bow_attachment.py         PASS
   python src/checks/check_trailboards.py            PASS (AC-01..AC-10)
-  python src/checks/check_longhead_envelope.py      PASS (LE-01..LE-08)
+  python src/checks/check_longhead_envelope.py      PASS (LE-01..LE-09)
   python src/checks/check_m6_rigging.py             PASS
 
-Fixed assembly witnesses checked.
-Independent source stations checked.
-Port exported carving/letter contours checked.
-Starboard exported carving/letter contours checked.
-{
-  "status": "passed",
-  "parts": 1025,
-  "checks": [
-    {
-      "id": "AC-01",
-      "status": "pass"
-    },
-    {
-      "id": "AC-02",
-      "status": "pass"
-    },
-    {
-      "id": "AC-03",
-      "status": "pass"
-    },
-    {
-      "id": "AC-04",
-      "status": "pass"
-    },
-    {
-      "id": "AC-05",
-      "status": "pass"
-    },
-    {
-      "id": "AC-06",
-      "status": "pass"
-    },
-    {
-      "id": "AC-07",
-      "status": "pass"
-    },
-    {
-      "id": "AC-08",
-      "status": "pass"
-    },
-    {
-      "id": "AC-09",
-      "status": "pass"
-    },
-    {
-      "id": "AC-10",
-      "status": "pass"
-    }
-  ],
-  "max_physical_ft": 0.12570131271522378,
-  "outer_trace_px": 0.9948090966777815,
-  "max_region_contact_mm": 0.0
-}
-
-m splice and drilled retention",
+2c5cb4636fd39ba5f5b781b4e662f9928ca5449cae1b652f4e04d7258",
+    "src/parts/deck_planking.py": "d62d99981b0f770d4849af6c0afdd51a8cb5030e3529d3d871eaf9f3bd2e31ac",
+    "src/parts/equipment.py": "4626483fa20da574ef5235b028d45f1bc85ff98267d158c982242d1ad29f21d0",
+    "src/parts/frame_layout.py": "278a3d364eabe8664110f6d1717f5a9f81b5302e2d8b6cf141c43269b7a512c7",
+    "src/parts/framing.py": "691543fa0850f023a090a9e4b9cff8ca9e32a636bca1637ac12c043ca904ebd5",
+    "src/parts/hull.py": "3cdc658529b7d417444d5fc65f68206cc207eda87b1caa1b7c100c27f0b92da3",
+    "src/parts/hull_frames.py": "18aa452a17037c7ebeba04a4dabc5ae1c9e65c21f45b2afb09ad67432175b3ba",
+    "src/parts/interior.py": "e591f1cc8c158f7d1f3918418c509b7a8716aa9b8a016182e692fdde751084ad",
+    "src/parts/openings.py": "f0300e7025f9aeb89fbe676833e1cfeacf31d4088fe04f1ed3e7a4eda24e40de",
+    "src/parts/params.py": "f1d06a08d7c17deae9d54ca9b97a3cc3dbcd225e220fa0dfb382061be3bf5e8c",
+    "src/parts/planking.py": "36415d74373ce49a01e67067919c96e73921606e247f0c6dc4b0572ace172ed3",
+    "src/parts/primitives.py": "c6694b4ab5502078d94a01ef4b487b00eccc2863075bb33a8dd21dadf31a6ae4",
+    "src/parts/rails.py": "000dca29d1782580a1518371268da2daf7b1d107fa30567eacc3d54ebc53a1ef",
+    "src/parts/rigging.py": "e31cd3f26ce0a73ea105a6f37a852d1a6f78eb168b6d16c1aff781452a1d3baa",
+    "src/parts/spars.py": "72e146f4802fc31335eaef186a78f898f846c1228e6e4abf5fa5aae427322a93",
+    "src/parts/stern_fittings.py": "0a5bf4b1430a4dc20fa06f62f82d1796f7c07541680c992bccc539b6dbfcc68d",
+    "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
+    "src/parts/trailboard_layout.py": "6b52176660f9405ffce2312a2bb1d41fd568e6b42fbb18f2cfa6be5472dfa3ac",
+    "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
+    "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
+    "references/drawing_package/jib_club.json": "807eb75811640d999024324075f0fae20e5c1bc46690de6ee5b605106a30e4e4"
+  },
+  "closed_findings": [
+    "G1 full spar and source stations",
+    "G2 fitted bed, stem splice and drilled retention",
     "G3 supported, fixed board faces",
     "G4 coordinated headrail/board silhouette",
     "G5 jib tack collar, fork and pivot",
@@ -90,12 +60,12 @@ Independent source stations checked.
 Port exported carving/letter contours checked.
 Starboard exported carving/letter contours checked.
 {
-  "status": "failed",
-  "parts": 1025,
+  "status": "passed",
+  "parts": 1026,
   "checks": [
     {
       "id": "AC-01",
-      "status": "fail"
+      "status": "pass"
     },
     {
       "id": "AC-02",
@@ -138,17 +108,10 @@ Starboard exported carving/letter contours checked.
   "outer_trace_px": 0.9948090966777815,
   "max_region_contact_mm": 0.0
 }
-Traceback (most recent call last):
-  File "/tmp/kathryn-jib-clean/src/checks/check_trailboards.py", line 209, in <module>
-    check(a.project,a.out,strict=not a.report_only)
-  File "/tmp/kathryn-jib-clean/src/checks/check_trailboards.py", line 202, in check
-    if strict:assert record['status']=='passed',[(c['id'],c['actual']) for c in checks if c['status']=='fail']
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^
-AssertionError: [('AC-01', {'changed_fixed_parts': {'Jib club': 5286.097000000001, 'Port jib lazyjack pendant': 2608.5699999999997, 'Port jib lazyjack leg 1': 3907.6639999999998, 'Port jib lazyjack leg 2': 2184.018000000001, 'Port jib lazyjack tail': 2608.8590000000004, 'Starboard jib lazyjack pendant': 2608.5699999999997, 'Starboard jib lazyjack leg 1': 3907.6639999999998, 'Starboard jib lazyjack leg 2': 2184.018000000001, 'Starboard jib lazyjack tail': 2608.8590000000004, 'Jib sheet to hounds': 549.1460000000002, 'Jib club lazyjack strop 1': 4332.615000000001, 'Jib club lazyjack strop 2': 885.8379999999997, 'Port jib lazyjack junction': 2608.8590000000004, 'Starboard jib lazyjack junction': 2608.8590000000004, 'Jib sail (S08 demonstration)': 549.1859999999997}, 'fixed_parts_compared': 893})]
 == check_longhead_envelope ==
 {
   "status": "passed",
-  "parts": 1025,
+  "parts": 1026,
   "checks": [
     {
       "id": "LE-01",
@@ -181,11 +144,15 @@ AssertionError: [('AC-01', {'changed_fixed_parts': {'Jib club': 5286.09700000000
     {
       "id": "LE-08",
       "status": "pass"
+    },
+    {
+      "id": "LE-09",
+      "status": "pass"
     }
   ],
   "max_held_residual_ft": 0.12406991950410529,
   "min_clearance_ft": 0.06944229442970165,
-  "min_timber_margin_ft": 0.34587492518710405
+  "min_timber_margin_ft": 0.2900998025574193
 }
 == check_m6_rigging ==
 {

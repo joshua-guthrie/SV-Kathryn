@@ -1,7 +1,7 @@
 {
   "status": "passed",
   "built_parts": 1026,
-  "build_id": "6b3c53ba0a39412cb4fe90ebbda97e26",
+  "build_id": "0a7f4157c7c64356bd87231d1bf903bf",
   "method": "Exact completed-build BREP solids; 1 mm CAD tolerance; source picks remain +/-0.2 ft.",
   "full_spar_axis_ft": 21.576368975966385,
   "inboard_section_in": [
