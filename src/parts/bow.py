@@ -10,12 +10,12 @@ import numpy as np
 import cadquery as cq
 from scipy.interpolate import PchipInterpolator
 from .params import boat_point,HULL_LENGTH_FT,WATERLINE_FT,IVORY,IRON,WOOD,CARVED_IVORY,PORT_SIDE,legacy_forward
-from .hull import solid_envelope,SECTIONS,deck_height,section_plane,fair_loft,topside_halfwidth,smooth_blend,make_keel
+from .hull import solid_envelope,SECTIONS,deck_height,section_plane,fair_loft,topside_halfwidth,smooth_blend,make_keel,make_worm_shoe
 from .primitives import block,beam_between,spar_between
 from .bow_layout import SOURCE,SPAR,HEADWORK,LONGHEAD,RIG,axis_height,radius_at,half_depth_at
 from . import trailboards as traced
 from .trailboard_layout import (panel_top,panel_bottom,source_headrail_points,
-                                outer_top,outer_bottom,ENVELOPE_ROOT_F,ENVELOPE_TIP_F)
+                                outer_top,outer_bottom,ENVELOPE_ROOT_F,ENVELOPE_TIP_F,ENVELOPE)
 
 BOWSPRIT_HEEL_FT=SPAR['heel_f']
 BOWSPRIT_END_FT=SPAR['end_f']
@@ -158,6 +158,18 @@ def longhead_backing():
 @lru_cache(maxsize=1)
 def make_longhead_aft_filling():
     return [p.cut(solid_envelope()).clean() for p in longhead_pieces()[1:]]
+
+
+@lru_cache(maxsize=1)
+def make_lower_stem_fairing():
+    profile=ENVELOPE['lower_stem_fairing']['profile_fz']
+    polygon=[(25-f,z) for f,z in profile]
+    width=ENVELOPE['lower_stem_fairing']['width_ft']/2
+    shape=(cq.Workplane('YZ').polyline(polygon).close()
+           .extrude(width,both=True).val())
+    shape=shape.cut(make_stem()).cut(solid_envelope()).cut(make_keel()).cut(make_worm_shoe())
+    for piece in longhead_pieces():shape=shape.cut(piece)
+    return shape.clean()
 
 
 def make_painted_field(side):
@@ -440,6 +452,11 @@ def make_bow_details():
             b=solid.BoundingBox()
             name='Longhead upper shoulder' if b.zmin>8.5 and b.ymax<-25.3 else f'Longhead aft filling {i}.{k}'
             yield name,solid,IVORY
+    fairing=[solid for solid in make_lower_stem_fairing().Solids() if solid.Volume()>1e-3]
+    assert fairing,'Lower trailboard stem fairing lost in the fitted cuts'
+    for k,solid in enumerate(fairing,1):
+        suffix='' if len(fairing)==1 else f' {k}'
+        yield 'Lower trailboard stem fairing'+suffix,solid,IVORY
     for side,label in ((PORT_SIDE,'Port'),(-PORT_SIDE,'Starboard')):
         outline=panel_outline(side)
         yield label+' trailboard board',make_trailboard(side),TRAILBOARD_PAINT

@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "status": "source-controlled outer timber envelope; forward head closure and hidden interfaces inferred",
+  "status": "source-controlled outer timber envelope with lower stem fairing; forward head closure and hidden interfaces inferred",
   "units": "full-size feet; SOMA registers millimetres at 304.8 mm/ft",
   "source": {
     "id": "S04-V01",
@@ -166,19 +166,19 @@
       ],
       [
         60.669686686,
-        10.561985409
+        10.45
       ],
       [
         61.336165698,
-        10.669021714
+        10.610434254
       ],
       [
         62.002644709,
-        10.943302248
+        10.878255905
       ],
       [
         62.535827918,
-        11.123926015
+        11.093969982
       ]
     ],
     "outer_lower_fz": [
@@ -340,5 +340,65 @@
     "backing": "Enlarged common longhead backing cut to the outer envelope; fitted seats cut against stem, cross-timber and stem-head extension.",
     "upper_shoulder": "Aft shoulder piece above the stem-head extension; separate registered timber with fitted contact faces.",
     "facing": "Existing S01-V03 faces, paint field and relief retained unchanged and seated on the backing."
+  },
+  "lower_stem_fairing": {
+    "source_evidence": "docs/images/trailboard_envelope_gap/source-s03-lower-wood.png",
+    "source_view": "S03-V01",
+    "width_ft": 0.5,
+    "profile_fz": [
+      [
+        50.405909908,
+        6.92
+      ],
+      [
+        51.5,
+        6.93
+      ],
+      [
+        53.0,
+        6.94
+      ],
+      [
+        51.0,
+        6.4
+      ],
+      [
+        49.9,
+        6.0
+      ],
+      [
+        48.9,
+        5.0
+      ],
+      [
+        48.0,
+        4.2
+      ],
+      [
+        47.4,
+        3.6
+      ],
+      [
+        47.1,
+        3.5
+      ],
+      [
+        47.48,
+        4.0
+      ],
+      [
+        48.12,
+        5.0
+      ],
+      [
+        48.88,
+        6.0
+      ],
+      [
+        49.522048196,
+        6.762
+      ]
+    ],
+    "note": "Lower trailboard/stem fairing highlighted on the Sheet 3 crop. It fills between the backing lower edge and the stem/forefoot, bends down along the stem, and is cut to fitted faces against the backing, stem, hull and keel."
   }
 }

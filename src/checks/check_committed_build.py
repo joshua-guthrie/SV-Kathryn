@@ -17,7 +17,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 GIT = ROOT / 'project-git'
-EXPECTED_PARTS = 1025
+EXPECTED_PARTS = 1026
 
 
 def git(*arguments):

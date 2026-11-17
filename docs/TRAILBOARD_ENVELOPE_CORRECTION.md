@@ -1,6 +1,6 @@
 # Trailboard timber-envelope correction: implementation and verification
 
-15 November 2026. Status: **implemented and verified from clean committed-tree build 5f13cd9**; the current committed-build record and acceptance are in [committed-build.json](images/trailboard_correction/committed-build.json). This report implements the [focused envelope gap analysis](TRAILBOARD_ENVELOPE_GAP_ANALYSIS.md) and the [earlier trailboard correction](TRAILBOARD_CORRECTION.md). The current model contains **1025 registered parts**.
+15 November 2026. Status: **implemented and verified from the completed working export**; the fresh committed-tree record is added after the lower-fairing commit. This report implements the [focused envelope gap analysis](TRAILBOARD_ENVELOPE_GAP_ANALYSIS.md) and the [earlier trailboard correction](TRAILBOARD_CORRECTION.md). The current model contains **1026 registered parts**.
 
 The decorated S01 faces are unchanged. The missing wood above and below them is now a solid, source-controlled longhead/trailboard envelope. The upper member rises to the classified S04 line beneath the bowsprit with a positive clearance; the lower member follows the solid S04 boundary above the chain/cable and fairs into the stem/head structure.
 
@@ -15,6 +15,8 @@ The decorated S01 faces are unchanged. The missing wood above and below them is 
 - The existing S01-V03 boards, paint field, carving islands, letters and eagle remain in their accepted positions and contours. Their full thickness is seated on the enlarged backing.
 
 - The item-11 headrails remain independent timbers. They are not used as the upper wood boundary; their measured clearance to the new backing is 143.5 mm.
+
+- A separate **Lower trailboard stem fairing** fills the S03 lower-wood wedge below the backing and bends down into the stem/forefoot. It is cut to fitted faces against the backing, stem, hull, keel and worm shoe. The upper forward envelope now tapers into the S01 face/head instead of leaving a blunt plate around the eagle.
 
 ## Source classification
 
@@ -36,14 +38,17 @@ python src/checks/check_bow_attachment.py
 |---|---|
 | **LE-01** independent held-out S04 stations | maximum residual **0.1241 ft** against the 0.20 ft source envelope |
 | **LE-02** actual exported envelope at F = 53, 56, 60, 62.5 ft | maximum residual **0.000033 ft** |
-| **LE-03** cross-sections above and below the fascia | minimum timber margin **0.346 ft** at F = 53, 56 and 60 ft |
+| **LE-03** cross-sections above and below the fascia | minimum timber margin **0.290 ft** at F = 53, 56 and 60 ft |
 | **LE-04** bowsprit clearance | minimum **0.0694 ft (0.83 in)**, band 0.04–0.50 ft, **zero common volume** |
 | **LE-05** fitted stem/head seats | stem, hull, keel, cross-timber and stem-head extension all at **0.000 mm** separation and zero common volume |
 | **LE-06** face and headrail seats | both faces touch the backing at **0.000 mm**; headrails remain **143.5 mm** clear |
 | **LE-07** bilateral symmetry | maximum envelope/part asymmetry **4.4 × 10⁻¹³ mm** |
 | **LE-08** unintended common volume | **0.000 ft³** for bowsprit, headrails, faces, stem, hull, keel, cross-timber and extension |
+| **LE-09** lower stem fairing | **3.259 ft** below the backing; fitted to backing, stem, hull, keel and worm shoe at 0.000 mm with zero common volume |
 
 The existing trailboard fidelity checks retain their accepted results: the maximum held-out physical source residual remains **0.1257 ft**, the outer S01 trace error **0.995 px**, and every carving/letter region remains in contact with its board. The bow attachment check passes with the enlarged backing seated on the stem-head extension.
+
+![S03 lower-wood source crop](images/trailboard_envelope_gap/source-s03-lower-wood.png)
 
 ![Expanded envelope in the completed profile](images/trailboard_envelope_gap/after-profile.png)
 
@@ -58,6 +63,8 @@ The existing trailboard fidelity checks retain their accepted results: the maxim
 ![Underside with the fitted backing and stem-head extension](images/trailboard_envelope_gap/after-underside.png)
 
 ![Forward head support](images/trailboard_envelope_gap/after-head.png)
+
+![Lower stem fairing](images/trailboard_envelope_gap/after-lower.png)
 
 ![Three cross-sections showing timber above and below the decorated fascia](images/trailboard_envelope_gap/sections.png)
 

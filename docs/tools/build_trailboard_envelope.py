@@ -71,6 +71,12 @@ def render(name):
                 n in ('Longhead trailboard backing', 'Longhead upper shoulder') or
                 n == 'Starboard longhead eagle eye'}
         hide = tuple(n for n in names if n not in show)
+    elif name == 'lower':
+        show = {n for n in names if ('Longhead trailboard backing' in n or
+                'Lower trailboard stem fairing' in n or
+                n in ('Painted stem and cutwater', 'Painted topsides', 'Underwater hull',
+                      'Keel', 'Keel worm shoe', 'Starboard trailboard board'))}
+        hide = tuple(n for n in names if n not in show)
     else:
         hide = tuple(sails)
     views = {
@@ -81,6 +87,7 @@ def render(name):
         'plan': ((0, 0, 1), (0, 1, 0), (0, -31, 9.0), 7.8),
         'underside': ((-.8, .2, -.4), (0, 0, 1), (0, -29.5, 8.4), 6.5),
         'head': ((-1, 0, 0), (0, 0, 1), (0, -36.8, 10.5), 1.45),
+        'lower': ((-1, .10, .08), (0, 0, 1), (0, -24.0, 6.4), 3.2),
     }
     direction, up, focus, scale = views[name]
     im, _ = scene.render(direction, up, focus, scale, hide=hide)
@@ -91,7 +98,8 @@ def render(name):
         'port': 'Isolated port assembly: mirrored timber envelope with the outward-reading name',
         'plan': 'Plan with the decorated faces and backing: centreline longhead and separate headrails',
         'underside': 'Underside: full-width backing and fitted stem/head extension',
-        'head': 'Forward head: the envelope follows the source head and supports the eagle'
+        'head': 'Forward head: the envelope follows the source head and supports the eagle',
+        'lower': 'Lower stem fairing: the backing now bends down into the stem/forefoot'
     }
     notes = {
         'profile': ['Upper wood rises to the source-controlled line beneath the bowsprit with a measured gap.',
@@ -107,7 +115,9 @@ def render(name):
         'underside': ['The backing is cut against the stem, cross-timber and stem-head extension with matching fitted faces.',
                       'No zero-thickness sheet or floating ornament remains.'],
         'head': ['The forward closure follows the source head silhouette and contains the S01 eagle.',
-                 'The lower body carries aft into the stem/head root.']
+                 'The upper timber tapers into the face so the head is not surrounded by a blunt plate.'],
+        'lower': ['The S03 lower-wood crop is the source for the fairing below the backing.',
+                  'The fairing is cut to fitted faces against the backing, stem, hull, keel and worm shoe.']
     }
     plate(im, titles[name], f'{len(scene.parts)} registered parts / native materials / completed SOMA export',
           notes[name], 'after-' + name + '.png')
@@ -253,14 +263,14 @@ def comparison():
 
 if __name__ == '__main__':
     p = argparse.ArgumentParser(description=__doc__)
-    p.add_argument('--render', choices=['profile', 'quarter', 'starboard', 'port', 'plan', 'underside', 'head', 'all'])
+    p.add_argument('--render', choices=['profile', 'quarter', 'starboard', 'port', 'plan', 'underside', 'head', 'lower', 'all'])
     p.add_argument('--sections', action='store_true')
     p.add_argument('--overlay', action='store_true')
     p.add_argument('--comparison', action='store_true')
     a = p.parse_args()
     OUT.mkdir(parents=True, exist_ok=True)
     if a.render:
-        for name in (['profile', 'quarter', 'starboard', 'port', 'plan', 'underside', 'head']
+        for name in (['profile', 'quarter', 'starboard', 'port', 'plan', 'underside', 'head', 'lower']
                      if a.render == 'all' else [a.render]):
             render(name)
     if a.sections:

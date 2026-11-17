@@ -55,6 +55,7 @@ def check(project=ROOT, out=None, strict=True):
 
     backing = part('Longhead trailboard backing')
     upper_shoulder = part('Longhead upper shoulder')
+    fairing = part('Lower trailboard stem fairing')
     boards = {label: part(label + ' trailboard board') for label in ('Port', 'Starboard')}
     spar = part('Bowsprit')
     stem = part('Painted stem and cutwater')
@@ -64,6 +65,7 @@ def check(project=ROOT, out=None, strict=True):
 
     for name, shape in [('Longhead trailboard backing', backing),
                         ('Longhead upper shoulder', upper_shoulder),
+                        ('Lower trailboard stem fairing', fairing),
                         *((label + ' trailboard board', board) for label, board in boards.items())]:
         assert shape.isValid() and len(shape.Solids()) == 1, name
 
@@ -180,6 +182,30 @@ def check(project=ROOT, out=None, strict=True):
     result('LE-08', max(unintended.values()) <= 1e-7,
            {'unintended_common_ft3': unintended}, 1e-7, 'ft3',
            'Exported solids checked for unintended common volume after fitted-seat cuts')
+
+    fair_seats = {}
+    for name, shape in [('Backing', backing), ('Painted stem', stem),
+                        ('Painted topsides', part('Painted topsides')),
+                        ('Keel', part('Keel')), ('Keel worm shoe', part('Keel worm shoe')),
+                        ('Underwater hull', part('Underwater hull'))]:
+        fair_seats[name] = dict(distance_mm=fairing.distance(shape) * 304.8,
+                                common_ft3=fairing.intersect(shape).Volume())
+    fair_bounds = fairing.BoundingBox()
+    backing_bounds = backing.BoundingBox()
+    extends_below = backing_bounds.zmin - fair_bounds.zmin
+    evidence = ROOT / ledger['lower_stem_fairing']['source_evidence']
+    result('LE-09', evidence.is_file()
+           and all(v['distance_mm'] <= 1.0 and v['common_ft3'] <= 1e-6
+                   for k, v in fair_seats.items() if k in ('Backing', 'Painted stem',
+                                                           'Painted topsides', 'Keel',
+                                                           'Keel worm shoe'))
+           and all(v['common_ft3'] <= 1e-6 for v in fair_seats.values())
+           and extends_below >= 1.0,
+           {'seats': fair_seats, 'fairing_bounds_ft': [fair_bounds.zmin, fair_bounds.zmax],
+            'extends_below_backing_ft': extends_below,
+            'source_evidence': str(evidence.relative_to(ROOT))},
+           {'distance_mm': 1.0, 'common_ft3': 1e-6, 'extends_below_ft': 1.0}, 'mixed',
+           'Lower S03 stem fairing: fitted contacts, no overlap with stem/hull/keel/worm shoe, and a real downward extension')
 
     paths = [ROOT / 'model.py', *sorted((ROOT / 'src/parts').glob('*.py')),
              ROOT / 'references/drawing_package/longhead_envelope.json',
