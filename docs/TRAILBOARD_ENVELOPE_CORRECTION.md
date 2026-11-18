@@ -1,6 +1,6 @@
 # Trailboard timber-envelope correction: implementation and verification
 
-15 November 2026. Status: **implemented and verified from the completed working export**; the fresh clean committed-tree record is added after this revision. This report implements the [focused envelope gap analysis](TRAILBOARD_ENVELOPE_GAP_ANALYSIS.md), the [earlier trailboard correction](TRAILBOARD_CORRECTION.md) and the final 17 November markup. The current model contains **1024 registered parts**.
+15 November 2026. Status: **implemented and verified from clean committed-tree build e4b1a0e**; the committed-build record and acceptance are in [committed-build.json](images/trailboard_correction/committed-build.json). This report implements the [focused envelope gap analysis](TRAILBOARD_ENVELOPE_GAP_ANALYSIS.md), the [earlier trailboard correction](TRAILBOARD_CORRECTION.md) and the final 17 November markup. The current model contains **1024 registered parts**.
 
 The decorated S01 faces and eagle are unchanged. The trailboard backing is now one visible longhead timber: an upper shoulder, a narrow lower margin around the decorated section, and a tangent lower stem fairing. It no longer has the deep board below the decoration, the sharp fairing corner, or backing above/below the eagle.
 

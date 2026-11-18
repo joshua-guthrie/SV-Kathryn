@@ -38,10 +38,10 @@
     "references/drawing_package/jib_club.json": "807eb75811640d999024324075f0fae20e5c1bc46690de6ee5b605106a30e4e4"
   },
   "build_hashes": {
-    ".soma/build.json": "88a46010c6201189cdb3c1ed94d3d3719397b8e18619c3e5dd17c8668bd2dffb",
-    ".soma/model.glb": "fdf1d75109575455a7087d0fd703feaf0679e3edd5af409961d08f2c7fd3621c",
-    ".soma/model.map.json": "208dbe199eb89f7105a4078a0c90b7571fee572e65dd7f7e686a5992911823e6",
-    "output/model.step": "66695283067b56bb7dc1722591569c6fc2c011bc65c72cf84670f2e38a75764a"
+    ".soma/build.json": "ff852efa18181ad1244fd1ff91e365ba712cfdfc3eed40e1f5fc77abeb85a6be",
+    ".soma/model.glb": "9dcb4e1c2c6d1483a5c2a3dbb8a4fc17da0ab23661b0938e5eb12d8c6fe79f1c",
+    ".soma/model.map.json": "5a7249cb33d8e96626e72772cf4c84b2b6ff9c46f4d5f4906a92d42e64570b5a",
+    "output/model.step": "a5d833deb8a9bdada19a749e4d3b5e258becad99806dd37ac5c25d1318a4e954"
   },
   "source_hashes": {
     "S04-V01": "c7c62358c5b416b9b36f9ee44cdcae9bf29bcb205ea864ca5c375dae61948ac1"

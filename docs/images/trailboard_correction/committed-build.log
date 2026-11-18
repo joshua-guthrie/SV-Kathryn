@@ -1,17 +1,16 @@
 Kathryn committed-tree build record
-commit: 7580bcb48c951cfa9277773b2816d033dfe8ab37
-build: status=ok warnings=[] parts=1026 timings={'model': 507.929, 'step': 23.01, 'glb': 189.798}
-clean tree: /tmp/kathryn-fair-clean (git archive HEAD; no prior .soma/output state)
+commit: e4b1a0ecc4d33d51d43fca0bb3977717279b615c
+build: status=ok warnings=[] parts=1024 timings={'model': 448.206, 'step': 20.106, 'glb': 177.547}
+clean tree: /tmp/kathryn-final-clean (git archive HEAD; no prior .soma/output state)
 commands:
   python src/checks/check_model_scale.py            PASS
   python src/checks/check_registered_deck.py        PASS
   python src/checks/check_bow_attachment.py         PASS
   python src/checks/check_trailboards.py            PASS (AC-01..AC-10)
-  python src/checks/check_longhead_envelope.py      PASS (LE-01..LE-09)
+  python src/checks/check_longhead_envelope.py      PASS (LE-01..LE-11)
   python src/checks/check_m6_rigging.py             PASS
 
-2c5cb4636fd39ba5f5b781b4e662f9928ca5449cae1b652f4e04d7258",
-    "src/parts/deck_planking.py": "d62d99981b0f770d4849af6c0afdd51a8cb5030e3529d3d871eaf9f3bd2e31ac",
+f6c0afdd51a8cb5030e3529d3d871eaf9f3bd2e31ac",
     "src/parts/equipment.py": "4626483fa20da574ef5235b028d45f1bc85ff98267d158c982242d1ad29f21d0",
     "src/parts/frame_layout.py": "278a3d364eabe8664110f6d1717f5a9f81b5302e2d8b6cf141c43269b7a512c7",
     "src/parts/framing.py": "691543fa0850f023a090a9e4b9cff8ca9e32a636bca1637ac12c043ca904ebd5",
@@ -61,7 +60,7 @@ Port exported carving/letter contours checked.
 Starboard exported carving/letter contours checked.
 {
   "status": "passed",
-  "parts": 1026,
+  "parts": 1024,
   "checks": [
     {
       "id": "AC-01",
@@ -111,7 +110,7 @@ Starboard exported carving/letter contours checked.
 == check_longhead_envelope ==
 {
   "status": "passed",
-  "parts": 1026,
+  "parts": 1024,
   "checks": [
     {
       "id": "LE-01",
@@ -123,6 +122,14 @@ Starboard exported carving/letter contours checked.
     },
     {
       "id": "LE-03",
+      "status": "pass"
+    },
+    {
+      "id": "LE-10",
+      "status": "pass"
+    },
+    {
+      "id": "LE-11",
       "status": "pass"
     },
     {
@@ -151,8 +158,8 @@ Starboard exported carving/letter contours checked.
     }
   ],
   "max_held_residual_ft": 0.12406991950410529,
-  "min_clearance_ft": 0.06944229442970165,
-  "min_timber_margin_ft": 0.2900998025574193
+  "min_clearance_ft": 0.15285123978047027,
+  "min_timber_margin_ft": 0.019996719127416185
 }
 == check_m6_rigging ==
 {
