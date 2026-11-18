@@ -1,6 +1,6 @@
 # Jib-club correction: short source spar and raised jib bottom
 
-15 November 2026. Status: **implemented and verified**; the current clean committed-tree proof is [committed-build.json](images/trailboard_correction/committed-build.json). The current model contains **1026 registered parts**.
+15 November 2026. Status: **implemented and verified**; the current clean committed-tree proof is [committed-build.json](images/trailboard_correction/committed-build.json). The current model contains **1024 registered parts**.
 
 The previous trailboard/bow correction rebuilt the jib club as a 25.7-ft spar running from the bowsprit tip to the clew along the full jib foot. That is not the Sheet 3 arrangement. S03-V01 shows a **short jib club** under the aft part of the foot, high above the deck. The current model now uses that source club and the raised jib pose.
 

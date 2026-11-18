@@ -1,14 +1,14 @@
 {
   "schema_version": 1,
   "status": "passed",
-  "part_count": 1026,
+  "part_count": 1024,
   "model_source_hashes": {
     "model.py": "93754d12b937854df84a70a2b645d0cf556ec49569e500b5518621fcf0b97ddf",
     "src/parts/__init__.py": "4a74abd352dec4511cfcce1291ff50d0855e9e6eaaad3e4e64fe13933510eac6",
     "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
     "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
     "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
-    "src/parts/bow.py": "190a820adc8a305a40bc5be57b38032e6b09d7033743ab1dcdc307da54401eb1",
+    "src/parts/bow.py": "f59af66761f3320db186d3d530278e25fede8230412f92e514b63e68b270a95c",
     "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
     "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
     "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",
@@ -33,15 +33,15 @@
     "src/parts/stern_layout.py": "a6fd0c1d692c255b5f57f2dc9a7d6508b9784dc98f4e47a6bfbfa354af06a05e",
     "src/parts/trailboard_layout.py": "6b52176660f9405ffce2312a2bb1d41fd568e6b42fbb18f2cfa6be5472dfa3ac",
     "src/parts/trailboards.py": "1159f314cca022640f35bed05ed6117d73ff0e1fda31999281b5cc7444620525",
-    "references/drawing_package/longhead_envelope.json": "4a9df8a0b90c1f726adfb43e2b85970e40aeba5bf1189c2782306dbc767f51d8",
+    "references/drawing_package/longhead_envelope.json": "4eb54ccc0222e0075ec15d5c2e9ddd120e44b66bf88be8d80e328c84acdedb85",
     "references/drawing_package/bow_remedy_registration.json": "a24e71149253abc200baffbc1ca05c3a039cdfff6472fa6245b7de03284d95c7",
     "references/drawing_package/jib_club.json": "807eb75811640d999024324075f0fae20e5c1bc46690de6ee5b605106a30e4e4"
   },
   "build_hashes": {
-    ".soma/build.json": "964c334050c35aa87515113e72acd6593d367b8873ca1bbf4b268dc9344dcad8",
-    ".soma/model.glb": "0c410ab987c436407d6476f5958948d150e174910c16189a27ee51ea5c4e985a",
-    ".soma/model.map.json": "87e63e44190dd5a4ff4a3de861585528ec5d611b9cc37e6765d8fa8c0846cee8",
-    "output/model.step": "8f3109cf3b46a9420c1bd54536a56713609d7977ad654be46ecd78d4e4ca5f44"
+    ".soma/build.json": "88a46010c6201189cdb3c1ed94d3d3719397b8e18619c3e5dd17c8668bd2dffb",
+    ".soma/model.glb": "fdf1d75109575455a7087d0fd703feaf0679e3edd5af409961d08f2c7fd3621c",
+    ".soma/model.map.json": "208dbe199eb89f7105a4078a0c90b7571fee572e65dd7f7e686a5992911823e6",
+    "output/model.step": "66695283067b56bb7dc1722591569c6fc2c011bc65c72cf84670f2e38a75764a"
   },
   "source_hashes": {
     "S04-V01": "c7c62358c5b416b9b36f9ee44cdcae9bf29bcb205ea864ca5c375dae61948ac1"
@@ -74,56 +74,16 @@
             "grid_x": 1170,
             "f_ft": 57.337291628,
             "source_z_ft": 10.100391339,
-            "model_z_ft": 10.127150415434757,
-            "residual_ft": 0.02675907643475739
+            "model_z_ft": 10.142247888047173,
+            "residual_ft": 0.041856549047173175
           },
           {
             "role": "upper",
             "grid_x": 1235,
             "f_ft": 61.669405203,
             "source_z_ft": 10.842955712,
-            "model_z_ft": 10.735832731044674,
-            "residual_ft": 0.10712298095532624
-          },
-          {
-            "role": "lower",
-            "grid_x": 1073,
-            "f_ft": 50.872445216,
-            "source_z_ft": 6.762196547,
-            "model_z_ft": 6.765785074838574,
-            "residual_ft": 0.003588527838573441
-          },
-          {
-            "role": "lower",
-            "grid_x": 1090,
-            "f_ft": 52.005459536,
-            "source_z_ft": 6.661850011,
-            "model_z_ft": 6.773225310598256,
-            "residual_ft": 0.11137529959825532
-          },
-          {
-            "role": "lower",
-            "grid_x": 1150,
-            "f_ft": 56.004333605,
-            "source_z_ft": 7.518140458,
-            "model_z_ft": 7.492647013668474,
-            "residual_ft": 0.025493444331526227
-          },
-          {
-            "role": "lower",
-            "grid_x": 1185,
-            "f_ft": 58.337010146,
-            "source_z_ft": 8.468087673,
-            "model_z_ft": 8.434638827530062,
-            "residual_ft": 0.03344884546993754
-          },
-          {
-            "role": "lower",
-            "grid_x": 1235,
-            "f_ft": 61.669405203,
-            "source_z_ft": 9.665556346,
-            "model_z_ft": 9.77535448383368,
-            "residual_ft": 0.10979813783368009
+            "model_z_ft": 10.732852046446464,
+            "residual_ft": 0.11010366555353635
           }
         ]
       },
@@ -136,43 +96,34 @@
       "id": "LE-02",
       "status": "pass",
       "actual": {
-        "maximum_profile_residual_ft": 5.3140634417303545e-06,
+        "maximum_profile_residual_ft": 2.7306696738449432e-05,
         "sections": [
           {
             "forward_ft": 53.0,
-            "actual_lower_ft": 6.775576086,
+            "actual_lower_ft": 7.5900146316807895,
             "actual_upper_ft": 9.613139657635237,
-            "source_lower_ft": 6.775576086,
+            "source_lower_ft": 7.590007248255548,
             "source_upper_ft": 9.613138973621796,
-            "lower_residual_ft": 0.0,
+            "lower_residual_ft": 7.38342524186919e-06,
             "upper_residual_ft": 6.840134414431986e-07
           },
           {
             "forward_ft": 56.0,
-            "actual_lower_ft": 7.490877350742142,
+            "actual_lower_ft": 8.291933541990467,
             "actual_upper_ft": 9.951776502582945,
-            "source_lower_ft": 7.4908720366787005,
+            "source_lower_ft": 8.291926416626351,
             "source_upper_ft": 9.951775650561446,
-            "lower_residual_ft": 5.3140634417303545e-06,
+            "lower_residual_ft": 7.125364115623256e-06,
             "upper_residual_ft": 8.520214986873498e-07
           },
           {
             "forward_ft": 60.0,
-            "actual_lower_ft": 9.102327861374388,
-            "actual_upper_ft": 10.416309375306415,
-            "source_lower_ft": 9.102327861374393,
-            "source_upper_ft": 10.416308741113557,
-            "lower_residual_ft": 5.329070518200751e-15,
-            "upper_residual_ft": 6.341928582287437e-07
-          },
-          {
-            "forward_ft": 62.5,
-            "actual_lower_ft": 10.09383754956108,
-            "actual_upper_ft": 11.079435111326026,
-            "source_lower_ft": 10.093842060090104,
-            "source_upper_ft": 11.07943398239294,
-            "lower_residual_ft": 4.510529024059906e-06,
-            "upper_residual_ft": 1.128933085681183e-06
+            "actual_lower_ft": 9.615577876374015,
+            "actual_upper_ft": 10.246236879696738,
+            "source_lower_ft": 9.615574595,
+            "source_upper_ft": 10.246209573,
+            "lower_residual_ft": 3.2813740151738102e-06,
+            "upper_residual_ft": 2.7306696738449432e-05
           }
         ]
       },
@@ -185,48 +136,133 @@
       "id": "LE-03",
       "status": "pass",
       "actual": {
-        "minimum_timber_margin_ft": 0.2900998025574193,
+        "minimum_timber_margin_ft": 0.019996719127416185,
         "sections": [
           {
             "forward_ft": 53.0,
             "face_top_ft": 8.599788161986309,
             "face_bottom_ft": 7.668724344871761,
             "timber_top_ft": 9.613139657635237,
-            "timber_bottom_ft": 6.775576086,
+            "timber_bottom_ft": 7.5900146316807895,
             "upper_margin_ft": 1.0133514956489282,
-            "lower_margin_ft": 0.8931482588717605
+            "lower_margin_ft": 0.07870971319097109
           },
           {
             "forward_ft": 56.0,
             "face_top_ft": 9.222481216896924,
             "face_bottom_ft": 8.365373140460887,
             "timber_top_ft": 9.951776502582945,
-            "timber_bottom_ft": 7.490877350742142,
+            "timber_bottom_ft": 8.291933541990467,
             "upper_margin_ft": 0.7292952856860211,
-            "lower_margin_ft": 0.8744957897187451
+            "lower_margin_ft": 0.07343959847042036
           },
           {
             "forward_ft": 60.0,
             "face_top_ft": 10.126209572748996,
             "face_bottom_ft": 9.635574595501431,
-            "timber_top_ft": 10.416309375306415,
-            "timber_bottom_ft": 9.102327861374388,
-            "upper_margin_ft": 0.2900998025574193,
-            "lower_margin_ft": 0.5332467341270437
+            "timber_top_ft": 10.246236879696738,
+            "timber_bottom_ft": 9.615577876374015,
+            "upper_margin_ft": 0.12002730694774222,
+            "lower_margin_ft": 0.019996719127416185
           }
         ]
       },
-      "limit": 0.05,
+      "limit": 0.005,
       "units": "ft",
       "method": "Section the exported backing above and below the existing S01 fascia at aft, middle and forward stations",
+      "evidence_paths": []
+    },
+    {
+      "id": "LE-10",
+      "status": "pass",
+      "actual": {
+        "maximum_lower_margin_ft": 0.08072630727317076,
+        "stations": [
+          {
+            "f_ft": 52.5,
+            "face_lower_ft": 7.53663735614008,
+            "backing_lower_ft": 7.455911048866909,
+            "margin_ft": -0.08072630727317076,
+            "residual_vs_face_ft": 0.08072630727317076
+          },
+          {
+            "f_ft": 56.5,
+            "face_lower_ft": 8.490327902134819,
+            "backing_lower_ft": 8.412020693778478,
+            "margin_ft": -0.07830720835634075,
+            "residual_vs_face_ft": 0.07830720835634075
+          },
+          {
+            "f_ft": 60.0,
+            "face_lower_ft": 9.635574595501431,
+            "backing_lower_ft": 9.615574595,
+            "margin_ft": -0.02000000050143136,
+            "residual_vs_face_ft": 0.02000000050143136
+          },
+          {
+            "f_ft": 61.0,
+            "face_lower_ft": 10.032965916205214,
+            "backing_lower_ft": 10.025632963654385,
+            "margin_ft": -0.007332952550829219,
+            "residual_vs_face_ft": 0.007332952550829219
+          },
+          {
+            "f_ft": 62.0,
+            "face_lower_ft": 10.456985914707573,
+            "backing_lower_ft": 10.451976690313657,
+            "margin_ft": -0.005009224393916156,
+            "residual_vs_face_ft": 0.005009224393916156
+          }
+        ]
+      },
+      "limit": 0.09,
+      "units": "ft",
+      "method": "Backing lower edge follows the decorated S01 face lower edge with a small margin; the over-deep S04 lower line is not the backing bottom",
+      "evidence_paths": []
+    },
+    {
+      "id": "LE-11",
+      "status": "pass",
+      "actual": {
+        "maximum_backing_outside_face_ft": 1.7763568394002505e-15,
+        "sections": [
+          {
+            "forward_ft": 61.0,
+            "backing_lower_ft": 10.235067445504791,
+            "backing_upper_ft": 10.475219604075907,
+            "face_lower_ft": 10.235067445504791,
+            "face_upper_ft": 10.524216607930757,
+            "outside_face_ft": 0.0
+          },
+          {
+            "forward_ft": 62.0,
+            "backing_lower_ft": 10.525994185555811,
+            "backing_upper_ft": 10.855230452754814,
+            "face_lower_ft": 10.525994185555813,
+            "face_upper_ft": 10.855230452754814,
+            "outside_face_ft": 1.7763568394002505e-15
+          },
+          {
+            "forward_ft": 62.4,
+            "backing_lower_ft": 10.726356939590854,
+            "backing_upper_ft": 10.858514299798275,
+            "face_lower_ft": 10.726356939590854,
+            "face_upper_ft": 10.858514299798275,
+            "outside_face_ft": 0.0
+          }
+        ]
+      },
+      "limit": 0.02,
+      "units": "ft",
+      "method": "Forward of F=61 the backing stays inside the actual S01 face/eagle section; no backing remains above, below or inside the eagle concavities",
       "evidence_paths": []
     },
     {
       "id": "LE-04",
       "status": "pass",
       "actual": {
-        "minimum_clearance_ft": 0.06944229442970165,
-        "minimum_clearance_in": 0.8333075331564198,
+        "minimum_clearance_ft": 0.15285123978047027,
+        "minimum_clearance_in": 1.8342148773656433,
         "nominal_ft": 0.07,
         "acceptance_band_ft": [
           0.04,
@@ -256,18 +292,6 @@
         },
         "Backing / heel cross-timber": {
           "distance_mm": 0.0,
-          "common_ft3": 0.0
-        },
-        "Upper shoulder / stem-head extension": {
-          "distance_mm": 0.0,
-          "common_ft3": 0.0
-        },
-        "Upper shoulder / painted stem": {
-          "distance_mm": 176.37898316185246,
-          "common_ft3": 0.0
-        },
-        "Upper shoulder / heel cross-timber": {
-          "distance_mm": 247.4784122118594,
           "common_ft3": 0.0
         }
       },
@@ -312,7 +336,7 @@
       "id": "LE-07",
       "status": "pass",
       "actual": {
-        "maximum_mm": 4.737543690680468e-13,
+        "maximum_mm": 3.383959779057477e-13,
         "components": {
           "board_bounds": {
             "x_mirror_mm": 0.0,
@@ -324,7 +348,7 @@
             "y_mm": 0.0,
             "z_mm": 0.0
           },
-          "backing_centre_mm": 4.737543690680468e-13
+          "backing_centre_mm": 3.383959779057477e-13
         }
       },
       "limit": 0.1,
@@ -338,25 +362,15 @@
       "actual": {
         "unintended_common_ft3": {
           "Backing / Bowsprit": 0.0,
-          "Upper shoulder / Bowsprit": 0.0,
           "Backing / Port headrail": 0.0,
-          "Upper shoulder / Port headrail": 0.0,
           "Backing / Starboard headrail": 0.0,
-          "Upper shoulder / Starboard headrail": 0.0,
           "Backing / Port board": 0.0,
-          "Upper shoulder / Port board": 0.0,
           "Backing / Starboard board": 0.0,
-          "Upper shoulder / Starboard board": 0.0,
           "Backing / Painted topsides": 0.0,
-          "Upper shoulder / Painted topsides": 0.0,
           "Backing / Keel": 0.0,
-          "Upper shoulder / Keel": 0.0,
           "Backing / Painted stem and cutwater": 0.0,
-          "Upper shoulder / Painted stem and cutwater": 0.0,
           "Backing / Stem-head extension": 0.0,
-          "Upper shoulder / Stem-head extension": 0.0,
-          "Backing / Heel cross-timber": 0.0,
-          "Upper shoulder / Heel cross-timber": 0.0
+          "Backing / Heel cross-timber": 0.0
         }
       },
       "limit": 1e-07,
@@ -369,16 +383,12 @@
       "status": "pass",
       "actual": {
         "seats": {
-          "Backing": {
-            "distance_mm": 0.0,
-            "common_ft3": 0.0
-          },
           "Painted stem": {
             "distance_mm": 0.0,
             "common_ft3": 0.0
           },
           "Painted topsides": {
-            "distance_mm": 2.707167823245982e-13,
+            "distance_mm": 0.0,
             "common_ft3": 0.0
           },
           "Keel": {
@@ -390,15 +400,15 @@
             "common_ft3": 0.0
           },
           "Underwater hull": {
-            "distance_mm": 6.8452617766821025,
+            "distance_mm": 234.98041605210133,
             "common_ft3": 0.0
           }
         },
-        "fairing_bounds_ft": [
-          3.5034372936865417,
-          6.920000100000001
+        "backing_bounds_ft": [
+          4.8999999,
+          10.876070255612277
         ],
-        "extends_below_backing_ft": 3.2587591533134574,
+        "extends_below_face_ft": 2.1699260270213028,
         "source_evidence": "docs/images/trailboard_envelope_gap/source-s03-lower-wood.png"
       },
       "limit": {
@@ -407,13 +417,13 @@
         "extends_below_ft": 1.0
       },
       "units": "mixed",
-      "method": "Lower S03 stem fairing: fitted contacts, no overlap with stem/hull/keel/worm shoe, and a real downward extension",
+      "method": "Fused lower S03 stem fairing: fitted contacts, no overlap with stem/hull/keel/worm shoe, and a real downward extension below the decorative face",
       "evidence_paths": []
     }
   ],
   "ledger": {
     "schema_version": 1,
-    "status": "source-controlled outer timber envelope with lower stem fairing; forward head closure and hidden interfaces inferred",
+    "status": "source-controlled face-following backing with upper shoulder and tangent lower stem fairing; eagle outline follows S01",
     "units": "full-size feet; SOMA registers millimetres at 304.8 mm/ft",
     "source": {
       "id": "S04-V01",
@@ -441,11 +451,12 @@
     },
     "classification": {
       "upper_outer": "Continuous outer upper timber line immediately below the item-11 headrail and above the decorated fascia; includes the three visible fastening blocks. The headrail line itself is not used as the timber boundary.",
-      "lower_outer": "Solid outer lower timber line above the solid chain hardware and the dashed cable. Dashed cable and chain hardware are rigging and excluded.",
+      "lower_outer": "Decorated-face lower edge plus a small margin. The former S04 outer lower line is not used as the backing bottom; using it produced the over-deep board below the decorated section. The S04 line remains a source silhouette reference only.",
       "face_upper_lower": "Existing S01-V03 transferred decorated-face contours; retained unchanged and nested inside this envelope.",
       "aft_root": "Existing longhead root station; the envelope closes at the unchanged stem/head interface.",
       "forward_head": "Forward closure follows the source head/eagle silhouette and must contain the S01 face; the last segment is an inferred fitted transition.",
-      "rejected": "Item-1 bowsprit, item-11 headrail line, dashed cable, solid chain hardware, and the foreground rail crossing S01-V03 are not outer timber edges."
+      "rejected": "Item-1 bowsprit, item-11 headrail line, dashed cable, solid chain hardware, and the foreground rail crossing S01-V03 are not outer timber edges.",
+      "eagle": "Forward of F=60.5 the backing follows the actual S01 face/eagle outline; no backing is added above or below the eagle and no backing fills its concavities."
     },
     "picks": {
       "outer_upper_grid": [
@@ -574,70 +585,90 @@
           10.214117414
         ],
         [
-          59.336728663,
-          10.388051411
+          59.337,
+          10.24549345
+        ],
+        [
+          60.0,
+          10.246209573
+        ],
+        [
+          60.5,
+          10.305512733
         ],
         [
           60.669686686,
-          10.45
+          10.359689473
         ],
         [
           61.336165698,
-          10.610434254
+          10.600434254
         ],
         [
           62.002644709,
-          10.878255905
+          10.868255905
         ],
         [
           62.535827918,
-          11.093969982
+          11.078969982
         ]
       ],
       "outer_lower_fz": [
         [
           50.405909908,
-          6.762196547
+          6.989925927
         ],
         [
           51.338980524,
-          6.768886317
+          7.18254618
         ],
         [
           52.671938547,
-          6.775576086
+          7.499686334
         ],
         [
           54.00489657,
-          6.775576086
+          7.872975451
         ],
         [
           55.337854594,
-          7.230480386
+          8.144341643
         ],
         [
           56.670812617,
-          7.765661916
+          8.455647726
         ],
         [
           58.00377064,
-          8.300843445
+          8.846336859
         ],
         [
-          59.336728663,
-          8.836024975
+          59.0,
+          9.223864337
+        ],
+        [
+          60.0,
+          9.615574595
+        ],
+        [
+          60.5,
+          9.819968131
         ],
         [
           60.669686686,
-          9.371206505
+          9.887993075
+        ],
+        [
+          61.336165698,
+          10.168309823
         ],
         [
           62.002644709,
-          9.906388035
+          10.453128842
         ],
         [
           62.535827918,
-          10.107081108
+          10.689726604
         ]
       ],
       "bowsprit_clearance_station": {
@@ -702,51 +733,6 @@
           61.669405203,
           10.842955712
         ]
-      },
-      {
-        "role": "lower",
-        "grid_x": 1073,
-        "grid_y": 349.0,
-        "fz": [
-          50.872445216,
-          6.762196547
-        ]
-      },
-      {
-        "role": "lower",
-        "grid_x": 1090,
-        "grid_y": 350.5,
-        "fz": [
-          52.005459536,
-          6.661850011
-        ]
-      },
-      {
-        "role": "lower",
-        "grid_x": 1150,
-        "grid_y": 337.7,
-        "fz": [
-          56.004333605,
-          7.518140458
-        ]
-      },
-      {
-        "role": "lower",
-        "grid_x": 1185,
-        "grid_y": 323.5,
-        "fz": [
-          58.337010146,
-          8.468087673
-        ]
-      },
-      {
-        "role": "lower",
-        "grid_x": 1235,
-        "grid_y": 305.6,
-        "fz": [
-          61.669405203,
-          9.665556346
-        ]
       }
     ],
     "implementation": {
@@ -758,61 +744,64 @@
       "source_evidence": "docs/images/trailboard_envelope_gap/source-s03-lower-wood.png",
       "source_view": "S03-V01",
       "width_ft": 0.5,
-      "profile_fz": [
+      "p0_fz": [
+        52.5,
+        7.615911049
+      ],
+      "bezier_control_fz": [
         [
-          50.405909908,
-          6.92
+          52.5,
+          7.615911049
         ],
         [
-          51.5,
-          6.93
+          51.046593975,
+          7.244951582
         ],
         [
-          53.0,
-          6.94
+          50.0,
+          5.8
         ],
         [
-          51.0,
-          6.4
-        ],
-        [
-          49.9,
-          6.0
-        ],
-        [
-          48.9,
-          5.0
-        ],
-        [
-          48.0,
-          4.2
-        ],
-        [
-          47.4,
-          3.6
-        ],
-        [
-          47.1,
-          3.5
-        ],
-        [
-          47.48,
-          4.0
-        ],
-        [
-          48.12,
-          5.0
-        ],
-        [
-          48.88,
-          6.0
-        ],
-        [
-          49.522048196,
-          6.762
+          48.3,
+          4.9
         ]
       ],
-      "note": "Lower trailboard/stem fairing highlighted on the Sheet 3 crop. It fills between the backing lower edge and the stem/forefoot, bends down along the stem, and is cut to fitted faces against the backing, stem, hull and keel."
-    }
+      "top_forward_fz": [
+        54.0,
+        8.151818993
+      ],
+      "top_aft_fz": [
+        49.9,
+        7.4
+      ],
+      "note": "Tangent lower fairing fused into the single backing solid. The outer Bezier leaves the backing lower edge at P0 with the backing tangent (radius, no sharp corner), descends to the stem/forefoot, and is cut to fitted faces against stem, hull, keel and worm shoe. The former separate fairing part is withdrawn."
+    },
+    "held_out_face_lower": [
+      {
+        "f_ft": 52.5,
+        "z_ft": 7.536637356,
+        "source": "S01-V03 decorated-face lower edge"
+      },
+      {
+        "f_ft": 56.5,
+        "z_ft": 8.490327902,
+        "source": "S01-V03 decorated-face lower edge"
+      },
+      {
+        "f_ft": 60.0,
+        "z_ft": 9.635574596,
+        "source": "S01-V03 decorated-face lower edge"
+      },
+      {
+        "f_ft": 61.0,
+        "z_ft": 10.032965916,
+        "source": "S01-V03 decorated-face lower edge"
+      },
+      {
+        "f_ft": 62.0,
+        "z_ft": 10.456985915,
+        "source": "S01-V03 decorated-face lower edge"
+      }
+    ]
   }
 }

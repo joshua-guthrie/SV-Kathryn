@@ -1,7 +1,7 @@
 {
   "status": "passed",
-  "built_parts": 1026,
-  "build_id": "0a7f4157c7c64356bd87231d1bf903bf",
+  "built_parts": 1024,
+  "build_id": "3cae9eb7c8bd47e08417163867b1b75d",
   "method": "Exact completed-build BREP solids; 1 mm CAD tolerance; source picks remain +/-0.2 ft.",
   "full_spar_axis_ft": 21.576368975966385,
   "inboard_section_in": [
@@ -42,7 +42,7 @@
     "src/parts/access.py": "f415af625d1c8d3a20e9b9166daa3381eaf480e35f1b0f726fb0b58c6d0497ea",
     "src/parts/beam_layout.py": "a3e7d75d7137481db0773718c72fe49b2b0ad3123f1f17b455fa1b39cf38c4f1",
     "src/parts/board_tools.py": "7a9f4a58a8d53b54e12564d080576284cc2fc3b33e65a801603ae0c74d27fe26",
-    "src/parts/bow.py": "190a820adc8a305a40bc5be57b38032e6b09d7033743ab1dcdc307da54401eb1",
+    "src/parts/bow.py": "f59af66761f3320db186d3d530278e25fede8230412f92e514b63e68b270a95c",
     "src/parts/bow_layout.py": "93bbd7ea5346dd0de08a5c0ae02808b0170fde6a0f1efa480e33c4234e5e2fb8",
     "src/parts/centreline.py": "298e65ca4ae6e5aebcc959833128d09fb4ab38bebca907545f0e8509f7440ec7",
     "src/parts/centreline_layout.py": "af7b22e3dcd2a136bf2b5646f1cc0233cf05708ae0f8a2c8aa6ddda3792c24c3",

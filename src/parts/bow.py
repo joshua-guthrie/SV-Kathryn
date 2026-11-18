@@ -15,7 +15,8 @@ from .primitives import block,beam_between,spar_between
 from .bow_layout import SOURCE,SPAR,HEADWORK,LONGHEAD,RIG,axis_height,radius_at,half_depth_at
 from . import trailboards as traced
 from .trailboard_layout import (panel_top,panel_bottom,source_headrail_points,
-                                outer_top,outer_bottom,ENVELOPE_ROOT_F,ENVELOPE_TIP_F,ENVELOPE)
+                                outer_top,outer_bottom,ENVELOPE_ROOT_F,ENVELOPE_TIP_F,ENVELOPE,
+                                FEATURES,native_to_fz)
 
 BOWSPRIT_HEEL_FT=SPAR['heel_f']
 BOWSPRIT_END_FT=SPAR['end_f']
@@ -115,6 +116,16 @@ def envelope_outline(side):
     return cq.Workplane(panel_plane(side)).polyline(local.tolist()).close().val()
 
 
+@lru_cache(maxsize=1)
+def central_face_prism():
+    fz=native_to_fz(FEATURES['outer-facing']['native_points'])
+    points=[(25-f,z) for f,z in fz]
+    keep=np.r_[True,np.linalg.norm(np.diff(points,axis=0),axis=1)>1e-7]
+    points=[p for p,k in zip(points,keep) if k]
+    if np.linalg.norm(np.asarray(points[0])-np.asarray(points[-1]))<1e-7:points=points[:-1]
+    return cq.Workplane('YZ').polyline(points).close().extrude(.25,both=True).val()
+
+
 def _extrude_wire(wire,side,height,offset=0):
     return cq.Workplane(panel_plane(side)).add(wire).toPending().extrude(height).val().translate(panel_plane(side).zDir.multiply(offset))
 
@@ -160,16 +171,33 @@ def make_longhead_aft_filling():
     return [p.cut(solid_envelope()).clean() for p in longhead_pieces()[1:]]
 
 
+def _bezier(p0,p1,p2,p3,n=24):
+    out=[]
+    for t in np.linspace(0,1,n):
+        u=1-t
+        out.append(u*u*u*np.array(p0)+3*u*u*t*np.array(p1)+3*u*t*t*np.array(p2)+t*t*t*np.array(p3))
+    return out
+
+
 @lru_cache(maxsize=1)
 def make_lower_stem_fairing():
-    profile=ENVELOPE['lower_stem_fairing']['profile_fz']
-    polygon=[(25-f,z) for f,z in profile]
+    # A short, tangent stem fairing. The outer curve leaves the backing lower
+    # edge at P0 with the backing tangent, so the union has a radius rather
+    # than the former sharp corner.
+    p0=(52.5,outer_bottom(52.5))
+    d=np.array((0.2,outer_bottom(52.7)-outer_bottom(52.5)))
+    d/=np.linalg.norm(d)
+    p1=tuple(np.array(p0)-d*1.5)
+    p2=(50.0,5.8);p3=(48.3,4.9)
+    outer=[(25-f,z) for f,z in _bezier(p0,p1,p2,p3)]
+    top_forward=(54.0,outer_bottom(54.0)+0.12)
+    top_aft=(49.9,7.4)
+    inner=[(25-f,z) for f,z in ((48.12,5.0),(48.88,6.0),(49.52,6.76),top_aft)]
+    polygon=[(25-top_forward[0],top_forward[1]),*outer,*inner,(25-top_forward[0],top_forward[1])]
     width=ENVELOPE['lower_stem_fairing']['width_ft']/2
     shape=(cq.Workplane('YZ').polyline(polygon).close()
            .extrude(width,both=True).val())
-    shape=shape.cut(make_stem()).cut(solid_envelope()).cut(make_keel()).cut(make_worm_shoe())
-    for piece in longhead_pieces():shape=shape.cut(piece)
-    return shape.clean()
+    return shape.cut(make_stem()).cut(solid_envelope()).cut(make_keel()).cut(make_worm_shoe())
 
 
 def make_painted_field(side):
@@ -446,17 +474,27 @@ def make_bow_details():
     yield 'Painted stem and cutwater',stem.cut(water),IVORY
     yield 'Underwater stem shoe',stem.intersect(water),(.13,.18,.18)
     yield from make_bow_structure()
-    yield 'Longhead trailboard backing',longhead_backing(),IVORY
-    for i,filling in enumerate(make_longhead_aft_filling(),1):
-        for k,solid in enumerate(filling.Solids(),1):
-            b=solid.BoundingBox()
-            name='Longhead upper shoulder' if b.zmin>8.5 and b.ymax<-25.3 else f'Longhead aft filling {i}.{k}'
-            yield name,solid,IVORY
-    fairing=[solid for solid in make_lower_stem_fairing().Solids() if solid.Volume()>1e-3]
-    assert fairing,'Lower trailboard stem fairing lost in the fitted cuts'
-    for k,solid in enumerate(fairing,1):
-        suffix='' if len(fairing)==1 else f' {k}'
-        yield 'Lower trailboard stem fairing'+suffix,solid,IVORY
+    # The former aft upper-shoulder sliver is now omitted; the main backing
+    # plus fused stem fairing is the single visible longhead timber, and the
+    # fitted stem-head extension occupies that small seat.
+    # Fuse the tangent stem fairing into the backing so the visible lower
+    # outline is one timber; keep the separate fitted upper shoulder (the
+    # stem-head extension still splits that small piece).
+    backing_shape=longhead_backing()
+    fairing=make_lower_stem_fairing()
+    combined=backing_shape.fuse(fairing)
+    # Forward of F=61, follow the actual S01 face/eagle outline so no backing
+    # fills the eagle's concavities or sits above/below it.
+    region=block(0,65.5,0,2,10,30)
+    forward=combined.intersect(region).intersect(central_face_prism())
+    rear=combined.cut(region)
+    combined=rear.fuse(forward)
+    solids=[s for s in combined.Solids() if s.Volume()>1e-3]
+    if solids:
+        largest=max(solids,key=lambda s:s.Volume())
+        yield 'Longhead trailboard backing',largest,IVORY
+    else:
+        yield 'Longhead trailboard backing',backing_shape,IVORY
     for side,label in ((PORT_SIDE,'Port'),(-PORT_SIDE,'Starboard')):
         outline=panel_outline(side)
         yield label+' trailboard board',make_trailboard(side),TRAILBOARD_PAINT

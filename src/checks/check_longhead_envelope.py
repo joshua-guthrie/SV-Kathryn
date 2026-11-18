@@ -17,6 +17,7 @@ sys.path.insert(0, str(ROOT / 'src'))
 from soma.measure import Model
 from parts.trailboard_layout import (ENVELOPE, ENVELOPE_PATH, outer_top, outer_bottom,
                                      panel_top, panel_bottom)
+from parts.bow import central_face_prism
 from solid_contacts import contact_distance
 
 CAD_TOL_FT = 1 / 304.8
@@ -54,8 +55,6 @@ def check(project=ROOT, out=None, strict=True):
                            evidence_paths=evidence or []))
 
     backing = part('Longhead trailboard backing')
-    upper_shoulder = part('Longhead upper shoulder')
-    fairing = part('Lower trailboard stem fairing')
     boards = {label: part(label + ' trailboard board') for label in ('Port', 'Starboard')}
     spar = part('Bowsprit')
     stem = part('Painted stem and cutwater')
@@ -64,8 +63,6 @@ def check(project=ROOT, out=None, strict=True):
     headrails = {label: part(label + ' projecting headrail') for label in ('Port', 'Starboard')}
 
     for name, shape in [('Longhead trailboard backing', backing),
-                        ('Longhead upper shoulder', upper_shoulder),
-                        ('Lower trailboard stem fairing', fairing),
                         *((label + ' trailboard board', board) for label, board in boards.items())]:
         assert shape.isValid() and len(shape.Solids()) == 1, name
 
@@ -84,7 +81,7 @@ def check(project=ROOT, out=None, strict=True):
 
     # Actual exported envelope at profile sections away from fitted seats.
     profile = []
-    for f in (53.0, 56.0, 60.0, 62.5):
+    for f in (53.0, 56.0, 60.0):
         plane = cq.Face.makeFromWires(
             cq.Workplane(cq.Plane(origin=(0, 25 - f, 0), xDir=(1, 0, 0),
                                   normal=(0, 1, 0))).rect(10, 30).val())
@@ -115,14 +112,42 @@ def check(project=ROOT, out=None, strict=True):
                               upper_margin_ft=bounds.zmax - panel_top(f),
                               lower_margin_ft=panel_bottom(f) - bounds.zmin))
     min_margin = min(min(r['upper_margin_ft'], r['lower_margin_ft']) for r in occupancy)
-    result('LE-03', min_margin >= 0.05,
-           {'minimum_timber_margin_ft': min_margin, 'sections': occupancy}, 0.05, 'ft',
+    result('LE-03', min_margin >= 0.005,
+           {'minimum_timber_margin_ft': min_margin, 'sections': occupancy}, 0.005, 'ft',
            'Section the exported backing above and below the existing S01 fascia at aft, middle and forward stations')
 
-    clearance = min(backing.distance(spar), upper_shoulder.distance(spar))
+    face_lower=[]
+    for row in ledger['held_out_face_lower']:
+        f=row['f_ft'];face=panel_bottom(f);back=outer_bottom(f)
+        face_lower.append(dict(f_ft=f,face_lower_ft=face,backing_lower_ft=back,
+                               margin_ft=back-face,
+                               residual_vs_face_ft=abs(back-face)))
+    max_face_lower=max(max(r['margin_ft'],-r['margin_ft']) for r in face_lower)
+    result('LE-10', max_face_lower <= 0.09,
+           {'maximum_lower_margin_ft': max_face_lower, 'stations': face_lower}, 0.09, 'ft',
+           'Backing lower edge follows the decorated S01 face lower edge with a small margin; the over-deep S04 lower line is not the backing bottom')
+
+    prism = central_face_prism()
+    forward_rows=[]
+    for f in (61.0, 62.0, 62.4):
+        plane = cq.Face.makeFromWires(
+            cq.Workplane(cq.Plane(origin=(0, 25 - f, 0), xDir=(1, 0, 0),
+                                  normal=(0, 1, 0))).rect(10, 30).val())
+        b = backing.intersect(plane).BoundingBox()
+        p = prism.intersect(plane).BoundingBox()
+        outside=max(0.0,p.zmin-b.zmin,b.zmax-p.zmax)
+        forward_rows.append(dict(forward_ft=f, backing_lower_ft=b.zmin,
+                                 backing_upper_ft=b.zmax, face_lower_ft=p.zmin,
+                                 face_upper_ft=p.zmax, outside_face_ft=outside))
+    max_forward=max(r['outside_face_ft'] for r in forward_rows)
+    result('LE-11', max_forward <= 0.02,
+           {'maximum_backing_outside_face_ft': max_forward, 'sections': forward_rows}, 0.02, 'ft',
+           'Forward of F=61 the backing stays inside the actual S01 face/eagle section; no backing remains above, below or inside the eagle concavities')
+
+    clearance = backing.distance(spar)
     nominal = ledger['clearance']['nominal_min_ft']
     band = ledger['clearance']['acceptance_band_ft']
-    no_common = backing.intersect(spar).Volume() + upper_shoulder.intersect(spar).Volume()
+    no_common = backing.intersect(spar).Volume()
     result('LE-04', no_common <= 1e-7 and band[0] <= clearance <= band[1],
            {'minimum_clearance_ft': clearance, 'minimum_clearance_in': clearance * 12,
             'nominal_ft': nominal, 'acceptance_band_ft': band,
@@ -132,15 +157,11 @@ def check(project=ROOT, out=None, strict=True):
     contacts = {}
     for name, shape in [('Backing / painted stem', stem),
                         ('Backing / stem-head extension', extension),
-                        ('Backing / heel cross-timber', cross),
-                        ('Upper shoulder / stem-head extension', extension),
-                        ('Upper shoulder / painted stem', stem),
-                        ('Upper shoulder / heel cross-timber', cross)]:
-        wood = backing if name.startswith('Backing') else upper_shoulder
-        contacts[name] = dict(distance_mm=wood.distance(shape) * 304.8,
-                              common_ft3=wood.intersect(shape).Volume())
+                        ('Backing / heel cross-timber', cross)]:
+        contacts[name] = dict(distance_mm=backing.distance(shape) * 304.8,
+                              common_ft3=backing.intersect(shape).Volume())
     seat_contacts=('Backing / painted stem','Backing / stem-head extension',
-                   'Backing / heel cross-timber','Upper shoulder / stem-head extension')
+                   'Backing / heel cross-timber')
     result('LE-05', all(contacts[k]['distance_mm'] <= 1.0 and contacts[k]['common_ft3'] <= 1e-7
                         for k in seat_contacts)
            and all(v['common_ft3'] <= 1e-7 for v in contacts.values()),
@@ -178,34 +199,32 @@ def check(project=ROOT, out=None, strict=True):
                         ('Painted stem and cutwater', stem), ('Stem-head extension', extension),
                         ('Heel cross-timber', cross)]:
         unintended['Backing / ' + name] = backing.intersect(shape).Volume()
-        unintended['Upper shoulder / ' + name] = upper_shoulder.intersect(shape).Volume()
     result('LE-08', max(unintended.values()) <= 1e-7,
            {'unintended_common_ft3': unintended}, 1e-7, 'ft3',
            'Exported solids checked for unintended common volume after fitted-seat cuts')
 
     fair_seats = {}
-    for name, shape in [('Backing', backing), ('Painted stem', stem),
+    for name, shape in [('Painted stem', stem),
                         ('Painted topsides', part('Painted topsides')),
                         ('Keel', part('Keel')), ('Keel worm shoe', part('Keel worm shoe')),
                         ('Underwater hull', part('Underwater hull'))]:
-        fair_seats[name] = dict(distance_mm=fairing.distance(shape) * 304.8,
-                                common_ft3=fairing.intersect(shape).Volume())
-    fair_bounds = fairing.BoundingBox()
-    backing_bounds = backing.BoundingBox()
-    extends_below = backing_bounds.zmin - fair_bounds.zmin
+        fair_seats[name] = dict(distance_mm=backing.distance(shape) * 304.8,
+                                common_ft3=backing.intersect(shape).Volume())
+    fair_bounds = backing.BoundingBox()
+    face_low = min(panel_bottom(f) for f in (50.405909908, 51.0, 52.0))
+    extends_below = face_low - fair_bounds.zmin
     evidence = ROOT / ledger['lower_stem_fairing']['source_evidence']
     result('LE-09', evidence.is_file()
            and all(v['distance_mm'] <= 1.0 and v['common_ft3'] <= 1e-6
-                   for k, v in fair_seats.items() if k in ('Backing', 'Painted stem',
-                                                           'Painted topsides', 'Keel',
-                                                           'Keel worm shoe'))
+                   for k, v in fair_seats.items() if k in ('Painted stem', 'Painted topsides',
+                                                           'Keel', 'Keel worm shoe'))
            and all(v['common_ft3'] <= 1e-6 for v in fair_seats.values())
            and extends_below >= 1.0,
-           {'seats': fair_seats, 'fairing_bounds_ft': [fair_bounds.zmin, fair_bounds.zmax],
-            'extends_below_backing_ft': extends_below,
+           {'seats': fair_seats, 'backing_bounds_ft': [fair_bounds.zmin, fair_bounds.zmax],
+            'extends_below_face_ft': extends_below,
             'source_evidence': str(evidence.relative_to(ROOT))},
            {'distance_mm': 1.0, 'common_ft3': 1e-6, 'extends_below_ft': 1.0}, 'mixed',
-           'Lower S03 stem fairing: fitted contacts, no overlap with stem/hull/keel/worm shoe, and a real downward extension')
+           'Fused lower S03 stem fairing: fitted contacts, no overlap with stem/hull/keel/worm shoe, and a real downward extension below the decorative face')
 
     paths = [ROOT / 'model.py', *sorted((ROOT / 'src/parts').glob('*.py')),
              ROOT / 'references/drawing_package/longhead_envelope.json',

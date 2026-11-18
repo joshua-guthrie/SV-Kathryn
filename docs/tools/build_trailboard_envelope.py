@@ -103,7 +103,7 @@ def render(name):
     }
     notes = {
         'profile': ['Upper wood rises to the source-controlled line beneath the bowsprit with a measured gap.',
-                    'Lower wood follows the solid S04 boundary above the chain/cable and fairs into the stem.'],
+                    'Lower wood follows the S01 face lower edge with a small margin and a tangent stem fairing.'],
         'quarter': ['The decorated face remains nested on the enlarged timber; its contours and scale are unchanged.',
                     'The headrails remain separate, fitted timbers.'],
         'starboard': ['The white margin around the ornament is the newly exposed solid timber.',
